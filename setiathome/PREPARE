@@ -1,8 +1,6 @@
 # Copied from kde/kde-il8n
 # Very cludgy setup I have made.  :(
 
-rm  -f  ${SPELL_CONFIG}
-
 get_architecture()  {
   if  !  [  -f  ${SPELL_CONFIG}  ]
   then
@@ -40,6 +38,12 @@ get_architecture()  {
 
   fi
 
-#  . ${SPELL_CONFIG}
 }
-get_architecture
+
+if  query  "Reconfigure ${SPELL_COLOR}${SPELL}${DEFAULT_COLOR}?"  n
+    then   if  [  -f  ${SPELL_CONFIG}  ]
+           then 
+             rm  -f  ${SPELL_CONFIG}
+           fi
+           get_architecture
+fi
