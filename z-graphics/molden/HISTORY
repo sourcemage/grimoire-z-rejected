@@ -3,7 +3,7 @@
 
 2004-02-24 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 4.0
-	Removed MAINTAINER and a TAB
+	  Removed MAINTAINER and a TAB
 
 2003-11-04 Eric Sandall <eric@sandall.us>
 	* BUILD, CONFIGURE, PRE_BUILD: fixed per bug 4760

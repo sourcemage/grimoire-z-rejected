@@ -2,8 +2,8 @@
 	* Moved to z-rejected/z-java for licensing issues
 
 2003-10-29 Eric Sandall <eric@sandall.us>
-    * DEPENDS:  Depends on JAVA
-    * HISTORY: Formatted to Guru Handbook
+	* DEPENDS: Depends on JAVA
+	* HISTORY: Formatted to Guru Handbook
 
 2003-03-26 Vladimir Vydra <vydra@fria.fri.utc.sk>
 	* Spell created - version 1_2_1 .

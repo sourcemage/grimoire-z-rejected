@@ -1,75 +1,60 @@
-2003-08-22  Geoffrey Derber <gderber@sourcemage.org>
+2003-08-22 Geoffrey Derber <gderber@sourcemage.org>
+	* moved z-rejected warning messages
+	  to CONFIGURE from PRE_BUILD
 
-		moved z-rejected warning messages
-		to CONFIGURE from PRE_BUILD
+2003-05-01 Rob Verkuylen <rob@verkuylen.net>
+	* Copied /init.d/samba.sh to /init.d/samba
+	  Step 1/3 in bug#: 3115
 
-2003-05-01  Rob Verkuylen <rob@verkuylen.net>
+2003-03-31 Eric Sandall <eric@sandall.us>
+	* Updated to use sorcery's init.d installer
+	* Modified PRE_REMOVE and POST_INSTALL to only
+	  run the script if it is executable
 
-		Copied /init.d/samba.sh to /init.d/samba
-		Step 1/3 in bug#: 3115
+2002-10-09 Geoffrey Derber <gderber@sourcemage.org>
+	* updated to version 1.5.63
 
-2003-03-31  Eric Sandall <eric@sandall.us>
+2002-10-05 Geoffrey Derber <gderber@sourcemage.org>
+	* updated to version 1.5.62
 
-		Updated to use sorcery's init.d installer
+2002-09-21 Geoffrey Derber <gderber@sourcemage.org>
+	* updated to version 1.5.61
 
-		Modified PRE_REMOVE and POST_INSTALL to only
-		run the script if it is executable
+2002-09-14 Geoffrey Derber <gderber@sourcemage.org>
+	* updated MD5 field for version update.
+	  changed SOURCE_URL to use $SOUREFORGE_URL
+	*
 
-2002-10-09  Geoffrey Derber <gderber@sourcemage.org>
+2002-09-14 Eric Schabell <eschabell@sourcemage.org>
+	* Version upgrade that fixes OpenSSL security
+	  leak exploited with a GNU/Linux worm mentioned
+	  on slashdot today.
 
-		updated to version 1.5.63
+2002-06-23 Eric Schabell <eschabell@sourcemage.org>
+	* Updated version due to security fix:
+	* "Updated mod_ssl, libpng, mysql, postgresql, php, pdflib, unixodbc,
+	  openssl, mod_mp3, mod_layout, mod_perl, mcrypt, mod_fastcgi,
+	  mod_python, mod_backhand, libcurl, python, mhash, freetype2, t1lib,
+	  openldap, tcl, and bison. Small bugfixes were made to the following
+	  new versions of software: mhash, t1libs, mod_watch, python,
+	  mod_python, libmcrypt, libcurl, and pdflib. The SGI patch option was
+	  removed."
 
-2002-10-05  Geoffrey Derber <gderber@sourcemage.org>
+2002-06-19 Eric Schabell <eschabell@sourcemage.org>
+	* Updated version to fix security bug in Apache, changed UPDATE field as
+	  should be fixed on your box.
 
-		updated to version 1.5.62
+2002-04-30 Geoffrey Derber <gderber@sourcemage.org>
+	* Updated to version 1.5.56
 
-2002-09-21  Geoffrey Derber <gderber@sourcemage.org>
+2002-04-23 Eric Schabell <eschabell@sourcemage.org>
+	* Changed PRE_BUILD so that it does not just
+	  exit by default, now it will execute if you
+	  answer yes to the questions (thanks Yoav).
 
-		updated to version 1.5.61
+2002-03-19 Eric Schabell <eschabell@sourcemage.org>
+	* Added HISTORY file. The reason for rejection
+	  is that this spell can install many apache
+	  modules that will no longer be tracked by
+	  sorcery (alien). It does work fine!
 
-2002-09-14  Geoffrey Derber <gderber@sourcemage.org>
-
-		updated MD5 field for version update.
-		changed SOURCE_URL to use $SOUREFORGE_URL
-
-		
-
-2002-09-14  Eric Schabell <eschabell@sourcemage.org>
-
-		Version upgrade that fixes OpenSSL security
-		leak exploited with a GNU/Linux worm mentioned
-		on slashdot today.
-
-2002-06-23  Eric Schabell <eschabell@sourcemage.org>
-
-		Updated version due to security fix:
-	
-		"Updated mod_ssl, libpng, mysql, postgresql, php, pdflib, unixodbc,
-		openssl, mod_mp3, mod_layout, mod_perl, mcrypt, mod_fastcgi,
-		mod_python, mod_backhand, libcurl, python, mhash, freetype2, t1lib,
-		openldap, tcl, and bison. Small bugfixes were made to the following
-		new versions of software: mhash, t1libs, mod_watch, python,
-		mod_python, libmcrypt, libcurl, and pdflib. The SGI patch option was
-		removed."
-
-2002-06-19  Eric Schabell <eschabell@sourcemage.org>
-
-		Updated version to fix security bug in Apache, changed UPDATE field as
-		should be fixed on your box.
-
-2002-04-30  Geoffrey Derber <gderber@sourcemage.org>
-
-		Updated to version 1.5.56
-
-2002-04-23  Eric Schabell <eschabell@sourcemage.org>
-
-		Changed PRE_BUILD so that it does not just
-		exit by default, now it will execute if you
-		answer yes to the questions (thanks Yoav).
-
-2002-03-19  Eric Schabell <eschabell@sourcemage.org>
-
-		Added HISTORY file. The reason for rejection
-		is that this spell can install many apache
-		modules that will no longer be tracked by
-		sorcery (alien). It does work fine!

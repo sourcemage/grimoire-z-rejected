@@ -1,6 +1,7 @@
-2004-01-11  Jose Bernardo Silva <jbernardo@sourcemage.org>
+2004-01-11 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* HISTORY: converted to new format
 	* PRE_BUILD: fixed as per bug 5513
 
-2003-08-16  Geoffrey Derber <gderber@sourcemage.org>
+2003-08-16 Geoffrey Derber <gderber@sourcemage.org>
 	* ALL: Added to the grimoire
+

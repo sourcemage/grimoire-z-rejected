@@ -5,7 +5,7 @@
 2003-10-10 hgg <hgreig@bigpond.net.au>
 	* BUILD,seti-setup: add for easier first time configuration
 	* init.d/{setiathome.conf,smgl-setiathome}: add configurable nice value and extra bells and whistles 
-	to the init script, it now directs to /dev/null also as i noticed on my server it used the whole console buffer
+	  to the init script, it now directs to /dev/null also as i noticed on my server it used the whole console buffer
 	* DETAILS: update UPDATED for new script
 	* PRE_REMOVE,POST_INSTALL: removed /updated to not try to start this service after installation
 
@@ -25,7 +25,7 @@
 	* DETAILS: Modified DETAILS to fix md5 for SOURCE[0].
 
 2003-04-01 Eric Sandall <eric@sandall.us>
-	* POST_INSTALL: Mage SETI@Home team.  :)
+	* POST_INSTALL: Mage SETI@Home team. :)
 
 2003-03-31 Eric Sandall <eric@sandall.us>
 	* init.d/*: Added init script using sorcery's init.d installer
@@ -39,3 +39,4 @@
 
 2002-09-19 Eric Sandall <eric@sandall.us>
 	* ALL: Created spell
+

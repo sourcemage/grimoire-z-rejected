@@ -5,9 +5,9 @@
 	* BUILD: Added a link to libXm.so.2 so that opera works with lesstif
 
 2003-11-23 hgg<hgreig@bigpond.net.au>
-	* DETAILS: changed description, prometheus had a bug about it 
-	  asking for input during install, fixed that bug and upped UPDATED
-	* BUILD: added echo y | before install.sh for PM bug# 4761
+ * DETAILS: changed description, prometheus had a bug about it 
+ asking for input during install, fixed that bug and upped UPDATED
+ * BUILD: added echo y | before install.sh for PM bug# 4761
 
 2003-11-22 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* DETAILS: Bumped version to 7.23
@@ -24,11 +24,11 @@
 
 2003-01-23 Geoffrey Derber <gderber@sourcemage.org>
 	* PROVIDES: Added provides graphical_web_browser
-	needed for flash
+	  needed for flash
 
 2002-12-17 Geoffrey Derber <gderber@sourcemage.org>
 	* DEPENDS: Added a dependency on qt-x11 for 
-	use with the dynamic qt version.
+	  use with the dynamic qt version.
 
 2002-12-07 Geoffrey Derber <gderber@sourcemage.org>
 	* DETAILS: Version bump to 6.11, now uses qt-dynamic.
@@ -38,12 +38,12 @@
 	* PRE_BUILD: Fixed warning script problem.
 
 2002-11-08 Eric Sandall <eric@sandall.us>
-	* DETAILS: Version bump to 6.10  ( Bug # 1608)
-	Uncommented LICENSE and set correctly
-	Added US, Germany mirrors
+	* DETAILS: Version bump to 6.10 ( Bug # 1608)
+	  Uncommented LICENSE and set correctly
+	  Added US, Germany mirrors
 	* BUILD: Fixed to fail if can't change to $SOURCE_DIRECTORY
-	Changed rm to rm -f in POST_REMOVE
-	Cleaned up VERSION usage
+	  Changed rm to rm -f in POST_REMOVE
+	  Cleaned up VERSION usage
 
 2002-07-04 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: Version bump to 6.02 and added md5sum.

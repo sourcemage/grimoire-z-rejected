@@ -2,15 +2,15 @@
 	* Moved to z-rejected/z-java for licensing issues
 
 2003-10-29 Eric Sandall <eric@sandall.us>
-    * PROVIDES: Uppercase provides
+	* PROVIDES: Uppercase provides
 
 2003-10-29 Eric Sandall <eric@sandall.us>
-    * DEPENDS:  Depends on JAVA
-    * HISTORY: Formatted to Guru Handbook
+	* DEPENDS: Depends on JAVA
+	* HISTORY: Formatted to Guru Handbook
 
 2003-06-23 hgg <hgreig@bigpond.net.au>
 	* DETAILS: ARCHIVE="off" fix in bugzilla bug #1068, reverting
-	change 13315, keeping 13321
+	  change 13315, keeping 13321
 	* PREPARE: Added to remove cache after fixing bug #1068
 
 2003-03-26 Vladimir Vydra <vydra@fria.fri.utc.sk>

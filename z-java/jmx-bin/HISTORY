@@ -1,14 +1,14 @@
 2003-10-29 Eric Sandall <eric@sandall.us>
-    * DEPENDS,PROVIDES: Uppercase provides
-    * HISTORY: Formatted to Guru Handbook
+	* DEPENDS,PROVIDES: Uppercase provides
+	* HISTORY: Formatted to Guru Handbook
 
 2003-06-23 hgg <hgreig@bigpond.net.au>
 	* DETAILS: ARCHIVE="off" fix in bugzilla bug #1068, reverting
-	change 13315, keeping 13321
+	  change 13315, keeping 13321
 	* PREPARE: Added to remove cache after fixing bug #1068
 
 2003-04-02 Vladimir Vydra <vydra@fria.fri.utc.sk>
-	* Added registration of jmxtool.jar  .
+	* Added registration of jmxtool.jar .
 
 2003-03-26 Vladimir Vydra <vydra@fria.fri.utc.sk>
 	* Spell created - version summer-02_01 .
