@@ -60,7 +60,7 @@ message	"${MESSAGE_COLOR}This spell is considered ${PROBLEM_COLOR}rejected${DEFA
         message  ""  \
 	         "${MESSAGE_COLOR}You chose to stop the installation, or you let the prompt timeout. Maybe"  \
                  " you'll be braver next time?${DEFAULT_COLOR}"
-	exit
+	exit 1
       fi
    fi
 
