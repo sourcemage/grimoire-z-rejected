@@ -1,0 +1,16 @@
+           SPELL=overnetclc
+         VERSION=1.0.1
+          SOURCE=${SPELL}-${VERSION}_i386.tgz
+   SOURCE_URL[0]=http://www.zen18864.zen.co.uk/overnet/${VERSION}/${SOURCE}
+       BUILD_API=2
+	  MD5[0]=6819e2d9e16575a5f19e6e71175da047
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://ed2k-gtk-gui.sourceforge.net/
+         ENTERED=20041120
+         UPDATED=20041120
+      LICENSE[0]=GPL
+           SHORT="core binaries for ed2k-gtk-gui"
+cat << EOF
+ These 'cores' are the command line client programs that do all the downloading etc. in the background. You can then control these cores with ed2k-gtk-gui. You need either an overnet core or  an edonkey2000 core for your platform. 
+EOF
+
