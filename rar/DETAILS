@@ -1,0 +1,18 @@
+           SPELL=rar
+         VERSION=3.0
+          SOURCE=rarlinux-3.0.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://www.rarlab.com/rar/$SOURCE
+   SOURCE_URL[1]=ftp://pubftp.slovenska.sk/pub/rarsoft/rar/$SOURCE
+        WEB_SITE=http://www.rarlab.com
+         ENTERED=20020524
+         UPDATED=20020524
+      MAINTAINER=insomniac@japh.nl
+           SHORT="rar is an archiver"
+
+cat << EOF
+
+rar is an archiver.
+WARNING: rar is available as binary only.
+
+EOF
