@@ -1,3 +1,6 @@
+2004-01-02 Tony Smith <tony@smee.org>
+	* Updated for version 2003.2
+
 2003-12-14 hgg <hgreig@bigpond.net.au>
         * BUILD,p4.sh: now installs this file for setting of $P4CONFIG & P4EDITOR
 
