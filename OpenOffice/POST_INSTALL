@@ -1,0 +1,3 @@
+if [ -f /usr/include/jni_gcc.h ] ; then
+	mv /usr/include/jni_gcc.h /usr/include/jni.h
+fi
