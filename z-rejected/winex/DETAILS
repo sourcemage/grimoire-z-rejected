@@ -1,11 +1,11 @@
 	   SPELL=winex
-         VERSION=2-2-1
+         VERSION=3-1
 	  SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.winex.sourceforge.net:/cvsroot/winex:wine:winex-$VERSION
         WEB_SITE=http://sourceforge.net/projects/winex/
          ENTERED=20020412
-         UPDATED=20021116
+         UPDATED=20030706
 	  REJECT="has licensing issues"
       MAINTAINER=ashaman@flyingtemple.com
            SHORT="winex"

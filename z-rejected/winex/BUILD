@@ -1,5 +1,4 @@
 (
-patch -p1 < $SCRIPT_DIRECTORY/winex.patch	&&
 	./configure	--prefix=/opt/winex	\
 			--enable-opengl		\
 			--sysconfdir=/etc	\
