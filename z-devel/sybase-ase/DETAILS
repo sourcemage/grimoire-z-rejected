@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.sybase.com/linux/ase/
          ENTERED=20011112
          UPDATED=20011112
+          REJECT="installs developer version from rpm (binary), license/export issues"
       MAINTAINER=hvisage@envisage.co.za
 	  MD5[0]=21e681298df6114b701233e7bdd2809d
       LICENSE[0]=unknown
