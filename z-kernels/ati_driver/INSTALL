@@ -17,3 +17,9 @@ then
   cd $SOURCE_DIRECTORY/fglpanel &&
   make install
 fi
+
+chmod a+rx /usr/X11R6/lib/modules/dri/*
+chmod a+rx /usr/X11R6/lib/modules/dri
+chmod a+rx /usr/X11R6/lib/modules
+chmod a+rx /usr/X11R6/lib
+chmod a+rx /usr/X11R6

@@ -1,4 +1,7 @@
 2005-03-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* INSTALL: Permission problems with the spell which broke it
+
+2005-03-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD: Next time check if patches are still valid sandalle
 	  Only commented out the patch leav it in till next update then remove
 	* CONFIGURE: Added the REJECTED_MSG(why is this in CONFIGURE
