@@ -1,4 +1,5 @@
             SPELL=j2sdk
+        BUILD_API=2
           VERSION=1_4_2
       BIN_VERSION=1.4.1
      ZLIB_VERSION=1.1.4
@@ -28,15 +29,26 @@
        MAINTAINER=josebernardo1@yahoo.com
           ENTERED=20021130
           UPDATED=20031029
-            SHORT="j2sdk compiles Sun's j2sdk, thanks to LFS hints(http://tushar.lfsforum.org/)."
+            SHORT="j2sdk compiles Sun's j2sdk."
 
 cat << EOF
-Java 2 Platform, Standard Edition (J2SETM) software is the premier solution for rapidly developing and 
-deploying mission-critical, enterprise applications. Version 1.4.2 builds upon Java technology's 
-cross-platform support and robust security model with new features and functionality, enhanced 
-performance and scalability, and improved reliability and serviceability. 
-Don't forget to download $SOURCE & SOURCE[2,3] to $SOURCE_CACHE before casting, from 
+Java 2 Platform, Standard Edition (J2SETM) software is the premier solution for 
+rapidly developing and deploying mission-critical, enterprise applications. 
+Version 1.4.2 builds upon Java technology's cross-platform support and robust 
+security model with new features and functionality, enhanced performance and 
+scalability, and improved reliability and serviceability. 
+
+Thanks to LFS hints(http://tushar.lfsforum.org/)
+
+Don't forget to download sources :
+
+$SOURCE
+$SOURCE2
+$SOURCE3
+
+to $SOURCE_CACHE before casting, from :
+
 http://wwws.sun.com/software/java2/download.html
-(SOURCE5 is  needed only if you have a certificate from a registered provider) and
-http://java.sun.com/j2se/1.4.{1,2}/download.html (choose the linux sdk for this one).
+and
+http://java.sun.com/j2se/1.4.{1,2}/download.html (choose the linux sdk).
 EOF
