@@ -25,6 +25,16 @@
   message "${DEFAULT_COLOR}${MESSAGE_COLOR}If you want a rejected spell to" \
           "be installed or updated you must\nconfirm your decision now or" \
           "cast the spell later.${DEFAULT_COLOR}\n"
+
+	# Current sorcery versions have borked handling of rejected messages.
+	#
+	message "\n${PROBLEM_COLOR}" \
+					"Current {test|stable} sorcery does nothing with the results" \
+					"of the following query.\n\n${QUERY_COLOR} THIS SPELL WILL ALWAYS" \
+					"CAST AS IF YOU ANSWER YES TO THE QUERY!!!!!\n\n${PROBLEM_COLOR}" \
+					"Please do not file a bug, the Sorcery Team is working on fixing" \
+					"this asap.${DEFAULT_COLOR}\n"
+	
   if ! query  "CONTINUE casting?" n; then
     return 1
   fi
