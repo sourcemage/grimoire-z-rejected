@@ -1,3 +1,9 @@
+2002-10-02  Tony Smith <tony@smee.org>
+		Changed spell to use the Linux 2.4 builds as it is now one
+		of Perforce's primary build platforms. Also updated version
+		to include the build number so we can grab patch releases
+		easily.
+
 2002-05-14  Tony Smith <tony@smee.org>
 
                 First version

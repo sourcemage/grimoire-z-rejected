@@ -1,3 +1,9 @@
+2002-10-02  Tony Smith <tony@smee.org>
+
+		Changed to use Linux 2.4 build as this is now a primary build
+		platform for Perforce. Also updated version to include the
+		build number so we can grab patch builds easily.
+
 2002-09-14  Geoffrey Derber <gderber@sourcemage.org>
 
 		Added MD5/license/maintainer fields.

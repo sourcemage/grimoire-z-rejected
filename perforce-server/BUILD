@@ -1,6 +1,6 @@
 (
     groupadd perforce	2>/dev/null
-    mkdir /home/perforce
+    mkdir /home/perforce 2>/dev/null
     useradd -g perforce perforce 2>/dev/null
 
     P4_HOME=~perforce
