@@ -61,11 +61,31 @@ then
  rm -rf /opt/java/                                      &&
  mkdir -p /etc/.java					&&
  chmod a+w /etc/.java					&&
- MOZPLUG=/usr/lib/mozilla/plugins/                        &&
- mkdir -p $MOZPLUG                                        &&
- ### Second one is needed by konqueror
- ln -sf /usr/java/j2sdk/jre/plugin/i386/ns610/libjavaplugin_oji.so $MOZPLUG/libjavaplugin_oji.so &&
- ln -sf /usr/java/j2sdk/jre/plugin/i386/ns4/libjavaplugin.so $MOZPLUG/libjavaplugin.so           &&
+ PLUG=/usr/lib/mozilla/plugins/                        &&
+ if [ -d $PLUG ]; then
+ 	echo "Installing for Mozilla"
+ 	ln -sf /usr/java/j2sdk/jre/plugin/i386/ns610/libjavaplugin_oji.so $PLUG/libjavaplugin_oji.so &&
+ 	ln -sf /usr/java/j2sdk/jre/plugin/i386/ns4/libjavaplugin.so $PLUG/libjavaplugin.so
+ fi
+ FIREFOX_VERSION=$(installed_version firefox)
+ if [ "$FIREFOX_VERSION" == "cvs" ]; then
+ 	PLUG="/usr/lib/firefox-0.8.0+/plugins"
+ else
+ 	PLUG="/usr/lib/firefox-$FIREFOX_VERSION/plugins"
+ fi
+ if [ -d $PLUG ]; then
+ 	echo "Installing for firefox"
+ 	ln -sf /usr/java/j2sdk/jre/plugin/i386/ns610/libjavaplugin_oji.so $PLUG/libjavaplugin_oji.so &&
+ 	ln -sf /usr/java/j2sdk/jre/plugin/i386/ns4/libjavaplugin.so $PLUG/libjavaplugin.so
+ fi
+ echo "Installing for Konqueror"			&&
+ PLUG=/usr/lib/konqueror				&&
+ if ! [ -d $PLUG ]; then
+ 	mkdir --mode=755 $PLUG
+ 	echo "created $PLUG"
+ fi
+ ln -sf /usr/java/j2sdk/jre/plugin/i386/ns610/libjavaplugin_oji.so $PLUG/libjavaplugin_oji.so &&
+ ln -sf /usr/java/j2sdk/jre/plugin/i386/ns4/libjavaplugin.so $PLUG/libjavaplugin.so	&&
  ### now remove j2sdk-bin bootstrap compiler if installed 
  ### and change $SPELL_CONFIG to use system java on next cast
  if    spell_installed      j2sdk-bin

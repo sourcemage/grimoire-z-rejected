@@ -1,3 +1,7 @@
+2004-07-03 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* BUILD: added firefox support, cleaned up a little the whole
+	  plugin install. Still needs a little work
+
 2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE: Needs "&&" after the ask_rejected
 
@@ -69,11 +73,11 @@
 2003-01-30 Seth Woolley <seth@tautology.org>
 	* DETAILS: Modified DETAILS to correct MD5
 
-2003-01-25 Jose Bernardo Silva <josebernardo1@yahoo.com>
+2003-01-25 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* BUILD: Fixed the last small things in BUILD, including a "rm -f j2sdk" 
 	  because "ln -sf" doesn't replace existing links as it should.
 
-2003-01-19 Jose Bernardo Silva <josebernardo1@yahoo.com>
+2003-01-19 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* BUILD,DETAILS: Updated the spell to 1.4.1, according with the latest LFS hints. Fixed the "second cast only" bug.
 
 2002-12-11 Geoffrey Derber <gderber@sourcemage.org>

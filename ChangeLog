@@ -1,5 +1,6 @@
 2004-07-04 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* z-http/flash: Added firefox 0.9.1 support
+	* z-java/j2sdk: Cleaned a little the plugin install
 
 2004-06-24 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* z-utils/skype: Added
