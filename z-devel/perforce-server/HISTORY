@@ -1,3 +1,6 @@
+2004-05-03 Seth Woolley <seth@tautology.org>
+	* DETAILS: to fix md5 for SOURCE.
+
 2004-01-29  Tony Smith <tony@smee.org>
 
 		Updated to 2003.2/52835 patch release

@@ -1,3 +1,6 @@
+2004-05-03 Seth Woolley <seth@tautology.org>
+	* DETAILS: to fix md5 for SOURCE.
+
 2003-11-03 Eric Sandall <eric@sandall.us>
         * DEPENDS: Changed requires to depends, uppercase provides
         * HISTORY: Formatted to Guru Handbook
