@@ -1,0 +1,20 @@
+           SPELL=daemontools
+         VERSION=0.76
+          SOURCE=$SPELL-$VERSION.tar.gz
+       BUILD_API=2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/admin
+   SOURCE_URL[0]=http://cr.yp.to/daemontools/$SOURCE
+          MD5[0]=42fa2ba788892a8740506c5776089c76
+        WEB_SITE=http://cr.yp.to/daemontools.html
+         ENTERED=20040202
+         UPDATED=20020202
+      LICENSE[0]="http://cr.yp.to/distributors.html"
+           SHORT="collection of tools for managing UNIX services"
+cat << EOF
+daemontools is a collection of tools for managing UNIX services.
+
+supervise monitors a service. It starts the service and restarts the service if it dies. Setting up a new service is easy: all supervise needs is a directory with a run script that runs the service.
+
+multilog saves error messages to one or more logs. It optionally timestamps each line and, for each log, includes or excludes lines matching specified patterns. It automatically rotates logs to limit the amount of disk space used. If the disk fills up, it pauses and tries again, without losing any data.
+EOF
+
