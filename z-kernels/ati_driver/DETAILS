@@ -1,13 +1,13 @@
            SPELL=ati_driver
-         VERSION=8.8.25
+         VERSION=8.10.19
 if spell_ok xfree86-4.3
 then
           SOURCE=fglrx-4.3.0-${VERSION}-1.i386.rpm
-          MD5[0]=708af55227f4b5811e683f5b765587be
+          MD5[0]=211e372954856e54ed1c8806fc7ad23f
 elif spell_ok xorg
 then
           SOURCE=fglrx_6_8_0-${VERSION}-1.i386.rpm
-          MD5[0]=7a37b4edf9fad3af7f363ae10106decb
+          MD5[0]=ff43b43a0203675a312776b30d41d73f
 else
    message "${PROBLEM_COLOR}You don't have xfree-4.3 nor xorg installed.${DEFAULT_COLOR}"
    return 1
