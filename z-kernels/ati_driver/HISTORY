@@ -1,3 +1,6 @@
+2005-02-09 Eric Sandall <eric@sandall.us>
+	* CONFIGURE: Added closing parenthesis. :)
+
 2005-02-06 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: BUILD_API=2, xfree-4.3. and xorg support
 	* BUILD: patch for 2.6.10 kernel, BUILD_API2 conversion
