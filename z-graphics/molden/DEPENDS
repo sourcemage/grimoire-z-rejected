@@ -1,1 +1,1 @@
-optional_depends  GLUT  ""  ""  "needed for use with OpenGL"
+optional_depends  GLUT  "with-gl"  ""  "needed for use with OpenGL"
