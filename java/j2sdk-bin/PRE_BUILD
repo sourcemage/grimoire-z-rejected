@@ -1,0 +1,9 @@
+warn_rejected &&
+ask_continue_with_rejected &&
+
+mk_source_dir  $SOURCE_DIRECTORY      &&
+unpack  $SOURCE  ${MD5[0]}            && # md5 check only
+tail  +522     $SOURCE_CACHE/$SOURCE  |
+bzip2  -cd                            |
+tar    -xf  -
+
