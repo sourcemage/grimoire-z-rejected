@@ -1,3 +1,8 @@
+2003-09-29  Tony Smith <tony@smee.org>
+
+		Updated to 2003.1 patch release, and updated initscript to conform
+		to new simpleinit system. 
+
 2003-07-28  Tony Smith <tony@smee.org>
 
 		Updated to 2003.1 release, and tidied up the installation
