@@ -1,0 +1,12 @@
+--- j2sdk-1_4_2/hotspot/src/share/vm/runtime/classFileParser.cpp~      2004-01-08 16:15:31.940322152 +1100
++++ j2sdk-1_4_2/hotspot/src/share/vm/runtime/classFileParser.cpp       2004-01-08 16:15:38.560315760 +1100
+@@ -26,6 +26,8 @@
+ }
+
+ // Verification of class file properties
++#undef inline
++#undef __inline
+
+
+ void inline guarantee_property(bool b, const char* msg, TRAPS) {
+

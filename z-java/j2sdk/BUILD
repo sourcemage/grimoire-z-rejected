@@ -1,5 +1,6 @@
 (
 cd $SOURCE_DIRECTORY					&&
+# remove bundled motif sources and patch to use lesstif
 if echo $OPTS| grep -q lesstif
 then export ALT_MOTIF_DIR=/usr                          &&
      rm -rf $SOURCE_DIRECTORY/motif                     &&
@@ -35,7 +36,6 @@ mv adler32.c zadler32.c	                                &&
 mv crc32.c zcrc32.c                                     &&
 cd $SOURCE_DIRECTORY/j2se/make/java/zip/                &&
 sedit "s:1.1.3:${ZLIB_VERSION}:"  Makefile              &&
-
 cd $SOURCE_DIRECTORY/control/make                       &&
 devoke_installwatch                                     &&
 unset MAKE_NJOBS                                        &&
@@ -61,12 +61,13 @@ then
  rm -rf /opt/java/                                      &&
  mkdir -p /etc/.java					&&
  chmod a+w /etc/.java					&&
- POOPY=/usr/lib/mozilla/plugins/                        &&
- mkdir -p $POOPY                                        &&
+ MOZPLUG=/usr/lib/mozilla/plugins/                        &&
+ mkdir -p $MOZPLUG                                        &&
  ### Second one is needed by konqueror
- ln -sf /usr/java/j2sdk/jre/plugin/i386/ns610/libjavaplugin_oji.so $POOPY/libjavaplugin_oji.so &&
- ln -sf /usr/java/j2sdk/jre/plugin/i386/ns4/libjavaplugin.so $POOPY/libjavaplugin.so           &&
- ### now remove j2sdk-bin bootstrap compiler if installed
+ ln -sf /usr/java/j2sdk/jre/plugin/i386/ns610/libjavaplugin_oji.so $MOZPLUG/libjavaplugin_oji.so &&
+ ln -sf /usr/java/j2sdk/jre/plugin/i386/ns4/libjavaplugin.so $MOZPLUG/libjavaplugin.so           &&
+ ### now remove j2sdk-bin bootstrap compiler if installed 
+ ### and change $SPELL_CONFIG to use system java on next cast
  if    spell_installed      j2sdk-bin
   then  dispel  j2sdk-bin &&
         sedit "s/BOOTSTRAP\=spell/BOOTSTRAP\=system/g" $SPELL_CONFIG &&

@@ -1,4 +1,15 @@
-003-12-14 hgg <hgreig@bigpond.net.au>
+2004-01-09 hgg <hgreig@bigpond.net.au>
+	* j2sdk-1_4_2-kernel.patch,PRE_BUILD: add with a check for 2.6.X headers in /usr/include/linux
+	* j2sdk-1_4_2-smgl.patch: disable some deprecated Linuxthreads calls that caused problems with some gcc 
+	and glibc versions
+	* BUILD: swap POOPY for MOZPLUG
+	
+2004-01-08 hgg <hgreig@bigpond.net.au>
+	* PRE_BUILD: 2.6 kernel uses different /proc interface. check for kernel version before checking for free 
+	space bug #5486
+	* j2sdk-1_4_2-smgl.patch: fix for alsa 1.0.0rc2
+
+2003-12-14 hgg <hgreig@bigpond.net.au>
         * BUILD,java.sh: now installs this file for setting of $JAVA_HOME
 	* POST_INSTALL: deleted (see above)
 

@@ -349,7 +349,7 @@ diff -ruN java.orig/j2se/make/common/Sanity.gmk java/j2se/make/common/Sanity.gmk
 -    REQUIRED_ALSA_VERSION = ^0.9.(0(rc[56789]|rc[12][0123456789])?|[0123456789]+)$$
 +### Modified the alsa check to include 1.0.0pre...
 +### Jason Flatt <printer@sourcemage.org>
-+    REQUIRED_ALSA_VERSION = ^(0|1).(9|0).(0(rc[56789]|rc[12][0123456789]|pre[123456789])?|[0123456789]+)$$
++    REQUIRED_ALSA_VERSION = ^(0|1).(9|0).(0(rc[56789]|rc[12][0123456789]?|pre[123456789])?|[0123456789]+)$$
      # dummy program that outputs ALSA's version (created in target alsa-versioncheck)
      ALSA_VERSION_CHECK = $(TMPDIR)/alsaversioncheck
      ALSA_VERSION = `if [ -f $(ALSA_VERSION_CHECK) ] ; then $(ALSA_VERSION_CHECK) ; fi`
@@ -398,3 +398,31 @@ diff -ruN java.orig/motif/lib/Xm/util/mkmsgcat.c java/motif/lib/Xm/util/mkmsgcat
  
  char *OSF_COPYRIGHT_C = "/*\n\
   *\n\
+--- j2sdk-1_4_2/hotspot/src/os/linux/vm/os_linux.cpp~	2004-01-08 22:06:28.218281344 +1100
++++ j2sdk-1_4_2/hotspot/src/os/linux/vm/os_linux.cpp	2004-01-08 22:05:31.520900656 +1100
+@@ -582,9 +582,7 @@
+     NOT_PRODUCT(tty->print("Current thread is %p\n", pthread_self()));
+     NOT_PRODUCT(tty->print("Dumping core ...\n"));
+     ostream_exit();
+-    // 4450681 : kill all other threads before abort to make sure the 
+-    // calling thread is the one that gets dumped in core file. 
+-    pthread_kill_other_threads_np();
++    // (hgg 08012004) remove  pthread_kill_other_threads_np function call
+     ::abort(); // dump core
+   }
+   ostream_exit();
+@@ -1337,13 +1335,8 @@
+   /* Set up signal handler for suspend/resume */
+   act.sa_flags = SA_RESTART|SA_SIGINFO;
+   act.sa_handler = (void (*)(int)) SR_handler;
+-  // SR_signum is blocked by default. 
+-  // 4528190 - We also need to block pthread restart signal (32 on all
+-  // supported Linux platforms). Note that LinuxThreads need to block
+-  // this signal for all threads to work properly. So we don't have
+-  // to use hard-coded signal number when setting up the mask.
++  // (hgg 08012004) remove an assert relating to older Linuxthreads
+   pthread_sigmask(SIG_BLOCK, NULL, &act.sa_mask);
+-  assert(sigismember(&act.sa_mask, 32), "incompatible pthread library");
+   if (sigaction(SR_signum, &act, 0) == -1) {
+     return -1;
+   }
