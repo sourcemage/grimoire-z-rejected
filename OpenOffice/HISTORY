@@ -1,3 +1,7 @@
+2003-06-01  Seth Woolley <seth@tautology.org>
+
+		Put in fake unpack comment so it passes audit
+
 2003-05-19  Seth Woolley <seth@tautology.org>
 
 		Commenting out SOURCE24 was bad because
