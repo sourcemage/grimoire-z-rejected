@@ -1,3 +1,9 @@
+2005-01-05 Eric Sandall <eric@sandall.us>
+	* Applied John's patch  (Bug #7889)
+
+2004-12-27 John Harding	<johnh@kuberaconsulting.com>
+	* DETAILS: version bump to 0.93.0.3
+
 2004-11-10 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: version bump to 0_92_0_12.
 	* DETAILS: changed the file, version and directory names.
