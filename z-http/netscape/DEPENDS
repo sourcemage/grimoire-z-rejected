@@ -1,2 +1,0 @@
-depends gcc2	&&
-depends X11-LIBS
