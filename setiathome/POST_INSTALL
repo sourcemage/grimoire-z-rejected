@@ -1,3 +1,7 @@
+echo  "Don't forget to read up on joining our SETI@Home Team"
+echo  "Read more about it at /usr/doc/${SPELL}/SourceMageTeam"
+echo  "You wish to join us <sandalle waves his hand>"
+
 if  [  -x  /etc/init.d/setiathome.sh  ]
 then
   /etc/init.d/setiathome.sh  start
