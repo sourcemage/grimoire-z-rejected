@@ -1,5 +1,5 @@
            SPELL=Apachetoolbox
-         VERSION=1.5.57
+         VERSION=1.5.58
           SOURCE=${SPELL}-install-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
    SOURCE_URL[0]=http://belnet.dl.sourceforge.net/sourceforge/apachetoolbox/$SOURCE

@@ -1,3 +1,15 @@
+2002-06-23  Eric Schabell <eric@schabell.com>
+
+		Updated version due to security fix:
+	
+		"Updated mod_ssl, libpng, mysql, postgresql, php, pdflib, unixodbc,
+		openssl, mod_mp3, mod_layout, mod_perl, mcrypt, mod_fastcgi,
+		mod_python, mod_backhand, libcurl, python, mhash, freetype2, t1lib,
+		openldap, tcl, and bison. Small bugfixes were made to the following
+		new versions of software: mhash, t1libs, mod_watch, python,
+		mod_python, libmcrypt, libcurl, and pdflib. The SGI patch option was
+		removed."
+
 2002-06-19  Eric Schabell <eric@schabell.com>
 
 		Updated version to fix security bug in Apache, changed UPDATE field as
