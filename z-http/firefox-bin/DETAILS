@@ -1,5 +1,4 @@
            SPELL=firefox-bin
-       BUILD_API=2
          VERSION=0.9.3
           SOURCE=firefox-${VERSION}-i686-linux-gtk2+xft-installer.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox-installer
