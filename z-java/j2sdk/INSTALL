@@ -59,7 +59,7 @@ then
 
 	# now remove j2sdk-bin bootstrap compiler if installed 
 	#
-	if    spell_installed      j2sdk-bin
+	if    spell_ok      j2sdk-bin
   then
 		dispel  j2sdk-bin  &&
 		BOOTSTRAP=system   &&
