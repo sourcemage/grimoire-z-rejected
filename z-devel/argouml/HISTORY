@@ -1,0 +1,19 @@
+2004-10-30 Eric Sandall <eric@sandall.us>
+	* Added to devel  (Bug #5041)
+	* Made spell lower-case
+	* DETAILS: Updated to 0.16.1
+	  Removed FUZZ="off"
+	  Removed MAINTAINER
+	  Removed cookbook (SOURCE3) as it's no longer available
+	  Moved ARG_URL into SOURCE_URLs (since the docs use a different SOURCE_URL)
+	  Shortened SHORT
+	  Changed SOURCE to use .tar.gz instead of .zip
+	  Added LICENSE entries for all SOURCEs
+	  Added BUILD_API=2
+	  Added REJECT message
+	* BUILD,INSTALL: Moved BUILD to INSTALL and converted to build_api 2
+	* BUILD: Only run 'true'
+	* INSTALL: Install documentation to /usr/share/doc
+	* CONFIGURE: Converted to config_query
+	* PRE_BUILD: Check md5s of all SOURCEs
+
