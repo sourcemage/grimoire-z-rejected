@@ -3,6 +3,7 @@
 	  so that install is non-gui, install is tracked and bumped v1.1.3rc.
 	* z-editors/OpenOffice-bin: deprecated.
 	* z-devel/ghc: new spell added (haskell compiler).
+	* z-http/firefox-bin: new spell added.
 
 2004-09-18 Eric Schabell <z-rejected@sourcemage.org>
 	* z-mail/netqmail: created new section z-mail for new spell
