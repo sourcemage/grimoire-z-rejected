@@ -1,3 +1,7 @@
+2002-11-27  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Fixed a problem caused by URLs changing.
+
 2002-10-25  Geoffrey Derber <ashaman@sourcemage.org>
 
 		Fixed an issue with the PRE_BUILD warning message

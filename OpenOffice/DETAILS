@@ -2,10 +2,10 @@
          VERSION=1.0.1
           SOURCE=OOo_${VERSION}_LinuxIntel_install.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install
-   SOURCE_URL[0]=http://sf1.mirror.openoffice.org/$VERSION/$SOURCE
-   SOURCE_URL[1]=http://ny1.mirror.openoffice.org/$VERSION/$SOURCE
-   SOURCE_URL[2]=http://www.mirror.ac.uk/sites/sf1.mirror.openoffice.org/$VERSION/$SOURCE
-   SOURCE_URL[3]=ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.openoffice.org/$VERSION/$SOURCE
+   SOURCE_URL[0]=http://sf1.mirror.openoffice.org/stable/$VERSION/$SOURCE
+   SOURCE_URL[1]=http://ny1.mirror.openoffice.org/stable/$VERSION/$SOURCE
+   SOURCE_URL[2]=http://www.mirror.ac.uk/sites/sf1.mirror.openoffice.org/stable/$VERSION/$SOURCE
+   SOURCE_URL[3]=ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.openoffice.org/stable/$VERSION/$SOURCE
         WEB_SITE=http://www.openoffice.org
          ENTERED=20020713
          UPDATED=20020903
