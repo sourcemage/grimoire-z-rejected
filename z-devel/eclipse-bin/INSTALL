@@ -1,0 +1,8 @@
+# zip file has been extracted, just copy to the correct directory
+INSTALLDIR=/opt/eclipse
+
+mkdir -pv $INSTALLDIR				&&
+cp -Rv $SOURCE_DIRECTORY/* $INSTALLDIR		&&
+cp $SCRIPT_DIRECTORY/eclipse.sh /etc/profile.d/ &&
+chmod 755 /etc/profile.d/eclipse.sh
+
