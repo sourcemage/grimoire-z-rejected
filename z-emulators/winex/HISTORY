@@ -1,3 +1,8 @@
+2004-10-12 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: removed, was just default build anyway.
+	* INSTALL, CONFIGURE: cleaned up config_query_options and started
+	  to investigate for bug #7502.
+
 2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 	 Cleaned up TABs and spaces
