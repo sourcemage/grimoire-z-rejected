@@ -1,3 +1,7 @@
+2003-04-18  Seth Woolley <seth@tautology.org>
+
+		Modified DETAILS to fix md5 for SOURCE[0].
+
 2003-04-01  Eric Sandall <eric@sandall.us>
 
 		Added information about joining the Source
