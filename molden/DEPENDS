@@ -1,1 +1,0 @@
-optional_depends "glut" "" "" "needed for use with OpenGL"

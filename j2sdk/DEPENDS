@@ -1,5 +1,0 @@
-depends  zlib &&
-depends  tcsh &&
-depends  cpio &&
-depends  zip
-

@@ -1,5 +1,0 @@
-warn_rejected &&
-ask_continue_with_rejected &&
-                                                                                                                  
-mk_source_dir $SOURCE_DIRECTORY                  &&
-unpack        $SOURCE                #  ${MD5[0]}
