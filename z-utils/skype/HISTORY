@@ -1,3 +1,10 @@
+2005-02-24 John Harding <johnh@kuberaconsulting.com>
+       * DETAILS: version bump to 1.0.0.7
+       * PREPARE: Changed the message and default
+         answer to use the version that is dynamically
+         linked to QT versus the static linked version.
+         This is Skype's recommendation.
+
 2005-02-04 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* Applied John's patch  (Bug #8166)
 

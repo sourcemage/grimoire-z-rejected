@@ -1,9 +1,10 @@
 message "\n${MESSAGE_COLOR}"  \
-        "If you have the kde QT libraries installed you may use the\n"    \
-        "dynamically linked verison, if not you most likely will need\n"  \
-        "the static linked version and should take the default below."    \
-        "${DEFAULT_COLOR}\n\n"
+  "Skype requires the QT graphics libraries and recommends installing\n"  \
+  "the dynamically linked verison of skype which is the default\n"        \
+  "installation option below. If you prefer the statically linked\n"      \
+  "version of Skype, answer 'n' to the question below."                   \
+  "${DEFAULT_COLOR}\n\n"
 
-config_query QT "Build version dynamically linked to QT?" n
+config_query QT "Build version dynamically linked to QT?" y
 
 message "\n"
