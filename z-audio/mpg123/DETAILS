@@ -1,0 +1,19 @@
+           SPELL=mpg123
+         VERSION=0.59r
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.mpg123.de/$SPELL/$SOURCE
+          MD5[0]=c43f08e249832315ad1845ffc29faf6e
+        WEB_SITE=http://www.mpg123.de/
+         ENTERED=20011104
+         UPDATED=20020907
+      LICENSE[0]=UNKNOWN
+      MAINTAINER=unet@sourcemage.org
+           SHORT="mpg123 is an audio player."
+cat << EOF
+Mpg123 is a fast, free and portable MPEG audio player for Unix. It
+supports MPEG 1.0/2.0 layers 1, 2 and 3. For full CD quality playback 
+(44 kHz, 16 bit, stereo) a Pentium, SPARCstation10, DEC Alpha or
+similar CPU is required. Mono and/or reduced quality playback (22 kHz 
+or 11 kHz) is even possible on 486 CPUs.
+EOF
