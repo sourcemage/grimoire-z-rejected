@@ -1,3 +1,7 @@
+2004-05-18 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD: Removed
+	* CONFIGURE: Ask REJECTED question during configure stage
+
 2004-05-13 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: version bump to 7.50!
 
@@ -5,9 +9,9 @@
 	* BUILD: Added a link to libXm.so.2 so that opera works with lesstif
 
 2003-11-23 hgg<hgreig@bigpond.net.au>
- * DETAILS: changed description, prometheus had a bug about it 
- asking for input during install, fixed that bug and upped UPDATED
- * BUILD: added echo y | before install.sh for PM bug# 4761
+	* DETAILS: changed description, prometheus had a bug about it 
+	asking for input during install, fixed that bug and upped UPDATED
+	* BUILD: added echo y | before install.sh for PM bug# 4761
 
 2003-11-22 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* DETAILS: Bumped version to 7.23
