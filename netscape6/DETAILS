@@ -1,0 +1,14 @@
+            SPELL=netscape6
+          VERSION=6.2.3
+           SOURCE=netscape-i686-pc-linux-gnu-installer.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/netscape-installer/
+INSTALL_DIRECTORY=/usr/lib/netscape6
+    SOURCE_URL[0]=ftp://ftp.netscape.com/pub/$SPELL/english/$VERSION/unix/linux22/$SOURCE
+         WEB_SITE=http://www.netscape.com
+          ENTERED=20020529
+          UPDATED=20020529
+            SHORT="netscape 6"
+       MAINTAINER="ashaman@flyingtemple.com"
+cat << EOF
+Netscape 6 is the current netscape browser.
+EOF
