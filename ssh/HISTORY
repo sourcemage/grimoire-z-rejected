@@ -1,3 +1,7 @@
+2002-05-28  Geoffrey Derber <ashaman@flyingtemple.com>
+
+		Updated to version 3.1.2 from 3.1.0
+
 2002-04-23  Eric Schabell <eric@schabell.com>
 
                 Changed PRE_BUILD so that it does not just
