@@ -1,3 +1,8 @@
+2004-12-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Use renamed variables and the proper VERSION from PREPARE
+	* PREPARE: Use local when needed and prepend variables with SETI_
+	* DEPENDS: Optionally depends on X11-LIBS for xsetiathome
+
 2004-08-22 Eric Schabell <eschabell@sourcemage.org>
 	* PREPARE: cleaned out SPELL_CONFIG, using persistent_add now.
 
