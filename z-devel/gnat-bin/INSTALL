@@ -1,5 +1,5 @@
 mkdir  -p  ${INSTALL_ROOT}/opt/gnat               &&
-make   ins-all  ${INSTALL_ROOT}prefix=/opt/gnat   &&
+make   ins-all  prefix=${INSTALL_ROOT}/opt/gnat   &&
 mkdir  -p  ${INSTALL_ROOT}/etc/profile.d          &&
 install  -m  0644  $SCRIPT_DIRECTORY/gnat-bin.sh  \
            ${INSTALL_ROOT}/etc/profile.d
