@@ -27,6 +27,8 @@ message  "${MESSAGE_COLOR}This spell is considered ${PROBLEM_COLOR}rejected${DEF
 	 " `gaze website $SPELL`${MESSAGE_COLOR}"                                                  \
          ""  \
          " You may continue casting the spell and it will still be tracked by Sorcery."            \
+         " However, the software's installation process may have questions that need"              \
+	 " answered and/or licensing agreements that must be agreed to."                           \
 	 ""
 
 # Ask if user wants to continue anyway. (defaults to NO), unless running in UNATTEND_SAFE mode.

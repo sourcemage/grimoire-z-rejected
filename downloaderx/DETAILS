@@ -8,9 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/d4x-$VERSION
          UPDATED=20020623
 	  MD5[0]=a60b293746cc4b6d64f108bcf2bbc3ba
 #      LICENSE[0]= see 'COPYING' file in source directory'
-	  REJECT="really bogs down a site by creating many "  \
-		 "connections that block other users. Not very "  \
-		 "user friendly!"
+	  REJECT="has licensing issues"
       MAINTAINER=sandalle@yahoo.com
            SHORT='Download Accelerator for X'
 cat << EOF
