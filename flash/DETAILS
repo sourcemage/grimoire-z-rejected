@@ -4,7 +4,6 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_6_linux
    SOURCE_URL[0]=http://download.macromedia.com/pub/shockwave/flash/english/linux/6.0r69/$SOURCE
         WEB_SITE=http://www.macromedia.com
-	WEB_SITE=http://www.macromedia.com/software/flashplayer/special/beta/
          ENTERED=20020210
          UPDATED=20020430
 	  MD5[0]=b05a2e883f120e9a84221c42a2544032
