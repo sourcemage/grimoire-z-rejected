@@ -1,3 +1,8 @@
+2002-07-21  Eric Schabell <eric@schabell.com>
+
+		Added CONFLICTS file for bug #471, bxform conflicts
+		with xforms.
+
 2002-04-23  Eric Schabell <eric@schabell.com>
 
                 Changed PRE_BUILD so that it does not just
