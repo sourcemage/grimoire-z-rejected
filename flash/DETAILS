@@ -1,5 +1,5 @@
            SPELL=flash
-         VERSION=6.0beta20021120
+         VERSION=6.0beta20021204
           SOURCE=install_flash_player_6_linux.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_6_linux
    SOURCE_URL[0]=http://www.macromedia.com/software/flashplayer/special/beta/installers/linux/plugin/$SOURCE
