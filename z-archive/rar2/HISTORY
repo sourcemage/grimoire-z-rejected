@@ -1,3 +1,7 @@
+2004-05-20 Eric Sandall <eric@sandall.us>
+	* PREPARE, CONFIGURE: Renamed PREPARE to CONFIGURE to query for z-rejected
+	status at configure time.
+
 2004-01-11 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* HISTORY: converted to new format
 	* PRE_BUILD: fixed as per bug 5513
