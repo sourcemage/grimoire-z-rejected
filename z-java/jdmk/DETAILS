@@ -1,0 +1,37 @@
+	   SPELL=jdmk
+         VERSION=5.0
+     PKG_VERSION=50
+          SOURCE=${SPELL}${PKG_VERSION}_otherplatforms.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
+#http://www.sun.com/products-n-solutions/nep/software/java-dynamic/try.html
+   SOURCE_URL[0]=
+          MD5[0]=8c1e2adc7ffccda1cf2150f9a159ac92
+      LICENSE[0]=SCSL
+          REJECT="is non-source"
+	WEB_SITE=http://java.sun.com/products/jdmk/
+         ENTERED=20030326
+         UPDATED=20030326
+         ARCHIVE="off"
+      MAINTAINER=vydra@fria.fri.utc.sk
+           SHORT="The Java Dynamic Management Kit (JDMK)."
+cat << EOF
+The Java Dynamic Management Kit (Java DMK) is a Java application 
+programming interface (API) and a set of development tools for 
+designing and implementing a new generation of management 
+applications. As an implementation of the Java Management Extensions 
+(the JMXTM specification), the product provides a framework for the 
+management of Java objects through Java technology-based applications.
+
+The Java DMK provides a complete architecture for designing distributed 
+management systems. A Java technology-based solution can embed management
+intelligence into your agents, provide an abstraction of your communication
+layer, and be upgraded and extended dynamically. Your management 
+applications can also take advantage of other Java APIs such as Swing 
+components for user interfaces and the JDBCTM API for database access.
+
+In addition, the Java DMK provides a complete toolkit for the simple 
+network management protocol (SNMP), the most widespread legacy architecture
+for network and device management. This gives you the advantages of 
+developing both Java dynamic management agents and managers that can 
+interoperate with existing management systems.
+EOF

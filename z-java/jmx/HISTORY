@@ -1,0 +1,10 @@
+2003-10-29 Eric Sandall <eric@sandall.us>
+    * PROVIDES: Uppercase provides
+    * HISTORY: Formatted to Guru Handbook
+
+2003-04-02 Vladimir Vydra <vydra@fria.fri.utc.sk>
+	* Added registration of jmxtool.jar  .
+
+2003-03-26 Vladimir Vydra <vydra@fria.fri.utc.sk>
+	* Spell created - version summer-02_01 .
+

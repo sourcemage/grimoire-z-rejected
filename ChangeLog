@@ -1,3 +1,7 @@
+2004-04-12 Eric Sandall <eric@sandall.us>
+	* z-java/jaf,jms,jmx,jdmk,jndi,java_xml_pack,javamail,jdbc-optional,jta:
+	Moved from java due to licensing
+
 2004-01-29 Eric Sandall <eric@sandall.us>
 	* Moved z-video/xvid to devel grimoire video-libs/xvid
 

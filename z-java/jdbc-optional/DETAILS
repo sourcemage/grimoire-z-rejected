@@ -1,0 +1,19 @@
+           SPELL=jdbc-optional
+         VERSION=2.0
+          SOURCE=jdbc2_0-stdext.jar
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
+#http://java.sun.com/products/jdbc/download.html
+   SOURCE_URL[0]=
+          MD5[0]=f5b32e6765aa4eaa33a849414820d17f
+      LICENSE[0]=SCSL
+          REJECT="is non-source"
+	WEB_SITE=http://java.sun.com/products/jdbc/
+         ENTERED=20030326
+         UPDATED=20030326
+      MAINTAINER=vydra@fria.fri.utc.sk
+           SHORT="JDBC 2.0 Optional Package."
+cat << EOF
+Contains a compiled version (.class files) of the javax.sql 
+package. It is appropriate for inclusion in a classpath, and
+may be added to a Java 2 installation.
+EOF

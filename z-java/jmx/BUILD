@@ -1,0 +1,19 @@
+(
+
+  . $SCRIPT_DIRECTORY/../java-functions
+  
+  set_ant_env		&&
+  
+  ant  cleanall jar	&&
+  
+  cp  -f   ${SOURCE_DIRECTORY}/build/lib/jmxri.jar  ${SOURCE_DIRECTORY}/lib/jmxri.jar	&&
+  rm  -rf  ${SOURCE_DIRECTORY}/build							&&
+  rm  -rf  ${SOURCE_DIRECTORY}/old.libraries						&&
+  
+  prepare_install							&&
+  
+  extract_sun_src   ${SPELL} ${SPELL}-${VERSION}  $SOURCE_DIRECTORY	&&
+  register_sun_jar  ${SPELL}-${VERSION}/lib/jmxri.jar  	  jmxri.jar	&&
+  register_sun_jar  ${SPELL}-${VERSION}/lib/jmxtools.jar  jmxtools.jar
+    
+) > $C_FIFO 2>&1

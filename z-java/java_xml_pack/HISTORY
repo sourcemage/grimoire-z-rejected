@@ -1,0 +1,13 @@
+2003-12-14 hgg <hgreig@bigpond.net.au>
+        * BUILD: now installs a profile.d/$SPELL.sh file 
+        * POST_REMOVE: deleted (see above)
+	* DETAILS: ARCHIVE=off
+
+2003-10-29 Eric Sandall <eric@sandall.us>
+	* DEPENDS:  Depends on JAVA
+	* PROVIDES: Uppercase provides
+	* HISTORY: Formatted to Guru Handbook
+
+2003-03-26 Vladimir Vydra <vydra@fria.fri.utc.sk>
+	* Spell created - version summer-02_01 .
+
