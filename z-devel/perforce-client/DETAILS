@@ -8,6 +8,7 @@
           SOURCE=p4
          SOURCE2=p4web
          SOURCE3=p4.1
+  FORCE_DOWNLOAD=on
 if [[ "$(uname -m)" == 'x86_64' ]]; then
           P_ARCH=linux26amd64
           MD5[0]='1dc77cf2f6ee1679d3218fdb0404137a'

@@ -1,6 +1,8 @@
 2005-03-29 Sergey Lipnevich <sergey@sourcemage.org>
 	* DETAILS: make Perforce client available on AMD64;
-	  fix checksum values for x86 platform files.
+	  fix checksum values for x86 platform files;
+	  add FORCE_DOWNLOAD;
+	* FINAL: FORCE_DOWNLOAD is used instead of removing files from cache.
 
 2005-02-16 Eric Sandall <eric@sandall.us>
 	* DETAILS: p4 and p4web updated to 2004.2/75008
