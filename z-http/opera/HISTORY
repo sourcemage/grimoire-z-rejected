@@ -1,9 +1,12 @@
+2004-05-13 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: version bump to 7.50!
+
 2003-12-21 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* BUILD: Added a link to libXm.so.2 so that opera works with lesstif
 
 2003-11-23 hgg<hgreig@bigpond.net.au>
-	* DETAILS: changed description, prometheus had a bug about it asking for input during install, fixed that bug and upped 
-	UPDATED
+	* DETAILS: changed description, prometheus had a bug about it 
+	  asking for input during install, fixed that bug and upped UPDATED
 	* BUILD: added echo y | before install.sh for PM bug# 4761
 
 2003-11-22 Jose Bernardo Silva <jbernardo@sourcemage.org>
@@ -42,7 +45,7 @@
 	Changed rm to rm -f in POST_REMOVE
 	Cleaned up VERSION usage
 
-2002-07-04 Eric Schabell <eric@schabell.com>
+2002-07-04 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: Version bump to 6.02 and added md5sum.
 
 2002-06-01 Geoffrey Derber <ashaman@flyingtemple.com>
