@@ -1,5 +1,4 @@
            SPELL=sybase-doc
-       BUILD_API=2
          VERSION=11_0_3_3-6
           SOURCE=$SPELL-${VERSION}_i386.rpm
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION

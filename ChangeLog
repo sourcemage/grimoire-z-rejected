@@ -1,12 +1,8 @@
 2004-08-05 Eric Schabell <z-rejected@sourcemage.org>
-	* z-devel/cmucl-bin: api2 compliant.
-	* z-devel/perforce-api: api2 compliant.
-	* z-devel/perforce-client: api2 compliant and minor version
-	  update Rev. P4/LINUX24X86/2003.2/56831 (2004/04/09).
-	* z-devel/perforce-gui: api2 compliant.
-	* z-devel/perforce-server: api2 compliant, updated md5 for p4d.
-	* z-devel/sybase-ase: api2 compliant, added reject text to details.
-	* z-devel/sybase-doc: api2 compliant, added reject text to details.
+	* z-devel: section api2 compliant and rejected msg.
+	* z-devel/perforce-client: minor version update Rev.
+	  P4/LINUX24X86/2003.2/56831 (2004/04/09).
+	* z-devel/perforce-server: updated md5 for p4d.
 
 2004-08-03 Eric Schabell <z-rejected@sourcemage.org>
 	* z-archive: section completed for api2 and rejected msg.

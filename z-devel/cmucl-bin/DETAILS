@@ -1,5 +1,4 @@
            SPELL=cmucl-bin
-       BUILD_API=2
          VERSION=18e
           SOURCE=cmucl-$VERSION-x86-linux.tar.bz2
 	 SOURCE2=cmucl-$VERSION-x86-linux.extra.tar.bz2
