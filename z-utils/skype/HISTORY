@@ -1,5 +1,6 @@
 2004-09-16 Eric Schabell <eschabell@sourcemage.org>
-	* DETAILS: version bump to 0_91_)_12.
+	* DETAILS: version bump to 0_91_0_12.
+	* INSTALL: cleaned up symlink creation.
 
 2004-08-13 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: version bump to 0_91_0_3.
