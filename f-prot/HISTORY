@@ -1,3 +1,7 @@
+2002-11-24  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Fixed MD5 field
+
 2002-11-08  Eric Sandall <eric@sandall.us>
 
 		Applied Bug #1558 (ML's fix)

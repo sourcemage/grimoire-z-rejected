@@ -56,6 +56,6 @@ message  "${MESSAGE_COLOR}This spell is considered ${PROBLEM_COLOR}rejected${DEF
 
 mk_source_dir  $SOURCE_DIRECTORY      &&
 cd  $SOURCE_DIRECTORY                 &&
-unpack  $SOURCE
+unpack  $SOURCE ${MD5[0]}
 
     
