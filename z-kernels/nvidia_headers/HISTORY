@@ -1,3 +1,8 @@
+2005-01-28 Eric Sandall <eric@sandall.us>
+	* All of z-rejected is build_api 2 ;)
+	* BUILD: Converted to build_api 2
+	* INSTALL: Branched from BUILD
+
 2004-08-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.0-6111-pkg1
 
