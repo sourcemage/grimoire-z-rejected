@@ -1,0 +1,28 @@
+#!/bin/sh
+
+VERSION="1.68"                   &&
+LIBVERSION="4.16"                &&
+BASEDIR="${INSTALL_ROOT}/usr"    &&
+
+if [ ! -e ${BASEDIR}/share/man/man1 ]; then
+   mkdir -m 755 -p ${BASEDIR}/share/man/man1
+fi &&
+
+install -m 755 ${SOURCE_DIRECTORY}/bin/* ${BASEDIR}/bin/      &&
+install -m 444 ${SOURCE_DIRECTORY}/app-defaults/XnView.ad     \
+                       ${BASEDIR}/lib/X11/app-defaults/XnView &&
+
+if [ -e man/nview.z ]; then
+   install -m 644 ${SOURCE_DIRECTORY}/man/nview.z             \
+                       ${BASEDIR}/share/man/man1/nview.1.gz   &&
+   install -m 644 ${SOURCE_DIRECTORY}/man/xnview.z            \
+                       ${BASEDIR}/share/man/man1/xnview.1.gz
+else
+   install -m 644 ${SOURCE_DIRECTORY}/man/nview.1 man/xnview.1 \
+                       ${BASEDIR}/share/man/man1/
+fi &&
+
+install -m 755 ${SOURCE_DIRECTORY}/lib/libformat.so.${LIBVERSION} \
+                       ${BASEDIR}/lib                             &&
+rm -f ${BASEDIR}/lib/libformat.so                                 &&
+ln -s ${BASEDIR}/lib/libformat.so.${LIBVERSION} ${BASEDIR}/lib/libformat.so

@@ -1,0 +1,18 @@
+           SPELL=xnview
+         VERSION=1.68.1-x86
+          SOURCE=XnView-x86-unknown-linux2.x-static.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/XnView-1.68-x86-unknown-linux2.x-static
+   SOURCE_URL[0]=ftp://www.zoo-logique.org/${SPELL}/download/${SOURCE}
+        WEB_SITE=http://perso.wanadoo.fr/pierre.g/${SPELL}/
+         ENTERED=20040624
+         UPDATED=20040624
+          MD5[0]=c35e83d717759f6f17bfefe9f7641f04
+       BUILD_API=2
+      LICENSE[0]=UNKNOWN
+           SHORT="XnView is a tool that does many things with images"
+cat << EOF
+XnView can import and export many graphic formats, can browse through image directories giving you thumbnails, can preview images, can give slideshows and much, much more.
+EOF
+
+
+

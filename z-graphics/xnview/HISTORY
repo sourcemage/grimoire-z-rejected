@@ -1,0 +1,8 @@
+2005-02-10 Pieter Lenaerts <e-type@cwazy.co.uk>
+	* BUILD regularized
+	* DETAILS: minor corrections, LICENSE=UNKNOWN
+	* INSTALL: minor rearrangements
+	* integrated spell
+
+2004-06-20 Sam v. Herwaarden <sam@utrecht.njn.nl>
+	* DEPENDS, DETAILS, HISTORY, BUILD, INSTALL: created this spell, INSTALL based on the original install script supplied with the app
