@@ -1,0 +1,6 @@
+depends  zlib &&
+depends  tcsh &&
+depends  lesstif  &&
+depends  cpio &&
+depends  zip
+
