@@ -1,12 +1,9 @@
 (
 if [ -e /opt/gcc2/lib/libstdc++-3-libc6.2-2-2.10.0.so ]; then
-  echo "okay"
   ln -sf /opt/gcc2/lib/libstdc++-3-libc6.2-2*.so $SOURCE_DIRECTORY/libstdc++-libc6.1-1.so.2
 elif [ -e /opt/gcc2/lib/libstdc++-3-libc6.3-2-2.10.0.so ]; then
-  echo "good"
   ln -sf /opt/gcc2/lib/libstdc++-3-libc6.3-2*.so $SOURCE_DIRECTORY/libstdc++-libc6.1-1.so.2
 else
- echo "shit"
  exit 1
 fi
 cp $SCRIPT_DIRECTORY/config.ini $SOURCE_DIRECTORY
@@ -27,13 +24,11 @@ echo "#!/bin/bash" > /usr/bin/netscape
 echo "cd $INSTALL_DIRECTORY" >> /usr/bin/netscape
 echo "./netscape" >> /usr/bin/netscape
 chmod a+x /usr/bin/netscape
-if [ ! -e $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2 ]; then
 if [ -e /opt/gcc2/lib/libstdc++-3-libc6.2-2-2.10.0.so ]; then
   ln -sf /opt/gcc2/lib/libstdc++-3-libc6.2-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2
 elif [ -e /opt/gcc2/lib/libstdc++-3-libc6.3-2-2.10.0.so ]; then
   ln -sf /opt/gcc2/lib/libstdc++-3-libc6.3-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2
 else
  exit 1
-fi
 fi
 )
