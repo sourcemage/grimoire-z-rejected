@@ -1,3 +1,11 @@
+2004-08-26 Eric Schabell <z-rejected@sourcemage.org>
+	* REJECTED_MSG: updated to reflect that only stable sorcery
+	  is missing proper handling of reject messages.
+
+2004-08-24 Eric Schabell <z-rejected@sourcemage.org>
+	* z-http/opera: version bump to 7.54.
+	* z-java/j2sdk: fixed problem with version number in logs.
+
 2004-08-14 Eric Schabell <z-rejected@sourcemage.org>
 	* z-java/JAVA_WARNING: added for downloading source warning.
 	* z-java: updated all spells to use JAVA_WARNING.
