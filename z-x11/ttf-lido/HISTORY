@@ -1,0 +1,6 @@
+2004-04-26 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* Added to z-rejected
+
+2004-03-30 Vladimir Navrat <vn158@seznam.cz>
+	* BUILD, DEPENDS, DETAILS, HISTORY,
+	  POST_INSTAL, POST_REMOVE, PRE_BUILD: Spell created
