@@ -1,6 +1,6 @@
 diff -ruN java.orig/control/make/common/Defs-linux.gmk java/control/make/common/Defs-linux.gmk
---- java.orig/control/make/common/Defs-linux.gmk	2003-09-11 11:39:24.000000000 +1000
-+++ java/control/make/common/Defs-linux.gmk	2003-10-24 18:40:39.000000000 +1000
+--- java.orig/control/make/common/Defs-linux.gmk	2003-09-11 03:39:24.000000000 +0200
++++ java/control/make/common/Defs-linux.gmk	2003-11-23 18:11:20.000000000 +0100
 @@ -50,50 +50,53 @@
  # non-standard locations
  #
@@ -97,8 +97,8 @@ diff -ruN java.orig/control/make/common/Defs-linux.gmk java/control/make/common/
  
  
 diff -ruN java.orig/deploy/make/common/Defs-linux.gmk java/deploy/make/common/Defs-linux.gmk
---- java.orig/deploy/make/common/Defs-linux.gmk	2003-09-11 11:57:23.000000000 +1000
-+++ java/deploy/make/common/Defs-linux.gmk	2003-10-24 15:20:04.000000000 +1000
+--- java.orig/deploy/make/common/Defs-linux.gmk	2003-09-11 03:57:23.000000000 +0200
++++ java/deploy/make/common/Defs-linux.gmk	2003-11-23 18:11:20.000000000 +0100
 @@ -7,9 +7,12 @@
  # these are specific to Linux (RH6.1)
  include $(CONTROL_TOPDIR)/make/common/Defs-linux.gmk
@@ -113,9 +113,83 @@ diff -ruN java.orig/deploy/make/common/Defs-linux.gmk java/deploy/make/common/De
  EXEDIR         = $(OUTPUTDIR)/bin
  JUMP_EXE       = $(PROTO_DIR)/javawsbin$(SUFFIX)
  CLASSPATH_SEP  = $(CLASSPATH_SEPARATOR)
+diff -ruN java.orig/hotspot/src/cpu/i486/vm/i486.ad java/hotspot/src/cpu/i486/vm/i486.ad
+--- java.orig/hotspot/src/cpu/i486/vm/i486.ad	2003-09-11 03:40:13.000000000 +0200
++++ java/hotspot/src/cpu/i486/vm/i486.ad	2003-11-23 18:11:20.000000000 +0100
+@@ -230,18 +230,22 @@
+ // These masks are used to provide 128-bit aligned bitmasks to the XMM
+ // instructions, to allow sign-masking or sign-bit flipping.  They allow
+ // fast versions of NegF/NegD and AbsF/AbsD.
+-static jlong float_signmask_pool[3] =  {0x7FFFFFFF7FFFFFFF,
+-                                        0x7FFFFFFF7FFFFFFF,
+-                                        0x7FFFFFFF7FFFFFFF};
+-static jlong double_signmask_pool[3] = {0x7FFFFFFFFFFFFFFF,
+-                                        0x7FFFFFFFFFFFFFFF,
+-                                        0x7FFFFFFFFFFFFFFF};
+-static jlong float_signflip_pool[3] =  {0x8000000080000000,
+-                                        0x8000000080000000,
+-                                        0x8000000080000000};
+-static jlong double_signflip_pool[3] = {0x8000000000000000,
+-                                        0x8000000000000000,
+-                                        0x8000000000000000};
++
++// I had to specifically tell gcc3.3.X this was a long long
++// hgg <games@sourcemage.org>
++
++static jlong float_signmask_pool[3] =  {0x7FFFFFFF7FFFFFFFLL,
++                                        0x7FFFFFFF7FFFFFFFLL,
++                                        0x7FFFFFFF7FFFFFFFLL};
++static jlong double_signmask_pool[3] = {0x7FFFFFFFFFFFFFFFLL,
++                                        0x7FFFFFFFFFFFFFFFLL,
++                                        0x7FFFFFFFFFFFFFFFLL};
++static jlong float_signflip_pool[3] =  {0x8000000080000000LL,
++                                        0x8000000080000000LL,
++                                        0x8000000080000000LL};
++static jlong double_signflip_pool[3] = {0x8000000000000000LL,
++                                        0x8000000000000000LL,
++                                        0x8000000000000000LL};
+ 
+ // !!!!! Special hack to get all type of calls to specify the byte offset
+ //       from the start of the call to the point where the return address
+diff -ruN java.orig/hotspot/src/os_cpu/linux_i486/vm/atomic_linux_i486.inline.hpp java/hotspot/src/os_cpu/linux_i486/vm/atomic_linux_i486.inline.hpp
+--- java.orig/hotspot/src/os_cpu/linux_i486/vm/atomic_linux_i486.inline.hpp	2003-09-11 03:40:30.000000000 +0200
++++ java/hotspot/src/os_cpu/linux_i486/vm/atomic_linux_i486.inline.hpp	2003-11-23 18:11:20.000000000 +0100
+@@ -49,7 +49,7 @@
+   jlong old_value;
+   __asm__ volatile (  "pushl %%ebx;mov 4+%1,%%ecx;mov %1,%%ebx;lock;cmpxchg8b (%3);popl %%ebx"
+                     : "=A" (old_value)
+-                    : "o" (exchange_value), "A" (compare_value), "r" (dest)
++                    : "m" (exchange_value), "A" (compare_value), "r" (dest)
+                     : "%ebx", "%ecx", "memory");
+   return old_value;
+ }
+diff -ruN java.orig/hotspot/src/share/vm/runtime/jvmdiInterfaceSupport.hpp java/hotspot/src/share/vm/runtime/jvmdiInterfaceSupport.hpp
+--- java.orig/hotspot/src/share/vm/runtime/jvmdiInterfaceSupport.hpp	2003-09-11 03:41:55.000000000 +0200
++++ java/hotspot/src/share/vm/runtime/jvmdiInterfaceSupport.hpp	2003-11-23 18:11:20.000000000 +0100
+@@ -24,7 +24,7 @@
+   result_type JNICALL methodName signature {                                         \
+     JavaThread* thread = (JavaThread*) ThreadLocalStorage::thread();                 \
+     TransitionClass __tiv(thread);                                                   \
+-    __ENTRY(result_type, methodName##signature, thread)                              \
++    __ENTRY(result_type, methodName signature, thread)                              \
+     debug_only(VMNativeEntryWrapper __vew;)                                          \
+     debug_only(const char* const _jvmdi_methodName_ = #methodName;)                  \
+     debug_only(bool  _trace_ = trace; );                                             \
+diff -ruN java.orig/hotspot/src/share/vm/runtime/mutexLocker.cpp java/hotspot/src/share/vm/runtime/mutexLocker.cpp
+--- java.orig/hotspot/src/share/vm/runtime/mutexLocker.cpp	2003-09-11 03:41:55.000000000 +0200
++++ java/hotspot/src/share/vm/runtime/mutexLocker.cpp	2003-11-23 18:11:20.000000000 +0100
+@@ -98,7 +98,7 @@
+ #endif
+ 
+ #define def(var, type, pri, vm_block) \
+-  var = new type(Mutex::##pri, #var, vm_block)
++  var = new type(Mutex::pri, #var, vm_block)
+ 
+ void mutex_init() {  
+   def(Event_lock                   , Mutex  , event,       true ); // allow to lock in VM
 diff -ruN java.orig/install/make/common/Defs-linux.gmk java/install/make/common/Defs-linux.gmk
---- java.orig/install/make/common/Defs-linux.gmk	2003-09-11 11:56:33.000000000 +1000
-+++ java/install/make/common/Defs-linux.gmk	2003-10-24 15:22:46.000000000 +1000
+--- java.orig/install/make/common/Defs-linux.gmk	2003-09-11 03:56:33.000000000 +0200
++++ java/install/make/common/Defs-linux.gmk	2003-11-23 18:11:20.000000000 +0100
 @@ -9,8 +9,11 @@
  
  include $(CONTROL_TOPDIR)/make/common/Defs-linux.gmk
@@ -130,9 +204,16 @@ diff -ruN java.orig/install/make/common/Defs-linux.gmk java/install/make/common/
  # the temporary input tar file that rpm will consume
  JRE_RPM_TARFILE         = $(JRE_TEMPORARY_DIR).tar
 diff -ruN java.orig/j2se/make/common/Defs-linux.gmk java/j2se/make/common/Defs-linux.gmk
---- java.orig/j2se/make/common/Defs-linux.gmk	2003-09-11 11:42:56.000000000 +1000
-+++ java/j2se/make/common/Defs-linux.gmk	2003-10-24 18:39:45.000000000 +1000
-@@ -29,9 +29,12 @@
+--- java.orig/j2se/make/common/Defs-linux.gmk	2003-09-11 03:42:56.000000000 +0200
++++ java/j2se/make/common/Defs-linux.gmk	2003-11-23 18:11:20.000000000 +0100
+@@ -23,15 +23,18 @@
+ #   LINTFLAGS     (set $(OTHER_LINTFLAGS) instead)
+ 
+ # statically link libstdc++ before C++ ABI is stablized on Linux
+-STATIC_CXX     = true
++#STATIC_CXX     = true
+ 
+ # define these to avoid picking up ones from aliases or from
  # non-standard locations
  #
  
@@ -237,120 +318,9 @@ diff -ruN java.orig/j2se/make/common/Defs-linux.gmk java/j2se/make/common/Defs-l
  ZIPEXE         = $(USRBIN_PATH)zip
  
  
-diff -ruN java.orig/j2se/make/common/Sanity.gmk java/j2se/make/common/Sanity.gmk
---- java.orig/j2se/make/common/Sanity.gmk	2003-09-11 11:42:57.000000000 +1000
-+++ java/j2se/make/common/Sanity.gmk	2003-10-24 18:39:04.000000000 +1000
-@@ -38,7 +38,9 @@
-   ifeq ($(ARCH_DATA_MODEL), 32)
-     REQUIRED_RH_VER = 6.1
-     REQUIRED_OS_VER = 2.2.*
--    REQUIRED_GCC_VER = 2.91.*
-+### required version is the one we are using
-+### hgg <games@sourcemage.org>
-+    REQUIRED_GCC_VER = $(shell $(CC) -dumpversion)
-     # ALSA 0.9.0rc5 and above
-     REQUIRED_ALSA_VERSION = ^0.9.(0(rc[56789]|rc[12][0123456789])?|[0123456789]+)$$
-     # dummy program that outputs ALSA's version (created in target alsa-versioncheck)
-@@ -47,7 +49,9 @@
-   else
-     REQUIRED_RH_VER = 7.2
-     REQUIRED_OS_VER = 2.4.*
--    REQUIRED_GCC_VER = 2.9[56789].*
-+### required version is the one we are using
-+### hgg <games@sourcemage.org>
-+    REQUIRED_GCC_VER = $(shell $(CC) -dumpversion)
-   endif
- endif
- 
-@@ -79,9 +83,12 @@
-   LINK_VER := $(shell $(LINK) | $(HEAD) -n 1 | $(NAWK) '{print $$6}')
- endif
- 
-+### Something is wrong with the regular check
-+### hgg <games@sourcemage.org>
-+
- REQUIRED_ZIP_VER = 2.[23456789]
- 
--ZIP_VER := $(shell $(ZIPEXE) -help | $(HEAD) -n 4 | $(NAWK) '{if ($$1 == "Zip") print $$2;}')
-+ZIP_VER := $(shell $(ZIPEXE) -help | $(HEAD) -n 3 | $(SED) '1,2d' | $(NAWK) '{if ($$1 -eq "Zip") print $$2;}')
- 
- JAVA_VERSION := $(shell $(BOOTDIR)/bin/java$(EXE_SUFFIX) -version 2>&1  | $(NAWK) -F'"' '{ print $$2 }')
- 
---- j2sdk-1_4_2/hotspot/src/cpu/i486/vm/i486.ad.orig	2003-10-25 18:35:08.000000000 +1000
-+++ j2sdk-1_4_2/hotspot/src/cpu/i486/vm/i486.ad	2003-10-25 18:40:06.000000000 +1000
-@@ -230,18 +230,22 @@
- // These masks are used to provide 128-bit aligned bitmasks to the XMM
- // instructions, to allow sign-masking or sign-bit flipping.  They allow
- // fast versions of NegF/NegD and AbsF/AbsD.
--static jlong float_signmask_pool[3] =  {0x7FFFFFFF7FFFFFFF,
--                                        0x7FFFFFFF7FFFFFFF,
--                                        0x7FFFFFFF7FFFFFFF};
--static jlong double_signmask_pool[3] = {0x7FFFFFFFFFFFFFFF,
--                                        0x7FFFFFFFFFFFFFFF,
--                                        0x7FFFFFFFFFFFFFFF};
--static jlong float_signflip_pool[3] =  {0x8000000080000000,
--                                        0x8000000080000000,
--                                        0x8000000080000000};
--static jlong double_signflip_pool[3] = {0x8000000000000000,
--                                        0x8000000000000000,
--                                        0x8000000000000000};
-+
-+// I had to specifically tell gcc3.3.X this was a long long
-+// hgg <games@sourcemage.org>
-+
-+static jlong float_signmask_pool[3] =  {0x7FFFFFFF7FFFFFFFLL,
-+                                        0x7FFFFFFF7FFFFFFFLL,
-+                                        0x7FFFFFFF7FFFFFFFLL};
-+static jlong double_signmask_pool[3] = {0x7FFFFFFFFFFFFFFFLL,
-+                                        0x7FFFFFFFFFFFFFFFLL,
-+                                        0x7FFFFFFFFFFFFFFFLL};
-+static jlong float_signflip_pool[3] =  {0x8000000080000000LL,
-+                                        0x8000000080000000LL,
-+                                        0x8000000080000000LL};
-+static jlong double_signflip_pool[3] = {0x8000000000000000LL,
-+                                        0x8000000000000000LL,
-+                                        0x8000000000000000LL};
- 
- // !!!!! Special hack to get all type of calls to specify the byte offset
- //       from the start of the call to the point where the return address
-diff -ruN java.orig/hotspot/src/share/vm/runtime/jvmdiInterfaceSupport.hpp java/hotspot/src/share/vm/runtime/jvmdiInterfaceSupport.hpp
---- java.orig/hotspot/src/share/vm/runtime/jvmdiInterfaceSupport.hpp	2003-09-11 11:41:55.000000000 +1000
-+++ java/hotspot/src/share/vm/runtime/jvmdiInterfaceSupport.hpp	2003-10-25 20:06:52.000000000 +1000
-@@ -24,7 +24,7 @@
-   result_type JNICALL methodName signature {                                         \
-     JavaThread* thread = (JavaThread*) ThreadLocalStorage::thread();                 \
-     TransitionClass __tiv(thread);                                                   \
--    __ENTRY(result_type, methodName##signature, thread)                              \
-+    __ENTRY(result_type, methodName signature, thread)                              \
-     debug_only(VMNativeEntryWrapper __vew;)                                          \
-     debug_only(const char* const _jvmdi_methodName_ = #methodName;)                  \
-     debug_only(bool  _trace_ = trace; );                                             \
-diff -ruN java.orig/hotspot/src/share/vm/runtime/mutexLocker.cpp java/hotspot/src/share/vm/runtime/mutexLocker.cpp
---- java.orig/hotspot/src/share/vm/runtime/mutexLocker.cpp	2003-09-11 11:41:55.000000000 +1000
-+++ java/hotspot/src/share/vm/runtime/mutexLocker.cpp	2003-10-25 20:06:52.000000000 +1000
-@@ -98,7 +98,7 @@
- #endif
- 
- #define def(var, type, pri, vm_block) \
--  var = new type(Mutex::##pri, #var, vm_block)
-+  var = new type(Mutex::pri, #var, vm_block)
- 
- void mutex_init() {  
-   def(Event_lock                   , Mutex  , event,       true ); // allow to lock in VM
-diff -ruN java.orig/j2se/make/common/Defs-linux.gmk java/j2se/make/common/Defs-linux.gmk
---- java.orig/j2se/make/common/Defs-linux.gmk	2003-09-11 11:42:56.000000000 +1000
-+++ java/j2se/make/common/Defs-linux.gmk	2003-10-25 22:11:35.000000000 +1000
-@@ -23,7 +23,7 @@
- #   LINTFLAGS     (set $(OTHER_LINTFLAGS) instead)
- 
- # statically link libstdc++ before C++ ABI is stablized on Linux
--STATIC_CXX     = true
-+#STATIC_CXX     = true
- 
- # define these to avoid picking up ones from aliases or from
- # non-standard locations
---- java.orig/j2se/make/common/Release.gmk	2003-09-11 11:42:57.000000000 +1000
-+++ java/j2se/make/common/Release.gmk	2003-10-25 22:45:21.000000000 +1000
+diff -ruN java.orig/j2se/make/common/Release.gmk java/j2se/make/common/Release.gmk
+--- java.orig/j2se/make/common/Release.gmk	2003-09-11 03:42:57.000000000 +0200
++++ java/j2se/make/common/Release.gmk	2003-11-23 18:11:20.000000000 +0100
 @@ -156,8 +156,11 @@
  image-jre image-jdk image-jdk-debug \
  compare-image-jre compare-image-jdk ::
@@ -364,9 +334,52 @@ diff -ruN java.orig/j2se/make/common/Defs-linux.gmk java/j2se/make/common/Defs-l
  
  #
  # Sources we ship in the SDK.
-diff -ru java.orig/motif/lib/Xm/util/mkmsgcat.c java/motif/lib/Xm/util/mkmsgcat.c
---- java.orig/motif/lib/Xm/util/mkmsgcat.c	2002-09-06 17:06:06.000000000 +1000
-+++ java/motif/lib/Xm/util/mkmsgcat.c	2003-05-26 17:13:38.000000000 +1000
+diff -ruN java.orig/j2se/make/common/Sanity.gmk java/j2se/make/common/Sanity.gmk
+--- java.orig/j2se/make/common/Sanity.gmk	2003-09-11 03:42:57.000000000 +0200
++++ java/j2se/make/common/Sanity.gmk	2003-11-23 18:14:15.000000000 +0100
+@@ -38,16 +38,22 @@
+   ifeq ($(ARCH_DATA_MODEL), 32)
+     REQUIRED_RH_VER = 6.1
+     REQUIRED_OS_VER = 2.2.*
+-    REQUIRED_GCC_VER = 2.91.*
++### required version is the one we are using
++### hgg <games@sourcemage.org>
++    REQUIRED_GCC_VER = $(shell $(CC) -dumpversion)
+     # ALSA 0.9.0rc5 and above
+-    REQUIRED_ALSA_VERSION = ^0.9.(0(rc[56789]|rc[12][0123456789])?|[0123456789]+)$$
++### Modified the alsa check to include 1.0.0pre...
++### Jason Flatt <printer@sourcemage.org>
++    REQUIRED_ALSA_VERSION = ^(0|1).(9|0).(0(rc[56789]|rc[12][0123456789]|pre[123456789])?|[0123456789]+)$$
+     # dummy program that outputs ALSA's version (created in target alsa-versioncheck)
+     ALSA_VERSION_CHECK = $(TMPDIR)/alsaversioncheck
+     ALSA_VERSION = `if [ -f $(ALSA_VERSION_CHECK) ] ; then $(ALSA_VERSION_CHECK) ; fi`
+   else
+     REQUIRED_RH_VER = 7.2
+     REQUIRED_OS_VER = 2.4.*
+-    REQUIRED_GCC_VER = 2.9[56789].*
++### required version is the one we are using
++### hgg <games@sourcemage.org>
++    REQUIRED_GCC_VER = $(shell $(CC) -dumpversion)
+   endif
+ endif
+ 
+@@ -79,9 +85,12 @@
+   LINK_VER := $(shell $(LINK) | $(HEAD) -n 1 | $(NAWK) '{print $$6}')
+ endif
+ 
++### Something is wrong with the regular check
++### hgg <games@sourcemage.org>
++
+ REQUIRED_ZIP_VER = 2.[23456789]
+ 
+-ZIP_VER := $(shell $(ZIPEXE) -help | $(HEAD) -n 4 | $(NAWK) '{if ($$1 == "Zip") print $$2;}')
++ZIP_VER := $(shell $(ZIPEXE) -help | $(HEAD) -n 3 | $(SED) '1,2d' | $(NAWK) '{if ($$1 -eq "Zip") print $$2;}')
+ 
+ JAVA_VERSION := $(shell $(BOOTDIR)/bin/java$(EXE_SUFFIX) -version 2>&1  | $(NAWK) -F'"' '{ print $$2 }')
+ 
+diff -ruN java.orig/motif/lib/Xm/util/mkmsgcat.c java/motif/lib/Xm/util/mkmsgcat.c
+--- java.orig/motif/lib/Xm/util/mkmsgcat.c	2003-09-11 03:42:33.000000000 +0200
++++ java/motif/lib/Xm/util/mkmsgcat.c	2003-11-23 18:11:20.000000000 +0100
 @@ -14,7 +14,7 @@
  #include <string.h>
  char buf[1024];
@@ -385,15 +398,3 @@ diff -ru java.orig/motif/lib/Xm/util/mkmsgcat.c java/motif/lib/Xm/util/mkmsgcat.
  
  char *OSF_COPYRIGHT_C = "/*\n\
   *\n\
-diff -Naur java.orig/hotspot/src/os_cpu/linux_i486/vm/atomic_linux_i486.inline.hpp java/hotspot/src/os_cpu/linux_i486/vm/atomic_linux_i486.inline.hpp
---- java.orig/hotspot/src/os_cpu/linux_i486/vm/atomic_linux_i486.inline.hpp	2003-09-11 01:40:30.000000000 +0000
-+++ java/hotspot/src/os_cpu/linux_i486/vm/atomic_linux_i486.inline.hpp	2003-10-19 17:41:48.000000000 +0000
-@@ -49,7 +49,7 @@
-   jlong old_value;
-   __asm__ volatile (  "pushl %%ebx;mov 4+%1,%%ecx;mov %1,%%ebx;lock;cmpxchg8b (%3);popl %%ebx"
-                     : "=A" (old_value)
--                    : "o" (exchange_value), "A" (compare_value), "r" (dest)
-+                    : "m" (exchange_value), "A" (compare_value), "r" (dest)
-                     : "%ebx", "%ecx", "memory");
-   return old_value;
- }

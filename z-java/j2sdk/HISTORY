@@ -1,3 +1,6 @@
+2003-11-25 hgg < hgreig@bigpond.net.au>
+	* j2sdk-1_4_2-smgl.patch: update by Jason for new alsa version check
+
 2003-11-22 hgg <hgreig@bigpond.net.au>
 	* BUILD: remove the "df" I had for debugging
 
