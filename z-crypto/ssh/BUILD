@@ -1,24 +1,17 @@
-(
-
-  case $SSH1 in
+case $SSH1 in
 	y|Y) OPTS="$OPTS  --with-ssh-agent1-compat"
 	;;
 	*)   OPTS="$OPTS  --without-ssh-agent1-compat"
 	;;
-  esac
+esac
   
-  case $XFREE86 in
+case $XFREE86 in
 	y|Y) OPTS="$OPTS -with-x"
 	;;
-  esac
+esac
 
-
-  ./configure  --prefix=/usr          \
-               --sysconfdir=/etc/ssh2 \
-               --enable-efence        \
-               $OPTS                  &&
-  make                                &&
-  prepare_install                     &&
-  make    install
-
-) > $C_FIFO 2>&1
+./configure  --prefix=/usr          \
+             --sysconfdir=/etc/ssh2 \
+             --enable-efence        \
+             $OPTS                  &&
+make                                &&

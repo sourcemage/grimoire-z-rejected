@@ -10,3 +10,7 @@ if spell_installed xfree86;
 	else echo "XFREE86=n" >> $SPELL_CONFIG
 	fi
 fi
+
+# Standard rejected warnings.
+#
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG

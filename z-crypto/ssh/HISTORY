@@ -1,3 +1,8 @@
+2004-08-03 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: modified for api2.
+	* CONFIGURE: updated to use grimoire rejected message.
+	* PREPARE: removed.
+
 2003-09-16 Eric Sandall <eric@sandall.us>
 	* Added conflicts to lsh
 
