@@ -1,0 +1,11 @@
+warn_rejected &&
+ask_continue_with_rejected &&
+    
+mk_source_dir	$SOURCE_DIRECTORY &&
+unpack $SOURCE ${MD5[0]} &&
+FILENAME=`guess_filename $SOURCE_CACHE/$SOURCE` &&
+cp $FILENAME $SOURCE_DIRECTORY &&
+
+unpack $SOURCE2 ${MD5[1]} &&
+FILENAME=`guess_filename $SOURCE_CACHE/$SOURCE2` &&
+cp $FILENAME $SOURCE_DIRECTORY

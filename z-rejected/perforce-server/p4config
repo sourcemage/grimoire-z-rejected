@@ -1,0 +1,3 @@
+P4PORT=1666
+P4USER=perforce
+P4CLIENT=perforce-default

@@ -1,0 +1,22 @@
+           SPELL=gaim-cvs
+         VERSION=`date +%Y%m%d`
+          SOURCE=$SPELL.tar.bz2
+	 SOURCE2=gaim-e.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/gaim:gaim
+  SOURCE2_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/gaim-e:gaim-e
+        WEB_SITE=http://gaim.sourceforge.net
+      MAINTAINER=
+         ENTERED=20021213
+         UPDATED=20030402
+	NO_CACHE="--cache=off"
+	  MD5[0]="IGNORE"
+	  MD5[1]="IGNORE"
+      LICENSE[0]=GPL
+           SHORT="gaim is an instant messanger client for several protocols"
+cat << EOF
+gaim is an instant messanger client used primarly for the AIM protocol
+but has plugin support for icq, irc, yahoo, and jabber all at once
+in one interface.
+This is the 'nightly' tarball version, created for a gtk+2 version.  The tarball is actually updated at 12:00 noon est time.
+EOF

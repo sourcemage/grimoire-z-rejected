@@ -1,0 +1,48 @@
+2003-05-15  Seth Woolley <seth@tautology.org>
+
+		Added unpacks to PRE_BUILD for SOURCE,2
+
+2003-04-19  Seth Woolley <seth@tautology.org>
+
+		Modified DETAILS to fix md5 for SOURCE2.
+		Modified DETAILS to fix md5 for SOURCE.
+
+2003-02-27  Seth Woolley <seth@tautology.org>
+
+		Fixed MD5s (will fix PRE_BUILD later)
+
+2003-02-17  Sergey Lipnevich <sergeyli@pisem.net>
+
+		Added option not to collect documentation.
+
+2003-02-12  Tony Smith <tony@smee.org>
+		
+		Updated to 2002.2 again now that the build problems have
+		been resolved and new builds have been posted.
+
+2003-01-30  Seth Woolley <seth@tautology.org>
+
+		Modified DETAILS to correct MD5
+
+2003-01-29  Tony Smith <tony@smee.org>
+
+		Reverted to 2002.1 due to glibc 2.3 compatibility issues
+		with the current 2002.2 Linux builds.
+
+2003-01-06  Tony Smith <tony@smee.org>
+
+		Updated to new release 2002.2
+		Fixed typo that was causing p4web not to download properly
+		Remove source cache files after build because the filenames
+		don't contain the version so they were being erroneously
+		re-used.
+
+2002-10-02  Tony Smith <tony@smee.org>
+		Changed spell to use the Linux 2.4 builds as it is now one
+		of Perforce's primary build platforms. Also updated version
+		to include the build number so we can grab patch releases
+		easily.
+
+2002-05-14  Tony Smith <tony@smee.org>
+
+                First version

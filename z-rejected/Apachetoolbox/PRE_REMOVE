@@ -1,0 +1,4 @@
+if  [  -x  /etc/init.d/apache.sh  ]
+then
+  /etc/init.d/apache.sh  stop
+fi

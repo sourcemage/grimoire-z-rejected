@@ -1,0 +1,25 @@
+2002-11-16  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Completely rewrote the spell to use sorcery's
+		cvs downloading, and tarring.
+
+		Removed DEPENDS because having a 'depends cvs' was
+		only necissary when the spell required cvs for
+		downloading.  It was done to ensure that people
+		could download winex, since sorcery does this, and
+		sorcery depends one cvs, this is redundancy.
+
+2002-10-25  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Realized HISTORY File was missing.
+		Fixed a PRE_BUILD bug.
+		Updated the VERSION field to force a rebuild
+		so that it references the updated glibc.
+
+2002-06-20  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Added to the grimoire
+
+2002-04-12  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Created original spell

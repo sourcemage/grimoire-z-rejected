@@ -1,0 +1,2 @@
+conflicts openssh &&
+conflicts Linux-PAM

@@ -1,0 +1,7 @@
+warn_rejected &&
+ask_continue_with_rejected &&
+
+mk_source_dir  $SOURCE_DIRECTORY      &&
+cd             $BUILD_DIRECTORY       &&
+unpack $SOURCE ${MD5[0]}              &&
+tar  xf        $SOURCE_CACHE/$SOURCE

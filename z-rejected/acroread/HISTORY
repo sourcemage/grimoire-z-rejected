@@ -1,0 +1,16 @@
+2002-11-24  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Modified the prebuild unpack line to pass
+		the md5sum argument to unpack.
+
+2002-09-02  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Updated to version 5.0.6.
+		Added MD5 sum field.
+		Added License Field.
+		Deleted CONFLICTS file.
+
+2002-07-09  Zoran Constantinescu <zoran@idi.ntnu.no>
+
+		Created spell.
+

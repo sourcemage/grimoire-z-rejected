@@ -1,0 +1,2 @@
+default_post_build  &&
+opt/sybase/install/sybinstall.sh

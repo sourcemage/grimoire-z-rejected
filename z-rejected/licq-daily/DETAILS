@@ -1,0 +1,26 @@
+           SPELL=licq-daily
+         VERSION=`date +%Y%m%d`
+          SOURCE=$SPELL.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/licq-`date +%Y%m%d`
+   SOURCE_URL[0]=http://www.rhrk.uni-kl.de/~dmuell/licq/$SOURCE
+        WEB_SITE=http://www.licq.org
+         ENTERED=20020217
+         UPDATED=`date +%Y%m%d`
+        NO_CACHE="--cache=off"
+           SHORT="This is the daily CVS extracted version of Licq"
+	  MD5[0]="IGNORE"
+      LICENSE[0]=GPL
+      MAINTAINER=anders@bruun-olsen.net
+cat << EOF
+Licq includes all the basic features of ICQ, like sending/receiving
+messages, chat, file transfer, contact list with pixmaps and user
+status, basic/extended user info, adding/editing users from within
+the GUI, user history, user groups, and new user registration. All
+commands and information are available through a simple and
+convenient tab dialog. Licq also has a completely configurable user
+interface with Skin and Icon pack support. It is written in C++ and
+comes with a GUI plugin using the Qt widget set. Other plugins are
+also available.
+Please note that this is the development version - don't expect it
+to work flawlessly!
+EOF

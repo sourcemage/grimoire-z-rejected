@@ -1,0 +1,16 @@
+           SPELL=xvid
+         VERSION=0.9.1
+          SOURCE=${SPELL}core-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}core-$VERSION
+   SOURCE_URL[0]=http://files.xvid.org/downloads/$SOURCE
+        WEB_SITE=http://www.xvid.org/
+          MD5[0]=67aa6e143e8610a255f316c2c3871142
+      LICENSE[0]=GPL
+          REJECT="distribution in USA and Japan is forbidden"
+         ENTERED=20021026
+         UPDATED=20021026
+      MAINTAINER=v.merkatz@gmx.net
+           SHORT="xvid video codec"
+cat << EOF
+XviD is an ISO MPEG-4 compliant video codec. It's no product, it's an open source project which is developed and maintained by lots of people from all over the world.
+EOF

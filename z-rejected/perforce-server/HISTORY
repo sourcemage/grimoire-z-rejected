@@ -1,0 +1,57 @@
+2003-05-15  Seth Woolley <seth@tautology.org>
+
+		Added unpack to PRE_BUILD for SOURCE
+
+2003-04-19  Seth Woolley <seth@tautology.org>
+
+		Modified DETAILS to fix md5 for SOURCE.
+
+2003-03-31  Eric Sandall <eric@sandall.us>
+
+		Updated to use sorcery's init.d installer
+
+		Updated PRE_REMOVE to only run the script
+		if it's executable
+
+2003-02-27  Seth Woolley <seth@tautology.org>
+
+		Fixed MD5 (will fix PRE_BUILD later)
+
+2003-02-12  Tony Smith <tony@smee.org>
+
+		Back up to 2002.2 now that new fixed builds have been
+		posted.
+
+2003-01-30  Seth Woolley <seth@tautology.org>
+
+		Modified DETAILS to correct MD5
+
+2003-01-29  Tony Smith <tony@smee.org>
+		Reverted to 2002.1 as there are problems with glibc 2.3
+		compatibility at the moment due to build changes.
+
+2003-01-06  Tony Smith <tony@smee.org>
+
+		Updated to new release 2002.2.
+		Also made it delete the source cached p4d file as sorcery
+		wants to re-use it because the filename does not contain the
+		version number. Better to download again than use the wrong
+		file.
+
+2002-10-02  Tony Smith <tony@smee.org>
+
+		Changed to use Linux 2.4 build as this is now a primary build
+		platform for Perforce. Also updated version to include the
+		build number so we can grab patch builds easily.
+
+2002-09-14  Geoffrey Derber <gderber@sourcemage.org>
+
+		Added MD5/license/maintainer fields.
+
+2002-09-07  Geoffrey Derber <gderber@sourcemage.org>
+
+		Changed PRE_BUILD file
+
+2002-05-14  Tony Smith <tony@smee.org>
+
+                First version

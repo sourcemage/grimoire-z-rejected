@@ -1,0 +1,80 @@
+2003-06-01  Seth Woolley <seth@tautology.org>
+
+		Put in fake unpack comment so it passes audit
+
+2003-05-19  Seth Woolley <seth@tautology.org>
+
+		Commenting out SOURCE24 was bad because
+		SOURCE25 was not downloaded :(
+
+2003-05-15  Seth Woolley <seth@tautology.org>
+
+		Messed with PRE_BUILD to get it to validate with MD5s
+		commented out SOURCE24 in DETAILS
+
+2003-05-09  Eric Sandall <eric@sandall.us>
+
+		Updated to use db-4.1 patch
+
+2003-04-18  Seth Woolley <seth@tautology.org>
+
+		Modified DETAILS to insert md5 for SOURCE25.
+		...
+		Modified DETAILS to insert md5 for SOURCE3.
+
+2003-03-10  Jose Bernardo Silva <josebernardo1@yahoo.com>
+
+		Updated for OpenOffice 1.0.2
+		Added a dialog to choose the localization of help files
+
+2003-02-01  Jose Bernardo Silva <josebernardo1@yahoo.com>
+
+		Added checks for bison version, and X access.
+		Releasing it to the devel grimoire at last.
+
+2003-01-28  Jose Bernardo Silva <josebernardo1@yahoo.com>
+
+		Added the bison compatibility patches.
+
+2002-12-10  Geoffrey Derber <gderber@sourcemage.org>
+
+		Spell completely rewriten.  Is now a source
+		based spell.
+
+2002-11-27  Geoffrey Derber <gderber@sourcemage.org>
+
+		Fixed a problem caused by URLs changing.
+
+2002-10-25  Geoffrey Derber <gderber@sourcemage.org>
+
+		Fixed an issue with the PRE_BUILD warning message
+
+2002-07-21  Eric Schabell <eric@schabell.com>
+
+		* Tested and added spell with updated HISTORY, new 
+		  PRE_INSTALL warning messages and updated DETAILS with
+		  download size warning.
+
+2002-07-13  Chris Brien <christopher_brien@hotmail.com>
+
+
+  		* After spending weeks attempting to build OpenOffice, I 
+		  decided to just go get the binary. This spell is heading 
+		  straight to z-rejected. 
+
+2002-05-01  Eric Sandall <sandalle@yahoo.com>
+
+
+		* Applied patches (except for gcc3 related) located at 
+		  http://www.linux-debian.de/openoffice/, thanks to Yoav 
+		  Avitzour <avitzour@princeton.edu> for pointing me here.
+
+2002-03-06  Eric Sandall <sandalle@yahoo.com>
+
+		* Modified DETAILS (finally figured this out ;) to have 
+		  gpc as SOURCE2, rather than creating a whole other spell 
+		  for 2 header files that just need to be copied for OpenOffice.
+
+		* Found that if I have an "_" in my SOURCE (and probably any others), 
+		  I must use the escape sequence "\" before it for it to read 
+		  (e.g.  SOURCE=oo_$VERSION_src.tar.bz2 -> SOURCE=oo\_$VERSION\_src.tar.bz2)
