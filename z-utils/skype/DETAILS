@@ -1,23 +1,23 @@
-           SPELL=skype
-         VERSION=0_92_0_2
-if [ "$QT" == "y" ]; then
-  # dynamic version.
-  SOURCE=${SPELL}_ver-${VERSION}.tar.bz2
-  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver-${VERSION}
-  MD5[0]='6655a91450553d3b442d82a9743d0efe'
+             SPELL=skype
+           VERSION=0.92.0.12
+if       [ "$QT" == "y" ]; then
+# dynamic version.
+            SOURCE=${SPELL}-${VERSION}.tar.bz2
+  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
+            MD5[0]='d925576d9fcb48e223790b5f8bc690c5'
 else
-  # static version.
-  SOURCE=${SPELL}_ver-${VERSION}-staticQT.tar.bz2
-  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver-${VERSION}-staticQT
-  MD5[0]='ad83c18eb7243531256444d6b88eb0fc '
+# static version.
+            SOURCE=${SPELL}_staticQT-${VERSION}.tar.bz2
+  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_staticQT-${VERSION}
+            MD5[0]='ddb41cb0098f41761f89c4b9e9dc0eb7'
 fi
-        WEB_SITE=http://www.skype.com/
-    SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
-      LICENSE[0]=http://www.skype.com/eula.html
-         ENTERED=20040624
-         UPDATED=20040725
-	        REJECT="has licensing issues"
-           SHORT="Easy, free, working voice over IP (voip) Linux client."
+          WEB_SITE=http://www.skype.com/
+     SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
+        LICENSE[0]=http://www.skype.com/eula.html
+           ENTERED=20040624
+           UPDATED=20041110
+	    REJECT="has licensing issues"
+             SHORT="Easy, free, working voice over IP (voip) Linux client."
 cat << EOF
 Skype is free and simple software that will enable you to make free calls
 anywhere in the world in minutes. Skype, created by the people who brought you
