@@ -1,6 +1,11 @@
 # tarball has been extracted, just copy to the correct directory.
 INSTALLDIR=/opt/firefox-installer
 
+#
+# Create generic symlink for plug-ins
+#
+ln  -sf  $INSTALLDIR  /usr/lib/firefox  &&
+
 mkdir -pv $INSTALLDIR                            &&
 cp -Rv $SOURCE_DIRECTORY/* $INSTALLDIR           &&
 cp $SCRIPT_DIRECTORY/firefox.sh /etc/profile.d/ 

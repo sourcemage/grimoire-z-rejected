@@ -20,7 +20,7 @@ case $FIREFOX in
 		if [ "$FIREFOX_VERSION" == "cvs" ]; then
 			FIREFOX_DIR="/usr/lib/firefox-0.8.0+"
 		else
-			FIREFOX_DIR="/usr/lib/firefox-$FIREFOX_VERSION"
+			FIREFOX_DIR="/usr/lib/firefox"
 		fi
 		if [ -d $FIREFOX_DIR/plugins ]; then
 	                message "${MESSAGE_COLOR}Installing for firefox${DEFAULT_COLOR}\n"

@@ -1,3 +1,7 @@
+2004-10-22 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated UPDATED
+	* INSTALL: Create generic /usr/lib/firefox for plug-ins
+
 2004-09-22 Eric Schabell <eschabell@sourcemage.org>
 	* ALL: added spell.
 

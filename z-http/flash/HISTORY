@@ -1,3 +1,6 @@
+2004-10-22 Eric Sandall <eric@sandall.us>
+	* INSTALL: Use generic /usr/lib/firefox for firefox plug-in
+
 2004-08-22 Eric Schabell <eschabell@sourcemage.org>
 	* CONFIGURE: updated to remove SPELL_CONFIG usage, now
 	  using persistent_save.
