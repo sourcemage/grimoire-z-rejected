@@ -11,8 +11,13 @@ function configure_optional() {
   grep -q "${2#--}" $SPELL_CONFIG
 }
  
-warn_rejected               &&
-ask_continue_with_rejected  &&
+message "\n${PROBLEM_COLOR} Currently only able to provide cvs development version as\n"  \
+        "transgaming.org cvs is only allowing a checkout of this branch..."  \
+        "${DEFAULT_COLOR}\n"
+
+# Standard rejected warnings.
+#
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG
 
 configure_optional	'debug'		'--enable-debug'	'--disable-debug' 	'Compile in all debugging message?' n
 configure_optional	'trace'		'--enable-trace'	'--disable-trace' 	'Compile in TRACE messages?' n
@@ -23,3 +28,4 @@ configure_optional	'xshm'		'--enable-xshm'		'--disable-xshm' 	'Use X shared memo
 configure_optional	'sdltest'	'--enable-sdltest'	'--disable-sdltest' 	'Compile and run a test SDL test program?' n
 
 echo "OPTS=\"\$OPTS --enable-pthreads --program-suffix=x --with-x\"" >> $SPELL_CONFIG
+

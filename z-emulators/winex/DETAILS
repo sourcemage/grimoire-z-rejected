@@ -1,9 +1,10 @@
-	   SPELL=winex
-         VERSION=${VERSION:-3.3.2}
-	   DLVER=${DLVER:-3.3.2}
-	  SOURCE=$SPELL-${VERSION}.tar.bz2
+	         SPELL=winex
+           BUILD_API=2
+         VERSION=${VERSION:=HEAD}
+	         DLVER=${DLVER:=HEAD}
+	        SOURCE=$SPELL-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION%-*}
-   SOURCE_URL[0]=cvs://:pserver:cvs:cvs@cvs.transgaming.org:/cvsroot:winex:$DLVER
+   SOURCE_URL[0]=cvs://:pserver:cvs:cvs@cvs.transgaming.org:/cvsroot:winex:${DLVER}
         WEB_SITE=http://www.transgaming.com/sources.php
          ENTERED=20020412
          UPDATED=20040205

@@ -1,0 +1,10 @@
+prepare_install						&&
+make install							&&
+
+cp tools/winex /usr/bin/	&&
+
+#	if [ ! -f /usr/bin/winex ]; then
+#		ln -s /opt/winex/bin/wine /usr/bin/winex
+#	fi
+
+ldconfig

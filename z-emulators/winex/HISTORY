@@ -1,3 +1,11 @@
+2004-08-02 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: seems only HEAD is avail for downloading... so modified version.
+	* INSTALL: added, provides api2.
+	* BUILD: modified for api2.
+	* WIP: removed, useless.
+	* PREPARE: commented out but left for when versions are allowed again.
+	* CONFIGURE: adjusted to use griomires rejected messages.
+
 2004-07-18 Eric Schabell <eschabell@sourcemage.org>
 	* winex.patch, BUILD: removed usage of old patch, need someone to 
 	  test the results as it builds fine here on i686, bug #4757.
