@@ -1,3 +1,6 @@
+2004-10-06 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: updated v1.1.3.
+
 2004-09-22 Eric Schabell <eschabell@sourcemage.org>
 	* PREPARE, POST_REMOVE: removed, everything is now tracked.
 	* DETAILS: updated to v1.1.3rc, changed spell name to openoffice-bin.
