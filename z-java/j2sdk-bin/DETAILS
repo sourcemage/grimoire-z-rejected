@@ -29,7 +29,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/j2sdk$VER
          UPDATED=20030215
          ARCHIVE="off"
           REJECT="is non-source"
-       BUILD_API=2
            SHORT="j2sdk-bin is the Java Software Development Kit"
 cat << EOF
 The Java 2 Standard Edition (J2SE) is a feature-complete development and
