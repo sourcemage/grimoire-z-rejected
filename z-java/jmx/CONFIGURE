@@ -2,7 +2,7 @@
 #
 message "\n${MESSAGE_COLOR}" \
         "For this spell you have to download the sources yourself from the Sun Website, see\n\n" \
-        "${PROBLEM_COLOR}'gaze what jmx'${MESSAGE_COLOR}\n\n" \
+        "${PROBLEM_COLOR}'gaze what ${SPELL}'${MESSAGE_COLOR}\n\n" \
         "for the files and location. Put the downloaded files in /var/spool/sorcery \n" \
         "so cast will find it.${DEFAULT_COLOR}\n"
 
