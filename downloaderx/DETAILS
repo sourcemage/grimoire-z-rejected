@@ -1,11 +1,16 @@
            SPELL=downloaderx
-         VERSION=2.02
+         VERSION=2.03
           SOURCE=d4x-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/d4x-$VERSION
    SOURCE_URL[0]=http://www.krasu.ru/soft/chuchelo/files/$SOURCE
         WEB_SITE=http://www.krasu.ru/soft/chuchelo/
          ENTERED=20020201
          UPDATED=20020623
+	  MD5[0]=a60b293746cc4b6d64f108bcf2bbc3ba
+      LICENSE[0]=
+	  REJECT="really bogs down a site by creating many "  \
+		 "connections that block other users. Not very "  \
+		 "user friendly!"
       MAINTAINER=sandalle@yahoo.com
            SHORT='Download Accelerator for X'
 cat << EOF

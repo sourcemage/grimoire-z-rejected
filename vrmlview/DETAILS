@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.sim.no
          ENTERED=20020629
          UPDATED=20020629
+	  REJECT="has licensing issues"
            SHORT="VRML viewer"
 cat << EOF
 VRMLview is a VRML viewer. It has full support for VRML 1.0 

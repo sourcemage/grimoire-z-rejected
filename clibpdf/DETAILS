@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/ClibPDF
          ENTERED=20020203
          UPDATED=20020203
       MAINTAINER="jacksonje@health.missouri.edu"
+	  REJECT="has licensing issues"
            SHORT="ClibPDF is a library for creating PDF files in C programs."
 cat << EOF
 ClibPDF is a library of ANSI C functions, distributed as source code, for 

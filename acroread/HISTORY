@@ -1,3 +1,10 @@
+2002-09-02  Geoffrey Derber <ashaman@flyingtemple.com>
+
+		Updated to version 5.0.6.
+		Added MD5 sum field.
+		Added License Field.
+		Deleted CONFLICTS file.
+
 2002-07-09  Zoran Constantinescu <zoran@idi.ntnu.no>
 
 		Created spell.

@@ -6,6 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SOURCE-$VERSION
         WEB_SITE=http://www.perforce.com
          ENTERED=20020514
          UPDATED=20020514
+	  REJECT="is non-source and has licensing issues"
            SHORT="Perforce server"
 cat << EOF
 Perforce is a fast, reliable SCM system that runs on over 50 platforms. This

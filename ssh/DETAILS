@@ -8,8 +8,10 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.ssh.com
          ENTERED=20020125
          UPDATED=20020528
-           SHORT="sshd2 is a secure remote admin suite"
+	  MD5[0]=bbc63ab4a7f56cd63a7fb68d44ad739c
+      LICENSE[0]=http://www.ssh.com/products/ssh/ssh_license_agreement.cfm
       MAINTAINER=glenniii@utexas.edu
+           SHORT="sshd2 is a secure remote admin suite"
 cat << EOF
 sshd2 - secure remote admin suite
 Provides remote shell, sftp, and scp using encrypted protocols.

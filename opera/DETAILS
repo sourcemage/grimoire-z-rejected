@@ -1,12 +1,14 @@
             SPELL=opera
-          VERSION=6.02-20020701.1
+          VERSION=6.03-20020813.1
            SOURCE=${SPELL}-$VERSION-static-qt.i386.tar.bz2
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION-static-qt.i386 
-    SOURCE_URL[0]=ftp://ftp.opera.com/pub/opera/linux/602/final/en/qt_static/$SOURCE
+    SOURCE_URL[0]=ftp://ftp.opera.com/pub/opera/linux/603/final/en/qt_static/$SOURCE
          WEB_SITE=http://www.opera.com
-              MD5=3e2679ff4bbe6a17f5ab33db72020596
+           MD5[0]=aa8ebc7d5edf4c47f56ed72725f10f80
+#       LICENCE[0]= unknown
           ENTERED=20020530
           UPDATED=20020530
+	   REJECT="is non-source and has licensing issues"
             SHORT="Opera is a small quick qt based browser"
        MAINTAINER="Andrew Stitt <afryaedknot@yahoo.com>"
 cat << EOF

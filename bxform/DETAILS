@@ -4,8 +4,9 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/xforms
    SOURCE_URL[0]=ftp://ftp.fu-berlin.de/unix/X11/gui/xforms/linux-i386/elf/$SOURCE
         WEB_SITE=http://world.std.com/~xforms/
-         ENTERED=
-         UPDATED=
+         ENTERED=20020903
+         UPDATED=20020903
+	  REJECT="is non-source"
       MAINTAINER=fkb@iago.polito.it
            SHORT="The XForms GUI toolkit"
 cat << EOF

@@ -4,8 +4,11 @@
         WEB_SITE=http://sourceforge.net/projects/winex/
          ENTERED=20020412
          UPDATED=20020426
+	  REJECT="has licensing issues, and because it downloads from CVS, it is impossible for the MD5 checksum to work"
       MAINTAINER=ashaman@flyingtemple.com
            SHORT="winex"
+#	  MD5[0]= unable to md5sum because of its CVS nature.
+      LICENSE[0]="http://www.cs.wisc.edu/~ghost/doc/AFPL/7.04/Public.htm"
 cat << EOF
 winex is a modified version of wine, specifically optimized towards games.
 EOF
