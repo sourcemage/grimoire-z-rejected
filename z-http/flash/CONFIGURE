@@ -1,3 +1,6 @@
+warn_rejected &&
+ask_continue_with_rejected &&
+
 echo "Flash works with the following programs:"
 echo "Mozilla"
 echo "Konquerer"

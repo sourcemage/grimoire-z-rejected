@@ -1,3 +1,8 @@
+2003-08-22  Geoffrey Derber <gderber@sourcemage.org>
+
+		moved z-rejected warning messages
+		to CONFIGURE from PRE_BUILD
+
 2002-07-21  Eric Schabell <eric@schabell.com>
 
 		Added CONFLICTS file for bug #471, bxform conflicts

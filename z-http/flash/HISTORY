@@ -1,3 +1,8 @@
+2003-08-22  Geoffrey Derber <gderber@sourcemage.org>
+
+		moved z-rejected warning messages
+		to CONFIGURE from PRE_BUILD
+
 2003-06-25  Eric Schabell <eschabell@sourcemage.org>
 
 		Fixed small text error in BUILD file, in Konqueror

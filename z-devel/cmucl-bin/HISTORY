@@ -1,3 +1,8 @@
+2003-08-22  Geoffrey Derber <gderber@sourcemage.org>
+
+		moved z-rejected warning messages
+		to CONFIGURE from PRE_BUILD
+
 2003-04-13  Geoffrey Derber <gderber@sourcemage.org>
 
 		Updated to version 18e
