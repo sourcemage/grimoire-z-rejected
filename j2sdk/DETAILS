@@ -1,0 +1,20 @@
+           SPELL=j2sdk
+         VERSION=1.3.1-02b
+          SOURCE=$SPELL-$VERSION-FCS-linux-i386.bin
+      SOURCE_URI=JDK-${VERSION%-*}/i386/FCS-${VERSION#*-}/$SOURCE
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL${VERSION%-*}
+   SOURCE_URL[0]=ftp://ftp.gwdg.de/pub/languages/java/linux/$SOURCE_URI
+   SOURCE_URL[1]=ftp://ftp.tux.org/java/$SOURCE_URI
+        WEB_SITE=http://www.blackdown.org/java-linux/java2-status
+         ENTERED=20010922
+         UPDATED=20020501
+         ARCHIVE="off"
+           SHORT="j2sdk is Blackdown port of Sun's Java virtual machine."
+cat << EOF
+The Java 2 Standard Edition (J2SE) is a feature-complete development and
+deployment platform. Blackdown provides both a SDK (J2SDK, formerly
+known as JDK) and a runtime environment (J2RE) for Linux on various
+architectures (ix86, Sparc, PPC, S/390, ARM, m68k). Both the J2SDK and
+the J2RE contain the Java Plug-In for Netscape 4.x and Mozilla/Netscape
+6.x.
+EOF
