@@ -1,3 +1,7 @@
+2004-08-20 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: updated to version 1.5.70, note 1.5.71 sources
+	  are missing the install.sh needed to build software.
+
 2004-08-08 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD: modified for api2.
 	* INSTALL: added for api2.
