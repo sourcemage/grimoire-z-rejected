@@ -1,6 +1,7 @@
             SPELL=opera
-          VERSION=6.10-20021029.1-static-qt.i386
-           SOURCE=${SPELL}-${VERSION}.tar.bz2
+          VERSION=6.10
+	 VERSION2=20021029.1
+           SOURCE=${SPELL}-${VERSION}-${VERSION2}-static-qt.i386.tar.bz2
  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
     SOURCE_URL[0]=ftp://ftp.opera.com/pub/opera/linux/610/final/en/i386/static/${SOURCE}
     SOURCE_URL[1]=http://www.panix.com/opera/files/linux/610/final/en/i386/static/${SOURCE}
