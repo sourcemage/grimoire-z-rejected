@@ -1,0 +1,16 @@
+           SPELL=cern_root
+         VERSION=4.00.08 
+       BUILD_API=2
+          SOURCE=root\_v$VERSION.source.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/root
+   SOURCE_URL[0]=ftp://root.cern.ch/root/$SOURCE
+        WEB_SITE=http://root.cern.ch
+         ENTERED=20040713
+         UPDATED=20040716 
+          MD5[0]=1283df343b569d366a5149eac36abaa1
+      LICENSE[0]=http://root.cern.ch/root/License.html
+           SHORT="Root is an object oriented data analysis framework
+	   created by CERN physicists."
+cat << EOF
+The ROOT system provides a set of OO frameworks with all the functionality needed to handle and analyse large amounts of data in a very efficient way. Having the data defined as a set of objects, specialised storage methods are used to get direct access to the separate attributes of the selected objects, without having to touch the bulk of the data. Included are histograming methods in 1, 2 and 3 dimensions, curve fitting, function evaluation, minimisation, graphics and visualization classes to allow the easy setup of an analysis system that can query and process the data interactively or in batch mode.
+EOF

@@ -1,0 +1,11 @@
+#copied and adapted from setiathome spell
+
+get_architecture()  {
+    persistent_add ARK
+    ARK=`cat ${SCRIPT_DIRECTORY}/architectures`
+    ARK=`dialog  --backtitle "Root Configuration Menu" \
+                  --stdout                              \
+                  --title "Select architecture please"  \
+                  --menu "" 0  0  0 ${ARK}`
+}
+get_architecture 

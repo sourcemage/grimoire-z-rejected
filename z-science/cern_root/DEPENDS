@@ -1,0 +1,2 @@
+depends glibc &&
+depends X11-LIBS
