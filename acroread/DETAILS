@@ -1,0 +1,17 @@
+            SPELL=acroread
+          VERSION=5.0.5
+           SOURCE=linux-505.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/acroread-$VERSION
+INSTALL_DIRECTORY=/usr/lib/acroread
+    SOURCE_URL[0]=http://download.adobe.com/pub/adobe/acrobatreader/unix/5.x/$SOURCE
+         WEB_SITE=http://www.adobe.com/products/acrobat/readermain.html
+          ENTERED=20020709
+          UPDATED=20020709
+       MAINTAINER=zoran@idi.ntnu.no
+            SHORT="software for viewing and printing Adobe PDF files"
+cat << EOF
+Adobe® Acrobat® Reader® is free software that lets you 
+view and print Adobe Portable Document Format (PDF) 
+files on all major computer platforms, as well as 
+fill in and submit Adobe PDF forms online. 
+EOF
