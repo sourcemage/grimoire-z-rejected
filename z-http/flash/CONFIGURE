@@ -3,6 +3,7 @@ ask_continue_with_rejected &&
 
 echo "Flash works with the following programs:"
 echo "Mozilla"
+echo "firefox"
 echo "Konquerer"
 echo "Opera"
 echo "Netscape (not version 4.x)"
@@ -19,13 +20,23 @@ if  [  -x  /usr/bin/mozilla  ];  then
 	fi
 fi
 
-if spell_installed kdebase ; then
-	if ! grep -q "KDEBASE=" $SPELL_CONFIG; then
-		if query "Do you wish to install the plugin for Konquerer?" y
-			then echo "KDEBASE=y" >> $SPELL_CONFIG
-			else echo "KDEBASE=n" >> $SPELL_CONFIG
+if spell_installed firefox; then
+#if [  -x  /usr/bin/firefox  ];  then
+	if ! grep -q "FIREFOX=" $SPELL_CONFIG; then
+		if query "Do you wish to install the plugin for firefox (CVS, for regular use mozilla) ?" y
+			then echo "FIREFOX=y" >> $SPELL_CONFIG
+			else echo "FIREFOX=n" >> $SPELL_CONFIG
 		fi
 	fi
+fi
+
+if spell_installed kdebase ; then
+       if ! grep -q "KDEBASE=" $SPELL_CONFIG; then
+               if query "Do you wish to install the plugin for Konqueror?" y
+                        then echo "KDEBASE=y" >> $SPELL_CONFIG
+                        else echo "KDEBASE=n" >> $SPELL_CONFIG
+               fi
+       fi
 fi
 
 if spell_installed opera ; then

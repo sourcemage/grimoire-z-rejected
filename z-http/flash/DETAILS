@@ -1,15 +1,17 @@
            SPELL=flash
-         VERSION=6.0r79
-          SOURCE=install_flash_player_6_linux.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_6_linux
-   SOURCE_URL[0]=http://download.macromedia.com/pub/shockwave/flash/english/linux/$VERSION/$SOURCE
-          MD5[0]=cf7a52df5005f4174f7bb88d0f1d0a31
+         VERSION=7.0r25
+          SOURCE=install_flash_player_7_linux.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux
+   SOURCE_URL[0]=http://fpdownload.macromedia.com/get/shockwave/flash/english/linux/$VERSION/$SOURCE
+          MD5[0]=3df1d5ecee6ca53b83372aa9023e15dd
         WEB_SITE=http://www.macromedia.com
-         ENTERED=20020210
-         UPDATED=20020430
-      LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
+         ENTERED=20020319
+         UPDATED=20040529
+      LICENSE[0]=http://www.macromedia.com/shockwave/download/license
+/desktop/
           REJECT="is non-source and has licensing issues"
-           SHORT="Macromedia Flash Plugin for Konq and Mozilla Web Browsers"
+           SHORT="Macromedia Flash Plugin v7 for Konq and Mozilla Web
+ Browsers"                                                          
 cat << EOF
-Macromedia Flash Plugin for Konq and Mozilla Web Browsers
+Macromedia Flash Plugin version 7 for Konqueror and Mozilla Web Browsers
 EOF

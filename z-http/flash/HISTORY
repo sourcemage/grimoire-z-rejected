@@ -1,3 +1,16 @@
+2004-05-30 Jose Bernardo Silva <jbernardo@sourcemage.org>
+        * all: updated as per bug 6932 (thank Remy!)
+
+2004-05-29 Remy Soete <doobie@lavache.com>
+	* DETAILS: updated to version 7.0r25
+	Updated SOURCE* and MD5
+	* CONFIGURE
+	Added support for firefox
+	Modified support to Konqueror
+	* BUILD
+	Added support for firefox
+        Modified support to Konqueror
+
 2004-05-20 Eric Sandall <eric@sandall.us>
 	* DETAILS: md5sum changed again
 	Removed MAINTAINER
