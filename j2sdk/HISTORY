@@ -1,3 +1,7 @@
+2003-01-30  Seth Woolley <seth@tautology.org>
+
+		Modified DETAILS to correct MD5
+
 2003-01-25  Jose Bernardo Silva <josebernardo1@yahoo.com>
 
 		Fixed the last small things in BUILD, including
