@@ -1,5 +1,4 @@
 	         SPELL=rar2
-       BUILD_API=2
          VERSION=271
           SOURCE=rarlnx${VERSION}.sfx.bin
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/rar

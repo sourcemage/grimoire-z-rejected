@@ -1,3 +1,9 @@
+2004-08-03 Eric Schabell <z-rejected@sourcemage.org>
+	* z-archive: section completed for api2 and rejected msg.
+	
+2004-08-02 Eric Schabell <z-rejected@sourcemage.org>
+	* z-emulator: section completed for api2 and rejected msg.
+
 2004-07-28 Eric Schabell <z-rejected@sourcemage.org>
 	* z-java/j2sdk-bin: clean-up, fixed bugs #7183, #7139.
 	* REJECTED_MSG: moved the sorcery lib rejected message here for
