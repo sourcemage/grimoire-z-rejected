@@ -1,3 +1,9 @@
+2004-08-05 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD, DETAILS: updated for api2.
+	* INSTALL, FINAL: added for api2.
+	* POST_BUILD: branched to final for api2 compliance.
+	* CONFIGURE: updated to use grimoire rejected message.
+
 2003-10-29 Eric Sandall <eric@sandall.us>
 	* PROVIDES: Provides LISP
 
