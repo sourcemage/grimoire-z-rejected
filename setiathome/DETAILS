@@ -1,8 +1,9 @@
+[ -f $CONFIG_CACHE/${SPELL}.config] && . ${CONFIG_CACHE}/${SPELL}.config || true
            SPELL=setiathome
          VERSION=3.03
           SOURCE=${SPELL}-${VERSION}.${ARK}.tar
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}.${ARK}
-   SOURCE_URL[0]=ftp://ftp.cdrom.com/pub/${SPELL}/${SOURCE}
+   SOURCE_URL[0]=http://wcarchive.cdrom.com/pub/${SPELL}/${SOURCE}
    SOURCE_URL[1]=ftp://alien.ssl.berkeley.edu/pub/${SOURCE}
           MD5[0]=${PREPARE_MD5}
         WEB_SITE=http://setiathome.ssl.berkeley.edu/

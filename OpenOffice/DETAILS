@@ -67,4 +67,4 @@ cat << EOF
 OpenOffice.org is the Open Source project through which Sun Microsystems is releasing the technology for the popular StarOffice productivity suite.
 EOF
 
-[ -f $CONFIG_CACHE/oo.languages ] && . $CONFIG_CACHE/oo.languages
+[ -f $CONFIG_CACHE/oo.languages ] && . $CONFIG_CACHE/oo.languages || true
