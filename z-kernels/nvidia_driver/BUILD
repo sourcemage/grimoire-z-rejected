@@ -1,9 +1,10 @@
 patch  -p1  <  ${SCRIPT_DIRECTORY}/NVIDIA_glx-1.0.6106-defines.patch   &&
 patch  -p0  <  ${SCRIPT_DIRECTORY}/NVIDIA_glx-1.0.6106-glheader.patch  &&
 
-#RUNNING_KERNEL=$(uname --release)
-#if  [ ${RUNNING_KERNEL%-*} == "2.6.9" ];  then
-#  patch  -p1  <  ${SCRIPT_DIRECTORY}/linux-2.6.9.patch
+RUNNING_KERNEL=$(uname --release)
+if  [ ${RUNNING_KERNEL%-*} == "2.6.11" ];  then
+  patch  -p0  <  ${SCRIPT_DIRECTORY}/NVIDIA_kernel-1.0-6629-1201042.diff.txt
+fi &&
 #elif  [  ${RUNNING_KERNEL}  =  "2.6.8.1"  ];  then
 #  patch  -p1  <  ${SCRIPT_DIRECTORY}/linux-2.6.8.1.patch
 #fi  &&

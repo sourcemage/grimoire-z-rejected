@@ -1,3 +1,7 @@
+2005-03-05 David Brown <dmlb2000@excite.com>
+	* BUILD: added patch for 2.6.11 kernel
+	* NVIDIA_kernel-1.0-6229-1201042.diff.txt added 2.6.11 fix
+
 2005-01-25 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: fixed MD5 [Bug 8089]
 
