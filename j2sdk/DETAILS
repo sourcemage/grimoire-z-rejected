@@ -1,20 +1,62 @@
-           SPELL=j2sdk
-         VERSION=1.3.1-02b
-          SOURCE=$SPELL-$VERSION-FCS-linux-i386.bin
-      SOURCE_URI=JDK-${VERSION%-*}/i386/FCS-${VERSION#*-}/$SOURCE
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL${VERSION%-*}
-   SOURCE_URL[0]=ftp://ftp.gwdg.de/pub/languages/java/linux/$SOURCE_URI
-   SOURCE_URL[1]=ftp://ftp.tux.org/java/$SOURCE_URI
-        WEB_SITE=http://www.blackdown.org/java-linux/java2-status
-         ENTERED=20010922
-         UPDATED=20020501
-         ARCHIVE="off"
-           SHORT="j2sdk is Blackdown port of Sun's Java virtual machine."
+            SPELL=j2sdk
+          VERSION=1_4_0
+      BIN_VERSION=1_4_1_01
+     ZLIB_VERSION=1.1.4
+           SOURCE=j2sdk-${VERSION}-src-scsl.zip
+          SOURCE2=j2sdk-${VERSION}-mozilla_headers-unix.zip
+          SOURCE3=j2sdk-${BIN_VERSION}-linux-i586.bin
+          SOURCE4=libstdc++-libc6.1-1.so.2.bz2
+          SOURCE5=zlib-${ZLIB_VERSION}.tar.gz
+          SOURCE6=j2sdk-1.4.0-disable-sanity-check.patch.bz2
+          SOURCE7=j2sdk-1.4.0-fix-intl-files.patch.bz2
+          SOURCE8=j2sdk-1.4.0-gcc3-syntax.patch.bz2
+          SOURCE9=j2sdk-1.4.0-glibc-2.3.1-fixes.patch.bz2
+         SOURCE10=j2sdk-1.4.0-link-jpda-2-libjvm.patch.bz2
+         SOURCE11=j2sdk-1.4.0-remove-fixed-paths.patch.bz2
+         SOURCE12=j2sdk-1.4.0-use-dynamic-lesstif.patch.bz2
+           REJECT="has licensing issuses"
+ 	   MD5[0]=71458396566ebfa82ba64ce104c8ffe3
+       LICENSE[0]=SCSL
+ 	   MD5[1]=a2a393dc237d168918b11728038d8239
+       LICENSE[1]=SCSL
+ 	   MD5[3]=b47e1b2d765132699dca281b57fd1d75
+       LICENSE[3]=GPL
+           MD5[4]=9bdd5f5dfa8c46e1128636bb1022fd08
+       LICENSE[4]=ZLIB
+           MD5[5]=527f4756568740c19c32b1e5eb59ee20
+       LICENSE[5]=GPL
+           MD5[6]=822826bf40a3f7f475946637acc61ec2
+       LICENSE[6]=GPL
+           MD5[7]=8939042ef90338b7df9ae0cc140f1d7f
+       LICENSE[7]=GPL
+           MD5[8]=23f947bc2fd508325cd5ffb5b1344ef2
+       LICENSE[8]=GPL
+           MD5[9]=95b8d1c6d35af8fd31117163ce56bfe7
+       LICENSE[9]=GPL
+          MD5[10]=8951a3c5b8a7f96a67764d09c8e087ef
+      LICENSE[10]=GPL
+          MD5[11]=e4cacc307ef615bbdb4438d8b8fa1f52
+      LICENSE[11]=GPL
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION}
+    SOURCE_URL[0]=
+   SOURCE2_URL[0]=
+   SOURCE3_URL[0]=
+   SOURCE4_URL[0]=http://linuxfromscratch.org/~timothy/misc/$SOURCE4
+   SOURCE5_URL[0]=http://www.gzip.org/$SOURCE5
+   SOURCE6_URL[0]=http://tushar.lfsforum.org/files/JavaFromScratch/$SOURCE6
+   SOURCE7_URL[0]=http://tushar.lfsforum.org/files/JavaFromScratch/$SOURCE7
+   SOURCE8_URL[0]=http://tushar.lfsforum.org/files/JavaFromScratch/$SOURCE8
+   SOURCE9_URL[0]=http://tushar.lfsforum.org/files/JavaFromScratch/$SOURCE9
+  SOURCE10_URL[0]=http://tushar.lfsforum.org/files/JavaFromScratch/$SOURCE10
+  SOURCE11_URL[0]=http://tushar.lfsforum.org/files/JavaFromScratch/$SOURCE11
+  SOURCE12_URL[0]=http://tushar.lfsforum.org/files/JavaFromScratch/$SOURCE12
+         WEB_SITE=http://java.sun.com/j2se/1.4.1/
+         WEB_SITE=http://java.sun.com/j2se/1.4.1/
+       MAINTAINER=josebernardo1@yahoo.com
+          ENTERED=20021130
+          UPDATED=20021130
+            SHORT="j2sdksrc is a spell to compile and install Sun's j2sdk, as per LFS hints (http://tushar.lfsforum.org/)."
+
 cat << EOF
-The Java 2 Standard Edition (J2SE) is a feature-complete development and
-deployment platform. Blackdown provides both a SDK (J2SDK, formerly
-known as JDK) and a runtime environment (J2RE) for Linux on various
-architectures (ix86, Sparc, PPC, S/390, ARM, m68k). Both the J2SDK and
-the J2RE contain the Java Plug-In for Netscape 4.x and Mozilla/Netscape
-6.x.
+Java 2 Platform, Standard Edition (J2SETM) software is the premier solution for rapidly developing and deploying mission-critical, enterprise applications. Version 1.4.1 builds upon Java technology's cross-platform support and robust security model with new features and functionality, enhanced performance and scalability, and improved reliability and serviceability. Don't forget to download $SOURCE, $SOURCE2 and $SOURCE3 to $SOURCE_CACHE before casting, from http://wwws.sun.com/software/java2/download.html and http://java.sun.com/j2se/1.4.1/download.html (choose the linux sdk for this one).
 EOF

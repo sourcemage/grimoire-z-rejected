@@ -1,3 +1,17 @@
+2002-12-09  Geoffrey Derber  <gderber@sourcemage.org>
+
+		Spell failed to pull from cvs to p4.
+		Trying to force sync w/ p4.
+
+2002-12-07  Geoffrey Derber  <gderber@sourcemage.org>
+
+		Completely new spell, is now source based.
+
+2002-10-05  Geoffrey Derber  <gderber@sourcemage.org>
+
+		modified for it's rejected status
+		added md5 and license fields
+
 2002-05-01  Sergey Lipnevich  <sergeyli@pisem.net>
 
 		Updated to 1.3.1-02b, added German mirror.
