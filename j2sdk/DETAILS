@@ -50,6 +50,7 @@
        MAINTAINER=josebernardo1@yahoo.com
           ENTERED=20021130
           UPDATED=20030119
+       MAKE_NJOBS=1
             SHORT="j2sdksrc is a spell to compile and install Sun's j2sdk, as per LFS hints (http://tushar.lfsforum.org/)."
 
 cat << EOF

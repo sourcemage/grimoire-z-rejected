@@ -15,10 +15,13 @@ if [ $JAVA_HOME ] && query "${MESSAGE_COLOR}I've found java at $JAVA_HOME, do yo
 	install -d /opt/java/j2sdk-precompiled-1.4
 	mv * /opt/java/j2sdk-precompiled-1.4
 	export JAVA_HOME=/opt/java/j2sdk-precompiled-1.4
+	rm /opt/java/j2sdk
+	ln -sf /opt/java/j2sdk-precompiled-1.4 /opt/java/j2sdk
 	cp $SOURCE_CACHE/$SOURCE4 $JAVA_HOME/jre/lib/i386/
 	cd $JAVA_HOME/jre/lib/i386
 	bunzip2 $SOURCE4
 	ln -sf libstdc++-libc6.3-2.so.2 libstdc++-libc6.1-1.so.3
+	export PATH=/opt/java/j2sdk-precompiled-1.4/bin:$PATH
 fi							&&
 cd $SOURCE_DIRECTORY					&&
 export ALT_BOOTDIR="$JAVA_HOME"				&&
