@@ -1,14 +1,14 @@
            SPELL=skype
-         VERSION=0_90_0_4
+         VERSION=0_90_0_6
           SOURCE=${SPELL}_ver-${VERSION}-staticQT.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver-${VERSION}-staticQT
         WEB_SITE=http://www.skype.com/
 #   SOURCE_URL[0]='http://www.skype.com/go/getskype-linux\?type=static\&x=72\&y=0'
     SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
-          MD5[0]='e5171b8ede4d57173ded7e7e0d400f2a'
+          MD5[0]='6f9fc12f227042e2268b36ed0616e4ce'
       LICENSE[0]=http://www.skype.com/eula.html
          ENTERED=20040624
-         UPDATED=20040624
+         UPDATED=20040701
 	        REJECT="has licensing issues"
            SHORT="Easy, free, working voice over IP (voip) Linux client."
 cat << EOF
