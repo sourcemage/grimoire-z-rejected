@@ -1,4 +1,4 @@
-           SPELL=OpenOffice-binary
+           SPELL=OpenOffice
          VERSION=1.0.0
           SOURCE=OOo_${VERSION}_LinuxIntel_install.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install
