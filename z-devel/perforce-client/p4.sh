@@ -3,7 +3,7 @@
 # then if not set, check it (maybe), then set it 
 
 if  [ -z "$P4CONFIG" ] ; then 
-	P4CONFIG=.p4config  # For Perforce client 
+	P4CONFIG=~/.p4config  # For Perforce client 
 fi 
 export P4CONFIG
 
