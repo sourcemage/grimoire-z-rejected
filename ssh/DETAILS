@@ -1,5 +1,5 @@
             SPELL=ssh
-         VERSION=3.2.0
+         VERSION=3.2.2
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.ssh.fi/pub/$SPELL/$SOURCE
@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.ssh.com
          ENTERED=20020125
          UPDATED=20020528
-	  MD5[0]=65091573b905132c235917cae08ac58c
+	  MD5[0]=cce8f3c92929f02ed02f2b61ac75c32c
       LICENSE[0]=http://www.ssh.com/products/ssh/ssh_license_agreement.cfm
 	  REJECT="has licensing issues"
       MAINTAINER=glenniii@utexas.edu

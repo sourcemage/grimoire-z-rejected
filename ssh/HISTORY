@@ -1,7 +1,11 @@
+2002-12-01  Geoffrey Derber <ashaman@sourcemage.org>
+
+		version bump to 3.2.2
+
 2002-09-02  Geoffrey Derber <ashaman@flyingtemple.com>
 
 		spell update
-		added Linux PAM as a dependency
+		added Linux PAM as a CONFLICTS
 		added MD5 field and License field
 		modify DEPENDS so that xfree86 is now a configure option
 		added Configure file
