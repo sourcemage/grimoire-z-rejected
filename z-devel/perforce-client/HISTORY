@@ -1,3 +1,8 @@
+2005-04-05 Benoit PAPILLAULT <benoit.papillault@sourcemage.org>
+	* DETAILS: corrected for x86-64, added powerpc architecture
+	  updated version field. Tested on x86, powerpc and x86-64
+	 (check the gcc33 depends on x86-64)
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
