@@ -1,0 +1,15 @@
+           SPELL=OOodi2
+         VERSION=0.60
+          SOURCE=${SPELL}-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=$SOURCEFORGE_URL/ooodi/$SOURCE
+          MD5[0]=d7d9162c6bdaa18950330957fa958746
+        WEB_SITE=http://ooodi.sourceforge.net/
+         ENTERED=20030313
+         UPDATED=20030329
+	LICENSE=GPL
+	MAINTAINER=jbernardo@sourcemage.org
+           SHORT="A GTK+ and  libcurl based dictionary installer for OpenOffice.org on Unix."
+cat << EOF
+A GTK+ and  libcurl based dictionary installer for OpenOffice.org on Unix.
+EOF
