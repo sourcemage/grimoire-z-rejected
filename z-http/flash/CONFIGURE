@@ -4,7 +4,7 @@ source $SCRIPT_DIRECTORY/../../REJECTED_MSG
 
 echo "Flash works with the following programs:"
 echo "Mozilla"
-echo "firefox"
+echo "Firefox"
 echo "Konqueror"
 echo "Opera"
 echo "Netscape (not version 4.x)"
@@ -13,7 +13,7 @@ echo "Select which currently installed applications you wish to install Flash fo
 
 persistent_add MOZILLA FIREFOX KDEBASE OPERA NETSCAPE
 
-if spell_installed mozilla
+if  spell_ok  mozilla
 then
   if query "Do you wish to install the plugin for Mozilla?" y
   then
@@ -23,9 +23,9 @@ then
 	fi
 fi
 
-if spell_installed firefox
+if  spell_ok  firefox
 then
-  if query "Do you wish to install the plugin for firefox?" y
+  if query "Do you wish to install the plugin for Firefox?" y
   then 
     FIREFOX=y
   else
@@ -33,7 +33,7 @@ then
 	fi
 fi
 
-if spell_installed kdebase
+if  spell_ok  kdebase
 then
   if query "Do you wish to install the plugin for Konqueror?" y
   then
@@ -43,7 +43,7 @@ then
   fi
 fi
 
-if spell_installed opera
+if  spell_ok  opera
 then
   if query "Do you wish to install the plugin for Opera?" y
   then
@@ -53,7 +53,7 @@ then
   fi
 fi
 
-if spell_installed netscape4
+if  spell_ok  netscape4
 then
   if query "Do you wish to install the plugin for Netscape?" y
   then
