@@ -1,6 +1,8 @@
 2004-08-10 Eric Sandall <eric@sandall.us>
 	* PRE_BUILD, PREPARE: Move query to PREPARE to be asked during depends
 	  resolution
+	  Remove PRE_BUILD code
+	  Remove TABs
 
 2004-08-05 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD: modified for api2.
