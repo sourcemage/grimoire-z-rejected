@@ -1,4 +1,5 @@
            SPELL=perforce-client
+       BUILD_API=2
    VERSION_MAJOR=2003.2
    SHORT_VERSION=03.2
      DOC_VERSION=032

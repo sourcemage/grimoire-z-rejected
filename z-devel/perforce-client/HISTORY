@@ -1,3 +1,9 @@
+2004-08-05 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS, BUILD: modified for api2.
+	* INSTALL, FINAL: added for api2.
+	* CONFIGURE: updated to use grimoire rejected message.
+	* POST_BUILD: branched to FINAL and removed.
+
 2004-06-24 Eric Sandall <eric@sandall.us>
 	* DETAILS: Fixed md5sums (binaries changed, verified with Tony)
 	Removed MAINTAINER
