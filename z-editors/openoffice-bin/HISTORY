@@ -1,3 +1,11 @@
+2004-09-22 Eric Schabell <eschabell@sourcemage.org>
+	* PREPARE, POST_REMOVE: removed, everything is now tracked.
+	* DETAILS: updated to v1.1.3rc, changed spell name to openoffice-bin.
+	* INSTALL: updated to track install.
+	* POST_INSTALL: added to track symlink creation.
+	* CONFLICTS: updated to remove older OpenOffice-bin installs
+	  as now has a new lower-cased spell name.
+
 2004-08-11 Eric Schabell <eschabell@sourcemage.org>
 	* PREPARE: cleaned up and beautified.
 
