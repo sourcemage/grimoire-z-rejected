@@ -1,0 +1,1 @@
+install -m 755 p4p ${INSTALL_ROOT}/usr/bin/p4p
