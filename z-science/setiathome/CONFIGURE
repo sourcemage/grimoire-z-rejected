@@ -1,2 +1,3 @@
-warn_rejected  &&
-ask_continue_with_rejected
+# Standard rejected warnings.
+#
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG
