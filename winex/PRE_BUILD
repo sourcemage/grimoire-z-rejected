@@ -1,4 +1,3 @@
-#!/bin/bash
 # PRE_BUILD for rejected spells
 #
 # Modified 2002 Aug 23 05:10 by Derek Moyes <sorcerer@flamesnyper.com>
@@ -64,42 +63,6 @@ message	"${MESSAGE_COLOR}This spell is considered ${PROBLEM_COLOR}rejected${DEFA
 	exit
       fi
    fi
-    
 
-          SOURCE=$SPELL.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY
-
-if [ -d $BUILD_DIRECTORY/$SPELL ]; then
-	rm -rf $BUILD_DIRECTORY/$SPELL
-fi
-
-if [ -d $BUILD_DIRECTORY/wine ]; then
-	rm -rf $BUILD_DIRECTORY/wine
-fi
-
-
-
-if [ ! -f /var/spool/sorcery/$SOURCE ]; then
-	if [ ! -f /root/.cvspass ]; then 
-		touch /root/.cvspass
-	fi
-	cd /var/spool/sorcery/								&&
-	cvs -z3 -d:pserver:anonymous@cvs.winex.sourceforge.net:/cvsroot/winex co wine	&&
-	tar -cyvf $SOURCE wine								&&
-	rm -rf wine									&&
-	cd /usr/src/
-else
-	if query "Do you wish to update from CVS?" y
-	then
-		cd /var/spool/sorcery/									&&
-		tar -xyvf $SOURCE									&&
-		cvs -z3 -d:pserver:anonymous@cvs.winex.sourceforge.net:/cvsroot/winex update wine	&&
-		tar -cyvf $SOURCE wine									&&
-		rm -rf wine										&&
-		cd /usr/src/
-	fi
-fi
-
-unpack $SOURCE												&&
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL							&&
-mv /usr/src/wine $SOURCE_DIRECTORY
+mk_source_dir $SOURCE_DIRECTORY                  &&
+unpack        $SOURCE                #  ${MD5[0]}
