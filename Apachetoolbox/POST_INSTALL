@@ -1,2 +1,4 @@
-/etc/init.d/apache.sh  restart
-true
+if  [  -x  /etc/init.d/apache.sh  ]
+then
+  /etc/init.d/apache.sh  restart
+fi

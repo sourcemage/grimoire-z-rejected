@@ -1,3 +1,9 @@
+2003-03-31  Eric Sandall <eric@sandall.us>
+
+		Updated to use sorcery's init.d installer
+
+		Modified PRE_REMOVE and POST_INSTALL to only
+		run the script if it is executable
 
 2002-10-09  Geoffrey Derber <gderber@sourcemage.org>
 
