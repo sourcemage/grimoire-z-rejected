@@ -27,4 +27,12 @@ cat << EOF
  
  Java Management Extensions is an optional package addition to the 
  J2SE platform.
+
+ Don't forget to download sources :
+ 
+ jmx-1_2-mr-src.zip
+  
+ to /var/spool/sorcery before casting, from :
+   
+ http://java.sun.com/products/JavaManagement/
 EOF

@@ -1,6 +1,8 @@
 2004-08-09 Eric Schabell <z-rejected@sourcemage.org>
 	* z-java/jta: section api2 compliant and rejected msg.
 	* z-java/jndi: section api2 compliant and rejected msg.
+	* z-java/jmx-bin: section api2 compliant and rejected msg.
+	* z-java/jmx: section api2 compliant and rejected msg.
 
 2004-08-08 Eric Schabell <z-rejected@sourcemage.org>
 	* z-http: section api2 compliant and rejected msg.

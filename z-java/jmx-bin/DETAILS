@@ -1,5 +1,5 @@
         PKG_NAME=jmx  
-	   SPELL=${PKG_NAME}-bin
+	         SPELL=${PKG_NAME}-bin
          VERSION=1.2
      PKG_VERSION=1_2
           SOURCE=${PKG_NAME}-${PKG_VERSION}-ri.zip
@@ -29,4 +29,12 @@ cat << EOF
  
  Java Management Extensions is an optional package addition to the 
  J2SE platform.
+
+ Don't forget to download sources :
+ 
+ jmx-1_2-ri.zip
+ 
+ to /var/spool/sorcery before casting, from :
+ 
+ http://java.sun.com/products/JavaManagement/
 EOF
