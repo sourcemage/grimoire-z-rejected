@@ -1,5 +1,14 @@
 (
-ln -fs /opt/gcc2/lib/libstdc++-*libc6.2-2*.so $SOURCE_DIRECTORY/libstdc++-libc6.1-1.so.2
+if [ -e /opt/gcc2/lib/libstdc++-3-libc6.2-2-2.10.0.so ]; then
+  echo "okay"
+  ln -sf /opt/gcc2/lib/libstdc++-3-libc6.2-2*.so $SOURCE_DIRECTORY/libstdc++-libc6.1-1.so.2
+elif [ -e /opt/gcc2/lib/libstdc++-3-libc6.3-2-2.10.0.so ]; then
+  echo "good"
+  ln -sf /opt/gcc2/lib/libstdc++-3-libc6.3-2*.so $SOURCE_DIRECTORY/libstdc++-libc6.1-1.so.2
+else
+ echo "shit"
+ exit 1
+fi
 cp $SCRIPT_DIRECTORY/config.ini $SOURCE_DIRECTORY
 ./netscape-installer
 for i in `cat /tmp/netscape.iw|grep netscape-bin|cut -f3|grep -v binnew|grep -v binold`;
@@ -19,6 +28,12 @@ echo "cd $INSTALL_DIRECTORY" >> /usr/bin/netscape
 echo "./netscape" >> /usr/bin/netscape
 chmod a+x /usr/bin/netscape
 if [ ! -e $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2 ]; then
-ln -fs /opt/gcc2/lib/libstdc++-*libc6.2-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2
+if [ -e /opt/gcc2/lib/libstdc++-3-libc6.2-2-2.10.0.so ]; then
+  ln -sf /opt/gcc2/lib/libstdc++-3-libc6.2-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2
+elif [ -e /opt/gcc2/lib/libstdc++-3-libc6.3-2-2.10.0.so ]; then
+  ln -sf /opt/gcc2/lib/libstdc++-3-libc6.3-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2
+else
+ exit 1
+fi
 fi
 )
