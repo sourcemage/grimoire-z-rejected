@@ -1,6 +1,12 @@
-depends  zlib  &&
-depends  tcsh  &&
-depends  cpio  &&
-depends  which &&
-depends  zip
+depends  X11-SERVER  &&
+depends  zlib        &&
+depends  tcsh        &&
+depends  cpio        &&
+depends  alsa-lib    &&
+depends  unixODBC    &&
+depends  zip         &&
+if [ "$BOOTSTRAP" = "spell" ]
+then depends j2sdk-bin
+fi                   &&
+optional_depends "lesstif" "use-lesstif" "" "To substitute LessTif for the bundled version of Motif" 
 

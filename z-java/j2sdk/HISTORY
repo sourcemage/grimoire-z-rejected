@@ -1,3 +1,18 @@
+2003-10-29 hgg <hgreig@bigpond.net.au>
+	* DETAILS: Update to 1.4.2 
+	remove LFS patches, remove extra sources from DETAILS
+	* DEPENDS: add alsa-libs and unixODBC and X11-SERVER 
+	(wants to link to libXi.so, which is not provided by xfree86-libs spell)
+	* PREBUILD,CONFIGURE,DETAILS: remove sun's binary bootstrap version from this spell
+	the j2sdk-bin spell is just fine for bootstrapping if no system version is installed
+	change "available swap" check to the currently needed size and use awk (thanks dufflebunk)
+	* BUILD: turn off verbose make, add HOTSPOT_BUILD_JOBS for systems with MAKE_NJOBS>1
+	clean up and move non-system specific stuff into a single patch, change one of the plugin links
+	Change MILESTONE to just SMGL, and make BUILD_NUMBER sane if you are unlucky enough to cast it twice in the 
+	same day
+	* j2sdk-1_4_2-smgl.patch: my patch to take care of paths, gcc3.3.X errors, make system checks
+	* j2sdk-1_4_2-use-lesstif.patch: my patch to allow use of lesstif libXm.a 
+
 2003-10-18 hgg <hgreig@bigpond.net.au>
 	* HISTORY: convert format
 

@@ -1,25 +1,22 @@
 warn_rejected &&
 ask_continue_with_rejected
 if spell_installed j2sdk-bin
-then export JAVA_HOME=/usr/lib/j2sdk1.4.1
+then export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
 fi                                                   &&
 if ! grep -q CONFIGURED $SPELL_CONFIG
 then  if query "Do you have a certificate from a certificate authority?\n\"You will also need to \
-download 2sdk-sec-1_4_1-src-scsl.zip from SUN\"" n
-            then echo -e "CERT=yes \nVERSION=1_4_1\nSOURCE10=j2sdk-sec-\${VERSION}-src-scsl.zip" >> $SPELL_CONFIG 
+download j2sdk-sec-1_4_2-src-scsl.zip from SUN\"" n
+            then echo -e "CERT=yes \nVERSION=1_4_2\nSOURCE5=j2sdk-sec-\${VERSION}-src-scsl.zip" >> $SPELL_CONFIG
       fi  &&
         if  [ $JAVA_HOME ] && [ -x $JAVA_HOME/bin/javac ] && query "${MESSAGE_COLOR}I've found \"java\" at \
 $JAVA_HOME\n(If compilation fails due to this bootstrap compiler \n then use cast -r and choose 'n' to use \
 SUN's binary)\n\nDo you want to use \"java\" to bootstrap j2sdk compilation ? \nIf you answer 'n',I'll \
 use SUN's binary.${DEFAULT_COLOR}"  y;
-         then echo BINARY=no      >> $SPELL_CONFIG   &&
-              echo CONFIGURED=yes >> $SPELL_CONFIG
-         else if grep -q CERT $SPELL_CONFIG ;
-               then echo -e "SOURCE11=j2sdk-\${BIN_VERSION}-linux-i586.bin" >> $SPELL_CONFIG
-               else echo -e "SOURCE10=j2sdk-\${BIN_VERSION}-linux-i586.bin">> $SPELL_CONFIG
-              fi
-              echo BINARY=yes     >> $SPELL_CONFIG   &&
-              echo CONFIGURED=yes >> $SPELL_CONFIG 
+         then BOOTSTRAP=system 
+         else BOOTSTRAP=spell 
        fi
+              echo CONFIGURED=yes >> $SPELL_CONFIG &&
+              echo BOOTSTRAP=$BOOTSTRAP >> $SPELL_CONFIG 
+
 fi
 

@@ -1,67 +1,42 @@
             SPELL=j2sdk
-          VERSION=1_4_1
-      BIN_VERSION=1_4_1_02
-         BIN_PATH=1.4.1_02
+          VERSION=1_4_2
+      BIN_VERSION=1.4.1
      ZLIB_VERSION=1.1.4
-           SOURCE=j2sdk-${VERSION}-src-scsl.zip
-          SOURCE2=j2sdk-${VERSION}-mozilla_headers-unix.zip
-          SOURCE3=zlib-${ZLIB_VERSION}.tar.gz
-          SOURCE4=j2sdk-1.4.1-fix-intl-files.patch.bz2
-          SOURCE5=j2sdk-1.4.1-link-missing-libs.patch.bz2
-          SOURCE6=j2sdk-1.4.1-remove-fixed-paths.patch.bz2
-          SOURCE7=j2sdk-1.4.1-syntax-fixes.patch.bz2
-          SOURCE8=j2sdk-1.4.1-use-included-motif.patch.bz2
-          SOURCE9=libstdc++-libc6.1-1.so.2.bz2
+           SOURCE=$SPELL-${VERSION}-src-scsl.zip
+          SOURCE2=$SPELL-${VERSION}-mozilla_headers-unix.zip
+          SOURCE3=$SPELL-${VERSION}-bin-scsl.zip
+          SOURCE4=zlib-${ZLIB_VERSION}.tar.gz
            REJECT="has licensing issues"
- 	   MD5[0]=e6f35d1183660682f4f03965d35b67c5
+ 	   MD5[0]=387ae674dcd686f3a7a477c191aa8b65
        LICENSE[0]=SCSL
- 	   MD5[1]=cf52ee3389a4a6fbef9e59bff136d4ee
+ 	   MD5[1]=57d10879fa2c2738f859f0b0f902f69c
        LICENSE[1]=SCSL
-           MD5[2]=9bdd5f5dfa8c46e1128636bb1022fd08
-       LICENSE[2]=ZLIB
-           MD5[3]=131372109a420a76b5597164335c60f6
-       LICENSE[3]=GPL
-           MD5[4]=9571dd4ebb2b26f8283c0b4c8d690082
+           MD5[2]=24877ff50ae66744090c3723968bb7dc
+       LICENSE[2]=SCSL
+           MD5[3]=9bdd5f5dfa8c46e1128636bb1022fd08
+       LICENSE[3]=ZLIB
+           MD5[4]=33136e2fd576bab54b3906a694fcf7c6
        LICENSE[4]=SCSL
-           MD5[5]=c17a7141aaf292dbfd6f27eec146fdb4
-       LICENSE[5]=SCSL
-           MD5[6]=48d8d80f300b6e1ed96ff152fe3a22b2
-       LICENSE[6]=SCSL
-           MD5[7]=251916dd4d5e9248ad9e4906b1d4c6f3
-       LICENSE[7]=SCSL
-           MD5[8]=b47e1b2d765132699dca281b57fd1d75
-       LICENSE[8]=SCSL
-           MD5[9]=bd91fceeb3afe96fc04bf1f585f92e0f
-       LICENSE[9]=SCSL
-          MD5[10]=fc84332015e32f6ac8615b0ef84dd9c4
-      LICENSE[10]=BIN
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION}
     SOURCE_URL[0]=
    SOURCE2_URL[0]=
-   SOURCE3_URL[0]=http://www.gzip.org/$SOURCE3
-   SOURCE4_URL[0]=http://www.linuxfromscratch.org/~tushar/hints/files/JavaFromScratch/$SOURCE4
-   SOURCE5_URL[0]=http://www.linuxfromscratch.org/~tushar/hints/files/JavaFromScratch/$SOURCE5
-   SOURCE6_URL[0]=http://www.linuxfromscratch.org/~tushar/hints/files/JavaFromScratch/$SOURCE6
-   SOURCE7_URL[0]=http://www.linuxfromscratch.org/~tushar/hints/files/JavaFromScratch/$SOURCE7
-   SOURCE8_URL[0]=http://www.linuxfromscratch.org/~tushar/hints/files/JavaFromScratch/$SOURCE8
-   SOURCE9_URL[0]=ftp://ftp.linuxfromscratch.org/blfs-patches/cvs/$SOURCE9
-         WEB_SITE=http://java.sun.com/j2se/1.4.1/
-         WEB_SITE=http://java.sun.com/j2se/1.4.1/
+   SOURCE3_URL[0]=
+   SOURCE4_URL[0]=http://www.gzip.org/$SOURCE4
+   SOURCE5_URL[0]=
+         WEB_SITE=http://java.sun.com/j2se/1.4.2/
+         WEB_SITE=http://java.sun.com/j2se/1.4.2/
        MAINTAINER=josebernardo1@yahoo.com
           ENTERED=20021130
-          UPDATED=20030929
-       MAKE_NJOBS=1
-            SHORT="j2sdk compiles  Sun's j2sdk, as per LFS hints(http://tushar.lfsforum.org/)."
+          UPDATED=20031029
+            SHORT="j2sdk compiles Sun's j2sdk, thanks to LFS hints(http://tushar.lfsforum.org/)."
 
 cat << EOF
 Java 2 Platform, Standard Edition (J2SETM) software is the premier solution for rapidly developing and 
-deploying mission-critical, enterprise applications. Version 1.4.1 builds upon Java technology's 
+deploying mission-critical, enterprise applications. Version 1.4.2 builds upon Java technology's 
 cross-platform support and robust security model with new features and functionality, enhanced 
 performance and scalability, and improved reliability and serviceability. 
-Don't forget to download $SOURCE and $SOURCE2 to $SOURCE_CACHE before casting, from 
-http://wwws.sun.com/software/java2/download.html and 
-http://java.sun.com/j2se/1.4.1/download.html (choose the linux sdk for this one).
-SOURCE10 and SOURCE11 are needed only for certificates and a bootstrap compiler respectively.
-Starting with version 1.4.1, you *might* also have to concatenate two files to generate $SOURCE 
-- cat j2sdk-1_4_1-src-scsl-{a,b}.zip > j2sdk-1_4_1-src-scsl.zip
+Don't forget to download $SOURCE & SOURCE[2,3] to $SOURCE_CACHE before casting, from 
+http://wwws.sun.com/software/java2/download.html
+(SOURCE5 is  needed only if you have a certificate from a registered provider) and
+http://java.sun.com/j2se/1.4.{1,2}/download.html (choose the linux sdk for this one).
 EOF
