@@ -3,6 +3,10 @@
 	* z-mail/netqmail: patch applied for cleaner install config,
 	  bug #6767.
 
+2004-10-06 Eric Schabell <z-rejected@sourcemage.org>
+	* z-java/j2sdk{-bin}: spells now conflict with new jdk1.5-bin spell.
+	* z-java/jdk1.5-bin: new spell added.
+
 2004-09-24 Eric Schabell <z-rejected@sourcemage.org>
 	* z-net: created new section.
 	* z-net/{vpnclient|ts2_client|ts2_server}: added new spells.
