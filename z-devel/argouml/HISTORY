@@ -1,3 +1,6 @@
+2005-03-31 Andrew Stitt <astitt@sourcemage.org>
+	* DETAILS: fix syntax error
+
 2004-10-30 Eric Sandall <eric@sandall.us>
 	* Added to devel  (Bug #5041)
 	* Made spell lower-case
