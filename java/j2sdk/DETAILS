@@ -38,7 +38,7 @@
     SOURCE_URL[0]=
    SOURCE2_URL[0]=
    SOURCE3_URL[0]=
-   SOURCE4_URL[0]=http://www.linuxfromscratch.org/~tushar/hints/files/JavaFromScratch/$SOURCE4
+   SOURCE4_URL[0]=ftp://ftp.linuxfromscratch.org/blfs-patches/cvs/$SOURCE4
    SOURCE5_URL[0]=http://www.gzip.org/$SOURCE5
    SOURCE6_URL[0]=http://www.linuxfromscratch.org/~tushar/hints/files/JavaFromScratch/$SOURCE6
    SOURCE7_URL[0]=http://www.linuxfromscratch.org/~tushar/hints/files/JavaFromScratch/$SOURCE7
