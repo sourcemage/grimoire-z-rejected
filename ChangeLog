@@ -1,3 +1,6 @@
+2005-02-25 Ladislav Hagara <hgr@vabo.cz>
+	* z-editors/OpenOffice-bin: removed deprecated spell
+
 2005-01-24 Andrew Stitt <astitt@sourcemage.org>
 	* REJECTED_MSG: fix typo spell_spell -> spell_ok
 	* z-devel/perforce-proxy: added new spell for perforce proxying
