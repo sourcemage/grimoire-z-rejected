@@ -1,13 +1,13 @@
            SPELL=j2sdk-bin
          VERSION=1.4.1-01
-          SOURCE=j2sdk-$VERSION-linux-i586-gcc3.2.bin
+          SOURCE=j2sdk-$VERSION-${ARK:-linux-i586-gcc3.2}.bin
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/j2sdk${VERSION%-*}
-   SOURCE_URL[0]=ftp://metalab.unc.edu/pub/linux/devel/lang/java/blackdown.org/JDK-1.4.1/i386/01/$SOURCE
+   SOURCE_URL[0]=ftp://metalab.unc.edu/pub/linux/devel/lang/java/blackdown.org/JDK-1.4.1/${SDIR:-i386}/01/$SOURCE
         WEB_SITE=http://www.blackdown.org/java-linux/java2-status
          ENTERED=20010922
          UPDATED=20030215
          ARCHIVE="off"
-          MD5[0]="a0c7838233603fccb30641998195e8bc"
+          MD5[0]="${PREPARE_MD5:-a0c7838233603fccb30641998195e8bc}"
           REJECT="is non-source"
            SHORT="j2sdk is Blackdown port of Sun's Java virtual machine."
 cat << EOF

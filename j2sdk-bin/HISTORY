@@ -1,3 +1,8 @@
+2003-05-09  Eric Sandall <eric@sandall.us>
+
+		Added support for SPARC architecture (couldn't find PPC files)
+		i586 is default, just in case the selection is somehow missed...
+
 2003-03-17  Arwed v. Merkatz <v.merkatz@gmx.net>
 
 		added DEPENDS file and depends on unixODBC
