@@ -1,0 +1,8 @@
+386
+i386-pc-linux-gnulibc1-static
+686
+i686-pc-linux-gnulibc1-static
+PPC
+powerpc-unknown-linux-gnu
+SUN
+sparc-unknown-linux-gnu

@@ -1,0 +1,45 @@
+# Copied from kde/kde-il8n
+# Very cludgy setup I have made.  :(
+
+rm  -f  ${CONFIG_CACHE}/${SPELL}.config
+
+get_architecture()  {
+  if  !  [  -f  ${CONFIG_CACHE}/${SPELL}.config  ]
+  then
+    touch ${CONFIG_CACHE}/${SPELL}.config
+    ARKS=`cat ${SCRIPT_DIRECTORY}/architectures`
+    ARKS=`dialog  --backtitle  "SETI@Home Configuration Menu" \
+                  --stdout                                    \
+                  --title      "Select architecture please"   \
+                  --menu                                      \
+                  ""                                          \
+                  0  0  0                                     \
+                  ${ARKS}`
+
+    for  ARK in ${ARKS}
+    do
+      # The first line of each descriptor is for easy reading names.  :)
+      # ARK is defined on the second line of each descriptor
+      # MD5 is defined on the third line of each descriptor
+              ARK=${ARKS:0:${#ARKS}}
+    done
+
+    case  ${ARK}  in
+      386)          ARK=i386-pc-linux-gnulibc1-static     ;
+            PREPARE_MD5=f1c9cc44ef75f5ca7c07b39edc71f71e  ;;
+      686)          ARK=i686-pc-linux-gnulibc1-static     ;
+            PREPARE_MD5=5eb80fdc4fce75c23917323d784977ed  ;;
+      PPC)          ARK=powerpc-unknown-linux-gnu         ;
+            PREPARE_MD5=cb47ccfd01e6f9764edb74ce37aa216b  ;;
+      SUN)          ARK=sparc-unknown-linux-gnu           ;
+            PREPARE_MD5=1091488f55cbbfa4451c3f03cc9f8177  ;;
+    esac
+
+    echo          ARK=${ARK}          >>  ${CONFIG_CACHE}/${SPELL}.config
+    echo  PREPARE_MD5=${PREPARE_MD5}  >>  ${CONFIG_CACHE}/${SPELL}.config
+
+  fi
+
+  . ${CONFIG_CACHE}/${SPELL}.config
+}
+get_architecture

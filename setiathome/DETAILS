@@ -1,10 +1,10 @@
            SPELL=setiathome
          VERSION=3.03
-          SOURCE=${SPELL}-${VERSION}.i686-pc-linux-gnu-gnulibc2.1.tar
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.cdrom.com/pub/$SPELL/$SOURCE
-   SOURCE_URL[1]=ftp://alien.ssl.berkeley.edu/pub/$SOURCE
-          MD5[0]=ba17d596fd07219c9c0eac4c1d5597a7
+          SOURCE=${SPELL}-${VERSION}.${ARK}.tar
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}.${ARK}
+   SOURCE_URL[0]=ftp://ftp.cdrom.com/pub/${SPELL}/${SOURCE}
+   SOURCE_URL[1]=ftp://alien.ssl.berkeley.edu/pub/${SOURCE}
+          MD5[0]=${PREPARE_MD5}
         WEB_SITE=http://setiathome.ssl.berkeley.edu/
          ENTERED=20020919
          UPDATED=20020919

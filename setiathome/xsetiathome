@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd  /opt/setiathome
-./xsetiathome
+cd  /usr/share/setiathome
+./xsetiathome  $@
 cd  -
