@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$SPELL\_$VERSION
          UPDATED=20020921
       MAINTAINER=mlubrano@sourcemage.org
       LICENSE[0]=http://www.f-prot.com/products/fplin.html
+	  REJECT="has licensing issues"
            SHORT="F-Prot AntivirusTM For Linux"
 cat << EOF
 F-Prot AntivirusTM For Linux
