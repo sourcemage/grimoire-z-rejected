@@ -1,45 +1,41 @@
-2003-09-16  Eric Sandall <eric@sandall.us>
+2004-04-29 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: updated version.
+	* HISTORY: cleaned up.
+	* DEPENDS: added for mktemp depends.
+	* BUILD: cleaned up sedit's.
+	* POST_REMOVE: updated to 1.1.1 version removal.
 
-        Added conflicts for openoffice
+2003-09-16  Eric Sandall <eric@sandall.us>
+	*  Added conflicts for openoffice
 
 2003-06-20  Derek Moyes <sorcerer@flamesnyper.com>
-
-        * Updated the spell to 1.0.3.1 and re-submitted to grimoire.
+	* Updated the spell to 1.0.3.1 and re-submitted to grimoire.
 
 2002-11-27  Geoffrey Derber <ashaman@sourcemage.org>
-
-		* Fixed a problem caused by URLs changing.
+	* Fixed a problem caused by URLs changing.
 
 2002-10-25  Geoffrey Derber <ashaman@sourcemage.org>
-
-		* Fixed an issue with the PRE_BUILD warning message
+	* Fixed an issue with the PRE_BUILD warning message
 
 2002-07-21  Eric Schabell <eric@schabell.com>
-
-		* Tested and added spell with updated HISTORY, new 
-		  PRE_INSTALL warning messages and updated DETAILS with
-		  download size warning.
+	* Tested and added spell with updated HISTORY, new 
+	  PRE_INSTALL warning messages and updated DETAILS with
+	  download size warning.
 
 2002-07-13  Chris Brien <christopher_brien@hotmail.com>
-
-
-  		* After spending weeks attempting to build OpenOffice, I 
-		  decided to just go get the binary. This spell is heading 
-		  straight to z-rejected. 
+	* After spending weeks attempting to build OpenOffice, I 
+	  decided to just go get the binary. This spell is heading 
+	  straight to z-rejected. 
 
 2002-05-01  Eric Sandall <sandalle@yahoo.com>
-
-
-		* Applied patches (except for gcc3 related) located at 
-		  http://www.linux-debian.de/openoffice/, thanks to Yoav 
-		  Avitzour <avitzour@princeton.edu> for pointing me here.
+	* Applied patches (except for gcc3 related) located at 
+	  http://www.linux-debian.de/openoffice/, thanks to Yoav 
+	  Avitzour <avitzour@princeton.edu> for pointing me here.
 
 2002-03-06  Eric Sandall <sandalle@yahoo.com>
-
-		* Modified DETAILS (finally figured this out ;) to have 
-		  gpc as SOURCE2, rather than creating a whole other spell 
-		  for 2 header files that just need to be copied for OpenOffice.
-
-		* Found that if I have an "_" in my SOURCE (and probably any others), 
-		  I must use the escape sequence "\" before it for it to read 
-		  (e.g.  SOURCE=oo_$VERSION_src.tar.bz2 -> SOURCE=oo\_$VERSION\_src.tar.bz2)
+	* Modified DETAILS (finally figured this out ;) to have 
+	  gpc as SOURCE2, rather than creating a whole other spell 
+	  for 2 header files that just need to be copied for OpenOffice.
+	* Found that if I have an "_" in my SOURCE (and probably any others), 
+	  I must use the escape sequence "\" before it for it to read 
+	  (e.g.  SOURCE=oo_$VERSION_src.tar.bz2 -> SOURCE=oo\_$VERSION\_src.tar.bz2)
