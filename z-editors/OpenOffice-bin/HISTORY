@@ -1,3 +1,7 @@
+2004-06-24 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* DETAILS: Updated to 1.1.2, removed two non-working urls
+	* BUILD: removed LD_PRELOAD hacks, no longer needed.
+
 2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE, PRE_BUILD: Move rejected query to CONFIGURE  (Bug #3594)
 	* HISTORY: Formatted to Guru Handbook

@@ -1,20 +1,17 @@
            SPELL=OpenOffice-bin
-         VERSION=1.1.1
+         VERSION=1.1.2
           SOURCE=OOo_${VERSION}_LinuxIntel_install.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOo_1.1.1_LinuxIntel_install
-   SOURCE_URL[0]=http://sf1.mirror.openoffice.org/stable/$VERSION/$SOURCE
-   SOURCE_URL[1]=http://ny1.mirror.openoffice.org/stable/$VERSION/$SOURCE
-   SOURCE_URL[2]=http://www.mirror.ac.uk/sites/sf1.mirror.openoffice.org/stable/$VERSION/$SOURCE
-   SOURCE_URL[3]=ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.openoffice.org/stable/$VERSION/$SOURCE
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOo_${VERSION}_LinuxIntel_install
+   SOURCE_URL[0]=http://www.mirror.ac.uk/sites/sf1.mirror.openoffice.org/stable/$VERSION/$SOURCE
+   SOURCE_URL[1]=ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.openoffice.org/stable/$VERSION/$SOURCE
         WEB_SITE=http://www.openoffice.org
          ENTERED=20020713
-         UPDATED=20040429
+         UPDATED=20040624
 	 ARCHIVE="off"
-	  MD5[0]=301440483d6d3a658cc6a7a3c697178c
+	  MD5[0]="1597ef12ec6677d6791e4a6ff25eba58"
       LICENSE[0]=LGPL
       LICENSE[1]=SISSL
 	  REJECT="This spell is non-source"
-      MAINTAINER=sorcerer@flamesnyper.com
            SHORT='The binary version of OpenOffice (warning: BIG DOWNLOAD!)'
 cat << EOF
 OpenOffice.org is the open source project through which Sun Microsystems has

@@ -1,3 +1,7 @@
+2004-06-24 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* z-utils/skype: Added
+	* z-editors/Openoffice-bin: Updated to 1.1.2
+
 2004-05-21 Eric Sandall <eric@sandall.us>
 	* z-editors/OOodi2: Removed, replaced by OOodi
 

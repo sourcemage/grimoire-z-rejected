@@ -9,12 +9,6 @@
 
   prepare_install &&
 
-  # For some reason, the setup binary doesn't do anything if LD_PRELOAD is
-  # set. This means we can't use installwatch at all! :o(
-  OLD_LD_PRELOAD=$LD_PRELOAD    &&
-  unset           LD_PRELOAD    &&
-  ./install  --prefix=/usr/lib  &&
-  LD_PRELOAD=$OLD_LD_PRELOAD    &&
-  unset       OLD_LD_PRELOAD
+  ./install  --prefix=/usr/lib 
 
 ) > $C_FIFO 2>&1
