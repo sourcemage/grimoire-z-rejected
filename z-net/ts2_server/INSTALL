@@ -1,0 +1,13 @@
+DOCDIR=/usr/share/doc/${SPELL}
+SHAREDIR=/usr/share/${SPELL}
+
+mkdir -p $DOCDIR $SHAREDIR     &&
+cp -rv httpdocs    $DOCDIR/    &&
+cp -rv Manual      $DOCDIR/    &&
+cp -v  INSTALL*    $DOCDIR/    &&
+cp -v  *.txt       $DOCDIR/    &&
+cp -v  README*     $DOCDIR/    &&
+cp -v  manual.html $DOCDIR/    &&
+cp -rv ./*         $SHAREDIR/  &&
+cp -v $SCRIPT_DIRECTORY/teamspeak2-server /usr/bin  &&
+chmod 755 /usr/bin/teamspeak2-server

@@ -1,0 +1,6 @@
+2004-09-24 Eric Schabell <eschabell@sourcemage.org>
+	* ALL: added spell, cleaned up install and added template
+	  wrapper script that receives version dir info from INSTALL.
+
+2004-09-20 David Brown <dmlb2000@excite.com>
+	* ALL: created spell.
