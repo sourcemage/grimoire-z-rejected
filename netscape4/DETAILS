@@ -1,13 +1,16 @@
             SPELL=netscape4
-          VERSION=4.79
-           SOURCE=navigator-v479-us.x86-unknown-linux2.2.tar.gz
- SOURCE_DIRECTORY=$BUILD_DIRECTORY/navigator-v479.x86-unknown-linux2.2
-INSTALL_DIRECTORY=/usr/lib/netscape
+          VERSION=4.8
+           SOURCE=navigator-v48-us.x86-unknown-linux2.2.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/navigator-v48.x86-unknown-linux2.2
     SOURCE_URL[0]=ftp://ftp.netscape.com/pub/communicator/english/$VERSION/unix/supported/linux22/navigator_standalone/$SOURCE
+INSTALL_DIRECTORY=/usr/lib/netscape4
          WEB_SITE=http://www.netscape.com
+	    MD5[0]=b792a7a3de6de6d584cbf6b1b0f8f02f
+        LICENSE[0]=http://wp.netscape.com/terms/index.html
           ENTERED=20020226
-          UPDATED=20020226
+          UPDATED=20020909
             SHORT="netscape navigator is the venerable browser"
+           REJECT="is non source"
        MAINTAINER="Lyon Lemmens <redlemon@knoware.nl>"
 cat << EOF
 Netscape Navigator is an old browser, but still works fine.

@@ -1,14 +1,16 @@
             SPELL=netscape
-          VERSION=6.2.3
+          VERSION=7.0
            SOURCE=netscape-i686-pc-linux-gnu-sea.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/netscape-installer/
-INSTALL_DIRECTORY=/usr/lib/netscape6
-    SOURCE_URL[0]=ftp://ftp.netscape.com/pub/${SPELL}6/english/$VERSION/unix/linux22/sea/$SOURCE
+    SOURCE_URL[0]=ftp://ftp.netscape.com/pub/${SPELL}7/english/$VERSION/unix/linux22/sea/$SOURCE
          WEB_SITE=http://www.netscape.com
+	   MD5[0]=a3fc21faf9b188d79dc176301bbf207b
+       LICENSE[0]=http://wp.netscape.com/terms/index.html
           ENTERED=20020529
-          UPDATED=20020529
-            SHORT="netscape 6"
+          UPDATED=20020909
+            SHORT="Netscape 7"
        MAINTAINER="ashaman@flyingtemple.com"
+	   REJECT="is non-source"
 cat << EOF
-Netscape 6 is the current netscape browser.
+Netscape 7 is the current netscape browser.
 EOF

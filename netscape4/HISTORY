@@ -1,3 +1,14 @@
+2002-09-09  Geoffrey Derber <ashaman@flyingtemple.com>
+
+		Added updated script to grimoire.
+		Added md5 checksum and license fields.
+		Remove USEGCC2 file.
+		Updated PRE_BUILD warning script.
+
+2002-09-08  Glenn Shannon <warl0k@lvcm.com>
+
+		Updated script.
+
 2002-06-60  Geoffrey Derber <ashaman@flyingtemple.com>
 
 		Renamed netscape4.

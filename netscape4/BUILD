@@ -7,13 +7,13 @@
     	gzip -dc $S | (cd $INSTALL_DIRECTORY; tar -xf -)
     done                                           &&
     chown -R root:root $INSTALL_DIRECTORY          &&
-    echo "Navigator,4.79.0.20011017,$INSTALL_DIRECTORY" > /tmp/infile.$$   &&
+    echo "Navigator,4.8.20011017,$INSTALL_DIRECTORY" > /tmp/infile.$$   &&
     ./vreg $INSTALL_DIRECTORY/registry /tmp/infile.$$                      &&
     rm /tmp/infile.$$                              &&
-    ln -fs /usr/lib/libstdc++-*libc6.2-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2              &&
-    touch /usr/bin/netscape                        &&
-    chmod 755 /usr/bin/netscape                    &&
-    cat >/usr/bin/netscape <<EOF
+    ln -fs /opt/gcc2/lib/libstdc++-*libc6.2-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2              &&
+    touch /usr/bin/netscape4                       &&
+    chmod 755 /usr/bin/netscape4                   &&
+    cat >/usr/bin/netscape4 <<EOF
 #! /bin/sh
 
 MOZILLA_HOME=$INSTALL_DIRECTORY

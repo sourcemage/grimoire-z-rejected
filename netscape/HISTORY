@@ -1,3 +1,16 @@
+2002-09-09 Geoffrey Derber <ashaman@flyingtemple.com>
+
+		Added updated spell to the grimoire.
+		Added MD5 and LICENSE fields.
+		Removed USEGCC2 file.
+		Changed PRE_BUILD warning script.
+
+2002-09-08 Glenn Shannon <warl0k@lvcm.com>
+
+		Redid the script to be more efficient.
+		Performed conversion to netscape7
+
+
 2002-07-27 Geoffrey Derber <ashaman@flyingtemple.com>
 
 		Fix the SOURCE_URL[0].
