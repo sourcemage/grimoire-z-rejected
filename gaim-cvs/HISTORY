@@ -1,3 +1,7 @@
+2003-05-16  Seth Woolley <seth@tautology.org>
+
+		FUZZ fix (cvs always makes .bz2) .gz to .bz2
+
 2003-04-04  Geoffrey Derber <ashaman@flyingtemple.com>
 
 		New spell, addapted from the gaim-nightly spell

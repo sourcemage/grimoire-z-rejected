@@ -1,6 +1,6 @@
            SPELL=gaim-cvs
          VERSION=`date +%Y%m%d`
-          SOURCE=$SPELL.tar.gz
+          SOURCE=$SPELL.tar.bz2
 	 SOURCE2=gaim-e.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/gaim:gaim
