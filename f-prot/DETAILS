@@ -3,7 +3,7 @@
           SOURCE=fp-linux-sb-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=ftp://ftp.f-prot.com/pub/linux/$SOURCE
-          MD5[0]=fb1d50eae935a8ae5db92294bbe99e4b
+          MD5[0]=107b3a5294069f3878a036e4372ff827
         WEB_SITE=http://www.f-prot.com
          ENTERED=20020921
          UPDATED=20030406
