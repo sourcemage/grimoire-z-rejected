@@ -1,3 +1,7 @@
+2004-08-08 Eric Schabell <z-rejected@sourcemage.org>
+	* z-http/tomcat-4-bin: api2 compliant and rejected msg.
+	* z-http/opera: api2 compliant and rejected msg.
+
 2004-08-07 Eric Schabell <z-rejected@sourcemage.org>
 	* z-graphics: section api2 compliant and rejected msg.
 	* z-utils: section api2 compliant and rejected msg.
@@ -6,7 +10,6 @@
 	* z-x11: section api2 compliant and rejected msg.
 	* z-science: section api2 compliant and rejected msg.
 	* z-java/j2sdk{-bin}: api2 compliant and rejected msg.
-	* z-http/tomcat-4-bin: api2 compliant and rejected msg.
 
 2004-08-05 Eric Schabell <z-rejected@sourcemage.org>
 	* z-devel: section api2 compliant and rejected msg.

@@ -1,8 +1,9 @@
             SPELL=opera
+        BUILD_API=2
           VERSION=7.50
-	 VERSION2=20040511.4
-	 VERSION3=shared
-	 VERSION4=qt.i386-en
+	       VERSION2=20040511.4
+	       VERSION3=shared
+	       VERSION4=qt.i386-en
            SOURCE=${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}.tar.bz2
  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}
     SOURCE_URL[0]=ftp://ftp.opera.com/pub/opera/linux/750/final/en/i386/${VERSION3}/gcc-3.2/${SOURCE}
@@ -17,8 +18,10 @@
             SHORT="Opera is a small quick qt based browser"
        MAINTAINER="Andrew Stitt <afryaedknot@yahoo.com>"
 cat << EOF
-Opera is a fast full featured web browser. It supports plugins and is very customizable. It now uses the qt3 widget set,
-The shared version is now included here because the current grimoire uses qt3. 
-Opera is unfortunatly not open source and thus destined to be placed in the rejected section of the grimoire.
+Opera is a fast full featured web browser. It supports plugins and is 
+very customizable. It now uses the qt3 widget set. 
+
+The shared version is now included here because the current grimoire 
+uses qt3. 
 EOF
 
