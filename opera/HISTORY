@@ -1,4 +1,8 @@
-2002-11-19  Geoffrey Derber <ashaman@sourcemage.org>
+2002-12-07  Geoffrey Derber <gderber@sourcemage.org>
+
+		Version bump to 6.11, now uses qt-static.
+
+2002-11-19  Geoffrey Derber <gderber@sourcemage.org>
 
 		Modified Version String.
 		Fixed PRE_BUILD warning script problem.
