@@ -1,3 +1,8 @@
+2003-06-25  Eric Schabell <eschabell@sourcemage.org>
+
+		Fixed small text error in BUILD file, in Konqueror
+		section it was written as Mozilla.
+
 2003-06-21  Geoffrey Derber <ashaman@flyingtemple.com>
 
 		Updated to version 6.0r79

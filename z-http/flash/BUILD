@@ -17,7 +17,7 @@ esac &&
 
 case $KDEBASE in
 	y|Y)	
-		echo "Installing for Mozilla"
+		echo "Installing for Konqueror"
 		if [ -e /usr/lib/konqueror/libflashplayer.so ]; then
 			rm -f /usr/lib/konqueror/libflashplayer.so
 		fi
