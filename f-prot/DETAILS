@@ -1,14 +1,14 @@
            SPELL=f-prot
          VERSION=3.12b
-          SOURCE=fp-linux_sb.tar.gz
+          SOURCE=fp-linux-sb-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$SPELL\_$VERSION
-   SOURCE_URL[0]=ftp://ftp.f-prot.com/pub/$SOURCE
-             MD5=d2b836d729e0754ee5af2ca2eb02c095
+   SOURCE_URL[0]=ftp://ftp.f-prot.com/pub/linux/$SOURCE
+          MD5[0]=7b5b96cfd1ded7fe7d7ed115ab991ef2
         WEB_SITE=http://www.f-prot.com
          ENTERED=20020921
          UPDATED=20020921
       MAINTAINER=mlubrano@sourcemage.org
-         LICENSE=http://www.f-prot.com/products/fplin.html
+      LICENSE[0]=http://www.f-prot.com/products/fplin.html
            SHORT="F-Prot AntivirusTM For Linux"
 cat << EOF
 F-Prot AntivirusTM For Linux
