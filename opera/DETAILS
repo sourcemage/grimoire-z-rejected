@@ -1,16 +1,16 @@
             SPELL=opera
-          VERSION=6.10-20021029.1
-           SOURCE=${SPELL}-$VERSION-static-qt.i386.tar.bz2
- SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION-static-qt.i386 
-    SOURCE_URL[0]=ftp://ftp.opera.com/pub/opera/linux/610/final/en/i386/static/$SOURCE
-    SOURCE_URL[1]=http://www.panix.com/opera/files/linux/610/final/en/i386/static/$SOURCE
-    SOURCE_URL[2]=ftp://ftp.hu-berlin.de/pub/www/opera/files/linux/610/final/en/i386/static/$SOURCE
+          VERSION=6.10-20021029.1-static-qt.i386
+           SOURCE=${SPELL}-${VERSION}.tar.bz2
+ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+    SOURCE_URL[0]=ftp://ftp.opera.com/pub/opera/linux/610/final/en/i386/static/${SOURCE}
+    SOURCE_URL[1]=http://www.panix.com/opera/files/linux/610/final/en/i386/static/${SOURCE}
+    SOURCE_URL[2]=ftp://ftp.hu-berlin.de/pub/www/opera/files/linux/610/final/en/i386/static/${SOURCE}
          WEB_SITE=http://www.opera.com
            MD5[0]=a45460b4caca115a9a60f4a41f11b3ed
        LICENCE[0]=UNKOWN
           ENTERED=20020530
           UPDATED=20020530
-	   REJECT="is non-source and has licensing issues"
+           REJECT="is non-source and has licensing issues"
             SHORT="Opera is a small quick qt based browser"
        MAINTAINER="Andrew Stitt <afryaedknot@yahoo.com>"
 cat << EOF

@@ -10,6 +10,8 @@
 
 		Changed rm to rm -f in POST_REMOVE
 
+		Cleaned up VERSION usage
+
 2002-07-04  Eric Schabell <eric@schabell.com>
 
 		Version bump to 6.02 and added md5sum.
