@@ -18,15 +18,15 @@ elif [ "${ARCH:0:3}" = "ppc" ]; then
         WEB_SITE=http://www.blackdown.org/java-linux/java2-status/index.html
 else
             ARCH=i386
-         VERSION=1_4_2_06
-             VER=1.4.2_06
+         VERSION=1_4_2_07
+             VER=1.4.2_07
           SOURCE=j2sdk-$VERSION-linux-i586.bin
-          MD5[0]=825ff134f3e370f6e677638d32962082
+          MD5[0]=a55a9150977de7d5c7f78d29593a8b8c
         WEB_SITE=http://java.sun.com/j2se/1.4.2/download.html
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/j2sdk$VER
          ENTERED=20010922
-         UPDATED=20030215
+         UPDATED=20050208
          ARCHIVE="off"
           REJECT="is non-source"
            SHORT="j2sdk-bin is the Java Software Development Kit"
