@@ -1,4 +1,4 @@
 if  [  -x  /etc/init.d/apache.sh  ]
 then
-  /etc/init.d/apache.sh  stop
+  telinit run apache stop
 fi

@@ -1,6 +1,5 @@
            SPELL=tomcat-4-bin
       SPELL_OTHR=tomcat-4
-       BUILD_API=2
          VERSION=4.1.29
           SOURCE=jakarta-tomcat-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jakarta-tomcat-${VERSION}

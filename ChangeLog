@@ -1,8 +1,5 @@
 2004-08-08 Eric Schabell <z-rejected@sourcemage.org>
-	* z-http/tomcat-4-bin: api2 compliant and rejected msg.
-	* z-http/opera: api2 compliant and rejected msg.
-	* z-http/netscape4: api2 compliant and rejected msg.
-	* z-http/flash: api2 compliant and rejected msg.
+	* z-http: section api2 compliant and rejected msg.
 
 2004-08-07 Eric Schabell <z-rejected@sourcemage.org>
 	* z-graphics: section api2 compliant and rejected msg.

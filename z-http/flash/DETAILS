@@ -1,5 +1,4 @@
            SPELL=flash
-       BUILD_API=2
          VERSION=7.0r25
           SOURCE=install_flash_player_7_linux.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux

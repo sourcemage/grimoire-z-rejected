@@ -1,3 +1,10 @@
+2004-08-08 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: modified for api2.
+	* INSTALL: added for api2.
+	* CONFIGURE: modified to use grimoire rejected message.
+	* POST_INSTALL: integrated to FINAL and removed.
+	* FINAL: added for api2.
+
 2003-08-22 Geoffrey Derber <gderber@sourcemage.org>
 	* moved z-rejected warning messages
 	  to CONFIGURE from PRE_BUILD

@@ -1,5 +1,4 @@
             SPELL=netscape4
-        BUILD_API=2
           VERSION=4.8
            SOURCE=navigator-v48-us.x86-unknown-linux2.2.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/navigator-v48.x86-unknown-linux2.2
