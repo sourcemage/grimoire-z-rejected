@@ -1,34 +1,4 @@
 (
-#test if there is no JAVA_HOME then we need j2sdk binary
-if  [ $JAVA_HOME ] && query "${MESSAGE_COLOR}I've found java at $JAVA_HOME, do you want to use it to bootstrap j2sdk compilation? If you answer 'n', I'll use sun's binary.${DEFAULT_COLOR}"  y;  then
-	echo "java home = $JAVA_HOME"
-   else
-        if [ "$CERT" = "yes" ] ;then
-        unpack $SOURCE11 ${MD5[10]} || exit 1 # md5 check only
-        else  unpack $SOURCE10 ${MD5[10]} || exit 1 # md5 check only
-        fi                   
-        unset JAVA_HOME
-        V=`echo ${BIN_VERSION} | sed -e "s/\./_/g"`
-	# Check out where the tar file begins and extract it
-	T=`grep -a tail $SOURCE_CACHE/j2sdk-${V}-linux-i?86.bin | cut -f 2 -d " "`
-	tail $T $SOURCE_CACHE/j2sdk-${V}-linux-i?86.bin > install.sfx.$$
-	chmod +x install.sfx.$$
-	# Extract the files and move them to where we want the jdk installed.
-	./install.sfx.$$
-	cd j2sdk${BIN_PATH}
-	rm -rf /opt/java/j2sdk-precompiled-1.4
-	install -d /opt/java/j2sdk-precompiled-1.4
-	mv * /opt/java/j2sdk-precompiled-1.4
-	export JAVA_HOME=/opt/java/j2sdk-precompiled-1.4
-	rm /opt/java/j2sdk
-	ln -sf /opt/java/j2sdk-precompiled-1.4 /opt/java/j2sdk
-        unpack $SOURCE9 ${MD5[8]} || exit 1 # md5 check only
-	cp $SOURCE_CACHE/$SOURCE9 $JAVA_HOME/jre/lib/i386/
-	cd $JAVA_HOME/jre/lib/i386
-	bunzip2 $SOURCE9
-	ln -sf libstdc++-libc6.3-2.so.2 libstdc++-libc6.1-1.so.3
-	export PATH=/opt/java/j2sdk-precompiled-1.4/bin:$PATH
-fi							&&
 cd $SOURCE_DIRECTORY					&&
 export ALT_BOOTDIR="$JAVA_HOME"				&&
 export ALT_MOZILLA_PATH=$SOURCE_DIRECTORY		&&
@@ -37,6 +7,7 @@ export MILESTONE="SMGL" 				&&
 export BUILD_NUMBER="$(date +%Y%m%d)-Z-REJECTED"        &&
 export ALT_CACERTS_FILE=${ALT_BOOTDIR}/jre/lib/security/cacerts	&&
 export DEV_ONLY=true					&&
+export MAKE_VERBOSE=true                                &&
 ##export INSANE=true is not needed now if "make  CC=$(which gcc)" is used
 ##and a symlink is made for mozilla_headers. Also added sedit of Sanity.gmk
 ##file for quieter startup, lot of errors before.Removed make verbose = true also

@@ -1,3 +1,9 @@
+2003-09-10  hgg <hgreig@bigpond.net.au
+
+		Moved PREPARE to CONFIGURE, moved binary setup to PRE_BUILD, redid JAVA_HOME to also 
+		check for a working javac, added check to PREPARE to start configure if the latest 
+		changes aren't in $SPELL_CONFIG
+
 2003-09-09  hgg <hgreig@bigpond.net.au>
 
 		Modified spell to install to /usr/java and some other

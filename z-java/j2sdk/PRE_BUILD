@@ -1,4 +1,4 @@
-if [ $(cat /proc/meminfo | grep  Swap: | cut -d" " -f4) -gt "1800000000" ] ;
+if [ $(cat /proc/meminfo | grep  Swap: | cut -d" " -f4) -gt "1900000000" ] ;
 then mk_source_dir	$SOURCE_DIRECTORY	2g           
 else export TMPFS=off &&
      mk_source_dir $SOURCE_DIRECTORY
@@ -26,6 +26,45 @@ do
 bunzip2 -k -c $file | patch -p1 
 done  &&
 patch -p0 < $SCRIPT_DIRECTORY/j2sdk-gcc3.3.X-patch &&
-patch -p1 < $SCRIPT_DIRECTORY/mkmsgcat.c.patch
-
+patch -p1 < $SCRIPT_DIRECTORY/mkmsgcat.c.patch     &&
+  
+#Set up the j2sdk binary if needed 
+if  [ "$BINARY" = "no" ]
+   then
+        echo "java home = $JAVA_HOME"
+   else
+        if [ "$CERT" = "yes" ] ;then
+        unpack $SOURCE11 ${MD5[10]} || exit 1 # md5 check only                       
+        else  unpack $SOURCE10 ${MD5[10]} || exit 1 # md5 check only                 
+        fi                                                                          &&
+        unset JAVA_HOME                                                             &&
+        V=`echo ${BIN_VERSION} | sed -e "s/\./_/g"`                                 && 
+        # Check out where the tar file begins and extract it
+        T=`grep -a tail $SOURCE_CACHE/j2sdk-${V}-linux-i?86.bin | cut -f 2 -d " "`  &&
+        tail $T $SOURCE_CACHE/j2sdk-${V}-linux-i?86.bin > install.sfx.$$            &&
+        chmod +x install.sfx.$$                                                     &&
+        # Extract the files and move them to where we want the jdk installed.
+        #./install.sfx.$$
+        #cd j2sdk${BIN_PATH}
+        #rm -rf /opt/java/j2sdk-precompiled-1.4
+        #install -d /opt/java/j2sdk-precompiled-1.4
+        #mv * /opt/java/j2sdk-precompiled-1.4
+        #export JAVA_HOME=/opt/java/j2sdk-precompiled-1.4
+        #rm /opt/java/j2sdk
+        #ln -sf /opt/java/j2sdk-precompiled-1.4 /opt/java/j2sdk
+        ./install.sfx.$$                                                            &&
+        cd j2sdk${BIN_PATH}                                                         &&
+        install -d $SOURCE_DIRECTORY/j2sdk-precompiled-1.4                          &&
+        mv * $SOURCE_DIRECTORY/j2sdk-precompiled-1.4                                &&   
+        cd $SOURCE_DIRECTORY                                                        &&
+        rmdir j2sdk${BIN_PATH}                                                      && 
+        rm -rf install.sfx.$$                                                       &&
+        export JAVA_HOME=$SOURCE_DIRECTORY/j2sdk-precompiled-1.4                    &&
+        unpack $SOURCE9 ${MD5[8]} || exit 1 # md5 check only                        &&
+        cp $SOURCE_CACHE/$SOURCE9 $JAVA_HOME/jre/lib/i386/                          &&
+        cd $JAVA_HOME/jre/lib/i386                                                  &&   
+        bunzip2 $SOURCE9                                                            && 
+        ln -sf libstdc++-libc6.3-2.so.2 libstdc++-libc6.1-1.so.3                    &&   
+        export PATH=$JAVA_HOME/bin:$PATH
+fi
 
