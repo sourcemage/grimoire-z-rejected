@@ -1,0 +1,12 @@
+depends  zlib     &&
+depends  openssl  &&
+
+optional_depends  "tcp_wrappers"         \
+                  "--with-tcp-wrappers"  \
+                  ""                     \
+                  "for an optional method of controlling ssh access." &&
+
+optional_depends "xfree86"  \
+                 "-with-x"  \
+                 ""         \
+                 "use the X Window System"

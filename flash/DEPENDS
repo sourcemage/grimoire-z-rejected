@@ -1,0 +1,2 @@
+depends mozilla &&
+optional_depends "kdebase" "" "" "provides konqueror webbrowser"

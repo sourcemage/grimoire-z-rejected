@@ -1,0 +1,19 @@
+            SPELL=ssh
+         VERSION=3.1.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.ssh.fi/pub/$SPELL/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.mpg.goe.ni.schule.de/pub/$SPELL/$SOURCE
+   SOURCE_URL[2]=ftp://ftp.keystealth.org/pub/$SPELL/$SOURCE
+        WEB_SITE=http://www.ssh.com
+         ENTERED=20020125
+         UPDATED=20020320
+           SHORT="sshd2 is a secure remote admin suite"
+      MAINTAINER=glenniii@utexas.edu
+cat << EOF
+sshd2 - secure remote admin suite
+Provides remote shell, sftp, and scp using encrypted protocols.
+If you're wondering why not Openssh, the reason is SSH has the ability
+to be an Anonymous SFTP server or SFTP server (ie disallow access to shell).
+NOTE: There is a restrictive license (ie no free commercial use).
+EOF

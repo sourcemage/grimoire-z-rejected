@@ -1,0 +1,8 @@
+2002-03-20  Luis M. Lourenco  <aeron@netcabo.pt>
+
+        * BUILD: Removed option to create anonymous sftp user. Changed { and }
+        to ( and ).
+
+        * DETAILS: Added 2 SOURCE_URLs. Changed PACKAGE to SPELL.
+
+        * POST_INSTALL: Removed, no user is created. 

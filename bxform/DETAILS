@@ -1,0 +1,17 @@
+           SPELL=bxform
+         VERSION=089-glibc2.1
+          SOURCE=$SPELL-$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/xforms
+   SOURCE_URL[0]=ftp://ftp.fu-berlin.de/unix/X11/gui/xforms/linux-i386/elf/$SOURCE
+        WEB_SITE=http://world.std.com/~xforms/
+         ENTERED=
+         UPDATED=
+      MAINTAINER=fkb@iago.polito.it
+           SHORT="The XForms GUI toolkit"
+cat << EOF
+This is the XForms package, a graphical user interface
+toolkit for X Window Systems. Also included in this package is
+a GUI designer meant to help you design interaction dialogues
+in a WYSIWYG way and write the corresponding C code.
+Binary package. XForms is free for non-commercial use.
+EOF

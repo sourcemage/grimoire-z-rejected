@@ -1,0 +1,44 @@
+           SPELL=Apachetoolbox
+         VERSION=1.5.52
+          SOURCE=${SPELL}-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
+   SOURCE_URL[0]=http://apachetoolbox.sourceforge.net/download/$SOURCE
+        WEB_SITE=http://www.apachetoolbox.com
+         ENTERED=20020220
+         UPDATED=22022002
+           SHORT="Apache Toolbox provides a means to easily compile Apache (warning: 80+MB download)."
+      MAINTAINER=eric@schabell.com
+cat << EOF
+
+Warning: currently 82.24MB download.
+
+Apache Toolbox provides a means to easily compile Apache with SSL, PHP (v4 or v3), 
+MySQL, APC (Alternative PHP Cache), mod_auth_nds, mod_dynvhost, WebDAV, mod_fastcgi, 
+mod_gzip, mod_layout, mod_throttle, mod_accessref, mod_auth_sys, mod_bandwidth, 
+mod_auth_ldap, mod_roaming, mod_perl, Jakarta, OpenLDAP, mod_dtcl, mod_python, 
+mod_frontpage, mod_relocate, mod_backhand, mod_trigger, mod_watch, mod_filter, 
+libcurl for PHP, MING for PHP, mod_auth_mysql, mod_auth_samba, mod_index_rss, 
+mod_random [by Brian Aker], mod_allowdev, mod_auth_cookie, mod_auth_cookie_file, 
+mod_auth_external, mod_auth_inst, mod_auth_system, mod_eaccess, mod_bandwidth, 
+mod_cgisock, mod_urlcount, mod_disallow_id, mod_peephole, mod_put, mod_qs2ssi, 
+mod_session, mod_cvs, mod_macro, mod_random, mod_ip_forwarding, mod_ticket, 
+mod_monitor, jakarta-tomcat, jakarta-ant, jakarta-servletapi, Java Development Kit, 
+Java API for XML Parsing, Java Secure Sockets Extension, mod_pcgi2, apache IPv6 patch, 
+and the latest gd libraries with PNG/JPEG/Freetype2/Zlib support.
+
+You can also hack apache's internal settings so it will report a differnet version of 
+httpd all together, improve your security. 
+
+Includes support for mod_access, mod_asis, mod_auth_db, mod_autoindex, mod_digest, 
+mod_example, mod_imap, mod_log_agent, mod_mime, mod_negotiation, mod_setenvif, 
+mod_status, mod_usertrack, mod_actions, mod_auth, mod_auth_dbm, mod_cern_meta, 
+mod_dir, mod_expires, mod_include, mod_log_config, mod_mime_magic, mod_proxy, 
+mod_unique_id, mod_vhost_alias, mod_alias, mod_auth_anon, mod_auth_digest, 
+mod_cgi, mod_env, mod_headers, mod_info, mod_log_referer, mod_mmap_static, 
+mod_rewrite, and mod_speling, which come default with apache.
+
+It is fully customizable and menu driven. Everything is compiled from source. 
+It checks for RPMs that might cause problems and uses wget to automatically 
+download the source if it's missing. 
+
+EOF

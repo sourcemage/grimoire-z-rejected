@@ -1,0 +1,17 @@
+           SPELL=clibpdf
+         VERSION=202r1
+          SOURCE=${SPELL}${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ClibPDF
+   SOURCE_URL[0]=http://www.fastio.com/$SOURCE
+        WEB_SITE=http://www.fastio.com/
+         ENTERED=20020203
+         UPDATED=20020203
+      MAINTAINER="jacksonje@health.missouri.edu"
+           SHORT="ClibPDF is a library for creating PDF files in C programs."
+cat << EOF
+ClibPDF is a library of ANSI C functions, distributed as source code, for 
+creating PDF (Acrobat) files directly via C language programs without relying 
+on any Adobe Acrobat tools and related products.  It is free for private, 
+non-profit use, but a commercial license is required for for-profit 
+applications.
+EOF

@@ -1,0 +1,39 @@
+if  query  "This is a REJECTED SPELL, to see why enter a 'y': "  y
+  then 
+    echo  "" 
+    echo  ""
+    echo  "This spell was rejected due to the fact that the various"
+    echo  "apache modules that can be installed will not be tracked"
+    echo  "by sorcery, otherwise the spell is fine."
+    echo  ""
+    echo  ""
+
+    if  query  "To CONTINUE casting enter a 'y': "  y
+      then
+        echo  ""
+        echo  ""
+        echo  "Ok, here we go... you're on your own!"
+        echo  ""
+        echo  ""
+      else
+	echo  ""
+	echo  "Ok, maybe you be braver next time?"
+	exit
+    fi
+
+  else
+
+    if  query  "To CONTINUE casting enter a 'y': "  y
+      then
+        echo  ""
+        echo  ""
+        echo  "Ok, here we go... you're on your own!"
+        echo  ""
+        echo  ""
+      else
+	echo  ""
+	echo  "Ok, maybe you be braver next time?"
+        exit
+    fi
+fi
+exit 0
