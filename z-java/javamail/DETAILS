@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
           MD5[0]=90dbb82b3711c3693674f30913c01758
       LICENSE[0]=SCSL
           REJECT="is non-source"
-	WEB_SITE=http://java.sun.com/products/javamail/
+	      WEB_SITE=http://java.sun.com/products/javamail/
          ENTERED=20030326
          UPDATED=20030326
          ARCHIVE="off"
@@ -21,4 +21,12 @@ is implemented as a Java platform optional package and is also available as
 part of the Java 2 platform, Enterprise Edition. Sun provides a royalty-free
 reference implementation, in binary form, that developers will be able to use
 and ship.
+
+Don't forget to download sources :
+
+$SOURCE
+
+to /var/spool/sorcery before casting, from :
+
+$WEB_SITE
 EOF

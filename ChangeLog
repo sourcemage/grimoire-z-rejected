@@ -8,6 +8,7 @@
 	* z-java/jdmk: api2 compliant and rejected msg.
 	* z-java/jdbc-optional: api2 compliant and rejected msg.
 	* z-java/java_xml_pack: api2 compliant and rejected msg.
+	* z-java/javamail: api2 compliant and rejected msg.
 
 2004-08-08 Eric Schabell <z-rejected@sourcemage.org>
 	* z-http: section api2 compliant and rejected msg.

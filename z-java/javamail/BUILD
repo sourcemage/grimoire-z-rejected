@@ -1,14 +1,1 @@
-(
-
-  . $SCRIPT_DIRECTORY/../java-functions
-  
-  prepare_install 							&&
-  
-  extract_sun_src   ${SPELL} ${SPELL}-${VERSION}  $SOURCE_DIRECTORY	&&
-  register_sun_jar  ${SPELL}-${VERSION}/mail.jar  	mail.jar		&&
-  register_sun_jar  ${SPELL}-${VERSION}/lib/imap.jar  	imap.jar		&&
-  register_sun_jar  ${SPELL}-${VERSION}/lib/mailapi.jar mailapi.jar		&&
-  register_sun_jar  ${SPELL}-${VERSION}/lib/pop3.jar  	pop3.jar		&&
-  register_sun_jar  ${SPELL}-${VERSION}/lib/smtp.jar  	smtp.jar
-  
-) > $C_FIFO 2>&1  
+true
