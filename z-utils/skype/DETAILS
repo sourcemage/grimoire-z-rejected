@@ -1,14 +1,13 @@
            SPELL=skype
-         VERSION=0_90_0_6
-          SOURCE=${SPELL}_ver-${VERSION}-staticQT.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver-${VERSION}-staticQT
+         VERSION=0_90_0_14
+          SOURCE=${SPELL}_ver-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver-${VERSION}
         WEB_SITE=http://www.skype.com/
-#   SOURCE_URL[0]='http://www.skype.com/go/getskype-linux\?type=static\&x=72\&y=0'
     SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
-          MD5[0]='6f9fc12f227042e2268b36ed0616e4ce'
+          MD5[0]='519da7ff19f13232f59ffb29120d3509'
       LICENSE[0]=http://www.skype.com/eula.html
          ENTERED=20040624
-         UPDATED=20040701
+         UPDATED=20040725
 	        REJECT="has licensing issues"
            SHORT="Easy, free, working voice over IP (voip) Linux client."
 cat << EOF
@@ -18,10 +17,9 @@ KaZaA, uses innovative P2P (peer-to-peer) technology to connect you with other
 Skype users. If you are tired of paying outrageous fees for telephony, Skype
 is for you!
 
-
 Skype is quick and easy to install. Just download it, register, and within
 minutes you can plug in your PC headset and call your friends on Skype. Skype
 calls have excellent sound quality and are highly secure with end-to-end
 encryption. Best of all, Skype does not require you to reconfigure your
-firewall or router?it just works!)
+firewall or router (it just works!)
 EOF

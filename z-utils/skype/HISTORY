@@ -1,3 +1,6 @@
+2004-07-25 Eric Schabell <libs@sourcemage.org>
+	* DETAILS: version bump to 0_90_0_14, using dynamic QT now.
+
 2004-07-01 Eric Schabell <libs@sourcemage.org>
 	* DETAILS: version bump.
 
