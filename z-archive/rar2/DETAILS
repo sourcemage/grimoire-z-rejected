@@ -1,4 +1,5 @@
-	   SPELL=rar2
+	         SPELL=rar2
+       BUILD_API=2
          VERSION=271
           SOURCE=rarlnx${VERSION}.sfx.bin
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/rar
@@ -6,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/rar
         WEB_SITE=http://www.exit1.org/dvdrip/contrib
           MD5[0]=5042cf753833ab8ca4fce21a1a28b579
       LICENSE[0]=license.txt
+          REJECT="distributed as binary only"
          ENTERED=20030816
          UPDATED=20030816
            SHORT="RAR archive utility"
