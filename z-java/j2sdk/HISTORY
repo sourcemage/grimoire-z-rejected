@@ -1,3 +1,6 @@
+2003-11-28 hgg <hgreig@bigpond.net.au>
+	* DEPENDS: change to X11-LIBS now I have fixed the xfree86-libs and xdirectfb spell
+
 2003-11-25 hgg < hgreig@bigpond.net.au>
 	* j2sdk-1_4_2-smgl.patch: update by Jason for new alsa version check
 
