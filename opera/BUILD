@@ -1,3 +1,2 @@
-cd $SOURCE_DIRECTORY
+cd $SOURCE_DIRECTORY  &&
 ./install.sh -s
-

@@ -1,10 +1,23 @@
-2002-07-04 Eric Schabell <eric@schabell.com>
+2002-11-08  Eric Sandall <eric@sandall.us>
 
+		Version bump to 6.10  ( Bug # 1608)
+
+		Uncommented LICENSE and set correctly
+
+		Added US, Germany mirrors
+
+		Fixed BUILD to fail if can't change to $SOURCE_DIRECTORY
+
+		Changed rm to rm -f in POST_REMOVE
+
+2002-07-04  Eric Schabell <eric@schabell.com>
 
 		Version bump to 6.02 and added md5sum.
 
-2002-06-01 Geoffrey Derber <ashaman@flyingtemple.com>
+2002-06-01  Geoffrey Derber <ashaman@flyingtemple.com>
 
-	Added to the grimoire.
-	Added a PRE_BUILD file with information on the rejection.
-	Added a POST_REMOVE file to clean up removal when dispeled.
+		Added to the grimoire.
+
+		Added a PRE_BUILD file with information on the rejection.
+
+		Added a POST_REMOVE file to clean up removal when dispeled.
