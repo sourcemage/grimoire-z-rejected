@@ -1,3 +1,8 @@
+2005-03-14 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated UPDATED
+	* NVIDIA_kernel-1.0-7167-1233959.diff, NVIDIA_kernel-1.0-7167-1237815.diff:
+	  Added from http://www.nvnews.net/vbulletin/showthread.php?t=47405
+
 2005-03-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.0.7167
 	* NVIDIA_glx-1.0.6106-defines.patch, linux-2.6.9.patch, 

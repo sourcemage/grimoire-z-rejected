@@ -1,5 +1,10 @@
-patch  -p1  <  ${SCRIPT_DIRECTORY}/NVIDIA_glx-1.0.7167-defines.patch   &&
-patch  -p1  <  ${SCRIPT_DIRECTORY}/NVIDIA_glx-1.0.7167-glheader.patch  &&
+patch  -p1  <  $SCRIPT_DIRECTORY/NVIDIA_glx-1.0.7167-defines.patch    &&
+patch  -p1  <  $SCRIPT_DIRECTORY/NVIDIA_glx-1.0.7167-glheader.patch   &&
+#
+# Patches from http://www.nvnews.net/vbulletin/showthread.php?t=47405
+#
+patch  -p0  <  $SCRIPT_DIRECTORY/NVIDIA_kernel-1.0-7167-1233959.diff  &&
+patch  -p0  <  $SCRIPT_DIRECTORY/NVIDIA_kernel-1.0-7167-1237815.diff  &&
 
 cd usr/src/nv  &&
 

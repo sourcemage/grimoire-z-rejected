@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION
           MD5[0]=d88d606873be255e8c4926961a1f09bf
         WEB_SITE=http://www.nvidia.com
          ENTERED=20030401
-         UPDATED=20040717
+         UPDATED=20050314
          ARCHIVE=off
       LICENSE[0]=http://www.nvidia.com/view.asp?IO=nv_swlicense
        BUILD_API=2
