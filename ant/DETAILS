@@ -1,13 +1,13 @@
            SPELL=ant
-         VERSION=1.5.1
-          SOURCE=jakarta-$SPELL-$VERSION-src.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/jakarta-$SPELL-$VERSION
+         VERSION=1.5.2
+          SOURCE=apache-$SPELL-$VERSION-src.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/apache-$SPELL-$VERSION
    SOURCE_URL[0]=http://www.apache.org/dist/ant/source/$SOURCE
-          MD5[0]='eeca7be9b2230ad0a53209220442cab1'
+          MD5[0]='f9dc9ac5c7d680e6fe673532050234a3'
       LICENSE[0]=APACHE
-        WEB_SITE=http://jakarta.apache.org/ant/
+        WEB_SITE=http://ant.apache.org/
          ENTERED=20030120
-         UPDATED=20030120
+         UPDATED=20030309
       MAINTAINER=sepinkham@attbi.com
            SHORT="Advanced build system using Java"
 cat << EOF
