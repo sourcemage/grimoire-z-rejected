@@ -1,14 +1,14 @@
             SPELL=netscape
-          VERSION=4.79
-           SOURCE=navigator-v479-us.x86-unknown-linux2.2.tar.gz
- SOURCE_DIRECTORY=$BUILD_DIRECTORY/navigator-v479.x86-unknown-linux2.2
-INSTALL_DIRECTORY=/usr/lib/netscape
-    SOURCE_URL[0]=ftp://ftp.netscape.com/pub/communicator/english/$VERSION/unix/supported/linux22/navigator_standalone/$SOURCE
+          VERSION=6.2.3
+           SOURCE=netscape-i686-pc-linux-gnu-sea.tar.gz
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/netscape-installer/
+INSTALL_DIRECTORY=/usr/lib/netscape6
+    SOURCE_URL[0]=ftp://ftp.netscape.com/pub/$SPELL/english/$VERSION/unix/linux22/sea/$SOURCE
          WEB_SITE=http://www.netscape.com
-          ENTERED=20020226
-          UPDATED=20020226
-            SHORT="netscape navigator is the venerable browser"
-       MAINTAINER="Lyon Lemmens <redlemon@knoware.nl>"
+          ENTERED=20020529
+          UPDATED=20020529
+            SHORT="netscape 6"
+       MAINTAINER="ashaman@flyingtemple.com"
 cat << EOF
-Netscape Navigator is an old browser, but still works fine.
+Netscape 6 is the current netscape browser.
 EOF

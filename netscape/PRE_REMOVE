@@ -1,0 +1,7 @@
+for i in `find /usr|grep install.log`;do
+for c in `echo $i|wc -c`;do
+for s in `echo $i|cut -b1-$(($c-12))`;do
+INSTALL_DIRECTORY=$s
+done
+done
+done
