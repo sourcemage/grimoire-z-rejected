@@ -1,0 +1,37 @@
+           SPELL=eagle-cad
+         VERSION=4.13
+       BUILD_API=2
+          SOURCE=${SPELL%-*}-lin-eng-$VERSION.tgz
+         SOURCE2=compat-libstdc++-7.3-2.96.118.i386.rpm
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL%-*}-lin-eng-${VERSION%e}
+SOURCE_DIRECTORY2=$BUILD_DIRECTORY/usr
+   SOURCE_URL[0]=ftp://ftp.cadsoft.de/pub/program/${VERSION%e}/$SOURCE
+  SOURCE2_URL[0]=http://download.fedora.redhat.com/pub/fedora/linux/core/1/i386/os/Fedora/RPMS/compat-libstdc++-7.3-2.96.118.i386.rpm
+        WEB_SITE=http://www.cadsoft.de/
+         ENTERED=20041026
+         UPDATED=20041026
+      LICENSE[0]=http://www.cadsoft.de/freeware.htm
+          REJECT="is non source, limited, for non-commercial use"
+          MD5[0]=ae819c07bad19ea82e3bb5d3fd637eba
+          MD5[1]=25603d81430d6524283247bb694cfa88
+           SHORT="The EAGLE Layout Editor is CAD tool for designing PCBs"
+cat << EOF
+The EAGLE Layout Editor is an easy to use, yet powerful tool
+for designing printed circuit boards (PCBs). The name EAGLE
+is an acronym, which stands for Easily Applicable Graphical
+Layout Editor.
+The program consists of three main modules
+* Layout Editor
+* Schematic Editor
+* Autorouter
+which are embedded in a single user interface. Therefore there
+is no need for converting netlists between schematics and layouts.
+The EAGLE Light Edition can be used for free!
+Light version limitations
+The following limitations apply to the EAGLE Light Edition in general:
+* The useable board area is limited to 100 x 80 mm (4 x 3.2 inches).
+* Only two signal layers can be used (Top and Bottom).
+* The schematic editor can only create one sheet.
+* Support is only available via email or through our forum
+* Use is limited to non-profit applications or evaluation purposes.
+EOF

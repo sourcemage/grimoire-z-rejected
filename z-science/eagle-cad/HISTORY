@@ -1,0 +1,8 @@
+2005-02-11 Pieter Lenaerts <e-type@cwazy.co.uk>
+	* regularized DETAILS: tabs, removde freeware
+	* BUILD, DETAILS, added install: converted to build_api2
+	* integrated spell
+
+2004-10-26 Vladimir Navrat <vn158@seznam.cz>
+	* BUILD, DEPENDS, DETAILS,
+	  HISTORY, PRE_BUILD, PREPARE: Spell created

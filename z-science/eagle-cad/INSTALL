@@ -1,0 +1,24 @@
+DATA="${INSTALL_ROOT}/usr/share/$SPELL"
+
+mkdir -p $DATA        &&
+mkdir -p $DATA/bin    &&
+cp -f -r bin/* $DATA/bin  &&
+cp -f $SPELL_DIRECTORY/eagle.sh ${DATA}/bin &&
+sedit "s/\/usr\/share\/eagle-cad/$(echo $DATA | sed 's/\//\\\//g')/" ${DATA}/bin/eagle.sh
+cp -f usr/lib/libstdc++-2-libc6.1-1-2.9.0.so ${DATA}/bin &&
+mkdir -p $DATA/cam    &&
+cp -f -r cam/* $DATA/cam  &&
+mkdir -p $DATA/dru    &&
+cp -f -r dru/* $DATA/dru  &&
+mkdir -p $DATA/help   &&
+cp -f -r help/* $DATA/help  &&
+mkdir -p $DATA/lbr    &&
+cp -f -r lbr/* $DATA/lbr  &&
+mkdir -p $DATA/projects &&
+cp -f -r projects/* $DATA/projects  &&
+mkdir -p $DATA/scr    &&
+cp -f -r scr/* $DATA/scr  &&
+mkdir -p $DATA/ulp    &&
+cp -f -r ulp/* $DATA/ulp  &&
+ln -f -s ${DATA}/bin/eagle.sh ${INSTALL_ROOT}/usr/bin/eagle &&
+cp -f man/eagle.1 ${INSTALL_ROOT}/usr/share/man
