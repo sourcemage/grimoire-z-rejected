@@ -9,7 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020907
       LICENSE[0]=UNKNOWN
       MAINTAINER=unet@sourcemage.org
-          REJECT="Non-free for comercial use."
+          REJECT="Non-free for comercial use"
            SHORT="mpg123 is an audio player."
 cat << EOF
 Mpg123 is a fast, free and portable MPEG audio player for Unix. It

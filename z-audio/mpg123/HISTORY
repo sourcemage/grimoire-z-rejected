@@ -1,3 +1,8 @@
+2004-08-03 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: updated for api2.
+	* INSTALL: added with split from build for api2.
+	* CONFIGURE: modified to use grimoire reject messages.
+
 2004-05-23 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* all: moved to z-rejected/z-audio, due to licencing issues
 	* CONFIGURE: added the default z-rejected CONFIGURE script
