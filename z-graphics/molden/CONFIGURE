@@ -1,9 +1,2 @@
-if  !  grep  -q  CONFIGURED  $SPELL_CONFIG;  then
-
-  if  query  "Compile OpenGL helper program?" y;  then
-    echo  'OPENGL="y"'  >>  $SPELL_CONFIG
-  fi
-
-  echo  'CONFIGURED="y"'  >>  $SPELL_CONFIG
-
-fi
+warn_rejected &&
+ask_continue_with_rejected

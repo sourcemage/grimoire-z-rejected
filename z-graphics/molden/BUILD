@@ -1,24 +1,20 @@
 (
 
-  case $OPENGL in
-    y|Y)  patch -p0  <  $SCRIPT_DIRECTORY/makefile.ogl.patch
-          ;;
-      *)  patch -p0  <  $SCRIPT_DIRECTORY/makefile.patch
-          ;;
-  esac                                          &&
+  if echo $OPTS| grep -q "with-gl"; then 
+    patch -p0  <  $SCRIPT_DIRECTORY/makefile.ogl.patch
+  else
+    patch -p0  <  $SCRIPT_DIRECTORY/makefile.patch
+  fi                                            &&
 
   make                                          &&
-  case $OPENGL in
-    y|Y) make  moldenogl
-         ;;
-  esac                                          &&
+  if echo $OPTS| grep -q "with-gl"; then 
+    make  moldenogl
+  fi                                            &&
   prepare_install                               &&
   install  -m  755  molden  /usr/bin            &&
-  case  $OPENGL in
-    y|Y)  install  -m  755  moldenogl  /usr/bin
-          ;;
-      *)  ;;
-  esac                                          &&
+  if echo $OPTS| grep -q "with-gl"; then 
+    install  -m  755  moldenogl  /usr/bin
+  fi                                            &&
   mkdir  -p  /usr/doc/molden                    &&
   cd  /usr/doc/molden                           &&
   gzip  -d  $SOURCE_DIRECTORY/doc/figures.ps.Z  &&

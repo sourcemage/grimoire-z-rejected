@@ -1,4 +1,8 @@
 2003-11-04 Eric Sandall <eric@sandall.us>
+	* BUILD, CONFIGURE, PRE_BUILD: fixed per bug 4760
+	* PRE_BUILD: removed, moved the z-rejected prompt to CONFIGURE
+
+2003-11-04 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 3.9, added md5sum
 	* BUILD: Added '&&'s for completeness
 	* HISTORY: Formatted to Guru Handbook
