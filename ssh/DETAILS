@@ -3,12 +3,11 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.ssh.fi/pub/$SPELL/$SOURCE
-   SOURCE_URL[1]=ftp://ftp.mpg.goe.ni.schule.de/pub/$SPELL/$SOURCE
-   SOURCE_URL[2]=ftp://ftp.keystealth.org/pub/$SPELL/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.keystealth.org/pub/$SPELL/$SOURCE
         WEB_SITE=http://www.ssh.com
          ENTERED=20020125
          UPDATED=20020528
-	  MD5[0]=bbc63ab4a7f56cd63a7fb68d44ad739c
+	  MD5[0]=65091573b905132c235917cae08ac58c
       LICENSE[0]=http://www.ssh.com/products/ssh/ssh_license_agreement.cfm
 	  REJECT="has licensing issues"
       MAINTAINER=glenniii@utexas.edu
