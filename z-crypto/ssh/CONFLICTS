@@ -1,3 +1,4 @@
+conflicts  dropbear   &&
 conflicts  openssh    &&
 conflicts  lsh        &&
 conflicts  Linux-PAM  &&
