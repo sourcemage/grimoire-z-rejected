@@ -1,0 +1,4 @@
+mk_source_dir  $SOURCE_DIRECTORY      &&
+cd             $BUILD_DIRECTORY       &&
+tar  xf        $SOURCE_CACHE/$SOURCE  &&
+cd             $SOURCE_DIRECTORY
