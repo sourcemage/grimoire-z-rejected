@@ -1,28 +1,29 @@
+2004-08-08 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD, DETAILS: modified for api2.
+	* INSTALL: added for api2.
+	* CONFIGURE: modified to use grimoire rejected message.
+	* HISTORY: cleanup.
+
 2004-07-03 Jose Bernardo Silva <jbernardo@sourcemage.org>
-        * PREPARE: corrected a small syntax error
-        * BUILD: added versioned support for firefox and tests
+	* PREPARE: corrected a small syntax error
+	* BUILD: added versioned support for firefox and tests
 	  for plugin directory existency.
 
 2004-06-21 Jose Bernardo Silva <jbernardo@sourcemage.org>
-        * DETAILS: fixed bug 7025
+	* DETAILS: fixed bug 7025
 
 2004-05-30 Jose Bernardo Silva <jbernardo@sourcemage.org>
-        * all: updated as per bug 6932 (thank Remy!)
+	* all: updated as per bug 6932 (thank Remy!)
 
 2004-05-29 Remy Soete <doobie@lavache.com>
 	* DETAILS: updated to version 7.0r25
-	Updated SOURCE* and MD5
-	* CONFIGURE
-	Added support for firefox
-	Modified support to Konqueror
-	* BUILD
-	Added support for firefox
-        Modified support to Konqueror
+	  Updated SOURCE* and MD5
+	* CONFIGURE, BUILD: Added support for firefox. Modified 
+	  support to Konqueror
 
 2004-05-20 Eric Sandall <eric@sandall.us>
-	* DETAILS: md5sum changed again
-	Removed MAINTAINER
-	Removed TABs
+	* DETAILS: md5sum changed again, removed MAINTAINER and
+	  removed TABs
 
 2004-05-03 Seth Woolley <seth@tautology.org>
 	* DETAILS: to fix md5 for SOURCE.
@@ -82,4 +83,3 @@
 2002-03-19 Eric Schabell <eric@schabell.com>
 	* HISTORY: Added. The reason for rejection
 	  is due to non-source component.
-

@@ -1,4 +1,5 @@
            SPELL=flash
+       BUILD_API=2
          VERSION=7.0r25
           SOURCE=install_flash_player_7_linux.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux
@@ -9,7 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux
          UPDATED=20040529
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
           REJECT="is non-source and has licensing issues"
-           SHORT="Macromedia Flash Plugin v7 for Konq and Mozilla Web Browsers"
+           SHORT="Macromedia Flash Plugin v7 for Web Browsers."
 cat << EOF
-Macromedia Flash Plugin version 7 for Konqueror and Mozilla Web Browsers
+Macromedia Flash Plugin version 7 for web browsers.
 EOF

@@ -1,5 +1,6 @@
-warn_rejected &&
-ask_continue_with_rejected &&
+# Standard rejected warnings.
+#
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG
 
 echo "Flash works with the following programs:"
 echo "Mozilla"
@@ -48,7 +49,7 @@ if spell_installed opera ; then
 	fi
 fi
 
-if spell_installed netscape ; then
+if spell_installed netscape4 ; then
 	if ! grep -q "NETSCAPE=" $SPELL_CONFIG; then
 		if query "Do you wish to install the plugin for Netscape?" y
 			then echo "NETSCAPE=y" >> $SPELL_CONFIG
