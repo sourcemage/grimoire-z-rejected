@@ -1,11 +1,11 @@
-           SPELL=Apachetoolbox
+           SPELL=apachetoolbox
          VERSION=1.5.64
-          SOURCE=${SPELL}-install-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
+          SOURCE=Apachetoolbox-install-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Apachetoolbox-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/apachetoolbox/$SOURCE
         WEB_SITE=http://www.apachetoolbox.com
          ENTERED=20020220
-         UPDATED=22020623
+         UPDATED=22020822
 	  MD5[0]=72566815cf60179de5e9fb26fcc4763c
       LICENSE[0]=UNKNOWN
 	 REJECT="files that are not tracked by sorcery"

@@ -1,3 +1,8 @@
+2003-08-22  Geoffrey Derber <gderber@sourcemage.org>
+
+		moved z-rejected warning messages
+		to CONFIGURE from PRE_BUILD
+
 2002-04-23  Eric Schabell <eric@schabell.com>
 
                 Changed PRE_BUILD so that it does not just
