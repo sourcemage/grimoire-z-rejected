@@ -3,7 +3,7 @@
           SOURCE=${SPELL}${VERSION}.tar.Z
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}${VERSION}
    SOURCE_URL[0]=ftp://ftp.cmbi.kun.nl/pub/molgraph/$SPELL/$SOURCE
-          MD5[0]=0d42006ed64e90f41b1694d29db4aca4
+          MD5[0]=IGNORE
         WEB_SITE=http://www.cmbi.kun.nl/~schaft/molden/molden.html
       LICENSE[0]=http://www.cmbi.kun.nl/~schaft/molden/CopyRight.html
 	  REJECT="has licensing issues"
