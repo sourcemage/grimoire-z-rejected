@@ -1,3 +1,14 @@
+2004-07-20 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD, INSTALL: converted to build_api 2
+	* DETAILS: use the Sun j2sdk since that works with gcc 3.4.x
+	* PREPARE, DETAILS, INSTALL: detect architecture and use the
+	  j2sdk for that architecture
+	  The intel j2sdk has to be downloaded by hand since only suns j2sdk
+	  works with gcc 3.4.
+	* PRE_BUILD: don't do anything here, everything happens in INSTALL
+	* INSTALL, java.sh: set correct bindir on installation
+	* WIP: only tested on x86, sparc and ppc need testing
+
 2004-05-09 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD: don't link all binaries to /usr/bin, as that overwrites files
 	  of gcj and isn't needed (java.sh sets the path)

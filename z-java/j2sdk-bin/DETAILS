@@ -1,15 +1,36 @@
            SPELL=j2sdk-bin
+            ARCH=$(uname -m)
+if [ "${ARCH:0:5}" = "sparc" ]; then
+            ARCH=sparc
          VERSION=1.4.1-01
-          SOURCE=j2sdk-$VERSION-${ARK:-linux-i586-gcc3.2}.bin
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/j2sdk${VERSION%-*}
-   SOURCE_URL[0]=ftp://metalab.unc.edu/pub/linux/devel/lang/java/blackdown.org/JDK-1.4.1/${SDIR:-i386}/01/$SOURCE
-        WEB_SITE=http://www.blackdown.org/java-linux/java2-status
+             VER=${VERSION%-*}
+          SOURCE=j2sdk-$VERSION-linux-sparc-gcc3.2.bin
+   SOURCE_URL[0]=ftp://metalab.unc.edu/pub/linux/devel/lang/java/blackdown.org/JDK-$VER/sparc/01/$SOURCE
+          MD5[0]=4e4d248a5b415e5d3e25f53fa682ed33
+        WEB_SITE=http://www.blackdown.org/java-linux/java2-status/index.html
+elif [ "${ARCH:0:3}" = "ppc" ]; then
+            ARCH=ppc
+         VERSION=1.3.1-02c
+             VER=${VERSION%-*}
+          SOURCE=j2sdk-$VERSION-FCS-linux-ppc.bin
+   SOURCE_URL[0]=ftp://metalab.unc.edu/pub/linux/devel/lang/java/blackdown.org/JDK-1.3.1/ppc/FCS-02c/$SOURCE
+          MD5[0]=36fe766f16cd3c851118c60fbf64ee19
+        WEB_SITE=http://www.blackdown.org/java-linux/java2-status/index.html
+else
+            ARCH=i386
+         VERSION=1_4_2_05
+             VER=1.4.2_05
+          SOURCE=j2sdk-$VERSION-linux-i586.bin
+          MD5[0]=825ff134f3e370f6e677638d32962082
+        WEB_SITE=http://java.sun.com/j2se/1.4.2/download.html
+fi
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/j2sdk$VER
          ENTERED=20010922
          UPDATED=20030215
          ARCHIVE="off"
-          MD5[0]="${PREPARE_MD5:-a0c7838233603fccb30641998195e8bc}"
           REJECT="is non-source"
-           SHORT="j2sdk is Blackdown port of Sun's Java virtual machine."
+       BUILD_API=2
+           SHORT="j2sdk-bin is the Java Software Development Kit"
 cat << EOF
 The Java 2 Standard Edition (J2SE) is a feature-complete development and
 deployment platform. Blackdown provides both a SDK (J2SDK, formerly
@@ -17,4 +38,7 @@ known as JDK) and a runtime environment (J2RE) for Linux on various
 architectures (ix86, Sparc, PPC, S/390, ARM, m68k). Both the J2SDK and
 the J2RE contain the Java Plug-In for Netscape 4.x and Mozilla/Netscape
 6.x.
+Note: For the intel version of j2sdk-bin you have to download the sources
+yourself from the Sun Website, see 'gaze website j2sdk-bin' for the location.
+Put the downloaded file to /var/spool/sorcery so cast will find it.
 EOF
