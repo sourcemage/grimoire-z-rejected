@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
          ENTERED=20041112
       LICENSE[0]=GPL
        BUILD_API=2
-          REJECT="binary only"
            SHORT="Versatile replacement for vmstat, iostat and ifstat"
 cat << EOF
 Dstat is a versatile replacement for vmstat, iostat, and ifstat.

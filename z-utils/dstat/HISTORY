@@ -1,10 +1,8 @@
 2004-12-06 Eric Sandall <eric@sandall.us>
 	* Added to z-rejected/z-utils  (Bug #7621)
 	* DETAILS: Shortened SHORT
-	  Added REJECT message
 	* BUILD: Run `true`
 	* INSTALL: Setup Makefile with INSTALL_ROOT
-	* CONFIGURE: Added standard z-rejected CONFIGURE
 
 2004-12-04 Richard Johns <johnsr1@lincoln.ac.nz>
 	* DETAILS, VERSION, MD5: version 0.5.4 
