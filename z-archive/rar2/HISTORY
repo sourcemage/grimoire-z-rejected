@@ -1,3 +1,6 @@
+2004-09-19 Eric Schabell <eschabell@sourcemage.org>
+	* INSTALL: added as was lost somewhere down the line, bug #8386.
+
 2004-08-03 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD, DETAILS: updated to use api2.
 	* INSTALL: added for api2.
