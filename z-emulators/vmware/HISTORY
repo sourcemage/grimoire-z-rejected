@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2004-10-14 Eric Schabell <eschabell@sourcemage.org>
 	* ALL: spell added to z-rejected/z-emulators.
 	* FINAL: added to check and create as needed the udev device

@@ -4,7 +4,7 @@ message "\n${PROBLEM_COLOR} Currently only able to provide cvs development versi
 
 # Standard rejected warnings.
 #
-source $SCRIPT_DIRECTORY/../../REJECTED_MSG
+source $GRIMOIRE/REJECTED_MSG
 
 config_query_option OPT	'Compile in all debugging message?' n 	'--enable-debug'	'--disable-debug' 	
 config_query_option	OPT	'Compile in TRACE messages?' n 	'--enable-trace'	'--disable-trace' 	

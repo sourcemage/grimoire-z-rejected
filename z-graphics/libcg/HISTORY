@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2005-03-09 Eric Sandall <eric@sandall.us>
 	* Renamed from Cg
 	* DETAILS: Renamed to libcg

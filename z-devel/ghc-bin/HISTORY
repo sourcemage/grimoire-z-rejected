@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2004-12-06 Andrew Stitt <astitt@sourcemage.org>
 	* BUILD: add, the default_build does not work, no need to run make
 	  on a binary package anyway

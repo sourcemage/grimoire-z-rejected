@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2004-10-22 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated UPDATED
 	* INSTALL: Create generic /usr/lib/firefox for plug-ins

@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2005-03-14 Gareth Clay <gareth@caffeinefuelled.co.uk>
   * DETAILS: version 76880
 

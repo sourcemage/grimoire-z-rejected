@@ -1,4 +1,4 @@
-. $SCRIPT_DIRECTORY/../java-functions
+. $SECTION_DIRECTORY/java-functions
   
 extract_sun_src   ${PKG_NAME} ${PKG_NAME}-${VERSION}  $SOURCE_DIRECTORY	&&
 register_sun_jar  ${SPELL}-${VERSION}/lib/jmxri.jar     jmxri.jar		&&

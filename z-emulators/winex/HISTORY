@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2004-10-12 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD: removed, was just default build anyway.
 	* INSTALL, CONFIGURE: cleaned up config_query_options and started

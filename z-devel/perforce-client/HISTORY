@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2005-03-30 Sergey Lipnevich <sergey@sourcemage.org>
 	* DETAILS: use $HOST instead of $(uname -m) to support cross-compilation;
 	* DEPENDS: depends on gcc33 for libstdc++.so.5 on AMD64.

@@ -1,4 +1,4 @@
 #
 # Standard rejected warnings.
 #
-source  $SCRIPT_DIRECTORY/../../REJECTED_MSG
+source  $GRIMOIRE/REJECTED_MSG

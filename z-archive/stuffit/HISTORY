@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2004-08-03 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD,DETAILS: updated to use api2.
 	* CONFIGURE: modified to use grimoire reject messages.

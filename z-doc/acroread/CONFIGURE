@@ -1,6 +1,6 @@
 # Standard rejected warnings.
 #
-source  $SCRIPT_DIRECTORY/../../REJECTED_MSG  &&
+source  $GRIMOIRE/REJECTED_MSG  &&
 
 if  spell_ok  mozilla;  then
   config_query  ACROREAD_MOZILLA  "Install the PDF plugin for mozilla?" y

@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2005-01-05 Eric Sandall <eric@sandall.us>
 	* Applied John's patch  SECURITY FIX  (Bug #7904)
 	* DETAILS: Removed MAINTAINER and TABs

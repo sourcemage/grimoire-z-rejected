@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2004-08-07 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD: updated for api2.
 	* DETAILS: cleaned up long desc.

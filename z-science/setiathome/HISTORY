@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2004-12-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Use renamed variables and the proper VERSION from PREPARE
 	* PREPARE: Use local when needed and prepend variables with SETI_

@@ -1,10 +1,10 @@
 # download java sources warning.
 #
-source $SCRIPT_DIRECTORY/../JAVA_WARNING &&
+source $SECTION_DIRECTORY/JAVA_WARNING &&
 
 # Standard rejected warnings.
 #
-source $SCRIPT_DIRECTORY/../../REJECTED_MSG &&
+source $GRIMOIRE/REJECTED_MSG &&
 
 persistent_add CONFIGURED BOOTSTRAP CERT SOURCE5 &&
 

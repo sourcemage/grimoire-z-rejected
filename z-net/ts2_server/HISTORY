@@ -1,3 +1,6 @@
+2005-03-30 Andrew Stitt <astitt@sourcemage.org>
+	* CONFIGURE: remove relative paths to grimoire libraries
+
 2004-09-24 Eric Schabell <eschabell@sourcemage.org>
 	* ALL: added spell, cleaned up install and added template
 	  wrapper script that receives version dir info from INSTALL.

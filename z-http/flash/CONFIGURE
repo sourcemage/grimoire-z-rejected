@@ -1,6 +1,6 @@
 # Standard rejected warnings.
 #
-source $SCRIPT_DIRECTORY/../../REJECTED_MSG
+source $GRIMOIRE/REJECTED_MSG
 
 echo "Flash works with the following programs:"
 echo "Mozilla"
