@@ -1,3 +1,9 @@
+2005-03-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: Next time check if patches are still valid sandalle
+	  Only commented out the patch leav it in till next update then remove
+	* CONFIGURE: Added the REJECTED_MSG(why is this in CONFIGURE
+	  and not in PREPARE???)
+
 2005-03-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 8.10.19
 
