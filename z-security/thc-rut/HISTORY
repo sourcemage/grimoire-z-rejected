@@ -1,0 +1,10 @@
+2005-02-14 Pieter Lenaerts <e-type@cwazy.co.uk>
+	* added DEPENDS
+	* integrated spell
+
+2004-12-08 Robert Helgesson <rhelgesson@sourcemage.org>
+	* DETAILS: Cleaned up descriptions. Changed license, NOT under GPL.
+	* BUILD: Removed. Not needed.
+
+2004-12-08 anoxia <anoxia@ntlworld.com>
+	* BUILD, DETAILS, HISTORY: created spell

@@ -1,0 +1,23 @@
+           SPELL=thc-rut
+       BUILD_API=2
+         VERSION=1.2.5
+          SOURCE=thcrut-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/thcrut-$VERSION
+   SOURCE_URL[0]=http://www.thc.org/releases/$SOURCE
+        WEB_SITE=http://www.thc.org/thc-rut
+         ENTERED=20041208
+         UPDATED=20041208
+          MD5[0]=ca06d71c68124eeb6ae43c9b8434abf8
+      LICENSE[0]="See LICENSE in tarball. Non-free, only non-commersial use."
+           SHORT="(aRe yoU There, pronouced as root) is your first knife on foreign network."
+
+cat << EOF
+THC-RUT (aRe yoU There, pronouced as root) is your first knife on foreign
+network.
+
+It gathers informations from local and remote networks. It offers a wide range
+of network discovery tools: arp lookup on an IP range, spoofed DHCP request,
+RARP, BOOTP, ICMP-ping, ICMP address mask request, OS fingerprintings,
+high-speed host discovery, ...  The tool is capable of discovering a Class B
+network within 10 minutes.
+EOF
