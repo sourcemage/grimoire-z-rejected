@@ -111,4 +111,6 @@ done					&&
 
 if ! spell_installed "Linux-PAM"; then
     patch  -p1  <  $SOURCE_CACHE/$SOURCE4
-fi
+fi					&&
+patch -p1 < $SCRIPT_DIRECTORY/openoffice-1.0.2-fix-errno.patch  &&
+patch -p1 < $SCRIPT_DIRECTORY/openoffice-1.0.2-default-fonts.patch
