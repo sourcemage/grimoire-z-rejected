@@ -1,3 +1,7 @@
+2003-05-15  Seth Woolley <seth@tautology.org>
+
+		Added unpack to PRE_BUILD for SOURCE
+
 2003-04-19  Seth Woolley <seth@tautology.org>
 
 		Modified DETAILS to fix md5 for SOURCE.
