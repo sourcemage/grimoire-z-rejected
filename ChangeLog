@@ -6,6 +6,7 @@
 	* z-devel/perforce-gui: api2 compliant.
 	* z-devel/perforce-server: api2 compliant, updated md5 for p4d.
 	* z-devel/sybase-ase: api2 compliant, added reject text to details.
+	* z-devel/sybase-doc: api2 compliant, added reject text to details.
 
 2004-08-03 Eric Schabell <z-rejected@sourcemage.org>
 	* z-archive: section completed for api2 and rejected msg.
