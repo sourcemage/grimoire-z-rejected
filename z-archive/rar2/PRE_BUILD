@@ -2,5 +2,6 @@ mk_source_dir $SOURCE_DIRECTORY &&
 cd $BUILD_DIRECTORY &&
 #MD5=$MD5[0] &&
 #if [ `md5sum /var/spool/sorcery/$SOURCE` -eq $MD5 ]; then
+chmod +x /var/spool/sorcery/$SOURCE
 /var/spool/sorcery/$SOURCE
 #fi
