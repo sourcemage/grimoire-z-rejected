@@ -4,7 +4,7 @@
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION-static-qt.i386 
     SOURCE_URL[0]=ftp://ftp.opera.com/pub/opera/linux/603/final/en/qt_static/$SOURCE
          WEB_SITE=http://www.opera.com
-           MD5[0]=aa8ebc7d5edf4c47f56ed72725f10f80
+           MD5[0]=4be1c629e42971ce6545b6b0dff28b90
 #       LICENCE[0]= unknown
           ENTERED=20020530
           UPDATED=20020530
