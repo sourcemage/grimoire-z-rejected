@@ -1,0 +1,22 @@
+# @usage configure_optional <1:test> <2:enable-option> <3:disable-option> <4:prompt> <5:hint>
+# works right if <test> is part of both <enable-option> and <disable-option>
+# @return 0 if disabled
+function configure_optional() {
+  if ! grep -q "${1#-}" $SPELL_CONFIG; then
+    local OPTION="$2"
+    query "$4" "$5" || OPTION="$3"
+    echo "OPTS=\"\$OPTS $OPTION\"" >> $SPELL_CONFIG
+  fi
+  # return the `enabled' flag for the option
+  grep -q "${2#--}" $SPELL_CONFIG
+}
+ 
+configure_optional	'debug'		'--enable-debug'	'--disable-debug' 	'Compile in all debugging message?' n
+configure_optional	'trace'		'--enable-trace'	'--disable-trace' 	'Compile in TRACE messages?' n
+#configure_optional	'pthreads'	'--enable-pthreads'	'--disable-pthreads' 	'Compile with pthreads (currently required for glibc 2.3.x)' y
+configure_optional	'opengl'	'--enable-opengl '	'--disable-opengl' 	'Force usage of OpenGL even if the latter is thread-safe via pthread?' y
+configure_optional	'osmesa'	'--enable-osmesa '	'--disable-osmesa' 	'Compile with OSmesa (currently incompatible with nVidia drivers)?' n
+configure_optional	'xshm'		'--enable-xshm'		'--disable-xshm' 	'Use X shared memory?' y
+configure_optional	'sdltest'	'--enable-sdltest'	'--disable-sdltest' 	'Compile and run a test SDL test program?' n
+
+echo "OPTS=\"\$OPTS --enable-pthreads --program-suffix=x --with-x\"" >> $SPELL_CONFIG

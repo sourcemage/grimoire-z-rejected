@@ -1,0 +1,10 @@
+if ! grep -q 'CONFIGURED=y' $SPELL_CONFIG; then
+  if query "Would you like to use the $SPELL_COLOR$SPELL$QUERY_COLOR source code from development repository?" n; then
+    # REPOSITORY_TAG can be used by the individual spells
+    # to provide "recommended" version to use for source code
+    # checked out of the repository
+    echo 'VERSION=cvs' >> $SPELL_CONFIG
+    echo 'DLVER=HEAD' >> $SPELL_CONFIG
+  fi
+  echo 'CONFIGURED=y' >> $SPELL_CONFIG
+fi

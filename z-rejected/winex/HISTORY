@@ -1,3 +1,24 @@
+2003-07-09  Geoffrey Derber <ashaman@flyingtemple.com>
+
+		Re-wrote the spell again.
+		This should work better along side the
+		normal wine.
+		Now installs to /usr/lib/transgaming/
+		Version bump to 3.1 / CVS Head
+		Support for pulling either the latest
+		release branch or the main branch from
+		cvs
+		Supports more configure options.
+		Added Unattend_Safe ability.
+
+		TODO:
+		1. Modify the winex-$VERSION/tools/winex shell
+		script more efficently for general usage.
+		2. Attempt to modify libcvs_url to allow MD5s
+		on the release branch (should never change), then
+		add the MD5 for the release branch.
+
+
 2003-07-06  Jose Bernardo Silva <jbernardo@sourcemage.org>
 
 		Updated to winex 3-1
