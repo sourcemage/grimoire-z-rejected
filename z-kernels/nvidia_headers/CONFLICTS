@@ -1,2 +1,3 @@
-conflicts  MesaLib
-conflicts  NVIDIA_headers  y
+conflicts  NVIDIA_headers  y  &&
+conflicts  MesaLib            &&
+conflicts  mesalib
