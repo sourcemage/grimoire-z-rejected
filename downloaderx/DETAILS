@@ -1,12 +1,12 @@
            SPELL=downloaderx
-         VERSION=2.03
+         VERSION=2.4.1
           SOURCE=d4x-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/d4x-$VERSION
    SOURCE_URL[0]=http://www.krasu.ru/soft/chuchelo/files/$SOURCE
         WEB_SITE=http://www.krasu.ru/soft/chuchelo/
          ENTERED=20020201
-         UPDATED=20020623
-	  MD5[0]=d5a65a7b3dda4d3f6d55e05ef2ff91a9
+         UPDATED=20030408
+	  MD5[0]=50e968d824ff90c2b5bfc26ab565df7e
       LICENSE[0]=UNKNOWN
 	  REJECT="has licensing issues"
       MAINTAINER=sandalle@yahoo.com
