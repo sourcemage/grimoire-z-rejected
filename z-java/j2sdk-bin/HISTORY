@@ -1,3 +1,12 @@
+2004-07-28 Eric Schabell <eschabell@sourcemage.org>
+	* WIP: removed, not really applicable for z-rejected as we never
+	  move spells into 'stable.'
+	* UNATTENDED_SAFE: removed for now, not sure why needed as you need
+	  to pull sources by hand anyway for intel.
+	* CONFIGURE: uses REJECTED_MSG file and has been updated to include 
+	  spell specific warnings about source downloads.
+	* FINAL: added to source java.sh for JAVA_HOME to be set.
+
 2004-07-20 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* BUILD, INSTALL: converted to build_api 2
 	* DETAILS: use the Sun j2sdk since that works with gcc 3.4.x

@@ -1,3 +1,11 @@
+2004-07-28 Eric Schabell <z-rejected@sourcemage.org>
+	* z-java/j2sdk-bin: clean-up, fixed bugs #7183, #7139.
+	* REJECTED_MSG: moved the sorcery lib rejected message here for
+	  better control. I am the only one using it so can be removed 
+	  from sorcery as often need to customize for individual spells.
+	  Note that I have moved from 'return 1' for errors to 'exit' as
+	  currently sourcery is not honoring our rejected responses. 
+		
 2004-07-07 Eric Schabell <z-rejected@sourcemage.org>
 	* MAINTAINER: updated to show transfer of guru-ship.
 
