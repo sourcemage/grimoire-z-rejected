@@ -1,0 +1,32 @@
+        PKG_NAME=jmx  
+	   SPELL=${PKG_NAME}-bin
+         VERSION=1.2
+     PKG_VERSION=1_2
+          SOURCE=${PKG_NAME}-${PKG_VERSION}-ri.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${PKG_NAME}-${VERSION}
+   SOURCE_URL[0]=
+          MD5[0]=59015cb76781e8edd57e2b89b04b9453
+      LICENSE[0]=SCSL
+          REJECT="is non-source"
+	WEB_SITE=http://java.sun.com/products/JavaManagement/
+         ENTERED=20030326
+         UPDATED=20030326
+         ARCHIVE="off"
+      MAINTAINER=vydra@fria.fri.utc.sk
+           SHORT="The Java Management Extensions (JMX)."
+cat << EOF
+ Java Management Extensions (JMX) represent a universal, open technology 
+ for management, and monitoring ready to be deployed across all industries, 
+ wherever management and/or monitoring is/are or will be needed. By design, 
+ this new standard is suitable for adapting legacy systems, implementing 
+ new management and monitoring solutions and plugging into those of the 
+ future.
+ 
+ JMX technology is the definitive means for Java management and monitoring: 
+ JMX technology provides the tools for building distributed, Web-based, 
+ modular and dynamic solutions for managing and monitoring devices, 
+ applications and service-driven networks.
+ 
+ Java Management Extensions is an optional package addition to the 
+ J2SE platform.
+EOF
