@@ -1,3 +1,9 @@
+2004-08-07 Eric Schabell <libs@sourcemage.org>
+	* BUILD: updated for api2.
+	* INSTALL: added for api2.
+	* CONFIGURE: updated to use grimoire rejected message.
+	* PREPARE: added to query user for dynamic/static QT usage.
+
 2004-07-25 Eric Schabell <libs@sourcemage.org>
 	* DETAILS: version bump to 0_90_0_14, using dynamic QT now.
 
