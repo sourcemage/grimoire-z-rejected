@@ -1,3 +1,8 @@
+2004-08-05 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: modified for api2.
+	* INSTALL: added for api2.
+	* CONFIGURE: modified to use grimoire rejected message.
+
 2004-06-24 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* DETAILS: Updated to 1.1.2, removed two non-working urls
 	* BUILD: removed LD_PRELOAD hacks, no longer needed.
