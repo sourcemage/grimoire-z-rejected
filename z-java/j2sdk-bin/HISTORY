@@ -1,3 +1,6 @@
+2004-08-05 Eric Sandall <eric@sandall.us>
+	* DEPENDS: unixODBC renamed to unixodbc
+
 2004-07-29 Eric Schabell <eschabell@sourcemage.org>
 	* CONFIGURE: modified back to return instead of exit, and corrected
 	  sourcing of REJECTED_MSG file.

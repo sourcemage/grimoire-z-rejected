@@ -3,7 +3,7 @@ depends  zlib        &&
 depends  tcsh        &&
 depends  cpio        &&
 depends  alsa-lib    &&
-depends  unixODBC    &&
+depends  unixodbc    &&
 depends  zip         &&
 if [ "$BOOTSTRAP" = "spell" ]
 then depends j2sdk-bin

@@ -1,3 +1,6 @@
+2004-08-05 Eric Sandall <eric@sandall.us>
+	* DEPENDS: unixODBC renamed to unixodbc
+
 2004-07-18 Eric Schabell <eschabell@sourcemage.org>
 	* j2sdk-1_4_2-smgl.patch: reverted as this is not the fix.
 	* j2sdk-1_4_2-smgl.patch: adjusted with fix in bug #6354.

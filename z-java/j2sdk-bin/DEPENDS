@@ -1,1 +1,1 @@
-depends unixODBC
+depends  unixodbc
