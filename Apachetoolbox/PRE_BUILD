@@ -29,7 +29,7 @@ message  "${MESSAGE_COLOR}This spell is considered ${PROBLEM_COLOR}rejected${DEF
 	 ""
 
 # Ask if user wants to continue anyway. (defaults to NO), unless running in UNATTEND_SAFE mode.
-  if  [ $PRE_BUILD_SPELL_INSTALLED == "is" ]  &&  [ $PRE_BUILD_SPELL_UNATTEND_SAFE == "is" ]; then
+  if  [[ $PRE_BUILD_SPELL_INSTALLED == "is" && $PRE_BUILD_SPELL_UNATTEND_SAFE == "is" ]]; then
     message  " ${MESSAGE_COLOR}$SPELL ${FILE_COLOR}is${DEFAULT_COLOR}${MESSAGE_COLOR} previously installed, and has been determined to be ${FILE_COLOR}UNATTEND_SAFE${DEFAULT_COLOR}${MESSAGE_COLOR},"  \
              " so the prompt will be skipped.${DEFAULT_COLOR}"
   else
