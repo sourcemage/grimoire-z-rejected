@@ -6,6 +6,8 @@
 	* smgl.qt.fix.patch: adds a -I/usr/include/qt and removes
 	  the nonexistant .kdelink and .desktop files
 	* 2.6.10-fix.patch: a fix for 2.6.10 kernels
+	* libstdc++.so.5: this is needed to run fgl_glxgears
+	  I tried building it but that one seg faulted on run
 
 2004-10-18 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Added "&&"
