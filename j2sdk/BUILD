@@ -3,6 +3,7 @@
 if [ $JAVA_HOME ] && query "${MESSAGE_COLOR}I've found java at $JAVA_HOME, do you want to use it to bootstrap j2sdk compilation? If you answer 'n', I'll use sun's binary.${DEFAULT_COLOR}"  y;  then
 	echo "java home = $JAVA_HOME"
    else
+        unpack $SOURCE3 ${MD5[2]} || exit 1 # md5 check only
         unset JAVA_HOME
         V=`echo ${BIN_VERSION} | sed -e "s/\./_/g"`
 	# Check out where the tar file begins and extract it
@@ -17,6 +18,7 @@ if [ $JAVA_HOME ] && query "${MESSAGE_COLOR}I've found java at $JAVA_HOME, do yo
 	export JAVA_HOME=/opt/java/j2sdk-precompiled-1.4
 	rm /opt/java/j2sdk
 	ln -sf /opt/java/j2sdk-precompiled-1.4 /opt/java/j2sdk
+        unpack $SOURCE4 ${MD5[3]} || exit 1 # md5 check only
 	cp $SOURCE_CACHE/$SOURCE4 $JAVA_HOME/jre/lib/i386/
 	cd $JAVA_HOME/jre/lib/i386
 	bunzip2 $SOURCE4
