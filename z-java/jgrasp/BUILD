@@ -1,14 +1,1 @@
-(
-
-  prepare_install &&
-  (
-    echo "#!/bin/bash"  &&
-    echo "java -jar ${INSTALL_ROOT}/usr/share/jgrasp/jgrasp.jar"
-
-  )>${SOURCE_DIRECTORY}/jgrasp.sh &&
-  mkdir -p ${INSTALL_ROOT}/usr/share/jgrasp  &&
-  cp -r ${SOURCE_DIRECTORY}/* ${INSTALL_ROOT}/usr/share/jgrasp/  &&
-  cp ${SOURCE_DIRECTORY}/jgrasp.sh ${INSTALL_ROOT}/usr/bin/jgrasp  &&
-  chmod a+x ${INSTALL_ROOT}/usr/bin/jgrasp
-  
-) > $C_FIFO 2>&1
+true
