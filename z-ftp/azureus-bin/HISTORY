@@ -1,0 +1,15 @@
+2005-02-18 Eric Sandall <eric@sandall.us>
+	* DETAILS: Renamed "option" to "AZUREUS_BIN_GTK"
+	  Removed TABs
+	* PREPARE: Renamed "option" to "AZUREUS_BIN_GTK"
+	  Removed extraneous `message`
+	* HISTORY: Formatted to 80 columns :)
+
+2004-02-12 David A. Sosa Cabrera <neon@neonx.ath.cx>
+	* DETAILS: Version updated.
+
+2004-11-28 Jorge Herrera Cabrera <hannigal@hotmail.com>
+           David A. Sosa Cabrera <neon@neonx.ath.cx>
+	* DETAILS, DEPENDS, HISTORY, BUILD, INSTALL, PREPARE, bin/azureus:
+	  Created this spell.
+

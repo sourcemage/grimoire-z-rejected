@@ -1,0 +1,24 @@
+       SPELL=azureus-bin
+     PKGNAME=Azureus
+ 	 VERSION=2.2.0.2
+if  [  "$AZUREUS_BIN_GTK"  ==  "y"  ];  then
+      SOURCE=${PKGNAME}_${VERSION}_linux.GTK.tar.bz2
+      MD5[0]=91adf0fafeddb79629b72a448c3bc728
+else
+      SOURCE=${PKGNAME}_${VERSION}_linux.Motif.tar.bz2
+      MD5[0]=89aa22055b3b53a714dc777583109954
+fi
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/azureus
+   SOURCE_URL[0]=$SOURCEFORGE_URL/azureus/$SOURCE
+       BUILD_API=2
+      LICENCE[0]=GPL
+        WEB_SITE=http://azureus.sourceforge.net
+         ENTERED=20041128
+         UPDATED=20050212
+           SHORT="Azureus is a java bittorrent client"
+cat << EOF
+It provides a bittorrent protocol implementation using java language.
+
+Azureus offers multiple torrent downloads, queuing/priority systems (on torrents and files), start/stop seeding options and instant access to numerous pieces of information about your torrents.
+Azureus now features an embedded tracker easily set up and ready to use.
+EOF

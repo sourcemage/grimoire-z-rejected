@@ -1,0 +1,9 @@
+INSTALLDIR=/usr/lib/azureus
+
+mkdir -p $INSTALLDIR 				&&
+
+cp -ruv $SOURCE_DIRECTORY/* $INSTALLDIR		&&
+cp $SPELL_DIRECTORY/azureus $INSTALLDIR/azureus &&
+cp $SPELL_DIRECTORY/azureus.png /usr/share/icons &&
+
+ln -sf $INSTALLDIR/azureus /usr/bin/azureus   
