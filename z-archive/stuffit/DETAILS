@@ -1,4 +1,5 @@
-	   SPELL=stuffit
+	         SPELL=stuffit
+       BUILD_API=2
          VERSION=520.611
           SOURCE=${SPELL}${VERSION}linux-i386.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/rar
