@@ -110,9 +110,5 @@ do
 done					&&
 
 if ! spell_installed "Linux-PAM"; then
-    cp ${SOURCE_CACHE}/${SOURCE4} /	&&
-    cd / 				&&
-    tar -xzf $SOURCE4 			&&
-    rm $SOURCE4 			&&
-    cd ${SOURCE_DIRECTORY}
+    patch  -p1  <  $SOURCE_CACHE/$SOURCE4
 fi
