@@ -1,11 +1,13 @@
 (
 
-  sedit "s:/usr/local/f-prot:/usr/lib/f-prot:" f-prot.sh         &&
-  sedit "s:/usr/local/f-prot:/usr/lib/f-prot:" check-updates.sh  &&
+  sedit "s:/usr/local/f-prot:/usr/lib/f-prot:" f-prot.sh             		 &&
+  sedit "s:/usr/local/f-prot:/usr/lib/f-prot:" tools/check-updates.pl 		 &&
+  sedit "s:/var/tmp/f-prot/:/usr/lib/f-prot/.f-prot-check-updates/:" tools/check-updates.pl &&
 
   prepare_install                               &&
 
-  cp man8/* /usr/man/man8                       &&
+  cp man_pages/*.8 /usr/man/man8                &&
+  cp man_pages/*.1 /usr/man/man1		&&
 
   if [ ! -d /usr/lib/f-prot ]; then
     mkdir /usr/lib/f-prot						
@@ -14,17 +16,21 @@
     mkdir /usr/doc/f-prot						
   fi                                            &&
 
-  cp CHANGES   /usr/doc/f-prot                  &&
-  cp LICENSE   /usr/doc/f-prot                  &&
-  cp README    /usr/doc/f-prot                  &&
-  cp f-prot    /usr/lib/f-prot                  &&
-  cp checksum  /usr/lib/f-prot                  &&
+  cp CHANGES    	/usr/doc/f-prot         &&
+  cp LICENSE*.* 	/usr/doc/f-prot         &&
+  cp README     	/usr/doc/f-prot         &&
+  cp -r doc_ws/*	/usr/doc/f-prot		&&
+  cp f-prot     	/usr/lib/f-prot         &&
+  cp *.DEF        /usr/lib/f-prot         &&
   
-  if [ ! -h /usr/bin/checksum ]; then
-    ln -s      /usr/lib/f-prot/checksum /usr/bin			
-  fi                                            &&
-  cp *.DEF     /usr/lib/f-prot                  &&
-  cp *.TX0     /usr/lib/f-prot                  &&
-  cp *.sh      /usr/sbin				
+  cp *.TX0     		/usr/lib/f-prot         &&
+  cp f-prot.sh 		/usr/sbin		&&		
+  cp tools/*   		/usr/sbin		&&
+
+  message "${MESSAGE_COLOR}Checking for definition files update... ${DEFAULT_COLOR}" &&
+  /usr/sbin/check-updates.pl || true		&&
+  [ -f /usr/lib/f-prot/MACRO.DEF ] || cp MACRO.DEF /usr/lib/f-prot	&&
+  [ -f /usr/lib/f-prot/SIGN.DEF  ] || cp SIGN.DEF /usr/lib/f-prot      	&&
+  [ -f /usr/lib/f-prot/SIGN2.DEF ] || cp SIGN2.DEF /usr/lib/f-prot      
   
 )  >  $C_FIFO  2>&1

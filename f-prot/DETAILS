@@ -1,9 +1,9 @@
            SPELL=f-prot
-         VERSION=3.13
-          SOURCE=fp-linux-sb-${VERSION}.tar.gz
+         VERSION=4.0.0
+          SOURCE=fp-linux-ws-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=ftp://ftp.f-prot.com/pub/linux/$SOURCE
-          MD5[0]=107b3a5294069f3878a036e4372ff827
+          MD5[0]=2f39d9e2e72364c029909e776c88c501
         WEB_SITE=http://www.f-prot.com
          ENTERED=20020921
          UPDATED=20030406
