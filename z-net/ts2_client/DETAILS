@@ -8,11 +8,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_${VERSION}
          ENTERED=20040920
          UPDATED=20040920
       LICENCE[0]=GPL
-         ARCHIVE="off"
            SHORT="P2P talking over the net (client side)"
 cat << EOF
-
-This is a very popular p2p talking client and server set up that us used with many fps games.
-
+This is a very popular p2p talking client and server set up that 
+is used with many fps games.
 EOF
 
