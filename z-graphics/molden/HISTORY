@@ -1,5 +1,6 @@
-2003-11-03 Eric Sandall <eric@sandall.us>
-	* DEPENDS: Uppercase provides
+2003-11-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 3.9, added md5sum
+	* BUILD: Added '&&'s for completeness
 	* HISTORY: Formatted to Guru Handbook
 
 2003-04-30 Seth Woolley <seth@tautology.org>

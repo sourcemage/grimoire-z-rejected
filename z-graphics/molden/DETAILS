@@ -1,14 +1,14 @@
            SPELL=molden
-         VERSION=3.8
+         VERSION=3.9
           SOURCE=${SPELL}${VERSION}.tar.Z
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}${VERSION}
    SOURCE_URL[0]=ftp://ftp.cmbi.kun.nl/pub/molgraph/$SPELL/$SOURCE
-          MD5[0]=IGNORE
+          MD5[0]=683bc5dd3b74c69a303a32240d2bdbfb
         WEB_SITE=http://www.cmbi.kun.nl/~schaft/molden/molden.html
-      LICENSE[0]=http://www.cmbi.kun.nl/~schaft/molden/CopyRight.html
 	  REJECT="has licensing issues"
          ENTERED=20020801
          UPDATED=20020801
+      LICENSE[0]=http://www.cmbi.kun.nl/~schaft/molden/CopyRight.html
       MAINTAINER=sandalle@hellhound.homeip.net
            SHORT='Molecular Density visualizer for Mopac/Ampac'
 cat << EOF
