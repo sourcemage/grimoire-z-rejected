@@ -1,7 +1,4 @@
-if [ -f /usr/include/jni_gcc.h ] ; then
-	mv /usr/include/jni_gcc.h /usr/include/jni.h
-fi
-cp /etc/profile /etc/profile.j2sdk 			&&
+cp -f /etc/profile /etc/profile.j2sdk 			&&
   grep -v 'JAVA_HOME' /etc/profile.j2sdk > /etc/profile || \
   echo -n ;
 echo 'export JAVA_HOME=/opt/java/j2sdk' >> /etc/profile	&&

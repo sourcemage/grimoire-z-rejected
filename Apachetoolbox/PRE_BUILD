@@ -22,8 +22,11 @@ if  [ -e $SCRIPT_DIRECTORY/UNATTEND_SAFE ];  then  PRE_BUILD_SPELL_UNATTEND_SAFE
 # Warn user about problems with spell.
 message  "${MESSAGE_COLOR}This spell is considered ${PROBLEM_COLOR}rejected${DEFAULT_COLOR}${MESSAGE_COLOR} because the software it installs "                                    \
          " $REJECT."  \
-         ""
-	 " You may continue casting the spell."            \
+         ""  \
+         " Please view this software's website for more information:${DEFAULT_COLOR}"              \
+	 " `gaze website $SPELL`${MESSAGE_COLOR}"                                                  \
+         ""  \
+         " You may continue casting the spell and it will still be tracked by Sorcery."            \
          " However, the software's installation process may have questions that need"              \
 	 " answered and/or licensing agreements that must be agreed to."                           \
 	 ""

@@ -11,9 +11,10 @@ else
 	chmod +x install.sfx.$$
 	# Extract the files and move them to where we want the jdk installed.
 	./install.sfx.$$
+	cd j2sdk1.4.1_01
 	install -d /opt/java/j2sdk-precompiled-1.4
 	mv * /opt/java/j2sdk-precompiled-1.4
-	export JAVA_HOME=/opt/java/j2sdk-precompiled-1.4/j2sdk1.4.1_01/
+	export JAVA_HOME=/opt/java/j2sdk-precompiled-1.4
 	cp $SOURCE_CACHE/$SOURCE4 $JAVA_HOME/jre/lib/i386/
 	cd $JAVA_HOME/jre/lib/i386
 	bunzip2 $SOURCE4
@@ -22,10 +23,10 @@ fi							&&
 cd $SOURCE_DIRECTORY					&&
 export ALT_BOOTDIR="$JAVA_HOME"				&&
 export ALT_MOZILLA_PATH=$SOURCE_DIRECTORY		&&
-export ALT_MOTIF_DIR=/usr				&&
 export ALT_DEVTOOLS_PATH="/usr/bin"			&&
 export MILESTONE="ttcompiled" 				&&
 export BUILD_NUMBER=`date +%s`				&&
+export ALT_CACERTS_FILE=${ALT_BOOTDIR}/jre/lib/security/cacerts	&&
 export DEV_ONLY=true					&&
 export OTHER_LDFLAGS="-lpthread"			&&
 unset JAVA_HOME						&&
@@ -47,8 +48,8 @@ export MAKE_VERBOSE=true				&&
 export INSANE=true					&&
 echo "Red Hat Linux release 6.1 (LFS)" > /etc/redhat-release &&
 cd $SOURCE_DIRECTORY/j2se/src/share/native/java/util/zip	&&
-rm -rf $SOURCE_DIRECTORY/zlib-1.1.3			&&
-tar -xvzf $SOURCE_CACHE/$SOURCE5			&&
+rm -rf zlib-1.1.3					&&
+unpack $SOURCE5 ${MD5[4]}				&&
 cd zlib-${ZLIB_VERSION}					&&
 mv adler32.c zadler32.c					&&
 mv crc32.c zcrc32.c					&&
@@ -64,9 +65,14 @@ cd $SOURCE_DIRECTORY/control/make 			&&
 unset LD_PRELOAD					&&
 make							&&
 prepare_install                    			&&
-cd $SOURCE_DIRECTORY/control/build/linux-i386		&&
+cd $SOURCE_DIRECTORY/control/build/linux-i?86		&&
 mkdir -p /opt/java 					&&
-cp -a j2sdk-image /opt/java/j2sdk-1.4.0-tt 		&&
+cp -a j2sdk-image /opt/java/j2sdk-1.4.1-tt 		&&
 cd /opt/java 						&&
-ln -nsf j2sdk-1.4.0-tt j2sdk
+rm -f j2sdk						&&
+ln -sf j2sdk-1.4.1-tt j2sdk				&&
+mkdir -p /etc/.java					&&
+chmod a+w /etc/.java					&&
+rm -rf /opt/java/j2sdk-precompiled-1.4			&&
+[ ! -d /usr/lib/mozilla/plugins ] || ln -sf /opt/java/j2sdk/jre/plugin/i386/ns610/libjavaplugin_oji.so /usr/lib/mozilla/plugins/libjavaplugin_oji.so
 )  >  $C_FIFO  2>&1

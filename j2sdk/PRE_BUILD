@@ -55,10 +55,7 @@ message  "${MESSAGE_COLOR}This spell is considered ${PROBLEM_COLOR}rejected${DEF
    fi
 
 
-if [ -f /usr/include/jni.h ] ; then
-	mv /usr/include/jni.h /usr/include/jni_gcc.h
-fi
-mk_source_dir	$SOURCE_DIRECTORY	&&
+mk_source_dir	$SOURCE_DIRECTORY	2g &&
 cd		$SOURCE_DIRECTORY	&&
 unpack		$SOURCE		${MD5[0]}	&&
 unpack		$SOURCE2	${MD5[1]}	&&
@@ -66,9 +63,7 @@ for file in $SOURCE_CACHE/$SOURCE6     \
         $SOURCE_CACHE/$SOURCE7         \
         $SOURCE_CACHE/$SOURCE8         \
         $SOURCE_CACHE/$SOURCE9         \
-        $SOURCE_CACHE/$SOURCE10        \
-        $SOURCE_CACHE/$SOURCE11        \
-        $SOURCE_CACHE/$SOURCE12
+        $SOURCE_CACHE/$SOURCE10
 do
 bunzip2 -k -c $file | patch -p1
 done

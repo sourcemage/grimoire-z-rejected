@@ -1,0 +1,15 @@
+           SPELL=ant
+         VERSION=1.5.1
+          SOURCE=jakarta-$SPELL-$VERSION-src.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/jakarta-$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.apache.org/dist/ant/source/$SOURCE
+          MD5[0]='eeca7be9b2230ad0a53209220442cab1'
+      LICENSE[0]=APACHE
+        WEB_SITE=http://jakarta.apache.org/ant/
+         ENTERED=20030120
+         UPDATED=20030120
+      MAINTAINER=sepinkham@attbi.com
+           SHORT="Advanced build system using Java"
+cat << EOF
+Ant is a Java-based build tool. In theory, it is kind of like Make, without Make's wrinkles and with the full portability of pure Java code.(quote from the website)
+EOF

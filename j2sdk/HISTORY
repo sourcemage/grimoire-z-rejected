@@ -1,3 +1,15 @@
+2003-01-25  Jose Bernardo Silva <josebernardo1@yahoo.com>
+
+		Fixed the last small things in BUILD, including
+		a "rm -f j2sdk" because "ln -sf" doesn't replace
+		existing links as it should.
+
+2003-01-19  Jose Bernardo Silva <josebernardo1@yahoo.com>
+
+		Updated the spell to 1.4.1, according with
+		the latest LFS hints. Fixed the "second cast
+		only" bug.
+
 2002-12-11  Geoffrey Derber  <gderber@sourcemage.org>
 
 		added zero_the_hero's website as a mirror of
