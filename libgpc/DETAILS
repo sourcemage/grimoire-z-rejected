@@ -7,6 +7,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/gpc$VERSION
          ENTERED=20020528
          UPDATED=20020528
 	  REJECT="is non-source and has licensing issues"
+	  MD5[0]=24688bfc57a66be38bc252cae323ddd1
+#      LICENSE[0]=see 'gpc.c' for licensing information
       MAINTAINER=m.l@compaqnet.fr
            SHORT="A general polygon clipper library (gpc)"
 cat << EOF

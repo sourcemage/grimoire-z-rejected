@@ -8,8 +8,12 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.perforce.com
          ENTERED=20020514
          UPDATED=20020514
+	  MD5[0]=6fd2454556977dad7f7af2b41e6969f9
+	  MD5[1]=ac070070b99576aeb841c115044639fd
+      LICENSE[0]=http://www.perforce.com/perforce/price.html
 	  REJECT="is non-source and has licensing issues"
            SHORT="Perforce command line client"
+      MAINTAINER=ashaman@flyingtemple.com
 cat << EOF
 Perforce is a fast, robust SCM system that runs on over 50 platforms. This
 package installs the perforce client programs

@@ -10,6 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20020528
 	  MD5[0]=bbc63ab4a7f56cd63a7fb68d44ad739c
       LICENSE[0]=http://www.ssh.com/products/ssh/ssh_license_agreement.cfm
+	  REJECT="has licensing issues"
       MAINTAINER=glenniii@utexas.edu
            SHORT="sshd2 is a secure remote admin suite"
 cat << EOF
