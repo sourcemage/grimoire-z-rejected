@@ -1,6 +1,5 @@
-2004-10-06 Eric Schabell <z-rejected@sourcemage.org>
-	* z-java/j2sdk{-bin}: spells now conflict with new jdk1.5-bin spell.
-	* z-java/jdk1.5-bin: new spell added.
+2004-10-14 Eric Schabell <z-rejected@sourcemage.org>
+	* z-http/apachetoolbox: version bump.
 
 2004-09-24 Eric Schabell <z-rejected@sourcemage.org>
 	* z-net: created new section.
