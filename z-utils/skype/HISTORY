@@ -1,20 +1,23 @@
-2004-08-13 Eric Schabell <libs@sourcemage.org>
+2004-09-16 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: version bump to 0_91_)_12.
+
+2004-08-13 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: version bump to 0_91_0_3.
 	* INSTALL: adjusted to deal with link creation.
 
-2004-08-07 Eric Schabell <libs@sourcemage.org>
+2004-08-07 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD: updated for api2.
 	* INSTALL: added for api2.
 	* CONFIGURE: updated to use grimoire rejected message.
 	* PREPARE: added to query user for dynamic/static QT usage.
 
-2004-07-25 Eric Schabell <libs@sourcemage.org>
+2004-07-25 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: version bump to 0_90_0_14, using dynamic QT now.
 
-2004-07-01 Eric Schabell <libs@sourcemage.org>
+2004-07-01 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: version bump.
 
-2004-06-24 Eric Schabell <libs@sourcemage.org>
+2004-06-24 Eric Schabell <eschabell@sourcemage.org>
 	* Created spell, with permission from skype.com, and with 
 	  thanks to David A. Sosa Cabrea (neon) for early work on
 		the spell and being my first call!
