@@ -1,3 +1,6 @@
+2005-01-25 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: fixed MD5 [Bug 8089]
+
 2005-01-12 Andrew Stitt <astitt@sourcemage.org>
 	* FINAL: use local variables instead of trampling on sorcery.
 	  Correct the sed expressions, the use of [ ] was incorrect as was

@@ -3,7 +3,7 @@
           SOURCE=NVIDIA-Linux-x86-$VERSION.run
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION
    SOURCE_URL[0]=http://download.nvidia.com/XFree86/Linux-x86/${VERSION/-pkg1/}/$SOURCE
-          MD5[0]=51e83be46f83c52102ccb8995b54f4e2
+          MD5[0]=f7737c1e95371f37a4fd30da2f11e72c
         WEB_SITE=http://www.nvidia.com
          ENTERED=20030401
          UPDATED=20040717
