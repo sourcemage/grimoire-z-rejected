@@ -2,7 +2,7 @@
          VERSION=0.9.0
           SOURCE=${SPELL}core-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}core-$VERSION
-   SOURCE_URL[0]=http://cvs.xvid.org/downloads/xvidcore-0.9.0/$SOURCE
+   SOURCE_URL[0]=http://cvs.xvid.org/downloads/$SOURCE
         WEB_SITE=http://www.xvid.org/
           MD5[0]=4c62d907ffb75af73e7afd68d12aa3e9
       LICENSE[0]=GPL
