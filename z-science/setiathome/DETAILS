@@ -7,10 +7,14 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}.${ARK:-i686-pc-linux-gnu
           MD5[0]=${PREPARE_MD5:-01d05178bd22c36b2e411dd12f23661a}
         WEB_SITE=http://setiathome.ssl.berkeley.edu/
          ENTERED=20020919
-         UPDATED=20030909
+         UPDATED=20031010
       LICENSE[0]=UNKOWN
       MAINTAINER=eric@sandall.us
            SHORT="SETI@Home, search for E.T. in your own home"
 cat << EOF
-setiathome is the UNIX version of the SETI@home client.  It downloads radio telescope data from a network server, analyzes the data looking for signals of extraterrestrial origin, and uploads results to the server, repeating this cycle indefinitely.  See http://setiathome.berkeley.edu for more information.
+setiathome is the UNIX version of the SETI@home client.  It downloads radio telescope data from a network server, 
+analyzes the data looking for signals of extraterrestrial origin, and uploads results to the server, 
+repeating this cycle indefinitely.  See http://setiathome.berkeley.edu for more information.
+
+After installation use the seti-setup command then follow instructions.
 EOF
