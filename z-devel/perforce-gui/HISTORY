@@ -1,3 +1,9 @@
+2005-01-17 Tony Smith <tony@smee.org>
+	* DETAILS: 	updated to 2004.2 and build_api=2
+	* PRE_BUILD:	adapted for tarball source file
+	* FINAL:	add P4VRES environment variable to /etc/profile
+	* INSTALL:	adapted for tarball distribution
+
 2004-08-05 Eric Schabell <eschabell@sourcemage.org>
 	* CONFIGURE: updated to use grimoire rejected message.
 	* POST_BUILD: branced to FINAL and removed.
