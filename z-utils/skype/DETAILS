@@ -1,21 +1,21 @@
              SPELL=skype
-           VERSION=0.93.0.3
+           VERSION=1.0.0.1
 if       [ "$QT" == "y" ]; then
 # dynamic version.
             SOURCE=${SPELL}-${VERSION}.tar.bz2
   SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
-            MD5[0]='f3e22b1dde256b9d34d11b03d59203cb'
+            MD5[0]='03ca51c3d1f4ec8062dcb0b434c9633e'
 else
 # static version.
             SOURCE=${SPELL}_staticQT-${VERSION}.tar.bz2
   SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_staticQT-${VERSION}
-            MD5[0]='4f3b8032ba9782ab31e2d89de18e2e30'
+            MD5[0]='cfc41d93161f79567c386d57125caa4d'
 fi
           WEB_SITE=http://www.skype.com/
      SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
         LICENSE[0]=http://www.skype.com/eula.html
            ENTERED=20040624
-           UPDATED=20041110
+           UPDATED=20050204
 	    REJECT="has licensing issues"
              SHORT="Easy, free, working voice over IP (voip) Linux client."
 cat << EOF
