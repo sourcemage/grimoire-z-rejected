@@ -1,3 +1,6 @@
+2004-06-21 Jose Bernardo Silva <jbernardo@sourcemage.org>
+        * DETAILS: fixed bug 7025
+
 2004-05-30 Jose Bernardo Silva <jbernardo@sourcemage.org>
         * all: updated as per bug 6932 (thank Remy!)
 

@@ -7,11 +7,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux
         WEB_SITE=http://www.macromedia.com
          ENTERED=20020319
          UPDATED=20040529
-      LICENSE[0]=http://www.macromedia.com/shockwave/download/license
-/desktop/
+      LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
           REJECT="is non-source and has licensing issues"
-           SHORT="Macromedia Flash Plugin v7 for Konq and Mozilla Web
- Browsers"                                                          
+           SHORT="Macromedia Flash Plugin v7 for Konq and Mozilla Web Browsers"
 cat << EOF
 Macromedia Flash Plugin version 7 for Konqueror and Mozilla Web Browsers
 EOF
