@@ -1,0 +1,43 @@
+echo "Flash works with the following programs:"
+echo "Mozilla"
+echo "Konquerer"
+echo "Opera"
+echo "Netscape (not version 4.x)"
+
+echo "Select which currently installed applications you wish to install Flash for."
+
+if spell_installed mozilla ; then
+	if ! grep -q "MOZILLA=" $SPELL_CONFIG; then
+		if query "Do you wish to install the plugin for Mozilla?" y
+			then echo "MOZILLA=y" >> $SPELL_CONFIG
+			else echo "MOZILLA=n" >> $SPELL_CONFIG
+		fi
+	fi
+fi
+
+if spell_installed kdebase ; then
+	if ! grep -q "KDEBASE=" $SPELL_CONFIG; then
+		if query "Do you wish to install the plugin for Konquerer?" y
+			then echo "KDEBASE=y" >> $SPELL_CONFIG
+			else echo "KDEBASE=n" >> $SPELL_CONFIG
+		fi
+	fi
+fi
+
+if spell_installed opera ; then
+	if ! grep -q "OPERA=" $SPELL_CONFIG; then
+		if query "Do you wish to install the plugin for Opera?" y
+			then echo "OPERA=y" >> $SPELL_CONFIG
+			else echo "OPERA=n" >> $SPELL_CONFIG
+		fi
+	fi
+fi
+
+if spell_installed netscape ; then
+	if ! grep -q "NETSCAPE=" $SPELL_CONFIG; then
+		if query "Do you wish to install the plugin for Netscape?" y
+			then echo "NETSCAPE=y" >> $SPELL_CONFIG
+			else echo "NETSCAPE=n" >> $SPELL_CONFIG
+		fi
+	fi
+fi

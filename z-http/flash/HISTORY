@@ -1,3 +1,11 @@
+2003-06-21  Geoffrey Derber <ashaman@flyingtemple.com>
+
+		Updated to version 6.0r79
+		re-wrote BUILD and added CONFIGURE so
+		as to not pause in updates
+		added UNATTEND_SAFE option
+
+
 2003-01-23  Geoffrey Derber <gderber@sourcemage.org>
 
 		Updated dependencies to require a
