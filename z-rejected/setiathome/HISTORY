@@ -1,3 +1,8 @@
+2003-09-09  Jose Bernardo Silva <jbernardo@sourcemage.org>
+
+		Touched the UPDATED field to force install
+		of the simpleinit script (bug #3907)
+
 2003-05-15  Seth Woolley <seth@tautology.org>
 
 		Modified PRE_BUILD to add unpack for SOURCE
