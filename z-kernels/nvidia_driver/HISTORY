@@ -1,3 +1,8 @@
+2005-04-01 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0-7174
+	* NVIDIA_kernel-1.0-7167-1233959.diff, NVIDIA_kernel-1.0-7167-1237815.diff:
+	  deleted patches, already applied in this version
+
 2005-03-14 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated UPDATED
 	* NVIDIA_kernel-1.0-7167-1233959.diff, NVIDIA_kernel-1.0-7167-1237815.diff:
