@@ -1,8 +1,8 @@
 2004-08-03 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD, DETAILS: modified for api2, added reject text.
-	* INSTALL: added to comply with api2.
-	* POST_INSTALL: modified to add POST_BUILD.
-	* POST_BUILD: removed, merged into POST_INSTALL.
+	* INSTALL, FINAL: added to comply with api2.
+	* POST_INSTALL: branched to FINAL.
+	* POST_BUILD: removed merged into POST_INSTALL.
 	* CONFIGURE: updated to use grimoire rejected message.
 	* PRE_BUILD: removed, as it tries to patch before sources 
 	  have been unpacked.

@@ -1,6 +1,12 @@
+cd $BUILD_DIRECTORY  &&
+
 bzip2  -cd  $SCRIPT_DIRECTORY/${PATCH_FILE}.bz2 |  \
 sed    -e "s|INSTALL_RPM|${INSTALL_RPM}|"       |  \
-patch  -b -p0
+patch  -b -p0 &&
+
+echo ""
+echo "patch appied?"
+echo ""
 
 mkdir  -p                /opt  &&
 cp     -drv  opt/sybase  /opt

@@ -1,5 +1,5 @@
            SPELL=sybase-ase
-      BUILD_API2=2
+       BUILD_API=2
          VERSION=11_0_3_3-6
       PATCH_FILE=sybase-ase.SGL.patches
           SOURCE=$SPELL-${VERSION}_i386.rpm

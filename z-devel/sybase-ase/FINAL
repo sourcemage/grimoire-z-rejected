@@ -1,4 +1,5 @@
-opt/sybase/install/sybinstall.sh
+# need to clean up the source stuff.
+rm -rf $BUILD_DIRECTORY/opt
 
 message  "\n${MESSAGE_COLOR} $SPELL was installed to /opt and will not "  \
          "be tracked.${DEFAULT_COLOR}\n"
