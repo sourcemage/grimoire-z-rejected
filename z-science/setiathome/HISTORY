@@ -1,3 +1,7 @@
+2004-02-26 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD: Remove z-rejected query
+	* CONFIGURE: Add z-rejected query
+
 2003-10-10 hgg <hgreig@bigpond.net.au>
 	* BUILD,seti-setup: add for easier first time configuration
 	* init.d/{setiathome.conf,smgl-setiathome}: add configurable nice value and extra bells and whistles 
