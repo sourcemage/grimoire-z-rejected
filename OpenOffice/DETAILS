@@ -64,7 +64,7 @@ SOURCE_DIRECTORY2=$BUILD_DIRECTORY/gpc231
             SHORT="OpenOffice.org is the Open Source project through which Sun Microsystems is releasing the technology for the popular StarOffice productivity suite."
 
 cat << EOF
-OpenOffice.org is the Open Source project through which Sun Microsystems is releasing the technology for the popular StarOffice productivity suite.
+OpenOffice.org is the Open Source project through which Sun Microsystems is releasing the technology for the popular StarOffice productivity suite. Our BUILD is heavilly based on BLFS and Tushar Teredesai's LFS hints (http://www.linuxfromscratch.org/~tushar/).
 EOF
 
 [ -f $CONFIG_CACHE/oo.languages ] && . $CONFIG_CACHE/oo.languages || true
