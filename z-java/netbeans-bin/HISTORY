@@ -1,0 +1,7 @@
+2004-11-20 David A. Sosa Cabrera  <neon@neonx.ath.cx>
+	*  DETAILS: The spell is named netbeans-bin.
+	*  DEPENDS: Change the depend to JAVA.
+        *  bin/netbeans: Changed path of jdkhome with ${JAVA_HOME}.
+
+2004-11-19 David A. Sosa Cabrera  <neon@neonx.ath.cx>
+        *  Created this spell

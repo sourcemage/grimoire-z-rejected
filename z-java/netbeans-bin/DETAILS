@@ -1,0 +1,15 @@
+           SPELL=netbeans-bin
+	PKGNAME=netbeans
+         VERSION=3_6
+          SOURCE=${PKGNAME}-${VERSION}-platform.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKGNAME}
+        WEB_SITE=http://netbeans.org
+         ENTERED=20041119
+         UPDATED=20041119
+          MD5[0]=5fe0a6b82578443df33046b9eeb0ea20
+      LICENSE[0]=SUNPL
+           SHORT="NetBeans IDE is a modular, standards-based integrated development environment (IDE), written in the JavaTM programming language." 
+cat << EOF 
+ NetBeans IDE runs on operating systems that support JavaTM  2 SDK, Standard Edition. Below is a list of platforms that NetBeans IDE has been tested on.
+ NetBeans is an open-source project, the web site also provides access to the source code, a bug database, information on creating your own NetBeans modules, and much more.
+EOF
