@@ -1,3 +1,6 @@
+2004-08-25 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: version bump 7.54, bug #7268.
+
 2004-08-08 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD, DETAILS: updated for api2.
 	* CONFIGURE: modified to use grimoire rejected message.
