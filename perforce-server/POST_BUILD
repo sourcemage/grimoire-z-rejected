@@ -15,4 +15,3 @@ update_crontab		&&
 # the same whatever the version. There seems no way to work around this
 # at the moment.
 rm -f $SOURCE_CACHE/$SOURCE
-

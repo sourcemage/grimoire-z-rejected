@@ -1,3 +1,10 @@
+2003-03-31  Eric Sandall <eric@sandall.us>
+
+		Updated to use sorcery's init.d installer
+
+		Updated PRE_REMOVE to only run the script
+		if it's executable
+
 2003-02-27  Seth Woolley <seth@tautology.org>
 
 		Fixed MD5 (will fix PRE_BUILD later)

@@ -1,1 +1,4 @@
-/etc/init.d/p4d.sh stop
+if  [  -x  /etc/init.d/p4d.sh  ]
+then
+  /etc/init.d/p4d.sh stop
+fi
