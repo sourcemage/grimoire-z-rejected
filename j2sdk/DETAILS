@@ -38,9 +38,9 @@
           MD5[11]=e4cacc307ef615bbdb4438d8b8fa1f52
       LICENSE[11]=GPL
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION}
-    SOURCE_URL[0]=
-   SOURCE2_URL[0]=
-   SOURCE3_URL[0]=
+    SOURCE_URL[0]=http://www.negativezero.plus.com/$SOURCE
+   SOURCE2_URL[0]=http://www.negativezero.plus.com/$SOURCE2
+   SOURCE3_URL[0]=http://www.negativezero.plus.com/$SOURCE3
    SOURCE4_URL[0]=http://linuxfromscratch.org/~timothy/misc/$SOURCE4
    SOURCE5_URL[0]=http://www.gzip.org/$SOURCE5
    SOURCE6_URL[0]=http://tushar.lfsforum.org/files/JavaFromScratch/$SOURCE6
