@@ -3,7 +3,7 @@
           SOURCE=gaim-CVS.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/gaim-${VERSION}
    SOURCE_URL[0]=http://gaim.sourceforge.net/$SOURCE
-        WEB_SITE=http://gaim.sourceforge.net
+        WEB_SITE=http://$SOURCEFORGE_URL/gaim/direct_download/$SOURCE
       MAINTAINER=
          ENTERED=20021213
          UPDATED=`date +%Y%m%d`
