@@ -1,3 +1,8 @@
+2005-04-05 Eric Sandall <eric@sandall.us>
+	* BUILD: Apply 2.6.11 patch if needed
+	* 2.6.10-fix.patch: Removed
+	* 8.10.19-2.6.11.patch: Added (patch URL from Andrew Levstik)
+
 2005-04-03 Eric Sandall <eric@sandall.us>
 	* DETAILS: Reworded SHORT and description to give a little more detail
 	  about what this driver is for. Grabbed from:
