@@ -1,10 +1,1 @@
-(
-	prepare_install						&&
-	install -o root -g root -d /usr/lib/p4			&&
-	install -o root -g root -d /usr/include/p4		&&
-	install -o root -g root -d /usr/share/doc/perforce-api  &&
-	install -o root -g root lib*.a /usr/lib/p4		&&
-	install -o root -g root *.h /usr/include/p4		&&
-	install -o root -g root Version /usr/share/doc/perforce-api
-
-) > $C_FIFO 2>&1
+true
