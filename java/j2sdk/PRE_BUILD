@@ -1,0 +1,23 @@
+warn_rejected &&
+ask_continue_with_rejected &&
+
+mk_source_dir	$SOURCE_DIRECTORY	2g &&
+cd		$SOURCE_DIRECTORY	&&
+unpack		$SOURCE		${MD5[0]}	&&
+unpack		$SOURCE2	${MD5[1]}	&&
+
+# check the md5s for the patches
+unpack		$SOURCE6	${MD5[5]}	&&
+unpack		$SOURCE7	${MD5[6]}	&&
+unpack		$SOURCE8	${MD5[7]}	&&
+unpack		$SOURCE9	${MD5[8]}	&&
+unpack		$SOURCE10	${MD5[9]}	&&
+
+for file in $SOURCE_CACHE/$SOURCE6     \
+        $SOURCE_CACHE/$SOURCE7         \
+        $SOURCE_CACHE/$SOURCE8         \
+        $SOURCE_CACHE/$SOURCE9         \
+        $SOURCE_CACHE/$SOURCE10
+do
+bunzip2 -k -c $file | patch -p1
+done

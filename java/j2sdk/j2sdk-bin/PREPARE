@@ -1,0 +1,50 @@
+# Copied from setiathome
+# Very cludgy setup I have made.  :(
+
+get_architecture()  {
+  if  !  [  -f  ${SPELL_CONFIG}  ]
+  then
+    touch ${SPELL_CONFIG}
+    ARKS=`cat ${SCRIPT_DIRECTORY}/architectures`
+    ARKS=`dialog  --backtitle  "j2sdk Configuration Menu" \
+                  --stdout                                    \
+                  --title      "Select architecture please"   \
+                  --menu                                      \
+                  ""                                          \
+                  0  0  0                                     \
+                  ${ARKS}`
+
+    for  ARK in ${ARKS}
+    do
+      # The first line of each descriptor is for easy reading names.  :)
+      # ARK is defined on the second line of each descriptor
+      # MD5 is defined on the third line of each descriptor
+              ARK=${ARKS:0:${#ARKS}}
+    done
+
+    case  ${ARK}  in
+      586)          ARK=linux-i586-gcc3.2                 ;
+                   SDIR=i386                              ;
+            PREPARE_MD5=a0c7838233603fccb30641998195e8bc  ;;
+      SUN)          ARK=linux-sparc-gcc3.2                ;
+                   SDIR=sparc                             ;
+            PREPARE_MD5=4e4d248a5b415e5d3e25f53fa682ed33  ;;
+    esac
+
+    echo          ARK=${ARK}          >>  ${SPELL_CONFIG}
+    echo  PREPARE_MD5=${PREPARE_MD5}  >>  ${SPELL_CONFIG}
+    echo         SDIR=${SDIR}         >>  ${SPELL_CONFIG}
+
+  fi
+
+}
+
+if  query  "Reconfigure ${SPELL_COLOR}${SPELL}${DEFAULT_COLOR}?"  n
+    then   if  [  -f  ${SPELL_CONFIG}  ]
+           then 
+             rm  -f  ${SPELL_CONFIG}
+           fi
+           get_architecture
+fi
+
+echo  SPELL_CONFIG = ${SPELL_CONFIG}
