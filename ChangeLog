@@ -1,5 +1,8 @@
 2004-08-07 Eric Schabell <z-rejected@sourcemage.org>
 	* z-graphics: section api2 compliant and rejected msg.
+	* z-utils: section api2 compliant and rejected msg.
+	* z-utils/skype: user can now decide to use dynamic
+	  linked to QT or static versions via user query.
 
 2004-08-05 Eric Schabell <z-rejected@sourcemage.org>
 	* z-devel: section api2 compliant and rejected msg.
