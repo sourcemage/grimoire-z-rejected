@@ -1,10 +1,5 @@
 (
-if spell_installed "Mozilla"
-then
-if  [  !  -d  /usr/lib/mozilla/plugins  ]
-  then  mkdir  /usr/lib/mozilla/plugins
-fi
-fi
+prepare_install
 ./flashplayer-installer &&
 if [ -e /opt/gcc2/lib/libstdc++-3-libc6.2-2-2.10.0.so ]; then
   ln -sf /opt/gcc2/lib/libstdc++-3-libc6.2-2*.so /usr/lib/mozilla/plugins/libstdc++-libc6.2-2.so.3

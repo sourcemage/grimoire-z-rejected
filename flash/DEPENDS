@@ -1,2 +1,1 @@
-depends mozilla &&
-optional_depends "kdebase" "" "" "provides konqueror webbrowser"
+requires graphical_web_browser

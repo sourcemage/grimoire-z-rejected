@@ -1,3 +1,8 @@
+2003-01-23  Geoffrey Derber <gderber@sourcemage.org>
+
+		Updated dependencies to require a
+		graphical_web_browser
+
 2002-12-14  Geoffrey Derber <gderber@sourcemage.org>
 
 		Updated to version 6.0r69.
