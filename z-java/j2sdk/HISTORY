@@ -1,3 +1,13 @@
+2003-09-09  hgg <hgreig@bigpond.net.au>
+
+		Modified spell to install to /usr/java and some other
+		clean ups (sed -e now == sedit and so on.)
+		Add patch for gcc3.3.X and another patch for an error only i seem to have.
+		Change name of MILESTONE and BUILD_NUMBER
+		Add extra symlink for konqueror (uses old netscape4 plugin)
+		Now builds in "sane" mode so a failure causes an exit and it doesn't bundle up the 
+		debug image.
+
 2003-04-18  Seth Woolley <seth@tautology.org>
 
 		Modified DETAILS to fix md5 for SOURCE[2].

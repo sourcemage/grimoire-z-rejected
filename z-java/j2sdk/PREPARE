@@ -1,0 +1,14 @@
+if ! grep -q CONFIGURED $SPELL_CONFIG
+then  if query "Do you have a certificate from a certificate authority?\n\"You will also need to \
+download 2sdk-sec-1_4_1-src-scsl.zip from SUN\"" n
+            then echo -e "CERT=yes \nVERSION=1_4_1\nSOURCE10=j2sdk-sec-\${VERSION}-src-scsl.zip" >> $SPELL_CONFIG 
+      fi  &&
+      if !  [ $JAVA_HOME ] 
+         then if grep -q CERT $SPELL_CONFIG ;
+               then echo -e "SOURCE11=j2sdk-\${BIN_VERSION}-linux-i586.bin" >> $SPELL_CONFIG
+               else echo -e "SOURCE10=j2sdk-\${BIN_VERSION}-linux-i586.bin">> $SPELL_CONFIG
+              fi
+      fi
+
+     echo CONFIGURED=yes >> $SPELL_CONFIG
+fi

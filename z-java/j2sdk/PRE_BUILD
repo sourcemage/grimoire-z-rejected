@@ -1,23 +1,31 @@
-warn_rejected &&
-ask_continue_with_rejected &&
-
-mk_source_dir	$SOURCE_DIRECTORY	2g &&
-cd		$SOURCE_DIRECTORY	&&
+if [ $(cat /proc/meminfo | grep  Swap: | cut -d" " -f4) -gt "1800000000" ] ;
+then mk_source_dir	$SOURCE_DIRECTORY	2g           
+else export TMPFS=off &&
+     mk_source_dir $SOURCE_DIRECTORY
+fi                                              &&
+cd		$SOURCE_DIRECTORY	        &&
 unpack		$SOURCE		${MD5[0]}	&&
 unpack		$SOURCE2	${MD5[1]}	&&
+if [ "$CERT" = "yes" ]
+then unpack	$SOURCE10        ${MD5[9]}       
+fi                                              &&
 
 # check the md5s for the patches
-unpack		$SOURCE6	${MD5[5]}	&&
-unpack		$SOURCE7	${MD5[6]}	&&
-unpack		$SOURCE8	${MD5[7]}	&&
-unpack		$SOURCE9	${MD5[8]}	&&
-unpack		$SOURCE10	${MD5[9]}	&&
+unpack		$SOURCE4        ${MD5[3]}       &&
+unpack		$SOURCE5        ${MD5[4]}       &&
+unpack		$SOURCE6        ${MD5[5]}       &&
+unpack		$SOURCE7        ${MD5[6]}       &&
+#unpack		$SOURCE8        ${MD5[7]}       &&
 
-for file in $SOURCE_CACHE/$SOURCE6     \
+for file in $SOURCE_CACHE/$SOURCE4     \
+        $SOURCE_CACHE/$SOURCE5         \
+        $SOURCE_CACHE/$SOURCE6         \
         $SOURCE_CACHE/$SOURCE7         \
-        $SOURCE_CACHE/$SOURCE8         \
-        $SOURCE_CACHE/$SOURCE9         \
-        $SOURCE_CACHE/$SOURCE10
+        $SOURCE_CACHE/$SOURCE8
 do
-bunzip2 -k -c $file | patch -p1
-done
+bunzip2 -k -c $file | patch -p1 
+done  &&
+patch -p0 < $SCRIPT_DIRECTORY/j2sdk-gcc3.3.X-patch &&
+patch -p1 < $SCRIPT_DIRECTORY/mkmsgcat.c.patch
+
+
