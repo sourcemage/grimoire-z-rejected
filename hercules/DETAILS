@@ -1,11 +1,11 @@
            SPELL=hercules
-         VERSION=2.16
+         VERSION=2.16.1
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.conmicro.cx/hercules/$SOURCE
         WEB_SITE=http://www.conmicro.cx/hercules
          ENTERED=20020411
-         UPDATED=20020430
+         UPDATED=20020508
       MAINTAINER=eric@schabell.com
            SHORT="Hercules is an IBM mainframe emulator (S/390)"
 cat << EOF
