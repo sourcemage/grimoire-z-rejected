@@ -3,7 +3,8 @@
           SOURCE=${SPELL}_ver-${VERSION}-staticQT.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver-${VERSION}-staticQT
         WEB_SITE=http://www.skype.com/
-   SOURCE_URL[0]='http://www.skype.com/go/getskype-linux\?type=static\&x=72\&y=0'
+#   SOURCE_URL[0]='http://www.skype.com/go/getskype-linux\?type=static\&x=72\&y=0'
+    SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
           MD5[0]='e5171b8ede4d57173ded7e7e0d400f2a'
       LICENSE[0]=http://www.skype.com/eula.html
          ENTERED=20040624
