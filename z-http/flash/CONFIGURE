@@ -4,7 +4,7 @@ ask_continue_with_rejected &&
 echo "Flash works with the following programs:"
 echo "Mozilla"
 echo "firefox"
-echo "Konquerer"
+echo "Konqueror"
 echo "Opera"
 echo "Netscape (not version 4.x)"
 
@@ -23,7 +23,7 @@ fi
 if spell_installed firefox; then
 #if [  -x  /usr/bin/firefox  ];  then
 	if ! grep -q "FIREFOX=" $SPELL_CONFIG; then
-		if query "Do you wish to install the plugin for firefox (CVS, for regular use mozilla) ?" y
+		if query "Do you wish to install the plugin for firefox?" y
 			then echo "FIREFOX=y" >> $SPELL_CONFIG
 			else echo "FIREFOX=n" >> $SPELL_CONFIG
 		fi

@@ -1,3 +1,8 @@
+2004-07-03 Jose Bernardo Silva <jbernardo@sourcemage.org>
+        * PREPARE: corrected a small syntax error
+        * BUILD: added versioned support for firefox and tests
+	  for plugin directory existency.
+
 2004-06-21 Jose Bernardo Silva <jbernardo@sourcemage.org>
         * DETAILS: fixed bug 7025
 
