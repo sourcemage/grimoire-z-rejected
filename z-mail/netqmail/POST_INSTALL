@@ -1,44 +1,20 @@
 persistent_load
 
+
 #######################################################
 ### Basic me, rcpthost etc. config
 #######################################################
+cd /var/qmail/control
+echo "$FQDN" > me
 
-if [ "$CONFIG" == "y" ]; then
+local DEFAULT=`hostname -d`
+echo $DEFAULT > defaultdomain
 
-  # Handle re-installation from cache, when no 'config' is available
-  if [ -x "$SOURCE_DIRECTORY/$SPELL-$VERSION/config" ]; then
-
-    COUNT_FILES=`ls /var/qmail/control | wc -l`
-
-    if [ $COUNT_FILES != 0 ]; then
-      message "*****************************************************************"
-      message "* Old config files found, not doing anything to configure qmail *"
-      message "*****************************************************************"
-    else
-      cd "$SOURCE_DIRECTORY/$SPELL-$VERSION"
-      ./config
-    fi
-
-  fi
-
-else
-
-  # Handle re-installation from cache, when no 'config' is available
-  if [ -x "$SOURCE_DIRECTORY/$SPELL-$VERSION/config-fast" ]; then
-
-    COUNT_FILES=`ls /var/qmail/control | wc -l`
-
-    if [ $COUNT_FILES != 0 ]; then
-      message Old config files found, not doing anything to configure qmail
-    else
-      cd "$SOURCE_DIRECTORY/$SPELL-$VERSION"
-      ./config-fast $FQDN
-    fi
-
-  fi
-
-fi
+> locals
+for i in $( hostname -a )
+do
+  echo $i.$DEFAULT >> locals
+done
 
 
 #######################################################

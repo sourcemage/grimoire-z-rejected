@@ -8,19 +8,12 @@ if [ -n "$PID" ]; then
   exit 1
 fi
 
-FQDN=`hostname`
 
 #######################################################
 ### FQDN
 #######################################################
-
-echo
-echo "Should I let qmail to automatically decide about your FQDN"
-echo "(which appears to be '$FQDN') ?"
-if ! config_query CONFIG "Automatically detect FQDN ?" y
-then
-    config_query_string FQDN "Please give me your FQDN hostname" "$FQDN"
-fi
+FQDN=`hostname --fqdn`
+config_query_string FQDN "What is your Fully Qualified Domain Name ?" "$FQDN"
 
 #######################################################
 ### procmail or not

@@ -1,3 +1,7 @@
+2004-10-14 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS, CONFIGURE, POST_INSTALL: applied patch from bug 
+	  #6767 to provide for better configured install.
+
 2004-09-18 Eric Schabell <eschabell@sourcemage.org>
 	* ALL: Added spell, modified to work in z-rejected, modified
 	  to work with build api 2.

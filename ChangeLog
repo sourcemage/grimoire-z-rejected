@@ -1,5 +1,7 @@
 2004-10-14 Eric Schabell <z-rejected@sourcemage.org>
 	* z-http/apachetoolbox: version bump.
+	* z-mail/netqmail: patch applied for cleaner install config,
+	  bug #6767.
 
 2004-09-24 Eric Schabell <z-rejected@sourcemage.org>
 	* z-net: created new section.
