@@ -2,7 +2,7 @@ if  query  "This is a REJECTED SPELL, to see why enter a 'y': "  y
   then 
     echo  "" 
     echo  ""
-    echo  "This spell was rejected due to licence issues, please
+    echo  "This spell was rejected due to licence issues, please"
     echo  "view the website 'gaze DETAILS ssh' for more information."
     echo  ""
     echo  ""

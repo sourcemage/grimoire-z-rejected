@@ -1,7 +1,7 @@
 (
 
     	./install.sh		&&
-    	cd apache_1.3.23	&&
+    	cd apache_1.3.24	&&
 	make			&&
 	make install		
 

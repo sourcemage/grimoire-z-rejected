@@ -1,7 +1,7 @@
            SPELL=downloaderx
-         VERSION=1.30
-          SOURCE=nt-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/nt-$VERSION
+         VERSION=2.0
+          SOURCE=d4x-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/d4x-$VERSION
    SOURCE_URL[0]=http://www.krasu.ru/soft/chuchelo/files/$SOURCE
         WEB_SITE=http://www.krasu.ru/soft/chuchelo/
          ENTERED=20020201

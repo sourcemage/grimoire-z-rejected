@@ -1,11 +1,11 @@
            SPELL=Apachetoolbox
-         VERSION=1.5.52
+         VERSION=1.5.56
           SOURCE=${SPELL}-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
    SOURCE_URL[0]=http://apachetoolbox.sourceforge.net/download/$SOURCE
         WEB_SITE=http://www.apachetoolbox.com
          ENTERED=20020220
-         UPDATED=22022002
+         UPDATED=22020430
            SHORT="Apache Toolbox provides a means to easily compile Apache (warning: 80+MB download)."
       MAINTAINER=eric@schabell.com
 cat << EOF
