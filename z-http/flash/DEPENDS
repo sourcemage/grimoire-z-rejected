@@ -1,1 +1,1 @@
-requires graphical-web-browser
+depends  GRAPHICAL-WEB-BROWSER
