@@ -36,8 +36,8 @@
           MD5[17]=fd980d3ce18d9a178c52951839c88943
          SOURCE19=openoffice-1.0.2-sal-main-cmdline.patch
           MD5[18]=6844fe7628979fd7f0aeab198a9e8bc7
-         SOURCE20=openoffice-1.0.2-system-db-4.0.patch
-          MD5[19]=b8a209af4f418c0dbbb314a9c1006d1d
+         SOURCE20=openoffice-1.0.2-system-db-4.1.patch
+          MD5[19]=5c5101696d6b7e428f6321e4bcfd1f46
          SOURCE21=openoffice-1.0.2-system-freetype-2.1.patch
           MD5[20]=5cbc9e5a7a0b8b575ed9439006a9b6b1
          SOURCE22=openoffice-1.0.2-system-getopt.patch
