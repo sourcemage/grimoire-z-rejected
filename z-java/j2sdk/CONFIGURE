@@ -1,10 +1,10 @@
 # download java sources warning.
 #
-source $SCRIPT_DIRECTORY/../JAVA_WARNING
+source $SCRIPT_DIRECTORY/../JAVA_WARNING &&
 
 # Standard rejected warnings.
 #
-source $SCRIPT_DIRECTORY/../../REJECTED_MSG
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG &&
 
 if spell_installed j2sdk-bin
 then export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
