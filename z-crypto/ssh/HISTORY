@@ -1,34 +1,40 @@
+2004-08-06 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed TABs
+	* CONFIGURE: Converted to config_query
+	* BUILD: Use config_query responses
+	* HISTORY: Formatted to Guru Handbook
+
 2004-08-03 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD: modified for api2.
 	* CONFIGURE: updated to use grimoire rejected message.
 	* PREPARE: removed.
 
 2003-09-16 Eric Sandall <eric@sandall.us>
-	* Added conflicts to lsh
+	* CONFLICTS: Added conflicts to lsh
 
 2003-07-17 Geoffrey Derber <ashaman@sourcemage.org>
-	* version bump to 3.2.5
-	  added UNATTEND_SAFE
+	* DETAILS: version bump to 3.2.5
+	* added UNATTEND_SAFE
 
 2002-12-01 Geoffrey Derber <ashaman@sourcemage.org>
-	* version bump to 3.2.2
+	* DETAILS: version bump to 3.2.2
 
 2002-09-02 Geoffrey Derber <ashaman@flyingtemple.com>
 	* spell update
-	  added Linux PAM as a CONFLICTS
-	  added MD5 field and License field
-	  modify DEPENDS so that xfree86 is now a configure option
-	  added Configure file
-	  modified BUILd so that the configure options work correctly.
+	* CONFLICTS: added Linux PAM as a CONFLICTS
+	* DETAILS: added MD5 field and License field
+	* DEPENDS: modify DEPENDS so that xfree86 is now a configure option
+	* CONFIGURE: added Configure file
+	* BUILD: modified so that the configure options work correctly.
 
-2002-06-28 07:03 PST Eric Sandall <sandalle@yahoo.com>
-	* Upped VERSION to 3.2.0 at Geoff's request
+2002-06-28 Eric Sandall <sandalle@yahoo.com>
+	* DETAILS: Upped VERSION to 3.2.0 at Geoff's request
 
 2002-05-28 Geoffrey Derber <ashaman@flyingtemple.com>
-	* Updated to version 3.1.2 from 3.1.0
+	* DETAILS: Updated to version 3.1.2 from 3.1.0
 
 2002-04-23 Eric Schabell <eric@schabell.com>
-	* Changed PRE_BUILD so that it does not just
+	* PRE_BUILD: Changed PRE_BUILD so that it does not just
 	  exit by default, now it will execute if you
 	  answer yes to the questions (thanks Yoav).
 

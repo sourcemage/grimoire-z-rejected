@@ -1,14 +1,8 @@
-if query "Do you want ssh1 compatability?" y;
-	then echo "SSH1=y" >> $SPELL_CONFIG
-	else echo "SSH1=n" >> $SPELL_CONFIG
-fi
+config_query  SSH1  "Do you want ssh1 compatibility?"  y
 
-if spell_installed xfree86; 
-	then 
-	if query "Do you want to enable the XFree86 compile options?" y
-	then echo "XFREE86=y" >> $SPELL_CONFIG
-	else echo "XFREE86=n" >> $SPELL_CONFIG
-	fi
+if  spell_installed  xfree86
+then 
+  config_query  XFREE86  "Do you want to enable XFree86 options?"  y
 fi
 
 # Standard rejected warnings.

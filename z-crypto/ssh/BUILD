@@ -1,17 +1,17 @@
-case $SSH1 in
-	y|Y) OPTS="$OPTS  --with-ssh-agent1-compat"
-	;;
-	*)   OPTS="$OPTS  --without-ssh-agent1-compat"
-	;;
-esac
-  
-case $XFREE86 in
-	y|Y) OPTS="$OPTS -with-x"
-	;;
-esac
+if  [  "$SSH1"  ==  "y"  ]
+then
+  OPTS="$OPTS  --with-ssh-agent1-compat"
+else
+  OPTS="$OPTS  --without-ssh-agent1-compat"
+fi  &&
+
+if  [  "$XFREE86"  ==  "y"  ]
+then
+  OPTS="$OPTS  --with-x"
+fi  &&
 
 ./configure  --prefix=/usr          \
              --sysconfdir=/etc/ssh2 \
              --enable-efence        \
              $OPTS                  &&
-make                                &&
+make
