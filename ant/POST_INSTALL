@@ -1,5 +1,0 @@
-cp /etc/profile /etc/profile.ant 			&&
-  grep -v 'ANT_HOME' /etc/profile.ant > /etc/profile || \
-  echo -n ;
-echo 'export ANT_HOME=/opt/ant' >> /etc/profile	&&
-echo 'export PATH=$PATH:$ANT_HOME/bin' >> /etc/profile
