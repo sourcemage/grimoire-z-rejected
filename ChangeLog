@@ -1,3 +1,6 @@
+2004-07-07 Eric Schabell <z-rejected@sourcemage.org>
+	* MAINTAINER: updated to show transfer of guru-ship.
+
 2004-07-04 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* z-http/flash: Added firefox 0.9.1 support
 	* z-java/j2sdk: Cleaned a little the plugin install
