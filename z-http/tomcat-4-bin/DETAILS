@@ -1,0 +1,24 @@
+           SPELL=tomcat-4-bin
+	   SPELL_OTHR=tomcat-4
+         VERSION=4.1.29
+          SOURCE=jakarta-tomcat-${VERSION}.tar.gz
+#Had to change source to download specifically tomcat, because
+#I'm not a l33t seditor ...dkowis
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/jakarta-tomcat-${VERSION}
+   SOURCE_URL[0]=$APACHE_URL/jakarta/${SPELL_OTHR}/v${VERSION}/bin/jakarta-tomcat-${VERSION}.tar.gz
+	       MD5[0]=517d085e9161f5168bda575c991a5200
+      LICENSE[0]=APACHE
+        WEB_SITE=http://jakarta.apache.org/tomcat/index.html
+         ENTERED=20030920
+         UPDATED=20040208
+      MAINTAINER=dkowis@shlrm.org
+           SHORT="Binary distribution of Apache's Tomcat Servlet Container"
+cat << EOF
+Tomcat is the servlet container that is used in the official Reference 
+Implementation for the Java Servlet and JavaServer Pages technologies. 
+The Java Servlet and JavaServer Pages specifications are developed by 
+Sun under the Java Community Process.
+Tomcat is developed in an open and participatory environment and released 
+under the Apache Software License. Tomcat is intended to be a collaboration 
+of the best-of-breed developers from around the world.
+EOF

@@ -1,0 +1,11 @@
+2004-02-08  Jose Bernardo Silva <jbernardo@sourcemage.org>
+	*HISTORY: Converted to new format
+	*DETAILS: updated version and source path
+	*All: added spell to z-rejected, with apologies for the delay
+
+2003-09-21  David Kowis <dkowis@shlrm.org>
+	*ALL: I create a tomcat binary installation based off
+	of tomcat spell's spell.
+
+2003-03-26  Vladimir Vydra  <vydra@fria.fri.utc.sk>
+	*ALL: Spell created - version 4.1.24 .

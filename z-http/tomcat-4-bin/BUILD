@@ -1,0 +1,8 @@
+(
+#the tarball has already been extracted just copy the stuff to the correct directory
+#it exists within itself so it should go into /usr/share/tomcat i guess...
+ 	INSTALLDIR=/opt/tomcat
+	mkdir -pv $INSTALLDIR
+#copy everything to the usr/share/tomcat directory, because tomcat is self contained
+	cp -Rv $SOURCE_DIRECTORY/* $INSTALLDIR
+) > $C_FIFO 2>&1
