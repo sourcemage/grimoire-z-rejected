@@ -70,20 +70,19 @@ fi                                     &&
 if  [  -z  $JAVA_HOME  ]
 then
   export JAVA_HOME="/opt/java/j2sdk/"
-fi                                     &&
+fi					&&
 mk_source_dir	$SOURCE_DIRECTORY  4g	&&
 cd		$BUILD_DIRECTORY	&&
 unpack		$SOURCE	${MD5[0]}	&&
 #default_pre_build                      &&
-export MOZ_PREFIX=/usr                 &&
-cd  ${SOURCE_DIRECTORY}/external/gpc   &&
+export MOZ_PREFIX=/usr			&&
+cd  ${SOURCE_DIRECTORY}/external/gpc	&&
 unpack $SOURCE2 ${MD5[1]}              &&
 mv gpc231/gpc* .                       &&
 rm -rf gpc231                          &&
 cd ${SOURCE_DIRECTORY}                 &&
 
 for file in $SOURCE_CACHE/$SOURCE3     \
-	$SOURCE_CACHE/$SOURCE4         \
 	$SOURCE_CACHE/$SOURCE5         \
 	$SOURCE_CACHE/$SOURCE6         \
 	$SOURCE_CACHE/$SOURCE7         \
@@ -103,22 +102,17 @@ for file in $SOURCE_CACHE/$SOURCE3     \
 	$SOURCE_CACHE/$SOURCE21        \
 	$SOURCE_CACHE/$SOURCE22        \
 	$SOURCE_CACHE/$SOURCE23        \
-	$SOURCE_CACHE/$SOURCE24        \
-	$SOURCE_CACHE/$SOURCE25        \
-	$SOURCE_CACHE/$SOURCE26        \
-	$SOURCE_CACHE/$SOURCE27        \
-	$SOURCE_CACHE/$SOURCE29        \
-	$SOURCE_CACHE/$SOURCE30        \
-	$SOURCE_CACHE/$SOURCE31
+	$SOURCE_CACHE/$SOURCE25
 do
 	message "${MESSAGE_COLOR} Applying patch ${file} ${DEFAULT_COLOR}"
-	bunzip2 -k -c $file | patch -p1
-done
+#	bunzip2 -k -c $file | patch -p1
+	patch -p1 < $file
+done					&&
 
 if ! spell_installed "Linux-PAM"; then
-    cp ${SOURCE_CACHE}/${SOURCE28} / &&
-    cd / &&
-    tar -xzf $SOURCE28 &&
-    rm $SOURCE28 &&
+    cp ${SOURCE_CACHE}/${SOURCE4} /	&&
+    cd / 				&&
+    tar -xzf $SOURCE4 			&&
+    rm $SOURCE4 			&&
     cd ${SOURCE_DIRECTORY}
 fi

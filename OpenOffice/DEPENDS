@@ -1,8 +1,13 @@
 requires  java    &&
+depends freetype2 &&
+depends  zip      &&
+depends  which    &&
+depends  mktemp   &&
 depends  mozilla  &&
 depends  tcsh     &&
 depends  STLport  &&
 depends  db       &&
+depends  ant      &&
 
 #I honestly do not know what this next spell is used for, but
 #some of the Linux-PAM source files are needed to compile.

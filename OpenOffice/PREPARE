@@ -1,0 +1,34 @@
+           NOSPE=helpcontent
+            SITE=http://ftp.services.openoffice.org/pub/OpenOffice.org/contrib/helpcontent/
+
+# delete existing oo.languages, it has wrong URLs and format
+#rm $CONFIG_CACHE/oo.languages
+
+
+get_oolanguages()  {
+  if ! [ -f $CONFIG_CACHE/oo.languages ]
+  then
+    touch $CONFIG_CACHE/oo.languages
+    LANGUAGES=`cat $SCRIPT_DIRECTORY/oo.languages`
+    LANGUAGES=`dialog  --backtitle  "OpenOffice help language Configuration Menu" \
+                      --stdout                                   \
+                      --title      "Select language please"      \
+                      --checklist                                \
+                      ""                                         \
+                      0 50 10                                     \
+                      $LANGUAGES`
+    echo SITE=$SITE >> $CONFIG_CACHE/oo.languages
+    echo NOSPE=$NOSPE >> $CONFIG_CACHE/oo.languages
+      i=26
+#We have 25 source files by now...
+      for LANGUAGE in $LANGUAGES
+      do
+        LANGUAGE=${LANGUAGE:1:${#LANGUAGE}-2}
+        echo SOURCE$i=\${NOSPE}_${LANGUAGE}_\unix.tgz >> $CONFIG_CACHE/oo.languages >> $CONFIG_CACHE/oo.languages
+        echo SOURCE${i}_URL[0]=\$SITE/\$SOURCE$i >> $CONFIG_CACHE/oo.languages
+        echo MD5[$i]=ignore >>$CONFIG_CACHE/oo.languages
+        i=$[$i+1]
+      done
+  fi
+}
+get_oolanguages

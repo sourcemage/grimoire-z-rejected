@@ -5,6 +5,9 @@ cp unxlngi3.mk unxlngi3.mk.orig      &&
 sed -e "s:^CFLAGSOPT=.*:CFLAGSOPT=${CFLAGS}:g" \
 unxlngi3.mk.orig > unxlngi3.mk       &&
 cp unxlngi4.mk unxlngi4.mk.orig      &&
+sed -e "s:\-mcpu=pentiumpro::" \
+unxlngi4.mk.orig > unxlngi4.mk       &&
+cp -f unxlngi4.mk unxlngi4.mk.orig   &&
 sed -e "s:^CFLAGSOPT=.*:CFLAGSOPT=${CFLAGS}:g" \
 unxlngi4.mk.orig > unxlngi4.mk       &&
         cd $SOURCE_DIRECTORY         &&
@@ -66,10 +69,24 @@ tcsh -c "source LinuxIntelEnv.Set; ./bootstrap"                 &&
 
 tcsh -c "source LinuxIntelEnv.Set; dmake"                       &&
 
+cd $SOURCE_DIRECTORY/solver/641/unxlngi4.pro/pck 		&&
+i=26								&&
+ii=SOURCE$i							&&
+while ! [[ -z ${!ii} ]]
+do
+    unpack $SOURCE_CACHE/${!ii} ${MD5[i]}
+    i=$[$i+1]
+    ii=SOURCE$i
+done 								&&
+cd ../../../../instsetoo 					&&
+rm -rf unxlngi4.pro 						&&
+cd $SOURCE_DIRECTORY						&&
+tcsh -c "source LinuxIntelEnv.Set; dmake"                       &&
+
 cd $SOURCE_DIRECTORY/instsetoo/unxlngi4.pro/01/normal           &&
 
 cp install install.orig                                         &&
-sed -e "s:oo_home=OpenOffice.org1.0:oo_home=openoffice:" install.orig > install &&
+sed -e "s:oo_home=OpenOffice.org1.0.2:oo_home=openoffice:" install.orig > install &&
 chmod +x install                                                &&
 
 prepare_install                    &&
