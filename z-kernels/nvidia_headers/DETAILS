@@ -1,0 +1,13 @@
+           SPELL=nvidia_headers
+         VERSION=1.0-6111-pkg1
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=http://www.nvidia.com
+         ENTERED=20030528
+         UPDATED=20040226
+         ARCHIVE=off
+      LICENSE[0]=http://www.nvidia.com/view.asp?IO=nv_swlicense
+           SHORT="Header files provided by NVIDIA"
+cat << EOF
+NVIDIA
+These are the header files provided by NVIDIA to compile GL applications for NVIDIA GPUs 
+EOF

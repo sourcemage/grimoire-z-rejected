@@ -1,0 +1,9 @@
+cp   /etc/modules.conf  /etc/modules.conf.old  &&
+cat  /etc/modules.conf.old                     |\
+grep -v "# Nvidia Nforce drivers"              |\
+grep -v "alias eth0 nvnet"                     |\
+grep -v "alias sound-slot-1 i810_audio"        |\
+grep -v "alias usb-interface usb-ohci"          \
+>    /etc/modules.conf                         &&
+rm   /etc/modules.conf.old
+

@@ -1,0 +1,7 @@
+grep  -q  "# Nvidia Nforce drivers"  /etc/modules.conf  ||
+cat << EOF >> /etc/modules.conf
+# Nvidia Nforce drivers
+alias eth0 nvnet
+alias sound-slot-1 i810_audio
+alias usb-interface usb-ohci
+EOF
