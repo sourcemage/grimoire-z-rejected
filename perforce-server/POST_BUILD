@@ -9,4 +9,10 @@ update_crontab()
 }
 
 default_post_build  	&&
-update_crontab
+update_crontab		&&
+
+# Clean out the source. We can't cache it because the filename (p4d) is
+# the same whatever the version. There seems no way to work around this
+# at the moment.
+rm -f $SOURCE_CACHE/$SOURCE
+

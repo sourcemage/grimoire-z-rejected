@@ -1,3 +1,11 @@
+2003-01-06  Tony Smith <tony@smee.org>
+
+		Updated to new release 2002.2
+		Fixed typo that was causing p4web not to download properly
+		Remove source cache files after build because the filenames
+		don't contain the version so they were being erroneously
+		re-used.
+
 2002-10-02  Tony Smith <tony@smee.org>
 		Changed spell to use the Linux 2.4 builds as it is now one
 		of Perforce's primary build platforms. Also updated version
