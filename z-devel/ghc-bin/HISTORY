@@ -1,0 +1,11 @@
+2004-12-06 Andrew Stitt <astitt@sourcemage.org>
+	* BUILD: add, the default_build does not work, no need to run make
+	  on a binary package anyway
+	* INSTALL: call /usr/bin/make, not the function make, for some
+	  reason the install process goes berserk otherwise.
+
+2004-12-06 Andrew Stitt <astitt@sourcemage.org>
+	* DEPENDS: add a depends on gmp
+
+2004-09-22 Eric Schabell <eschabell@sourcemage.org>
+	* ALL: added spell.
