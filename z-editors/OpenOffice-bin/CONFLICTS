@@ -1,2 +1,3 @@
-conflicts OpenOffice
+conflicts  openoffice  &&
+conflicts  OpenOffice
 
