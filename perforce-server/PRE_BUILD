@@ -1,0 +1,41 @@
+if  query  "This is a REJECTED SPELL, to see why enter a 'y': "  y
+  then 
+    echo  "" 
+    echo  ""
+    echo  "This spell was rejected due to licence issues, please"
+    echo  "view the website 'gaze website perforce-server' for more information."
+    echo  ""
+    echo  ""
+
+    if  query  "To CONTINUE casting enter a 'y': "  y
+      then
+        echo  ""
+        echo  ""
+        echo  "Ok, here we go... you're on your own!"
+        echo  ""
+        echo  ""
+      else
+	echo  ""
+	echo  "Ok, maybe you be braver next time?"
+	exit
+    fi
+
+  else
+
+    if  query  "To CONTINUE casting enter a 'y': "  y
+      then
+        echo  ""
+        echo  ""
+        echo  "Ok, here we go... you're on your own!"
+        echo  ""
+        echo  ""
+      else
+        echo  ""
+	echo  "Ok, maybe you be braver next time?"
+	exit
+    fi
+fi
+
+mk_source_dir	$SOURCE_DIRECTORY &&
+FILENAME=`guess_filename $SOURCE_CACHE/$SOURCE` &&
+cp $FILENAME $SOURCE_DIRECTORY

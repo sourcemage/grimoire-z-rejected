@@ -1,0 +1,13 @@
+           SPELL=perforce-server
+         VERSION=2002.1
+          SOURCE=p4d
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SOURCE-$VERSION
+   SOURCE_URL[0]=ftp://ftp.perforce.com/perforce/r02.1/bin.linux22x86/$SOURCE
+        WEB_SITE=http://www.perforce.com
+         ENTERED=20020514
+         UPDATED=20020514
+           SHORT="Perforce server"
+cat << EOF
+Perforce is a fast, reliable SCM system that runs on over 50 platforms. This
+package installs the Perforce server.
+EOF

@@ -1,0 +1,15 @@
+           SPELL=perforce-client
+         VERSION=2002.1
+          SOURCE=p4
+	  SOURCE2=p4web
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.perforce.com/perforce/r02.1/bin.linux22x86/$SOURCE
+   SOURCE2_URL[0]=ftp://ftp.perforce.com/perforce/r02.1/bin.linux22x86/$SOURCE2
+        WEB_SITE=http://www.perforce.com
+         ENTERED=20020514
+         UPDATED=20020514
+           SHORT="Perforce command line client"
+cat << EOF
+Perforce is a fast, robust SCM system that runs on over 50 platforms. This
+package installs the perforce client programs
+EOF
