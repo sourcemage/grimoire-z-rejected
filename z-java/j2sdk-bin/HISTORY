@@ -1,5 +1,9 @@
+2003-12-14 hgg <hgreig@bigpond.net.au>
+	* BUILD,java.sh: now installs this file for setting of $JAVA_HOME
+	* POST_INSTALL: deleted (see above)
+
 2003-10-29 Eric Sandall <eric@sandall.us>
-    * PROVIDES: Uppercase provides
+	* PROVIDES: Uppercase provides
 
 2003-10-18 hgg <hgreig@bigpond.net.au>
 	* HISTORY: convert format

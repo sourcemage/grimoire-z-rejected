@@ -72,6 +72,8 @@ then
         sedit "s/BOOTSTRAP\=spell/BOOTSTRAP\=system/g" $SPELL_CONFIG &&
         sedit "s/j2sdk\:j2sdk-bin\:on\:required\:\://g" $DEPENDS_STATUS
  fi                                                     
+ mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
+ install -m 0644 $SCRIPT_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/
 else message "${WARNING}SORRY, JAVA APPEARS TO HAVE FAILED BUILDING${DEFAULT_COLOR}" &&
      rm -rf /opt/java/                                       &&
      false

@@ -1,3 +1,7 @@
+003-12-14 hgg <hgreig@bigpond.net.au>
+        * BUILD,java.sh: now installs this file for setting of $JAVA_HOME
+	* POST_INSTALL: deleted (see above)
+
 2003-11-28 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: change to X11-LIBS now I have fixed the xfree86-libs and xdirectfb spell
 
