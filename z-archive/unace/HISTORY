@@ -5,6 +5,7 @@
 	Removed SOURCE_URL[1] (duplicate of SOURCE_URL[0])
 	Removed SOURCE_URL[2] and SOURCE_URL[3] as they no longer work
 	Removed MAINTAINER
+	* PRE_BUILD: Removed, no longer needed
 
 2003-06-08 Christian Mertes <c_mertes@bigfoot.de>
 	* Created this spell.
