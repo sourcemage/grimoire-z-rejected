@@ -1,3 +1,6 @@
+2004-01-10 hgg <hgreig@bigpond.net.au>
+	* BUILD: export MAKE_NJOBS=1 instead of unset MAKE_NJOBS (caused error message if unset)
+
 2004-01-09 hgg <hgreig@bigpond.net.au>
 	* j2sdk-1_4_2-kernel.patch,PRE_BUILD: add with a check for 2.6.X headers in /usr/include/linux
 	* j2sdk-1_4_2-smgl.patch: disable some deprecated Linuxthreads calls that caused problems with some gcc 
