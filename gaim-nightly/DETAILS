@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/gaim-${VERSION}
          ENTERED=20021213
          UPDATED=`date +%Y%m%d`
 	NO_CACHE="--cache=off"
+	  MD5[0]="IGNORE"
       LICENSE[0]=GPL
            SHORT="gaim is an instant messanger client for several protocols"
 cat << EOF

@@ -1,3 +1,11 @@
+2003-01-20  M.L. <mlubrano@sourcemage.org>
+
+               Version++ (3.12d).
+
+2003-01-16 M.L. <mlubrano@sourcemage.org>
+
+               Fixed SOURCE_DIRECTORY in DETAILS, and MD5.
+
 2002-12-08  Geoffrey Derber <gderber@sourcemage.org>
 
 		Version Bump

@@ -4,11 +4,12 @@
 	       --prefix=/usr                      \
                --sysconfdir=/etc                  \
                --localstatedir=/var               \
-	       --disable-perl			  \
                $OPTS                              &&
   make                                            &&
   prepare_install				  &&
-  make install                                    
+  make install					  &&
+
+  cp plugins/*.pl /usr/lib/gaim                                    
 
 # if  spell_installed  gpgme ;  then
 #    cd plugins/gaim-e/           &&

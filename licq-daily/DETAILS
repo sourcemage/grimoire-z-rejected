@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/licq-`date +%Y%m%d`
          UPDATED=`date +%Y%m%d`
         NO_CACHE="--cache=off"
            SHORT="This is the daily CVS extracted version of Licq"
+	  MD5[0]="IGNORE"
       LICENSE[0]=GPL
       MAINTAINER=anders@bruun-olsen.net
 cat << EOF

@@ -1,4 +1,4 @@
-depends   gdk-pixbuf  &&
+depends gtk+2	&&
 
 optional_depends  "audiofile"            \
                   "--enable-audiofile"   \
@@ -10,7 +10,7 @@ optional_depends  "esound"             \
                   "--disable-esdtest"  \
                   "to enable enlightenment sound daemon for output"
 
-optional_depends  "gpgme"                      \
-                  ""                           \
-                  ""                           \
-                  "for gaim-e gpg encryption"
+#optional_depends  "gpgme"                      \
+#                  ""                           \
+#                  ""                           \
+#                  "for gaim-e gpg encryption"
