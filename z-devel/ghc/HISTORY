@@ -1,2 +1,5 @@
+2004-12-06 Andrew Stitt <astitt@sourcemage.org>
+	* DEPENDS: add a depends on gmp
+
 2004-09-22 Eric Schabell <eschabell@sourcemage.org>
 	* ALL: added spell.
