@@ -1,0 +1,24 @@
+#!/bin/bash
+
+RUNLEVEL=3
+#NEEDS="+remote_fs +network"
+NEEDS="+network"
+#ARGS=" "
+PROGRAM="/var/qmail/boot/rc"
+
+. /etc/init.d/smgl_init
+
+start ()
+{
+  echo "Starting qmail" 
+  $PROGRAM &
+}
+
+stop ()
+{
+  echo "Stopping qmail" 
+  PID=`pgrep qmail-send`
+  if [ -n "$PID" ]; then
+	  killall qmail-send
+  fi
+}

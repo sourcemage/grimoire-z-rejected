@@ -1,0 +1,18 @@
+           SPELL=netqmail
+         VERSION=1.05
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www.qmail.org/netqmail-1.05.tar.gz
+        WEB_SITE=http://lifewithqmail.org/lwq.html
+         ENTERED=20040322
+         UPDATED=20040918
+          MD5[0]=4c03848af9d37e281f3b82cc59230d9b
+      LICENSE[0]=UNKNOWN
+          REJECT="has license issues"
+      MAINTAINER="vlmarek@volny.cz"
+           SHORT='qmail is Mail Transport Agent'
+cat << EOF
+qmail is a small, fast, secure replacement for the SENDMAIL package,
+which is the program that actually receives, routes, and delivers
+electronic mail.
+EOF

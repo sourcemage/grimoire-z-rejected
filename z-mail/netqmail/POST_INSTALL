@@ -1,0 +1,86 @@
+persistent_load
+
+#######################################################
+### Basic me, rcpthost etc. config
+#######################################################
+
+if [ "$CONFIG" == "y" ]; then
+
+  # Handle re-installation from cache, when no 'config' is available
+  if [ -x "$SOURCE_DIRECTORY/$SPELL-$VERSION/config" ]; then
+
+    COUNT_FILES=`ls /var/qmail/control | wc -l`
+
+    if [ $COUNT_FILES != 0 ]; then
+      message "*****************************************************************"
+      message "* Old config files found, not doing anything to configure qmail *"
+      message "*****************************************************************"
+    else
+      cd "$SOURCE_DIRECTORY/$SPELL-$VERSION"
+      ./config
+    fi
+
+  fi
+
+else
+
+  # Handle re-installation from cache, when no 'config' is available
+  if [ -x "$SOURCE_DIRECTORY/$SPELL-$VERSION/config-fast" ]; then
+
+    COUNT_FILES=`ls /var/qmail/control | wc -l`
+
+    if [ $COUNT_FILES != 0 ]; then
+      message Old config files found, not doing anything to configure qmail
+    else
+      cd "$SOURCE_DIRECTORY/$SPELL-$VERSION"
+      ./config-fast $FQDN
+    fi
+
+  fi
+
+fi
+
+
+#######################################################
+### /var/qmail/boot/rc
+#######################################################
+
+cd /var/qmail/boot
+rm -f rc
+
+if [ "$DELIVERY_PROCMAIL" == "y" ]; then
+  message "Using procmail as local delivery"
+  ln -s proc rc
+else
+  message "Using qmail own local delivery"
+  ln -s home rc
+fi
+
+
+#######################################################
+### Aliases
+#######################################################
+
+if [ ! -e ~alias/.qmail-postmaster ]; then
+   echo "Setting postmaster alias: $POSTMASTER_RECEPIENT"
+	echo $POSTMASTER_RECEPIENT > ~alias/.qmail-postmaster
+fi
+if [ ! -e ~alias/.qmail-mailer-daemon ]; then
+   echo "Setting mailer-daemon alias: $MAILER_DAEMON_RECEPIENT"
+	echo $MAILER_DAEMON_RECEPIENT > ~alias/.qmail-mailer-daemon
+fi
+if [ ! -e ~alias/.qmail-root ]; then
+   echo "Setting root alias: $ROOT_RECEPIENT"
+	echo $ROOT_RECEPIENT > ~alias/.qmail-root
+fi
+
+
+#######################################################
+### default smtp route
+#######################################################
+
+if [ ! -e /var/qmail/control/smtproutes -a -n "$DEFAULT_SMTP_ROUTE" ]; then
+   echo "Setting default SMTP route: $DEFAULT_SMTP_ROUTE"
+	echo ":$DEFAULT_SMTP_ROUTE" > /var/qmail/control/smtproutes
+fi
+

@@ -1,3 +1,7 @@
+2004-09-18 Eric Schabell <z-rejected@sourcemage.org>
+	* z-mail/netqmail: created new section z-mail for new spell
+	  netqmail, bug #6767.
+
 2004-09-16 Eric Schabell <z-rejected@sourcemage.org>
 	* z-utils/skype: version bump 0_91_0_12.
 

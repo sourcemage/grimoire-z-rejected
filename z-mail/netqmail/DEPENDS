@@ -1,0 +1,3 @@
+if [ "$DELIVERY_PROCMAIL" == "y" ]; then
+  depends procmail
+fi
