@@ -1,3 +1,6 @@
+2004-09-09 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: updated to version 1.5.71.
+
 2004-08-20 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: updated to version 1.5.70, note 1.5.71 sources
 	  are missing the install.sh needed to build software.
