@@ -44,8 +44,8 @@
           MD5[21]=20ee57060afc124f17b9474d781a6704
          SOURCE23=openoffice-1.0.2-system-libXrender.patch
           MD5[22]=de17492461fe7b5b7b0f928c9167df98
-#         SOURCE24=openoffice-1.0.2-system-nas.patch
-#          MD5[23]=d49cec6f9824818ab7ee7781c66e0c3d
+         SOURCE24=openoffice-1.0.2-system-nas.patch
+          MD5[23]=d49cec6f9824818ab7ee7781c66e0c3d
          SOURCE25=openoffice-1.0.2-user-fontpath.patch
           MD5[24]=b17ae113aea77461dc7a414040f8ffb8
            REJECT="it has licensing issues"

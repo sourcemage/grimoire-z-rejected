@@ -1,3 +1,8 @@
+2003-05-19  Seth Woolley <seth@tautology.org>
+
+		Commenting out SOURCE24 was bad because
+		SOURCE25 was not downloaded :(
+
 2003-05-15  Seth Woolley <seth@tautology.org>
 
 		Messed with PRE_BUILD to get it to validate with MD5s
