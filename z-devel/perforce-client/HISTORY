@@ -1,3 +1,7 @@
+2003-07-29  Seth Woolley <seth@tautology.org>
+
+		POST_BUILD needs a default_post_build reference
+
 2003-07-28  Tony Smith <tony@smee.org>
 
 		Updated for 2003.1 release and included the man page in
