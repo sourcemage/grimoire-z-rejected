@@ -1,0 +1,5 @@
+patch -p0 < $SCRIPT_DIRECTORY/vmware.patch
+
+./vmware-install.pl
+
+cp /tmp/vmware_rc.d/vmware /etc/init.d/runlevels/%3
