@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL/-bin/}-${VERSION}
         WEB_SITE=http://www.franksworld.net/winetools/
          ENTERED=20030217
          UPDATED=20030217
+          REJECT="binary only"
       LICENSE[0]=UNKNOWN
       MAINTAINER=eric@sandall.us
            SHORT="A collection of tools for Wine"
