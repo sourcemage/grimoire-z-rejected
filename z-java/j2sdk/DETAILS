@@ -1,5 +1,5 @@
             SPELL=j2sdk
-          VERSION='1_4_2'
+          VERSION=1_4_2
       BIN_VERSION=1.4.2_05
      ZLIB_VERSION=1.1.4
            SOURCE=$SPELL-${VERSION}-src-scsl.zip
