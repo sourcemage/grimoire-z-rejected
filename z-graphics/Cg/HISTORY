@@ -1,0 +1,11 @@
+2004-05-15 Seth Woolley <seth@tautology.org>
+	* PRE_BUILD: added rejected warnings
+	* DETAILS: added reject warning
+
+2004-05-15 David Braaten <xiticix47@hotmail.com>
+	* DETAILS: version and source url updated.
+	* PRE_BUILD: created.
+	* BUILD: created.
+
+2004-01-25 David Braaten <xiticix47@hotmail.com>
+	* ALL: created the spell

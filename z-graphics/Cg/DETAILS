@@ -1,0 +1,17 @@
+           SPELL=Cg
+         VERSION=1.2.1
+          SOURCE=$SPELL-$VERSION-Linux.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Cg
+          BRANCH="$SPELL"'_'"$VERSION"
+   SOURCE_URL[0]=ftp://download.nvidia.com/developer/cg/$BRANCH/Linux/$SOURCE
+        WEB_SITE=http://developer.nvidia.com/object/cg_toolkit.html
+      MAINTAINER=xiticix47@hotmail.com
+         ENTERED=20040125
+         UPDATED=20040125
+          MD5[0]=f627a4e61199558f35ea213fd9716b4d
+          REJECT="non-source plus headers"
+      LICENSE[0]=nVidia
+           SHORT="nvidia Cg libraries"
+cat << EOF
+nvidia Cg libraries
+EOF
