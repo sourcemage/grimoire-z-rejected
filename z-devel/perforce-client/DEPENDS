@@ -1,3 +1,3 @@
-if [[ "${HOST%%-*}" == 'x84_64' ]]; then
+if [[ "${HOST%%-*}" == 'x86_64' ]]; then
   depends gcc33
 fi
