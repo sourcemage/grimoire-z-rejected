@@ -1,3 +1,7 @@
+2005-01-20 Neuron <vlmarek@volny.cz>
+	* libaccount, accounts, groups, FUNCTIONS: added libaccount from devel
+	  grimoire
+
 2004-12-05 Andrew Stitt <astitt@sourcemage.org>
 	* REJECTED_MSG: remove warning about improper handling of
 	  "rejected messages" now that stable sorcery correctly views
