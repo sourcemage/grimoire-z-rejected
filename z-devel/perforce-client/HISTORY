@@ -1,3 +1,7 @@
+2005-03-29 Sergey Lipnevich <sergey@sourcemage.org>
+	* DETAILS: make Perforce client available on AMD64;
+	  fix checksum values for x86 platform files.
+
 2005-02-16 Eric Sandall <eric@sandall.us>
 	* DETAILS: p4 and p4web updated to 2004.2/75008
 
