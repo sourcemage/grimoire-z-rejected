@@ -8,6 +8,10 @@ then
 	then
 		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libjavaplugin_oji.so
 	fi
+	if [ -d ${INSTALL_ROOT}/usr/lib/firefox/plugins ]
+	then
+		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  ${INSTALL_ROOT}/usr/lib/firefox/plugins/libjavaplugin_oji.so
+	fi
 
 fi  &&
 
