@@ -16,11 +16,11 @@
 		Updated to 2003.1 release, and tidied up the installation
 		so it doesn't trash config files if they already exist.
 
-2003-05-15  Seth Woolley <seth@tautology.org>
+2003-05-15 Seth Woolley <seth@tautology.org>
 
 		Added unpack to PRE_BUILD for SOURCE
 
-2003-04-19  Seth Woolley <seth@tautology.org>
+2003-04-19 Seth Woolley <seth@tautology.org>
 
 		Modified DETAILS to fix md5 for SOURCE.
 
@@ -31,7 +31,7 @@
 		Updated PRE_REMOVE to only run the script
 		if it's executable
 
-2003-02-27  Seth Woolley <seth@tautology.org>
+2003-02-27 Seth Woolley <seth@tautology.org>
 
 		Fixed MD5 (will fix PRE_BUILD later)
 
@@ -40,7 +40,7 @@
 		Back up to 2002.2 now that new fixed builds have been
 		posted.
 
-2003-01-30  Seth Woolley <seth@tautology.org>
+2003-01-30 Seth Woolley <seth@tautology.org>
 
 		Modified DETAILS to correct MD5
 
