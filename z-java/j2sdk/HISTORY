@@ -1,4 +1,5 @@
 2004-07-18 Eric Schabell <eschabell@sourcemage.org>
+	* j2sdk-1_4_2-smgl.patch: reverted as this is not the fix.
 	* j2sdk-1_4_2-smgl.patch: adjusted with fix in bug #6354.
 
 2004-07-03 Jose Bernardo Silva <jbernardo@sourcemage.org>
