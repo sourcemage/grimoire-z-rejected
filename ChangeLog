@@ -6,6 +6,7 @@
 	* z-doc: section api2 compliant and rejected msg.
 	* z-doc-libs: removed, spell integrated into z-doc.
 	* z-editors: section api2 compliant and rejected msg.
+	* z-ftp: section api2 compliant and rejected msg.
 
 2004-08-03 Eric Schabell <z-rejected@sourcemage.org>
 	* z-archive: section completed for api2 and rejected msg.
