@@ -1,6 +1,6 @@
            SPELL=setiathome
-         VERSION=3.03.i686-pc-linux-gnu-gnulibc2.1
-          SOURCE=${SPELL}-${VERSION}.tar
+         VERSION=3.03
+          SOURCE=${SPELL}-${VERSION}.i686-pc-linux-gnu-gnulibc2.1.tar
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.cdrom.com/pub/$SPELL/$SOURCE
    SOURCE_URL[1]=ftp://alien.ssl.berkeley.edu/pub/$SOURCE

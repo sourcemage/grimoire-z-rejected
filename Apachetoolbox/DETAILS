@@ -1,12 +1,12 @@
            SPELL=Apachetoolbox
-         VERSION=1.5.61
+         VERSION=1.5.62
           SOURCE=${SPELL}-install-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/apachetoolbox/$SOURCE
         WEB_SITE=http://www.apachetoolbox.com
          ENTERED=20020220
          UPDATED=22020623
-	  MD5[0]=3efdd0f32ac4d5ee65b2fb5c428bcf16
+	  MD5[0]=56d7e8c79a3d99fcbfd72f8127c9b9bc
       LICENSE[0]=UNKNOWN
 	 REJECT="files that are not tracked by sorcery"
            SHORT="Apache Toolbox provides a means to easily compile Apache (warning: 80+MB download)."
