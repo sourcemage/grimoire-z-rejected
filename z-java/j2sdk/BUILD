@@ -36,7 +36,6 @@ mv crc32.c zcrc32.c                                     &&
 cd $SOURCE_DIRECTORY/j2se/make/java/zip/                &&
 sedit "s:1.1.3:${ZLIB_VERSION}:"  Makefile              &&
 cd $SOURCE_DIRECTORY/control/make                       &&
-devoke_installwatch                                     &&
 export MAKE_NJOBS=1                                     &&
 unset LD_LIBRARY_PATH                                   &&
 make

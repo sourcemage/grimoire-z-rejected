@@ -19,7 +19,6 @@ then
 download j2sdk-sec-1_4_2-src-scsl.zip from SUN\"" n
   then
     CERT=yes
-    VERSION=1_4_2
     SOURCE5=j2sdk-sec-${VERSION}-src-scsl.zip
   fi  &&
 
