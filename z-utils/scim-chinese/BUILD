@@ -1,0 +1,3 @@
+find -type d|xargs chmod 755 &&
+
+cp -ax * $INSTALL_ROOT/
