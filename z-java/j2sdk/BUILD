@@ -75,6 +75,5 @@ then
 else message "${WARNING}SORRY, JAVA APPEARS TO HAVE FAILED BUILDING${DEFAULT_COLOR}" &&
      rm -rf /opt/java/                                       &&
      false
-fi &&
-df 
+fi 
 ) > $C_FIFO  2>&1
