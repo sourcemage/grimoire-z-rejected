@@ -1,3 +1,11 @@
+2002-09-14  Geoffrey Derber <gderber@sourcemage.org>
+
+		Added MD5/license/maintainer fields.
+
+2002-09-07  Geoffrey Derber <gderber@sourcemage.org>
+
+		Changed PRE_BUILD file
+
 2002-05-14  Tony Smith <tony@smee.org>
 
                 First version

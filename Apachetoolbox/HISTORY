@@ -1,3 +1,10 @@
+2002-09-14  Geoffrey Derber <gderber@sourcemage.org>
+
+		updated MD5 field for version update.
+		changed SOURCE_URL to use $SOUREFORGE_URL
+
+		
+
 2002-09-14  Eric Schabell <eschabell@sourcemage.org>
 
 		Version upgrade that fixes OpenSSL security
@@ -21,7 +28,7 @@
 		Updated version to fix security bug in Apache, changed UPDATE field as
 		should be fixed on your box.
 
-2002-04-30  Geoffrey Derber <ashaman@flyingtemple.com>
+2002-04-30  Geoffrey Derber <gderber@sourcemage.org>
 
 		Updated to version 1.5.56
 

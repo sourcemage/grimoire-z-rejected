@@ -1,4 +1,14 @@
-2002-04-30  Geoffrey Derber <ashaman@flyingtemple.com>
+2002-09-14  Geoffrey Derber <gderber@sourcemage.org>
+
+		Updated to version 5.0r51
+
+2002-09-03  Geoffrey Derber <gderber@sourcemage.org>
+
+		Updated to version 5.0r50
+		Changed PRE_BUILD file
+		added md5 and license fields
+
+2002-04-30  Geoffrey Derber <gderber@sourcemage.org>
 
 		Updated to version 5.0r48
 

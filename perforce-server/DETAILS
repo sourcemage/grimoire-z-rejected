@@ -6,6 +6,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SOURCE-$VERSION
         WEB_SITE=http://www.perforce.com
          ENTERED=20020514
          UPDATED=20020514
+	  MD5[0]=c0354387b647fccb049e4c851f89c65c
+      LICENSE[0]=http://www.perforce.com/perforce/price.html
+      MAINTAINER=ashaman@flyingtemple.com
 	  REJECT="is non-source and has licensing issues"
            SHORT="Perforce server"
 cat << EOF
