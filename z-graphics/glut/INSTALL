@@ -1,0 +1,5 @@
+ln     -sf libglut.so.3.7  libglut.so.3                       &&
+ln     -sf libglut.so.3.7  libglut.so                         &&
+cp     -d libglut*        ${ISTALL_ROOOT}/usr/lib             &&
+cd     ../..                                                  &&
+cp     include/GL/glut.h  ${INSTALL_ROOT}/usr/include/GL/glut.h
