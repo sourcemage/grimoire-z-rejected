@@ -3,7 +3,7 @@
           SOURCE=$SPELL-${VERSION}_i386.rpm
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://download.sybase.com/pub/ase1103_linux/$SOURCE
-          MD5[0]=e5511f8b5f2a36ab260047e6a6ab75aa
+          MD5[0]=ad351c593775dbff61a4c57c4ca48fcc
         WEB_SITE=http://www.sybase.com/linux/ase/
          ENTERED=20011112
          UPDATED=20011112
