@@ -1,3 +1,6 @@
+2005-03-03 Eric Sandall <eric@sandall.us>
+	* CONFLICTS: Conflicts with thunderbird
+
 2005-03-01 Eric Sandall <eric@sandall.us>
 	* Added to z-rejected/z-http  (Bug #8334)
 	* Needs to setup gcc33 properly for test/devel grimoires
