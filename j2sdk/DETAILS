@@ -14,7 +14,7 @@
          SOURCE10=j2sdk-1.4.0-link-jpda-2-libjvm.patch.bz2
          SOURCE11=j2sdk-1.4.0-remove-fixed-paths.patch.bz2
          SOURCE12=j2sdk-1.4.0-use-dynamic-lesstif.patch.bz2
-           REJECT="has licensing issuses"
+           REJECT="has licensing issues"
  	   MD5[0]=71458396566ebfa82ba64ce104c8ffe3
        LICENSE[0]=SCSL
  	   MD5[1]=a2a393dc237d168918b11728038d8239
