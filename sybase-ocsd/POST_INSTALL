@@ -1,0 +1,1 @@
+echo  "$SPELL was installed to /opt and will not be tracked."
