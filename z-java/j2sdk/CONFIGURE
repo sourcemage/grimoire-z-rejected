@@ -6,23 +6,35 @@ source $SCRIPT_DIRECTORY/../JAVA_WARNING &&
 #
 source $SCRIPT_DIRECTORY/../../REJECTED_MSG &&
 
+persistent_add CONFIGURED BOOTSTRAP CERT VERSION SOURCE5 &&
+
 if spell_installed j2sdk-bin
-then export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
+then
+  export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
 fi                                                   &&
+
 if ! grep -q CONFIGURED $SPELL_CONFIG
-then  if query "Do you have a certificate from a certificate authority?\n\"You will also need to \
+then
+  if query "Do you have a certificate from a certificate authority?\n\"You will also need to \
 download j2sdk-sec-1_4_2-src-scsl.zip from SUN\"" n
-            then echo -e "CERT=yes \nVERSION=1_4_2\nSOURCE5=j2sdk-sec-\${VERSION}-src-scsl.zip" >> $SPELL_CONFIG
-      fi  &&
-        if  [ $JAVA_HOME ] && [ -x $JAVA_HOME/bin/javac ] && query "${MESSAGE_COLOR}I've found \"java\" at \
+  then
+    CERT=yes
+    VERSION=1_4_2
+    SOURCE5=j2sdk-sec-${VERSION}-src-scsl.zip
+  fi  &&
+
+  if  [ $JAVA_HOME ] && [ -x $JAVA_HOME/bin/javac ] && query "${MESSAGE_COLOR}I've found \"java\" at \
 $JAVA_HOME\n(If compilation fails due to this bootstrap compiler \n then use cast -r and choose 'n' to use \
 SUN's binary)\n\nDo you want to use \"java\" to bootstrap j2sdk compilation ? \nIf you answer 'n',I'll \
 use SUN's binary.${DEFAULT_COLOR}"  y;
-         then BOOTSTRAP=system 
-         else BOOTSTRAP=spell 
-       fi
-              echo CONFIGURED=yes >> $SPELL_CONFIG &&
-              echo BOOTSTRAP=$BOOTSTRAP >> $SPELL_CONFIG 
+  then
+    BOOTSTRAP=system 
+  else
+    BOOTSTRAP=spell 
+  fi
+ 
+  CONFIGURED=yes  
+  BOOTSTRAP=$BOOTSTRAP 
 
 fi
 
