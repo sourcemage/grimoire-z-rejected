@@ -1,0 +1,11 @@
+2005-02-18 Eric Sandall <eric@sandall.us>
+	* Added to z-rejected/z-devel/fasm  (Bug #8201)
+	* DETAILS: Updated to 1.58 (old source removed)
+	  Set SOURCE to use VERSION
+
+2005-02-07 Sven Lemke <catnip@web.de>
+	* PRE_BUILD, BUILD, INSTALL: workaround for subdirectory name collision
+
+2005-02-07 Sven Lemke <catnip@web.de>
+	* DETAILS, HISTORY: created this spell
+

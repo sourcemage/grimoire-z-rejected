@@ -1,0 +1,24 @@
+           SPELL=fasm
+         VERSION=1.58
+          SOURCE=$SPELL-$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://flatassembler.net/$SOURCE
+          MD5[0]=f4c9aefe731887e18340daaba3d40390
+        WEB_SITE=http://flatassembler.net/
+         ENTERED=20050207
+         UPDATED=20050207
+       BUILD_API=2
+      LICENSE[0]=license.txt
+            DOCS="*.txt examples source"
+           SHORT="Fast and efficient self-assembling 80x86 assembler"
+cat << EOF
+FASM is a fast and efficient self-assembling 80x86 assembler.
+ 
+Currently it supports all 8086-80486/Pentium instructions with MMX, SSE,
+SSE2, SSE3 and 3DNow! extensions.
+
+It can produce output in binary, MZ, PE, COFF or ELF format.
+
+It includes the powerful but easy to use macroinstruction support and does
+multiple passes to optimize the instruction codes for size.
+EOF
