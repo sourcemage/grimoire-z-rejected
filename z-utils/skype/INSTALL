@@ -1,3 +1,6 @@
 mkdir -p /usr/share/skype                     &&
 cp -ruv $SOURCE_DIRECTORY/* /usr/share/skype  &&
+if [ ! -e /usr/bin/skype ]; then
+	rm -f /usr/bin/skype
+fi &&
 ln -s /usr/share/skype/skype /usr/bin/skype 

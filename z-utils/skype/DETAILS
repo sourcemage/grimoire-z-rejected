@@ -1,15 +1,15 @@
            SPELL=skype
-         VERSION=0_90_0_14
+         VERSION=0_91_0_3
 if [ "$QT" == "y" ]; then
   # dynamic version.
   SOURCE=${SPELL}_ver-${VERSION}.tar.bz2
-  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver-${VERSION}
-  MD5[0]='519da7ff19f13232f59ffb29120d3509'
+  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver_${VERSION}
+  MD5[0]='3a0ff44da5a54bb3ee104d3e7baaedde'
 else
   # static version.
   SOURCE=${SPELL}_ver-${VERSION}-staticQT.tar.bz2
-  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver-${VERSION}-staticQT
-  MD5[0]='4f5ea621c9c1a75d21b5ffb2d35b15dc'
+  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver_${VERSION}-staticQT
+  MD5[0]='e10d5ef1543e6585a10a51b00fe533ad'
 fi
         WEB_SITE=http://www.skype.com/
     SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
