@@ -1,0 +1,16 @@
+cd  ${INSTALL_ROOT}/usr/lib  &&
+
+if [ "$ARCH" = "i386" ]
+then
+	yes | sh $SOURCE_CACHE/$SOURCE  &&
+	
+	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
+	then
+		ln -sf ${INSTALL_ROOT}/usr/lib/j2sdk$VER/jre/plugin/i386/ns610-gcc32/libjavaplugin_oji.so  ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libjavaplugin_oji.so
+	fi
+
+fi  &&
+
+mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
+install -m 0644 $SCRIPT_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/  &&
+sedit  "s/J2SDKDIR/jdk$VER/"  ${INSTALL_ROOT}/etc/profile.d/java.sh
