@@ -1,3 +1,6 @@
+2004-09-16 Eric Schabell <z-rejected@sourcemage.org>
+	* z-utils/skype: version bump 0_91_0_12.
+
 2004-08-26 Eric Schabell <z-rejected@sourcemage.org>
 	* REJECTED_MSG: updated to reflect that only stable sorcery
 	  is missing proper handling of reject messages.
