@@ -1,2 +1,0 @@
-[ -d "${INSTALL_ROOT}/lib/firmware" ] || mkdir "${INSTALL_ROOT}/lib/firmware" &&
-mv ./*.fw "${INSTALL_ROOT}/lib/firmware"

@@ -1,7 +1,0 @@
-2004-10-06 Eric Schabell <eschabell@sourcemage.org>
-	* DETAILS: updated verison, and UPDATE to ensure removal of this
-	  spell.
-
-2004-09-22 Eric Schabell <eschabell@sourcemage.org>
-	* ALL: stripped as spell is deprecated, moved to 
-	  openoffice-bin, for rest of history look there.

@@ -1,3 +1,0 @@
-mkdir -p /usr/lib/netbeans					&&
-cp -ruv ${SOURCE_DIRECTORY}/*	/usr/lib/netbeans		&&
-cp ${SPELL_DIRECTORY}/bin/netbeans ${INSTALL_ROOT}/usr/bin/

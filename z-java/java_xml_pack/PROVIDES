@@ -1,5 +1,0 @@
-provides  JAXM     &&
-provides  JAXP     &&
-provides  JAXR     &&
-provides  JAX-RPC  &&
-provides  SAAJ

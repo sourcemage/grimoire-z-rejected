@@ -1,3 +1,0 @@
-cd  $SOURCE_DIRECTORY                      &&
-sedit  's:usr\/local:usr\/lib:g'  install  &&
-./install

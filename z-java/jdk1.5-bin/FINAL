@@ -1,3 +1,0 @@
-# ensure the JAVA_HOME is available.
-#
-source /etc/profile.d/java.sh

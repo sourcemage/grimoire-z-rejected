@@ -1,5 +1,0 @@
-# Clean out the source. We can't cache it because the filename (p4api.tar)
-# is the same whatever the version. There seems no way to work around this
-# at the moment.
-rm -f $SOURCE_CACHE/$SOURCE
-

@@ -1,4 +1,0 @@
-conflicts  openssh    &&
-conflicts  lsh        &&
-conflicts  Linux-PAM  &&
-conflicts  linux-pam

@@ -1,9 +1,0 @@
-message "\n${MESSAGE_COLOR}"  \
-        "If you have the kde QT libraries installed you may use the\n"    \
-        "dynamically linked verison, if not you most likely will need\n"  \
-        "the static linked version and should take the default below."    \
-        "${DEFAULT_COLOR}\n\n"
-
-config_query QT "Build version dynamically linked to QT?" n
-
-message "\n"

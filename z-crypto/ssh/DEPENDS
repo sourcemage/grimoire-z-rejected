@@ -1,7 +1,0 @@
-depends  zlib     &&
-depends  openssl  &&
-
-optional_depends  "tcp_wrappers"         \
-                  "--with-tcp-wrappers"  \
-                  ""                     \
-                  "for an optional method of controlling ssh access."

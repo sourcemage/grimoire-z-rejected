@@ -1,5 +1,0 @@
-sedit 's/ lsmod / true /' usr/src/nv/conftest.sh          &&
-mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/drivers    &&
-mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/extensions &&
-export IGNORE_CC_MISMATCH=1                               &&
-default_install

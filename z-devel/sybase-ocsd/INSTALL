@@ -1,2 +1,0 @@
-cd $BUILD_DIRECTORY        &&
-cp  -drv  opt/sybase /opt

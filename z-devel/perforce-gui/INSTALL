@@ -1,4 +1,0 @@
-install -m 755 p4v /usr/bin/p4v 		&&
-mkdir -p /usr/share/perforce			&&
-cp -R P4VResources /usr/share/perforce		&&
-chown -R root.root /usr/share/perforce

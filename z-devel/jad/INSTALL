@@ -1,3 +1,0 @@
-cp     -f  jad  ${INSTALL_ROOT}/usr/bin                                  &&
-mkdir  -p  ${INSTALL_ROOT}/usr/share/doc/${SPELL}-${VERSION}             &&
-cp     -f  Readme.txt  ${INSTALL_ROOT}/usr/share/doc/${SPELL}-${VERSION}

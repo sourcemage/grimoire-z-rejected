@@ -1,4 +1,0 @@
-conflicts  exim       &&
-conflicts  qmail      &&
-conflicts  sendmail   &&
-conflicts  postfix

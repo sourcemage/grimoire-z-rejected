@@ -1,9 +1,0 @@
-if spell_ok j2sdk-bin;  then
-  export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
-fi                                                   &&
-
-if ! [ -f $JAVA_HOME/bin/java ] || ! grep -q BOOTSTRAP $SPELL_CONFIG;
-then
-  message "Sorry options changed in this version, you must reconfigure this spell" &&
-  sedit '1,10D' $SPELL_CONFIG
-fi

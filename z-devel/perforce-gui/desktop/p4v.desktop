@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Perforce GUI
-Exec=p4v
-Icon=
-Terminal=false
-Type=Application
-Categories=Application;Development;

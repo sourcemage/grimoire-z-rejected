@@ -1,4 +1,0 @@
-optional_depends  X11-LIBS           \
-                  ""                 \
-                  ""                 \
-                  "for xsetiathome"

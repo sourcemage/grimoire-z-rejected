@@ -1,6 +1,0 @@
-#
-# Have to unpack ourselves as smgl unpack can't handle a tarfile
-#
-  mk_source_dir        $SOURCE_DIRECTORY  &&
-  cd 		       $SOURCE_DIRECTORY  &&
-  tar xf               $SOURCE_CACHE/$SOURCE

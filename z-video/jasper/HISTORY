@@ -1,9 +1,0 @@
-2004-08-05 Eric Schabell <eschabell@sourcemage.org>
-	* DETAILS: updated long description.
-	* INSTALL: added for api2.
-	* BUILD: modified for api2.
-	* CONFIGURE: modified to use grimoire rejected message.
-
-2004-01-18 Jose Bernardo Silva <jbernardo@sourcemage.org>
-	* ALL: Created the spell
-

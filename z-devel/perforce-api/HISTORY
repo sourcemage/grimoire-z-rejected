@@ -1,4 +1,0 @@
-2004-08-05 Eric Schabell <eschabell@sourcemage.org>
-	* HISTORY, FINAL, INSTALL: added files for api2.
-	* CONFIGURE: updated to use grimoire rejected message.
-	* BUILD, DETAILS: updated to use api2.

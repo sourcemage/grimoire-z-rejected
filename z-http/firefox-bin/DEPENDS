@@ -1,8 +1,0 @@
-depends zlib      &&
-depends jpeg      &&
-depends libpng    &&
-depends zip       &&
-depends perl      &&
-depends gtk+2     &&
-depends freetype2 &&
-depends libidl		

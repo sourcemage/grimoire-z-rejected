@@ -1,6 +1,0 @@
-# inform spell caster of steps needed to complete install.
-INSTALLDIR=/opt/firefox-installer
-
-message "\n${QUERY_COLOR}To complete the install you will need to run the\n" \
-        " install script which can be found at:\n\n ${PROBLEM_COLOR}" \
-				" ${INSTALLDIR}/firefox-installer ${DEFAULT_COLOR}\n"

@@ -1,7 +1,0 @@
-#!/bin/sh
-#
-# TeamSpeak server wrapper script.
-#
-cd /usr/share/ts2_server
-./teamspeak2-server_startscript $@
-cd -
