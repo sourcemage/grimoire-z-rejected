@@ -2,5 +2,4 @@
 # are the same whatever the version. There seems no way to work around this
 # at the moment.
 rm -f $SOURCE_CACHE/$SOURCE  &&
-rm -f $SOURCE_CACHE/$SOURCE2 &&
-default_post_build
+rm -f $SOURCE_CACHE/$SOURCE2 

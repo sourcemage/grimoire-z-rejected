@@ -1,5 +1,5 @@
 2004-08-05 Eric Schabell <eschabell@sourcemage.org>
-	* DETAILS, BUILD: modified for api2.
+	* DETAILS, BUILD: modified for api2, version bump minor release.
 	* INSTALL, FINAL: added for api2.
 	* CONFIGURE: updated to use grimoire rejected message.
 	* POST_BUILD: branched to FINAL and removed.
