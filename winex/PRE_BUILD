@@ -6,6 +6,17 @@ if  query  "This is a REJECTED SPELL, to see why enter a 'y': "  y
     echo  "view the website 'gaze website winex' for more information."
     echo  ""
     echo  ""
+    echo  "Warning, to not conflict with the Wine spell, this spell"
+    echo  "installs to the /opt directory.  There have been reports"
+    echo  "where Wine was required for the installer, and winex to"
+    echo  "run the game itself.  Also, this version of winex is not"
+    echo  "cabable of checking the cd, so you will probably need a CD"
+    echo  "crack for it, which we will NOT provide.  And lastly, this"
+    echo  "spell downloads from a cvs server. Currently, to upgrade it,"
+    echo  "you have to run a 'cast -r -c winex' again."
+    echo  ""
+    echo  ""
+
 
     if  query  "To CONTINUE casting enter a 'y': "  y
       then

@@ -1,5 +1,5 @@
            SPELL=hercules
-         VERSION=2.16.3
+         VERSION=2.16.5
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.conmicro.cx/hercules/$SOURCE
