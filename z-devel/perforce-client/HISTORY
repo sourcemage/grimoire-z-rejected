@@ -1,3 +1,8 @@
+2003-07-28  Tony Smith <tony@smee.org>
+
+		Updated for 2003.1 release and included the man page in
+		the package. 
+
 2003-05-15  Seth Woolley <seth@tautology.org>
 
 		Added unpacks to PRE_BUILD for SOURCE,2

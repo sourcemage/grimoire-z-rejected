@@ -12,5 +12,6 @@ add_p4config()
     prepare_install 				&&
     install -m 755 p4 /usr/bin/p4 		&&
     install -m 755 p4web /usr/bin/p4web		&&
+    install -m 644 p4.1 /usr/share/man/man1	&&
     add_p4config
 ) > $C_FIFO 2>&1
