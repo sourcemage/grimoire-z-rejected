@@ -8,8 +8,14 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL/\-bin/}
          ENTERED=20040715
          UPDATED=20040715
       LICENSE[0]=GPL
-       BUILD_API=2
+          REJECT="binary installation"
            SHORT="Windows XP-like desktop environment"
 cat << EOF
-A desktop environment(XPde) and a window manager(XPwm) for Linux. It tries to recreate the Windows XP interface to-the-pixel point, nothing more. No clipboard compatibility between Gtk and Qt applications, no emulation of Windows applications, no unification on the widgets of X applications, just a desktop environment and a window manager.
+A desktop environment(XPde) and a window manager(XPwm) for Linux. It 
+tries to recreate the Windows XP interface to-the-pixel point, nothing 
+more. 
+
+No clipboard compatibility between Gtk and Qt applications, no emulation 
+of Windows applications, no unification on the widgets of X applications, 
+just a desktop environment and a window manager.
 EOF
