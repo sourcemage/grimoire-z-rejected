@@ -9,6 +9,9 @@
 	* z-ftp: section api2 compliant and rejected msg.
 	* z-video: section api2 compliant and rejected msg.
 	* z-windowmanagers: section api2 compliant and rejected msg.
+	* z-security: section api2 compliant and rejected msg.
+	* REJECTED_MSG: added small warning about sorcery failure 
+	  to handle queries correctly to prevent bug submissions.
 
 2004-08-03 Eric Schabell <z-rejected@sourcemage.org>
 	* z-archive: section completed for api2 and rejected msg.

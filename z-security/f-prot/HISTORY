@@ -1,3 +1,9 @@
+2004-08-05 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: cleaned up long description.
+	* CONFIGURE: modified to use grimoire rejected message.
+	* BUILD: modified for api2.
+	* INSTALL: added for api2.
+
 2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
 	* HISTORY: Formatted to Guru Handbook
