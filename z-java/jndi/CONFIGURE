@@ -1,2 +1,17 @@
-warn_rejected               &&
-ask_continue_with_rejected
+# Special messages with regards to Java sources.
+#
+message "\n${MESSAGE_COLOR}" \
+        "For this spell you have to download the sources yourself from the Sun Website, see\n\n" \
+        "${PROBLEM_COLOR}'gaze what jndi'${MESSAGE_COLOR}\n\n" \
+        "for the files and location. Put the downloaded files in /var/spool/sorcery \n" \
+        "so cast will find it.${DEFAULT_COLOR}\n"
+
+if ! query "YOU HAVE DOWNLOADED THE SOURCES AND WISH TO CONTINUE CASTING?" n;
+then
+  message "${MESSAGE_COLOR}Please recast when you have the sources!\n"
+  return 1 
+fi
+
+# Standard rejected warnings.
+#
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG

@@ -4,7 +4,6 @@
           SOURCE=${SPELL}-${PKG_VERSION}.zip
 	 SOURCE2=${SPELL}-${PKG_VERSION}-doc.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
-#http://java.sun.com/products/jta/
    SOURCE_URL[0]=
           MD5[0]=d57563444d0e83494f02ca47875ac697
       LICENSE[0]=SBCL
@@ -22,4 +21,13 @@ JTA  specifies standard Java interfaces between a transaction manager
 and the parties involved in a distributed transaction system: the 
 resource manager, the application server, and the transactional 
 applications.
+
+Don't forget to download sources :
+
+jta-1_0_1a.zip
+jta-1_0_1a-doc.zip
+
+to /var/spool/sorcery before casting, from :
+
+http://java.sun.com/products/jta/
 EOF

@@ -1,7 +1,7 @@
            SPELL=jndi
          VERSION=1_2_1
           SOURCE=${SPELL}-${VERSION}.zip
-	 SOURCE2=ldap-1_2_4.zip
+	       SOURCE2=ldap-1_2_4.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
    SOURCE_URL[0]=
           MD5[0]=53b63aa68b14cda5722c56d081f56d06
@@ -23,4 +23,13 @@ enterprise. As part of the Java Enterprise API set, JNDI enables seamless
 connectivity to heterogeneous enterprise naming and directory services. 
 Developers can now build powerful and portable directory-enabled 
 applications using this industry standard.
+
+Don't forget to download sources :
+
+jndi-1_2_1.zip
+ldap-1_2_4.zip
+
+to /var/spool/sorcery before casting, from :
+
+http://java.sun.com/products/jndi/
 EOF
