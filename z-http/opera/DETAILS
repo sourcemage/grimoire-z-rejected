@@ -12,11 +12,13 @@
            MD5[0]=b3399ac514d3e0d43b31c12c23a6d3cf
        LICENCE[0]=UNKOWN
           ENTERED=20020530
-          UPDATED=20031122
+          UPDATED=20031123
            REJECT="is non-source and has licensing issues (adware) "
             SHORT="Opera is a small quick qt based browser"
        MAINTAINER="Andrew Stitt <afryaedknot@yahoo.com>"
 cat << EOF
-Opera is a fast full featured web browser. It supports plugins and is very customizable. It uses the qt2 widget set. The static version is included here because the current grimoire uses qt3 which is not backwards compatible. Opera is unfortunatly not open source and thus destined to be placed in the rejected section of the grimoire.
+Opera is a fast full featured web browser. It supports plugins and is very customizable. It now uses the qt3 widget set,
+The shared version is now included here because the current grimoire uses qt3. 
+Opera is unfortunatly not open source and thus destined to be placed in the rejected section of the grimoire.
 EOF
 
