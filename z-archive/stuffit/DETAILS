@@ -1,0 +1,42 @@
+	   SPELL=stuffit
+         VERSION=520.611
+          SOURCE=${SPELL}${VERSION}linux-i386.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/rar
+   SOURCE_URL[0]=http://www.aladdinsys.com/downloads/files/${SOURCE}
+        WEB_SITE=http://www.stuffit.com/unix/
+          MD5[0]=861ce8da78831b1f0dcb6b91de6ffcf3
+         ENTERED=20040520
+         UPDATED=20040520
+      LICENSE[0]=http://www.aladdinsys.com/store/licensing/index.html
+          REJECT="is non-source and is trial-only for 15 days"
+           SHORT="StuffIt compression program"
+cat << EOF
+StuffIt is the best compression format available today! And the StuffIt Family of products is designed to meet any level of compression needs; from basic expansion, to advanced archive manipulation, to automating routine compression tasks, and even building compression into a software application.
+
+Available compression formats:
+  (.sit .sitx .zip .tar .sea .exe .hqx .gz .tgz .lha .lzh .mime .rar. pf .uu
+   .uue .z .bzip .arc .cab .yenc)
+
+  * AppleSingle (extract only)
+  * Arc (extract only)
+  * Arj (extract only)
+  * Binhex (create and extract)
+  * BtoAText (extract only)
+  * Bzip (extract only)
+  * CAB (extract only)
+  * [Unix] Compress (create and extract)
+  * Gzip (create and extract)
+  * Lha (create and extract)
+  * MacBinary (create and extract)
+  * MIME (extract)
+  * PrivateFile (create and extract)
+  * RAR (extract only)
+  * Self-extracting Mac archives (create only)
+  * Self-extracting Windows archives (create only)
+  * [StuffIt] Segments (create and extract)
+  * StuffIt (.sit) (create and extract)
+  * Tar (extract only)
+  * UU (create and extract)
+  * yEnc (extract only)
+  * Zip (create and extract)
+EOF
