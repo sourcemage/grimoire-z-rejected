@@ -49,8 +49,10 @@ mv crc32.c zcrc32.c                                     &&
 cd $SOURCE_DIRECTORY/j2se/make/java/zip/                &&
 sedit "s:1.1.3:${ZLIB_VERSION}:"  Makefile              &&
 
+### same thing as "unset LD_PRELOAD" just a little classier
+devoke_installwatch                                     &&
+
 cd $SOURCE_DIRECTORY/control/make                       &&
-unset LD_PRELOAD                                        &&
 make CC="$(which gcc)"                                  &&
 ### check the compiled binary can initialise
 if $SOURCE_DIRECTORY/control/build/linux-i?86/j2sdk-image/bin/java -version >& /dev/null;
@@ -62,12 +64,17 @@ then
  prepare_install                                        &&
  cd $SOURCE_DIRECTORY/control/build/linux-i?86		&&
  install -d /usr/java					&&
- cp -a j2sdk-image /usr/java/j2sdk-1.4.1-${BUILD_NUMBER}	&&
+ cp -av  j2sdk-image /usr/java/j2sdk-1.4.1-${BUILD_NUMBER}	&&
  cd /usr/java                                           &&
  for i in *;
  do  [ "$i" = "j2sdk-1.4.1-${BUILD_NUMBER}" ] ||  rm -rf $i;
  done                                                   &&
+### I want to track the 30+ MB we just installed and
+### this turns installwatch back on
+ invoke_installwatch                                    &&
  ln -snf j2sdk-1.4.1-${BUILD_NUMBER} j2sdk              &&
+### This function is for when installwatch can't be run automatically
+ track_manual $(find /usr/java/j2sdk-1.4.1-${BUILD_NUMBER} -iname \*) &&
  rm -rf /opt/java/                                      &&
  mkdir -p /etc/.java					&&
  chmod a+w /etc/.java					&&

@@ -49,7 +49,7 @@
          WEB_SITE=http://java.sun.com/j2se/1.4.1/
        MAINTAINER=josebernardo1@yahoo.com
           ENTERED=20021130
-          UPDATED=20030909
+          UPDATED=20030929
        MAKE_NJOBS=1
             SHORT="j2sdk compiles  Sun's j2sdk, as per LFS hints(http://tushar.lfsforum.org/)."
 
