@@ -16,12 +16,14 @@
     chmod 755 /usr/bin/netscape4                   &&
     cat >/usr/bin/netscape4 <<EOF
 #! /bin/sh
-if [ -e /opt/gcc2/lib/libstdc++-3-libc6.2-2-2.10.0.so ]; then
-  ln -sf /opt/gcc2/lib/libstdc++-3-libc6.2-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2
-elif [ -e /opt/gcc2/lib/libstdc++-3-libc6.3-2-2.10.0.so ]; then
-  ln -sf /opt/gcc2/lib/libstdc++-3-libc6.3-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2
-else
- exit 1
+if [ ! -e /usr/lib/netscape4/libstdc++-libc6.1-1.so.2 ]; then
+    if [ -e /opt/gcc2/lib/libstdc++-3-libc6.2-2-2.10.0.so ]; then
+      ln -sf /opt/gcc2/lib/libstdc++-3-libc6.2-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2
+    elif [ -e /opt/gcc2/lib/libstdc++-3-libc6.3-2-2.10.0.so ]; then
+      ln -sf /opt/gcc2/lib/libstdc++-3-libc6.3-2*.so $INSTALL_DIRECTORY/libstdc++-libc6.1-1.so.2
+    else
+     exit 1
+    fi
 fi  &&
 MOZILLA_HOME=$INSTALL_DIRECTORY  &&
 export MOZILLA_HOME &&
