@@ -3,10 +3,10 @@
 	   DLVER=${DLVER:-3-1}
 	  SOURCE=$SPELL-${VERSION}.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION%-*}
-   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/winex:wine:$DLVER
-        WEB_SITE=http://sourceforge.net/projects/winex/
+   SOURCE_URL[0]=cvs://:pserver:cvs:cvs@cvs.transgaming.org:/cvsroot:winex:$DLVER
+        WEB_SITE=http://www.transgaming.com/sources.php
          ENTERED=20020412
-         UPDATED=20021116
+         UPDATED=20031123
 	  REJECT="has licensing issues"
       MAINTAINER=ashaman@flyingtemple.com
            SHORT="winex"

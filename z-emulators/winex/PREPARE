@@ -5,6 +5,7 @@ if ! grep -q 'CONFIGURED=y' $SPELL_CONFIG; then
     # checked out of the repository
     echo 'VERSION=cvs' >> $SPELL_CONFIG
     echo 'DLVER=HEAD' >> $SPELL_CONFIG
+    echo 'FORCE_DOWNLOAD=YES' >> $SPELL_CONFIG
   fi
   echo 'CONFIGURED=y' >> $SPELL_CONFIG
 fi

@@ -1,3 +1,8 @@
+2003-07-06  Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* DETAILS: Updated to use transgamming CVS
+	* PREPARE: Added a "FORCE_DOWNLOAD=YES" if using the cvs HEAD version
+	* HISTORY: Still has to be updated to new format
+
 2003-07-09  Geoffrey Derber <ashaman@flyingtemple.com>
 
 		Re-wrote the spell again.
