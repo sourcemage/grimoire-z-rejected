@@ -1,8 +1,8 @@
             SPELL=opera
-          VERSION=6.01-20020523.1
+          VERSION=6.02-20020701.1
            SOURCE=${SPELL}-$VERSION-static-qt.i386.tar.bz2
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION-static-qt.i386 
-    SOURCE_URL[0]=ftp://ftp.opera.com/pub/opera/linux/601/final/en/qt_static/$SOURCE
+    SOURCE_URL[0]=ftp://ftp.opera.com/pub/opera/linux/602/final/en/qt_static/$SOURCE
          WEB_SITE=http://www.opera.com
           ENTERED=20020530
           UPDATED=20020530
