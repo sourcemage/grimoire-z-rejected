@@ -1,3 +1,8 @@
+2004-06-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Fixed md5sums (binaries changed, verified with Tony)
+	Removed MAINTAINER
+	Removed TABs
+
 2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE: Added to query for rejected status
 
