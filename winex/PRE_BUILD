@@ -1,0 +1,75 @@
+if  query  "This is a REJECTED SPELL, to see why enter a 'y': "  y
+  then 
+    echo  "" 
+    echo  ""
+    echo  "This spell was rejected due to licence issues, please"
+    echo  "view the website 'gaze website winex' for more information."
+    echo  ""
+    echo  ""
+
+    if  query  "To CONTINUE casting enter a 'y': "  y
+      then
+        echo  ""
+        echo  ""
+        echo  "Ok, here we go... you're on your own!"
+        echo  ""
+        echo  ""
+      else
+	echo  ""
+	echo  "Ok, maybe you be braver next time?"
+	exit
+    fi
+
+  else
+
+    if  query  "To CONTINUE casting enter a 'y': "  y
+      then
+        echo  ""
+        echo  ""
+        echo  "Ok, here we go... you're on your own!"
+        echo  ""
+        echo  ""
+      else
+        echo  ""
+	echo  "Ok, maybe you be braver next time?"
+	exit
+    fi
+fi
+
+          SOURCE=$SPELL.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY
+
+if [ -d $BUILD_DIRECTORY/$SPELL ]; then
+	rm -rf $BUILD_DIRECTORY/$SPELL
+fi
+
+if [ -d $BUILD_DIRECTORY/wine ]; then
+	rm -rf $BUILD_DIRECTORY/wine
+fi
+
+
+
+if [ ! -f /var/spool/sorcery/$SOURCE ]; then
+	if [ ! -f /root/.cvspass ]; then 
+		touch /root/.cvspass
+	fi
+	cd /var/spool/sorcery/								&&
+	cvs -z3 -d:pserver:anonymous@cvs.winex.sourceforge.net:/cvsroot/winex co wine	&&
+	tar -cyvf $SOURCE wine								&&
+	rm -rf wine									&&
+	cd /usr/src/
+else
+	if query "Do you wish to update from CVS?" y
+	then
+		cd /var/spool/sorcery/									&&
+		tar -xyvf $SOURCE									&&
+		cvs -z3 -d:pserver:anonymous@cvs.winex.sourceforge.net:/cvsroot/winex update wine	&&
+		tar -cyvf $SOURCE wine									&&
+		rm -rf wine										&&
+		cd /usr/src/
+	fi
+fi
+
+unpack $SOURCE												&&
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL							&&
+mv /usr/src/wine $SOURCE_DIRECTORY

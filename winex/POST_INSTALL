@@ -1,0 +1,5 @@
+if [ ! -f /usr/bin/winex ]; then
+	ln -s /opt/winex/bin/wine /usr/bin/winex
+fi
+ldconfig					&&
+rm -rf $SOURCE_DIRECTORY
