@@ -1,0 +1,12 @@
+sedit  "s/\/usr\/local\/Acrobat5/\/usr\/lib\/acroread/"  INSTALL  &&
+./INSTALL           &&
+ln  -sf  /usr/lib/acroread/bin/acroread  /usr/bin/acroread  &&
+
+if spell_installed "mozilla"; then
+	if query "Do you wish to install the mozilla plugin for viewing pdf documents in mozilla?" n
+		then
+			cp /usr/lib/acroread/Browsers/intellinux/nppdf.so /usr/lib/mozilla/plugins/
+	fi
+	message "\n${MESSAGE_COLOR}You can add this plugin to other browsers by pointing to:\n\n" \
+					"${PROBLEM_COLOR}/usr/lib/acroread/Browsers/intellinux/nppdf.so${DEFAULT_COLOR}\n\n"
+fi
