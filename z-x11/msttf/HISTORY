@@ -1,5 +1,9 @@
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
+	* HISTORY: Formatted to Guru Handbook
+
 2002-11-24 Geoffrey Derber <ashaman@sourcemage.org>
-	* fixed md5sum
+	* DETAILS: fixed md5sum
 
 2002-09-07 Geoffrey Derber <ashaman@flyingtemple.com>
 	* Added to z-rejected section
@@ -15,7 +19,7 @@
 	  the "z-rejected" area, as these fonts aren't "free".
 
 2002-08-10 Joel Mayes <bluebird@optushome.com.au>
-	* updated MD5[0] field to reflect the .tar not .tar.(bz2|gz|Z)
+	* DETAILS: updated MD5[0] field to reflect the .tar not .tar.(bz2|gz|Z)
 
 2002-07-27 Joel Mayes <bluebird@optushome.com.au>
 	* fixed bug #540, Thanks to Eric Sandall
@@ -24,13 +28,13 @@
 	* fixed bug #528
 
 2002-06-24 Joel Mayes <bluebird@optushome.com.au>
-	* Added LICENSE field to DETAILS
+	* DETAILS: Added LICENSE field
 
 2002-06-21 Joel Mayes <bluebird@optushome.com.au>
-	* Added MD5 field to DETAILS
+	* DETAILS: Added MD5 field
 
 2002-06-20 Joel Mayes <j.mayes@optushome.com.au>
-	* Added ARCHIVE="off" to DETAILS
+	* DETAILS: Added ARCHIVE="off"
 
 2002-05-23 Adam Clark <adamsgl@dhbit.ca>
 	* added this HISTORY file

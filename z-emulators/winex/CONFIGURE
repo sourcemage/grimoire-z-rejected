@@ -11,6 +11,9 @@ function configure_optional() {
   grep -q "${2#--}" $SPELL_CONFIG
 }
  
+warn_rejected               &&
+ask_continue_with_rejected  &&
+
 configure_optional	'debug'		'--enable-debug'	'--disable-debug' 	'Compile in all debugging message?' n
 configure_optional	'trace'		'--enable-trace'	'--disable-trace' 	'Compile in TRACE messages?' n
 #configure_optional	'pthreads'	'--enable-pthreads'	'--disable-pthreads' 	'Compile with pthreads (currently required for glibc 2.3.x)' y

@@ -1,3 +1,6 @@
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
+
 2002-05-09 Ole Tange <sgl-spell-libgpc@tange.dk>
 	* BUILD: Minor error causes problems when rebuilding.
 

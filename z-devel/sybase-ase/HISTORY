@@ -1,6 +1,10 @@
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Move rejected query to CONFIGURE  (Bug #3594)
+	* HISTORY: Formatted to Guru Handbook
+
 2002-11-24 Geoffrey Derber <ashaman@sourcemage.org>
-	* Added MD5 field
-	  Added HISTORY file
+	* DETAILS: Added MD5 field
+	* HISTORY: Added
 
 2002-11-12 Geoffrey Derber <ashaman@sourcemage.org>
 	* Added to grimoire

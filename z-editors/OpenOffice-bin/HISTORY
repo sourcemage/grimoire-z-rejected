@@ -1,3 +1,7 @@
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Move rejected query to CONFIGURE  (Bug #3594)
+	* HISTORY: Formatted to Guru Handbook
+
 2004-04-29 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: updated version.
 	* HISTORY: cleaned up.
@@ -6,21 +10,21 @@
 	* POST_REMOVE: updated to 1.1.1 version removal.
 
 2003-09-16 Eric Sandall <eric@sandall.us>
-	* Added conflicts for openoffice
+	* CONFLICTS: Added conflicts for openoffice
 
 2003-06-20 Derek Moyes <sorcerer@flamesnyper.com>
-	* Updated the spell to 1.0.3.1 and re-submitted to grimoire.
+	* DETAILS: Updated the spell to 1.0.3.1 and re-submitted to grimoire.
 
 2002-11-27 Geoffrey Derber <ashaman@sourcemage.org>
-	* Fixed a problem caused by URLs changing.
+	* DETAILS: Fixed a problem caused by URLs changing.
 
 2002-10-25 Geoffrey Derber <ashaman@sourcemage.org>
-	* Fixed an issue with the PRE_BUILD warning message
+	* PRE_BUILD: Fixed an issue with the warning message
 
 2002-07-21 Eric Schabell <eric@schabell.com>
-	* Tested and added spell with updated HISTORY, new 
-	  PRE_INSTALL warning messages and updated DETAILS with
-	  download size warning.
+	* HISTORY: Updated
+	* PRE_INSTALL: New warning messages
+	* DETAILS: Download size warning
 
 2002-07-13 Chris Brien <christopher_brien@hotmail.com>
 	* After spending weeks attempting to build OpenOffice, I 
@@ -33,10 +37,10 @@
 	  Avitzour <avitzour@princeton.edu> for pointing me here.
 
 2002-03-06 Eric Sandall <sandalle@yahoo.com>
-	* Modified DETAILS (finally figured this out ;) to have 
-	  gpc as SOURCE2, rather than creating a whole other spell 
-	  for 2 header files that just need to be copied for OpenOffice.
-	* Found that if I have an "_" in my SOURCE (and probably any others), 
-	  I must use the escape sequence "\" before it for it to read 
-	  (e.g. SOURCE=oo_$VERSION_src.tar.bz2 -> SOURCE=oo\_$VERSION\_src.tar.bz2)
+	* DETAILS: Modified (finally figured this out ;) to have 
+	gpc as SOURCE2, rather than creating a whole other spell 
+	for 2 header files that just need to be copied for OpenOffice.
+	Found that if I have an "_" in my SOURCE (and probably any others), 
+	I must use the escape sequence "\" before it for it to read 
+	(e.g. SOURCE=oo_$VERSION_src.tar.bz2 -> SOURCE=oo\_$VERSION\_src.tar.bz2)
 

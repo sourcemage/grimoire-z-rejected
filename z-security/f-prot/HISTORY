@@ -1,38 +1,42 @@
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
+	* HISTORY: Formatted to Guru Handbook
+
 2003-06-03 M.L. <mlubrano@sourcemage.org>
-	* Version++ (4.0.0).
+	* DETAILS: Version++ (4.0.0).
 	  Spell enhancements.
 
 2003-06-03 Seth Woolley <seth@tautology.org>
-	* Modified DETAILS to fix md5 for SOURCE.
+	* DETAILS: Modified to fix md5 for SOURCE.
 
 2003-02-09 Seth Woolley <seth@tautology.org>
-	* MD5 changed
+	* DETAILS: MD5 changed
 
 2003-01-20 M.L. <mlubrano@sourcemage.org>
-	* Version++ (3.12d).
+	* DETAILS: Version++ (3.12d).
 
 2003-01-16 M.L. <mlubrano@sourcemage.org>
-	* Fixed SOURCE_DIRECTORY in DETAILS, and MD5.
+	* DETAILS: Fixed SOURCE_DIRECTORY and MD5.
 
 2002-12-08 Geoffrey Derber <gderber@sourcemage.org>
-	* Version Bump
+	* DETAILS: Version Bump
 
 2002-11-24 Geoffrey Derber <gderber@sourcemage.org>
-	* Fixed MD5 field
+	* DETAILS: Fixed MD5 field
 
 2002-11-08 Eric Sandall <eric@sandall.us>
 	* Applied Bug #1558 (ML's fix)
-	* Replaced TABs with SPACEs in BUILD
-	* Modifed SOURCE_URL due to change on site
-	* Changed SOURCE to use ${VERSION} rather than the
-	  symlink which points to the latest tarball
-	* Changed MD5 to use .tar
+	* BUILD: Replaced TABs with SPACEs
+	* DETAILS: Modifed SOURCE_URL due to change on site
+	Changed SOURCE to use ${VERSION} rather than the
+	symlink which points to the latest tarball
+	Changed MD5 to use .tar
 
 2002-11-02 M.L. <mlubrano@sourcemage.org>
-	* Fixed BUILD file.
+	* BUILD: Fixed
 
 2002-10-05 M.L. <mlubrano@sourcemage.org>
-	* Version++.
+	* DETAILS: Version++.
 
 2002-08-14 M.L. <mlubrano@sourcemage.org>
 	* Created spell.

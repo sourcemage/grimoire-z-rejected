@@ -1,5 +1,9 @@
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
+	* HISTORY: Formatted to Guru Handbook
+
 2002-11-24 Geoffrey Derber <ashaman@sourcemage.org>
-	* Modified the prebuild unpack line to pass
+	* PRE_BUILD: Modified the prebuild unpack line to pass
 	  the md5sum argument to unpack
 
 2002-06-05 Zoran Constantinecu <zoran@idi.ntnu.no>

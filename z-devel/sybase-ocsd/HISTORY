@@ -1,8 +1,12 @@
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Move rejected query to CONFIGURE  (Bug #3594)
+	* HISTORY: Formatted to Guru handbook
+
 2002-12-31 Eric Sandall <eric@sandall.us>
-	* Fixed MD5
+	* DETAILS: Fixed MD5
 
 2002-12-30 Eric Sandall <eric@sandall.us>
-	* Created HISTORY
+	* HISTORY: Created
+	* DETAILS: Added MD5, LICENSE and rejected info
 	* Moved to z-rejected from libs due to licensing
-	* Added MD5, LICENSE and rejected info
 

@@ -1,3 +1,6 @@
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE: Needs "&&" after the ask_rejected
+
 2004-01-10 hgg <hgreig@bigpond.net.au>
 	* BUILD: export MAKE_NJOBS=1 instead of unset MAKE_NJOBS (caused error message if unset)
 
