@@ -15,4 +15,4 @@ fi
 
 # Standard rejected warnings.
 #
-source ../../REJECTED_MSG
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG

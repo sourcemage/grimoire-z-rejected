@@ -1,5 +1,6 @@
 2004-07-29 Eric Schabell <eschabell@sourcemage.org>
-	* CONFIGURE: modified back to return instead of exit.
+	* CONFIGURE: modified back to return instead of exit, and corrected
+	  sourcing of REJECTED_MSG file.
 	* UNATTENDED_SAFE: added reason as to why this is allowed.
 
 2004-07-28 Eric Schabell <eschabell@sourcemage.org>
