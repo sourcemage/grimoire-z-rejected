@@ -53,5 +53,72 @@ message  "${MESSAGE_COLOR}This spell is considered ${PROBLEM_COLOR}rejected${DEF
 	exit 1
       fi
    fi
-    
-default_pre_build
+
+if ! query "${MESSAGE_COLOR}For $SPELL to cast, you NEED to be root with access to an X display, otherwise this will fail in the end.  Is the above true?${DEFAULT_COLOR}" n ; then
+	exit 1
+fi
+
+if ! test "`gaze installed bison`" = "1.75" && ! test "`gaze installed bison`" = "1.35" ; then
+	if ! query "${MESSAGE_COLOR}For $SPELL to cast, you also NEED to have a version of Bison = to 1.75 || 1.35, otherwise this will fail with various errors during compile. All you need to do is a 'dispel -d bison 1.75' before casting $SPELL. Is the above true?${DEFAULT_COLOR}" n ; then
+		exit 1
+	fi
+fi
+
+if [ -f /usr/include/jni.h ] ; then
+	mv /usr/include/jni.h /usr/include/jni_gcc.h
+fi                                     &&
+if  [  -z  $JAVA_HOME  ]
+then
+  export JAVA_HOME="/opt/java/j2sdk/"
+fi                                     &&
+mk_source_dir	$SOURCE_DIRECTORY  4g	&&
+cd		$BUILD_DIRECTORY	&&
+unpack		$SOURCE	${MD5[0]}	&&
+#default_pre_build                      &&
+export MOZ_PREFIX=/usr                 &&
+cd  ${SOURCE_DIRECTORY}/external/gpc   &&
+unpack $SOURCE2 ${MD5[1]}              &&
+mv gpc231/gpc* .                       &&
+rm -rf gpc231                          &&
+cd ${SOURCE_DIRECTORY}                 &&
+
+for file in $SOURCE_CACHE/$SOURCE3     \
+	$SOURCE_CACHE/$SOURCE4         \
+	$SOURCE_CACHE/$SOURCE5         \
+	$SOURCE_CACHE/$SOURCE6         \
+	$SOURCE_CACHE/$SOURCE7         \
+	$SOURCE_CACHE/$SOURCE8         \
+	$SOURCE_CACHE/$SOURCE9         \
+	$SOURCE_CACHE/$SOURCE10        \
+	$SOURCE_CACHE/$SOURCE11        \
+	$SOURCE_CACHE/$SOURCE12        \
+	$SOURCE_CACHE/$SOURCE13        \
+	$SOURCE_CACHE/$SOURCE14        \
+	$SOURCE_CACHE/$SOURCE15        \
+	$SOURCE_CACHE/$SOURCE16        \
+	$SOURCE_CACHE/$SOURCE17        \
+	$SOURCE_CACHE/$SOURCE18        \
+	$SOURCE_CACHE/$SOURCE19        \
+	$SOURCE_CACHE/$SOURCE20        \
+	$SOURCE_CACHE/$SOURCE21        \
+	$SOURCE_CACHE/$SOURCE22        \
+	$SOURCE_CACHE/$SOURCE23        \
+	$SOURCE_CACHE/$SOURCE24        \
+	$SOURCE_CACHE/$SOURCE25        \
+	$SOURCE_CACHE/$SOURCE26        \
+	$SOURCE_CACHE/$SOURCE27        \
+	$SOURCE_CACHE/$SOURCE29        \
+	$SOURCE_CACHE/$SOURCE30        \
+	$SOURCE_CACHE/$SOURCE31
+do
+	message "${MESSAGE_COLOR} Applying patch ${file} ${DEFAULT_COLOR}"
+	bunzip2 -k -c $file | patch -p1
+done
+
+if ! spell_installed "Linux-PAM"; then
+    cp ${SOURCE_CACHE}/${SOURCE28} / &&
+    cd / &&
+    tar -xzf $SOURCE28 &&
+    rm $SOURCE28 &&
+    cd ${SOURCE_DIRECTORY}
+fi

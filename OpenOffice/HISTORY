@@ -1,8 +1,22 @@
-2002-11-27  Geoffrey Derber <ashaman@sourcemage.org>
+2003-02-01  Jose Bernardo Silva <josebernardo1@yahoo.com>
+
+		Added checks for bison version, and X access.
+		Releasing it to the devel grimoire at last.
+
+2003-01-28  Jose Bernardo Silva <josebernardo1@yahoo.com>
+
+		Added the bison compatibility patches.
+
+2002-12-10  Geoffrey Derber <gderber@sourcemage.org>
+
+		Spell completely rewriten.  Is now a source
+		based spell.
+
+2002-11-27  Geoffrey Derber <gderber@sourcemage.org>
 
 		Fixed a problem caused by URLs changing.
 
-2002-10-25  Geoffrey Derber <ashaman@sourcemage.org>
+2002-10-25  Geoffrey Derber <gderber@sourcemage.org>
 
 		Fixed an issue with the PRE_BUILD warning message
 

@@ -5,4 +5,4 @@ for LINK in "scalc sdraw simpress smath soffice spadmin sweb swriter"; do
   rm -f /usr/bin/$LINK;
 done
 
-rm -rf /usr/lib/OpenOffice.org1.0
+rm -rf /opt/openoffice
