@@ -3,5 +3,4 @@ cp -f /etc/profile /etc/profile.j2sdk 			&&
   echo -n ;
 echo 'export JAVA_HOME=/usr/lib/j2sdk1.4.1' >> /etc/profile	&&
 echo 'export PATH=$PATH:$JAVA_HOME/bin' >> /etc/profile
-[ ! -d /usr/lib/mozilla/plugins ] || ln -sf /usr/lib/j2sdk1.4.1/jre/plugin/i386/mozil
-la/javaplugin_oji.so /usr/lib/mozilla/plugins/javaplugin_oji.so
+[ ! -d /usr/lib/mozilla/plugins ] || ln -sf /usr/lib/j2sdk1.4.1/jre/plugin/i386/mozilla/javaplugin_oji.so /usr/lib/mozilla/plugins/javaplugin_oji.so
