@@ -1,18 +1,16 @@
             SPELL=acroread
-          VERSION=5.0.8
-           SOURCE=linux-508.tar.gz
+          VERSION=5.0.10
+           SOURCE=linux-5010.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/acroread-$VERSION
 INSTALL_DIRECTORY=/usr/lib/acroread
     SOURCE_URL[0]=http://download.adobe.com/pub/adobe/acrobatreader/unix/5.x/$SOURCE
+           MD5[0]=f107f043df52a393673634a5bc258d39
          WEB_SITE=http://www.adobe.com/products/acrobat/readermain.html
           ENTERED=20020709
           UPDATED=20020902
-	         MD5[0]=0daaad515811c8f1db81835eb8347be7
        LICENSE[0]=http://www.adobe.com/products/acrobat/acrreula.html
-	         REJECT="is non-source and has licensing issues"
-       MAINTAINER=zoran@idi.ntnu.no
+           REJECT="is non-source and has licensing issues"
             SHORT="software for viewing and printing Adobe PDF files"
-
 cat << EOF
 Adobe® Acrobat® Reader® is free software that lets you 
 view and print Adobe Portable Document Format (PDF) 

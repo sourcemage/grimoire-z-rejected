@@ -1,12 +1,17 @@
-sedit  "s/\/usr\/local\/Acrobat5/\/usr\/lib\/acroread/"  INSTALL  &&
-./INSTALL           &&
+sedit  "s/\/usr\/local\/Acrobat5/\/usr\/lib\/acroread/"  installers/INSTALL  &&
+install  -d  -m  755  /usr/lib/acroread                                      &&
+echo  -e  "\n"  |  ./installers/INSTALL                                      &&
+
 ln  -sf  /usr/lib/acroread/bin/acroread  /usr/bin/acroread  &&
 
-if spell_installed "mozilla"; then
-	if query "Do you wish to install the mozilla plugin for viewing pdf documents in mozilla?" n
-		then
-			cp /usr/lib/acroread/Browsers/intellinux/nppdf.so /usr/lib/mozilla/plugins/
-	fi
-	message "\n${MESSAGE_COLOR}You can add this plugin to other browsers by pointing to:\n\n" \
-					"${PROBLEM_COLOR}/usr/lib/acroread/Browsers/intellinux/nppdf.so${DEFAULT_COLOR}\n\n"
+if  [  "$ACROREAD_MOZILLA"  =  "y"  ];  then
+  ln  -sf  /usr/lib/acroread/Browsers/intellinux/nppdf.so  \
+           /usr/lib/mozilla/plugins/nppdf.so               &&
+  chmod  0755  /usr/lib/mozilla/plugins/nppdf.so
+fi  &&
+
+if  [  "$ACROREAD_FIREFOX"  =  "y"  ];  then
+  ln  -sf  /usr/lib/acroread/Browsers/intellinux/nppdf.so  \
+           /usr/lib/firefox/plugins/nppdf.so               &&
+  chmod  0755  /usr/lib/firefox/plugins/nppdf.so
 fi
