@@ -1,6 +1,11 @@
+2002-12-17  Geoffrey Derber <gderber@sourcemage.org>
+
+		Added a dependency on qt-x11 for 
+		use with the dynamic qt version.
+
 2002-12-07  Geoffrey Derber <gderber@sourcemage.org>
 
-		Version bump to 6.11, now uses qt-static.
+		Version bump to 6.11, now uses qt-dynamic.
 
 2002-11-19  Geoffrey Derber <gderber@sourcemage.org>
 
