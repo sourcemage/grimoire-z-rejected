@@ -1,7 +1,5 @@
-386
-i386-pc-linux-gnulibc1-static
 686
-i686-pc-linux-gnulibc1-static
+i686-pc-linux-gnu
 PPC
 powerpc-unknown-linux-gnu
 SUN
