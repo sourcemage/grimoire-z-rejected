@@ -1,0 +1,14 @@
+2002-10-25  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Realized HISTORY File was missing.
+		Fixed a PRE_BUILD bug.
+		Updated the VERSION field to force a rebuild
+		so that it references the updated glibc.
+
+2002-06-20  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Added to the grimoire
+
+2002-04-12  Geoffrey Derber <ashaman@sourcemage.org>
+
+		Created original spell

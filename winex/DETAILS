@@ -1,9 +1,9 @@
 	   SPELL=winex
-         VERSION=20020427
+         VERSION=20021025
 #   SOURCE_URL[0]= not used, cvs download only
         WEB_SITE=http://sourceforge.net/projects/winex/
          ENTERED=20020412
-         UPDATED=20020426
+         UPDATED=20021025
 	  REJECT="has licensing issues, and because it downloads from CVS, it is impossible for the MD5 checksum to work"
       MAINTAINER=ashaman@flyingtemple.com
            SHORT="winex"
