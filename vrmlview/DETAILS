@@ -6,7 +6,10 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.sim.no
          ENTERED=20020629
          UPDATED=20020629
+	  MD5[0]=785584b06f8727a71f1431f6c9be16b2
+      LICENSE[0]=http://www.rational-reducer.com/display.asp?xmlID=54&menuPath=f6481_f6494_f6513_
 	  REJECT="has licensing issues"
+      MAINTAINER=ashaman@flyingtemple.com
            SHORT="VRML viewer"
 cat << EOF
 VRMLview is a VRML viewer. It has full support for VRML 1.0 
