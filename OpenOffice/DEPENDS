@@ -1,5 +1,6 @@
 depends  mozilla &&
 depends  tcsh &&
+depends  java &&
 depends  STLport &&
 depends  db &&
 #I honestly do not know what this next spell is used for, but
