@@ -1,3 +1,6 @@
+2005-01-24 Andrew Stitt <astitt@sourcemage.org>
+	* REJECTED_MSG: fix typo spell_spell -> spell_ok
+
 2005-01-23 Eric Sandall <eric@sandall.us>
 	* REJECTED_MSG: Renamed spell_installed to spell_ok
 	  Removed #!/bin/bash

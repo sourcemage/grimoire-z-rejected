@@ -9,7 +9,7 @@
           "questions that need to be\nanswered and/or licensing agreements" \
           "that must be agreed to.${DEFAULT_COLOR}\n"
 
-  if spell_spell "$SPELL" && [ -e $SCRIPT_DIRECTORY/UNATTEND_SAFE ]; then
+  if spell_ok "$SPELL" && [ -e $SCRIPT_DIRECTORY/UNATTEND_SAFE ]; then
     message "${SPELL_COLOR}$SPELL${DEFAULT_COLOR}${MESSAGE_COLOR} is" \
             "installed, and has been determined" \
             "to be ${FILE_COLOR}safe\nfor unattended" \
