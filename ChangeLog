@@ -3,6 +3,7 @@
 	* z-utils: section api2 compliant and rejected msg.
 	* z-utils/skype: user can now decide to use dynamic
 	  linked to QT or static versions via user query.
+	* z-x11: section api2 compliant and rejected msg.
 
 2004-08-05 Eric Schabell <z-rejected@sourcemage.org>
 	* z-devel: section api2 compliant and rejected msg.
