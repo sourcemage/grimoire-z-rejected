@@ -1,5 +1,7 @@
 2005-02-06 David Brown <dmlb2000@excite.com>
 	* p4.sh: changed P4CONFIG to ~/.p4config to be more explicit
+	* p4.sh: and then changed it back also added some explaination
+	  to better help how perforce trys to find this file
 
 2005-01-19 Neuron <vlmarek@volny.cz>
 	* DETAILS: Fixed md5sums for p4web and p4.1
