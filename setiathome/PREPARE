@@ -1,12 +1,12 @@
 # Copied from kde/kde-il8n
 # Very cludgy setup I have made.  :(
 
-rm  -f  ${CONFIG_CACHE}/${SPELL}.config
+rm  -f  ${SPELL_CONFIG}
 
 get_architecture()  {
-  if  !  [  -f  ${CONFIG_CACHE}/${SPELL}.config  ]
+  if  !  [  -f  ${SPELL_CONFIG}  ]
   then
-    touch ${CONFIG_CACHE}/${SPELL}.config
+    touch ${SPELL_CONFIG}
     ARKS=`cat ${SCRIPT_DIRECTORY}/architectures`
     ARKS=`dialog  --backtitle  "SETI@Home Configuration Menu" \
                   --stdout                                    \
@@ -35,11 +35,11 @@ get_architecture()  {
             PREPARE_MD5=1091488f55cbbfa4451c3f03cc9f8177  ;;
     esac
 
-    echo          ARK=${ARK}          >>  ${CONFIG_CACHE}/${SPELL}.config
-    echo  PREPARE_MD5=${PREPARE_MD5}  >>  ${CONFIG_CACHE}/${SPELL}.config
+    echo          ARK=${ARK}          >>  ${SPELL_CONFIG}
+    echo  PREPARE_MD5=${PREPARE_MD5}  >>  ${SPELL_CONFIG}
 
   fi
 
-  . ${CONFIG_CACHE}/${SPELL}.config
+#  . ${SPELL_CONFIG}
 }
 get_architecture
