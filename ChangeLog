@@ -1,3 +1,6 @@
+2004-10-15 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* z-graphics/glut: spell moved here from graphics-libs
+
 2004-10-14 Eric Schabell <z-rejected@sourcemage.org>
 	* z-http/apachetoolbox: version bump.
 	* z-mail/netqmail: patch applied for cleaner install config,

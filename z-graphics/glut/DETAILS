@@ -7,8 +7,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.opengl.org
          ENTERED=20010922
          UPDATED=20040717
-      LICENSE[0]=GPL
-       BUILD_API=2
+          REJECT="unfree license"
+      LICENSE[0]="see NOTICE in the tarball or /usr/share/doc/glut"
+            DOCS="$DOCS NOTICE"
            SHORT="API for small to medium sized OpenGL programs."
 cat << EOF
 The GLUT API is intended for small to medium sized OpenGL Programs. It's
