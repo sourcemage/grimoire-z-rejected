@@ -1,11 +1,9 @@
 2005-03-09 Eric Sandall <eric@sandall.us>
-	* Renamed to libcg
-	* DETALIS: Removed SOURCE information
-	  Updated UPDATED
-	* CONFIGURE: Removed
-	* DEPENDS: Depend only on libcg
-	* PRE_BUILD,INSTALL: Run only `true`
-	* TRIGGERS: On cast Cg, dispel self
+	* Renamed from Cg
+	* DETAILS: Renamed to libcg
+	  Removed MAINTAINER
+	  Updated UDPATED
+	* CONFLICTS: Auto-conflicts with Cg
 
 2004-08-07 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD, PRE_BUILD: updated for api2.

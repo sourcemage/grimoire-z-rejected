@@ -1,0 +1,16 @@
+           SPELL=libcg
+         VERSION=1.2.1
+          SOURCE=Cg-$VERSION-Linux.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Cg
+          BRANCH=Cg_$VERSION
+   SOURCE_URL[0]=ftp://download.nvidia.com/developer/cg/$BRANCH/Linux/$SOURCE
+          MD5[0]=f627a4e61199558f35ea213fd9716b4d
+        WEB_SITE=http://developer.nvidia.com/object/cg_toolkit.html
+         ENTERED=20040125
+         UPDATED=20050309
+          REJECT="non-source plus headers"
+      LICENSE[0]=NVIDIA
+           SHORT="nvidia Cg libraries"
+cat << EOF
+nvidia Cg libraries
+EOF
