@@ -1,3 +1,7 @@
+2003-04-04  Eric Sandall <eric@sandall.us>
+
+		Added conflicts gcl and provides lisp
+
 2002-11-24  Geoffrey Derber <ashaman@sourcemage.org>
 
 		Modified the prebuild unpack line to pass
