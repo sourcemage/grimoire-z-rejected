@@ -1,18 +1,18 @@
            SPELL=openoffice-bin
-         VERSION=1.1.3
+         VERSION=1.1.4
           SOURCE=OOo_${VERSION}_LinuxIntel_install.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOo_1.1.3_LinuxIntel_install
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOo_${VERSION}_LinuxIntel_install
    SOURCE_URL[0]=http://borft.student.utwente.nl/openoffice/stable/$VERSION/$SOURCE
    SOURCE_URL[1]=ftp://ftp.ussg.iu.edu/pub/openoffice/stable/$VERSION/$SOURCE
+          MD5[0]=a5bd569bbd1ccb3cfe5b2d8f26c0cc7f
         WEB_SITE=http://www.openoffice.org
          ENTERED=20020713
          UPDATED=20041006
-	       ARCHIVE="off"
-	        MD5[0]="d3f729cd4885ba16c2dc0fd21eb1e04d"
       LICENSE[0]=LGPL
       LICENSE[1]=SISSL
-	        REJECT="This spell is non-source"
-           SHORT='The binary version of OpenOffice (warning: BIG DOWNLOAD - 77M!)'
+         ARCHIVE="off"
+          REJECT="This spell is non-source"
+           SHORT="The binary version of OpenOffice"
 cat << EOF
 OpenOffice.org is the open source project through which Sun Microsystems has
 released the technology for the popular StarOffice[tm] Productivity Suite.

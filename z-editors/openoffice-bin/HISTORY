@@ -1,3 +1,11 @@
+2005-01-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.1.4
+	  SOURCE_DIRECTORY now uses VERSION
+	  Shortened SHORT
+	  Removed TABs
+	* DEPENDS,CONFLICTS,INSTALL: Formatted to Guru Handbook
+	* POST_INSTALL: Use VERSION instead of hard-coded
+
 2004-10-06 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS: updated v1.1.3.
 
