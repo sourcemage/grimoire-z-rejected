@@ -1,4 +1,4 @@
 conflicts  openoffice  &&
-conflicts  OpenOffice-bin &&
+conflicts  OpenOffice-bin y &&
 conflicts  OpenOffice
 

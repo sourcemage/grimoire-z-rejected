@@ -1,7 +1,0 @@
-message  "\n${PROBLEM_COLOR} " \
-         "For $SPELL to cast, you NEED to be root with access to an X display,\n" \
-         "otherwise this will fail at the end.${DEFAULT_COLOR}\n"  && 
-  
-if ! query "Is the above true?" n ; then
-  exit 1
-fi
