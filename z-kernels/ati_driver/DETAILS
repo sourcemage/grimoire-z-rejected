@@ -19,8 +19,13 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20040416
       LICENSE[0]="GPL/QPL"
        BUILD_API=2
-           SHORT="ATI_driver is the driver provided by ATI for ATI GPUs"
+           SHORT="Driver provided by ATI for Radeon 8500+/FireGL 8700+"
 cat << EOF
-ATI
 These are the ATI provided binary XFree86 drivers for their graphics cards.
+
+The ATI Proprietary Linux driver currently supports RADEON 8500 and later AGP
+or PCI Express graphics products, as well as FireGL 8700 and later products. We
+do not currently plan to include support for any products earlier than this.
+Drivers for earlier products should already be available from the DRI Project
+or Utah-GLX project.
 EOF
