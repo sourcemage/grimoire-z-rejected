@@ -1,4 +1,8 @@
-2002-12-11 Geoffrey Derber <gderber@sourcemage.org>
+2003-01-23 Geoffrey Derber <gderber@sourcemage.org>
+
+		Added provides graphical_web_browser
+		needed for flash.
+		Added && to the end of the build lines
 
 2002-09-09 Geoffrey Derber <gderber@sourcemage.org>
 
