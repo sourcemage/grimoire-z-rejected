@@ -1,3 +1,18 @@
+2005-03-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.0.7167
+	* NVIDIA_glx-1.0.6106-defines.patch, linux-2.6.9.patch, 
+	  NVIDIA_glx-1.0.6106-glheader.patch, linux-2.6.8.1.patch: Removed
+	* NVIDIA_glx-1.0.7167-defines.patch: Branched from
+	  NVIDIA_glx-1.0.6106-defines.patch
+	  Updated to 1.0.7167
+	* NVIDIA_glx-1.0.7167-glheader.patch: Branched from
+	  NVIDIA_glx-1.0.6106-glheader.patch
+	  Include directory structure in patch
+	* NVIDIA_kernel-1.0-6629-1201042.diff.txt: Removed
+	* BUILD: Remove 2.6.11-specific patches
+	  Apply 7167-defines patch instead of 6106-defines patch
+	  Apply 7167-glheader patch instead of 6106-glheader patch as -p1
+
 2005-03-05 David Brown <dmlb2000@excite.com>
 	* BUILD: added patch for 2.6.11 kernel
 	* NVIDIA_kernel-1.0-6229-1201042.diff.txt added 2.6.11 fix
