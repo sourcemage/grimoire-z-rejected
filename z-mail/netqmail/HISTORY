@@ -1,3 +1,6 @@
+2004-11-22 Eric Sandall <eric@sandall.us>
+	* CONFIGURE,PRE_REMOVE: Changed `exit 1` to `return 1`  (Bug #7649)
+
 2004-10-14 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS, CONFIGURE, POST_INSTALL: applied patch from bug 
 	  #6767 to provide for better configured install.

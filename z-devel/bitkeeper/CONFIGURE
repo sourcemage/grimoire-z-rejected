@@ -12,7 +12,7 @@ if [ ! -f $FILENAME ]; then
   "Put the downloaded $SOURCE in /var/spool/sorcery\n"\
   "so cast will find it.${DEFAULT_COLOR}\n"
 
-  exit
+  return  1
 
 fi
 

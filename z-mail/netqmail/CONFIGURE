@@ -5,7 +5,7 @@ source $SCRIPT_DIRECTORY/../../REJECTED_MSG &&
 PID=`pgrep qmail-send`
 if [ -n "$PID" ]; then
   echo "qmail seems to be running, stop it first, possibly by 'telinit run smgl-qmail stop' ..."
-  exit 1
+  return 1
 fi
 
 
