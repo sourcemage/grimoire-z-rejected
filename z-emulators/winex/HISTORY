@@ -1,3 +1,7 @@
+2004-07-18 Eric Schabell <eschabell@sourcemage.org>
+	* winex.patch, BUILD: removed usage of old patch, need someone to 
+	  test the results as it builds fine here on i686, bug #4757.
+
 2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
 

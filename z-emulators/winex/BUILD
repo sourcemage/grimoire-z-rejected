@@ -1,6 +1,6 @@
 (
-	#patch to make the winex script
-	patch -p1 < $SCRIPT_DIRECTORY/winex.patch
+	#patch to make the winex script - old, from 3.1
+	#patch -p1 < $SCRIPT_DIRECTORY/winex.patch
 
 	./configure	--prefix=/usr/lib/transgaming/winex	\
 			--sysconfdir=/etc		\
