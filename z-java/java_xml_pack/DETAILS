@@ -26,4 +26,12 @@ The Java XML Pack Summer 02 Update Release includes the following:
   * Java API for XML Registries (JAXR) v1.0_02
   * Java API for XML-based RPC (JAX-RPC) v1.0_01
   * SOAP with Attachments API for Java (SAAJ) v1.1_02
+
+Don't forget to download sources :
+
+$SOURCE
+
+to /var/spool/sorcery before casting, from :
+
+$WEB_SITE
 EOF

@@ -1,3 +1,10 @@
+2004-08-09 Eric Scahbell <eschabell@sourcemage.org>
+	* PRE_BUILD: removed.
+	* BUILD: modified for api2.
+	* DETAILS: modified long desc.
+	* INSTALL: added for api2.
+	* CONFIGURE: modified to use grimoire reject message.
+
 2004-04-12 Eric Sandall <eric@sandall.us>
 	* Moved to z-rejected/z-java for licensing issues
 
