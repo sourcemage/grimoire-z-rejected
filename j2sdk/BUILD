@@ -1,9 +1,9 @@
 (
 #test if there is no JAVA_HOME then we need j2sdk binary
-if [ $JAVA_HOME ]
-then
+if [ $JAVA_HOME ] && query "${MESSAGE_COLOR}I've found java at $JAVA_HOME, do you want to use it to bootstrap j2sdk compilation? If you answer 'n', I'll use sun's binary.${DEFAULT_COLOR}"  y;  then
 	echo "java home = $JAVA_HOME"
-else
+   else
+        unset JAVA_HOME
         V=`echo ${BIN_VERSION} | sed -e "s/\./_/g"`
 	# Check out where the tar file begins and extract it
 	T=`grep -a tail $SOURCE_CACHE/j2sdk-${V}-linux-i?86.bin | cut -f 2 -d " "`
