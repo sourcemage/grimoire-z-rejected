@@ -1,3 +1,7 @@
+2002-07-25  Eric Schabell <eric@schabell.com>
+
+		Removed PRE_BUILD and moved spell into utils.
+
 2002-07-04  Geoffrey Derber <ashaman@flyingtemple.com>
 
 		Updated to version 2.16.3
