@@ -1,1 +1,4 @@
-echo  "$SPELL was installed to /opt and will not be tracked."
+opt/sybase/install/sybinstall.sh
+
+message  "\n${MESSAGE_COLOR} $SPELL was installed to /opt and will not "  \
+         "be tracked.${DEFAULT_COLOR}\n"

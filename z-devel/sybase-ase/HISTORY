@@ -1,3 +1,10 @@
+2004-08-03 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD, DETAILS: modified for api2.
+	* INSTALL, PRE_BUILD: added to comply with api2.
+	* POST_INSTALL: modified to add POST_BUILD.
+	* POST_BUILD: removed, merged into POST_INSTALL.
+	* CONFIGURE: updated to use grimoire rejected message.
+
 2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE, PRE_BUILD: Move rejected query to CONFIGURE  (Bug #3594)
 	* HISTORY: Formatted to Guru Handbook
