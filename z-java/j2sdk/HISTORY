@@ -1,3 +1,6 @@
+2004-07-18 Eric Schabell <eschabell@sourcemage.org>
+	* j2sdk-1_4_2-smgl.patch: adjusted with fix in bug #6354.
+
 2004-07-03 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* BUILD: added firefox support, cleaned up a little the whole
 	  plugin install. Still needs a little work

@@ -349,7 +349,7 @@ diff -ruN java.orig/j2se/make/common/Sanity.gmk java/j2se/make/common/Sanity.gmk
 -    REQUIRED_ALSA_VERSION = ^0.9.(0(rc[56789]|rc[12][0123456789])?|[0123456789]+)$$
 +### Modified the alsa check to include 1.0.0pre...
 +### Jason Flatt <printer@sourcemage.org>
-+    REQUIRED_ALSA_VERSION = ^(0|1).(9|0).(0(rc[56789]|rc[12][0123456789]?|pre[123456789])?|[0123456789]+)$$
++    REQUIRED_ALSA_VERSION = "\d+\.\d+\.\d+.*"
      # dummy program that outputs ALSA's version (created in target alsa-versioncheck)
      ALSA_VERSION_CHECK = $(TMPDIR)/alsaversioncheck
      ALSA_VERSION = `if [ -f $(ALSA_VERSION_CHECK) ] ; then $(ALSA_VERSION_CHECK) ; fi`
