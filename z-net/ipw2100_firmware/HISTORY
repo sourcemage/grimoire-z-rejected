@@ -1,28 +1,24 @@
 2004-12-15 David Brown <dmlb2000@excite.com>
-	* ALL: moved to z-rejected updated to v2.1
+	* ALL: spell reactivated and move to z-rejected
 
 2004-12-01 David Brown <dmlb2000@excite.com>
-	* ALL: deprecated spell
+	* ALL: deprecated responcability moved to ipw2100_driver
 
 2004-11-02 David Brown <dmlb2000@excite.com>
-	* BUILD, DETAILS, INSTALL: switched to BUILD_API 2
+	* DETAILS, BUILD, INSTALL: switched to BUILD_API 2
+
+2004-10-18 David Brown <dmlb2000@excite.com>
+	* DETAILS: updated to v1.3
 
 2004-10-09 David Brown <dmlb2000@excite.com>
-	* BUILD: changed firmware dir for new hotplug
-
-2004-09-03 David Brown <dmlb2000@excite.com>
-	* DETAILS: Updated to 2.0
+	* BUILD: changed firmware dir with new hotplug
 
 2004-08-21 David Brown <dmlb2000@excite.com>
-	* BUILD cleaned up /usr/src/ dir 
+	* BUILD: cleaned up the /usr/src/ dir a little better
 
 2004-08-20 Eric Sandall <eric@sandall.us>
-	* HISTORY: Removed execute bit
-	  Fixed David's creation date ;
-	* DETAILS: Use bughost.org instead of David's server (update from David)
-	  Formatted to Guru Handbook
-	* BUILD: Cleanup (update from David)
-	* PROVIDES: Removed (unneeded)
+	* CONFIGURE, PROVIDES: Removed (unneeded)
+	  Also closes Bug #7231
 
 2004-08-15 David Brown <dmlb2000@excite.com>
 	* DEPENDS, DETAILS, BUILD, HISTORY, PROVIDES, TRIGGERS: created spell
