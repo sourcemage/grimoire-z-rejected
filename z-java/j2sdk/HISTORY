@@ -1,3 +1,6 @@
+2004-10-06 Eric Schabell <eschabell@sourcemage.org>
+	* CONFLICTS: added for jdk1.5-bin and j2sdk-bin.
+
 2004-08-24 Eric Schabell <eschabell@sourcemage.org>
 	* CONFIGURE: removed VERSION from persistent_add call, seems
 	  to be messing up the addition of version to compile/build/md5

@@ -1,3 +1,6 @@
+2004-10-06 Eric Schabell <eschabell@sourcemage.org>
+	* CONFLICTS: added one for new jdk1.5-bin.
+
 2004-08-22 Eric Schabell <eschabell@sourcemage.org>
 	* INSTALL: cleaned up a bit.
 	* java.sh: make setting of java_home happen every time.
