@@ -1,8 +1,12 @@
+2004-01-13 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Added dependency on VI, as `vi` is hardcoded
+	and the $EDITOR variable is not used (Thanks to David Haley)
+
 2004-01-02 Tony Smith <tony@smee.org>
 	* Updated for version 2003.2
 
 2003-12-14 hgg <hgreig@bigpond.net.au>
-        * BUILD,p4.sh: now installs this file for setting of $P4CONFIG & P4EDITOR
+	* BUILD,p4.sh: now installs this file for setting of $P4CONFIG & P4EDITOR
 
 2003-09-29 Tony Smith <tony@smee.org>
 	* DETAILS: Updated for 2003.1 patch release 
@@ -53,3 +57,4 @@
 
 2002-05-14 Tony Smith <tony@smee.org>
 	* First version
+
