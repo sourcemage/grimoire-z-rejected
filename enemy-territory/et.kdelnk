@@ -1,8 +1,8 @@
 # KDE Config File
 [KDE Desktop Entry]
-Name=enemy-territory
+Name=Wolfenstein - Enemy Territory
 Comment=
-Exec=/usr/share/games/enemy-territory/et
+Exec=/usr/games/et
 Icon=/usr/share/games/enemy-territory/ET.xpm
 Terminal=0
 Type=Application
