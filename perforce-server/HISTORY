@@ -1,3 +1,7 @@
+2003-02-27  Seth Woolley <seth@tautology.org>
+
+		Fixed MD5 (will fix PRE_BUILD later)
+
 2003-02-12  Tony Smith <tony@smee.org>
 
 		Back up to 2002.2 now that new fixed builds have been

@@ -1,4 +1,8 @@
-2003-02-17  Sergey Lipnevich  <sergeyli@pisem.net>
+2003-02-27  Seth Woolley <seth@tautology.org>
+
+		Fixed MD5s (will fix PRE_BUILD later)
+
+2003-02-17  Sergey Lipnevich <sergeyli@pisem.net>
 
 		Added option not to collect documentation.
 
