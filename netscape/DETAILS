@@ -1,5 +1,5 @@
             SPELL=netscape
-          VERSION=7.0
+          VERSION=7.01
            SOURCE=netscape-i686-pc-linux-gnu-sea.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/netscape-installer/
     SOURCE_URL[0]=ftp://ftp.netscape.com/pub/${SPELL}7/english/$VERSION/unix/linux22/sea/$SOURCE
