@@ -1,6 +1,7 @@
             SPELL=j2sdk
           VERSION=1_4_1
-      BIN_VERSION=1_4_1_01
+      BIN_VERSION=1_4_1_02
+         BIN_PATH=1.4.1_02
      ZLIB_VERSION=1.1.4
            SOURCE=j2sdk-${VERSION}-src-scsl.zip
           SOURCE2=j2sdk-${VERSION}-mozilla_headers-unix.zip
