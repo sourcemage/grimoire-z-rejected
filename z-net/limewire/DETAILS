@@ -1,0 +1,15 @@
+           SPELL=limewire
+         VERSION=$(date +%U)
+          SOURCE=LimeWireLinux.rpm
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://www.limewire.com/LimeWireSoftLinux
+          MD5[0]=IGNORE
+        WEB_SITE=http://www.limewire.com/
+         ENTERED=20020407
+         UPDATED=20020428
+       BUILD_API=2
+  FORCE_DOWNLOAD=1
+           SHORT="Gnutella file sharing utility"
+cat << EOF
+LimeWire is a file sharing program running on the Gnutella Network. It is open standard software running on an open protocol, free for the public to use. LimeWire allows you to share any file such as.mp3s, .avis, jpgs, tiffs, etc. Limewire is written in Java, and will run on Windows, Macintosh, Linux, Sun, and other computing platforms. Publish your original content to the world without setting up a website!
+EOF
