@@ -11,5 +11,6 @@ create_account qmails /var/qmail /nonexistent         &&
       
 cd  $SOURCE_DIRECTORY/$SPELL-$VERSION                 &&
 make setup check                                      &&
-rm -f /usr/bin/sendmail                               &&
-ln -s $QMAIL_HOME/bin/sendmail /usr/bin
+rm -f /usr/bin/sendmail /usr/sbin/sendmail            &&
+ln -s $QMAIL_HOME/bin/sendmail /usr/bin               &&
+ln -s $QMAIL_HOME/bin/sendmail /usr/sbin

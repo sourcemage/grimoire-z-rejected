@@ -60,3 +60,4 @@ if [ ! -e /var/qmail/control/smtproutes -a -n "$DEFAULT_SMTP_ROUTE" ]; then
 	echo ":$DEFAULT_SMTP_ROUTE" > /var/qmail/control/smtproutes
 fi
 
+default_post_install
