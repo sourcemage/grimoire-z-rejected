@@ -1,3 +1,8 @@
+2003-05-15  Seth Woolley <seth@tautology.org>
+
+		Messed with PRE_BUILD to get it to validate with MD5s
+		commented out SOURCE24 in DETAILS
+
 2003-05-09  Eric Sandall <eric@sandall.us>
 
 		Updated to use db-4.1 patch

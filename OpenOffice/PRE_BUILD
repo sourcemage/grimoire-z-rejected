@@ -29,34 +29,18 @@ mv gpc231/gpc* .                       &&
 rm -rf gpc231                          &&
 cd ${SOURCE_DIRECTORY}                 &&
 
-for file in $SOURCE_CACHE/$SOURCE3     \
-	$SOURCE_CACHE/$SOURCE5         \
-	$SOURCE_CACHE/$SOURCE6         \
-	$SOURCE_CACHE/$SOURCE7         \
-	$SOURCE_CACHE/$SOURCE8         \
-	$SOURCE_CACHE/$SOURCE9         \
-	$SOURCE_CACHE/$SOURCE10        \
-	$SOURCE_CACHE/$SOURCE11        \
-	$SOURCE_CACHE/$SOURCE12        \
-	$SOURCE_CACHE/$SOURCE13        \
-	$SOURCE_CACHE/$SOURCE14        \
-	$SOURCE_CACHE/$SOURCE15        \
-	$SOURCE_CACHE/$SOURCE16        \
-	$SOURCE_CACHE/$SOURCE17        \
-	$SOURCE_CACHE/$SOURCE18        \
-	$SOURCE_CACHE/$SOURCE19        \
-	$SOURCE_CACHE/$SOURCE20        \
-	$SOURCE_CACHE/$SOURCE21        \
-	$SOURCE_CACHE/$SOURCE22        \
-	$SOURCE_CACHE/$SOURCE23        \
-	$SOURCE_CACHE/$SOURCE25
-do
-	message "${MESSAGE_COLOR} Applying patch ${file} ${DEFAULT_COLOR}"
-#	bunzip2 -k -c $file | patch -p1
-	patch -p1 < $file
+for i in 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 25
+do 
+	SVAR=SOURCE$i                                                       &&
+	message "${MESSAGE_COLOR} Applying patch ${!SVAR} ${DEFAULT_COLOR}" &&
+#	bunzip2 -k -c $file | patch -p1     &&
+        unpack ${!SVAR} ${MD5[$(($i-1))]}   &&
+	patch -p1 < $SOURCE_CACHE/${!SVAR}
 done					&&
+# unpack SOURCE3 SOURCE5 SOURCE6 SOURCE7 SOURCE8 SOURCE9 SOURCE10 SOURCE11 SOURCE12 SOURCE13 SOURCE14 SOURCE15 SOURCE16 SOURCE17 SOURCE18 SOURCE19 SOURCE20 SOURCE21 SOURCE22 SOURCE23 SOURCE25 MD5[2] MD5[4] MD5[5] MD5[6] MD5[7] MD5[8] MD5[9] MD5[10] MD5[11] MD5[12] MD5[13] MD5[14] MD5[15] MD5[16] MD5[17] MD5[18] MD5[19] MD5[20] MD5[21] MD5[22] MD5[24] 
 
 if ! spell_installed "Linux-PAM"; then
+    unpack  $SOURCE4  ${MD5[3]}             &&
     patch  -p1  <  $SOURCE_CACHE/$SOURCE4
 fi					&&
 patch -p1 < $SCRIPT_DIRECTORY/openoffice-1.0.2-fix-errno.patch  &&
