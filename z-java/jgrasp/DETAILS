@@ -1,0 +1,18 @@
+   	   SPELL=jgrasp
+         VERSION=170
+          SOURCE=$SPELL$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=ftp://ftp.eng.auburn.edu/pub/grasp/jgrasp/$SOURCE
+        WEB_SITE=http://www.jgrasp.org
+         ENTERED=20040607
+         UPDATED=20040607
+          MD5[0]=62857799c8515a22596021943568976f
+      LICENSE[0]=http://www.jgrasp.org/license.html
+           SHORT="A medium-weight development environment"
+cat << EOF
+ jGRASP is a medium-weight development environment, created specifically to 
+ provide automatic generation of software visualizations for the purpose of 
+ improving the comprehensibility of software. jGRASP is implemented in Java, 
+ and runs on all platforms with a Java Virtual Machine (Java version 1.3 or 
+ higher).
+EOF
