@@ -5,6 +5,7 @@
 	* z-java/jmx: section api2 compliant and rejected msg.
 	* z-java/jms: section api2 compliant and rejected msg.
 	* z-java/jgrasp: section api2 compliant and rejected msg.
+	* z-java/jdmk: section api2 compliant and rejected msg.
 
 2004-08-08 Eric Schabell <z-rejected@sourcemage.org>
 	* z-http: section api2 compliant and rejected msg.

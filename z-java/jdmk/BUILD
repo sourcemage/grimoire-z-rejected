@@ -1,13 +1,1 @@
-(
-
-  . $SCRIPT_DIRECTORY/../java-functions
-  
-  prepare_install 					&&
-  
-  extract_sun_src   ${SPELL} ${SPELL}-${VERSION}  $SOURCE_DIRECTORY/SUNWjdmk/jdmk5.0 &&
-  cp  -v  $SOURCE_DIRECTORY/usr/sadm/lib/snmp/jsnmpapi.jar  ${SM_SUN_DIST_HOME}/${SPELL}-${VERSION}/lib/ &&
-  register_sun_jar  ${SPELL}-${VERSION}/lib/jsnmpapi.jar	jsnmpapi.jar	&&
-  register_sun_jar  ${SPELL}-${VERSION}/lib/jdmkrt.jar		jdmkrt.jar	&&
-  register_sun_jar  ${SPELL}-${VERSION}/lib/jdmktk.jar		jdmktk.jar
-  
-) > $C_FIFO 2>&1  
+true
