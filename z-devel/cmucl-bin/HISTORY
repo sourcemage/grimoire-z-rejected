@@ -1,22 +1,22 @@
-2003-08-22  Geoffrey Derber <gderber@sourcemage.org>
+2003-10-27 Eric Sandall <eric@sandall.us>
+	* CONFLICTS: Conflicts with clisp
+	* HISTORY: Formatted to Guru Handbook
 
-		moved z-rejected warning messages
-		to CONFIGURE from PRE_BUILD
+2003-08-22 Geoffrey Derber <gderber@sourcemage.org>
+	* CONFIGURE,PRE_BUILD: moved z-rejected warning messages
+	to CONFIGURE from PRE_BUILD
 
-2003-04-13  Geoffrey Derber <gderber@sourcemage.org>
+2003-04-13 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: Updated to version 18e
 
-		Updated to version 18e
+2003-04-04 Eric Sandall <eric@sandall.us>
+	* CONFLICTS: Added conflicts gcl and provides lisp
 
-2003-04-04  Eric Sandall <eric@sandall.us>
+2002-11-24 Geoffrey Derber <ashaman@sourcemage.org>
+	* PRE_BUILD: Modified the unpack line to pass
+	the md5sum argument to unpack.
+	* DETAILS: modified License field to 'unknown'
 
-		Added conflicts gcl and provides lisp
+2002-09-14 Geoffrey Derber <gderber@sourcemage.org>
+	* added to the grimoire
 
-2002-11-24  Geoffrey Derber <ashaman@sourcemage.org>
-
-		Modified the prebuild unpack line to pass
-		the md5sum argument to unpack.
-		modified License field to 'unknown'
-
-2002-09-14  Geoffrey Derber <gderber@sourcemage.org>
-
-		added to the grimoire
