@@ -7,6 +7,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20011112
          UPDATED=20011112
       MAINTAINER=hvisage@envisage.co.za
+	  MD5[0]=e682d56ea34c8f6c062bf5952e487e2c
+      LICENSE[0]=unknown
            SHORT="Sybase Advanced Server 11.0.3.3 Documentation for Linux"
 cat << EOF
 Sybase Advanced Server 11.0.3.3 Documentation for Linux
