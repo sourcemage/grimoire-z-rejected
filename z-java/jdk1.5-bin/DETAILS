@@ -1,9 +1,9 @@
            SPELL=jdk1.5-bin
             ARCH=i386
-         VERSION=1_5_0_01
-             VER=1.5.0_01
+         VERSION=1_5_0_02
+             VER=1.5.0_02
           SOURCE=jdk-$VERSION-linux-i586.bin
-          MD5[0]='81d0511feb32e7b7d61f7c07ee0b15e9'
+          MD5[0]=78a42115788188c502567d778c94dd4a 
         WEB_SITE=http://java.sun.com/j2se/1.5.0/download.html
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk$VER
          ENTERED=20041006
