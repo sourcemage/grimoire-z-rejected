@@ -1,3 +1,8 @@
+2004-09-22 Eric Schabell <z-rejected@sourcemage.org>
+	* z-editors/openoffice-bin: renamed spell to lower-case, modified
+	  so that install is non-gui, install is tracked and updated to 
+		v1.1.3rc.
+
 2004-09-18 Eric Schabell <z-rejected@sourcemage.org>
 	* z-mail/netqmail: created new section z-mail for new spell
 	  netqmail, bug #6767.
