@@ -36,4 +36,5 @@ if  query  "This is a REJECTED SPELL, to see why enter a 'y': "  y
         exit
     fi
 fi
-exit 0
+
+default_pre_build
