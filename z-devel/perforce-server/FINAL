@@ -8,7 +8,6 @@ update_crontab()
     fi
 }
 
-default_post_build  	&&
 update_crontab		&&
 
 # Clean out the source. We can't cache it because the filename (p4d) is

@@ -1,4 +1,5 @@
            SPELL=perforce-server
+       BUILD_API=2
    VERSION_MAJOR=2003.2
    SHORT_VERSION=03.2
      DOC_VERSION=032
@@ -13,8 +14,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SOURCE-$VERSION_MAJOR
         WEB_SITE=http://www.perforce.com
          ENTERED=20020514
          UPDATED=20040129
-	  MD5[0]=79cb1b6ef702b88f90d40ae01dd9d2c0
-	  MD5[1]=6b31c4f65fd8165b72a5b9d639f40548
+	  MD5[0]='6ec655da4083860346d32ea448a8045f'
+	  MD5[1]='6b31c4f65fd8165b72a5b9d639f40548'
       LICENSE[0]=http://www.perforce.com/perforce/price.html
       MAINTAINER=ashaman@flyingtemple.com
 	  REJECT="is non-source and has licensing issues"
