@@ -1,3 +1,7 @@
+2003-03-17  Arwed v. Merkatz <v.merkatz@gmx.net>
+
+		added DEPENDS file and depends on unixODBC
+
 2003-02-15  Robin Cook <rcook@wyrms.net>
 
 		Modified to work with the new 1.4.1-01-gcc3.2 version
