@@ -1,3 +1,9 @@
+2004-08-22 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: j2sdk-bin version updated.
+	* INSTALL: now sets correct JAVA_HOME in java.sh.
+	* java.sh: now sets JAVA_HOME every time.
+	* PREPARE: dynamic setting of JAVA_HOME location.
+
 2004-08-14 Eric Schabell <eschabell@sourcemage.org>
 	* CONFIGURE: z-java/JAVA_WARNING added.
 

@@ -70,7 +70,8 @@ then
 	fi                                                     
 
 	mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
-	install -m 0644 $SCRIPT_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/
+	install -m 0644 $SCRIPT_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/ &&
+	sedit "s/J2SDKDIR/${SPELL}-${VERSION}-${BUILD_NUMBER}/" ${INSTALL_ROOT}/etc/profile.d/java.sh
 
 else 
 	
