@@ -1,3 +1,6 @@
+2005-03-07 Geoffrey Derber <gderber@sourcemage.org>
+	* PROVIDES: added JAVA-1.4
+
 2005-01-30 Arjan Bouter <abouter@sourcemage.org>
         * BUILD: spell_installed -> spell_ok conversion
 	  looks like you missed one Eric ;)
