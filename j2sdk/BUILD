@@ -13,6 +13,7 @@ if [ $JAVA_HOME ] && query "${MESSAGE_COLOR}I've found java at $JAVA_HOME, do yo
 	# Extract the files and move them to where we want the jdk installed.
 	./install.sfx.$$
 	cd j2sdk${BIN_PATH}
+	rm -rf /opt/java/j2sdk-precompiled-1.4
 	install -d /opt/java/j2sdk-precompiled-1.4
 	mv * /opt/java/j2sdk-precompiled-1.4
 	export JAVA_HOME=/opt/java/j2sdk-precompiled-1.4
@@ -71,7 +72,8 @@ unset LD_PRELOAD					&&
 make							&&
 prepare_install                    			&&
 cd $SOURCE_DIRECTORY/control/build/linux-i?86		&&
-mkdir -p /opt/java 					&&
+install -d /opt/java					&&
+rm -rf /opt/java/j2sdk-1.4.1-tt				&&
 cp -a j2sdk-image /opt/java/j2sdk-1.4.1-tt 		&&
 cd /opt/java 						&&
 rm -f j2sdk						&&
