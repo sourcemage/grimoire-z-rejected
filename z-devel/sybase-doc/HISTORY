@@ -1,3 +1,6 @@
+2004-10-18 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Depends on rpmunpack (removed from basesystem)
+
 2004-08-05 Eric Schabell <eschabell@sourcemage.org>
 	* POST_INSTALL: branched to FINAL for api2.
 	* INSTALL, FINAL: added for api2.

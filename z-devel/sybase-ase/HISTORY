@@ -1,3 +1,6 @@
+2004-10-18 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Depends on rpmunpack (removed from basesystem)
+
 2004-08-03 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD, DETAILS: modified for api2, added reject text.
 	* INSTALL, FINAL: added to comply with api2.
