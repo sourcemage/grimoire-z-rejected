@@ -1,4 +1,0 @@
-optional_depends  "SDL"	\
-                  "--enable-sdldrv" \
-                  ""                            \
-                  "build the sdl driver"

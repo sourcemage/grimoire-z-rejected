@@ -1,5 +1,0 @@
-message "OOodi2 has been replaced by OOodi. \nOOodi has been cast as a depends of this spell,
-this spell will be removed in the future"
-sleep 10
-
-exit

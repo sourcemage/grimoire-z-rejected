@@ -1,7 +1,0 @@
-message ""  \
-        "${PROBLEM_COLOR}Note${DEFAULT_COLOR}${MESSAGE_COLOR}:  To use these fonts edit the file ${FILE_COLOR}/etc/X11/XF86Config${DEFAULT_COLOR}${MESSAGE_COLOR} and add"  \
-        "  ${DEFAULT_COLOR}FontPath \"/usr/share/fonts/truetype\"${MESSAGE_COLOR} to the ${DEFAULT_COLOR}Files${MESSAGE_COLOR} section."    \
-        "Then edit the ${FILE_COLOR}/etc/X11/XftConfig${DEFAULT_COLOR}${MESSAGE_COLOR} file, and add"  \
-        "  ${DEFAULT_COLOR}dir \"/usr/share/fonts/truetype\"${MESSAGE_COLOR}"  \
-	""
-	

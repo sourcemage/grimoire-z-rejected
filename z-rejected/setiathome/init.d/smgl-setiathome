@@ -1,8 +1,0 @@
-#!/bin/sh
-
-PROGRAM=/usr/bin/setiathome
-RUNLEVEL=3
-ARGS="-nice 19 -graphics"
-NEEDS="+local_fs +network"
-
-. /etc/init.d/smgl_init
