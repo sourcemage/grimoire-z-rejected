@@ -4,7 +4,7 @@
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/netscape-installer/
     SOURCE_URL[0]=ftp://ftp.netscape.com/pub/${SPELL}7/english/$VERSION/unix/linux22/sea/$SOURCE
          WEB_SITE=http://www.netscape.com
-	   MD5[0]=21f661631fa3e635318c624bc34bf58f
+	   MD5[0]=6439361ea0f935d3f0e3c4c4fc41571b
        LICENSE[0]=http://wp.netscape.com/terms/index.html
           ENTERED=20020529
           UPDATED=20030316
