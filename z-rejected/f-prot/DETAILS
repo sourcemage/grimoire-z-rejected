@@ -1,12 +1,12 @@
            SPELL=f-prot
-         VERSION=4.0.0
+         VERSION=4.1.0
           SOURCE=fp-linux-ws-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=ftp://ftp.f-prot.com/pub/linux/$SOURCE
-          MD5[0]=2f39d9e2e72364c029909e776c88c501
+          MD5[0]=98b1a532829e9e0d375724175d4ff56d
         WEB_SITE=http://www.f-prot.com
          ENTERED=20020921
-         UPDATED=20030406
+         UPDATED=20030628
       MAINTAINER=mlubrano@sourcemage.org
       LICENSE[0]=http://www.f-prot.com/products/fplin.html
 	  REJECT="has licensing issues"
