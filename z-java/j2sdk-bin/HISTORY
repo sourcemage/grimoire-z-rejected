@@ -1,3 +1,6 @@
+2004-03-30 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD,CONFIGURE: Moved rejected query to before cast starts
+
 2003-12-14 hgg <hgreig@bigpond.net.au>
 	* BUILD,java.sh: now installs this file for setting of $JAVA_HOME
 	* POST_INSTALL: deleted (see above)
