@@ -1,4 +1,4 @@
-2004-08-03 Eric Sandall <eric@sandall.us>
+2004-08-03 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD, DETAILS: updated to use api2.
 	* INSTALL: added for api2.
 	* CONFIGURE: modified to use z-rejected reject messages.
