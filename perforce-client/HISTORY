@@ -1,3 +1,7 @@
+2003-02-17  Sergey Lipnevich  <sergeyli@pisem.net>
+
+		Added option not to collect documentation.
+
 2003-02-12  Tony Smith <tony@smee.org>
 		
 		Updated to 2002.2 again now that the build problems have
