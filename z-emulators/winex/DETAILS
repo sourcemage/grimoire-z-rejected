@@ -1,5 +1,4 @@
 	         SPELL=winex
-           BUILD_API=2
          VERSION=${VERSION:=cvs}
 	         DLVER=${DLVER:=HEAD}
 	        SOURCE=$SPELL-${VERSION}.tar.bz2
