@@ -10,7 +10,7 @@
  if spell_installed gpgme && spell_installed libgcrypt ;  then
     cd plugins/gaim-e/           &&
     sedit  "s:INSTALL_PATH=:INSTALL_PATH=/usr/lib/gaim:"  Makefile  &&
-    make
+    make	&&
     cd ../..
  fi
 
