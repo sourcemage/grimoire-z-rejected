@@ -1,5 +1,8 @@
 warn_rejected &&
 ask_continue_with_rejected
+if spell_installed j2sdk-bin
+then export JAVA_HOME=/usr/lib/j2sdk1.4.1
+fi                                                   &&
 if ! grep -q CONFIGURED $SPELL_CONFIG
 then  if query "Do you have a certificate from a certificate authority?\n\"You will also need to \
 download 2sdk-sec-1_4_1-src-scsl.zip from SUN\"" n

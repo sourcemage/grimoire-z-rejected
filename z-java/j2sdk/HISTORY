@@ -1,3 +1,7 @@
+2003-09-19  hgg <hgreig@bigpond.net.au>
+
+		Removed CONFLICTS so j2sdk-bin can be the bootstrap compiler(now dispelled in BUILD)
+
 2003-09-10  hgg <hgreig@bigpond.net.au
 
 		Moved PREPARE to CONFIGURE, moved binary setup to PRE_BUILD, redid JAVA_HOME to also 
