@@ -1,3 +1,10 @@
+2004-08-24 Eric Schabell <eschabell@sourcemage.org>
+	* CONFIGURE: removed VERSION from persistent_add call, seems
+	  to be messing up the addition of version to compile/build/md5
+	  log generation.
+	* DETAILS: removed quotes around VERSION number, they don't help
+	  with getting version numbers in the j2sdk spell logs.
+
 2004-08-23 Eric Schabell <eschabell@sourcemage.org>
 	* CONFIGURE, INSTALL, BUILD: removed some more sorcery 
 	  function calls that are messing with installwatch.

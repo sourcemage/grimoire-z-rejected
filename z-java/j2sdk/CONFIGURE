@@ -6,7 +6,7 @@ source $SCRIPT_DIRECTORY/../JAVA_WARNING &&
 #
 source $SCRIPT_DIRECTORY/../../REJECTED_MSG &&
 
-persistent_add CONFIGURED BOOTSTRAP CERT VERSION SOURCE5 &&
+persistent_add CONFIGURED BOOTSTRAP CERT SOURCE5 &&
 
 if spell_installed j2sdk-bin
 then
