@@ -1,3 +1,8 @@
+2004-12-05 Andrew Stitt <astitt@sourcemage.org>
+	* REJECTED_MSG: remove warning about improper handling of
+	  "rejected messages" now that stable sorcery correctly views
+	  CONFIGURE returning 1 as a failure.
+
 2004-10-15 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* z-graphics/glut: spell moved here from graphics-libs
 
