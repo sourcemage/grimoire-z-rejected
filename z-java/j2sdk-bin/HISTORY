@@ -1,5 +1,6 @@
 2004-08-22 Eric Schabell <eschabell@sourcemage.org>
 	* INSTALL: cleaned up a bit.
+	* java.sh: make setting of java_home happen every time.
 
 2004-08-14 Eric Schabell <eschabell@sourcemage.org>
 	* CONFIGURE: z-java/JAVA_WARNING added.
