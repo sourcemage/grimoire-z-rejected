@@ -1,3 +1,9 @@
+2005-01-23 Eric Sandall <eric@sandall.us>
+	* REJECTED_MSG: Renamed spell_installed to spell_ok
+	  Removed #!/bin/bash
+	* z-java/java-functions: Removed #!/bin/bash
+	  Renamed spell_installed to spell_ok
+
 2005-01-20 Neuron <vlmarek@volny.cz>
 	* libaccount, accounts, groups, FUNCTIONS: added libaccount from devel
 	  grimoire

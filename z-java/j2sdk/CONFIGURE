@@ -8,8 +8,7 @@ source $SCRIPT_DIRECTORY/../../REJECTED_MSG &&
 
 persistent_add CONFIGURED BOOTSTRAP CERT SOURCE5 &&
 
-if spell_installed j2sdk-bin
-then
+if spell_ok j2sdk-bin;  then
   export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
 fi                                                   &&
 

@@ -1,4 +1,4 @@
-if  spell_installed  ttmkfdir ; then
+if  spell_ok  ttmkfdir ; then
   if  [ -d  /usr/share/fonts/truetype ] ; then
     cd  /usr/share/fonts/truetype  &&
     ttmkfdir  >  fonts.dir         &&
@@ -6,6 +6,6 @@ if  spell_installed  ttmkfdir ; then
   fi
 fi
 
-if  spell_installed  fontconfig ; then
+if  spell_ok  fontconfig ; then
   fc-cache
 fi

@@ -22,7 +22,6 @@ if  grep UTS_RELEASE  /usr/include/linux/version.h | grep -q \"2.6; then
     patch -p1 < $SCRIPT_DIRECTORY/j2sdk-1_4_2-kernel2.6.patch
 fi                                                   &&
 # JAVA_HOME mightn't be set if j2sdk-bin has just been installed
-if spell_installed j2sdk-bin
-then export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
+if spell_ok j2sdk-bin;  then
+  export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
 fi                                              
-

@@ -1,3 +1,7 @@
+2005-01-23 Eric Sandall <eric@sandall.us>
+	* POST_REMOVE: Use spell_ok instead of spell_installed
+	* POST_INSTALL,FINAL: POST_INSTALL renamed to FINAL
+
 2004-08-07 Eric Schabell <eschabell@sourcemage.org>
 	* BUILD: modified for api2.
 	* CONFIGURE: modified to use grimoire rejected message.
