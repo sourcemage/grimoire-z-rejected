@@ -1,0 +1,11 @@
+echo  "Installing svscanboot to /etc/inittab..."  &&
+
+if  !  grep  -q  svscan-start  /etc/inittab;  then
+  cp  -f  /etc/inittab  /etc/inittab.`date -I`  &&
+  sed  -i  -e  '1,/^tty/{; /^tty/i \
+tty99:dumb:/usr/bin/svscan-start /service
+  }'  /etc/inittab  ||  return  1
+  echo  "svscan-start has been added to /etc/inittab. 'kill -1 1' to reload init."
+else
+  echo  "svscan-start is already in /etc/inittab."
+fi

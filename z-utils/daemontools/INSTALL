@@ -1,2 +1,12 @@
-cd ${SOURCE_DIRECTORY}/${SPELL}-${VERSION}/
-. package/install
+/usr/bin/install  -d  "${INSTALL_ROOT}/service"   &&
+
+cd  ${SOURCE_DIRECTORY}/${SPELL}-${VERSION}/src  &&
+
+/usr/bin/install  -d  ${INSTALL_ROOT}/usr/bin         &&
+/usr/bin/install  -m  755  `cat ../package/commands`  \
+                      ${INSTALL_ROOT}/usr/bin         &&
+
+cd  ${SOURCE_DIRECTORY}/${SPELL}-${VERSION}  &&
+
+mv  package/README      ${SOURCE_DIRECTORY}  &&
+mv  src/{CHANGES,TODO}  ${SOURCE_DIRECTORY}

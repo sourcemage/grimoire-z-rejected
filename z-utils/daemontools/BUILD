@@ -1,9 +1,13 @@
-  cd $SPELL-$VERSION
+cd "${SPELL}-${VERSION}"  &&
 
-  patch -p1 < $SCRIPT_DIRECTORY/daemontools-errno.patch
-  sedit 's/\/usr\/local/${INSTALL_ROOT}\/usr/g' package/upgrade
-  sedit 's/\/command/${INSTALL_ROOT}\/command/' package/upgrade
-  sedit 's/ln -s $parent/install $parent/' package/upgrade
-  echo > package/boot.inittab
+pwd                     >  src/home     &&
+echo  "gcc ${CFLAGS}"   >  src/conf-cc  &&
+echo  "gcc ${LDFLAGS}"  >  src/conf-ld  &&
 
-  ./package/install
+patch  -p0  <  "${SCRIPT_DIRECTORY}/0.76-errno.patch"  &&
+
+cd  src  &&
+
+sed  -i  -e  's@/command/svc@/usr/bin/svc@'  svscanboot.sh  &&
+
+make

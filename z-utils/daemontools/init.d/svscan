@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Note: svscan is actually started and respawned directly from inittab.
+# This init.d script primarily exists to provide the stop function during
+# shutdown.
+
+PROGRAM="/usr/bin/svscan-start /service"
+STATUSPROGRAM="svscan /service"
+RUNLEVEL=3
+NEEDS="+network" # not strictly true, but most services should go down before they lose networking
+
+. /etc/init.d/smgl_init
+
+restart()
+{
+  echo "(Re)starting svscan..." 
+  pkill -f "${STATUSPROGRAM}"
+  # init should automatically restart but just in case that's disabled...
+  if ! pgrep -f "${STATUSPROGRAM}" >/dev/null; then
+      ${PROGRAM} &
+  fi
+  evaluate_retval
+}
+
+start()
+{
+  # Do restart instead because even if already running, individual services
+  # could have been stopped.
+  run_func restart
+}
+
+reload()
+{
+  run_func restart
+}
+
+stop()
+{
+  echo "Stopping svscan services..."
+  for SVC in /service/*; do
+      echo "Stopping $SVC..."
+      svc -dx "$SVC"
+      evaluate_retval
+      if [[ -d "$SVC/log" ]]; then
+          echo "Stopping $SVC/log..."
+          svc -dx "$SVC/log"
+          evaluate_retval
+      fi
+  done
+}
+
+status()
+{
+  SVPID=`pgrep -f "${STATUSPROGRAM}"`
+  if [ -n "${SVPID}" ]; then
+      echo "svscan (pid ${SVPID}) is running"
+  else
+      echo "svscan is not running"
+  fi
+}
