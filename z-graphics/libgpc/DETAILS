@@ -1,0 +1,23 @@
+           SPELL=libgpc
+         VERSION=231
+          SOURCE=gpc$VERSION.tar.Z
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/gpc$VERSION
+   SOURCE_URL[0]=ftp://ftp.cs.man.ac.uk/pub/toby/gpc/$SOURCE
+        WEB_SITE=http://www.cs.man.ac.uk/aig/staff/alan/software
+         ENTERED=20020528
+         UPDATED=20020528
+	  REJECT="is non-source and has licensing issues"
+	  MD5[0]=24688bfc57a66be38bc252cae323ddd1
+      MAINTAINER=m.l@compaqnet.fr
+           SHORT="A general polygon clipper library (gpc)"
+cat << EOF
+A flexible and highly robust polygon set operations library for use with 
+C applications, as referenced in the comp.graphics.algorithms FAQ and the 
+UIUC Computational Geometry Pages. 
+
+The gpc library is estimated to have thousands of users worldwide, and is 
+subject to several hundred downloads each month.
+
+This software is free for non-commercial use. Anyone wishing to use the gpc 
+library in support of a commercial product please email gpc@cs.man.ac.uk.
+EOF

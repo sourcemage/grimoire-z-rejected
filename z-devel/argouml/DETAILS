@@ -1,0 +1,26 @@
+           SPELL=argouml
+         VERSION=0.16.1
+          SOURCE=ArgoUML-$VERSION.tar.gz
+         SOURCE2=quickguide-${VERSION/6.1/6}.pdf
+         SOURCE3=argomanual-${VERSION/6.1/6}.pdf
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION 
+   SOURCE_URL[0]=http://argouml.tigris.org/files/documents/4/0/$SPELL-$VERSION/$SOURCE
+  SOURCE2_URL[0]=http://argouml.tigris.org/files/documents/4/0/$SPELL-${VERSION/
+6.1/6}//$SOURCE2
+  SOURCE3_URL[0]=http://argouml.tigris.org/files/documents/4/0/$SPELL-${VERSION/
+6.1/6}//$SOURCE3
+          MD5[0]=bc0402353de6ed970fb06ead33f34b5d
+          MD5[1]=b0158b39635b721c5b5a1132595fbae7
+          MD5[2]=6b62971623e0d116c1bc972c47477de5
+        WEB_SITE=http://argouml.tigris.org
+         ENTERED=20030517
+         UPDATED=20030517
+      LICENSE[0]=BSD
+      LICENSE[1]=BSD
+      LICENSE[2]=BSD
+       BUILD_API=2
+          REJECT="is non-source
+           SHORT="Java-based round-trip Universal Modeling Language tool"
+cat << EOF
+ArgoUML is a Java based Universal Modeling Language tool. It is able to create and save most of the nine standard UML diagrams. 
+EOF

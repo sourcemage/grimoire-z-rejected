@@ -1,0 +1,19 @@
+           SPELL=ts2_client  
+         VERSION=rc2_2032
+          SOURCE="${SPELL}_${VERSION}.tar.bz2" 
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_${VERSION}
+   SOURCE_URL[0]=ftp://ftp.freenet.de/pub/4players/teamspeak.org/releases/$SOURCE
+          MD5[0]=3f7cbb59e0a9c0f6d0477e0e48fc55d2  
+        WEB_SITE=http://www.goteamspeak.org/
+         ENTERED=20040920
+         UPDATED=20040920
+      LICENCE[0]='http://www.goteamspeak.com/faq.php?faq=1'
+          REJECT="has licensing issues"
+           SHORT="P2P talking over the net (client side)"
+cat << EOF
+This is a very popular p2p talking client and server set up that 
+is used with many fps games.
+
+Teamspeak is free of charge to non-commercial users.
+EOF
+

@@ -1,0 +1,23 @@
+2004-08-05 Eric Schabell <eschabell@sourcemage.org>
+	* CONFIGURE: modified to use grimoire rejected message.
+	* INSTALL: added for api2.
+	* BUILD: modified for api2.
+
+2004-02-01 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* DETAILS: Updated to 2.5.0rc2.
+	* HISTORY: Started updating
+
+2003-08-22 Geoffrey Derber <gderber@sourcemage.org>
+	* moved z-rejected warning messages
+	  to CONFIGURE from PRE_BUILD
+
+2002-04-23 Eric Schabell <eschabell@sourcemage.org>
+	* Changed PRE_BUILD so that it does not just
+	  exit by default, now it will execute if you
+	  answer yes to the questions (thanks Yoav).
+
+2002-03-19 Eric Schabell <eschabell@sourcemage.org>
+	* Added HISTORY file. Spell rejected as it really
+	  bogs down a site by creating many connections
+	  blocking other users. Not really user friendly!
+

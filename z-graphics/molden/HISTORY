@@ -1,0 +1,40 @@
+2004-08-07 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: cleaned up long desc.
+	* BUILD: updated for api2.
+	* INSTALL: added for api2.
+	* CONFIGURE: updated to use grimoire rejected message.
+
+2004-06-01 Eric Sandall <eric@sandall.us>
+	* DETAILS: md5sum changed again
+
+2004-05-03 Seth Woolley <seth@tautology.org>
+	* DETAILS: to fix md5 for SOURCE.
+
+2004-02-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 4.0
+	  Removed MAINTAINER and a TAB
+
+2003-11-04 Eric Sandall <eric@sandall.us>
+	* BUILD, CONFIGURE, PRE_BUILD: fixed per bug 4760
+	* PRE_BUILD: removed, moved the z-rejected prompt to CONFIGURE
+
+2003-11-04 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 3.9, added md5sum
+	* BUILD: Added '&&'s for completeness
+	* HISTORY: Formatted to Guru Handbook
+
+2003-04-30 Seth Woolley <seth@tautology.org>
+	* DETAILS: Modified to fix md5 for SOURCE.
+
+2003-04-19 Seth Woolley <seth@tautology.org>
+	* DETAILS: Modified to fix md5 for SOURCE.
+
+2003-04-18 Seth Woolley <seth@tautology.org>
+	* DETAILS: Modified to fix md5 for SOURCE[0].
+
+2003-02-09 Seth Woolley <seth@tautology.org>
+	* DETAILS: It's changed its md5
+
+2002-09-08 Geoffrey Derber <ashaman@flyingtemple.com>
+	* Added to the Grimoire
+

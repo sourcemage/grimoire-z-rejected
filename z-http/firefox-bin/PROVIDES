@@ -1,0 +1,2 @@
+provides GRAPHICAL-WEB-BROWSER &&
+provides WEB-BROWSER

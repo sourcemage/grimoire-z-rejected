@@ -1,0 +1,22 @@
+           SPELL=firefox-bin
+         VERSION=0.9.3
+          SOURCE=firefox-${VERSION}-i686-linux-gtk2+xft-installer.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox-installer
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/${VERSION}/${SOURCE}
+        WEB_SITE=http://www.mozilla.org/firefox
+         ENTERED=20040902
+         UPDATED=20041022
+          MD5[0]="dc6e4e1b4aa4a526184c8fcdf0b4dadf"
+      LICENSE[0]=MOZILLA
+          REJECT="is non-source"
+           SHORT="The binary version of firefox."
+cat << EOF
+Mozilla firefox, formerly known as Mozilla Firebird, formerly known 
+as Phoenix, is a redesign of the Mozilla browser component, similar 
+to Galeon, K-Meleon and Camino, but written using the XUL user 
+interface language and designed to be cross-platform.
+
+If you choose a gtk+ build you should visit 
+http://wiki.sourcemage.org/index.php?page=FaqUsage#mozfonts
+to learn how to add font anti-aliasing in prefs.js
+EOF

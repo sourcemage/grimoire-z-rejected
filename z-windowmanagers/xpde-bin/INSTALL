@@ -1,0 +1,6 @@
+I_DIR=/usr/share/${SPELL/\-bin/}                    &&
+install  -m  755  -d  ${I_DIR}                      &&
+cp  -r  *  ${I_DIR}                                 &&
+cp  bin/startxpde  /usr/bin                         &&
+install  -m  755  ${SCRIPT_DIRECTORY}/xpde.desktop  \
+                  /usr/share/xsessions

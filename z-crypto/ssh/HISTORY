@@ -1,0 +1,52 @@
+2005-01-23 Eric Sandall <eric@sandall.us>
+	* CONFIGURE: Use spell_ok instead of spell_installed
+
+2005-01-23 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* CONFLICTS: added conflict to lower cased linux-pam
+
+2004-08-06 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed TABs
+	* CONFIGURE: Converted to config_query
+	* BUILD: Use config_query responses
+	* HISTORY: Formatted to Guru Handbook
+
+2004-08-03 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: modified for api2.
+	* CONFIGURE: updated to use grimoire rejected message.
+	* PREPARE: removed.
+
+2003-09-16 Eric Sandall <eric@sandall.us>
+	* CONFLICTS: Added conflicts to lsh
+
+2003-07-17 Geoffrey Derber <ashaman@sourcemage.org>
+	* DETAILS: version bump to 3.2.5
+	* added UNATTEND_SAFE
+
+2002-12-01 Geoffrey Derber <ashaman@sourcemage.org>
+	* DETAILS: version bump to 3.2.2
+
+2002-09-02 Geoffrey Derber <ashaman@flyingtemple.com>
+	* spell update
+	* CONFLICTS: added Linux PAM as a CONFLICTS
+	* DETAILS: added MD5 field and License field
+	* DEPENDS: modify DEPENDS so that xfree86 is now a configure option
+	* CONFIGURE: added Configure file
+	* BUILD: modified so that the configure options work correctly.
+
+2002-06-28 Eric Sandall <sandalle@yahoo.com>
+	* DETAILS: Upped VERSION to 3.2.0 at Geoff's request
+
+2002-05-28 Geoffrey Derber <ashaman@flyingtemple.com>
+	* DETAILS: Updated to version 3.1.2 from 3.1.0
+
+2002-04-23 Eric Schabell <eric@schabell.com>
+	* PRE_BUILD: Changed PRE_BUILD so that it does not just
+	  exit by default, now it will execute if you
+	  answer yes to the questions (thanks Yoav).
+
+2002-03-20 Luis M. Lourenco <aeron@netcabo.pt>
+	* BUILD: Removed option to create anonymous sftp user. Changed { and }
+	  to ( and ).
+	* DETAILS: Added 2 SOURCE_URLs. Changed PACKAGE to SPELL.
+	* POST_INSTALL: Removed, no user is created.
+

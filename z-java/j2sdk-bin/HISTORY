@@ -1,0 +1,75 @@
+2004-10-14 David C. Haley <dhaley@hot.rr.com>
+	* DETAILS: Version bumped to 1.4.2.06 for arch i386
+
+2004-10-06 Eric Schabell <eschabell@sourcemage.org>
+	* CONFLICTS: added one for new jdk1.5-bin.
+
+2004-08-22 Eric Schabell <eschabell@sourcemage.org>
+	* INSTALL: cleaned up a bit.
+	* java.sh: make setting of java_home happen every time.
+
+2004-08-14 Eric Schabell <eschabell@sourcemage.org>
+	* CONFIGURE: z-java/JAVA_WARNING added.
+
+2004-08-05 Eric Sandall <eric@sandall.us>
+	* DEPENDS: unixODBC renamed to unixodbc
+
+2004-07-29 Eric Schabell <eschabell@sourcemage.org>
+	* CONFIGURE: modified back to return instead of exit, and corrected
+	  sourcing of REJECTED_MSG file.
+	* UNATTENDED_SAFE: added reason as to why this is allowed.
+
+2004-07-28 Eric Schabell <eschabell@sourcemage.org>
+	* WIP: removed, not really applicable for z-rejected as we never
+	  move spells into 'stable.'
+	* CONFIGURE: uses REJECTED_MSG file and has been updated to include 
+	  spell specific warnings about source downloads.
+	* FINAL: added to source java.sh for JAVA_HOME to be set.
+
+2004-07-20 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD, INSTALL: converted to build_api 2
+	* DETAILS: use the Sun j2sdk since that works with gcc 3.4.x
+	* PREPARE, DETAILS, INSTALL: detect architecture and use the
+	  j2sdk for that architecture
+	  The intel j2sdk has to be downloaded by hand since only suns j2sdk
+	  works with gcc 3.4.
+	* PRE_BUILD: don't do anything here, everything happens in INSTALL
+	* INSTALL, java.sh: set correct bindir on installation
+	* WIP: only tested on x86, sparc and ppc need testing
+
+2004-05-09 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* BUILD: don't link all binaries to /usr/bin, as that overwrites files
+	  of gcj and isn't needed (java.sh sets the path)
+
+2004-03-30 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD,CONFIGURE: Moved rejected query to before cast starts
+
+2003-12-14 hgg <hgreig@bigpond.net.au>
+	* BUILD,java.sh: now installs this file for setting of $JAVA_HOME
+	* POST_INSTALL: deleted (see above)
+
+2003-10-29 Eric Sandall <eric@sandall.us>
+	* PROVIDES: Uppercase provides
+
+2003-10-18 hgg <hgreig@bigpond.net.au>
+	* HISTORY: convert format
+
+2003-05-15 Seth Woolley <seth@tautology.org>
+	* PRE_BUILD: added unpack to PRE_BUILD for SOURCE
+
+2003-05-09 Eric Sandall <eric@sandall.us>
+	* PREPARE: Added support for SPARC architecture (couldn't find PPC files) i586 is default, just in case the selection is 
+	  somehow missed...
+
+2003-03-17 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: added DEPENDS file and depends on unixODBC
+
+2003-02-15 Robin Cook <rcook@wyrms.net>
+	* BUILD: Modified to work with the new 1.4.1-01-gcc3.2 version
+
+2003-01-30 Seth Woolley <seth@tautology.org>
+	* DETAILS: Temporary md5 fix here
+
+2002-05-01 Sergey Lipnevich <sergeyli@pisem.net>
+	* DETAILS: Updated to 1.3.1-02b, added German mirror.
+

@@ -1,0 +1,9 @@
+message "\n${PROBLEM_COLOR}"  \
+				"Note: To use these fonts edit the file ${FILE_COLOR}\n\n"  \
+				"/etc/X11/XF86Config${MESSAGE_COLOR}\n\n"  \
+				"and add ${FILE_COLOR}\n\n"  \
+				"FontPath \"/usr/share/fonts/truetype\"${MESSAGE_COLOR}\n\n"  \
+				"to the ${FILE_COLOR}Files${MESSAGE_COLOR} section. Then edit\n\n"  \
+				"${FILE_COLOR}/etc/X11/XftConfig ${MESSAGE_COLOR}\n\n"  \
+				"and add\n\n"  \
+				"${FILE_COLOR}dir \"/usr/share/fonts/truetype\"${MESSAGE_COLOR}\n\n"

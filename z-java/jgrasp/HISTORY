@@ -1,0 +1,12 @@
+2004-08-09 Eric Schabell <eschabell@sourcemage.org>
+	* INSTALL: added for api2.
+	* DETIALS: added REJECT line.
+	* CONFIGURE: added.
+	* BUILD: modified for api2.
+
+2004-06-07 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD, DEPENDS, DETAILS, HISTORY: minor fixes....
+
+2004-06-01 Pieter Lenaerts <pieter.lenaerts@pandora.be>
+	* BUILD, DEPENDS, DETAILS, HISTORY: created this spell
+

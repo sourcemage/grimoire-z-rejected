@@ -1,0 +1,3 @@
+if [ "$QT" == "y" ]; then
+depends qt-x11
+fi

@@ -1,0 +1,5 @@
+make                        &&
+if  !  grep  -q  "root"  /etc/ld.so.conf
+then
+	echo  "/usr/lib/root"  >>  /etc/ld.so.conf
+fi

@@ -1,0 +1,18 @@
+	         SPELL=winex
+         VERSION=${VERSION:=cvs}
+	         DLVER=${DLVER:=HEAD}
+	        SOURCE=$SPELL-${VERSION}.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-${VERSION%-*}
+   SOURCE_URL[0]=cvs://:pserver:cvs:cvs@cvs.transgaming.org:/cvsroot:winex:${DLVER}
+        WEB_SITE=http://www.transgaming.com/sources.php
+         ENTERED=20020412
+         UPDATED=20040205
+	  REJECT="has licensing issues"
+      MAINTAINER=ashaman@flyingtemple.com
+           SHORT="winex"
+	  MD5[0]="IGNORE"
+      LICENSE[0]="http://www.cs.wisc.edu/~ghost/doc/AFPL/7.04/Public.htm"
+      LICENSE[1]=LGPL
+cat << EOF
+winex is a modified version of wine, specifically optimized towards games.
+EOF

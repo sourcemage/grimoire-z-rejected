@@ -1,0 +1,33 @@
+           SPELL=jta
+         VERSION=1.0.1a
+     PKG_VERSION=1_0_1a
+          SOURCE=${SPELL}-${PKG_VERSION}.zip
+	 SOURCE2=${SPELL}-${PKG_VERSION}-doc.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
+   SOURCE_URL[0]=
+          MD5[0]=d57563444d0e83494f02ca47875ac697
+      LICENSE[0]=SBCL
+  SOURCE2_URL[0]=
+          MD5[1]=b967695324644e9795d8a1caadbe91bf
+      LICENSE[1]=SBCL
+          REJECT="is non-source"
+	WEB_SITE=http://java.sun.com/products/jta/
+         ENTERED=20030328
+         UPDATED=20030328
+      MAINTAINER=vydra@fria.fri.utc.sk
+           SHORT="The Java Transaction API (JTA)."
+cat << EOF
+JTA  specifies standard Java interfaces between a transaction manager 
+and the parties involved in a distributed transaction system: the 
+resource manager, the application server, and the transactional 
+applications.
+
+Don't forget to download sources :
+
+jta-1_0_1a.zip
+jta-1_0_1a-doc.zip
+
+to /var/spool/sorcery before casting, from :
+
+http://java.sun.com/products/jta/
+EOF

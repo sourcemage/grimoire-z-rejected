@@ -1,0 +1,22 @@
+2005-01-17 Tony Smith <tony@smee.org>
+	* DETAILS: 	updated to 2004.2 and build_api=2
+	* PRE_BUILD:	adapted for tarball source file
+	* FINAL:	add P4VRES environment variable to /etc/profile
+	* INSTALL:	adapted for tarball distribution
+
+2004-08-05 Eric Schabell <eschabell@sourcemage.org>
+	* CONFIGURE: updated to use grimoire rejected message.
+	* POST_BUILD: branced to FINAL and removed.
+	* FINAL, INSTALL: added for api2.
+	* DETAILS, BUILD: modified for api2.
+
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Move rejected query to CONFIGURE  (Bug #3594)
+
+2003-12-16 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* DETAILS: Fixed MD5 sum
+	* HISTORY: Converted to guru handbook format
+
+2003-09-29 Tony Smith <tony@smee.org>
+	* ALL: First version
+

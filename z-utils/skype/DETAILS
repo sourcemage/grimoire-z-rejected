@@ -1,0 +1,33 @@
+             SPELL=skype
+           VERSION=0.93.0.3
+if       [ "$QT" == "y" ]; then
+# dynamic version.
+            SOURCE=${SPELL}-${VERSION}.tar.bz2
+  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
+            MD5[0]='f3e22b1dde256b9d34d11b03d59203cb'
+else
+# static version.
+            SOURCE=${SPELL}_staticQT-${VERSION}.tar.bz2
+  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_staticQT-${VERSION}
+            MD5[0]='4f3b8032ba9782ab31e2d89de18e2e30'
+fi
+          WEB_SITE=http://www.skype.com/
+     SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
+        LICENSE[0]=http://www.skype.com/eula.html
+           ENTERED=20040624
+           UPDATED=20041110
+	    REJECT="has licensing issues"
+             SHORT="Easy, free, working voice over IP (voip) Linux client."
+cat << EOF
+Skype is free and simple software that will enable you to make free calls
+anywhere in the world in minutes. Skype, created by the people who brought you
+KaZaA, uses innovative P2P (peer-to-peer) technology to connect you with other
+Skype users. If you are tired of paying outrageous fees for telephony, Skype
+is for you!
+
+Skype is quick and easy to install. Just download it, register, and within
+minutes you can plug in your PC headset and call your friends on Skype. Skype
+calls have excellent sound quality and are highly secure with end-to-end
+encryption. Best of all, Skype does not require you to reconfigure your
+firewall or router (it just works!)
+EOF

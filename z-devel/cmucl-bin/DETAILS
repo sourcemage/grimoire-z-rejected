@@ -1,0 +1,55 @@
+           SPELL=cmucl-bin
+         VERSION=18e
+          SOURCE=cmucl-$VERSION-x86-linux.tar.bz2
+	 SOURCE2=cmucl-$VERSION-x86-linux.extra.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.averillpark.net/cmucl/release/$VERSION/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.linux.org.uk/pub/lisp/cmucl/release/$VERSION/$SOURCE
+   SOURCE2_URL[0]=ftp://ftp.averillpark.net/cmucl/release/$VERSION/$SOURCE2
+   SOURCE2_URL[1]=ftp://ftp.linux.org.uk/pub/lisp/cmucl/release/$VERSION/$SOURCE2
+        WEB_SITE=http://www.cons.org/cmucl
+         ENTERED=20020730
+         UPDATED=20020730
+	  MD5[0]=ff65ca1c3a409bc99455d53bf6637678
+	  MD5[1]=285c1102093b96e6bf3f9adf47b96ae7
+      LICENSE[0]=PD
+          REJECT="is non source"
+      MAINTAINER=wrunt@hotmail.com
+           SHORT="CMUCL is a high-performance, free Common Lisp implementation"
+cat << EOF
+CMUCL is a free implementation of the Common Lisp programming language
+which runs on most major Unix platforms. It mainly conforms to the ANSI
+Common Lisp standard. Here is a summary of its main features:
+
+     a sophisticated native-code compiler which is capable
+     of powerful type inferences, and generates code competitive in speed
+     with C compilers.
+
+     generational garbage collection and multiprocessing
+     capability on the x86 ports.
+
+     a foreign function interface which allows interfacing with C code and
+     system libraries, including shared libraries on most platforms, and
+     direct access to Unix system calls.
+
+     support for interprocess communication and remote procedure
+     calls.
+
+     an implementation of CLOS, the Common Lisp Object System, which
+     includes multimethods and a metaobject protocol.
+     
+     a graphical source-level debugger using a Motif interface, and a
+     code profiler.
+
+     an interface to the X11 Window System (CLX), and a sophisticated
+     graphical widget library (Garnet).
+
+     programmer-extensible input and output streams.
+
+     an Emacs-like editor implemented in Common Lisp.
+
+     public domain: free, with full source code and no
+     strings attached (and no warranty). Like the GNU/ Linux and *BSD
+     operating systems, CMUCL is maintained and improved by a team of
+     volunteers collaborating over the Internet.
+EOF

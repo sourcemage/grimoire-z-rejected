@@ -1,0 +1,20 @@
+2004-10-18 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Depends on rpmunpack (removed from basesystem)
+
+2004-08-05 Eric Schabell <eschabell@sourcemage.org>
+	* POST_INSTALL: branched to FINAL for api2.
+	* INSTALL, FINAL: added for api2.
+	* BUILD, DETAILS: modified for api2.
+	* CONFIGURE: modified to use grimoire reject messages.
+	
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Move rejected query to CONFIGURE  (Bug #3594)
+	* HISTORY: Formatted to Guru Handbook
+
+2002-11-24 Geoffrey Derber <ashaman@sourcemage.org>
+	* DETAILS: Added MD5 field
+	* HISTORY: Added
+
+2002-11-12 Geoffrey Derber <ashaman@sourcemage.org>
+	* Added to grimoire
+

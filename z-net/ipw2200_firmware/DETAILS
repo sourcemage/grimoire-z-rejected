@@ -1,0 +1,17 @@
+           SPELL=ipw2200_firmware  
+         VERSION=2.2
+       BUILD_API=2
+          SOURCE=ipw2200-fw-$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ipw2200-fw
+          MD5[0]=ac17587128bf703806f71a8bbae5c0a0 
+   SOURCE_URL[0]=
+        WEB_SITE=http://ipw2200.sf.net/
+         ENTERED=20040815
+         UPDATED=20041201
+      LICENCE[0]=http://ipw2200.sourceforge.net/firmware.php
+          REJECT="has licensing issues you must download it from the website"
+         ARCHIVE="off"
+           SHORT="Intel ProWireless 2200 kernel drivers"
+cat << EOF
+This is the Intel Pro Wireless 2200 driver found on the website ipw2200.sf.net if you want more info than that check out the web site
+EOF

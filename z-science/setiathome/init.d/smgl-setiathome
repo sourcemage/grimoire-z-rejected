@@ -1,0 +1,35 @@
+#!/bin/sh
+
+PROGRAM=/usr/bin/setiathome
+RUNLEVEL=3
+NEEDS="+local_fs +network"
+
+. /etc/init.d/smgl_init
+. /etc/sysconfig/setiathome
+
+USERARGS="-nice $NICE -graphics"
+
+start(){
+print_status "starting ..."
+$PROGRAM $USERARGS >& /dev/null
+evaluate_retval
+}
+
+stop(){
+kill $(pidof setiathome)
+evaluate_retval 
+}
+
+restart(){
+stop 
+start
+}
+
+status(){
+if pidof setiathome >& /dev/null ;
+then print_status $(pidof setiathome) &&
+     evaluate_retval
+else print_status "setiathome is not running"
+fi
+}
+

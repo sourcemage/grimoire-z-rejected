@@ -1,0 +1,23 @@
+           SPELL=vpnclient   
+         VERSION=4.6.00.0045-k9
+          SOURCE=$SPELL-linux-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]= 
+          MD5[0]=e50c36374310f58722abb32fb6747296  
+	WEB_SITE=http://www.cisco.com/
+         ENTERED=20040920
+         UPDATED=20040920
+      LICENCE[0]=http://www.cisco.com/
+          REJECT="has licensing issues and you must register to obtain tarball"
+         ARCHIVE="off"
+      MAINTAINER="dmlb2000@excite.com"
+           SHORT="Cisco's VPN Client."
+cat << EOF
+This is Cisco's VPN Client. To obtain the sources you have to get 
+an account with cisco and agree to thier licence.
+
+Don't forget to download sources to /var/spool/sorcery before 
+casting, from :
+
+http://cco.cisco.com/en/US/products/sw/secursw/ps2308/index.html
+EOF

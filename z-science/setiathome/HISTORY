@@ -1,0 +1,72 @@
+2004-12-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Use renamed variables and the proper VERSION from PREPARE
+	* PREPARE: Use local when needed and prepend variables with SETI_
+	* DEPENDS: Optionally depends on X11-LIBS for xsetiathome
+
+2004-08-22 Eric Schabell <eschabell@sourcemage.org>
+	* PREPARE: cleaned out SPELL_CONFIG, using persistent_add now.
+
+2004-08-07 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: added REJECT line, removed BUILD_API=2.
+	* CONFIGURE: modified to use grimoire reject message.
+
+2004-07-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: BUILD_API=2
+	  Removed MAINTAINER
+	  Shortened SHORT
+	* BUILD: Converted to BUILD_API 2
+	* INSTALL: Added
+	  Add info for setiatwork website
+	* POST_INSTALL: Renamed to FINAL
+	  Removed
+	* HISTORY: Formatted to Guru Handbook
+	
+2004-02-26 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD: Remove z-rejected query
+	* CONFIGURE: Add z-rejected query
+
+2003-10-10 hgg <hgreig@bigpond.net.au>
+	* BUILD,seti-setup: add for easier first time configuration
+	* init.d/{setiathome.conf,smgl-setiathome}: add configurable nice value
+	  and extra bells and whistles to the init script, it now directs to
+	  /dev/null also as i noticed on my server it used the whole console
+	  buffer
+	* DETAILS: update UPDATED for new script
+	* PRE_REMOVE,POST_INSTALL: removed /updated to not try to start this
+	  service after installation
+
+2003-09-09 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* DETAILS: Touched the UPDATED field to force install of the simpleinit
+	  script (bug #3907)
+
+2003-05-15 Seth Woolley <seth@tautology.org>
+	* DETAILS: Modified PRE_BUILD to add unpack for SOURCE
+
+2003-05-14 Seth Woolley <seth@tautology.org>
+	* DETAILS: Modified DETAILS to fix md5 for SOURCE.
+
+2003-04-19 Seth Woolley <seth@tautology.org>
+	* DETAILS: Modified DETAILS to fix md5 for SOURCE.
+
+2003-04-18 Seth Woolley <seth@tautology.org>
+	* DETAILS: Modified DETAILS to fix md5 for SOURCE[0].
+
+2003-04-01 Eric Sandall <eric@sandall.us>
+	* POST_INSTALL: Mage SETI@Home team. :)
+
+2003-03-31 Eric Sandall <eric@sandall.us>
+	* init.d/*: Added init script using sorcery's init.d installer
+	* PREPARE: Now asks if you want to reconfigure, so it no longer stops
+	  installs
+	* PREPARE: If you SPELL_CONFIG is found, defaults to i386
+
+2003-03-05 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD: Fixed Bug #2031
+	* setiathome,xsetiathome: Modified setiathome and xsetiathome to pass
+	  any variables sent to them to the actual binaries
+	* BUILD: Now only tries to install xsetiathome if it is included in the
+	  package, as some (SPARC) do not have an xsetiathome
+
+2002-09-19 Eric Sandall <eric@sandall.us>
+	* ALL: Created spell
+

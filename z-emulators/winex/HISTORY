@@ -1,0 +1,71 @@
+2004-10-12 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: removed, was just default build anyway.
+	* INSTALL, CONFIGURE: cleaned up config_query_options and started
+	  to investigate for bug #7502.
+
+2004-08-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: SDL renamed to sdl
+	 Cleaned up TABs and spaces
+
+2004-08-02 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: seems only HEAD is avail for downloading... so modified version.
+	* INSTALL: added, provides api2.
+	* BUILD: modified for api2.
+	* WIP: removed, useless.
+	* PREPARE: commented out but left for when versions are allowed again.
+	* CONFIGURE: adjusted to use griomires rejected messages.
+
+2004-07-18 Eric Schabell <eschabell@sourcemage.org>
+	* winex.patch, BUILD: removed usage of old patch, need someone to 
+	  test the results as it builds fine here on i686, bug #4757.
+
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
+
+2003-07-06 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* DETAILS: Updated to use transgamming CVS
+	* PREPARE: Added a "FORCE_DOWNLOAD=YES" if using the cvs HEAD version
+	* HISTORY: Still has to be updated to new format
+
+2003-07-09 Geoffrey Derber <ashaman@flyingtemple.com>
+	* Re-wrote the spell again.
+	  This should work better along side the
+	  normal wine.
+	  Now installs to /usr/lib/transgaming/
+	  Version bump to 3.1 / CVS Head
+	  Support for pulling either the latest
+	  release branch or the main branch from
+	  cvs
+	  Supports more configure options.
+	  Added Unattend_Safe ability.
+	* TODO:
+	  1. Modify the winex-$VERSION/tools/winex shell
+	  script more efficently for general usage.
+	  2. Attempt to modify libcvs_url to allow MD5s
+	  on the release branch (should never change), then
+	  add the MD5 for the release branch.
+
+2003-07-06 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* Updated to winex 3-1
+
+2002-11-16 Geoffrey Derber <ashaman@sourcemage.org>
+	* Completely rewrote the spell to use sorcery's
+	  cvs downloading, and tarring.
+	* Removed DEPENDS because having a 'depends cvs' was
+	  only necissary when the spell required cvs for
+	  downloading. It was done to ensure that people
+	  could download winex, since sorcery does this, and
+	  sorcery depends one cvs, this is redundancy.
+
+2002-10-25 Geoffrey Derber <ashaman@sourcemage.org>
+	* Realized HISTORY File was missing.
+	  Fixed a PRE_BUILD bug.
+	  Updated the VERSION field to force a rebuild
+	  so that it references the updated glibc.
+
+2002-06-20 Geoffrey Derber <ashaman@sourcemage.org>
+	* Added to the grimoire
+
+2002-04-12 Geoffrey Derber <ashaman@sourcemage.org>
+	* Created original spell
+

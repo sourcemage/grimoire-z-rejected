@@ -1,0 +1,15 @@
+           SPELL=flash
+         VERSION=7.0r25
+          SOURCE=install_flash_player_7_linux.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux
+   SOURCE_URL[0]=http://fpdownload.macromedia.com/get/shockwave/flash/english/linux/$VERSION/$SOURCE
+          MD5[0]=3df1d5ecee6ca53b83372aa9023e15dd
+        WEB_SITE=http://www.macromedia.com
+         ENTERED=20020319
+         UPDATED=20040529
+      LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
+          REJECT="is non-source and has licensing issues"
+           SHORT="Macromedia Flash Plugin v7 for Web Browsers."
+cat << EOF
+Macromedia Flash Plugin version 7 for web browsers.
+EOF

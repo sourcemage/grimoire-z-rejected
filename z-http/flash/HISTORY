@@ -1,0 +1,96 @@
+2005-01-19 Eric Sandall <eric@sandall.us>
+	* CONFIGURE: Uppercase firefox when printing it
+	  Use spell_ok instead of spell_installed
+
+2004-10-22 Eric Sandall <eric@sandall.us>
+	* INSTALL: Use generic /usr/lib/firefox for firefox plug-in
+
+2004-08-22 Eric Schabell <eschabell@sourcemage.org>
+	* CONFIGURE: updated to remove SPELL_CONFIG usage, now
+	  using persistent_save.
+
+2004-08-08 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD, DETAILS: modified for api2.
+	* INSTALL: added for api2.
+	* CONFIGURE: modified to use grimoire rejected message.
+	* HISTORY: cleanup.
+
+2004-07-03 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* PREPARE: corrected a small syntax error
+	* BUILD: added versioned support for firefox and tests
+	  for plugin directory existency.
+
+2004-06-21 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* DETAILS: fixed bug 7025
+
+2004-05-30 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* all: updated as per bug 6932 (thank Remy!)
+
+2004-05-29 Remy Soete <doobie@lavache.com>
+	* DETAILS: updated to version 7.0r25
+	  Updated SOURCE* and MD5
+	* CONFIGURE, BUILD: Added support for firefox. Modified 
+	  support to Konqueror
+
+2004-05-20 Eric Sandall <eric@sandall.us>
+	* DETAILS: md5sum changed again, removed MAINTAINER and
+	  removed TABs
+
+2004-05-03 Seth Woolley <seth@tautology.org>
+	* DETAILS: to fix md5 for SOURCE.
+
+2003-11-03 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Changed requires to depends, uppercase provides
+	* HISTORY: Formatted to Guru Handbook
+
+2003-09-20 Eric Sandall <eric@sandall.us>
+	* Now installs for mozilla-nightly and Firebird as well
+
+2003-09-19 Eric Sandall <eric@sandall.us>
+	* CONFLICTS: Added conflicts against swift-flash
+
+2003-08-22 Geoffrey Derber <gderber@sourcemage.org>
+	* CONFIGURE,PRE_BUILD: moved z-rejected warning messages
+	  to CONFIGURE from PRE_BUILD
+
+2003-06-25 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: Fixed small text error, in Konqueror
+	  section it was written as Mozilla.
+
+2003-06-21 Geoffrey Derber <ashaman@flyingtemple.com>
+	* DETAILS: Updated to version 6.0r79
+	* BUILD: re-wrote and
+	* CONFIGURE: Added so as to not pause in updates
+	  added UNATTEND_SAFE option
+
+2003-01-23 Geoffrey Derber <gderber@sourcemage.org>
+	* DEPENDS: Updated dependencies to require a
+	  graphical_web_browser
+
+2002-12-14 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: Updated to version 6.0r69.
+	* Added some minor bug fixes.
+
+2002-12-02 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: Updated from broken 5.0r51 to working
+	  6.0 beta released on 20021120
+
+2002-09-14 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: Updated to version 5.0r51
+
+2002-09-03 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: Updated to version 5.0r50
+	  added md5 and license fields
+	* PRE_BUILD: Changed
+
+2002-04-30 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: Updated to version 5.0r48
+
+2002-04-23 Eric Schabell <eric@schabell.com>
+	* PRE_BUILD: Changed so that it does not just
+	  exit by default, now it will execute if you
+	  answer yes to the questions (thanks Yoav).
+
+2002-03-19 Eric Schabell <eric@schabell.com>
+	* HISTORY: Added. The reason for rejection
+	  is due to non-source component.

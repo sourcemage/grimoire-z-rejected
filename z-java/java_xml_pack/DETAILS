@@ -1,0 +1,37 @@
+           SPELL=java_xml_pack
+         VERSION=summer-02_01
+     PKG_VERSION=summer02_01
+          SOURCE=${SPELL}-${PKG_VERSION}.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
+   SOURCE_URL[0]=
+          MD5[0]=08e50d14c834ddabef0b8d99282cb99c
+      LICENSE[0]=SCSL
+          REJECT="is non-source"
+        WEB_SITE=http://java.sun.com/xml/downloads/javaxmlpack.html
+         ENTERED=20030326
+         UPDATED=20030326
+         ARCHIVE=off
+      MAINTAINER=vydra@fria.fri.utc.sk
+           SHORT="The Java XML Pack is an all-in-one download of Java technologies for XML."
+cat << EOF
+The JavaTM XML Pack is an all-in-one download of Java technologies for XML. Bundling 
+the Java XML technologies together into a Java XML Pack ensures developers of a quick
+and easy development cycle for integration of XML into the Java platform. The Java XML
+Pack includes current, publicly-available releases of Java APIs and Architectures for 
+XML.
+
+The Java XML Pack Summer 02 Update Release includes the following:
+  * Java API for XML Messaging (JAXM) v1.1_01
+  * Java API for XML Processing (JAXP) v1.2_01
+  * Java API for XML Registries (JAXR) v1.0_02
+  * Java API for XML-based RPC (JAX-RPC) v1.0_01
+  * SOAP with Attachments API for Java (SAAJ) v1.1_02
+
+Don't forget to download sources :
+
+$SOURCE
+
+to /var/spool/sorcery before casting, from :
+
+$WEB_SITE
+EOF

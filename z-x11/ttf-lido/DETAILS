@@ -1,0 +1,24 @@
+           SPELL=ttf-lido
+         VERSION=1
+          SOURCE=LidoSTFCE_PC.zip
+         SOURCE2=LidoSTF_PC.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://lege.cz/typo/$SOURCE
+  SOURCE2_URL[1]=http://lege.cz/typo/$SOURCE2
+        WEB_SITE=http://www.stormtype.com/
+          MD5[0]='1f1d7de69cb86fbdc2637d9e5f8d521e'
+          MD5[1]='e513903d496a9774e4145a9369315e46'
+      LICENSE[0]=http://www.stormtype.com/license.html
+         ENTERED=20040426
+         UPDATED=20040426
+          REJECT="is free for non-commercial use only"
+           SHORT="LIDO STF fonts are a set of free high quality fonts"
+cat << EOF
+LIDO STF is probably the first freeware font useful in text
+setting, which comes in the number of six styles. Here is
+a story of Lido STF - http://www.stormtype.com/lido.html
+This font family is freeware. Storm Type Foundry (STF)
+provides it free of charge for non-commercial use in
+households, in education, for private scholars, et al
+with maximum of 5 site installs.
+EOF

@@ -1,0 +1,4 @@
+. $SCRIPT_DIRECTORY/../java-functions
+  
+extract_sun_src   ${SPELL} ${SPELL}-${VERSION}  $SOURCE_DIRECTORY	&&
+register_sun_jar  ${SPELL}-${VERSION}/jta.jar  jta.jar

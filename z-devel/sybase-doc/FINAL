@@ -1,0 +1,4 @@
+# need to clean up the source stuff.
+rm -rf $BUILD_DIRECTORY/opt
+
+message  "\n${MESSAGE_COLOR} $SPELL was installed to /opt/sybase.${DEFAULT_COLOR}\n"

@@ -1,0 +1,4 @@
+default_install  &&
+
+message "\n${MESSAGE_COLOR}Type \"nt\" to run Download Accelerator for X"  \
+				"${DEFAULT_COLOR}\n"

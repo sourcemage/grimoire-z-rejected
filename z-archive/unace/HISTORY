@@ -1,0 +1,17 @@
+2004-08-03 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: updated for api2.
+	* CONFIGURE: modified to use grimoire rejected messages.
+	* INSTALL: added for api2.
+
+2004-05-20 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD, CONFIGURE: Removed z-rejected code from PRE_BUILD to CONFIGURE
+	  to query for z-rejected status at configure time.
+	* DETAILS: Changed SOURCE_URL[0] to use download.winace.com  (Bug #6886)
+	  Removed SOURCE_URL[1] (duplicate of SOURCE_URL[0])
+	  Removed SOURCE_URL[2] and SOURCE_URL[3] as they no longer work
+	  Removed MAINTAINER
+	* PRE_BUILD: Removed, no longer needed
+
+2003-06-08 Christian Mertes <c_mertes@bigfoot.de>
+	* Created this spell.
+

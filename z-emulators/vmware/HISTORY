@@ -1,0 +1,12 @@
+2004-10-14 Eric Schabell <eschabell@sourcemage.org>
+	* ALL: spell added to z-rejected/z-emulators.
+	* FINAL: added to check and create as needed the udev device
+	  nodes for vmware startup scripts.
+	* CONFIGURE: added for rejected messaging.
+
+2004-10-13 Neuron <vlmarek@volny.cz>
+	* init.d: Updated vmware init.d script so that it should work 
+	  with simpleinit.
+
+2004-10-12 Neuron <vlmarek@volny.cz>
+	* ALL: created this spell.

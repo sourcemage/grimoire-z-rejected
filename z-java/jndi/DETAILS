@@ -1,0 +1,35 @@
+           SPELL=jndi
+         VERSION=1_2_1
+          SOURCE=${SPELL}-${VERSION}.zip
+	       SOURCE2=ldap-1_2_4.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
+   SOURCE_URL[0]=
+          MD5[0]=53b63aa68b14cda5722c56d081f56d06
+      LICENSE[0]=SCSL
+  SOURCE2_URL[0]=
+          MD5[1]=4929a0c31f0564f6e11a7f80666f1b9e
+      LICENSE[1]=SCSL
+          REJECT="is non-source"
+        WEB_SITE=http://java.sun.com/products/jndi/
+         ENTERED=20030326
+         UPDATED=20030326
+      MAINTAINER=vydra@fria.fri.utc.sk
+           SHORT="The Java The Naming and Directory Interface package." 
+cat << EOF
+The Java Naming and Directory Interface (JNDI) is a standard extension to
+the JavaTM platform, providing Java technology-enabled applications with a
+unified interface to multiple naming and directory services in the 
+enterprise. As part of the Java Enterprise API set, JNDI enables seamless 
+connectivity to heterogeneous enterprise naming and directory services. 
+Developers can now build powerful and portable directory-enabled 
+applications using this industry standard.
+
+Don't forget to download sources :
+
+jndi-1_2_1.zip
+ldap-1_2_4.zip
+
+to /var/spool/sorcery before casting, from :
+
+http://java.sun.com/products/jndi/
+EOF

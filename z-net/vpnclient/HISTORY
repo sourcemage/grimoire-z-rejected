@@ -1,0 +1,12 @@
+2004-12-07 David Brown <dmlb2000@excite.com>
+	* init.d/vpnclient_init: made the initscript more smglized
+
+2004-11-10 David Brown <dmlb2000@excite.com>
+	* DETAILS, INSTALL: updated to 4.6.00.0045-k9 and modified the install a little
+
+2004-09-22 Eric Schabell <eschabell@sourcemage.org>
+	* ALL: added spell, after adding warning to obtain sources.
+
+2004-09-20 David Brown <dmlb2000@excite.com>
+	* ALL: created spell.
+

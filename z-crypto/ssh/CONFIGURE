@@ -1,0 +1,9 @@
+config_query  SSH1  "Do you want ssh1 compatibility?"  y  &&
+
+if  spell_ok  xfree86;  then
+  config_query  XFREE86  "Do you want to enable XFree86 options?"  y
+fi  &&
+
+# Standard rejected warnings.
+#
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG

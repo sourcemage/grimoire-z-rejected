@@ -1,0 +1,16 @@
+           SPELL=downloaderx
+         VERSION=2.5.0rc2
+          SOURCE=d4x-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/d4x-$VERSION
+   SOURCE_URL[0]=http://www.krasu.ru/soft/chuchelo/files/$SOURCE
+        WEB_SITE=http://www.krasu.ru/soft/chuchelo/
+         ENTERED=20020201
+         UPDATED=20040201
+	  MD5[0]=61eac8f1c8628ce329dd4833805a4e2c
+      LICENSE[0]=UNKNOWN
+	  REJECT="has licensing issues"
+      MAINTAINER=sandalle@yahoo.com
+           SHORT='Download Accelerator for X'
+cat << EOF
+This program is a linux graphics program for downloading files through the internet which supports both ftp and http (not completed yet but curent realisation is quite enough for downloading) protocols. Program also supports RESUMING if server side supports it too. It is like kget for linux and ReGet or GetRight for Bill Gates' OS.
+EOF

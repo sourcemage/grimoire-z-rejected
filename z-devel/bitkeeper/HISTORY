@@ -1,0 +1,6 @@
+2004-11-22 Eric Sandall <eric@sandall.us>
+	* CONFIGURE: Changed `exit` to `return 1`  (Bug #7649)
+
+2004-09-30 Ladislav Hagara <hgr@vabo.cz>
+	* ALL: created this spell, version 3.2.3
+

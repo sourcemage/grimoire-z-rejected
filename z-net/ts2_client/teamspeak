@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# TeamSpeak wrapper script.
+#
+cd /usr/share/ts2_client
+./TeamSpeak $@
+cd -

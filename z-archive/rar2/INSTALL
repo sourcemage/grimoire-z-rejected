@@ -1,0 +1,4 @@
+cp -ruv rar /usr/bin/               &&
+cp -ruv unrar /usr/bin/             &&
+mkdir -p /usr/share/doc/rar2        &&
+cp -ruv *.txt /usr/share/doc/rar2/

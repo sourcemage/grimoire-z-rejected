@@ -1,0 +1,20 @@
+            SPELL=ssh
+         VERSION=3.2.5
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.ssh.fi/pub/$SPELL/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.keystealth.org/pub/$SPELL/$SOURCE
+          MD5[0]=f9ca5ba34c7c0e8b79307cf2e15cd212
+        WEB_SITE=http://www.ssh.com
+         ENTERED=20020125
+         UPDATED=20030312
+      LICENSE[0]=http://www.ssh.com/products/ssh/ssh_license_agreement.cfm
+          REJECT="has licensing issues"
+           SHORT="Secure remote admin suite"
+cat << EOF
+sshd2 - secure remote admin suite
+Provides remote shell, sftp, and scp using encrypted protocols.
+If you're wondering why not Openssh, the reason is SSH has the ability
+to be an Anonymous SFTP server or SFTP server (ie disallow access to shell).
+NOTE: There is a restrictive license (ie no free commercial use).
+EOF

@@ -1,0 +1,4 @@
+if  [  -x  /etc/init.d/apache.sh  ]
+then
+	telinit run apache restart
+fi

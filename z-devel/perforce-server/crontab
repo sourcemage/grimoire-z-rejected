@@ -1,0 +1,5 @@
+#
+# Verify and backup the Perforce repository daily
+#
+05 03 * * * /home/perforce/scripts/backup.sh
+

@@ -1,0 +1,16 @@
+2004-08-07 Eric Schabell <eschabell@sourcemage.org>
+	* BUILD: updated for api2.
+	* CONFIGURE: updated to use grimoire rejected message.
+	* INSTALL, PRE_BUILD: added for api2.
+
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
+	* HISTORY: Formatted to Guru Handbook
+
+2002-11-24 Geoffrey Derber <ashaman@sourcemage.org>
+	* PRE_BUILD: Modified the prebuild unpack line to pass
+	  the md5sum argument to unpack
+
+2002-06-05 Zoran Constantinecu <zoran@idi.ntnu.no>
+	* created spell
+

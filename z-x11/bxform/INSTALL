@@ -1,0 +1,2 @@
+sedit "s:BIN_DIR=/usr/local:BIN_DIR=/usr:"  mkconfig.h	&&
+make  install

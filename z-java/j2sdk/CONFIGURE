@@ -1,0 +1,38 @@
+# download java sources warning.
+#
+source $SCRIPT_DIRECTORY/../JAVA_WARNING &&
+
+# Standard rejected warnings.
+#
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG &&
+
+persistent_add CONFIGURED BOOTSTRAP CERT SOURCE5 &&
+
+if spell_ok j2sdk-bin;  then
+  export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
+fi                                                   &&
+
+if ! grep -q CONFIGURED $SPELL_CONFIG
+then
+  if query "Do you have a certificate from a certificate authority?\n\"You will also need to \
+download j2sdk-sec-1_4_2-src-scsl.zip from SUN\"" n
+  then
+    CERT=yes
+    SOURCE5=j2sdk-sec-${VERSION}-src-scsl.zip
+  fi  &&
+
+  if  [ $JAVA_HOME ] && [ -x $JAVA_HOME/bin/javac ] && query "${MESSAGE_COLOR}I've found \"java\" at \
+$JAVA_HOME\n(If compilation fails due to this bootstrap compiler \n then use cast -r and choose 'n' to use \
+SUN's binary)\n\nDo you want to use \"java\" to bootstrap j2sdk compilation ? \nIf you answer 'n',I'll \
+use SUN's binary.${DEFAULT_COLOR}"  y;
+  then
+    BOOTSTRAP=system 
+  else
+    BOOTSTRAP=spell 
+  fi
+ 
+  CONFIGURED=yes  
+  BOOTSTRAP=$BOOTSTRAP 
+
+fi
+

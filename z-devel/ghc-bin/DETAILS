@@ -1,0 +1,16 @@
+           SPELL=ghc-bin
+         VERSION=6.2.1
+          SOURCE=ghc-$VERSION-i386-unknown-linux.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ghc-$VERSION
+   SOURCE_URL[0]=http://www.haskell.org/ghc/dist/6.2.1/ghc-$VERSION-i386-unknown-linux.tar.bz2
+          MD5[0]=917fd7032afebcac479066cd9d17f093
+      LICENSE[0]="The Glasgow Haskell Compiler License"
+        WEB_SITE=http://www.haskell.org/ghc
+          REJECT="is binary install and has license issues"
+         ENTERED=20020325
+         UPDATED=20020325
+           SHORT="The Glasgow Haskell compiler"
+cat << EOF
+GHC is a state-of-the-art, open source, compiler and interactive 
+environment for the functional language Haskell.
+EOF

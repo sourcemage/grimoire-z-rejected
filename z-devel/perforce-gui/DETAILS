@@ -1,0 +1,22 @@
+           SPELL=perforce-gui
+   VERSION_MAJOR=2004.2
+   VERSION_SHORT=04.2
+   VERSION_MINOR=73359
+       BUILD_API=2
+         VERSION=$VERSION_MAJOR.$VERSION_MINOR
+          SOURCE=p4v.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION_MAJOR
+   SOURCE_URL[0]=http://www.perforce.com/downloads/perforce/r${VERSION_SHORT}/bin.linux24x86/$SOURCE
+        WEB_SITE=http://www.perforce.com/
+         ENTERED=20030929
+         UPDATED=20050117
+	  MD5[0]=46c53f6297e97d7bdfc9745c34959d3f
+      LICENSE[0]=http://www.perforce.com/perforce/price.html
+     GATHER_DOCS=off
+	  REJECT="is non-source and has licensing issues"
+           SHORT="Perforce command line client"
+      MAINTAINER=ashaman@flyingtemple.com
+cat << EOF
+Perforce is a fast, robust SCM system that runs on over 50 platforms. This
+package installs the Qt based Linux GUI (p4v)
+EOF

@@ -1,0 +1,19 @@
+           SPELL=unace
+         VERSION=2.2
+          SOURCE=lin${SPELL}22.tgz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
+   SOURCE_URL[0]=http://download.maxeline.com/winace/${SOURCE}
+   SOURCE_URL[1]=http://hem.passagen.se/vanlid/winace/${SOURCE}
+   SOURCE_URL[2]=http://w1.314.telia.com/~u31412016/dload/${SOURCE}
+   SOURCE_URL[3]=http://www.shedz.com/winace/${SOURCE}
+   SOURCE_URL[4]=http://ace.imptech.net/${SOURCE}
+          MD5[0]=fe1b07983a8d22b9e26d0b81b2153798
+        WEB_SITE=http://www.winace.com/
+      LICENSE[0]="freely distributable"
+         ENTERED=20030608
+         UPDATED=20030608
+          REJECT="is non-source and has licensing issues"
+           SHORT="ACE unarchiver"
+cat << EOF
+Uncompresses WinACE archives.
+EOF

@@ -1,0 +1,19 @@
+2002-08-05 Eric Schabell <eschabell@sourcemage.org>
+	* INSTALL: Added for api2.
+	* CONFIGURE: updated to use grmoire rejected message.
+	* BUILD: updated for api2.
+
+2003-08-22 Geoffrey Derber <gderber@sourcemage.org>
+	* moved z-rejected warning messages
+	  to CONFIGURE from PRE_BUILD
+
+2002-04-23 Eric Schabell <eschabell@sourcemage.org>
+	* Changed PRE_BUILD so that it does not just
+	  exit by default, now it will execute if you
+	  answer yes to the questions (thanks Yoav).
+
+2002-03-19 Eric Schabell <eschabell@sourcemage.org>
+	* Added HISTORY file. The reason for rejection
+	  is that the licence is free for private usage
+	  but has commercial licence for profit projects.
+

@@ -1,0 +1,2 @@
+conflicts  gcl    &&
+conflicts  clisp

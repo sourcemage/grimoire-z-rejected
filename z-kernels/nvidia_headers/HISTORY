@@ -1,0 +1,40 @@
+2004-08-12 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 1.0-6111-pkg1
+
+2004-07-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: Renamed to nvidia_headers
+	  Removed TAB
+	  Shortened SHORT
+	  Changed LICENSE to LICENSE[0]
+	* CONFLICTS: Conflicts with NVIDIA_headers
+	* DEPENDS: Depends on nvidia_driver
+	* TRIGGERS: Recompile on cast of nvidia_driver
+
+2004-02-26 hgg <hgreig@bigpond.net.au>
+	* BUILD,POST_REMOVE,PRE_BUILD: nvidia now ships an extra header
+	* DETAILS: bump version to 1.0-5336-pkg1
+
+2003-07-29 Wolfgang Scheicher <worf@sbox.tu-graz.ac.at>
+	* DETAILS: Updated to 1.0-4496
+
+2003-07-26 hgg <hgreig@bigpond.net.au>
+	* Clean up
+
+2003-06-23 hgg <hgreig@bigpond.net.au>
+	* ARCHIVE=off fix is in bugzilla under bug #1068. reverting all changes from 13314/5
+	  Some installs will have a cache so added a PREPARE file to remove bad cache 
+	  before any problems occur
+
+2003-06-15 Eric Sandall <eric@sandall.us>
+	* DETAILS: Some cleanup
+
+2003-06-06 hgg <hgreig@bigpond.net.au>
+	* altered PRE_BUILD and POST_REMOVE 
+	  in case cast -c is used.
+
+2003-06-04 Seth Woolley <seth@tautology.org>
+	* no need for SOURCE as it's never used.
+
+2003-05-28 hgg <hgreig@bigpond.net.au>
+	* Created this spell
+

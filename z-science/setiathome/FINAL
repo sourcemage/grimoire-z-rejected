@@ -1,0 +1,6 @@
+echo  "Don't forget to read up on joining our SETI@Home Team"
+echo  "Read more about it at /usr/doc/${SPELL}/SourceMageTeam"
+echo  "You wish to join us <sandalle waves his hand>"
+
+echo  -e "\nTo run setiathome for the first time use seti-setup and follow the instructions\n"
+echo "You can change the default 'nice' value in /etc/sysconfig/setiathome"

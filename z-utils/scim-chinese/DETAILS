@@ -1,0 +1,16 @@
+           SPELL=scim-chinese
+         VERSION=0.2.5-1ul1
+          SOURCE=$SPELL-$VERSION.i386.rpm
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=http://ns.turbolinux.com.cn/~suzhe/scim/
+   SOURCE_URL[0]=$WEB_SITE/$SPELL/$SOURCE
+          MD5[0]=6dfc795ebae952ae53264a86e08cea0f
+      LICENSE[0]=unknown
+         ENTERED=20030912
+         UPDATED=20030912
+      MAINTAINER=jimmy@yen.tp
+	  REJECT="has licensing issues"
+           SHORT="Smart Chinese Pinyin Input Method for SCIM"
+cat << EOF
+This package contains Smart Chinese Pinyin Input Method, a non-free module for SCIM.
+EOF

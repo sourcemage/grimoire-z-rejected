@@ -1,0 +1,16 @@
+message "\n${PROBLEM_COLOR} Currently only able to provide cvs development version as\n"  \
+        "transgaming.org cvs is only allowing a checkout of this branch..."  \
+        "${DEFAULT_COLOR}\n"
+
+# Standard rejected warnings.
+#
+source $SCRIPT_DIRECTORY/../../REJECTED_MSG
+
+config_query_option OPT	'Compile in all debugging message?' n 	'--enable-debug'	'--disable-debug' 	
+config_query_option	OPT	'Compile in TRACE messages?' n 	'--enable-trace'	'--disable-trace' 	
+config_query_option	OPT	'Force usage of OpenGL even if the latter is thread-safe via pthread?' y '--enable-opengl '	'--disable-opengl' 	
+config_query_option	OPT	'Compile with OSmesa (currently incompatible with nVidia drivers)?' n '--enable-osmesa '	'--disable-osmesa' 	
+config_query_option	OPT	'Use X shared memory?' y 	'--enable-xshm'		'--disable-xshm' 	
+config_query_option	OPT	'Compile and run a test SDL test program?' n '--enable-sdltest'	'--disable-sdltest' 	
+
+

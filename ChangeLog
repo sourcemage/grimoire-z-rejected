@@ -1,0 +1,134 @@
+2005-01-23 Eric Sandall <eric@sandall.us>
+	* REJECTED_MSG: Renamed spell_installed to spell_ok
+	  Removed #!/bin/bash
+	* z-java/java-functions: Removed #!/bin/bash
+	  Renamed spell_installed to spell_ok
+
+2005-01-20 Neuron <vlmarek@volny.cz>
+	* libaccount, accounts, groups, FUNCTIONS: added libaccount from devel
+	  grimoire
+
+2004-12-05 Andrew Stitt <astitt@sourcemage.org>
+	* REJECTED_MSG: remove warning about improper handling of
+	  "rejected messages" now that stable sorcery correctly views
+	  CONFIGURE returning 1 as a failure.
+
+2004-10-15 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* z-graphics/glut: spell moved here from graphics-libs
+
+2004-10-14 Eric Schabell <z-rejected@sourcemage.org>
+	* z-http/apachetoolbox: version bump.
+	* z-mail/netqmail: patch applied for cleaner install config,
+	  bug #6767.
+	* z-emulators/vmware: added spell, bug #7514.
+
+2004-10-06 Eric Schabell <z-rejected@sourcemage.org>
+	* z-java/j2sdk{-bin}: spells now conflict with new jdk1.5-bin spell.
+	* z-java/jdk1.5-bin: new spell added.
+
+2004-09-24 Eric Schabell <z-rejected@sourcemage.org>
+	* z-net: created new section.
+	* z-net/{vpnclient|ts2_client|ts2_server}: added new spells.
+	* z-utils/skype: version bump 0_92_0_2.
+
+2004-09-22 Eric Schabell <z-rejected@sourcemage.org>
+	* z-editors/openoffice-bin: renamed spell to lower-case, modified
+	  so that install is non-gui, install is tracked and bumped v1.1.3rc.
+	* z-editors/OpenOffice-bin: deprecated.
+	* z-devel/ghc: new spell added (haskell compiler).
+	* z-http/firefox-bin: new spell added.
+
+2004-09-18 Eric Schabell <z-rejected@sourcemage.org>
+	* z-mail/netqmail: created new section z-mail for new spell
+	  netqmail, bug #6767.
+	* MAINTAINER: added at grimoire level, only holds generic guru
+	  address so never needs to be modified again. Removed all 
+		section MAINTAINER files, waste of space.
+
+2004-09-16 Eric Schabell <z-rejected@sourcemage.org>
+	* z-utils/skype: version bump 0_91_0_12.
+
+2004-08-26 Eric Schabell <z-rejected@sourcemage.org>
+	* REJECTED_MSG: updated to reflect that only stable sorcery
+	  is missing proper handling of reject messages.
+
+2004-08-24 Eric Schabell <z-rejected@sourcemage.org>
+	* z-http/opera: version bump to 7.54.
+	* z-java/j2sdk: fixed problem with version number in logs.
+
+2004-08-14 Eric Schabell <z-rejected@sourcemage.org>
+	* z-java/JAVA_WARNING: added for downloading source warning.
+	* z-java: updated all spells to use JAVA_WARNING.
+
+2004-08-11 Eric Schabell <z-rejected@sourcemage.org>
+	* z-editors/OpenOffice-bin: cleaned up PREPARE messages.
+
+2004-08-09 Eric Schabell <z-rejected@sourcemage.org>
+	* z-java: section api2 compliant and rejected msg.
+	* all-sections/API_BUILD: deleted to be added at grimoire
+	  level. Entire grimoire is api2 compliant!
+
+2004-08-08 Eric Schabell <z-rejected@sourcemage.org>
+	* z-http: section api2 compliant and rejected msg.
+
+2004-08-07 Eric Schabell <z-rejected@sourcemage.org>
+	* z-graphics: section api2 compliant and rejected msg.
+	* z-utils: section api2 compliant and rejected msg.
+	* z-utils/skype: user can now decide to use dynamic
+	  linked to QT or static versions via user query.
+	* z-x11: section api2 compliant and rejected msg.
+	* z-science: section api2 compliant and rejected msg.
+	* z-java/j2sdk{-bin}: api2 compliant and rejected msg.
+
+2004-08-05 Eric Schabell <z-rejected@sourcemage.org>
+	* z-devel: section api2 compliant and rejected msg.
+	* z-devel/perforce-client: minor version update Rev.
+	  P4/LINUX24X86/2003.2/56831 (2004/04/09).
+	* z-devel/perforce-server: updated md5 for p4d.
+	* z-doc: section api2 compliant and rejected msg.
+	* z-doc-libs: removed, spell integrated into z-doc.
+	* z-editors: section api2 compliant and rejected msg.
+	* z-ftp: section api2 compliant and rejected msg.
+	* z-video: section api2 compliant and rejected msg.
+	* z-windowmanagers: section api2 compliant and rejected msg.
+	* z-security: section api2 compliant and rejected msg.
+	* REJECTED_MSG: added small warning about sorcery failure 
+	  to handle queries correctly to prevent bug submissions.
+
+2004-08-03 Eric Schabell <z-rejected@sourcemage.org>
+	* z-archive: section completed for api2 and rejected msg.
+	* z-audio: section completed for api2 and rejected msg.
+	* z-crypto: section completed for api2 and rejected msg.
+	
+2004-08-02 Eric Schabell <z-rejected@sourcemage.org>
+	* z-emulator: section completed for api2 and rejected msg.
+
+2004-07-28 Eric Schabell <z-rejected@sourcemage.org>
+	* z-java/j2sdk-bin: clean-up, fixed bugs #7183, #7139.
+	* REJECTED_MSG: moved the sorcery lib rejected message here for
+	  better control. I am the only one using it so can be removed 
+	  from sorcery as often need to customize for individual spells.
+	  Note that I have moved from 'return 1' for errors to 'exit' as
+	  currently sourcery is not honoring our rejected responses. 
+		
+2004-07-07 Eric Schabell <z-rejected@sourcemage.org>
+	* MAINTAINER: updated to show transfer of guru-ship.
+
+2004-07-04 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* z-http/flash: Added firefox 0.9.1 support
+	* z-java/j2sdk: Cleaned a little the plugin install
+
+2004-06-24 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* z-utils/skype: Added
+	* z-editors/Openoffice-bin: Updated to 1.1.2
+
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* z-editors/OOodi2: Removed, replaced by OOodi
+
+2004-04-12 Eric Sandall <eric@sandall.us>
+	* z-java/jaf,jms,jmx,jdmk,jndi,java_xml_pack,javamail,jdbc-optional,jta:
+	Moved from java due to licensing
+
+2004-01-29 Eric Sandall <eric@sandall.us>
+	* Moved z-video/xvid to devel grimoire video-libs/xvid
+

@@ -1,0 +1,97 @@
+--- vmware-install.pl	2004-06-11 03:32:52.000000000 +0200
++++ vmware-install.pl	2004-10-13 08:32:12.935562032 +0200
+@@ -7,6 +7,8 @@
+ 
+ use strict;
+ 
++$| = 1;
++
+ # Constants
+ my $cInstallerFileName = 'vmware-install.pl';
+ my $cModuleUpdaterFileName = 'install.pl';
+@@ -1978,39 +1980,11 @@
+     return $initscriptsdir;
+   }
+ 
+-  # The "SuSE version >= 7.1" way
+-  $initdir = '/etc/init.d';
+-  if (check_answer_initdirpath($initdir, 'default') eq '') {
+-    # The "SuSE version < 7.1" way
+-    $initdir = '/sbin/init.d';
+-    if (check_answer_initdirpath($initdir, 'default') eq '') {
+-      # The "RedHat" way
+-      $initdir = '/etc/rc.d';
+-      if (check_answer_initdirpath($initdir, 'default') eq '') {
+-        # The "Debian" way
+-        $initdir = '/etc';
+-        if (check_answer_initdirpath($initdir, 'default') eq '') {
+-          $initdir = '';
+-        }
+-      }
+-    }
+-  }
+-  $answer = get_persistent_answer('What is the directory that contains the init'
+-                                  .' directories (rc0.d/ to rc6.d/)?'
+-                                  , 'INITDIR', 'initdirpath', $initdir);
+-
+-  # The usual way
+-  $initscriptsdir = $answer . '/init.d';
+-  if (check_answer_initscriptsdirpath($initscriptsdir, 'default') eq '') {
+-    # The "SuSE version >= 7.1" way
+-    $initscriptsdir = $answer;
+-    if (check_answer_initscriptsdirpath($initscriptsdir, 'default') eq '') {
+-      $initscriptsdir = '';
+-    }
+-  }
+-  $answer = get_persistent_answer('What is the directory that contains the init'
+-                                  .' scripts?', 'INITSCRIPTSDIR'
+-                                  , 'initscriptsdirpath', $initscriptsdir);
++  # The "Fake smgl" way
++  $initscriptsdir = $answer = $initdir = '/tmp/vmware_rc.d';
++  db_add_answer('INITDIR', $answer);
++  db_add_answer('INITSCRIPTSDIR', $answer);
++
+   return $answer;
+ }
+
+--- bin/vmware-config.pl	2004-06-11 03:32:54.000000000 +0200
++++ bin/vmware-config.pl	2004-10-13 08:37:01.403708208 +0200
+@@ -7,6 +7,8 @@
+ 
+ use strict;
+ 
++$| = 1;
++
+ # Use Config module to update VMware host-wide configuration file
+ # BEGINNING_OF_CONFIG_DOT_PM
+ #!/usr/bin/perl
+@@ -21,6 +23,7 @@
+ ###
+ 
+ use strict;
++$| = 1;
+ package VMware::Config;
+ 
+ my %PREF;
+@@ -1483,6 +1486,7 @@
+ #!/usr/bin/perl
+ 
+ use strict;
++$| = 1;
+ 
+ # Create a temporary directory
+ #
+--- installer/services.sh	2004-10-13 19:03:24.677182184 +0200
++++ installer/services.sh	2004-10-13 19:03:56.798299032 +0200
+@@ -22,6 +22,11 @@
+ # BEGINNING_OF_TMPDIR_DOT_SH
+ #!/bin/sh
+ 
++function echo ()
++{
++	builtin echo "$@"
++}
++
+ # Create a temporary directory
+ #
+ # They are a lot of small utility programs to create temporary files in a

@@ -1,0 +1,82 @@
+2005-01-19 Neuron <vlmarek@volny.cz>
+	* DETAILS: Fixed md5sums for p4web and p4.1
+
+2005-01-17 Tony Smith <tony@smee.org>
+	* DETAILS: Update to 2004.2/73359 patch release
+
+2005-01-17 Tony Smith <tony@smee.org>
+	* DETAILS: Update to 2004.2
+
+2004-08-05 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS, BUILD: modified for api2, version bump minor release.
+	* INSTALL, FINAL: added for api2.
+	* CONFIGURE: updated to use grimoire rejected message.
+	* POST_BUILD: branched to FINAL and removed.
+
+2004-06-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Fixed md5sums (binaries changed, verified with Tony)
+	Removed MAINTAINER
+	Removed TABs
+
+2004-05-21 Eric Sandall <eric@sandall.us>
+	* CONFIGURE: Added to query for rejected status
+
+2004-05-03 Seth Woolley <seth@tautology.org>
+	* DETAILS: to fix md5 for SOURCE2.
+
+2004-01-02 Tony Smith <tony@smee.org>
+	* Updated for version 2003.2
+
+2003-12-14 hgg <hgreig@bigpond.net.au>
+	* BUILD,p4.sh: now installs this file for setting of $P4CONFIG & P4EDITOR
+
+2003-09-29 Tony Smith <tony@smee.org>
+	* DETAILS: Updated for 2003.1 patch release
+
+2003-07-29 Seth Woolley <seth@tautology.org>
+	* POST_BUILD: needs a default_post_build reference
+
+2003-07-28 Tony Smith <tony@smee.org>
+	* DETAILS: Updated for 2003.1 release and included the man page in
+	  the package.
+
+2003-05-15 Seth Woolley <seth@tautology.org>
+	* PRE_BUILD: Added unpacks to PRE_BUILD for SOURCE,2
+
+2003-04-19 Seth Woolley <seth@tautology.org>
+	* DETAILS: Modified DETAILS to fix md5 for SOURCE2.
+	  Modified DETAILS to fix md5 for SOURCE.
+
+2003-02-27 Seth Woolley <seth@tautology.org>
+	* DETAILS: Fixed MD5s (will fix PRE_BUILD later)
+
+2003-02-17 Sergey Lipnevich <sergeyli@pisem.net>
+	* Added option not to collect documentation.
+
+2003-02-12 Tony Smith <tony@smee.org>
+	* DETAILS: Updated to 2002.2 again now that the build problems have
+	  been resolved and new builds have been posted.
+
+2003-01-30 Seth Woolley <seth@tautology.org>
+	* DETAILS: Modified DETAILS to correct MD5
+
+2003-01-29 Tony Smith <tony@smee.org>
+	* DETAILS: Reverted to 2002.1 due to glibc 2.3 compatibility issues
+	  with the current 2002.2 Linux builds.
+
+2003-01-06 Tony Smith <tony@smee.org>
+	* DETAILS: Updated to new release 2002.2
+	  Fixed typo that was causing p4web not to download properly
+	  Remove source cache files after build because the filenames
+	  don't contain the version so they were being erroneously
+	  re-used.
+
+2002-10-02 Tony Smith <tony@smee.org>
+	* DETAILS: Changed spell to use the Linux 2.4 builds as it is now one
+	  of Perforce's primary build platforms. Also updated version
+	  to include the build number so we can grab patch releases
+	  easily.
+
+2002-05-14 Tony Smith <tony@smee.org>
+	* First version
+

@@ -1,0 +1,30 @@
+2004-10-18 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Added "&&"
+
+2004-09-09 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS, BUILD: updated for v3.11.1, fixes bug #7036.
+
+2004-07-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: Renamed to ati_driver
+	  Added md5sum
+	* CONFLICTS: Conflicts with ATI_driver
+
+2004-05-03 Seth Woolley <seth@tautology.org>
+	* DETAILS: removed space from LICENSE
+
+2004-04-16 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* TRIGGERS: added trigger for xfree86-4.3 and xorg
+
+2004-03-15 Chris Dennis <Chris.Dennis@UAlberta.NET>
+	* DETAILS: Updated to 3.7.6
+
+2003-12-10 Eric Sandall <eric@sandall.us>
+	* DETAILS: Put quotes around the dual licenses
+	* HISTORY: Formatted to Guru Handbook
+
+2003-11-20 Chris Dennis <Chris.Dennis@UAlberta.NET>
+	* DETAILS: Updated to 3.2.8
+
+2003-09-10 Chris Dennis <Chris.Dennis@UAlberta.NET>
+	* Created this spell
+

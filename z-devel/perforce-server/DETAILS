@@ -1,0 +1,25 @@
+           SPELL=perforce-server
+   VERSION_MAJOR=2004.2
+   SHORT_VERSION=04.2
+     DOC_VERSION=042
+   VERSION_MINOR=73359
+         VERSION=$VERSION_MAJOR.$VERSION_MINOR
+          SOURCE=p4d
+	 SOURCE2=p4d.1
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SOURCE-$VERSION_MAJOR
+   SOURCE_URL[0]=http://www.perforce.com/downloads/perforce/r$SHORT_VERSION/bin.linux24x86/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.perforce.com/perforce/r$SHORT_VERSION/bin.linux24x86/$SOURCE
+  SOURCE2_URL[0]=http://www.perforce.com/perforce/doc.$DOC_VERSION/man/p4d.1
+        WEB_SITE=http://www.perforce.com
+         ENTERED=20020514
+         UPDATED=20050117
+	  MD5[0]='fddca3602ce86677f06291f74cf4c3ed'
+	  MD5[1]='20634f5da6363fb8cc51db6fcaf607ad'
+      LICENSE[0]=http://www.perforce.com/perforce/price.html
+      MAINTAINER=ashaman@flyingtemple.com
+	  REJECT="is non-source and has licensing issues"
+           SHORT="Perforce server"
+cat << EOF
+Perforce is a fast, reliable SCM system that runs on over 50 platforms. This
+package installs the Perforce server.
+EOF

@@ -1,0 +1,64 @@
+           SPELL=f-prot
+         VERSION=4.1.0
+          SOURCE=fp-linux-ws-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=ftp://ftp.f-prot.com/pub/linux/$SOURCE
+          MD5[0]=98b1a532829e9e0d375724175d4ff56d
+        WEB_SITE=http://www.f-prot.com
+         ENTERED=20020921
+         UPDATED=20030628
+      MAINTAINER=mlubrano@sourcemage.org
+      LICENSE[0]=http://www.f-prot.com/products/fplin.html
+	        REJECT="has licensing issues"
+           SHORT="F-Prot AntivirusTM For Linux"
+cat << EOF
+F-Prot AntivirusTM For Linux
+F-Prot Linux for Small Business
+
+Protect your data with the award-winning F-Prot AntivirusTM engine. 
+F-Prot Linux for Small Business features: OnDemand Scanner for command 
+line or shell scripts, with scheduled or manual scans of individual 
+files or entire file systems, malicious software detection and 
+disinfection. After each scan, a detailed report on positive virus 
+detections is displayed. Even unknown threats are detected with F-Prot's 
+heuristic forward-looking ability.
+
+    * OnDemand Scanner
+    * Detection of over 60,000 virus, worm, and Trojan threats
+    * No seat license restrictions!
+
+Price Structure
+
+The annual license fee for F-Prot Linux for Small Business is $300 per 
+server, and includes one year of virus signature updates, version upgrades, 
+and e-mail technical support.
+
+License shall be without charge for personal users of F-Prot Linux for Small 
+Business, when used on personal workstations.
+
+F-Prot Linux for Enterprise Business
+
+Enterprise network administrators require robust anti-virus protection, not 
+overpriced underperforming protection. With the F-Prot AntivirusTM engine, 
+your enterprise receives value and performance.
+
+F-Prot Linux for Enterprise Business features: high performance memory resident 
+technology, that allows scans of individual files for use with third party 
+applications, such as firewalls and email filters. F-Prot Linux communicates 
+with third party applications via internet standard HTTP requests over a local 
+TCP/IP socket, each scan request is followed by a detailed XML formatted report 
+on positive virus detections. Even unknown threats are detected with F-Prot's 
+heuristic forward-looking ability.
+
+    * High performance memory resident technology
+    * Third party application interoperability
+    * Detection of over 60,000 virus, worm, and Trojan threats
+    * Includes Command Line version
+    * No seat license restrictions!
+
+Price Structure
+
+The annual license fee for F-Prot Linux for Enterprise Business is $450 per 
+server, and includes one year of virus signature updates, version upgrades, 
+and e-mail technical support.
+EOF
