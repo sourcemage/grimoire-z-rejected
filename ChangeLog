@@ -1,3 +1,7 @@
+2004-08-14 Eric Schabell <z-rejected@sourcemage.org>
+	* z-java/JAVA_WARNING: added for downloading source warning.
+	* z-java: updated all spells to use JAVA_WARNING.
+
 2004-08-11 Eric Schabell <z-rejected@sourcemage.org>
 	* z-editors/OpenOffice-bin: cleaned up PREPARE messages.
 

@@ -1,3 +1,6 @@
+2004-08-14 Eric Schabell <eschabell@sourcemage.org>
+	* CONFIGURE: z-java/JAVA_WARNING added.
+
 2004-08-09 Eric Scahbell <eschabell@sourcemage.org>
 	* PRE_BUILD: removed.
 	* BUILD: modified for api2.

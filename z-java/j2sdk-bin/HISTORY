@@ -1,3 +1,6 @@
+2004-08-14 Eric Schabell <eschabell@sourcemage.org>
+	* CONFIGURE: z-java/JAVA_WARNING added.
+
 2004-08-05 Eric Sandall <eric@sandall.us>
 	* DEPENDS: unixODBC renamed to unixodbc
 
