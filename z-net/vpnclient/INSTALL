@@ -1,1 +1,1 @@
-./vpn_install
+echo '  ' | ./vpn_install
