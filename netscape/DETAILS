@@ -3,7 +3,7 @@
            SOURCE=netscape-i686-pc-linux-gnu-sea.tar.gz
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/netscape-installer/
 INSTALL_DIRECTORY=/usr/lib/netscape6
-    SOURCE_URL[0]=ftp://ftp.netscape.com/pub/${spell}6/english/$VERSION/unix/linux22/sea/$SOURCE
+    SOURCE_URL[0]=ftp://ftp.netscape.com/pub/${SPELL}6/english/$VERSION/unix/linux22/sea/$SOURCE
          WEB_SITE=http://www.netscape.com
           ENTERED=20020529
           UPDATED=20020529

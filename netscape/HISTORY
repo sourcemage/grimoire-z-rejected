@@ -1,16 +1,12 @@
-2002-06-18  Eric Schabell <eric@schabell.com>
+2002-07-27 Geoffrey Derber <ashaman@flyingtemple.com>
 
-		Spell has been changed to version 6, with 
-		old netscape version 4 moved to netscape4 spell.
-		Also fixed url line to download correct version.
-		
-2002-04-23  Eric Schabell <eric@schabell.com>
+		Fix the SOURCE_URL[0].
 
-                Changed PRE_BUILD so that it does not just
-                exit by default, now it will execute if you
-                answer yes to the questions (thanks Yoav).
+2002-06-06 Geoffrey Derber <ashaman@flyingtemple.com>
 
-2002-03-19  Eric Schabell <eric@schabell.com>
+		Major bug fixes.  Thanks to Glenn Shannon for his work.
+		Spell renamed to netscape.  Removed file 'netscape6'
 
-		Added HISTORY file. The reason for rejection
-		was due to non-source spell.
+2002-05-29 Geoffrey Derber <ashaman@flyingtemple.com>
+
+		Initial Inclusion into the grimoire
