@@ -66,6 +66,6 @@ monotone in weight and slab serif in concept.
 
 Note:  To do anything useful with these fonts you'll have to add the line
 'FontPath "/usr/share/fonts/truetype"' to the Files section of your
-/etc/X11/XF86Config file, and 'dir "/usr/share/fonts/truetype"' to your
-/etc/X11/XftConfig file.
+/etc/X11/XF86Config file, and '<dir>/usr/share/fonts/truetype</dir>' to your
+/etc/fonts/fonts.conf file.
 EOF
