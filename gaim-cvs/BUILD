@@ -1,5 +1,6 @@
 (
 # cd $BUILD_DIRECTORY/gaim-$VERSION		 &&
+  ./autogen.sh					 &&
   ./configure  --build=$BUILD                     \
 	       --prefix=/usr                      \
                --sysconfdir=/etc                  \

@@ -1,11 +1,9 @@
-           SPELL=gaim-nightly
-	    DATE=$(date -d `date +%H`EST +%Y%m%d) && [ $( date -d `date +%H`EST +%H ) -le 12 ] && (( DATE-- ))
-         VERSION=$DATE
-          SOURCE=gaim-CVS.tar.gz
+           SPELL=gaim-cvs
+         VERSION=`date +%Y%m%d`
+          SOURCE=$SPELL.tar.gz
 	 SOURCE2=gaim-e.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/gaim-$VERSION
-   SOURCE_URL[0]=http://us.dl.sf.net/gaim/direct_download/$SOURCE
-   SOURCE_URL[1]=http://eu.dl.sf.net/gaim/direct_download/$SOURCE
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/gaim:gaim
   SOURCE2_URL[0]=cvs://:pserver:anonymous@cvs.sourceforge.net:/cvsroot/gaim-e:gaim-e
         WEB_SITE=http://gaim.sourceforge.net
       MAINTAINER=

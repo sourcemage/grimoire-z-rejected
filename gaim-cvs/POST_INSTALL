@@ -3,5 +3,3 @@ message  "To use other protocols you first must load the plugins"  \
          "for the protocols you want under the Plugins button in"  \
          "the initial screen.  After that you may load different"  \
          "account protocols."
-rm /var/spool/sorcery/gaim-CVS.tar.gz
-rm -rf /usr/src/gaim-*
