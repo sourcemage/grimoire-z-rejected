@@ -1,3 +1,10 @@
+2004-08-09 Eric Schabell <eschabell@sourcemage.org>
+	* DETAILS: updated desc to show sources.
+	* INSTALL: added for api2.
+	* BUILD: modified for api2.
+	* CONFIGURE: modified to use grimoire reject message.
+	* PRE_BUILD: cleaned out reject message.
+	
 2004-04-12 Eric Sandall <eric@sandall.us>
 	* Moved to z-rejected/z-java for licensing issues
 
@@ -7,4 +14,3 @@
 
 2003-03-26 Vladimir Vydra <vydra@fria.fri.utc.sk>
 	* Spell created - version summer-02_01 .
-
