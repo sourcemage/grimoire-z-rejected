@@ -3,7 +3,7 @@
 if [ "$QT" == "y" ]; then
   # dynamic version.
   SOURCE=${SPELL}_ver-${VERSION}.tar.bz2
-  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_ver_${VERSION}
+  SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-ver_${VERSION}
   MD5[0]='64abf7dadf3ff76e2fe66967e62cbca5'
 else
   # static version.
