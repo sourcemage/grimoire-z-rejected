@@ -9,7 +9,8 @@ echo "Netscape (not version 4.x)"
 
 echo "Select which currently installed applications you wish to install Flash for."
 
-if spell_installed mozilla ; then
+#if spell_installed mozilla ; then
+if  [  -x  /usr/bin/mozilla  ];  then
 	if ! grep -q "MOZILLA=" $SPELL_CONFIG; then
 		if query "Do you wish to install the plugin for Mozilla?" y
 			then echo "MOZILLA=y" >> $SPELL_CONFIG
