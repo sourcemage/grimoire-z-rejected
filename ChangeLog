@@ -1,3 +1,6 @@
+2004-08-11 Eric Schabell <z-rejected@sourcemage.org>
+	* z-editors/OpenOffice-bin: cleaned up PREPARE messages.
+
 2004-08-09 Eric Schabell <z-rejected@sourcemage.org>
 	* z-java: section api2 compliant and rejected msg.
 	* all-sections/API_BUILD: deleted to be added at grimoire
