@@ -1,3 +1,2 @@
 provides GRAPHICAL-WEB-BROWSER &&
-provides MOZILLA-BROWSER       &&
 provides WEB-BROWSER
