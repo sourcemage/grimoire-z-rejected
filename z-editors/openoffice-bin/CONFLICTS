@@ -1,3 +1,2 @@
-conflicts  openoffice         &&
-conflicts  OpenOffice-bin  y  &&
+conflicts  openoffice  &&
 conflicts  OpenOffice

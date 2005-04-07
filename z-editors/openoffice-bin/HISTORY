@@ -1,3 +1,6 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* CONFLICTS: OpenOffice-bin no longer exists
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
@@ -76,9 +79,10 @@
 
 2002-03-06 Eric Sandall <sandalle@yahoo.com>
 	* DETAILS: Modified (finally figured this out ;) to have 
-	gpc as SOURCE2, rather than creating a whole other spell 
-	for 2 header files that just need to be copied for OpenOffice.
-	Found that if I have an "_" in my SOURCE (and probably any others), 
-	I must use the escape sequence "\" before it for it to read 
-	(e.g. SOURCE=oo_$VERSION_src.tar.bz2 -> SOURCE=oo\_$VERSION\_src.tar.bz2)
+	  gpc as SOURCE2, rather than creating a whole other spell 
+	  for 2 header files that just need to be copied for OpenOffice.
+	  Found that if I have an "_" in my SOURCE (and probably any others), 
+	  I must use the escape sequence "\" before it for it to read 
+	  (e.g. SOURCE=oo_$VERSION_src.tar.bz2 ->
+	  SOURCE=oo\_$VERSION\_src.tar.bz2)
 
