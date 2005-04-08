@@ -1,3 +1,6 @@
+2005-04-07 Eric Sandall <eric@sandall.us>
+	* FUNCTIONS: Integrated changes from devel so z-rejected has them too
+
 2005-03-09 Eric Sandall <eric@sandall.us>
 	* z-graphics/Cg: Renamed to z-graphics/libcg (already a nwes/cg spell)
 
