@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PROGRAM=/usr/bin/p4p
+RUNLEVEL=3
+NEEDS="+remote_fs"
+
+. /etc/init.d/smgl_init
+. /etc/sysconfig/p4p
+
+ARGS="-d -q -p $PORT $COMPRESS $CACHE $VALIDATE"

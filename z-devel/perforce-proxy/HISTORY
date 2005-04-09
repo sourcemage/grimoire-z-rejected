@@ -1,6 +1,7 @@
 2005-04-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated UPDATED (to make sure people have the latest tarball)
 	  Added FORCE_DOWNLOAD="on" (non-versioned SOURCEs)
+	* init.d/p4p, init.d/p4p.conf: Init scripts for perforce-proxy
 
 2005-01-24 Andrew Stitt <astitt@sourcemage.org>
 	* Created spell
