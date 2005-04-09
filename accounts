@@ -36,3 +36,5 @@ haldaemon:133:127
 messagebus:134:128
 palantir:135:131
 amavis:136:132
+mailman:137:133
+ntp:138:134

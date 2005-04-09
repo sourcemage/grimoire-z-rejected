@@ -33,4 +33,7 @@ burning:129:
 cyrus:130:
 palantir:131:
 amavis:132:
+mailman:133:
+ntp:134:
+firewire:135:
 nogroup:65534:
