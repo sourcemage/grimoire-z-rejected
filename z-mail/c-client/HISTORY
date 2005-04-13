@@ -1,0 +1,5 @@
+2005-04-12 Sergey Lipnevich <sergey@sourcemage.org>
+	* BUILD: pass our CFLAGS using EXTRACFLAGS make variable.
+
+2005-04-11 Sergey Lipnevich <sergey@sourcemage.org>
+	* ALL: spell created from current imap spell.

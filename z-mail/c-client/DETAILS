@@ -1,0 +1,15 @@
+           SPELL=c-client
+         VERSION=2004c1
+          SOURCE=imap-$VERSION.tar.Z
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/imap-$VERSION
+   SOURCE_URL[0]=ftp://ftp.cac.washington.edu/$SPELL/$SOURCE
+          MD5[0]=06ac4f9bd6c4af23699b174aabd770e8
+        WEB_SITE=http://www.washington.edu/imap/
+         ENTERED=20050411
+         UPDATED=20050411
+      LICENSE[0]=UW-FF
+       BUILD_API=2
+           SHORT='University of Washington IMAP/POP/SMTP/NNTP client library'
+cat << EOF
+The IMAP4rev1, POP3, SMTP and NNTP client API library, a.k.a. c-client.
+EOF

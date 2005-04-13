@@ -1,0 +1,16 @@
+           SPELL=imap
+         VERSION=2004c1
+          SOURCE=$SPELL-$VERSION.tar.Z
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.cac.washington.edu/$SPELL/$SOURCE
+          MD5[0]=06ac4f9bd6c4af23699b174aabd770e8
+        WEB_SITE=http://www.washington.edu/imap
+         ENTERED=20010922
+         UPDATED=20030810
+      LICENSE[0]=UW-FF
+       BUILD_API=2
+           SHORT="University of Washington IMAP server with POP3 gateway"
+cat << EOF
+The IMAP4rev1 server and a POP server with the ability to relay commands to
+an IMAP server, thus permitting existing POP clients to access an IMAP server.
+EOF
