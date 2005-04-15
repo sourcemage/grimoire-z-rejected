@@ -1,3 +1,6 @@
+2005-04-15 George Sherwood <george@beernabeer.com>
+	* DETAILS: Update MD5SUM (BUG 8562)
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 

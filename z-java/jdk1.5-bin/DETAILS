@@ -3,7 +3,7 @@
          VERSION=1_5_0_02
              VER=1.5.0_02
           SOURCE=jdk-$VERSION-linux-i586.bin
-          MD5[0]=78a42115788188c502567d778c94dd4a 
+          MD5[0]=562d9797af801bfbe2b5e44417d8ccc4 
         WEB_SITE=http://java.sun.com/j2se/1.5.0/download.html
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk$VER
          ENTERED=20041006
