@@ -1,9 +1,9 @@
            SPELL=ghc-bin
-         VERSION=6.2.1
+         VERSION=6.4
           SOURCE=ghc-$VERSION-i386-unknown-linux.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/ghc-$VERSION
-   SOURCE_URL[0]=http://www.haskell.org/ghc/dist/6.2.1/ghc-$VERSION-i386-unknown-linux.tar.bz2
-          MD5[0]=917fd7032afebcac479066cd9d17f093
+SOURCE_URL[0]=http://www.haskell.org/ghc/dist/$VERSION/ghc-$VERSION-i386-unknown-linux.tar.bz2
+          MD5[0]=d3c755e58fe01c542ef17b385e051781
       LICENSE[0]="The Glasgow Haskell Compiler License"
         WEB_SITE=http://www.haskell.org/ghc
           REJECT="is binary install and has license issues"
