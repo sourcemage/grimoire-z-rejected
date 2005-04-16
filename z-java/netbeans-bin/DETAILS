@@ -1,15 +1,24 @@
            SPELL=netbeans-bin
-	PKGNAME=netbeans
-         VERSION=3_6
-          SOURCE=${PKGNAME}-${VERSION}-platform.tar.bz2
+         PKGNAME=netbeans
+         VERSION=4_0
+          SOURCE=${PKGNAME}-${VERSION}-bin.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKGNAME}
         WEB_SITE=http://netbeans.org
          ENTERED=20041119
-         UPDATED=20041119
-          MD5[0]=5fe0a6b82578443df33046b9eeb0ea20
+         UPDATED=20050221
+          MD5[0]=bdd1ac03d3c972a57c282289a1eab3ee
       LICENSE[0]=SUNPL
-           SHORT="NetBeans IDE is a modular, standards-based integrated development environment (IDE), written in the JavaTM programming language." 
+           SHORT="NetBeans IDE is a modular, standards-based IDE, written in the JavaTM programming language." 
 cat << EOF 
- NetBeans IDE runs on operating systems that support JavaTM  2 SDK, Standard Edition. Below is a list of platforms that NetBeans IDE has been tested on.
- NetBeans is an open-source project, the web site also provides access to the source code, a bug database, information on creating your own NetBeans modules, and much more.
+ NetBeans IDE runs on operating systems that support JavaTM  2 SDK, Standard
+ Edition. 
+ 
+ NetBeans is an open-source project, the web site also provides access to the
+ source code, a bug database, information on creating your own NetBeans
+ modules, and much more.
+
+ Note: For the version of netbeans-bin you have to download the sources
+ yourself from the Netbeans Website, see 'gaze website netbeans-bin' for 
+ the location. Put the downloaded file to /var/spool/sorcery so cast will 
+ find it.
 EOF
