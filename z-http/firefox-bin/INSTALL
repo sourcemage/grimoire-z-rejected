@@ -8,4 +8,5 @@ ln  -sf  $INSTALLDIR  /usr/lib/firefox  &&
 
 mkdir -pv $INSTALLDIR                            &&
 cp -Rv $SOURCE_DIRECTORY/* $INSTALLDIR           &&
-cp $SCRIPT_DIRECTORY/firefox.sh /etc/profile.d/ 
+cp $SCRIPT_DIRECTORY/firefox.sh /etc/profile.d/  &&
+ln -s /opt/firefox/firefox /usr/bin/firefox 
