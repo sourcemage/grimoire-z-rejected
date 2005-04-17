@@ -4,7 +4,7 @@ cd $SOURCE_DIRECTORY
 
 GCCVERSION=$(installed_version gcc)
 
-if [[ "$GCCVERSION" == "3.4.3" ]]
-then
-	patch -p0 <${SCRIPT_DIRECTORY}/gcc-3.4.diff
-fi
+#if [[ "$GCCVERSION" == "3.4.3" ]]
+#then
+#	patch -p0 <${SCRIPT_DIRECTORY}/gcc-3.4.diff
+#fi

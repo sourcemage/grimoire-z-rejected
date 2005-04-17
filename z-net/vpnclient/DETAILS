@@ -1,9 +1,9 @@
            SPELL=vpnclient   
-         VERSION=4.6.00.0045-k9
+         VERSION=4.6.02.0030-k9
           SOURCE=$SPELL-linux-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]= 
-          MD5[0]=e50c36374310f58722abb32fb6747296  
+          MD5[0]=9a4270f6437d856275063317aa0fb79a  
 	WEB_SITE=http://www.cisco.com/
          ENTERED=20040920
          UPDATED=20040920
