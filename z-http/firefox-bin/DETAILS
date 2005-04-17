@@ -1,12 +1,12 @@
            SPELL=firefox-bin
-         VERSION=0.9.3
-          SOURCE=firefox-${VERSION}-i686-linux-gtk2+xft-installer.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox-installer
-   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/${VERSION}/${SOURCE}
+         VERSION=1.0.3
+          SOURCE=firefox-${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
+SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
         WEB_SITE=http://www.mozilla.org/firefox
          ENTERED=20040902
          UPDATED=20041022
-          MD5[0]="dc6e4e1b4aa4a526184c8fcdf0b4dadf"
+          MD5[0]='1a6f00da949de9b1c420ea9f1981443b'
       LICENSE[0]=MOZILLA
           REJECT="is non-source"
            SHORT="The binary version of firefox."

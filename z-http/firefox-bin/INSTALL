@@ -1,5 +1,5 @@
 # tarball has been extracted, just copy to the correct directory.
-INSTALLDIR=/opt/firefox-installer
+INSTALLDIR=/opt/firefox
 
 #
 # Create generic symlink for plug-ins

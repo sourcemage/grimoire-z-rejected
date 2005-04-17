@@ -1,3 +1,8 @@
+2005-04-16 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 1.0.3, SOURCE_URL, and SOURCE
+	* INSTALL: changed install directory to /opt/firefox
+	* FINAL: deleted.  Not using the installer version.
+
 2005-03-31 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Depends on gcc33 (Thanks sleon)
 	  Formatted to Guru Handbook
