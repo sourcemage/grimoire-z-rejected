@@ -1,3 +1,6 @@
+2005-04-16 George Sherwood <george@beernabeer.com>
+	* INSTALL: Added plugins for firefox and firefox-bin
+
 2005-04-15 George Sherwood <george@beernabeer.com>
 	* DETAILS: Version bumped to 1.4.2.08 for arch i386
 
