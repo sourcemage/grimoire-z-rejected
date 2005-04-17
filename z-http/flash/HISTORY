@@ -1,3 +1,7 @@
+2005-04-16 George Sherwood <george@beernabeer.com>
+	* CONFIGURE: added support for firefox-bin
+	* INSTALL: added support for firefox-bin
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 

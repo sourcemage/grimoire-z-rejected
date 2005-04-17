@@ -11,7 +11,7 @@ echo "Netscape (not version 4.x)"
 
 echo "Select which currently installed applications you wish to install Flash for."
 
-persistent_add MOZILLA FIREFOX KDEBASE OPERA NETSCAPE
+persistent_add MOZILLA FIREFOX FIRE_BIN KDEBASE OPERA NETSCAPE
 
 if  spell_ok  mozilla
 then
@@ -31,6 +31,16 @@ then
   else
     FIREFOX=n
 	fi
+fi
+
+if spell_ok firefox-bin
+then
+  if query "Do you with to install the plugin for Firefox-bin?" y
+  then
+    FIRE_BIN=y
+  else
+    FIRE_BIN=n
+        fi
 fi
 
 if  spell_ok  kdebase
