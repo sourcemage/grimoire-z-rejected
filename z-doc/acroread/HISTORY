@@ -1,3 +1,9 @@
+2005-04-17 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: version bump 7.0
+	* PRE_BUILD: modified patch level
+	* INSTALL: new symlink for libstdc++.so.5 needed
+	* license.patch: updated for new install script
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 

@@ -2,4 +2,4 @@ mk_source_dir  $SOURCE_DIRECTORY                &&
 cd             $SOURCE_DIRECTORY                &&
 unpack         $SOURCE ${MD5[0]}                &&
 cd  $SOURCE_DIRECTORY                           &&
-patch  -p1  <  $SCRIPT_DIRECTORY/license.patch
+patch  -p0 <  $SCRIPT_DIRECTORY/license.patch
