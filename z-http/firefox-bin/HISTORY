@@ -1,6 +1,7 @@
 2005-04-18 George Sherwood <george@beernabeer.com>
-	* INSTALL: changed to copy scribt vice ln -s
+	* INSTALL: changed to copy script vice ln -s
 	* firefox-bin: Added script file
+	* INSTALL: symlink mozilla and firefox to firefox-bin script
 
 2005-04-17 George Sherwood <george@beernabeer.com>
 	* CONFIGURE: query about symbolic links in /usr/bin

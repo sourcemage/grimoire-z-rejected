@@ -19,13 +19,13 @@ cp -v $SCRIPT_DIRECTORY/firefox-bin /usr/bin/       &&
 if [ "$FIREBIN_MOZLINK" == "y" ]; then
    if ! test -f $INSTALL_ROOT/usr/bin/mozilla ||
         test -h $INSTALL_ROOT/usr/bin/mozilla ; then
-     cp -v $SCRIPT_DIRECTORY/firefox-bin /usr/bin/mozilla 
+     ln -sv /usr/bin/firefox-bin /usr/bin/mozilla 
    fi
 fi  &&
 
 if [ "$FIREBIN_FIREFOX" == "y" ]; then
    if ! test -f $INSTALL_ROOT/usr/bin/firefox ||
         test -h $INSTALL_ROOT/usr/bin/firefox ; then
-     cp -v $SCRIPT_DIRECTORY/firefox-bin /usr/bin/firefox
+     ln -sv /usr/bin/firefox-bin /usr/bin/firefox
    fi
 fi
