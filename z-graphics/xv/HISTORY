@@ -1,0 +1,24 @@
+2005-04-22 Thomas Houssin <Thomas.Houssin@sourcemage.org>
+	* DETAILS,BUILD: converted to API2
+	* DETAILS: now using jumbo patches
+	* INSTALL: added
+	* xv-3.10a-yaos.diff: security patch 
+             (see http://security.gentoo.org/glsa/glsa-200504-17.xml)
+
+2004-10-13 Arjan Bouter <abouter@sourcemage.org>
+	* added desktop files
+
+2003-01-20 Seth Woolley <seth@tautology.org>
+	* Fixed possible MD5 issue.
+
+2002-09-06 Eric Sandall <eric@sandall.us>
+	* Updated SOURCE2_URL to proper format
+	  Added MD5[1] and corrected MD5[0] to use .tar
+	  Modified BUILD and SOURCE2 to use .bz2 as specified in Bug #353
+
+2002-09-03 Unet <unet@sourcemage.org>
+	* megapatch issue fixed.Was bug 353.
+
+2002-06-12 Unet <unet@sourcemage.org>
+	* Created this.
+

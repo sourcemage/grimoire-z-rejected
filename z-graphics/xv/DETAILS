@@ -1,0 +1,22 @@
+           SPELL=xv
+         VERSION=3.10a
+          SOURCE=$SPELL-$VERSION.tar.gz
+         SOURCE2=$SPELL-$VERSION-jumbo-patches-20050410.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=ftp://ftp.cis.upenn.edu/pub/xv/$SOURCE
+  SOURCE2_URL[0]=${SOURCEFORGE_URL}/png-mng/$SOURCE2
+	  MD5[0]=6b7e76a48d9fc180f7442776a70da9a7
+	  MD5[1]=30910abef7305a4a925ec71ec5f4fac6
+         BUILD_API=2
+        WEB_SITE=http://www.trilon.com/xv
+         ENTERED=20020201
+         UPDATED=20050422
+      LICENSE[0]=GPL
+      MAINTAINER=unet@sourcemage.org
+           SHORT="Very popular image viewer, many formats, thumbnails"
+cat << EOF
+xv is an interactive image manipulation program for the X Window System.
+It can operate on images in the GIF, JPEG, TIFF, PBM, PGM, PPM, XPM, X11
+bitmap, Sun Rasterfile, Targa, RLE, RGB, BMP, PCX, FITS, and PM formats
+on all known types of X displays. 
+EOF
