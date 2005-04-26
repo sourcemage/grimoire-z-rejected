@@ -1,15 +1,15 @@
             SPELL=opera
-          VERSION=7.54
-	       VERSION2=20040803.4
+          VERSION=8.0
+	       VERSION2=20050415.5
 	       VERSION3=shared
 	       VERSION4=qt.i386-en
            SOURCE=${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}.tar.bz2
  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}
-    SOURCE_URL[0]=http://ftp.tiscali.nl/opera/linux/754/final/en/i386/${VERSION3}/gcc-3.2/${SOURCE}
-    SOURCE_URL[1]=http://ftp.scarlet.be/pub/opera/linux/754/final/en/i386/${VERSION3}/gcc-3.2/${SOURCE} 
-    SOURCE_URL[2]=ftp://mirror.e-tech-solution.com/pub/opera/linux/754/final/en/i386/${VERSION3}/gcc-3.2/${SOURCE} 
+    SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/800/final/en/i386/shared/${SOURCE}
+    SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/800/final/en/i386/shared/${SOURCE} 
+  #  SOURCE_URL[2]=ftp://mirror.e-tech-solution.com/pub/opera/linux/754/final/en/i386/${VERSION3}/gcc-3.2/${SOURCE} 
          WEB_SITE=http://www.opera.com
-           MD5[0]='f2f52b67bd07c322ae165a65665daf9f'
+           MD5[0]='101f20a25e67503a55af499bb4b258bd'
        LICENCE[0]=UNKOWN
           ENTERED=20020530
           UPDATED=20040513
@@ -22,4 +22,3 @@ very customizable. It now uses the qt3 widget set.
 The shared version is now included here because the current grimoire 
 uses qt3. 
 EOF
-

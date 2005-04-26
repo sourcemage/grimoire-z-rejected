@@ -1,3 +1,6 @@
+2005-04-26 George Sherwood <george@beernabeer.com>
+	* DETAILS: Update to 8.0 and SOURCE_URLS's
+
 2005-04-06 Pieter Lenaerts <e-type@cwazy.co.uk>
 	* DEPENDS: added gcc33 dependency
 
