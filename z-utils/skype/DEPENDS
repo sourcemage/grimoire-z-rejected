@@ -1,4 +1,5 @@
 depends gcc33             &&
+depends dbus              &&
 if [ "$QT" == "y" ]; then
 depends qt-x11
 fi
