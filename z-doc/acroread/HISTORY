@@ -1,3 +1,7 @@
+2005-04-29 George Sherwood <george@beernabeer.com>
+	* INSTALL: removed symlink to libstdc++.so.6 (Bug 8746)
+	* DEPENDS: Added depends on gcc33 (Bug 8746)
+
 2005-04-17 Geoffrey Derber <gderber@sourcemage.org>
 	* DETAILS: version bump 7.0
 	* PRE_BUILD: modified patch level

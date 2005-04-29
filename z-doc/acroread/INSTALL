@@ -3,8 +3,6 @@ install  -d  -m  755  /usr/lib/acroread                                      &&
 echo  -e  "\n"  |  ./INSTALL                                      &&
 
 ln  -sf  /usr/lib/acroread/bin/acroread  /usr/bin/acroread  &&
-# needs the file libstdc++.so.5
-ln  -sf  /usr/lib/libstdc++.so.6 /usr/lib/libstdc++.so.5 &&
 
 if  [  "$ACROREAD_MOZILLA"  =  "y"  ];  then
   ln  -sf  /usr/lib/acroread/Browsers/intellinux/nppdf.so  \
