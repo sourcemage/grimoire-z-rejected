@@ -1,3 +1,9 @@
+2005-05-10 Geoffrey Derber <gderber@sourcemage.org>
+	* DETAILS: updated to version 2.60
+		added BUILD_API=2
+	* INSTALL: created from old BUILD
+	* BUILD: "true"
+
 2005-01-15 Geoffrey Derber <gderber@sourcemage.org>
 	* DETAILS: updated to version 2.56 patch 2
 
