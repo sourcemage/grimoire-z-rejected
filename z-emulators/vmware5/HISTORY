@@ -1,3 +1,8 @@
+2005-05-10 Thomas Houssin <Thomas.Houssin@sourcemage.org>
+	* spell integrated to vmware5
+	* DETAILS: bumped version to 5.0.0-13124 
+	* CONFLICTS: with vmware
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
