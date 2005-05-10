@@ -1,0 +1,15 @@
+I_DIR="${INSTALL_ROOT}/usr/share/games/$SPELL" 
+#fake install
+ mkdir -p $I_DIR 							&&
+ install -m0444 ArmyOps.xpm $I_DIR       				&&
+ install -m0755 bin/armyops $I_DIR       				&&
+ install -m0444 README.linux $I_DIR 					&&
+#change to install directory for unpack as tmpfs will be too small 
+ cd $I_DIR								&&
+ bunzip2 -dc $SOURCE_DIRECTORY/armyops${VERSION3}.tar.bz2 | tar xvf - 	&&
+ bunzip2 -dc $SOURCE_DIRECTORY/binaries.tar.bz2 | tar xvf - 	&&
+ ln -sf $PWD/armyops ${INSTALL_ROOT}/usr/games/ 			&&
+ install -m0444 $SCRIPT_DIRECTORY/armyops.kdelnk ${INSTALL_ROOT}/usr/share/applnk/Games &&
+ install -m0444 $SOURCE_DIRECTORY/JRTC_Farm.aao ${I_DIR}/Maps &&
+ install -m0444 $SOURCE_DIRECTORY/Weapons_Cache.aao ${I_DIR}/Maps
+
