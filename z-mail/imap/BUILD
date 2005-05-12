@@ -21,4 +21,4 @@ else
   TARGET=slx
 fi  &&
 
-yes | make DEBUG="$CFLAGS" $SSLOPTS $TARGET
+yes | make EXTRACFLAGS="$CFLAGS" $SSLOPTS $TARGET

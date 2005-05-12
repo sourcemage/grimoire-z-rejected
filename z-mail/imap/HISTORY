@@ -1,3 +1,7 @@
+2005-05-10 Seth Woolley <seth@tautology.org>
+	* BUILD: DEBUG is now EXTRACFLAGS which works correctly (already 
+	  in c-client, so I'm unsure why both weren't fixed at the same time).
+
 2005-04-11 Sergey Lipnevich <sergey@sourcemage.org>
 	* PROVIDES: provides C-CLIENT;
 	* CONFLICTS: conflicts with c-client spell.
