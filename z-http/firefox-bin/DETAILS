@@ -1,12 +1,12 @@
            SPELL=firefox-bin
-         VERSION=1.0.3
+         VERSION=1.0.4
           SOURCE=firefox-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
 SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
         WEB_SITE=http://www.mozilla.org/firefox
          ENTERED=20040902
          UPDATED=20041022
-          MD5[0]='1a6f00da949de9b1c420ea9f1981443b'
+          MD5[0]='1ad5fe17176eb9bc505079b250cad5f7'
       LICENSE[0]=MOZILLA
           REJECT="is non-source"
            SHORT="The binary version of firefox."
