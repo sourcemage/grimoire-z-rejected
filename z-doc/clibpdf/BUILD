@@ -7,4 +7,4 @@ sedit  "s/\/usr\/local/\/usr/"            Makefile          &&
 sedit  "s/\/local\/ClibPDF/\/usr/"        Makefile          &&
 sedit  's/mkdir -p $(BINDIR)\/lib//'      Makefile          &&
 sedit  's/mkdir -p $(BINDIR)\/include//'  Makefile          &&
-make                        &&
+make
