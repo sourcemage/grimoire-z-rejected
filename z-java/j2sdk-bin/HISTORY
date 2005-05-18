@@ -1,3 +1,6 @@
+2005-05-17 Eric Sandall <eric@sandall.us>
+	* DEPENDS: Depends on gcc33 (for libstdc++.so.5)
+
 2005-04-26 George Sherwood <george@beernabeer.com>
 	* INSTALL: Added plugin for opera
 

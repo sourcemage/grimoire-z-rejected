@@ -1,1 +1,2 @@
+depends  gcc33     &&
 depends  unixodbc
