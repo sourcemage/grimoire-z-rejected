@@ -1,3 +1,6 @@
+2005-05-26 George Sherwood <george@beernabeer.com>
+	* INSTALL: Added symlink to fix cleanse problem (Bug 8978)
+
 2005-04-26 George Sherwood <george@beernabeer.com>
 	* DETAILS: Update to 8.0 and SOURCE_URLS's
 
