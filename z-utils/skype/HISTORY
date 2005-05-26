@@ -1,3 +1,6 @@
+2005-05-26 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: Version bump to 1.1.0.13
+
 2005-04-24 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: Version bump to 1.1.0.3
 	* DEPENDS: Added depends on dbus
