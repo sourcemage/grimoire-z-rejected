@@ -1,3 +1,6 @@
+2005-05-31 David Brown <dmlb2000@excite.com>
+	* volatiles: added ^/lib/modules/*/modules.* to the file
+
 2005-04-01 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 1.0-7174
 	* NVIDIA_kernel-1.0-7167-1233959.diff, NVIDIA_kernel-1.0-7167-1237815.diff:
