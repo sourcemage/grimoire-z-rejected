@@ -1,2 +1,6 @@
+2005-06-02 George Sherwood <george@beernabeer.com>
+	* DETAILS: Added rejected reasons.
+	* CONFIGURE: Added to display z-rejected text
+
 2005-05-31 David A. Sosa Cabrera  <neon@intelso.org>
         *  Created this spell
