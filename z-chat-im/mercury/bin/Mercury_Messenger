@@ -1,0 +1,18 @@
+#!/bin/bash
+MERCURY_INSTALL_PATH="/usr/share/Mercury"
+JMF_INSTALL_PATH="/usr/share/JMF-2.1.1e"
+cd $MERCURY_INSTALL_PATH
+classpath=""
+for file in `ls $MERCURY_INSTALL_PATH/lib`
+do
+classpath="$MERCURY_INSTALL_PATH/lib/$file:$classpath"
+done
+for file in `ls $JMF_INSTALL_PATH/lib`
+do
+classpath="$JMF_INSTALL_PATH/lib/$file:$classpath"
+done
+if [ ! -d $HOME/Mercury ]; then
+   mkdir $HOME/Mercury
+fi
+
+java -classpath $classpath com.dMSN.Main

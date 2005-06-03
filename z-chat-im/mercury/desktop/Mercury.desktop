@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Mercury
+GenericName=MSN Messenger
+Comment=MSN Messenger
+Exec=Mercury_Messenger
+Icon=mercury.png
+Terminal=false
+Type=Application
+Categories=Application;Network;Java

@@ -1,0 +1,20 @@
+INSTALLDIR=/usr/share/Mercury
+
+mkdir -p $INSTALLDIR 						&&
+
+cp -rv ./* $INSTALLDIR 						&&
+
+cp -rv $SPELL_DIRECTORY/bin/Mercury_Messenger $INSTALLDIR 	&&
+cp -rv $SPELL_DIRECTORY/mercury.png /usr/share/pixmaps 		&&
+
+if [ -d $JAVA_HOME/jre/lib/i386 ]; then
+   i386=i386
+fi
+
+if [ ! -f $JAVA_HOME/jre/lib/$i386/libtray.so ]; then
+   cp -rv $INSTALLDIR/libtray.so $JAVA_HOME/jre/lib/$i386/
+fi
+
+chmod -R 755 $INSTALLDIR					&&
+
+ln -s $INSTALLDIR/Mercury_Messenger /usr/bin/Mercury_Messenger
