@@ -1,10 +1,10 @@
 	         SPELL=rar2
          VERSION=271
-          SOURCE=rarlnx${VERSION}.sfx.bin
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/rar
-   SOURCE_URL[0]=http://www.exit1.org/dvdrip/contrib/$SOURCE
+#          SOURCE=rarlnx${VERSION}.sfx.bin
+#SOURCE_DIRECTORY=$BUILD_DIRECTORY/rar
+#   SOURCE_URL[0]=http://www.exit1.org/dvdrip/contrib/$SOURCE
         WEB_SITE=http://www.exit1.org/dvdrip/contrib
-          MD5[0]=5042cf753833ab8ca4fce21a1a28b579
+#          MD5[0]=5042cf753833ab8ca4fce21a1a28b579
       LICENSE[0]=license.txt
           REJECT="distributed as binary only"
          ENTERED=20030816

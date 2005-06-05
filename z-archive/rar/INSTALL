@@ -1,0 +1,8 @@
+PREFIX="${INSTALL_ROOT}/usr" &&
+cd ${SOURCE_DIRECTORY} &&
+
+mkdir -p $PREFIX/bin &&
+mkdir -p $PREFIX/lib &&
+cp rar unrar $PREFIX/bin &&
+cp rarfiles.lst ${INSTALL_ROOT}//etc &&
+cp default.sfx $PREFIX/lib

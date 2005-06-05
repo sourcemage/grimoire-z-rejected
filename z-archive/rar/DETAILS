@@ -1,0 +1,17 @@
+           SPELL=rar
+         VERSION=3.5.b1
+          SOURCE="$SPELL"linux-$VERSION.tar.gz
+   SOURCE_URL[1]=http://www.rarlab.com/rar/$SOURCE
+          MD5[0]=76c2cec1349b1c287029fe3bcd89d503
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
+        WEB_SITE=http://www.rarlab.com/
+         ENTERED=20050524
+         UPDATED=20050524
+      LICENSE[0]=Shareware
+       BUILD_API=2
+           SHORT="RAR archive manager"
+cat << EOF
+WinRAR is a powerful archive manager. It can backup your data and reduce
+size of email attachments, decompress RAR, ZIP and other files downloaded
+from Internet and create new archives in RAR and ZIP file format.
+EOF
