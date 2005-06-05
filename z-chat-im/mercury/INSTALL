@@ -17,4 +17,6 @@ fi
 
 chmod -R 755 $INSTALLDIR					&&
 
-ln -s $INSTALLDIR/Mercury_Messenger /usr/bin/Mercury_Messenger
+ln -s $INSTALLDIR/Mercury_Messenger /usr/bin/Mercury_Messenger &&
+
+JAVA_HOME=$(cat /etc/profile.d/java.sh | grep -i JAVA_HOME= | cut -c11-0)
