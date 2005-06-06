@@ -1,12 +1,12 @@
        SPELL=azureus-bin
      PKGNAME=Azureus
- 	 VERSION=2.2.0.2
+ 	 VERSION=2.3.0.2
 if  [  "$AZUREUS_BIN_GTK"  ==  "y"  ];  then
       SOURCE=${PKGNAME}_${VERSION}_linux.GTK.tar.bz2
-      MD5[0]=91adf0fafeddb79629b72a448c3bc728
+      MD5[0]=908ace6c087b32294b76a793429a23da
 else
       SOURCE=${PKGNAME}_${VERSION}_linux.Motif.tar.bz2
-      MD5[0]=89aa22055b3b53a714dc777583109954
+      MD5[0]=b70782de77c32d308891693967bbaceb
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/azureus
    SOURCE_URL[0]=$SOURCEFORGE_URL/azureus/$SOURCE

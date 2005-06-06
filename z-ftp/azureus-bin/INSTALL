@@ -6,4 +6,7 @@ cp -ruv $SOURCE_DIRECTORY/* $INSTALLDIR		&&
 cp $SPELL_DIRECTORY/azureus $INSTALLDIR/azureus &&
 cp $SPELL_DIRECTORY/azureus.png /usr/share/icons &&
 
-ln -sf $INSTALLDIR/azureus /usr/bin/azureus   
+ln -sf $INSTALLDIR/azureus /usr/bin/azureus    &&
+
+JAVA_HOME=$(cat /etc/profile.d/java.sh | grep -i JAVA_HOME= | cut -c11-0)
+
