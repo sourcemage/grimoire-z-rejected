@@ -1,0 +1,29 @@
+        PKG_NAME=jmf  
+	         SPELL=${PKG_NAME}-bin
+         VERSION=2.1.1e
+     PKG_VERSION=2_1_1e
+          SOURCE=${PKG_NAME}-${PKG_VERSION}-linux-i586.bin
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${PKG_NAME}-${VERSION}
+   SOURCE_URL[0]=
+          MD5[0]=7dd3dbf6af76c07fba32d662ba4b5243
+	WEB_SITE=http://java.sun.com/products/JavaManagement/
+         ENTERED=20050605
+         UPDATED=20050605
+         REJECT="is non-source"
+           SHORT="The Java Media Framework (JMF)."
+cat << EOF
+The Java Media Framework API (JMF) enables audio, video and other time-based
+media to be added to applications and applets built on Java technology.
+This optional package, which can capture, playback, stream, and transcode
+multiple media formats, extends the Java 2 Platform, Standard Edition (J2SE)
+for multimedia developers by providing a powerful toolkit to develop scalable,
+cross-platform technology.
+
+ Don't forget to download sources :
+
+ ${SOURCE}
+
+ to /var/spool/sorcery before casting, from :
+
+ http://java.sun.com/products/java-media/jmf/2.1.1/download.html
+EOF

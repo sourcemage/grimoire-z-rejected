@@ -1,0 +1,7 @@
+# download java sources warning.
+#
+source $SECTION_DIRECTORY/JAVA_WARNING &&
+
+# Standard rejected warnings.
+#
+source $GRIMOIRE/REJECTED_MSG

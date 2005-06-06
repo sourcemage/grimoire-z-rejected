@@ -1,0 +1,3 @@
+cd ${INSTALL_ROOT}/usr/share &&
+
+yes | sh $SOURCE_CACHE/$SOURCE

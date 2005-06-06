@@ -1,1 +1,2 @@
-depends JAVA
+depends JAVA  &&
+optional_depends jmf-bin '' '' 'for video capture from webcam'
