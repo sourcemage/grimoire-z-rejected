@@ -8,7 +8,7 @@
       LICENSE[0]=license.txt
           REJECT="distributed as binary only"
          ENTERED=20030816
-         UPDATED=20030816
+         UPDATED=20050606
            SHORT="RAR archive utility"
 cat << EOF
    RAR is a powerful tool which allows you to manage and control archive
