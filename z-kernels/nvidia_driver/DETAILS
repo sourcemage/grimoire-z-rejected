@@ -1,9 +1,9 @@
            SPELL=nvidia_driver
-         VERSION=1.0-7174-pkg1
+         VERSION=1.0-7664-pkg1
           SOURCE=NVIDIA-Linux-x86-$VERSION.run
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION
    SOURCE_URL[0]=http://download.nvidia.com/XFree86/Linux-x86/${VERSION/-pkg1/}/$SOURCE
-          MD5[0]=e9840ae34ae9f5a3dc7d0fafe040c8af
+          MD5[0]=488d6c72048a40fd36a6f5c8ab22adea
         WEB_SITE=http://www.nvidia.com
          ENTERED=20030401
          UPDATED=20050314
