@@ -1,0 +1,11 @@
+KVER=$(installed_version linux)
+if [ -z $KVER ] ; then
+  KVER=$(installed_version linux-new)
+  if [ -z $KVER ] ; then
+    KVER=`uname -r`
+  fi 
+fi &&
+make KVER=$KVER install &&
+message "${MESSAGE_COLOR}Installing firmware${DEFAULT_COLOR}" &&
+[ -d "${INSTALL_ROOT}/lib/firmware" ] || mkdir "${INSTALL_ROOT}/lib/firmware" &&
+mv ./*.fw "${INSTALL_ROOT}/lib/firmware"

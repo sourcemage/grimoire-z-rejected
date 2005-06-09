@@ -1,0 +1,3 @@
+conflicts ipw2200_firmware y &&
+conflicts ipw2200_driver y &&
+conflicts ipw2100 &&
