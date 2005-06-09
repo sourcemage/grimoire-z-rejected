@@ -1,4 +1,7 @@
-2005-06-05  George Sherwood <george@beernabeer.com>
+2005-06-09 George Sherwood <george@beernabeer.com>
+	* DETAILS: Update to version 1709RC10
+
+2005-06-05 George Sherwood <george@beernabeer.com>
 	* INSTALL: fix for JAVA_HOME problem that would require reboot
 	* DEPENDS: added optional_depends on jmf-bin
 
