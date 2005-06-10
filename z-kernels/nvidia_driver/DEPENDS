@@ -1,2 +1,3 @@
 depends mktemp &&
-depends which
+depends which &&
+depends unamechange '' '' test

@@ -1,6 +1,7 @@
 patch  -p1  <  $SCRIPT_DIRECTORY/NVIDIA_glx-1.0.7167-defines.patch    &&
 patch  -p1  <  $SCRIPT_DIRECTORY/NVIDIA_glx-1.0.7167-glheader.patch   &&
-
+invoke_uname_change &&
+export UNAME_CHANGE_RELEASE=$(get_kernel_version) &&
 cd usr/src/nv  &&
 
 ### We look at the Makefile in the kernel sources for the Version Number!
@@ -15,4 +16,5 @@ if [[ $ALiAGP == "y" ]]; then sedit "s/NVreg_EnableALiAGP = 0;/NVreg_EnableALiAG
 
 if [[ $AGPSBA == "y" ]]; then sedit "s/NVreg_EnableAGPSBA = 0;/NVreg_EnableAGPSBA = 1;/" usr/src/nv/os-registry.c; fi &&
 
-if [[ $AGPFW == "y" ]]; then sedit "s/NVreg_EnableAGPFW = 0;/NVreg_EnableAGPFW = 1;/" usr/src/nv/os-registry.c; fi
+if [[ $AGPFW == "y" ]]; then sedit "s/NVreg_EnableAGPFW = 0;/NVreg_EnableAGPFW = 1;/" usr/src/nv/os-registry.c; fi &&
+devoke_uname_change
