@@ -177,3 +177,62 @@ function config_query_long_string() {
     fi
     return 0
 }
+
+#-------------------------------------------------------------------------
+## Returns the kernel version checks linux then linux-new (for now) and
+## then uname for the kernel version
+#-------------------------------------------------------------------------
+get_kernel_version()
+{
+	local KVER=$(installed_version linux)
+	if [[ $KVER ]] ; then
+		echo $KVER
+	else
+		KVER=$(installed_version linux-new)
+		if [[ $KVER ]] ; then
+			echo $KVER
+		else
+			KVER=$(uname -r)
+			echo $KVER
+		fi
+	fi
+}
+
+#---------------------------------------------------------------------------
+## Invokes the unamechange spell any spell that uses this should depend on
+## unamechange otherwise this function does nothing.
+## to use this function simply call then change the variables listed ro have
+## any call to uname return that value
+#--------------------------------------------------------------------------
+invoke_uname_change()
+{
+	if [[ $(installed_version unamechange) ]] ; then
+		export UNAME_CHANGE_SYSNAME=$(uname -s)
+		export UNAME_CHANGE_NODENAME=$(uname -n)
+		export UNAME_CHANGE_RELEASE=$(uname -r)
+		export UNAME_CHANGE_VERSION=$(uname -v)
+		export UNAME_CHANGE_MACHINE=$(uname -m)
+		export UNAME_CHANGE_DOMAINNAME=$(uname -o)
+	
+		export LD_PRELOAD="${LD_PRELOAD} /usr/lib/unamechange.so"
+	fi
+}
+
+#-------------------------------------------------------------------------
+## Returns the state of the system back to normal after calling 
+## invoke_uname_change unset's all environmental vars and returns
+## LD_PRELOAD back to normal
+#-------------------------------------------------------------------------
+devoke_uname_change()
+{
+	if [[ $(installed_version unamechange) ]] ; then
+		unset UNAME_CHANGE_SYSNAME
+		unset UNAME_CHANGE_NODENAME
+		unset UNAME_CHANGE_RELEASE
+		unset UNAME_CHANGE_VERSION
+		unset UNAME_CHANGE_MACHINE
+		unset UNAME_CHANGE_DOMAINNAME
+	
+		export LD_PRELOAD="${LD_PRELOAD/\/usr\/lib\/unamechange.so/}"
+	fi
+}
