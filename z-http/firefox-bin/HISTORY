@@ -1,3 +1,6 @@
+2005-06-10 George Sherwood <george@beernabeer.com>
+	* VOLATILES: Added file for cleanse fix (Bug #8987)
+
 2005-05-12 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 1.0.4
 
