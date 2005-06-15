@@ -1,5 +1,5 @@
 2005-06-14 David Brown <dmlb2000@excite.com>
-	* POST_REMOVE, INSTALL: removed glxtokens.h doesn't exist anymore
+	* POST_REMOVE, INSTALL, PRE_BUILD: removed glxtokens.h doesn't exist anymore
 
 2005-06-08 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 1.0-7664
