@@ -1,7 +1,7 @@
   XFREE_DIR=${INSTALL_ROOT}/usr/include/GL/xfree &&
   GL_DIR=${INSTALL_ROOT}/usr/include/GL/ &&	 
 message "${MESSAGE_COLOR}REINSTALLING XFREE86 HEADERS ${SPELL_COLOR}" 
-for i in gl.h  glext.h glx.h 
+for i in gl.h  glext.h glx.h glxext.h 
 do  mv -v ${XFREE_DIR}/$i ${GL_DIR} 
 done
 rm  -rf ${XFREE_DIR} 

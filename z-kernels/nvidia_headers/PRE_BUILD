@@ -6,7 +6,7 @@ if ! [ -d ${XFREE_DIR} ]
 	then mkdir ${XFREE_DIR} 
 fi &&
 if ! [ -f ${XFREE_DIR}/done ] 
-  then	for i in gl.h glext.h glx.h  ; 
+  then	for i in gl.h glext.h glx.h glxext.h ; 
 		do  mv -v ${GL_DIR}/$i ${XFREE_DIR} &&
 		    touch ${XFREE_DIR}/done
 		done

@@ -5,4 +5,6 @@ mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/drivers    &&
 mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/extensions &&
 export IGNORE_CC_MISMATCH=1                               &&
 default_install &&
+cd / &&
+patch -p0 <$SCRIPT_DIRECTORY/glx.h.patch-$VERSION &&
 devoke_uname_change
