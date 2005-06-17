@@ -1,15 +1,5 @@
---- usr/share/doc/NVIDIA_GLX-1.0/include/GL/glx.h.old	2005-06-16 04:50:40.000000000 +0000
-+++ usr/share/doc/NVIDIA_GLX-1.0/include/GL/glx.h	2005-06-16 04:49:45.000000000 +0000
-@@ -141,7 +141,9 @@
- typedef XID GLXPixmap;
- typedef XID GLXDrawable;
- typedef XID GLXPbuffer;
-+#ifdef GLX_SGIX_pbuffer
- typedef XID GLXPbufferSGIX;
-+#endif
- typedef XID GLXWindow;
- typedef XID GLXFBConfigID;
- 
+--- usr/include/GL/glx.h.old	2005-06-16 04:50:40.000000000 +0000
++++ usr/include/GL/glx.h	2005-06-16 04:49:45.000000000 +0000
 @@ -154,7 +156,9 @@
   * GLXFBConfig is a pointer to opaque data.
   */
