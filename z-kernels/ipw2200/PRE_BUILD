@@ -1,3 +1,30 @@
+if [[ $(get_sorcery_kernel_config CONFIG_FW_LOADER) != "y" ]] &&
+   [[ $(get_sorcery_kernel_config CONFIG_FW_LOADER) != "m" ]] &&
+   [[ $(get_sorcery_kernel_config CONFIG_NET_RADIO) != "y" ]] ; then
+  message "${PROBLEM_COLOR}You don't have wireless or firmware class enabled \
+in your kernel, This breaks ipw2200 and it won't compile${DEFAULT_COLOR}" &&
+  return 1
+fi &&
+if [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_ARC4) != "y" ]] &&
+   [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_ARC4) != "m" ]] &&
+   [[ $(get_sorcery_kernel_config CONFIG_CRC32) != "y" ]] &&
+   [[ $(get_sorcery_kernel_config CONFIG_CRC32) != "m" ]] ; then
+  message "${PROBLEM_COLOR}You don't have the right crypto support built in \
+the kernel, CONFIG_CRYPTO_ARC4 and CONFIG_CRC32. These are needed for WEP key \
+support.${DEFAULT_COLOR}"
+fi &&
+if [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_MICHAEL_MIC) != "y" ]] &&
+   [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_MICHAEL_MIC) != "m" ]] &&
+   [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_AES_586) != "y" ]] &&
+   [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_AES_586) != "m" ]] ; then
+  message "${PROBLEM_COLOR}You don't have the right crypto support built in \
+the kernel, CONFIG_CRYPTO_AES_586 and CONFIG_MICHAEL_MIC. These are needed \
+for WPA support.${DEFAULT_COLOR}"
+fi &&
 default_pre_build &&
+if [[ $(get_kernel_version) == 2.6.12 ]] ; then
+  cd $SOURCE_DIRECTORY &&
+  patch -p0 <$SCRIPT_DIRECTORY/ieee80211.h.patch 
+fi &&
 cd $SOURCE_DIRECTORY &&
 unpack $SOURCE2 ${MD5[1]}

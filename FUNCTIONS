@@ -236,3 +236,48 @@ devoke_uname_change()
 		export LD_PRELOAD="${LD_PRELOAD/\/usr\/lib\/unamechange.so/}"
 	fi
 }
+#-----------------------------------------------------------------------
+## Get the running kernel config status of a some part of the kernel
+## given by $1. Used for spells that don't have linux triggers
+##
+## $1 string Config variable to look for
+#-----------------------------------------------------------------------
+get_running_kernel_config()
+{
+	local KVER
+	# use proc interface because even inside a uname change invoke this
+	# still returns the version of the running kernel
+	if [ -f /proc/sys/kernel/osrelease ] ; then
+		KVER=$(cat /proc/sys/kernel/osrelease)
+	else
+		# apparently you don't have proc mount
+		KVER=$(uname -r)
+	fi
+	if [ -f /proc/config.gz ] ; then
+		echo $(zgrep "^$1=" /proc/config.gz | awk -F= '{ print $2 }')
+	elif [ -f /boot/config-$KVER ] ; then
+		echo $(grep "^$1=" /boot/config-$KVER | awk -F= '{ print $2 }')
+	elif [ -f /usr/src/linux-$KVER/.config ] ; then
+		echo $(grep "^$1=" /usr/src/linux-$KVER/.config | awk -F= '{ print $2 }')
+	else
+		echo "-1"
+	fi
+}
+
+#-------------------------------------------------------------------------
+## Get the config status of some part of the kernel sorcery says is 
+## installed. Used by spells that have linux triggers.
+##
+## $1 string Config var to look for
+#-------------------------------------------------------------------------
+get_sorcery_kernel_config()
+{
+	local KVER=$(get_kernel_version)
+	if [ -f /boot/config-$KVER ] ; then
+		echo $(grep "^$1=" /boot/config-$KVER | awk -F= '{ print $2 }')
+	elif [ -f /usr/src/linux-$KVER/.config ] ; then
+		echo $(grep "^$1=" /usr/src/linux-$KVER/.config | awk -F= '{ print $2 }')
+	else
+		echo "-1"
+	fi
+}
