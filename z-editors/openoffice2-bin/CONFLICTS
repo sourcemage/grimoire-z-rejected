@@ -1,0 +1,2 @@
+conflicts  openoffice  &&
+conflicts  openoffice-bin

@@ -1,0 +1,3 @@
+depends  rpmunpack     &&
+depends  mktemp  &&
+depends  JAVA

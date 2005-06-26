@@ -1,0 +1,11 @@
+mkdir -pv /opt/openoffice                           &&
+cd  $BUILD_DIRECTORY/openoffice2/RPMS                      &&
+cp -Rv opt/openoffice.org1.9.109/* /opt/openoffice         &&
+cp -Rv usr/share/icons/* /usr/share/icons                  &&
+
+# create bin links for executables.
+for LINK in "sbase" "scalc" "sdraw" "simpress" "smath" "soffice" "swriter"; do  
+  message "${MESSAGE_COLOR}Creating link for $LINK ${DEFAUL_COLOR}"
+  rm -f /usr/bin/$LINK
+  ln -s /opt/openoffice/program/$LINK /usr/bin/$LINK
+done
