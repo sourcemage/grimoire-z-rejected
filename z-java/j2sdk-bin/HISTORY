@@ -1,3 +1,6 @@
+2005-06-26 George Sherwood <george@beernabeer.com>
+	* volatiles: Added file to ignore lib. (Bug #8987)
+
 2005-05-17 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Depends on gcc33 (for libstdc++.so.5)
 
