@@ -1,3 +1,7 @@
+2005-06-26 George Sherwood <george@beernabeer.com>
+	* CONFLICTS: added conflicts openoffice2-bin
+	* volatiles: added file to pass cleanse (Bug #8992)
+
 2005-04-17 Thomas Houssin <Thomas.Houssin@sourcemage.org>
 	* PRE_BUILD, DETAILS, POST_INSTALL: security update
 
