@@ -3,7 +3,7 @@ cd $BUILD_DIRECTORY/openoffice2       &&
 unpack ${SOURCE} ${MD5[0]}            &&
 cd RPMS                               &&
 
-for PART in core01 core02 core03 core04 core05 core06 core07 core08 core09 core10 calc draw impress math writer graphicfilter pyuno spellcheck testtool xsltfilter core03u core04u core05u; do  
+for PART in core01 core02 core03 core04 core05 core06 core07 core08 core09 core10 calc draw impress math writer graphicfilter pyuno spellcheck testtool xsltfilter core03u core04u core05u javafilter gnome-integration; do  
   message "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"
   rpmunpack openofficeorg-$PART-1.9.109-1.i586.rpm
   gzip -d   openofficeorg-$PART-1.9.109-1.cpio.gz

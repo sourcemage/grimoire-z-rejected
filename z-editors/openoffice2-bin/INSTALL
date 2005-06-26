@@ -1,7 +1,8 @@
-mkdir -pv /opt/openoffice                           &&
+INSTALLDIR=$INSTALL_ROOT/opt/openoffice             &&
+mkdir -pv $INSTALLDIR                           &&
 cd  $BUILD_DIRECTORY/openoffice2/RPMS                      &&
-cp -Rv opt/openoffice.org1.9.109/* /opt/openoffice         &&
-cp -Rv usr/share/icons/* /usr/share/icons                  &&
+cp -Rv opt/openoffice.org1.9.109/* $INSTALLDIR         &&
+cp -Rv usr/share/icons/* $INSTALL_ROOT/usr/share/icons   &&
 
 # create bin links for executables.
 for LINK in "sbase" "scalc" "sdraw" "simpress" "smath" "soffice" "swriter"; do  

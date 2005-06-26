@@ -1,3 +1,8 @@
 2005-06-26 George Sherwood <george@beernabeer.com>
+	* INSTALL: added variable for INSTALLDIR
+	* PRE_BUILD: added a few more files to install
+	* volatiles: added file to pass cleanse
+
+2005-06-26 George Sherwood <george@beernabeer.com>
 	* All files: Created Spell
 
