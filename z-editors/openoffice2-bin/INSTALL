@@ -5,7 +5,7 @@ cp -Rv opt/openoffice.org1.9.109/* $INSTALLDIR         &&
 cp -Rv usr/share/icons/* $INSTALL_ROOT/usr/share/icons   &&
 
 # create bin links for executables.
-for LINK in "sbase" "scalc" "sdraw" "simpress" "smath" "soffice" "swriter"; do  
+for LINK in "sbase" "scalc" "sdraw" "simpress" "smath" "soffice" "swriter" "spadmin"; do  
   message "${MESSAGE_COLOR}Creating link for $LINK ${DEFAUL_COLOR}"
   rm -f /usr/bin/$LINK
   ln -s /opt/openoffice/program/$LINK /usr/bin/$LINK
