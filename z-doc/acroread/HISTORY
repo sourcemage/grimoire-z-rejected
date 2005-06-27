@@ -1,3 +1,6 @@
+2005-06-27 George Sherwood <george@beernabeer.com>
+	* DEPENDS: Added depends on openldap (Bug 8988)
+
 2005-04-29 George Sherwood <george@beernabeer.com>
 	* INSTALL: removed symlink to libstdc++.so.6 (Bug 8746)
 	* DEPENDS: Added depends on gcc33 (Bug 8746)
