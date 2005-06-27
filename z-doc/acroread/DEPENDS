@@ -1,3 +1,2 @@
 depends ed    &&
-depends gcc33 &&
-depends openldap
+depends gcc33
