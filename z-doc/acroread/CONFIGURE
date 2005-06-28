@@ -17,8 +17,4 @@ else
 fi  &&
 
 message  "${MESSAGE_COLOR}You can add this plugin to other browsers by \
-pointing to:/usr/lib/acroread/Browsers/intellinux/nppdf.so${DEFAULT_COLOR}"  && 
-  
-config_query ACROREAD_OPENLDAP "Install Public-Key Security plugin \
-(requires openldap)?" n
-
+pointing to:/usr/lib/acroread/Browsers/intellinux/nppdf.so${DEFAULT_COLOR}" 

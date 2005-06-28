@@ -16,6 +16,6 @@ if  [  "$ACROREAD_FIREFOX"  =  "y"  ];  then
   chmod  0755  /usr/lib/firefox/plugins/nppdf.so
 fi  &&
 
-if [ "$ACROREAD_OPENLDAP" == "n" ]; then
+if list_find "$OPTS" no-openldap ; then
   rm /usr/lib/acroread/Reader/intellinux/plug_ins/PPKLite.api
 fi

@@ -1,5 +1,3 @@
 depends ed    &&
 depends gcc33  &&
-if [ "$ACROREAD_OPENLDAP" == "y" ]; then
-  depends openldap
-fi
+optional_depends openldap "" "no-openldap" "Public-Key Security plugin"
