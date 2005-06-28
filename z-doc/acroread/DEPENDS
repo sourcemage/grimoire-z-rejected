@@ -1,2 +1,5 @@
 depends ed    &&
-depends gcc33
+depends gcc33  &&
+if [ "$ACROREAD_OPENLDAP" == "y" ]; then
+  depends openldap
+fi

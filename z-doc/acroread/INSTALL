@@ -14,4 +14,8 @@ if  [  "$ACROREAD_FIREFOX"  =  "y"  ];  then
   ln  -sf  /usr/lib/acroread/Browsers/intellinux/nppdf.so  \
            /usr/lib/firefox/plugins/nppdf.so               &&
   chmod  0755  /usr/lib/firefox/plugins/nppdf.so
+fi  &&
+
+if [ "$ACROREAD_OPENLDAP" == "n" ]; then
+  rm /usr/lib/acroread/Reader/intellinux/plug_ins/PPKLite.api
 fi
