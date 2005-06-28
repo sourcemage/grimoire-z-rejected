@@ -1,3 +1,10 @@
+2005-06-27 David Brown <dmlb2000@excite.com>
+	* DETAILS: added gpg signing commented out md5sum checks
+	* PRE_BUILD: added call to unpack_file instead of unpack
+	* ipw2200-fw-2.3.tgz.sig: added
+	* ipw2200-1.0.4.tgz.sig: added
+	* dmlb2000.gpg: my public key
+
 2005-06-23 David Brown <dmlb2000@excite.com>
 	* PRE_BUILD: the patch works with any 2.6.12.* kernel so changed
 	  the conditional to reflect that
