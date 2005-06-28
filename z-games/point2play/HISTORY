@@ -1,9 +1,10 @@
 2005-06-28 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 2.0.1
 	  Removed ARCHIVE="off"
+	* DEPENDS: Added dependencies on pango, pygtk2, and glade2
+	* CONFLICTS: Conflicts with point2play-small
 	* PRE_BUILD: Apply system_info.patch
 	  Remove old.libraries (we don't want them installed)
-	* DEPENDS: Added dependencies on pango, pygtk2, and glade2
 	* system_info.patch: Fixes
 	  http://transgaming.org/forum/viewtopic.php?p=18935
 
