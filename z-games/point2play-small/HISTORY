@@ -1,0 +1,13 @@
+2005-06-28 Eric Sandall <eric@sandall.us>
+	* DETAILS: Removed ARCHIVE="off"
+	* PRE_BUILD: Apply system_info.patch
+	* DEPENDS: Formatted to Guru Handbook
+	  Added dependencies on pango and glade2
+	  Removed dependency on gtk+2 (covered by others) and gtk-engines2
+	* system_info.patch: Fixes
+	  http://transgaming.org/forum/viewtopic.php?p=18935
+	* Added to z-games  (Bug #9099)
+
+2005-06-13 Bearcat M. Sandor  <Sorcerer@TheDragonsEdge.com>
+	* First version of spell
+
