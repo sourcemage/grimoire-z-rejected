@@ -1,7 +1,7 @@
 INSTALLDIR=$INSTALL_ROOT/opt/openoffice             &&
 mkdir -pv $INSTALLDIR                           &&
-cd  $BUILD_DIRECTORY/openoffice2/RPMS                      &&
-cp -Rv opt/openoffice.org1.9.109/* $INSTALLDIR         &&
+cd  $BUILD_DIRECTORY/openoffice2/SRC680_m113_native_packed-1_en-US.8930/RPMS &&
+cp -Rv opt/openoffice.org1.9.113/* $INSTALLDIR         &&
 cp -Rv usr/share/icons/* $INSTALL_ROOT/usr/share/icons   &&
 
 # create bin links for executables.

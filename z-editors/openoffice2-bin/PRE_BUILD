@@ -1,17 +1,17 @@
 mkdir -pv $BUILD_DIRECTORY/openoffice2   &&
 cd $BUILD_DIRECTORY/openoffice2       &&
 unpack ${SOURCE} ${MD5[0]}            &&
-cd RPMS                               &&
+cd SRC680_m113_native_packed-1_en-US.8930/RPMS            &&
 
 for PART in core01 core02 core03 core04 core05 core06 core07 core08 core09 core10 calc draw impress math writer graphicfilter pyuno spellcheck testtool xsltfilter core03u core04u core05u javafilter gnome-integration; do  
   message "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"
-  rpmunpack openofficeorg-$PART-1.9.109-1.i586.rpm
-  gzip -d   openofficeorg-$PART-1.9.109-1.cpio.gz
-  cpio -idm < openofficeorg-$PART-1.9.109-1.cpio
+  rpmunpack openofficeorg-$PART-1.9.113-1.i586.rpm
+  gzip -d   openofficeorg-$PART-1.9.113-1.cpio.gz
+  cpio -idm < openofficeorg-$PART-1.9.113-1.cpio
 done
 
 message "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
-rpmunpack desktop-integration/openofficeorg-freedesktop-menus-1.9.109-1.noarch.rpm &&
-gzip -d   openofficeorg-freedesktop-menus-1.9.109-1.cpio.gz  &&
-cpio -idm < openofficeorg-freedesktop-menus-1.9.109-1.cpio
+rpmunpack desktop-integration/openofficeorg-freedesktop-menus-1.9.113-1.noarch.rpm &&
+gzip -d   openofficeorg-freedesktop-menus-1.9.113-1.cpio.gz  &&
+cpio -idm < openofficeorg-freedesktop-menus-1.9.113-1.cpio
 
