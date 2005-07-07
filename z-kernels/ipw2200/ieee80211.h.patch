@@ -1,14 +1,15 @@
---- net/ieee80211.h.old	2005-06-19 01:30:29.000000000 -0700
-+++ net/ieee80211.h	2005-06-19 02:38:11.000000000 -0700
-@@ -718,11 +718,6 @@
+--- net/ieee80211.h.old	2005-07-06 20:17:35.000000000 -0700
++++ net/ieee80211.h	2005-07-06 20:17:56.000000000 -0700
+@@ -718,10 +718,12 @@
  #define MAC_ARG(x) ((u8*)(x))[0],((u8*)(x))[1],((u8*)(x))[2],((u8*)(x))[3],((u8*)(x))[4],((u8*)(x))[5]
  
  
--extern inline int is_multicast_ether_addr(const u8 *addr)
--{
--	return ((addr[0] != 0xff) && (0x01 & addr[0]));
--}
--
++#if ( LINUX_VERSION_CODE < KERNEL_VERSION(2,6,12) )
+ extern inline int is_multicast_ether_addr(const u8 *addr)
+ {
+ 	return ((addr[0] != 0xff) && (0x01 & addr[0]));
+ }
++#endif
+ 
  extern inline int is_broadcast_ether_addr(const u8 *addr)
  {
- 	return ((addr[0] == 0xff) && (addr[1] == 0xff) && (addr[2] == 0xff) &&   \

@@ -23,9 +23,7 @@ for WPA support.${DEFAULT_COLOR}"
 fi &&
 mk_source_dir ${SOURCE_DIRECTORY} &&
 unpack_file '' &&
-if [[ $(get_kernel_version) == 2.6.12* ]] ; then
-  cd $SOURCE_DIRECTORY &&
-  patch -p0 <$SCRIPT_DIRECTORY/ieee80211.h.patch 
-fi &&
+cd $SOURCE_DIRECTORY &&
+patch -p0 <$SCRIPT_DIRECTORY/ieee80211.h.patch &&
 cd $SOURCE_DIRECTORY &&
 unpack_file 2
