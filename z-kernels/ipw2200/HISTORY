@@ -1,6 +1,7 @@
 2005-07-08 David Brown <dmlb2000@excite.com>
 	* ieee80211.h.patch: modified to include "net/ieee80211.h" so it works
 	  with 2.6.13-rc2, haven't tried it with 2.6.13-rc2 yet but it compiles
+	* PRE_BUILD: -p value changed
 
 2005-07-06 David Brown <dmlb2000@excite.com>
 	* ieee80211.h.patch: modified to patch for any version of kernel
