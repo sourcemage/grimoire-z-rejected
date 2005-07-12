@@ -1,10 +1,10 @@
            SPELL=mercury
-         VERSION=1709RC12b
-          SOURCE=1709_RC12b.zip
+         VERSION=1709RC12c
+          SOURCE=1709_RC12c.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.beernabeer.com/$SOURCE
 #   SOURCE_URL[0]=http://download.sourcemage.org/mirror/$SOURCE
-          MD5[0]='0beab58e212f245d459ae1628d91c6b2'
+          MD5[0]='346e44b6c1707288c4574f057fb49c09'
         WEB_SITE=http://www.mercury.to
          ENTERED=20050531
          UPDATED=20020531
