@@ -1,3 +1,8 @@
+2005-07-12 David Brown <dmlb2000@excite.com>
+	* DETAILS: updated to 7667-pkg1 and use gpg checking for source validity
+	* BUILD: removed patches that don't need to be applied anymore
+	* PRE_BUILD: changed unpack to unpack_file
+
 2005-06-16 David Brown <dmlb2000@excite.com>
 	* INSTALL: reverted my patch
 	* BUILD: applied here as well as removed the defines patch because

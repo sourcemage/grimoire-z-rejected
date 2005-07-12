@@ -1,6 +1,3 @@
-#patch  -p1  <  $SCRIPT_DIRECTORY/NVIDIA_glx-1.0.7167-defines.patch    &&
-patch  -p0  <  $SCRIPT_DIRECTORY/glx.h.patch-$VERSION &&
-patch  -p1  <  $SCRIPT_DIRECTORY/NVIDIA_glx-1.0.7167-glheader.patch   &&
 invoke_uname_change &&
 export UNAME_CHANGE_RELEASE=$(get_kernel_version) &&
 cd usr/src/nv  &&
