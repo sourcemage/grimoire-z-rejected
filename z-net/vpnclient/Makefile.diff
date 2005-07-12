@@ -1,0 +1,13 @@
+--- Makefile.old	2005-06-22 03:21:53.000000000 -0700
++++ Makefile	2005-06-22 03:21:34.000000000 -0700
+@@ -38,6 +38,10 @@
+ 
+ default: 
+ 	$(MAKE) -C $(KERNEL_SOURCES) SUBDIRS=$(PWD) modules
++
++install:
++	$(MAKE) -C $(KERNEL_SOURCES) SUBDIRS=$(PWD) INSTALL_MOD_DIR=CiscoVPN modules_install
++
+ clean:
+ 	-rm -f $(SOURCE_OBJS)
+ 	-rm -f $(MODULE_NAME).mod.*
