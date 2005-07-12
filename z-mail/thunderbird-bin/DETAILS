@@ -1,9 +1,9 @@
            SPELL=thunderbird-bin
-         VERSION=1.0
+         VERSION=1.0.2
           SOURCE=thunderbird-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/thunderbird
-   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/1.0/linux-i686-gtk2+xft/en-US/$SOURCE
-          MD5[0]="f3b9810392c1a27fc40e0d85c0fb70d6"
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/1.0.2/linux-i686/en-US/$SOURCE
+          MD5[0]=845cb0dd98faf134a4f7274f1269af2d
         WEB_SITE=http://www.mozilla.org/projects/thunderbird
          ENTERED=20050301
          UPDATED=20050301
