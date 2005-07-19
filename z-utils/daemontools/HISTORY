@@ -1,3 +1,7 @@
+2005-07-19 Maurizio Boriani <baux@sourcemage.org>
+	* FINAL: svscan-start does not exists. Use svscanboot.
+	* init.d/svscan: Likewise.
+
 2005-02-18 Eric Sandall <eric@sandall.us>
 	* Applied Jeremy's patch  (Bug #8027)
 	* Moved from net/daemontools to z-rejected/z-utils/daemontools  (Bug #8027)

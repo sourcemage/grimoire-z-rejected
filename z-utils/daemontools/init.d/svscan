@@ -4,7 +4,7 @@
 # This init.d script primarily exists to provide the stop function during
 # shutdown.
 
-PROGRAM="/usr/bin/svscan-start /service"
+PROGRAM="/usr/bin/svscanboot /service"
 STATUSPROGRAM="svscan /service"
 RUNLEVEL=3
 NEEDS="+network" # not strictly true, but most services should go down before they lose networking
