@@ -24,6 +24,5 @@ fi &&
 mk_source_dir ${SOURCE_DIRECTORY} &&
 unpack_file '' &&
 cd $SOURCE_DIRECTORY &&
-patch -p1 <$SCRIPT_DIRECTORY/ieee80211.h.patch &&
-cd $SOURCE_DIRECTORY &&
 unpack_file 2
+unpack_file 3
