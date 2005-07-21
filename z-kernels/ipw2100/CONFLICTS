@@ -1,4 +1,2 @@
-conflicts  ipw2200 &&
-conflicts  ipw2100_driver y &&
-conflicts  ipw2100_firmware y 
-
+conflicts ipw2100_firmware y &&
+conflicts ipw2100_driver y  

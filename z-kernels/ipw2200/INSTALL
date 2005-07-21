@@ -1,6 +1,3 @@
-cd ieee80211-$IEEEVERSION &&
-make KVER=$(get_kernel_version) install &&
-cd ../ &&
 make KVER=$(get_kernel_version) install &&
 message "${MESSAGE_COLOR}Installing firmware${DEFAULT_COLOR}" &&
 [ -d "${INSTALL_ROOT}/lib/firmware" ] || mkdir "${INSTALL_ROOT}/lib/firmware" &&

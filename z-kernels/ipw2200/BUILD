@@ -1,4 +1,3 @@
-cd ieee80211-$IEEEVERSION &&
+devoke_installwatch &&
 make KVER=$(get_kernel_version) &&
-cd ../ &&
-make KVER=$(get_kernel_version) IEEE80211_MODVERDIR=./ieee80211-$IEEEVERSION
+invoke_installwatch

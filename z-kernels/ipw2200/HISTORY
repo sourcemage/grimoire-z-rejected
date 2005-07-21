@@ -1,3 +1,11 @@
+2005-07-21 David Brown <dmlb2000@gmail.com>
+	* DETAILS: removed ieee80211 stuff
+	* BUILD: removed ieee80211 stuff
+	* INSTALL: removed ieee80211 stuff
+	* DETAILS: removed ieee80211 stuff
+	* CONFLICTS: removed ipw2100 doesn't anymore
+	* PRE_BUILD: removed ieee80211 stuff
+
 2005-07-18 David Brown <dmlb2000@gmail.com>
 	* DETAILS: updated 1.0.6 and added the ieee80211 subsystem as another
 	  source
