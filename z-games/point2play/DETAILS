@@ -1,8 +1,8 @@
            SPELL=point2play
-         VERSION=2.0.1
+         VERSION=2.0.2
           SOURCE=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-          MD5[0]=f0cabd736002d23b577825ce86f8f9d5
+          MD5[0]=dda6d1c0eb417a33a4759d1326661ee6
         WEB_SITE=http://www.transgaming.com/
          ENTERED=20040111
          UPDATED=20040111
