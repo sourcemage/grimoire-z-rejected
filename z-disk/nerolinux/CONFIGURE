@@ -1,0 +1,6 @@
+#must already own nero for windows
+source $SCRIPT_DIRECTORY/NERO_WARNING &&
+
+# Standard rejected warnings.
+#
+source $GRIMOIRE/REJECTED_MSG

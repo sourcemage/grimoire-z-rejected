@@ -1,0 +1,19 @@
+           SPELL=nerolinux
+         VERSION=2.0.0.2-x86
+          SOURCE=$SPELL-$VERSION.rpm
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerolinux
+SOURCE_URL[0]=ftp://ftp8.us.nero.com/$SOURCE
+SOURCE_URL[1]=http://httpdl1.nero.com/$SOURCE
+          MD5[0]='feb6ef9c10cd609e42c04bcc12559601'
+        WEB_SITE=http://www.nero.com
+         ENTERED=20050722
+         UPDATED=20050722
+      LICENSE[0]=UNKNOWN
+      BUILD_API=2
+         ARCHIVE="off"
+          REJECT="non-source and license"
+           SHORT="Linux version of Nero"
+cat << EOF
+NeroLINUX is a comprehensive, yet flexible application provided you have 
+some prior knowledge of CD/DVD technologies.
+EOF

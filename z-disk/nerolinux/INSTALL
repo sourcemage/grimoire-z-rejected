@@ -1,0 +1,5 @@
+INSTALLDIR=$INSTALL_ROOT/usr             &&
+mkdir -pv $INSTALLDIR                         &&
+cd  $BUILD_DIRECTORY/nerolinux                &&
+cp -Rv usr/* $INSTALLDIR
+
