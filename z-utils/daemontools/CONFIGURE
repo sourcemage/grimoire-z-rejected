@@ -1,0 +1,3 @@
+config_query  CHANGE_INITTAB  "Install svscanboot in inittab?"  y
+config_query  USE_SUPERVISE   \
+  "Use supervise wrappers scripts instead of plain svscanboot"  n

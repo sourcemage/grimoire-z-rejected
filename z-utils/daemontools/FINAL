@@ -1,11 +1,28 @@
-echo  "Installing svscanboot to /etc/inittab..."  &&
+if [ $"CHANGE_INITTAB" == "n" ];
+then
+    return 0
+fi
 
-if  !  grep  -q  svscan-start  /etc/inittab;  then
-  cp  -f  /etc/inittab  /etc/inittab.`date -I`  &&
-  sed  -i  -e  '1,/^tty/{; /^tty/i \
-tty99:dumb:/usr/bin/svscanboot /service
-  }'  /etc/inittab  ||  return  1
-  echo  "svscanboot has been added to /etc/inittab. 'kill -1 1' to reload init."
+local MySVBOOT=svscanboot # default
+
+if [ "$USE_SUPERVISE" == "y" ];
+then
+    MySVBOOT=svscan-start
+fi
+
+echo  "Installing svscanboot to /etc/inittab..."                     &&
+
+if  !  grep  -q  svscan /etc/inittab;  
+then
+    cp  -f  /etc/inittab  /etc/inittab.`date -I`                     &&
+    sed  -i  -e  "1,/^tty/{; /^tty/i \
+svscanboot:dumb:/usr/bin/$MySVBOOT
+  }"  /etc/inittab  ||  return  1
+    echo -n "$MySVBOOT has been added to /etc/inittab. "
+    echo    "'kill -1 1' to reload init."
 else
-  echo  "svscanboot is already in /etc/inittab."
+    cp  -f  /etc/inittab  /etc/inittab.`date -I`                     &&
+    sed  -i "s/^.*svscan.*$/svscanboot:dumb:\/usr\/bin\/$MySVBOOT/"   \
+	/etc/inittab  ||  return  1
+    echo  "$MySVBOOT is already in /etc/inittab, updated"
 fi

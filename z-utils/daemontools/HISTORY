@@ -1,3 +1,9 @@
+2005-07-25 Maurizio Boriani <baux@sourcemage.org>
+	* FINAL: inittab modifyed after ask.
+	* CONFIGURE: New, ask for supervise scripts support.
+	* DEPENDS: New, supervise-scripts optional depends.
+	* init.d/svscan: Fixed.
+
 2005-07-19 Maurizio Boriani <baux@sourcemage.org>
 	* FINAL: svscan-start does not exists. Use svscanboot.
 	* init.d/svscan: Likewise.
