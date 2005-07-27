@@ -1,0 +1,4 @@
+2005-07-28 David Brown <dmlb2000@gmail.com>
+	* ALL: created spell
+	* BUILD: did check for subsystem if it's already in the kernel
+	* INSTALL: same check for subsystem if it's already in the kernel
