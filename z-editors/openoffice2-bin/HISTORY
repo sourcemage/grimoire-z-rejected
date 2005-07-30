@@ -1,9 +1,7 @@
 2005-07-29 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added usage of GPG checking
 	* PRE_BUILD: Updated for GPG checking
-	  Latest version doesn't include freedesktop icons
 	  Use SOURCE_DIRECTORY and mk_source_dir
-	* INSTALL: Don't try to install non-existent icons
 
 2005-07-20 George Sherwood <george@beernabeer.com>
 	* DETAILS, PRE_BUILD, INSTALL: Update to version 113
