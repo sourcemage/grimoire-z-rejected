@@ -1,8 +1,9 @@
-invoke_uname_change &&
-export UNAME_CHANGE_RELEASE=$(get_kernel_version) &&
 sedit 's/ lsmod / true /' usr/src/nv/conftest.sh          &&
 mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/drivers    &&
 mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/extensions &&
 export IGNORE_CC_MISMATCH=1                               &&
-default_install &&
-devoke_uname_change
+cd usr/src/nv                                             &&
+make KERNEL_MODLIB=/lib/modules/$(get_kernel_version) module-install &&
+cd $SOURCE_DIRECTORY &&
+sedit 's/install: kernel_module_install/install: /g' Makefile &&
+make install 

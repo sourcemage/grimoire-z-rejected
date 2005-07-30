@@ -2,9 +2,6 @@ invoke_uname_change &&
 export UNAME_CHANGE_RELEASE=$(get_kernel_version) &&
 cd usr/src/nv  &&
 
-### We look at the Makefile in the kernel sources for the Version Number!
-KPATCHLEVEL=$(head -n 2 /lib/modules/$(uname -r)/build/Makefile | tail -n 1 | sed 's/.*= //')
-
 ### please no-one remove this
 cd $SOURCE_DIRECTORY  &&
   
@@ -15,4 +12,7 @@ if [[ $ALiAGP == "y" ]]; then sedit "s/NVreg_EnableALiAGP = 0;/NVreg_EnableALiAG
 if [[ $AGPSBA == "y" ]]; then sedit "s/NVreg_EnableAGPSBA = 0;/NVreg_EnableAGPSBA = 1;/" usr/src/nv/os-registry.c; fi &&
 
 if [[ $AGPFW == "y" ]]; then sedit "s/NVreg_EnableAGPFW = 0;/NVreg_EnableAGPFW = 1;/" usr/src/nv/os-registry.c; fi &&
-devoke_uname_change
+
+cd usr/src/nv &&
+make KERNEL_MODLIB=/lib/modules/$(get_kernel_version) module &&
+cd $SOURCE_DIRECTORY
