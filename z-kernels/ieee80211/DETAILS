@@ -2,7 +2,7 @@
          VERSION=1.0.3
        BUILD_API=2
           SOURCE=$SPELL-$VERSION.tgz
-      SOURCE_GPG=dmlb2000.gpg:${SOURCE}.sig
+      SOURCE_GPG=gurus.gpg:${SOURCE}.sig
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE  
         WEB_SITE=http://$SPELL.sf.net/

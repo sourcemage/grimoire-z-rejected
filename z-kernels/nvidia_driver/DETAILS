@@ -3,7 +3,7 @@
           SOURCE=NVIDIA-Linux-x86-$VERSION.run
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION
    SOURCE_URL[0]=http://download.nvidia.com/XFree86/Linux-x86/${VERSION/-pkg1/}/$SOURCE
-      SOURCE_GPG="dmlb2000.gpg:${SOURCE}.sig"
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
         WEB_SITE=http://www.nvidia.com
          ENTERED=20030401
          UPDATED=20050314

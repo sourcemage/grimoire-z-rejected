@@ -1,3 +1,6 @@
+2005-07-30 David Brown <dmlb2000@gmail.com>
+	* DETAILS: removed dmlb2000.gpg for the global gurus.gpg keyring
+
 2005-07-21 David Brown <dmlb2000@gmail.com>
 	* DETAILS: removed ieee80211 stuff
 	* BUILD: removed ieee80211 stuff
