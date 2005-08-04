@@ -1,10 +1,14 @@
+2005-08-04 George Sherwood <george@beernabeer.com>
+	* DETAILS, PRE_BUILD, INSTALL: Update to version 122
+	* DEPENDS: removed rpmunpack, added alien
+
 2005-07-29 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added usage of GPG checking
 	* PRE_BUILD: Updated for GPG checking
 	  Use SOURCE_DIRECTORY and mk_source_dir
 
 2005-07-20 George Sherwood <george@beernabeer.com>
-	* DETAILS, PRE_BUILD, INSTALL: Update to version 113
+	* DETAILS, PRE_BUILD, INSTALL: Update to version 118
 
 2005-07-01 George Sherwood <george@beernabeer.com>
 	* DETAILS, PRE_BUILD, INSTALL: Update to version 113
