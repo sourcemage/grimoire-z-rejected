@@ -1,0 +1,1 @@
+cp doom1.wad ${INSTALL_ROOT}/usr/share/games/doom

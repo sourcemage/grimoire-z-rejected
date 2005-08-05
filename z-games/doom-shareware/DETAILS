@@ -1,0 +1,16 @@
+           SPELL=doom-shareware
+         VERSION=1.8
+       BUILD_API=2
+          SOURCE=doom-${VERSION}.wad.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+   SOURCE_URL[0]=ftp://ftp.idsoftware.com/idstuff/doom/${SOURCE}
+        WEB_SITE=http://www.idsoftware.com
+         ENTERED=20050805
+         UPDATED=20050805
+          MD5[0]=5f4eb849b1af12887dec04a2a12e5e62
+      LICENSE[0]=PD
+           SHORT="the shareware wad file for doom"
+cat << EOF
+This is the data file for doom 1, released under a shareware license by id.
+EOF
+
