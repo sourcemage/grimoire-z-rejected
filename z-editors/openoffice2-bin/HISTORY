@@ -1,3 +1,6 @@
+2005-08-08 George Sherwood <george@beernabeer.com>
+	* DEPENDS: Added rpm. (Bug 9409)
+
 2005-08-04 George Sherwood <george@beernabeer.com>
 	* DETAILS, PRE_BUILD, INSTALL: Update to version 122
 	* DEPENDS: removed rpmunpack, added alien

@@ -1,3 +1,4 @@
 depends  alien     &&
+depends  rpm     &&
 depends  mktemp  &&
 depends  JAVA
