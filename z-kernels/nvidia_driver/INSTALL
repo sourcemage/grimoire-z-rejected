@@ -3,7 +3,7 @@ mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/drivers    &&
 mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/extensions &&
 export IGNORE_CC_MISMATCH=1                               &&
 cd usr/src/nv                                             &&
-make KERNEL_MODLIB=/lib/modules/$(get_kernel_version) module-install &&
+make KERNEL_MODLIB=/lib/modules/$(get_kernel_version) KERNEL_UNAME=$(get_kernel_version) module-install &&
 cd $SOURCE_DIRECTORY &&
 sedit 's/install: kernel_module_install/install: /g' Makefile &&
 make install 

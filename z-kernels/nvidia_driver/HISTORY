@@ -1,3 +1,6 @@
+2005-08-09 David Brown <dmlb2000@gmail.com>
+	* INSTALL: added KERNEL_UNAME for install
+
 2005-07-30 David Brown <dmlb2000@gmail.com>
 	* DETAILS: removed dmlb2000.gpg for the global gurus.gpg keyring 
 	  and added the check for x86-64 archs bug fix 8657
