@@ -1,3 +1,7 @@
+2005-08-10 Gareth Clay 
+	* DETAILS: fixed x86_64 SOURCE_URL and changed architecture check to
+          work for non-devel sorcery
+
 2005-08-09 David Brown <dmlb2000@gmail.com>
 	* INSTALL: added KERNEL_UNAME for install
 
