@@ -1,3 +1,8 @@
+2005-08-10 David Brown <dmlb2000@gmail.com>
+	* DETAILS: reverted Gareth's fix and added sourcing of the FUNCTIONS
+	  file to provide basic support for the SMGL_COMPAT_ARCHS for stable
+	  and test sorcery
+
 2005-08-10 Gareth Clay 
 	* DETAILS: fixed x86_64 SOURCE_URL and changed architecture check to
           work for non-devel sorcery

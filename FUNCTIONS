@@ -292,3 +292,24 @@ function unpack_file() {
   message "This spell uses a function only available in sorcery 1.12.2 or newer, please update."
   return 1
 }
+
+#-------------------------------------------------------------------------
+## compatibility code for stable and test sorcery
+## this should be removed when SMGL_COMPAT_ARCHS reaches stable sorcery
+#-------------------------------------------------------------------------
+if [[ -z $SMGL_COMPAT_ARCHS ]] ; then
+	local SPECFILE
+	local specdir
+	for specdir in ${ARCH_SPECS[@]} ; do
+		SPECFILE=$(find -L ${specdir} -perm -400 -type f -name "$ARCHITECTURE" -print -quit 2>/dev/null);
+		[ $SPECFILE ] && break
+	done
+	explode "${SPECFILE#$specdir/}" '/' SMGL_COMPAT_ARCHS
+	
+	unset ARCHITECTURE
+	# Reverse the array so that the most specific arch is first
+	j=0
+	for(( i=${#SMGL_COMPAT_ARCHS[@]}-1; i>=0; i--)) ; do
+		ARCHITECTURE[j++]=${SMGL_COMPAT_ARCHS[i]}
+	done
+fi

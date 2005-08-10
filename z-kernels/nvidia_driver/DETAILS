@@ -1,14 +1,25 @@
+. $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_driver
-            ARCH=`uname -m`
-if [[ "${ARCH:0:6}" == "x86_64" ]]; then
-	 VERSION=1.0-7667-pkg2
+case "${SMGL_COMPAT_ARCHS[0]}" in
+	x86-64)
+         VERSION=1.0-7667-pkg2
 	  SOURCE=NVIDIA-Linux-x86_64-${VERSION}.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86_64/${VERSION/-pkg*}/$SOURCE
-else
+        ;;
+	ia32)
          VERSION=1.0-7667-pkg1
           SOURCE=NVIDIA-Linux-x86-$VERSION.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86/${VERSION/-pkg*}/$SOURCE
-fi
+        ;;
+############################################################
+# missing ia64 support we don't have an arch spec for it???
+############################################################
+	*)
+	 VERSION=${SMGL_COMPAT_ARCHS[0]}
+	  SOURCE=
+      SOURCE_URL=
+        ;;
+esac
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
         WEB_SITE=http://www.nvidia.com
