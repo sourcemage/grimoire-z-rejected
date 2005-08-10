@@ -1,3 +1,9 @@
+2005-08-10 David Brown <dmlb2000@gmail.com>
+	* DETAILS: updated to default to unsupported if the arch isn't available
+	  also added gpg checking for source tarballs
+	* INSTALL: changed check to ia32 and added warning about i486 and i386
+	* PRE_BUILD: added unpack_file to check gpg key
+
 2005-08-08 Gareth Clay <gareth@caffeinefuelled.co.uk>
 	* DETAILS: added x86-64 architecture
 
