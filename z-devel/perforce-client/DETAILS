@@ -16,8 +16,8 @@ case "${HOST}" in
    VERSION_MINOR=76880
    SHORT_VERSION=04.2
           P_ARCH=linux24x86
-          MD5[0]='f9c2934bdc49b22b4d0b505aecf2e19a'
-          MD5[1]='14e277b6fa2133eabc27f9b4059d92c0'
+          MD5[0]='549a1067b5569d41281215cf122279e2'
+          MD5[1]='5851284f403a0dea232cf6b577917df3'
     ;;
 
   powerpc-*)
