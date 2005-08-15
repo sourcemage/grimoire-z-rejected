@@ -1,1 +1,1 @@
-requires j2sdk
+depends j2sdk

@@ -1,3 +1,6 @@
+2005-08-14 David Brown <dmlb2000@gmail.com>
+	* DEPENDS: requires deprecated changed to depends
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
