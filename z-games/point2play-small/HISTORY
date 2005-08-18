@@ -1,3 +1,10 @@
+2005-08-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 2.0.3
+	  Switched to GPG source verification
+	  Applied Level 1 verification of source
+	* PRE_BUILD: Now uses unpack_file instead of unpack for GPG checking
+	* point2play-small-2.0.3.tgz.sig: Added
+
 2005-07-22 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 2.0.2
 
