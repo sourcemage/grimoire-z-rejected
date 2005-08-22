@@ -1,4 +1,4 @@
-sedit  "s/\/usr\/local\/Adobe\/Acrobat${VERSION}/\/usr\/lib\/acroread/"  INSTALL  &&
+sedit  "s/\/usr\/local\/Adobe\/Acrobat${VERSION2}.${VERSION3}/\/usr\/lib\/acroread/"  INSTALL  &&
 install  -d  -m  755  /usr/lib/acroread                                      &&
 echo  -e  "\n"  |  ./INSTALL                                      &&
 

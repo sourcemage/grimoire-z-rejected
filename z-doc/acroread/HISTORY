@@ -1,3 +1,7 @@
+2005-08-21 Thomas Houssin <Thomas.Houssin@sourcemage.org>
+	* DETAILS: updated to 7.0.1, security update
+		see http://www.adobe.com/support/techdocs/321644.html
+
 2005-06-27 George Sherwood <george@beernabeer.com>
 	* DEPENDS: add optional depends on openldap
 	* INSTALL: remove plugin if openldap not installed (Bug 8988)
