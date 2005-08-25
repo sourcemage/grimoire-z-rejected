@@ -1,3 +1,8 @@
+2005-08-25 George Sherwood <george@beernabeer.com>
+	* DETAILS, PRE_BUILD, INSTALL: Updated to beta2 (version 125)
+	* DEPENDS: removed rpm, alien, added rpmunpack
+	* *.sig: removed, switched to SOURCE_HASH
+
 2005-08-08 George Sherwood <george@beernabeer.com>
 	* DEPENDS: Added rpm. (Bug 9409)
 

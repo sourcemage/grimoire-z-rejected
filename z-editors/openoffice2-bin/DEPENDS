@@ -1,4 +1,3 @@
-depends  alien     &&
-depends  rpm     &&
+depends  rpmunpack     &&
 depends  mktemp  &&
 depends  JAVA
