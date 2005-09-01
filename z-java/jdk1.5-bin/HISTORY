@@ -1,3 +1,6 @@
+2005-08-31 David Brown <dmlb2000@gmail.com>
+	* DETAILS: fixed x86-32 problems finding the source bug #9688
+
 2005-08-10 David Brown <dmlb2000@gmail.com>
 	* DETAILS: updated to default to unsupported if the arch isn't available
 	  also added gpg checking for source tarballs

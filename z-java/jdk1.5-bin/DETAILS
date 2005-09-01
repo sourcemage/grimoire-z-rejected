@@ -3,14 +3,20 @@
          VERSION=1_5_0_04
              VER=1.5.0_04
 case "${SMGL_COMPAT_ARCHS[0]}" in
-	x86-64)
-          SOURCE=jdk-$VERSION-linux-amd64.bin
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
-	;;
 	ia32)
           SOURCE=jdk-$VERSION-linux-i586.bin
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
         ;;
+	x86-64)
+	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
+	  then
+          SOURCE=jdk-$VERSION-linux-amd64.bin
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+          else
+          SOURCE=jdk-$VERSION-linux-i586.bin
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+	  fi
+	;;
 ###########################################################################
 # Missing support for sparc and sparcv9 tarballs say solaris not linux :\
 ###########################################################################
