@@ -1,6 +1,5 @@
 cp usr/bin/cgc /usr/bin/ &&
 cp -R usr/include/Cg /usr/include/ && 
-cp -R usr/include/CgFX /usr/include/ && 
 cp usr/lib/libCg*.so /usr/lib/ &&
-cp -R usr/local/Cg /usr/share/docs/ &&
+cp -R usr/local/Cg /usr/share/doc/ &&
 cp usr/share/man/man3/cg*.3 /usr/share/man/man3/

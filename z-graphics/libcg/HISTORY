@@ -1,3 +1,8 @@
+2005-09-03 Flavien Bridault <disk@sourcemage.org>
+	* DETAILS: Updated to 1.4.0, added x86_64 binary source
+	* INSTALL: No more install include/CgFX since it no longer exists
+	  Changed doc installation path to /usr/share/doc instead of /usr/share/docs
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
