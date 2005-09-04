@@ -2,13 +2,14 @@
          VERSION=1.4.0
 if [[ "${HOST%%-*}" == 'x86_64' ]]; then
           SOURCE=Cg-$VERSION-3_x86_64.tar.gz
+          MD5[0]=5fbaec8ca0ef7e9317c04ec00e7283ce
 else
           SOURCE=Cg-$VERSION-3_x86.tar.gz
+          MD5[0]=f2a05994862ef07fee70646fe6a3752f
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Cg
           BRANCH=Cg_1.4
    SOURCE_URL[0]=ftp://download.nvidia.com/developer/cg/$BRANCH/$SOURCE
-          MD5[0]=f2a05994862ef07fee70646fe6a3752f
         WEB_SITE=http://developer.nvidia.com/object/cg_toolkit.html
          ENTERED=20040125
          UPDATED=20050309
