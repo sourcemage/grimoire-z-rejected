@@ -1,3 +1,6 @@
+2005-09-04 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 1.4.2.09 for arch i386
+
 2005-06-26 George Sherwood <george@beernabeer.com>
 	* volatiles: Added file to ignore lib. (Bug #8987)
 
