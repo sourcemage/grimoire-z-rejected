@@ -1,0 +1,15 @@
+           SPELL=djbdns
+         VERSION=1.05
+       BUILD_API=2
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://cr.yp.to/djbdns/$SOURCE
+          MD5[0]=4cfe431ee8ceeadfeca480d23040da57
+        WEB_SITE=http://cr.yp.to/$SPELL/
+         ENTERED=20041109
+      LICENSE[0]="http://cr.yp.to/distributors.html"
+           SHORT="A nameserver."
+
+cat << EOF
+A nameserver.
+EOF

@@ -1,0 +1,7 @@
+2004-12-03 Robert Helgesson <net@sourcemage.org>
+	* DETAILS: Changed license field, this package is _NOT_ under GPL
+	  (bug #7723).
+
+2004-11-09 Arjan Bouter <abouter@sourcemage.org>
+	* 1st version of this spell
+
