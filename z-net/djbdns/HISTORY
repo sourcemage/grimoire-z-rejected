@@ -1,3 +1,6 @@
+2005-09-09 Jason Flatt <jflatt@sourcemage.org>
+	* DETAILS: Added REJECT field.
+
 2004-12-03 Robert Helgesson <net@sourcemage.org>
 	* DETAILS: Changed license field, this package is _NOT_ under GPL
 	  (bug #7723).

@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://cr.yp.to/$SPELL/
          ENTERED=20041109
       LICENSE[0]="http://cr.yp.to/distributors.html"
+          REJECT="has licensing issues"
            SHORT="A nameserver."
 
 cat << EOF
