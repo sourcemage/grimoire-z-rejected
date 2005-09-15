@@ -1,3 +1,8 @@
+2005-09-14 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 1.1.5.  Removed SOURCE2.
+	* PRE_BUILD: removed.  Security patch not needed
+	* POST_INSTALL: removed security patch
+
 2005-06-26 George Sherwood <george@beernabeer.com>
 	* CONFLICTS: added conflicts openoffice2-bin
 	* volatiles: added file to pass cleanse (Bug #8992)
