@@ -1,3 +1,7 @@
+2005-09-17 George Sherwood <george@beeranbeer.com>
+	* DETAILS: Updated binaries for x86 to 2005.1
+	* PRE_BUILD: Updated to use SOURCE_HASH checking
+
 2005-08-10 Eric Sandall <eric@sandall.us>
 	* DETAILS: Binaries updates for x86
 

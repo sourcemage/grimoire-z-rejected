@@ -12,12 +12,12 @@
 case "${HOST}" in
   i386-* | i486-* | i586-* | i686-*)
 
-   VERSION_MAJOR=2004.2
-   VERSION_MINOR=76880
-   SHORT_VERSION=04.2
+   VERSION_MAJOR=2005.1
+   VERSION_MINOR=83219
+   SHORT_VERSION=05.1
           P_ARCH=linux24x86
-          MD5[0]='549a1067b5569d41281215cf122279e2'
-          MD5[1]='5851284f403a0dea232cf6b577917df3'
+     SOURCE_HASH=sha1:75b42ba5d9e573d4661b4597b7dc78d71b71e580
+    SOURCE2_HASH=sha1:b0c68cc7881bf2ca9a8c9de6e514cfd8a4c19bb3
     ;;
 
   powerpc-*)
@@ -26,8 +26,8 @@ case "${HOST}" in
    VERSION_MINOR=48707
    SHORT_VERSION=03.1
           P_ARCH=linux24ppc
-          MD5[0]='aa16d0a167adc54ea71f7197a9043f72'
-          MD5[1]='2b09bf5cbf319546d33b6c1c18951a6b'
+          SOURCE_HASH=sha1:83cc7df8415d11bf9071c7a6f73b754b8ffe51a9
+          SOURCE2_HASH=sha1:2eb3fb3df7de0bac3d2d6f0c66b93dbb85c66882
     ;;
 
   x86_64-*)
@@ -36,8 +36,8 @@ case "${HOST}" in
    VERSION_MINOR=76880
    SHORT_VERSION=04.2
           P_ARCH=linux26amd64
-          MD5[0]='1dc77cf2f6ee1679d3218fdb0404137a'
-          MD5[1]='d7ac5f96df0d08d8de23871b2aa92d40'
+          SOURCE_HASH=sha1:9c3501fa0ca7f31190bf2e311da7e4a949d94b5a
+          SOURCE2_HASH=sha1:f906419859b565684711a5776a76af378b4d17fb
     ;;
 
 esac
@@ -53,7 +53,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION_MAJOR
         WEB_SITE=http://www.perforce.com/
          ENTERED=20020514
          UPDATED=20050405
-          MD5[2]=bb4f1c946b14cd387fd3f333087037da
+    SOURCE3_HASH=sha1:d756689967841277e893cab9bc0dbc8e95784485
       LICENSE[0]=http://www.perforce.com/perforce/price.html
      GATHER_DOCS=off
           REJECT="is non-source and has licensing issues"
