@@ -1,20 +1,19 @@
-            SPELL=opera
-          VERSION=8.02
-	       VERSION2=20050727.5
-	       VERSION3=shared
-	       VERSION4=qt.i386-en
-           SOURCE=${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}.tar.bz2
- SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}
-SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/802/final/en/i386/shared/${SOURCE}
-SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/802/final/en/i386/shared/${SOURCE} 
-  #  SOURCE_URL[2]=ftp://mirror.e-tech-solution.com/pub/opera/linux/754/final/en/i386/${VERSION3}/gcc-3.2/${SOURCE} 
-         WEB_SITE=http://www.opera.com
-           MD5[0]='1db5adec7f2ed1289afea8b1979e0654'
-       LICENCE[0]=UNKOWN
-          ENTERED=20020530
-          UPDATED=20040513
-           REJECT="is non-source and has licensing issues (adware) "
-            SHORT="Opera is a small quick qt based browser"
+           SPELL=opera
+         VERSION=8.50
+        VERSION2=20050916.5
+        VERSION3=shared
+        VERSION4=qt.i386-en
+          SOURCE=${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}.tar.bz2
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}
+   SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/850/final/en/i386/shared/${SOURCE}
+   SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/850/final/en/i386/shared/${SOURCE}  
+        WEB_SITE=http://www.opera.com
+     SOURCE_HASH=sha1:f2825906a4d2cdf07448c44e9c4f73d8d3d1a495
+      LICENCE[0]=UNKNOWN
+         ENTERED=20020530
+         UPDATED=20040513
+          REJECT="is non-source and has licensing issues (adware) "
+           SHORT="Opera is a small quick qt based browser"
 cat << EOF
 Opera is a fast full featured web browser. It supports plugins and is 
 very customizable. It now uses the qt3 widget set. 
