@@ -13,6 +13,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040815
          UPDATED=20040919
       LICENCE[0]=GPL
+          REJECT="Firmware must be downloaded manually, license agreement"
          ARCHIVE="off"
            SHORT="Intel ProWireless 2200 kernel drivers"
 cat << EOF
