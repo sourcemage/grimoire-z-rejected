@@ -1,3 +1,6 @@
+2005-09-23 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: Net-FTP -> net-ftp
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 

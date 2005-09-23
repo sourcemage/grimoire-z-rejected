@@ -1,2 +1,2 @@
 depends perl &&
-depends Net-FTP
+depends net-ftp
