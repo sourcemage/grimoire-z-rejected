@@ -1,20 +1,20 @@
 mk_source_dir  $SOURCE_DIRECTORY  &&
 cd $SOURCE_DIRECTORY  &&
 unpack_file '' &&
-cd OOo2.0beta2_native_packed_en-US/RPMS            &&
+cd SRC680_m130_native_packed-1_en-US.8955/RPMS            &&
 
 for PART in base core01 core02 core03 core04 core05 core06 core07 core08 core09 core10 calc draw impress math writer graphicfilter pyuno spellcheck testtool xsltfilter core03u core04u core05u javafilter gnome-integration; do  
   message "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"
-#alien -t openoffice.org-$PART-1.9.125-1.i586.rpm
-#tar zxvf openoffice.org-$PART-1.9.125.tgz
-rpmunpack openoffice.org-$PART-1.9.125-1.i586.rpm
-gzip -d   openoffice.org-$PART-1.9.125-1.cpio.gz
-cpio -idm < openoffice.org-$PART-1.9.125-1.cpio
+#alien -t openoffice.org-$PART-1.9.130-1.i586.rpm
+#tar zxvf openoffice.org-$PART-1.9.130.tgz
+rpmunpack openoffice.org-$PART-1.9.130-1.i586.rpm
+gzip -d   openoffice.org-$PART-1.9.130-1.cpio.gz
+cpio -idm < openoffice.org-$PART-1.9.130-1.cpio
 done
 
 message "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
-rpmunpack desktop-integration/openoffice.org-freedesktop-menus-1.9.125-1.noarch.rpm &&
-gzip -d   openoffice.org-freedesktop-menus-1.9.125-1.cpio.gz  &&
-cpio -idm < openoffice.org-freedesktop-menus-1.9.125-1.cpio
-#alien -t desktop-integration/openoffice.org-freedesktop-menus-1.9.125-1.noarch.rpm &&
-#tar zxvf openoffice.org-freedesktop-menus-1.9.125.tgz
+rpmunpack desktop-integration/openoffice.org-freedesktop-menus-1.9.130-1.noarch.rpm &&
+gzip -d   openoffice.org-freedesktop-menus-1.9.130-1.cpio.gz  &&
+cpio -idm < openoffice.org-freedesktop-menus-1.9.130-1.cpio
+#alien -t desktop-integration/openoffice.org-freedesktop-menus-1.9.130-1.noarch.rpm &&
+#tar zxvf openoffice.org-freedesktop-menus-1.9.130.tgz

@@ -1,3 +1,6 @@
+2005-09-26 George Sherwood <george@beernabeer.com>
+	* DETAILS, PRE_BUILD, INSTALL: Updated to build 130
+
 2005-08-25 George Sherwood <george@beernabeer.com>
 	* DETAILS, PRE_BUILD, INSTALL: Updated to beta2 (version 125)
 	* DEPENDS: removed rpm, alien, added rpmunpack
