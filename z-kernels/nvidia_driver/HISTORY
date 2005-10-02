@@ -1,3 +1,10 @@
+2005-10-01 David Brown <dmlb2000@gmail.com>
+	* DETAILS: updated x86 and x86_64 to 7676
+	* NVIDIA-Linux-x86-1.0-7667-pkg1.run.sig: removed
+	* NVIDIA-Linux-x86_64-1.0-7667-pkg2.run.sig: removed
+	* NVIDIA-Linux-x86-1.0-7676-pkg1.run.sig: added
+	* NVIDIA-Linux-x86_64-1.0-7676-pkg2.run.sig: added
+
 2005-08-23 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Added dependency on X11-SERVER (Bug #9594)
 
