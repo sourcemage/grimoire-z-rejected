@@ -1,3 +1,6 @@
+2005-10-03 Sergey Lipnevich <sergey@sourcemage.org>
+	* DETAILS: upgarde to 2004g.
+
 2005-05-10 Seth Woolley <seth@tautology.org>
 	* BUILD: DEBUG is now EXTRACFLAGS which works correctly (already 
 	  in c-client, so I'm unsure why both weren't fixed at the same time).

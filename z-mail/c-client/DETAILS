@@ -1,9 +1,9 @@
            SPELL=c-client
-         VERSION=2004c1
+         VERSION=2004g
+     SOURCE_HASH='sha1:791a8bb247ca51ce0a4c32e814a2f736c2bcf066'
           SOURCE=imap-$VERSION.tar.Z
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/imap-$VERSION
-   SOURCE_URL[0]=ftp://ftp.cac.washington.edu/$SPELL/$SOURCE
-          MD5[0]=06ac4f9bd6c4af23699b174aabd770e8
+   SOURCE_URL[0]=ftp://ftp.cac.washington.edu/imap/$SOURCE
         WEB_SITE=http://www.washington.edu/imap/
          ENTERED=20050411
          UPDATED=20050411
