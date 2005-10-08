@@ -1,7 +1,7 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=1.5b1
-     SOURCE_HASH=sha1:6a4ab3cb4a3f2984d012450d1aff354c5a0d349e
+         VERSION=1.5b2
+     SOURCE_HASH=sha512:26f3353b5294b9ae0522deea85fa711d6131d7665e98bd1d3adc0f720a70d3aa95b9debe2ccc7a18333994127bd4b2f1b2f346a5e072122742cc1fe8d0de8047
 else
          VERSION=1.0.7
      SOURCE_HASH=sha1:199aa0707ea92fac12070e370116722efa41ce8a
