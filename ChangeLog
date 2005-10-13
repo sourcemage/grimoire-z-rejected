@@ -1,5 +1,9 @@
+2005-10-13 Eric Sandall <eric@sandall.us>
+	* gurus.gpg: Added 38D489C7 (RSA for sha512) and revoked E08D7131
+	  Updated all tarballs signed with E08D7131 to 38D489C7
+
 2005-09-09 Jason Flatt <jflatt@sourcemage.org>
-        * Moved z-net/djbdns from devel.
+	* Moved z-net/djbdns from devel.
 
 2005-08-17 Eric Sandall <eric@sandall.us>
 	* gurus.gpg: Integrated from test grimoire
