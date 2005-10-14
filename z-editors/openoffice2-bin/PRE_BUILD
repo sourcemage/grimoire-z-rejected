@@ -1,20 +1,17 @@
-mk_source_dir  $SOURCE_DIRECTORY  &&
-cd $SOURCE_DIRECTORY  &&
-unpack_file '' &&
-cd SRC680_m130_native_packed-1_en-US.8955/RPMS            &&
+mk_source_dir  $SOURCE_DIRECTORY               &&
+cd  $SOURCE_DIRECTORY                          &&
+unpack_file  ''                                &&
+cd  OOO680_m2_native_packed-1_en-US.8964/RPMS  &&
 
-for PART in base core01 core02 core03 core04 core05 core06 core07 core08 core09 core10 calc draw impress math writer graphicfilter pyuno spellcheck testtool xsltfilter core03u core04u core05u javafilter gnome-integration; do  
-  message "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"
-#alien -t openoffice.org-$PART-1.9.130-1.i586.rpm
-#tar zxvf openoffice.org-$PART-1.9.130.tgz
-rpmunpack openoffice.org-$PART-1.9.130-1.i586.rpm
-gzip -d   openoffice.org-$PART-1.9.130-1.cpio.gz
-cpio -idm < openoffice.org-$PART-1.9.130-1.cpio
+for  PART  in  base  calc  core01  core02  core03  core03u  core04  core04u  core05  core05u  core06  core07  core08  core09  core10  draw  gnome-integration  graphicfilter  impress  javafilter  math  pyuno  spellcheck  testtool  writer  xsltfilter
+do
+  message  "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"  &&
+  rpmunpack  openoffice.org-$PART-2.0.0-2.i586.rpm              &&
+  gzip  -d   openoffice.org-$PART-2.0.0-2.cpio.gz               &&
+  cpio  -idm  <  openoffice.org-$PART-2.0.0-2.cpio
 done
 
-message "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
-rpmunpack desktop-integration/openoffice.org-freedesktop-menus-1.9.130-1.noarch.rpm &&
-gzip -d   openoffice.org-freedesktop-menus-1.9.130-1.cpio.gz  &&
-cpio -idm < openoffice.org-freedesktop-menus-1.9.130-1.cpio
-#alien -t desktop-integration/openoffice.org-freedesktop-menus-1.9.130-1.noarch.rpm &&
-#tar zxvf openoffice.org-freedesktop-menus-1.9.130.tgz
+message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"                        &&
+rpmunpack  desktop-integration/openoffice.org-freedesktop-menus-2.0.0-2.noarch.rpm  &&
+gzip  -d  openoffice.org-freedesktop-menus-2.0.0-2.cpio.gz                          &&
+cpio  -idm  <  openoffice.org-freedesktop-menus-2.0.0-2.cpio
