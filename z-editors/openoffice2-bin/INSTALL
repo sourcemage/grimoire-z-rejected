@@ -1,6 +1,6 @@
 INSTALLDIR=$INSTALL_ROOT/opt/openoffice                                      &&
 mkdir  -pv  $INSTALLDIR/                                                     &&
-cd   $BUILD_DIRECTORY/openoffice2/OOO680_m2_native_packed-1_en-US.8964/RPMS  &&
+cd   $BUILD_DIRECTORY/openoffice2/OOO680_m3_native_packed-2_en-US.8968/RPMS  &&
 cp  -Rv  opt/openoffice.org2.0/*  $INSTALLDIR                                &&
 cp  -Rv  usr/share/icons/*  $INSTALL_ROOT/usr/share/icons                    &&
 
