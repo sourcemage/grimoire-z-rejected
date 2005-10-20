@@ -1,3 +1,8 @@
+2005-10-19 Andrew Stitt <astitt@sourcemage.org>
+	* DETAILS: Converted to use vendor gpg checking, firefox in test
+	  already does this.
+	* mozilla.gpg: Branched from main grimoire
+
 2005-10-09 George Sherwood <george@beernabeer.com>
 	* CONFIGURE:  Added &&'s to allow rejected message to work
 
