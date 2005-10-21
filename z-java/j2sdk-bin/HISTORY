@@ -1,7 +1,8 @@
 2005-10-18 Jason Flatt <jflatt@sourcemage.org>
 	* FINAL: Removed, since the code wasn't providing the desired effect.
 	* INSTALL, java.sh: Changed spell funtionality to use a symlink from
-	  /usr/lib/j2sdk to what ever the current installed directory is.
+	  /usr/lib/j2sdk to what ever the current installed directory is for
+	  the JAVA_HOME environment variable.
 
 2005-09-04 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 1.4.2.09 for arch i386
