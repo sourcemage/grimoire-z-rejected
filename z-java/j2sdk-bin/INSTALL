@@ -46,4 +46,4 @@ fi  &&
 
 mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
 install -m 0644 $SCRIPT_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/  &&
-sedit  "s/J2SDKDIR/j2sdk$VER/"  ${INSTALL_ROOT}/etc/profile.d/java.sh
+ln -sf ${INSTALL_ROOT}/usr/lib/j2sdk$VER/ ${INSTALL_ROOT}/usr/lib/j2sdk
