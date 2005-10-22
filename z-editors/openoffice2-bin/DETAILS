@@ -1,8 +1,8 @@
            SPELL=openoffice2-bin
-         VERSION=2.0.0rc3
-          SOURCE=OOo_${VERSION}_051015_LinuxIntel_install.tar.gz
+         VERSION=2.0.0
+          SOURCE=OOo_${VERSION}_LinuxIntel_install.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice2
-     COMMON_PATH=openoffice/contrib/rc
+     COMMON_PATH=openoffice/stable
    SOURCE_URL[0]=ftp://ftp.ussg.iu.edu/pub/${COMMON_PATH}/${VERSION}/${SOURCE}
    SOURCE_URL[1]=http://mirrors.isc.org/pub/${COMMON_PATH}/${VERSION}/${SOURCE}
    SOURCE_URL[2]=http://mirror.pacific.net.au/${COMMON_PATH}/${VERSION}/${SOURCE}
