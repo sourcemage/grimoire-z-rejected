@@ -1,3 +1,6 @@
+2005-10-22 Jason Flatt <jflatt@sourcemage.org>
+	* INSTALL, java.sh: Moved profile script to section directory.
+
 2005-10-18 Jason Flatt <jflatt@sourcemage.org>
 	* FINAL: Removed, since the code wasn't providing the desired effect.
 	* INSTALL, java.sh: Changed spell funtionality to use a symlink from

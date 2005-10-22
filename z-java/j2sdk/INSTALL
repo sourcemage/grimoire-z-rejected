@@ -67,13 +67,12 @@ then
 	fi                                                     
 
 	mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
-	install -m 0644 $SCRIPT_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/ &&
-	sedit "s/J2SDKDIR/${SPELL}-${VERSION}-${BUILD_NUMBER}/" ${INSTALL_ROOT}/etc/profile.d/java.sh
+	install -m 0644 $SECTION_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/ &&
+	ln -sf ${INSTALL_ROOT}/usr/lib/j2sdk$VER/ ${INSTALL_ROOT}/usr/lib/j2sdk
 
 else 
-	
 	message "${WARNING}SORRY, JAVA APPEARS TO HAVE FAILED BUILDING${DEFAULT_COLOR}" &&
 	rm -rf /opt/java/                                                               &&
   false
 
-fi 
+fi
