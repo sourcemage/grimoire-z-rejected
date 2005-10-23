@@ -68,7 +68,7 @@ then
 
 	mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
 	install -m 0644 $SECTION_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/ &&
-	ln -sf ${INSTALL_ROOT}/usr/lib/j2sdk$VER/ ${INSTALL_ROOT}/usr/lib/j2sdk
+	ln -sfn ${INSTALL_ROOT}/usr/lib/j2sdk$VER/ ${INSTALL_ROOT}/usr/lib/j2sdk
 
 else 
 	message "${WARNING}SORRY, JAVA APPEARS TO HAVE FAILED BUILDING${DEFAULT_COLOR}" &&

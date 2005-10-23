@@ -1,3 +1,6 @@
+2005-10-22 Jason Flatt <jflatt@sourcemage.org>
+	* INSTALL, java.sh: Moved profile script to section directory.
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
