@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux
          UPDATED=20040529
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
           REJECT="is non-source and has licensing issues"
+            DOCS="Readme.htm Readme.txt"
            SHORT="Macromedia Flash Plugin v7 for Web Browsers."
 cat << EOF
 Macromedia Flash Plugin version 7 for web browsers.

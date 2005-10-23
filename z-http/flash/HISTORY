@@ -1,3 +1,6 @@
+2005-10-23 Pol Vinogradov <vin.public@gmail.com>
+        * DETAILS: added DOCS
+
 2005-04-16 George Sherwood <george@beernabeer.com>
 	* CONFIGURE: added support for firefox-bin
 	* INSTALL: added support for firefox-bin
