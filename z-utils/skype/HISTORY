@@ -1,3 +1,7 @@
+2005-10-25 Treeve jelbert <treeve01@pi.be>
+	* DETAILS: Version 1.2.0.18
+	  security fixes
+
 2005-10-14 Treeve jelbert <treeve01@pi.be>
 	* DETAILS: use .rpm file, as it is compatible with gcc{4.0,3.4}
 	* PRE_BUILD: add

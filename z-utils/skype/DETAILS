@@ -1,13 +1,11 @@
              SPELL=skype
-           VERSION=1.2.0.17
+           VERSION=1.2.0.18
          BUILD_API=2
 if       [ "$QT" == "y" ]; then
 # dynamic version.
             SOURCE=${SPELL}-${VERSION}-mdr.i586.rpm
-#            SOURCE=${SPELL}-${VERSION}.tar.bz2
   SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
-#       SOURCE_HASH=sha512:1e5699ad693d3cdadcbc1292819214c667a7a71afdcbe8c5bb83ec0ecae8a7b4eecc0bbd54e695c6cd50db2cb356b97d6e6c7f62c9b15dca94fa34dfa7f98b81
-       SOURCE_HASH=sha512:4f1ccfd65856408c1bebc05901cc8832d5cd2008874fbf0af03197782520c43561fd19d020a41a83a4a4b0d3b1b1fe88bc8cca8cf2473e2551e8f1f2d9bc73f1
+       SOURCE_HASH=sha512:38739a70fded3e49582245053fbf1c3e057926b2322686aa3b18a328c592969c0f813e0e523aab161249c28561fc420944baa96f9a339e2b94c077d426f64a8e
 
 else
 # static version.
