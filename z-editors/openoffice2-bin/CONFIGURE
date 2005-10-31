@@ -1,3 +1,17 @@
 # Standard rejected warnings.
 #
-source $GRIMOIRE/REJECTED_MSG
+source $GRIMOIRE/REJECTED_MSG   &&
+
+persistent_add OO2_LOCALE  &&
+OO2_LOCALE=en  &&
+if  query  "Do you want to select a localization?" n; then
+    local ALL_LOCALES=$( cat $SCRIPT_DIRECTORY/locales )  &&
+    echo $ALL_LOCALES  &&
+    OO2_LOCALE=$(  dialog  --backtitle  "OpenOffice 2 localization selection"   \
+                  --stdout                                          \
+                  --title  "Select locale please"                   \
+                  --radiolist                                       \
+                  ""                                                \
+                  0  0  5                                           \
+                  $ALL_LOCALES )
+fi

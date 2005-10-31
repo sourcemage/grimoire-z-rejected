@@ -1,7 +1,11 @@
 mk_source_dir  $SOURCE_DIRECTORY               &&
 cd  $SOURCE_DIRECTORY                          &&
 unpack_file  ''                                &&
-cd  OOO680_m3_native_packed-2_en-US.8968/RPMS  &&
+
+#cd  OOO680_m3_native_packed-2_en-US.8968/RPMS  &&
+# Extracted root directories don't have the same names between localized
+# versions, so use * wildcard although I don't find that very elegant
+cd OOO*/RPMS
 
 for  PART  in  base  calc  core01  core02  core03  core03u  core04  core04u  core05  core05u  core06  core07  core08  core09  core10  draw  gnome-integration  graphicfilter  impress  javafilter  math  pyuno  spellcheck  testtool  writer  xsltfilter
 do

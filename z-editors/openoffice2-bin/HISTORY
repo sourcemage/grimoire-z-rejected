@@ -1,3 +1,8 @@
+2005-10-30 George Sherwood <george@beernabeer.com>
+	* DETAILS, CONFIGURE, PRE_BUILD, INSTALL: Modified to install 
+	  localized versions
+	* locales: Added to contain locale choices
+
 2005-10-21 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 2.0.0 final
 
