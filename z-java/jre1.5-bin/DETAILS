@@ -1,0 +1,43 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=jre1.5-bin
+         VERSION=1_5_0_05
+             VER=1.5.0_05
+case "${SMGL_COMPAT_ARCHS[0]}" in
+	ia32)
+          SOURCE=jre-$VERSION-linux-i586.bin
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+        ;;
+	x86-64)
+	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
+	  then
+          SOURCE=jre-$VERSION-linux-amd64.bin
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+          else
+          SOURCE=jre-$VERSION-linux-i586.bin
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+	  fi
+	;;
+###########################################################################
+# Missing support for sparc and sparcv9 tarballs say solaris not linux :\
+###########################################################################
+	*)
+	  SOURCE=
+	 VERSION=Unsupported
+	     VER=Unsupported
+	;;
+esac
+        WEB_SITE=http://java.sun.com/j2se/1.5.0/download.html
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/jre$VER
+         ENTERED=20051101
+         UPDATED=20051101
+         ARCHIVE="off"
+          REJECT="is non-source"
+           SHORT="jre1.5-bin is the Java Software Runtime Environment"
+cat << EOF
+The JRE contains the Java Plug-In for Netscape 4.x 
+and Mozilla/Netscape 6.x.
+
+Note: You need to download the JRE installer yourself from the Sun Website,
+see 'gaze website jre1.5-bin' for the location. Put the downloaded file in
+/var/spool/sorcery so cast will find it.
+EOF
