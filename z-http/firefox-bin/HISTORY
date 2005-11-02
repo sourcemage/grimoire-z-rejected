@@ -1,3 +1,6 @@
+2005-11-02 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated devel to 1.5rc1
+
 2005-10-19 Andrew Stitt <astitt@sourcemage.org>
 	* DETAILS: Converted to use vendor gpg checking, firefox in test
 	  already does this.
