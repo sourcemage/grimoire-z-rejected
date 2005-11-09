@@ -1,3 +1,9 @@
+2005-11-08 Eric Sandall <eric@sandall.us>
+	* z-games/cedega: Updated to 5.0, now includes Point2Play and Cedega
+	* z-games/cedega-small: Branched from cedega. Same, but point2play-small
+	* z-games/point2play: Deprecated in favour of cedega
+	* z-games/point2play-small: Deprecated in favour of cedega-small
+
 2005-10-13 Eric Sandall <eric@sandall.us>
 	* gurus.gpg: Added 38D489C7 (RSA for sha512) and revoked E08D7131
 	  Updated all tarballs signed with E08D7131 to 38D489C7

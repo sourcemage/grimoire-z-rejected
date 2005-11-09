@@ -1,6 +1,1 @@
-mk_source_dir  ${SOURCE_DIRECTORY}        &&
-cd             ${SOURCE_DIRECTORY}        &&
-unpack_file    ''                         &&
-rm  -rf  $SOURCE_DIRECTORY/old.libraries  &&
-patch  $SOURCE_DIRECTORY/usr/lib/transgaming_point2play/setup_wizard_gui.py  \
-       $SCRIPT_DIRECTORY/system_info.patch
+true

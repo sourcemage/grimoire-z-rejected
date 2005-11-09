@@ -1,11 +1,8 @@
            SPELL=point2play
          VERSION=2.0.3
-          SOURCE=$SPELL-$VERSION.tgz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
         WEB_SITE=http://www.transgaming.com/
          ENTERED=20040111
-         UPDATED=20040111
+         UPDATED=20051108
           REJECT="has licensing issues"
       LICENSE[1]=UNKNOWN
        BUILD_API=2

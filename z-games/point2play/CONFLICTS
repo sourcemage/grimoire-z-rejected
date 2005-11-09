@@ -1,1 +1,3 @@
-conflicts  point2play-small
+conflicts  point2play-small  &&
+conflicts  point2play  y     &&
+conflicts  cedega      y

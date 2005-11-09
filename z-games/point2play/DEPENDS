@@ -1,4 +1,1 @@
-depends  python  &&
-depends  pygtk2  &&
-depends  glade2  &&
-depends  pango
+depends  cedega

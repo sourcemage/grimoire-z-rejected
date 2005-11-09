@@ -1,11 +1,11 @@
-           SPELL=cedega
+           SPELL=cedega-small
          VERSION=5.0
           SOURCE=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
         WEB_SITE=http://www.transgaming.com/
-         ENTERED=20050317
-         UPDATED=20050317
+         ENTERED=20051108
+         UPDATED=20051108
       LICENSE[0]=http://www.transgaming.com/license.php?prepackaged=1
        BUILD_API=2
          ARCHIVE="off"
