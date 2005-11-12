@@ -1,6 +1,6 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=1.5rc1
+         VERSION=1.5rc2
 else
          VERSION=1.0.7
 fi
