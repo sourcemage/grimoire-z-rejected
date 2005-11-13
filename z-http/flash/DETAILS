@@ -1,10 +1,11 @@
            SPELL=flash
-         VERSION=7.0r25
+         VERSION=7.0r61
           SOURCE=install_flash_player_7_linux.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux
-   SOURCE_URL[0]=http://fpdownload.macromedia.com/get/shockwave/flash/english/linux/$VERSION/$SOURCE
-          MD5[0]=3df1d5ecee6ca53b83372aa9023e15dd
+   SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE
+     SOURCE_HASH=sha512:732f9cb34f3d743013346e0f88e704acc6e18943604a0568f4f35892fcb75978f6e14460a4710f3a1ca2131e2ef3ef923e7fffd2d872b2ddc6bd1d745386bf9c
         WEB_SITE=http://www.macromedia.com
+       BUILD_API=2
          ENTERED=20020319
          UPDATED=20040529
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
