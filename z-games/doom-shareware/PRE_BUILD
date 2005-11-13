@@ -1,4 +1,6 @@
-mk_source_dir $SOURCE_DIRECTORY &&
-cd $SOURCE_DIRECTORY            &&
-unpack $SOURCE ${MD5[0]}        &&
-gunzip  -c  ${SOURCE_CACHE}/${SOURCE}  >  ${SOURCE_DIRECTORY}/doom1.wad
+create_group  games                      &&
+mk_source_dir  $SOURCE_DIRECTORY         &&
+cd  $SOURCE_DIRECTORY                    &&
+unpack_file  ''                          &&
+gunzip  -c  $SOURCE_CACHE/$SOURCE        \
+         >  $SOURCE_DIRECTORY/doom1.wad

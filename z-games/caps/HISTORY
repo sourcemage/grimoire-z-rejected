@@ -1,5 +1,9 @@
+2005-11-13 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD: Make sure games group exists
+
 2004-05-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Major bugfixes and added to the grimoire
 
 2004-04-13 Mantar <mantar.feyelno@sbcglobal.net>
 	* BUILD, CONFIGURE, DEPENDS, DETAILS, HISTORY, PRE_BUILD: created this spell
+

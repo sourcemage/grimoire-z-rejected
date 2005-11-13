@@ -1,7 +1,6 @@
-warn_rejected &&
-ask_continue_with_rejected &&
-
-mkdir -p $SOURCE_DIRECTORY &&
-cd      $SOURCE_DIRECTORY  &&
-                                                                                
-unpack  $SOURCE  ${MD5[0]}
+warn_rejected                     &&
+ask_continue_with_rejected        &&
+create_group  games               &&
+mk_source_dir  $SOURCE_DIRECTORY  &&
+cd             $SOURCE_DIRECTORY  &&
+unpack_file  ''

@@ -1,5 +1,6 @@
-mk_source_dir                  &&
-cd  ${SOURCE_DIRECTORY}        &&
-unpack  ${SOURCE}   ${MD5[0]}  &&
-unpack  ${SOURCE2}  ${MD5[1]}  &&
-sh  ${SOURCE_CACHE}/${SOURCE}
+create_group  games        &&
+mk_source_dir              &&
+cd  $SOURCE_DIRECTORY      &&
+unpack_file  ''            &&
+unpack_file  '2'           &&
+sh  $SOURCE_CACHE/$SOURCE

@@ -1,6 +1,9 @@
+2005-11-13 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD: Make sure games group exists
+
 2005-05-10 Geoffrey Derber <gderber@sourcemage.org>
 	* DETAILS: updated to version 2.60
-		added BUILD_API=2
+	  added BUILD_API=2
 	* INSTALL: created from old BUILD
 	* BUILD: "true"
 
@@ -36,7 +39,7 @@
 	* Fixed the kdelnk.
 
 2003-06-15 hgg <hgreig@bigpond.net.au>
-	* Created this spell. 
+	* Created this spell.
 	* Custom POST_BUILD to stop CACHE
 	* Invented new license type for id
 
