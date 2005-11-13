@@ -1,3 +1,6 @@
+2005-11-13 George Sherwood <george@beernabeer.com>
+	* DETAILS: Added code so OO2_LOCALE will never be uninitialized
+
 2005-10-30 George Sherwood <george@beernabeer.com>
 	* DETAILS, CONFIGURE, PRE_BUILD, INSTALL: Modified to install 
 	  localized versions
