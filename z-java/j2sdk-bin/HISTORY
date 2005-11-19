@@ -1,3 +1,6 @@
+2005-11-19 George Sherwood <george@beernabeer.com>
+	* volatiles: Updated lib to new version. Bug 10094.
+
 2005-10-22 Jason Flatt <jflatt@sourcemage.org>
 	* INSTALL, java.sh: Moved profile script to section directory.
 
