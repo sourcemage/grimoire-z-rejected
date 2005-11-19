@@ -1,3 +1,6 @@
+2005-11-18 George Sherwood <george@beernabeer.com>
+	* volatiles: Added new excluded librabry
+
 2005-11-13 George Sherwood <george@beernabeer.com>
 	* DETAILS: Added code so OO2_LOCALE will never be uninitialized
 

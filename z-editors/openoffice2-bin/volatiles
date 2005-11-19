@@ -3,3 +3,4 @@
 ^/opt/openoffice/program/python-core-2\.3\.4/lib/lib-dynload/bz2\.so$
 ^/opt/openoffice/program/python-core-2\.3\.4/lib/lib-dynload/dbm\.so$
 ^/opt/openoffice/program/python-core-2\.3\.4/lib/lib-dynload/gdbm\.so$
+^/opt/openoffice/program/python-core-2\.3\.4/lib/lib-dynload/_ssl\.so$
