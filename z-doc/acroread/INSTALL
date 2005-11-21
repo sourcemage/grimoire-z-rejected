@@ -4,14 +4,14 @@ echo  -e  "\n"  |  ./INSTALL                                      &&
 
 ln  -sf  /usr/lib/acroread/bin/acroread  /usr/bin/acroread  &&
 
-if  [  "$ACROREAD_MOZILLA"  =  "y"  ];  then
-  ln  -sf  /usr/lib/acroread/Browsers/intellinux/nppdf.so  \
+if  [  "$ACROREAD_MOZILLA"  ==  "y"  ];  then
+  ln  -sf  /usr/lib/acroread/Browser/intellinux/nppdf.so  \
            /usr/lib/mozilla/plugins/nppdf.so               &&
   chmod  0755  /usr/lib/mozilla/plugins/nppdf.so
 fi  &&
 
-if  [  "$ACROREAD_FIREFOX"  =  "y"  ];  then
-  ln  -sf  /usr/lib/acroread/Browsers/intellinux/nppdf.so  \
+if  [  "$ACROREAD_FIREFOX"  ==  "y"  ];  then
+  ln  -sf  /usr/lib/acroread/Browser/intellinux/nppdf.so  \
            /usr/lib/firefox/plugins/nppdf.so               &&
   chmod  0755  /usr/lib/firefox/plugins/nppdf.so
 fi  &&

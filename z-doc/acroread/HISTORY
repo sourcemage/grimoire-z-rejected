@@ -1,3 +1,6 @@
+2005-11-21 George Sherwood <george@beernabeer.com>
+	* INSTALL: Fixed plugin location. Bug 10113.
+
 2005-08-21 Thomas Houssin <Thomas.Houssin@sourcemage.org>
 	* DETAILS: updated to 7.0.1, security update
 		see http://www.adobe.com/support/techdocs/321644.html
