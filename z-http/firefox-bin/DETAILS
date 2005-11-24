@@ -1,15 +1,17 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=1.5rc2
+         VERSION=1.5rc3
+          SOURCE=firefox-${VERSION}.tar.gz
+     SOURCE_HASH=sha512:bbb9a7ca0880ed87d7046aa443d6d2bb22679aefe13233fcd480a6aff94117e758431722509f06cf601816a15389b91b0ca4f454bd2d2c999c3bd5ae3dce1eb6
 else
          VERSION=1.0.7
-fi
           SOURCE=firefox-${VERSION}.tar.gz
-          SOURCE2=$SOURCE.asc
-     SOURCE_GPG=mozilla.gpg:$SOURCE2
+         SOURCE2=$SOURCE.asc
+      SOURCE_GPG=mozilla.gpg:$SOURCE2
+fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
-SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
-SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}.asc
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
+  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}.asc
         WEB_SITE=http://www.mozilla.org/firefox
          ENTERED=20040902
          UPDATED=20041022
