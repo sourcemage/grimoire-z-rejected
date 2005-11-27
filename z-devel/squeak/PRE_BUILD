@@ -1,0 +1,11 @@
+mk_source_dir $SOURCE_DIRECTORY  &&
+unpack_file   ''                 &&
+
+mk_source_dir $SECOND_DIRECTORY  &&
+cd  $SECOND_DIRECTORY            &&
+
+unpack_file   '2'                &&
+cp  $SOURCE_CACHE/$SOURCE2  ./   &&
+gzip -d $SOURCE2                 &&
+
+unpack_file   '3'

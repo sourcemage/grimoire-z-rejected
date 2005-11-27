@@ -1,0 +1,10 @@
+sedit '/gzip -f9/d'  Makefile  &&
+make  install                  &&
+
+sedit 's/3.7-5989/3.8-6665/' inisqueak  &&
+cp inisqueak /usr/bin                   &&
+
+cd   $SECOND_DIRECTORY                              &&
+cp   *  /usr/lib/squeak/                            &&
+gzip    /usr/lib/squeak/Squeak3.8-6665full.image    &&
+gzip    /usr/lib/squeak/Squeak3.8-6665full.changes

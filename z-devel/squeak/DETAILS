@@ -1,0 +1,29 @@
+           SPELL=squeak
+         VERSION=3.7-7
+          SOURCE=Squeak-$VERSION.src.tar.gz
+         SOURCE2=SqueakV3.sources.gz
+         SOURCE3=Squeak3.8-6665-full.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Squeak-$VERSION
+SECOND_DIRECTORY=$BUILD_DIRECTORY/Squeak-3
+   SOURCE_URL[0]=http://ftp.squeak.org/current_stable/unix-linux/$SOURCE
+  SOURCE2_URL[0]=http://ftp.squeak.org/current_stable/$SOURCE2
+  SOURCE3_URL[0]=http://ftp.squeak.org/current_stable/$SOURCE3
+     SOURCE_HASH=sha512:70665374d1c95ce2834c0b1ac5eb2049fa5912ebf6ec2e8d8a85d89b272f85c12fe27e7467bf7f648e0d177f2950bc51ba4b31a6bdcea9aa09bb09fd89c3a60a
+    SOURCE2_HASH=sha512:9ce6bc4cb1105f20d76bbf18dabbefa0cdd12f7f724f22272bd438cb4e9ffda0c63a4f6b2358843f368b83709b032f2d9b3f10632a54b641bc4ff02dbdeeba74
+    SOURCE3_HASH=sha512:a53b298be9b28cb519763dc801d5d6733a244b9bbebd95ea28eb9ddacb5d4abc119be97d9eb121dff5eb2b5b3ec98bbb0b676117a5a1e157d9bf08ae1179208f
+        WEB_SITE=http://www.squeak.org
+         ENTERED=20040108
+         UPDATED=20041216
+      LICENSE[0]=http://squeak.org/SqueakLicense/
+      LICENSE[1]=http://squeak.org/SqueakLicense/
+      LICENSE[2]=http://squeak.org/SqueakLicense/
+       BUILD_API=2
+           SHORT="SmallTalk Development system"
+cat << EOF
+Squeak is a new OpenSource and super portable Smalltalk-80-based
+language by Smalltalk's inventors, the original Xerox PARC, Alan Kay
+team, now at Disney. It runs on many platforms, including Linux x86 & 
+PowerPC. Now uses Self language's Morphic User Interface toolkit.
+Next to universal access, malleability is the prime figure of merit
+for Squeak. It is intended that Squeak evolve.
+EOF

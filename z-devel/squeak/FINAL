@@ -1,0 +1,3 @@
+rm -rf /usr/src/Squeak-3
+
+message "${MESSAGE_COLOR}You should run 'inisqueak' in your home dir to have the image/changes/sources files correctly installed.${DEFAULT_COLOR}"
