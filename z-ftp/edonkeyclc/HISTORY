@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* PRE_BUILD: unpack api update
+
 2004-11-21 David A. Sosa Cabrera <neon@neonx.ath.cx>
         * DETAILS: build api 2
         * PRE_BUILD: makes a source_directory and unpack the tarball there
