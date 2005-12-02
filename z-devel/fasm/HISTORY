@@ -1,3 +1,9 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-11-28 Seth Woolley <seth@tautology.org>
+	* PRE_BUILD: unpack api update
+
 2005-02-18 Eric Sandall <eric@sandall.us>
 	* Added to z-rejected/z-devel/fasm  (Bug #8201)
 	* DETAILS: Updated to 1.58 (old source removed)

@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.sim.no
          ENTERED=20020629
          UPDATED=20020629
-	  MD5[0]=785584b06f8727a71f1431f6c9be16b2
+     SOURCE_HASH=sha512:7b93b53200905e0c04f098bbc7f39387f9bb1371c05b52700cc275682b8bc24ce979d380129d3bc400825feebc88c5e9b55cafab95afab3a916434c253f49d76
       LICENSE[0]=http://www.rational-reducer.com/display.asp?xmlID=54&menuPath=f6481_f6494_f6513_
 	  REJECT="has licensing issues"
       MAINTAINER=ashaman@flyingtemple.com

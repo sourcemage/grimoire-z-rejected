@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.beernabeer.com/$SOURCE
 #  SOURCE_URL[0]=http://download.sourcemage.org/mirror/$SOURCE
-          MD5[0]=24ff0f0a8b373a920f55faeeca206a38
+     SOURCE_HASH=sha512:2fa98ccec5fdf10b9a88fb863d1dd5c69059a14a4642615dbfb2a24a2e454858960351501b9a00704fd69d19baf8a35c82030509952ae7e3251ce81b086e20bf
         WEB_SITE=http://www.mercury.to
          ENTERED=20050531
          UPDATED=20020531

@@ -4,7 +4,7 @@
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/eclipse    
 SOURCE_URL[0]=ftp://mirrors.ibiblio.org/pub/mirrors/eclipse/eclipse/downloads/drops/R-${VERSION}-200506271435/$SOURCE
         WEB_SITE=http://www.eclipse.org
-          MD5[0]='40b1b94e3fea1abd89e71eb986f2bb22'
+     SOURCE_HASH=sha512:ca148c8ccc80c781529a74f04e2d749ce25a0cbe7683631427c7f3da2a30922d10817eeaafde23a4beb031de424293514a7f8632ad6051a2449281e0503bf31a
       LICENSE[0]=CPL
       ENTERED=20041110
       UPDATED=20041110

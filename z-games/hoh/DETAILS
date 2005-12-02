@@ -4,7 +4,7 @@
 	  SOURCE=${SPELL}lin-${PKG_VERSION}.tar.bz2
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-install-${VERSION}
    SOURCE_URL[0]=http://retrospec.sgn.net/games/${SPELL}/bin/$SOURCE
-          MD5[0]=f3d4809e4e445d5d4356b3a93de0ba31
+     SOURCE_HASH=sha512:38f5815d9b2356c5d566d8b5b4730e1ed24192dfb5c3fcae9096b4a2c6110de60245b13da6bffc359032165d7fc0681a6adfa3503005c9281807c4734d519c0b
         WEB_SITE=http://retrospec.sgn.net/games/hoh/
          ENTERED=20040422
           REJECT="is non-source"

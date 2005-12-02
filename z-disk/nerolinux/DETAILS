@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerolinux
 SOURCE_URL[0]=ftp://ftp8.us.nero.com/$SOURCE
 SOURCE_URL[1]=http://httpdl1.nero.com/$SOURCE
-          MD5[0]='feb6ef9c10cd609e42c04bcc12559601'
+     SOURCE_HASH=sha512:0d949ece1d1d7e5e488bc9700ecd59127d54f2aaf37075dbcc5f7c188350d001a4926a1335c905cf0b4cc2752f1a6a907bde4d1b3e684cefca715bbfbaa61e43
         WEB_SITE=http://www.nero.com
          ENTERED=20050722
          UPDATED=20050722

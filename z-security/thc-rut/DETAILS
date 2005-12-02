@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/thcrut-$VERSION
         WEB_SITE=http://www.thc.org/thc-rut
          ENTERED=20041208
          UPDATED=20041208
-          MD5[0]=ca06d71c68124eeb6ae43c9b8434abf8
+     SOURCE_HASH=sha512:954f7512bd3e3937796cc065612214ae7d17f70175305ee66951a4e4dc2fcd83c7b15c690f429c7642c9951c2219f86a045418a77e42e3e4a54deac2ae0c46ab
       LICENSE[0]="See LICENSE in tarball. Non-free, only non-commersial use."
            SHORT="(aRe yoU There, pronouced as root) is your first knife on foreign network."
 

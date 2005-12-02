@@ -1,3 +1,6 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
 2004-07-28 Seth Woolley <seth@tautology.org>
 	* DETAILS: Update to 1.0-0275, please test as I have 2.6.x
 	  kernel and this only works on 2.4.x (nforce3 support, etc. 

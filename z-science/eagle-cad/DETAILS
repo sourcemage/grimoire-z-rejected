@@ -12,8 +12,8 @@ SOURCE_DIRECTORY2=$BUILD_DIRECTORY/usr
          UPDATED=20041026
       LICENSE[0]=http://www.cadsoft.de/freeware.htm
           REJECT="is non source, limited, for non-commercial use"
-          MD5[0]=ae819c07bad19ea82e3bb5d3fd637eba
-          MD5[1]=25603d81430d6524283247bb694cfa88
+     SOURCE_HASH=sha512:f35776b3d8209dfa989e971dd25850e7d31ce5ca6488b0d93f24942f1f71e9fba7b8eb2b8536a1151af0b20b2bf655d704ab724a9c5e447127a87c11ef5bf1d6
+    SOURCE2_HASH=sha512:4418010e575d49d120fd5b7ca9fc04e922a857452ed77d2e4ec5e847713fd3be0d1861f270ce155f77fe0e10fc07f29c985235fa47f22804b801de2be51998b7
            SHORT="The EAGLE Layout Editor is CAD tool for designing PCBs"
 cat << EOF
 The EAGLE Layout Editor is an easy to use, yet powerful tool

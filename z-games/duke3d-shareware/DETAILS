@@ -5,7 +5,7 @@
 	  SOURCE=${PKG_NAME}${PKG_VERSION}.zip
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${PKG_NAME}-install-${VERSION}
    SOURCE_URL[0]=ftp://ftp.3drealms.com/share/$SOURCE
-          MD5[0]=04e4ca70b8a2d59ed56c451c5c1d5d39
+     SOURCE_HASH=sha512:eb92daa88b4e7cfeebe1fb3d2c021e0a4a66262d0d6e76b5e27fe3cedd382e381d23b392a6d9adb42a418b9318e011c2d8adfbdc77d7c5371e61d8c091c7eb65
         WEB_SITE=http://www.3drealms.com/duke3d/
          ENTERED=20040422
           REJECT="is non-source"

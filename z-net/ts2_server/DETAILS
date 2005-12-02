@@ -3,7 +3,7 @@
           SOURCE=${SPELL}_${VERSION}.tar.bz2 
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/tss2_rc2
    SOURCE_URL[0]=ftp://ftp.freenet.de/pub/4players/teamspeak.org/releases/$SOURCE
-          MD5[0]=91690a301e0bdd832beb4e9ace8adf18  
+     SOURCE_HASH=sha512:fde5fb4ee67021ff153e74b02136d149114d5ac1e50c371d0dd370eb7384611b89f11c9ffc700a8f569953d97e275eed7868437d7a0a4967cd234e0a1d5e8017 
         WEB_SITE=http://www.goteamspeak.org/
          ENTERED=20040920
          UPDATED=20040920

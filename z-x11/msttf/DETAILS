@@ -3,7 +3,7 @@
           SOURCE=ttf_fonts.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/ttf
    SOURCE_URL[0]=ftp://root.cern.ch/root/ttf/$SOURCE
-       MD5[0]=1f84ac51c398c9af047e78915053d602
+  SOURCE_HASH=sha512:bcd002e8f851dfec734354669e106ce0b4c02283e0338dd753b3cd822cad4921bfe4e98ccb8bd06eafaafad3d5d1edcdc51d1f1422053aee9a63018970e9b32b
 	  REJECT="has licensing issues"
         WEB_SITE=http://www.microsoft.com/typography/fontpack/default.htm
          ENTERED=20020826

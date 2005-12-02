@@ -4,7 +4,7 @@
           SOURCE=jakarta-tomcat-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jakarta-tomcat-${VERSION}
    SOURCE_URL[0]=$APACHE_URL/jakarta/${SPELL_OTHR}/v${VERSION}/bin/jakarta-tomcat-${VERSION}.tar.gz
-	        MD5[0]=517d085e9161f5168bda575c991a5200
+           SOURCE_HASH=sha512:5f6bdf588a7896f2ba229417925f632b36f3aa5bf6f1073be59c968770334b2327b6d4b74281e31ee32337a00c2b04429b14cb683d8d8b3f6fa04ec138876ed9
       LICENSE[0]=APACHE
         WEB_SITE=http://jakarta.apache.org/tomcat/index.html
          ENTERED=20030920

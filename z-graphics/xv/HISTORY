@@ -1,3 +1,9 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-11-28 Seth Woolley <seth@tautology.org>
+	* PRE_BUILD: unpack api update
+
 2005-04-22 Thomas Houssin <Thomas.Houssin@sourcemage.org>
 	* DETAILS,BUILD: converted to API2
 	* DETAILS: now using jumbo patches

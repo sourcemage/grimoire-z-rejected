@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/nforce
          ENTERED=20020529
          UPDATED=20021104
          ARCHIVE="off"
-          MD5[0]="871c254f505305d3fc6bf872a9fcd811"
+     SOURCE_HASH=sha512:c7ed4c2d699f425a2b973372a25555c599e995f664d49163fbc3948db2e4c68490b93dc208a4a912b5d19d4378793a7655c2c7ea4d59e91b7bc9e94ec06379a6
       LICENSE[0]=http://www.nvidia.com/view.asp?IO=nv_swlicense
            SHORT="Drivers provided by NVIDIA for nForce motherboard chipsets"
 cat << EOF

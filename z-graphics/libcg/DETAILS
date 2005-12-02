@@ -5,7 +5,7 @@ if [[ "${HOST%%-*}" == 'x86_64' ]]; then
           MD5[0]=5fbaec8ca0ef7e9317c04ec00e7283ce
 else
           SOURCE=Cg-$VERSION-3_x86.tar.gz
-          MD5[0]=f2a05994862ef07fee70646fe6a3752f
+     SOURCE_HASH=sha512:6f674107b525d6faf422ecb2a10e6bce5cece124949b9502ed50204d5a7363ae4cd9a681210ca29555746369e0df53693c2baad0a4539383a3efdb11c66c60b2
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Cg
           BRANCH=Cg_1.4

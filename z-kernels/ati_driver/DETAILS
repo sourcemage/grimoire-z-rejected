@@ -7,7 +7,7 @@ then
 elif spell_ok xorg
 then
           SOURCE=fglrx_6_8_0-${VERSION}-1.i386.rpm
-          MD5[0]=ff43b43a0203675a312776b30d41d73f
+     SOURCE_HASH=sha512:18ad2aff76667574af9cf67f4191a3e52f0bf3ede8adcb35b9f26b1f1ff27738d67f3ea243d6684cf54d1cdf866f469862d7f6dbe074665fb8572b2c01989c9d
 else
    message "${PROBLEM_COLOR}You don't have xfree-4.3 nor xorg installed.${DEFAULT_COLOR}"
    return 1

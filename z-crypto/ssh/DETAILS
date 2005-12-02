@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.ssh.fi/pub/$SPELL/$SOURCE
    SOURCE_URL[1]=ftp://ftp.keystealth.org/pub/$SPELL/$SOURCE
-          MD5[0]=f9ca5ba34c7c0e8b79307cf2e15cd212
+     SOURCE_HASH=sha512:0aadf7243a4229d8548bcb917f4ff9f7f9e7583c7ff04c40ced475ca58ae34648fe21cab886edbf3f72c21f180f432df6863a973d1b2a28d2ea6aac3e959cf18
         WEB_SITE=http://www.ssh.com
          ENTERED=20020125
          UPDATED=20030312

@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/d2shar10
          UPDATED=20040430
       LICENSE[0]=shareware
           REJECT="is non source, shareware/demo"
-	  MD5[0]=bcb0fb662b78fa1e088261ca06a56d09
+     SOURCE_HASH=sha512:8aeb7dbc5d98ae98caa22b0741309c7451d662f569a889dfaaca5c0333895144d962cbde6276a121103266f40ca73485872f9dbc2bd11405d71f2af58f553e9a
            SHORT="d2x Descent 2 - shareware/demo data"
 cat << EOF
 d2x Descent 2 - shareware/demo data

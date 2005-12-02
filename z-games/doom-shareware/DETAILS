@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://www.idsoftware.com
          ENTERED=20050805
          UPDATED=20050805
-          MD5[0]=5f4eb849b1af12887dec04a2a12e5e62
+     SOURCE_HASH=sha512:f64edd2dde5dc09be2861ce80f40ade72874c8c59973da75e10acb84086a4714fe06cfb302afd365ad28fa46e6acc1fd73b0f6ce0e8fed19189e60d1b537bcbd
       LICENSE[0]=PD
            SHORT="the shareware wad file for doom"
 cat << EOF

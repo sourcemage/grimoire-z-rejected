@@ -4,7 +4,7 @@
 #SOURCE_DIRECTORY=$BUILD_DIRECTORY/rar
 #   SOURCE_URL[0]=http://www.exit1.org/dvdrip/contrib/$SOURCE
         WEB_SITE=http://www.exit1.org/dvdrip/contrib
-#          MD5[0]=5042cf753833ab8ca4fce21a1a28b579
+#     SOURCE_HASH=sha512:d1d68bdade962ba58fefa4f39fc6ffe550cd96f57b4ff50bf556c654fee3227fcbb6a460aaf8ebe7cd70305a7e25827537d0cb68a99f0e77b662b90046e8dfe9
       LICENSE[0]=license.txt
           REJECT="distributed as binary only"
          ENTERED=20030816

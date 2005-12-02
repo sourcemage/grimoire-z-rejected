@@ -3,7 +3,7 @@
           SOURCE=fp-linux-ws-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=ftp://ftp.f-prot.com/pub/linux/$SOURCE
-          MD5[0]=98b1a532829e9e0d375724175d4ff56d
+     SOURCE_HASH=sha512:c8d027f592a3611b7386202c9ba60487253991f2f88366be2de2b37be10957de5231e3b54f8da26b1ce7b22b188d1f4eb1bef3fa22c8b557d49f547328efb358
         WEB_SITE=http://www.f-prot.com
          ENTERED=20020921
          UPDATED=20030628

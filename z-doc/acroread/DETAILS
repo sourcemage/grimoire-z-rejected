@@ -8,7 +8,7 @@
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/AdobeReader
 INSTALL_DIRECTORY=/usr/lib/acroread
     SOURCE_URL[0]=http://ardownload.adobe.com/pub/adobe/reader/unix/7x/${VERSION2}.${VERSION3}/$LANG/$SOURCE
-           MD5[0]=8e2f71b24b99588bb8018175f609d85d
+      SOURCE_HASH=sha512:4887b564d8634a33d06114985459bfc0bd40f84f3ee651d17edf8c93877f81617ef586ccc11a9f4aca06db92a3a9d06ac8d618f8b137ad5ae6acdd40d26d8dc9
          WEB_SITE=http://www.adobe.com/products/acrobat/readermain.html
           ENTERED=20020709
           UPDATED=20020902

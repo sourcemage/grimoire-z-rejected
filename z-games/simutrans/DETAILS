@@ -7,8 +7,8 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
    SOURCE_URL[0]=http://www.s-line.de/homepages/simutrans/data/$SOURCE
   SOURCE2_URL[0]=http://www.s-line.de/homepages/simutrans/data/$SOURCE2
-          MD5[0]=676d09cb53e6eac61dc02cc7f155e4bf
-          MD5[1]=4f830ad55b66c01ad7d4c67548c80bc9
+     SOURCE_HASH=sha512:d1a3fd3b21c269e0424da816c9632c0e6372045fcea87c8feec2f55a334156f6c5c6aefdb0318dfb7e81d922276c645975a201c502997dd524d6f75c4cf18509
+    SOURCE2_HASH=sha512:1d169bd4a213496b1c5749929d66b5c45d8a92cedfbba00590570ce6ec043a0eb56231a206d330c03938d5f79c021df36f36fd6ba9adf3db30310ac6c2a721f4
         WEB_SITE=http://www.simutrans.de/
          ENTERED=20040422
           REJECT="is non-source"

@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/dom_demo
    SOURCE_URL[0]=http://www.illwinter.com/dom/$SOURCE
         WEB_SITE=http://www.illwinter.com/dom/
-          MD5[0]=62ec73bb80db416e8b4a2a98aeda6429
+     SOURCE_HASH=sha512:0109f71078d10415557fcdc21b06162194bfbc964fc4829766c927f97c5ba4c0a8f2b02df3bc16375509b2eff4ca51ad2226b97e1fe62582cfa721b0bceca260
          ARCHIVE=off
       LICENSE[0]=UNKNOWN
           REJECT="binary only demo"

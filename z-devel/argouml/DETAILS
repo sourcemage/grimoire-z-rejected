@@ -9,7 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
 6.1/6}//$SOURCE2
   SOURCE3_URL[0]=http://argouml.tigris.org/files/documents/4/0/$SPELL-${VERSION/
 6.1/6}//$SOURCE3
-          MD5[0]=bc0402353de6ed970fb06ead33f34b5d
+     SOURCE_HASH=sha512:6a4d71cf3385b15504c8b3fa7af848b264f47d98094d96e56e7fef2ee14130dc5ce512f95f5f02bd3f3a0da422c6b04d523a8878a2959e3c8873dcf53f584181
           MD5[1]=b0158b39635b721c5b5a1132595fbae7
           MD5[2]=6b62971623e0d116c1bc972c47477de5
         WEB_SITE=http://argouml.tigris.org

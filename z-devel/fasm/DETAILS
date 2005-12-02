@@ -3,7 +3,7 @@
           SOURCE=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://flatassembler.net/$SOURCE
-          MD5[0]=f4c9aefe731887e18340daaba3d40390
+     SOURCE_HASH=sha512:adcf7b2c5f0b41ef3e1ae985bc8c39bf3ce73edebd433fc28e08fe1bd830a02915abdcd14c41201526a9dbe178a83e68e400b80bdec6a59ec2dc80b9433add73
         WEB_SITE=http://flatassembler.net/
          ENTERED=20050207
          UPDATED=20050207
