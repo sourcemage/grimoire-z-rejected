@@ -1,0 +1,2 @@
+. $GRIMOIRE/REJECTED_MSG
+config_query ESSENTIAL "Install only codecs which don't have a free alternative?" y

@@ -1,0 +1,23 @@
+           SPELL=xanim-codecs
+         VERSION=20040626
+if [ "$(uname -m)" == "ppc" ]; then
+          SOURCE=xanimdlls-ppc-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/xanimdlls-ppc-$VERSION
+          MD5[0]=58b2c90f31763af87dcc24a7198789e8
+else
+          SOURCE=xanimdlls-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/xanimdlls-$VERSION
+     SOURCE_HASH=sha512:4adfce84b6aa7cb41f1e46a7049230911b885fa65e31a808b10edba2b39e7d9bf17e1b258261c1f760b43be0ca7c0b1fb228e908f0e3f93c4768b8750b667684
+fi
+   SOURCE_URL[0]=ftp://mplayerhq.hu/MPlayer/releases/codecs/$SOURCE
+        WEB_SITE=http://www.mplayerhq.hu
+         ENTERED=20040713
+         UPDATED=20040713
+      LICENSE[0]=PD
+         ARCHIVE=off
+     GATHER_DOCS=off
+          REJECT="proprietary license"
+           SHORT="a set of linux xanim codecs"
+cat << EOF
+a set of linux xanim codecs for use by some media players
+EOF

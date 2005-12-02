@@ -1,8 +1,15 @@
+2005-12-02 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* z-video/quicktime-codecs, z-video/real-codecs, z-video/win32codecs,
+	  z-video/xanim-codecs:
+		moved from devel
+	* REJECTED_MSG: get variable values for REJECT and WEB_SITE from DETAILS so
+		it works in PREPARE
+
 2005-11-28 Ladislav Hagara <hgr@vabo.cz>
 	* z-crypto/truecrypt: new spell
 
 2005-11-27 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
-        * z-devel/squeak: moved from devel non-Free
+	* z-devel/squeak: moved from devel non-Free
 
 2005-11-15 Eric Sandall <eric@sandall.us>
 	* accounts, groups: Sync with test

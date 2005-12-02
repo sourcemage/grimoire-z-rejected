@@ -1,3 +1,7 @@
+  # get the values for these two explicitly from DETAILS so sourcing this
+  # from PREPARE works
+  REJECT=$(source $SCRIPT_DIRECTORY/DETAILS > /dev/null && echo $REJECT)
+  WEB_SITE=$(source $SCRIPT_DIRECTORY/DETAILS > /dev/null && echo $WEB_SITE)
   message "${MESSAGE_COLOR}This spell is considered${PROBLEM_COLOR}" \
           "rejected${DEFAULT_COLOR}${MESSAGE_COLOR} because of the"   \
           "following reason:\n"

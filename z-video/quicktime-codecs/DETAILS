@@ -1,0 +1,17 @@
+           SPELL=quicktime-codecs
+         VERSION=20040626
+          SOURCE=qt63dlls-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/qt63dlls-$VERSION
+     SOURCE_HASH=sha512:c2e9be5fafa476c831b62ec84f2876a23ffc6ddfd6d80bbc623ac151211dea3819ca4b1acacbcd02e5b95ce1ab3842f76a86d22e554e1e5a4a626b29d6dc2fbd
+   SOURCE_URL[0]=ftp://mplayerhq.hu/MPlayer/releases/codecs/$SOURCE
+        WEB_SITE=http://www.mplayerhq.hu
+         ENTERED=20040713
+         UPDATED=20040713
+      LICENSE[0]=PD
+         ARCHIVE=off
+     GATHER_DOCS=off
+          REJECT="proprietary license"
+           SHORT="a set of quicktime windows codec dlls"
+cat << EOF
+a set of quicktime windows codec dlls for use by some media players
+EOF
