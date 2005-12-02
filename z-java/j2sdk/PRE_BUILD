@@ -10,11 +10,11 @@ elif [ $(cat /proc/meminfo |awk '$1=="Swap:"{print $NF;}') -gt "1300000000" ] ;
      mk_source_dir $SOURCE_DIRECTORY
 fi                                                   &&
 cd		$SOURCE_DIRECTORY	             &&
-unpack		$SOURCE		${MD5[0]}	     &&
-unpack		$SOURCE2	${MD5[1]}	     &&
-unpack          $SOURCE3        ${MD5[2]}            &&
+unpack_file 	     &&
+unpack_file 2	     &&
+unpack_file 3            &&
 if [ "$CERT" = "yes" ]
-then unpack	$SOURCE5        ${MD5[4]}       
+then unpack_file 5       
 fi                                                   &&
 # apply patches 
 patch -p1 < $SCRIPT_DIRECTORY/j2sdk-1_4_2-smgl.patch &&

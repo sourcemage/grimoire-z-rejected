@@ -29,7 +29,7 @@ done                                                    &&
 ### replace 1.1.3 zlib due to security flaw
 cd $SOURCE_DIRECTORY/j2se/src/share/native/java/util/zip  &&
 rm -rf zlib-1.1.3                                       &&
-unpack $SOURCE4 ${MD5[3]}                               &&
+unpack_file 4                               &&
 cd zlib-${ZLIB_VERSION}	                                &&
 mv adler32.c zadler32.c	                                &&
 mv crc32.c zcrc32.c                                     &&
