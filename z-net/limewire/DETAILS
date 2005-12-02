@@ -3,7 +3,7 @@
           SOURCE=LimeWireLinux.rpm
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=http://www.limewire.com/LimeWireSoftLinux
-          MD5[0]=IGNORE
+   SOURCE_IGNORE=unversioned
         WEB_SITE=http://www.limewire.com/
          ENTERED=20020407
          UPDATED=20020428

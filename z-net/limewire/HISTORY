@@ -1,2 +1,8 @@
+2005-12-01 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 IGNORE to SOURCE_HASH unversioned
+
+2005-11-28 Seth Woolley <seth@tautology.org>
+	* PRE_BUILD: unpack api update
+
 2005-02-27 David Brown <dmlb2000@excite.com>
 	* ALL: made spell
