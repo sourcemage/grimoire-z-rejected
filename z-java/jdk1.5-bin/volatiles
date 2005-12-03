@@ -1,2 +1,2 @@
-^/usr/lib/jdk1\.5\.0_05/demo/jvmti/heapTracker/lib/libheapTracker_g\.so$
-^/usr/lib/jdk1\.5\.0_05/demo/jvmti/mtrace/lib/libmtrace_g\.so$
+^/usr/lib/jdk1\.5\.0_06/demo/jvmti/heapTracker/lib/libheapTracker_g\.so$
+^/usr/lib/jdk1\.5\.0_06/demo/jvmti/mtrace/lib/libmtrace_g\.so$

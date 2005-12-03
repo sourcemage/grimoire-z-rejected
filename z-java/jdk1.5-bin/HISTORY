@@ -1,3 +1,6 @@
+2005-12-03 Jose Bernardo Silva <jbernardo@sourcemage.org>
+	* DETAILS, volatiles: Updated to 1.5.0.6
+
 2005-11-19 George Sherwood <george@beernabeer.com>
 	* volatiles: Added file to exclude libraries from cleanse
 
