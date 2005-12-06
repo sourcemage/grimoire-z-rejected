@@ -1,3 +1,6 @@
+2005-12-06 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: fixed due to new version of smgl-archspecs
+
 2005-10-01 David Brown <dmlb2000@gmail.com>
 	* DETAILS: updated x86 and x86_64 to 7676
 	* NVIDIA-Linux-x86-1.0-7667-pkg1.run.sig: removed
