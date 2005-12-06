@@ -1,3 +1,6 @@
+2005-12-06 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: fixed due to new version of smgl-archspecs
+
 2005-12-03 Jose Bernardo Silva <jbernardo@sourcemage.org>
 	* DETAILS, volatiles: Updated to 1.5.0.6
 
