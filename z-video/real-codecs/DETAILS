@@ -16,7 +16,7 @@ fi
       LICENSE[0]=PD
          ARCHIVE=off
      GATHER_DOCS=off
-          REJECT="proprietary license
+          REJECT="proprietary license"
            SHORT="a set of linux RealMedia codecs"
 cat << EOF
 a set of linux RealMedia codecs for use by some media players
