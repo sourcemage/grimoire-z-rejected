@@ -1,2 +1,3 @@
-conflicts j2sdk       &&
-conflicts jdk1.5-bin
+conflicts  j2sdk       &&
+conflicts  jdk1.5-bin  &&
+conflicts  jre1.5-bin

@@ -1,3 +1,6 @@
+2005-12-08 Eric Sandall <eric@sandall.us>
+	* CONFLICTS: Also conflicts with jre1.5-bin
+
 2005-11-19 George Sherwood <george@beernabeer.com>
 	* volatiles: Updated lib to new version. Bug 10094.
 
