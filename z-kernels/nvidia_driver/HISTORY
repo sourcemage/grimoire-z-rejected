@@ -1,3 +1,10 @@
+2005-12-18 David Brown <dmlb2000@gmail.com>
+	* DETAILS: updated to 1.0-8174
+	* NVIDIA-Linux-x86-1.0-7676-pkg1.run.sig: deleted
+	* NVIDIA-Linux-x86-1.0-8174-pkg1.run.sig: added
+	* NVIDIA-Linux-x86_64-1.0-7676-pkg2.run.sig: deleted
+	* NVIDIA-Linux-x86_64-1.0-8174-pkg2.run.sig: added
+
 2005-12-06 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: fixed due to new version of smgl-archspecs
 
