@@ -1,2 +1,3 @@
-provides  JAVA &&
-provides  JAVA-1.4
+provides  JAVA      &&
+provides  JAVA-1.4  &&
+provides  JDK
