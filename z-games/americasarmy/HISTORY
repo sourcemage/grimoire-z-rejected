@@ -1,3 +1,17 @@
+2005-12-30 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 2.50
+	  Removed unneeded VERSION2 and VERSION3
+	  Removed bad mirrors
+	  Added LICENSE[1]
+	  Use GPG signatures
+	  Download is now 813Mb
+	  Formatted long description to <80 columns
+	  Shortened SHORT
+	* PRE_BUILD: Use unpack_file
+	  Added missing message quotes
+	* INSTALL: Use modified VERSION instead of VERSION3
+	  Removed TABs and cleaned up formatting
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

@@ -1,46 +1,36 @@
            SPELL=americasarmy
-         VERSION=2.30
-        VERSION2=`echo $VERSION | cut -d. -f1`
-        VERSION3=${VERSION2}`echo $VERSION | cut -d. -f2`
-          SOURCE=armyops${VERSION3}-linux.run
+         VERSION=2.50
+          SOURCE=armyops${VERSION/./}-linux.run
          SOURCE2=farm_cache.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://ftp7.3dgamers.com/pub/3dgamers/games/americasarmy/$SOURCE
-   SOURCE_URL[1]=http://3dgamers.intelenet.net/pub/3dgamers/games/americasarmy/$SOURCE
-   SOURCE_URL[2]=http://3dgxfer1.3dgamers.com/3dgamers/games/americasarmy/$SOURCE
-   SOURCE_URL[3]=http://ftp4.3dgamers.com/pub/3dgamers/games/americasarmy/$SOURCE
-   SOURCE_URL[4]=http://3dgxfer2.3dgamers.com/3dgamers/games/americasarmy/$SOURCE
-   SOURCE_URL[5]=http://3dgamers.planetmirror.com/pub/3dgamers/games/americasarmy/$SOURCE
-   SOURCE_URL[6]=ftp://3dgr35g:mr23g239a@3dgamers.mirror.internode.on.net/3dgamers/games/americasarmy/$SOURCE
-   SOURCE_URL[7]=http://3dgamers.iinet.net.au/pub/3dgamers/games/americasarmy/$SOURCE
-  SOURCE2_URL[0]=http://ftp7.3dgamers.com/pub/3dgamers/games/americasarmy/Missions/$SOURCE2
-  SOURCE2_URL[1]=http://3dgamers.intelenet.net/pub/3dgamers/games/americasarmy/Missions/$SOURCE2
-  SOURCE2_URL[2]=http://3dgxfer1.3dgamers.com/3dgamers/games/americasarmy/Missions/$SOURCE2
-  SOURCE2_URL[3]=http://ftp4.3dgamers.com/pub/3dgamers/games/americasarmy/Missions/$SOURCE2
-  SOURCE2_URL[4]=http://3dgxfer2.3dgamers.com/3dgamers/games/americasarmy/Missions/$SOURCE2
-  SOURCE2_URL[5]=http://3dgamers.planetmirror.com/pub/3dgamers/games/americasarmy/Missions/$SOURCE2
-  SOURCE2_URL[6]=ftp://3dgr35g:mr23g239a@3dgamers.mirror.internode.on.net/3dgamers/games/americasarmy/Missions/$SOURCE2
-  SOURCE2_URL[7]=http://3dgamers.iinet.net.au/pub/3dgamers/games/americasarmy/Missions/$SOURCE2
-          MD5[0]=a0df99cc9933120905f2de51f2ad613b
-    SOURCE2_HASH=sha512:42d71d403260d74af75814086a82dfa8685bd839c56344d5d52781c3a640020b350a76ab590b698f0256ae2865f4b1376e984a6ebc084b0db07575fa4b4f04c4
+   SOURCE_URL[0]=http://3dgamers.iinet.net.au/pub/3dgamers/games/americasarmy/$SOURCE
+   SOURCE_URL[1]=ftp://3dgr35g:mr23g239a@3dgamers.mirror.internode.on.net/3dgamers/games/americasarmy/$SOURCE
+   SOURCE_URL[2]=http://3dgamers.planetmirror.com/pub/3dgamers/games/americasarmy/$SOURCE
+  SOURCE2_URL[0]=http://3dgamers.iinet.net.au/pub/3dgamers/games/americasarmy/Missions/$SOURCE2
+  SOURCE2_URL[1]=ftp://3dgr35g:mr23g239a@3dgamers.mirror.internode.on.net/3dgamers/games/americasarmy/Missions/$SOURCE2
+  SOURCE2_URL[2]=http://3dgamers.planetmirror.com/pub/3dgamers/games/americasarmy/Missions/$SOURCE2
+     SOURCE2_GPG="gurus.gpg:${SOURCE2}.sig"
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=UNKNOWN
+      LICENSE[1]=UNKNOWN
+       BUILD_API=2
         WEB_SITE=http://www.americasarmy.com/
          ENTERED=20030620
          UPDATED=20030620
-      LICENSE[0]=UNKNOWN
+         ARCHIVE="off"
           REJECT="binary only game"
-         ARCHIVE=off
-       BUILD_API=2
-           SHORT="America's Army the full Linux version"
+           SHORT='U.S. Army simulation game'
 cat << EOF
-Nobody knows military simulations like the world's premier land force, the U.S. Army. So when the 
-Army began making a simulation to let civilians experience the barracks to the battlefields, it 
-sent its talented development teams to experience the Army as a recruit would. The developers 
-crawled through obstacle courses, shot weapons, parachute jumped, and visited the Army bases, all 
-to let you play Army in the most realistic way ever depicted in a computer game.
+Nobody knows military simulations like the world's premier land force, the U.S.
+Army. So when the Army began making a simulation to let civilians experience
+the barracks to the battlefields, it sent its talented development teams to
+experience the Army as a recruit would. The developers crawled through obstacle
+courses, shot weapons, parachute jumped, and visited the Army bases, all to let
+you play Army in the most realistic way ever depicted in a computer game.
 
-NOTE: 745M download, 1.9G INSTALLED
+NOTE: 813M download, 1.9G INSTALLED
 
-The recommended requirements for the game are: 
+The recommended requirements for the game are:
 	Pentium4 1.4GHz (or equivalent)
 	256MB RAM
 	64MB GeForce2 or similar 3D card

@@ -1,10 +1,10 @@
-create_group  games                                                          &&
-message  ${SPELL_COLOR}This will take some considerable time due to the"     \
-         size of the package. No cache will be created during this install"  \
-          either${DEFAULT_COLOR}"                                            &&
-mk_source_dir                           &&
-cd $SOURCE_DIRECTORY                    &&
-echo -e "Y \n n \n" | sh ${SOURCE_CACHE}/${SOURCE} --nox11 --confirm --keep --target .
-#unpack the setup package before we track files
-gunzip -dc setupstuff.tar.gz | tar xvf - 				&&
-unzip ${SOURCE_CACHE}/${SOURCE2}
+create_group  games                                                                     &&
+message  "${SPELL_COLOR}This will take some considerable time due to the"               \
+         "size of the package. No cache will be created during this install"            \
+         "either${DEFAULT_COLOR}."                                                      &&
+mk_source_dir                                                                           &&
+cd $SOURCE_DIRECTORY                                                                    &&
+unpack_file  ''                                                                         &&
+echo -e "Y \n n \n" | sh ${SOURCE_CACHE}/${SOURCE} --nox11 --confirm --keep --target .  &&
+unpack_file  '2'                                                                        &&
+gunzip -dc setupstuff.tar.gz | tar xvf -
