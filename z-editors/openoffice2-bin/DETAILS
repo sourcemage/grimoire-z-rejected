@@ -1,5 +1,5 @@
            SPELL=openoffice2-bin
-         VERSION=2.0.0
+         VERSION=2.0.1
 if  [  "${OO2_LOCALE:-en}" == "en"  ]; then
           SOURCE=OOo_${VERSION}_LinuxIntel_install.tar.gz
      COMMON_PATH=openoffice/stable

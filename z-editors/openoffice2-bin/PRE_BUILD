@@ -5,17 +5,17 @@ unpack_file  ''                                &&
 #cd  OOO680_m3_native_packed-2_en-US.8968/RPMS  &&
 # Extracted root directories don't have the same names between localized
 # versions, so use * wildcard although I don't find that very elegant
-cd OOO*/RPMS
+cd OO*/RPMS
 
 for  PART  in  base  calc  core01  core02  core03  core03u  core04  core04u  core05  core05u  core06  core07  core08  core09  core10  draw  gnome-integration  graphicfilter  impress  javafilter  math  pyuno  spellcheck  testtool  writer  xsltfilter
 do
   message  "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"  &&
-  rpmunpack  openoffice.org-$PART-2.0.0-3.i586.rpm              &&
-  gzip  -d   openoffice.org-$PART-2.0.0-3.cpio.gz               &&
-  cpio  -idm  <  openoffice.org-$PART-2.0.0-3.cpio
+  rpmunpack  openoffice.org-$PART-2.0.1-1.i586.rpm              &&
+  gzip  -d   openoffice.org-$PART-2.0.1-1.cpio.gz               &&
+  cpio  -idm  <  openoffice.org-$PART-2.0.1-1.cpio
 done
 
 message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"                        &&
-rpmunpack  desktop-integration/openoffice.org-freedesktop-menus-2.0.0-3.noarch.rpm  &&
-gzip  -d  openoffice.org-freedesktop-menus-2.0.0-3.cpio.gz                          &&
-cpio  -idm  <  openoffice.org-freedesktop-menus-2.0.0-3.cpio
+rpmunpack  desktop-integration/openoffice.org-freedesktop-menus-2.0.1-1.noarch.rpm  &&
+gzip  -d  openoffice.org-freedesktop-menus-2.0.1-1.cpio.gz     &&
+cpio  -idm  <  openoffice.org-freedesktop-menus-2.0.1-1.cpio
