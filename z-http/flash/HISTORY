@@ -1,3 +1,6 @@
+2006-01-06 George Sherwood <george@beernabeer.com>
+	* CONFIGURE:  Added &&'s to fix bug #10322
+
 2005-11-14 George Sherwood <george@beernabeer.com>
 	* DETAILS: Removed BUILD_API=2. Entire grimoire set.
 

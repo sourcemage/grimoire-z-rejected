@@ -1,17 +1,17 @@
 # Standard rejected warnings.
 #
-source $GRIMOIRE/REJECTED_MSG
+source $GRIMOIRE/REJECTED_MSG  &&
 
-echo "Flash works with the following programs:"
-echo "Mozilla"
-echo "Firefox"
-echo "Konqueror"
-echo "Opera"
-echo "Netscape (not version 4.x)"
+echo "Flash works with the following programs:"  &&
+echo "Mozilla"  &&
+echo "Firefox"  &&
+echo "Konqueror"  &&
+echo "Opera" &&
+echo "Netscape (not version 4.x)" &&
 
-echo "Select which currently installed applications you wish to install Flash for."
+echo "Select which currently installed applications you wish to install Flash for."  &&
 
-persistent_add MOZILLA FIREFOX FIRE_BIN KDEBASE OPERA NETSCAPE
+persistent_add MOZILLA FIREFOX FIRE_BIN KDEBASE OPERA NETSCAPE  &&
 
 if  spell_ok  mozilla
 then
@@ -20,8 +20,8 @@ then
     MOZILLA=y
   else
     MOZILLA=n
-	fi
-fi
+	fi 
+fi  &&
 
 if  spell_ok  firefox
 then
@@ -31,7 +31,7 @@ then
   else
     FIREFOX=n
 	fi
-fi
+fi &&
 
 if spell_ok firefox-bin
 then
@@ -41,7 +41,7 @@ then
   else
     FIRE_BIN=n
         fi
-fi
+fi &&
 
 if  spell_ok  kdebase
 then
@@ -51,7 +51,7 @@ then
   else
     KDEBASE=n
   fi
-fi
+fi &&
 
 if  spell_ok  opera
 then
@@ -61,7 +61,7 @@ then
   else
     OPERA=n
   fi
-fi
+fi &&
 
 if  spell_ok  netscape4
 then
