@@ -6,9 +6,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
      SOURCE_HASH=sha512:03703f75f4a2629a1f038808f7926731c011b0748f82cc1d0d292e128034cf962d33240cc765799d1fe6d665108a316675567c2610d7efa29ff6526662210dbc
         WEB_SITE=http://mplayerplug-in.sourceforge.net/install.php
          ENTERED=20041009
-        BUILD_API=2
+       BUILD_API=2
+          REJECT="installs from binary"
            SHORT="Development libs/includes for firefox"
-
 cat << EOF
 The gecko-sdk allows building plugins for mozilla based browsers.
 EOF
