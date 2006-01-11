@@ -1,16 +1,16 @@
            SPELL=ieee80211
          VERSION=1.0.3
-       BUILD_API=2
           SOURCE=$SPELL-$VERSION.tgz
-      SOURCE_GPG=gurus.gpg:${SOURCE}.sig
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE  
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+      SOURCE_GPG=gurus.gpg:${SOURCE}.sig
+      LICENCE[0]=GPL
+       BUILD_API=2
         WEB_SITE=http://$SPELL.sf.net/
          ENTERED=20040815
          UPDATED=20040919
-      LICENCE[0]=GPL
          ARCHIVE="off"
-           SHORT="Intel ProWireless 2x00 ieee80211 subsystem"
+           SHORT='Generic ieee80211 networking stack'
 cat << EOF
-This is the Intel Pro Wireless 2200 driver found on the website ipw2200.sf.net if you want more info than that check out the web site
+A generic ieee80211 networking stack for the Linux kernel.
 EOF
