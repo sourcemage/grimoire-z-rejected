@@ -1,3 +1,11 @@
+2006-01-14 Neuron <vlmarek@volny.cz>
+	* DETAILS: updated to 1.0-8178
+	* DETAILS: added comment about nvidia-xconfig
+	* DETAILS: gpg -> sha512
+	* INSTALL: removed space at the end of line
+	* INSTALL: also installs nvidia-xconfig and nvidia-settings binaries
+	  and man pages
+
 2005-12-18 David Brown <dmlb2000@gmail.com>
 	* DETAILS: updated to 1.0-8174
 	* NVIDIA-Linux-x86-1.0-7676-pkg1.run.sig: deleted

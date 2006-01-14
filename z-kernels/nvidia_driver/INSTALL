@@ -4,6 +4,10 @@ mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/extensions &&
 export IGNORE_CC_MISMATCH=1                               &&
 cd usr/src/nv                                             &&
 make KERNEL_MODLIB=/lib/modules/$(get_kernel_version) KERNEL_UNAME=$(get_kernel_version) module-install &&
-cd $SOURCE_DIRECTORY &&
-sedit 's/install: kernel_module_install/install: /g' Makefile &&
-make install 
+cd $SOURCE_DIRECTORY                                           &&
+sedit 's/install: kernel_module_install/install: /g' Makefile  &&
+make install                                                   &&
+
+# Copy few files not installed by Makefile
+install --mode=0755 usr/bin/nvidia-{settings,xconfig} /usr/bin &&
+install --mode=0644 usr/share/man/man1/nvidia-{settings,xconfig}.1.gz /usr/share/man/man1

@@ -2,14 +2,16 @@
            SPELL=nvidia_driver
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	x86-64|64)
-         VERSION=1.0-8174-pkg2
+         VERSION=1.0-8178-pkg1
 	  SOURCE=NVIDIA-Linux-x86_64-${VERSION}.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86_64/${VERSION/-pkg*}/$SOURCE
+     SOURCE_HASH=sha512:ce2a90bda301e78a21c47f895be0df2776522da2d3d42f3a6451c888888a447bf1667347fd148b836da8e979be5e0b21f4ed6ac8d4de9bfd7c2e9c918431f9e7
         ;;
 	ia32|32)
-         VERSION=1.0-8174-pkg1
+         VERSION=1.0-8178-pkg1
           SOURCE=NVIDIA-Linux-x86-$VERSION.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86/${VERSION/-pkg*}/$SOURCE
+     SOURCE_HASH=sha512:e5f2abfe7fe1787dcd8ed767cdfa36e43a735601f79edf93673bd5e87a3934d77aa7ad0b3fd7b5ec42d32a9ef323eb6dcf8dfdbb8509f2eb7f598e67e1461be1
         ;;
 ############################################################
 # missing ia64 support we don't have an arch spec for it???
@@ -21,7 +23,6 @@ case "${SMGL_COMPAT_ARCHS[0]}" in
         ;;
 esac
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
         WEB_SITE=http://www.nvidia.com
          ENTERED=20030401
          UPDATED=20050730
@@ -31,6 +32,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION
            SHORT="Driver provided by NVIDIA for NVIDIA GPUs"
 cat << EOF
 NVIDIA
-These are the nvidia provided binary XFree86 drivers for 
-their graphics cards.
+These are the nvidia provided binary X drivers for their graphics cards.
+
+For help with the X server configuration, this spell installs nvidia-xconfig
+binary.
 EOF
