@@ -1,1 +1,4 @@
-depends rar
+# Based on libstdc++.so.2.8 error in cleanse (without the symlink)
+# Not actually installed, seems to work w/o it
+#
+#depends gcc2

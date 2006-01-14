@@ -1,3 +1,8 @@
+2006-01-07 Geoffrey Derber <gderber@sourcemage.org>
+	* TRIGGERS: removed
+	* reviving depreciated spell, this version is still
+	  required by video-dvdrip
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

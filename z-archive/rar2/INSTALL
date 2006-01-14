@@ -1,5 +1,16 @@
-true
-#cp -ruv rar /usr/bin/               &&
-#cp -ruv unrar /usr/bin/             &&
-#mkdir -p /usr/share/doc/rar2        &&
-#cp -ruv *.txt /usr/share/doc/rar2/
+PREFIX="${INSTALL_ROOT}/usr" &&
+cd ${SOURCE_DIRECTORY} &&
+
+mkdir -p $PREFIX/bin &&
+mkdir -p $PREFIX/lib &&
+install -m 0755 rar /usr/bin/               &&
+install -m 0755 unrar /usr/bin/             &&
+cp rarfiles.lst ${INSTALL_ROOT}//etc &&
+cp default.sfx $PREFIX/lib
+
+# Fixes a error with cleanse complaining about a missing library
+# Does not appear to affect functionality
+ln -sf $PREFIX/lib/libstdc++.so.5 $PREFIX/lib/libstdc++.so.2.8
+
+mkdir -p /usr/share/doc/rar2        &&
+cp -ruv *.txt /usr/share/doc/rar2/

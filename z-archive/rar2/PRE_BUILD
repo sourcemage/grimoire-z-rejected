@@ -1,5 +1,6 @@
-true
-#mk_source_dir $SOURCE_DIRECTORY &&
-#cd $BUILD_DIRECTORY &&
-#chmod +x /var/spool/sorcery/$SOURCE
-#/var/spool/sorcery/$SOURCE
+#true
+mk_source_dir $SOURCE_DIRECTORY &&
+cd $BUILD_DIRECTORY &&
+chmod +x /var/spool/sorcery/$SOURCE &&
+/var/spool/sorcery/$SOURCE &&
+cd $SOURCE_DIRECTORY
