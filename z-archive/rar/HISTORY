@@ -1,3 +1,7 @@
+2006-01-21 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* DEPENDS: added dependency on gcc33 (needs libstdc++.so.5)
+	* UNATTEND_SAFE: added
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

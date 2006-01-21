@@ -1,3 +1,9 @@
+2006-01-21 Arwed v. Merkatz <v.merkatz@gmx.net>
+	* CONFLICTS: added conflict to rar
+	* INSTALL: don't intall unrar as that requires gcc2 which doesn't work,
+	  users can just cast unrar to get that too
+	* UNATTEND_SAFE: added
+
 2006-01-07 Geoffrey Derber <gderber@sourcemage.org>
 	* TRIGGERS: removed
 	* reviving depreciated spell, this version is still
