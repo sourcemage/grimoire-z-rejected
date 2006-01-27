@@ -1,12 +1,8 @@
-if [[ $(get_sorcery_kernel_config CONFIG_NET_RADIO) != "y" ]]; then
-  message "${PROBLEM_COLOR}You don't have CONFIG_NET_RADIO enabled in \
-your kernel configuration, cannot build ipw2200.${DEFAULT_COLOR}" &&
-  return 1
-fi &&
-if [[ $(get_sorcery_kernel_config CONFIG_FW_LOADER) != "y" ]] &&
-   [[ $(get_sorcery_kernel_config CONFIG_FW_LOADER) != "m" ]]; then
-  message "${PROBLEM_COLOR}You don't have CONFIG_FW_LOADER enabled in \
-your kernel configuration, cannot build ipw2200.${DEFAULT_COLOR}" &&
+if [[ $(get_sorcery_kernel_config CONFIG_IEEE80211) == "y" ||
+      $(get_sorcery_kernel_config CONFIG_IEEE80211) == "m" ]]; then
+  message "${MESSAGE_COLOR}Kernel $(get_kernel_version) already has \
+the subsystem built in, cannot build external ieee80211 \
+stack.${DEFAULT_COLOR}"
   return 1
 fi &&
 if [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_ARC4) != "y" ]] &&
@@ -20,13 +16,9 @@ fi &&
 if [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_MICHAEL_MIC) != "y" ]] &&
    [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_MICHAEL_MIC) != "m" ]] &&
    [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_AES_586) != "y" ]] &&
-   [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_AES_586) != "m" ]] ; 
-then
+   [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_AES_586) != "m" ]] ; then
   message "${PROBLEM_COLOR}You don't have the right crypto support built in \
 the kernel, CONFIG_CRYPTO_AES_586 and CONFIG_MICHAEL_MIC. These are needed \
 for WPA support.${DEFAULT_COLOR}"
 fi &&
-mk_source_dir ${SOURCE_DIRECTORY} &&
-unpack_file '' &&
-cd $SOURCE_DIRECTORY &&
-unpack_file 2
+default_pre_build

@@ -1,11 +1,11 @@
            SPELL=ipw2200 
-         VERSION=1.0.6
-       FWVERSION=2.3
+         VERSION=1.0.10
+       FWVERSION=2.4
        BUILD_API=2
           SOURCE=$SPELL-$VERSION.tgz
 	 SOURCE2=$SPELL-fw-$FWVERSION.tgz
-      SOURCE_GPG=gurus.gpg:${SOURCE}.sig
-     SOURCE2_GPG=gurus.gpg:${SOURCE2}.sig
+     SOURCE_HASH=sha512:3b3b74f199a49be8089fa91372b733a721817cd574cbb6a6c5fe70101d5edddb7f4e33950b9c713e44661d9aec1e4471bde05dee2e0f4c29b285d53bcff35c7e
+    SOURCE2_HASH=sha512:c0ace52067ec17406f88d05de9996158c0bf1ba712ca7450c5649ca9a3d021cc0ae2f24a43d2a9d5fa8417736d9a4d48a86ef53a969d7b1edf26f44931e5dfc4
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE   
   SOURCE2_URL[0]=
@@ -13,9 +13,13 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20040815
          UPDATED=20040919
       LICENCE[0]=GPL
-          REJECT="Firmware must be downloaded manually, license agreement"
+          REJECT="Due to license agreement, firmware must be downloaded manually. Download version $FWVERSION from http://ipw2200.sourceforge.net/firmware.php and place in /var/spool/sorcery/"
          ARCHIVE="off"
-           SHORT="Intel ProWireless 2200 kernel drivers"
+           SHORT="Intel PRO/Wireless 2200BG Driver for Linux"
 cat << EOF
-This is the Intel Pro Wireless 2200 driver found on the website ipw2200.sf.net if you want more info than that check out the web site
+This project was created by Intel to enable support for the Intel 
+PRO/Wireless 2915ABG Network Connection and Intel PRO/Wireless 2200BG 
+Network Connection mini PCI adapters. This project (IPW2200) is intended 
+to be a community effort as much as is possible given some working 
+constraints (mainly, no HW documentation is available).
 EOF

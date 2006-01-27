@@ -1,3 +1,12 @@
+2006-01-28 Juuso Alasuutari <juuso.alasuutari@tamperelainen.org>
+	* DETAILS: update to 1.0.10 and fw to 2.4, GPG -> SHA512, 
+	  made reject msg more informative, changed short & long descr 
+	  according to website
+	* DEPENDS: added depends wireless_tools
+	* PRE_BUILD: split kernel check for wireless and firmware into 
+	  two separate checks
+	* *.sig: deleted
+
 2005-09-23 David Brown <dmlb2000@gmail.com>
 	* CONFIGURE: added z-rejected mesg
 	* DETAILS: added the REJECT var for the reason
