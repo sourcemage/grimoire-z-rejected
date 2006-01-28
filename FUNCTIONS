@@ -1,4 +1,14 @@
 . $GRIMOIRE/libaccount
+. $GRIMOIRE/libgcc
+
+#---------------------------------------------------------------------
+## Replaces sorcerys default_build with a custom version using
+## the invoke_gcc function from libgcc
+#---------------------------------------------------------------------
+function default_build () {
+  invoke_gcc  &&
+  real_default_build
+}
 
 #---------------------------------------------------------------------
 ## @return 0 if glibc was compiled with NPTL
@@ -9,10 +19,7 @@
 #---------------------------------------------------------------------
 function glibc_is_nptl ()
 {
-  if /lib/libc.so.6 | grep -q NPTL; then
-    return 0
-  fi
-  if /lib/libc.so.6 | grep -q "Native POSIX Threads Library"; then
+  if getconf GNU_LIBPTHREAD_VERSION | grep -q NPTL; then
     return 0
   fi
   return 1
@@ -111,7 +118,7 @@ function install_shell ()
 
   #installing shell into /etc/shells
   message "installing $1 into /etc/shells"
-  if ! ( grep -q "${2}" ${INSTALL_ROOT}/etc/shells ) ; then
+  if ! ( grep -q "^${2}$" ${INSTALL_ROOT}/etc/shells ) ; then
     echo "$2" >> ${INSTALL_ROOT}/etc/shells
   fi || return 1
 
@@ -144,8 +151,7 @@ function remove_shell ()
 
   #removing shell from /etc/shells
   if  [  -f  /etc/shells  ]  ;  then
-    cat /etc/shells|grep -v "$2" > /etc/shells.tmp &&
-    mv /etc/shells.tmp /etc/shells
+    sedit "\:^$2$:d"  /etc/shells
   fi
 
   # and optionally from qingy's session dir
@@ -178,11 +184,90 @@ function config_query_long_string() {
     return 0
 }
 
+#---------------------------------------------------------------------
+## @param Directory with files we might want to install
+## @param Destination directory (optional)
+##
+## Installs files to WWW_DEST ($INSTALL_ROOT/usr/share/www/$SPELL) and
+## sets up proper www-data permissions
+## Optionally the second parameter will override WWW_DATA (and make
+## sure INSTALL_ROOT exists only once in the WWW_DATA)
+#---------------------------------------------------------------------
+function  install_www_files ()
+{
+  if  [  !  -z  $2  ];  then
+    #
+    # Just in case the destination already includes INSTALL_ROOT, remove it
+    #
+    local  WWW_DEST="$INSTALL_ROOT/${2/\$INSTALL_ROOT/}"
+  else
+    local  WWW_DEST="$INSTALL_ROOT/usr/share/www/$SPELL"
+  fi  &&
+
+  #
+  # Make sure WWW_DEST exists
+  #
+  if  [  !  -d  "$WWW_DEST"  ];  then
+    if  [  !  -d  "${WWW_DEST/\/$SPELL/}"  ];  then
+      mkdir  -p  "${WWW_DEST/\/$SPELL/}"                   &&
+      chmod  0755                 "${WWW_DEST/\/$SPELL/}"  &&
+      chown  www-data:www-data    "${WWW_DEST/\/$SPELL/}"
+    fi  &&
+
+    mkdir  -p  "$WWW_DEST"                   &&
+    chmod  0755                 "$WWW_DEST"  &&
+    chown  www-data:www-data    "$WWW_DEST"
+  fi  &&
+
+  # find $@ | while read file; do install ... $file ...; done
+  # find  $1  -type  -f  |  while  read  file;  do
+  for  www_file  in  `find  $1  -type  f`;  do
+    if  install_config_file  "$www_file"   "$WWW_DEST/$www_file";  then
+      chmod  0644                 "$WWW_DEST/$www_file"  &&
+      chown  www-data:www-data    "$WWW_DEST/$www_file"
+    fi
+  done
+  #
+  # Warning message about new location for www files
+  # Remove around 2005-08-02 (one month in test, another in stable, supposedly)
+  #
+  message  "${MESSAGE_COLOR}Your web files have been moved out of the"        \
+           "APACHE specific locations (apache2/htdocs, httpd/htdocs, etc.)"   \
+           "and into a shared, non-DocumentRoot $INSTALL_ROOT/usr/share/www"  \
+           "directory. You can modify your web server to point there for"     \
+           "these files now.${DEFAULT_COLOR}"
+}
+
+#---------------------------------------------------------------------
+## Removes traces of NSPR and NSS from Mozilla-based software
+## TODO move patch to a central place
+#---------------------------------------------------------------------
+function mozilla_remove_nspr_nss() {
+  message 'Checking Mozilla source code...' &&
+  [[ "$(basename $(pwd))" == mozilla ]] &&
+  message 'Checking the spell...' &&
+  [[ -f $SCRIPT_DIRECTORY/security_manager_makefile.diff ]] &&
+  patch -p1 < $SCRIPT_DIRECTORY/security_manager_makefile.diff &&
+  rm -fr dbm nsprpub security/nss &&
+  # exclude DBM for top-level modules and don't build it
+  sedit 's@\<dbm\>@@g' Makefile.in &&
+  sedit 's@\<dbm\>@@g' build/unix/modules.mk &&
+  # don't define NSS libraries as dependencies and don't look for them in the tree
+  sedit 's@$(DIST)/lib/$(LIB_PREFIX)\(crmf\|dbm\|nss3\|softokn3\|smime3\|ssl3\)\.$(LIB_SUFFIX)@-l\1@g' config/config.mk &&
+  sedit 's@NSS_DEP_LIBS\s*=@__undefine_\0@g' config/config.mk &&
+  # align the makefile-s
+  find -name Makefile.in | while read __MAKEFILE; do
+    # use system NSPR's and NSS's headers
+    # option `--with-system-nspr' doesn't do it everywhere
+    sedit 's@-I\S*\(nss\|nspr\)\>@-I/usr/include/\1@g' $__MAKEFILE
+  done
+}
+
 #-------------------------------------------------------------------------
 ## Returns the kernel version checks linux then linux-new (for now) and
 ## then uname for the kernel version
 #-------------------------------------------------------------------------
-get_kernel_version()
+function get_kernel_version()
 {
 	local KVER=$(installed_version linux)
 	if [[ $KVER ]] ; then
@@ -204,7 +289,7 @@ get_kernel_version()
 ## to use this function simply call then change the variables listed ro have
 ## any call to uname return that value
 #--------------------------------------------------------------------------
-invoke_uname_change()
+function invoke_uname_change()
 {
 	if [[ $(installed_version unamechange) ]] ; then
 		export UNAME_CHANGE_SYSNAME=$(uname -s)
@@ -223,7 +308,7 @@ invoke_uname_change()
 ## invoke_uname_change unset's all environmental vars and returns
 ## LD_PRELOAD back to normal
 #-------------------------------------------------------------------------
-devoke_uname_change()
+function devoke_uname_change()
 {
 	if [[ $(installed_version unamechange) ]] ; then
 		unset UNAME_CHANGE_SYSNAME
@@ -236,13 +321,14 @@ devoke_uname_change()
 		export LD_PRELOAD="${LD_PRELOAD/\/usr\/lib\/unamechange.so/}"
 	fi
 }
+
 #-----------------------------------------------------------------------
 ## Get the running kernel config status of a some part of the kernel
 ## given by $1. Used for spells that don't have linux triggers
 ##
 ## $1 string Config variable to look for
 #-----------------------------------------------------------------------
-get_running_kernel_config()
+function get_running_kernel_config()
 {
 	local KVER
 	# use proc interface because even inside a uname change invoke this
@@ -270,7 +356,7 @@ get_running_kernel_config()
 ##
 ## $1 string Config var to look for
 #-------------------------------------------------------------------------
-get_sorcery_kernel_config()
+function get_sorcery_kernel_config()
 {
 	local KVER=$(get_kernel_version)
 	if [ -f /boot/config-$KVER ] ; then
@@ -280,6 +366,33 @@ get_sorcery_kernel_config()
 	else
 		echo "-1"
 	fi
+}
+
+
+#-------------------------------------------------------------------------
+## Compatibility code for gracefully failing if the user uses an older
+## version of sorcery with a spell that calls unpack_file.
+#-------------------------------------------------------------------------
+declare -f unpack_file &> /dev/null ||
+function unpack_file() {
+  message "This spell uses a function only available in sorcery 1.12.2 or newer, please update."
+  return 1
+}
+
+#-------------------------------------------------------------------------
+## Default build for Python spell.
+#-------------------------------------------------------------------------
+function default_build_python() {
+  python setup.py build
+}
+
+#-------------------------------------------------------------------------
+## Default install for Python spell.
+## INSTALL_ROOT is used here only if not empty, because some spells can't
+## install with "--root '/'" option.
+#-------------------------------------------------------------------------
+function default_install_python() {
+  python setup.py install ${INSTALL_ROOT:+--root "$INSTALL_ROOT/"}
 }
 
 

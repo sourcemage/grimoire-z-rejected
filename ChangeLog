@@ -1,3 +1,6 @@
+2006-01-28 David Kowis <dkowis@sourcemage.org>
+	* FUNCTIONS, libgcc: Pulled from devel to allow kqemu to work
+
 2005-12-02 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* z-video/quicktime-codecs, z-video/real-codecs, z-video/win32codecs,
 	  z-video/xanim-codecs:

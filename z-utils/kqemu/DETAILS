@@ -1,0 +1,36 @@
+           SPELL=kqemu
+         VERSION=0.8.0
+        VERSION2=0.7.2
+          SOURCE=qemu-$VERSION.tar.gz
+         SOURCE2=$SPELL-$VERSION2.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/qemu-$VERSION
+   SOURCE_URL[0]=http://fabrice.bellard.free.fr/qemu/$SOURCE
+  SOURCE2_URL[0]=http://fabrice.bellard.free.fr/qemu/$SOURCE2
+     SOURCE_HASH=sha512:808cbc5c7e80acede06aab7dedc5acd0b13f05ca315e32a3075099cad84d0c34ee218c8e172462f6e612be038cf06cd54f3cdc50a72816a5cf6a8b0f6affc3a7
+    SOURCE2_HASH=sha512:5d6e4130a86a3e295c1d3483845727157ac2a1a411244ed651243227d8804cde82b166c77e5bed6f9ea285d2796a1a4f629b0745a9613d436604635d88197485
+        WEB_SITE=http://fabrice.bellard.free.fr/qemu
+         ENTERED=20060126
+         UPDATED=20060126
+       BUILD_API=2
+      LICENSE[0]=GPL/LGPL
+      LICENSE[1]=proprietary
+    DISTCC_HOSTS=
+           SHORT="QEMU is a generic and open source processor emulator"
+cat << EOF
+QEMU achieves a good emulation speed by using dynamic translation.
+QEMU has two operating modes:
+
+    * Full system emulation. In this mode, QEMU emulates a full system 
+    (for example a PC), including a processor and various peripherials. 
+    It can be used to launch different Operating Systems without 
+    rebooting the PC or to debug system code.
+    * User mode emulation (Linux host only). In this mode, QEMU can 
+    launch Linux processes compiled for one CPU on another CPU. 
+
+KQEMU is the kernel accelerator module for qemu. Substantially improves 
+performance.
+
+Emulator     : Typical Slowdown Ratio
+QEMU         : between 5 and 10
+QEMU + Accel : between 1 and 2
+EOF
