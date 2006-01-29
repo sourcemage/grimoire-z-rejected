@@ -1,6 +1,6 @@
 sedit  "s/\/usr\/local\/Adobe\/Acrobat${VERSION2}.${VERSION3}/\/usr\/lib\/acroread/"  INSTALL  &&
 install  -d  -m  755  /usr/lib/acroread                                      &&
-echo  -e  "\n"  |  ./INSTALL                                      &&
+echo -en "\nn\n" | ./INSTALL   &&
 
 ln  -sf  /usr/lib/acroread/bin/acroread  /usr/bin/acroread  &&
 
