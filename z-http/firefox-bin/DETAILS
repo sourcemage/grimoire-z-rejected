@@ -4,7 +4,7 @@ if [ "$FIREFOX_DEVEL" == "y" ]; then
           SOURCE=firefox-${VERSION}.tar.gz
      SOURCE_HASH=sha512:bbb9a7ca0880ed87d7046aa443d6d2bb22679aefe13233fcd480a6aff94117e758431722509f06cf601816a15389b91b0ca4f454bd2d2c999c3bd5ae3dce1eb6
 else
-         VERSION=1.5
+         VERSION=1.5.0.1
           SOURCE=firefox-${VERSION}.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
