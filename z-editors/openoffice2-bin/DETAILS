@@ -21,6 +21,7 @@ fi
        BUILD_API=2
          ENTERED=20050625
          UPDATED=20050625
+      PATCHLEVEL=1
          ARCHIVE="off"
           REJECT="This spell is non-source"
            SHORT="The binary version of OpenOffice 2"
