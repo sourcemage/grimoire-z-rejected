@@ -1,3 +1,6 @@
+2006-02-11 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 1_4_2_10
+
 2005-12-19 Eric Sandall <eric@sandall.us>
 	* PROVIDES: Provides a Java Developer Kit (needed by db for Java support)
 
