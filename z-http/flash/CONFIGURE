@@ -5,13 +5,14 @@ source $GRIMOIRE/REJECTED_MSG  &&
 echo "Flash works with the following programs:"  &&
 echo "Mozilla"  &&
 echo "Firefox"  &&
+echo "Seamonkey" &&
 echo "Konqueror"  &&
 echo "Opera" &&
 echo "Netscape (not version 4.x)" &&
 
 echo "Select which currently installed applications you wish to install Flash for."  &&
 
-persistent_add MOZILLA FIREFOX FIRE_BIN KDEBASE OPERA NETSCAPE  &&
+persistent_add MOZILLA FIREFOX SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE  &&
 
 if  spell_ok  mozilla
 then
@@ -30,6 +31,16 @@ then
     FIREFOX=y
   else
     FIREFOX=n
+	fi
+fi &&
+
+if  spell_ok  seamonkey
+then
+  if query "Do you wish to install the plugin for Seamonkey?" y
+  then 
+    SEAMONKEY=y
+  else
+    SEAMONKEY=n
 	fi
 fi &&
 

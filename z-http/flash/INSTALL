@@ -36,6 +36,22 @@ case $FIREFOX in
 	;;
 esac &&
 
+case $SEAMONKEY in
+        y|Y)
+		if [ -d /usr/lib/seamonkey/plugins ]; then
+			message "${MESSAGE_COLOR}Installing for Seamonkey${DEFAULT_COLOR}\n"
+			if [ -e /usr/lib/seamonkey/plugins/libflashplayer.so ]; then
+				rm -f /usr/lib/seamonkey/plugins/libflashplayer.so
+			fi
+			if [ -e /usr/lib/seamonkey/plugins/flashplayer.xpt ]; then
+				rm -f /usr/lib/seamonkey/plugins/flashplayer.xpt
+			fi
+			cp libflashplayer.so /usr/lib/seamonkey/plugins/ &&
+			cp flashplayer.xpt /usr/lib/seamonkey/plugins/
+		fi
+	;;
+esac &&
+
 case $FIRE_BIN in
         y|Y)
 		if [ -d /opt/firefox/plugins ]; then
