@@ -1,3 +1,6 @@
+2006-02-15 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 5.1
+
 2005-11-13 Eric Sandall <eric@sandall.us>
 	* PRE_BUILD: Make sure games group exists
 
