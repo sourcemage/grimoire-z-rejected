@@ -1,3 +1,6 @@
+2006-02-15 Eric Sandall <eric@sandall.us>
+	* z-games/eClient: Removed long deprecated spell
+
 2006-01-28 David Kowis <dkowis@sourcemage.org>
 	* FUNCTIONS, libgcc: Pulled from devel to allow kqemu to work
 	* z-utils/kqemu: added the kqemu spell
