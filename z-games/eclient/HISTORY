@@ -1,3 +1,21 @@
+2006-02-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: SOURCE_URL and SOURCE2_URL changed
+	  SOURCE2 changed to download update-launcher, elaunch no longer exists
+	  Updated VERSION to 20050217
+	  Added BUILD_API=2
+	  Updated required and recommended specifications
+	* PRE_BUILD: Make sure we don't try to spawn an xterm with --nox11, use
+	  --target to specify extraction to $SOURCE_DIRECTORY, and use --noexec
+	  so that ./elaunch isn't run after extraction
+	* BUILD: Run only `true`
+	* INSTALL: Branched from BUILD, updated to build_api 2
+	  No need to cd anymore (thanks to PRE_BUILD)
+	  Renamed launcher script from 'eClient' to 'eclient' to match spell
+	  name
+	  Use INSTALL_ROOT for installing launcher script
+	* eClient: eClient renamed to eclient to match spell name
+	* eclient: Installed directory renamed from eClient to eclient
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
@@ -10,7 +28,7 @@
 
 2004-05-03 Seth Woolley <seth@tautology.org>
 	* DETAILS: to fix md5 for SOURCE2.
-	* DETAILS: to fix md5 for SOURCE.
+	  to fix md5 for SOURCE.
 
 2004-04-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: urls fixed as per bug #6249, removed MAINTIANER line

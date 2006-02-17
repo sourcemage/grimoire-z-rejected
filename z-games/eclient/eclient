@@ -2,7 +2,7 @@
 
 export  LD_LIBRARY_PATH=/opt/gcc2/lib
 
-cd   /usr/share/games/eClient
+cd   /usr/share/games/eclient
 
 if  [  -x  fltk-eclient  ]
 then

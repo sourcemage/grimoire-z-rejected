@@ -3,4 +3,4 @@ mk_source_dir              &&
 cd  $SOURCE_DIRECTORY      &&
 unpack_file  ''            &&
 unpack_file  '2'           &&
-sh  $SOURCE_CACHE/$SOURCE
+sh  $SOURCE_CACHE/$SOURCE  --nox11  --noexec  --target  $SOURCE_DIRECTORY
