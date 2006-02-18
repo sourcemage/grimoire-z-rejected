@@ -1,6 +1,6 @@
            SPELL=opera
          VERSION=8.52
-        VERSION2=20060201.5
+        VERSION2=20060201.6
         VERSION3=shared
         VERSION4=qt.i386-en
           SOURCE=${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}.tar.bz2
@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-
    SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/852/final/en/i386/shared/${SOURCE}
    SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/852/final/en/i386/shared/${SOURCE}  
         WEB_SITE=http://www.opera.com
-     SOURCE_HASH=sha512:d9d2c9c47dde0beaeaf4d41e7e48006feb6175763f4236ff701a8e25e8ca49acfae4227392d2633bf1e03f86078d78eefb9c598b01be42e20e6f47a864dbd0d6
+     SOURCE_HASH=sha512:442f948d5690f1dec4568e057dc92310e6665f0c0234b638ea890494acc451768647dbc7bdf9a6542469867389762a898c3911f2a37f8748dbd50d0772c35039
       LICENCE[0]=UNKNOWN
          ENTERED=20020530
          UPDATED=20040513

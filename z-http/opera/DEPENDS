@@ -1,2 +1,1 @@
-depends qt-x11 &&
-depends gcc33
+depends qt-x11

@@ -1,5 +1,7 @@
 2006-02-17 George Sherwood <george@beernabeer.com>
-	* DETAILS: Updated to 8.5.2 and SOURCE_URL's
+	* DEPENDS: Removed gcc33
+	* DETAILS: Updated to 8.5.2 and SOURCE_URL's. Switched minor 
+	  version to .6 from .5
 
 2005-11-26 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 8.51
