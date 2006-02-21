@@ -1,3 +1,7 @@
+2006-02-21 Juuso Alasuutari <juuso.alasuutari@tamperelainen.org>
+	* DETAILS: updated to 1.0.12, changed WEB_SITE $SPELL.sf.net to 
+	  $SPELL.sourceforge.net
+
 2006-01-28 Juuso Alasuutari <juuso.alasuutari@tamperelainen.org>
 	* DETAILS: update to 1.0.10 and fw to 2.4, GPG -> SHA512, 
 	  made reject msg more informative, changed short & long descr 
