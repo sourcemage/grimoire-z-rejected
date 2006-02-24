@@ -6,7 +6,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    #SOURCE_URL[1]=http://www.fz.se/filarkiv/?file=spel/rtcw/EnemyTerritory/mods/true_combat/$SOURCE
    SOURCE_URL[0]="http://www.liflg.org/?what=dl&catid=6&gameid=52&filename=$SOURCE"
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
-      LICENSE[0]=
+      LICENSE[0]=ID
        BUILD_API=2
         WEB_SITE=http://www.truecombat.com/
          ENTERED=20060224
@@ -14,6 +14,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ARCHIVE=off
           REJECT="binary only game"
             DOCS="README"
-           SHORT=''
+           SHORT='True Combat: Elite is a modern FPS'
 cat << EOF
+True Combat: Elite is a first person shooter set in the modern era and using
+the Quake3 Engine through Wolfenstein: Enemy Territory.
 EOF
