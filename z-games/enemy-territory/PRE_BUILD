@@ -1,7 +1,7 @@
 create_group  games                                                        &&
 message  "${SPELL_COLOR}This will take some considerable time due to the"  \
          "size of the package. No cache will be created during this"       \
-         "install either${DEFAULT_COLOR}                                   &&
+         "install either${DEFAULT_COLOR}"                                  &&
 mk_source_dir                                                              &&
 cd  $SOURCE_DIRECTORY                                                      &&
 sh  $SOURCE_CACHE/$SOURCE  --nox11  --target  .  --  -V
