@@ -1,0 +1,31 @@
+I_DIR="${INSTALL_ROOT}/usr/share/games/enemy-territory"  &&
+
+install -m 0755 -o root -g games bin/tc-elite     $I_DIR  &&
+install -m 0755 -o root -g games bin/tc-eliteded  $I_DIR  &&
+install -m 0644 -o root -g games tce.xpm          $I_DIR  &&
+
+#
+# Setup True Combat: Elite client script
+#
+echo -e "#!/bin/sh \n
+# Needed to make symlinks/shortcuts work. \n
+# the binaries must run with correct working directory \n
+cd "${I_DIR}" \n ./tc-elite \$* \n exit \$?" > tc-elite              &&
+install -m 0755 -o root -g games tc-elite ${INSTALL_ROOT}/usr/games  &&
+
+#
+# Setup True Combat: Elite dedicated server script
+#
+echo -e "#!/bin/sh \n
+# Needed to make symlinks/shortcuts work. \n
+# the binaries must run with correct working directory \n
+cd "${I_DIR}" \n ./tc-eliteded \$* \n exit \$?" > tc-eliteded            &&
+install -m 0755 -o root -g games tc-eliteded ${INSTALL_ROOT}/usr/games   &&
+mkdir -p ${INSTALL_ROOT}/usr/share/applnk/Games/                         &&
+
+#
+# Unpack True Combat: Elite data
+#
+tar  xzf  tce_$VERSION.tar.gz  -C $I_DIR  &&
+chmod  -R  0755        $I_DIR/tcetest     &&
+chown  -R  root:games  $I_DIR/tcetest
