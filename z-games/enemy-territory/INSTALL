@@ -8,6 +8,15 @@ chown -R root.games $I_DIR		&&
 chmod -R a+rw $I_DIR 			&&
 install -m0644 CHANGES $I_DIR 			&&
 install -m755 bin/Linux/x86/*.x86 $I_DIR &&
+
+#
+# Setup symlinks for mods (e.g. True Combat: Elite)
+#
+pushd  $I_DIR             &&
+ln  -s  et.x86     et     &&
+ln  -s  etded.x86  etded  &&
+popd                      &&
+
 install openurl.sh $I_DIR 		&&
 install -m0644 ET.xpm $I_DIR     		&&
 install -m0644 Docs/EULA_Wolfenstein_Enemy_Territory.txt $I_DIR &&
