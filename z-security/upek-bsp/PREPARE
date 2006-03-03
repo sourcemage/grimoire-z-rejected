@@ -1,0 +1,4 @@
+if  [  !  -e  /proc/bus/usb/devices  ];  then
+  message "${PROBLEM_COLOR}usbfs is not enabled or not mounted.  This needs to be resolved so that the driver registration utility can see the scanner.${DEFAULT_COLOR}"
+  return 1
+fi
