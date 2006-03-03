@@ -1,3 +1,7 @@
+2006-03-02 Jeremy Blosser <jblosser-smgl@firinn.org>
+	* z-security/upek-bsp: added, UPEK fingerprint scanner BSP for bioapi
+	* gurus.gpg: added my guru-signing key 0xAB2600B7
+
 2006-02-24 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* z-audio/gst-monkeysaudio: moved from normal grimoire due to licensing
 		issues
