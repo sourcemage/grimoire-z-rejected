@@ -1,10 +1,10 @@
            SPELL=mercury
-         VERSION=1711_B5b
-          SOURCE=1711_Actual_B5b.zip
+         VERSION=1711_B06
+          SOURCE=1711B06.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.beernabeer.com/$SOURCE
 #  SOURCE_URL[0]=http://download.sourcemage.org/mirror/$SOURCE
-     SOURCE_HASH=sha512:902f4eea10682a20fd2d20ff7d752ad27110c5ce4569c5dbe0cb18ca3d92835ca028c8fe5a4a7e90e869832e1af0efc97fe22ab4d4aff16612c0902c45cdc376
+     SOURCE_HASH=sha512:abc745edeb6b7e5f5e3f572f9f11717486a6ae55a81d9084e33e902d7321cd630b0f48e2a78e246486f3f6dd403f45a6f966ac6fe1712be90e0322d539c58827
         WEB_SITE=http://www.mercury.to
          ENTERED=20050531
          UPDATED=20020531
