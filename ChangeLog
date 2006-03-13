@@ -1,3 +1,6 @@
+2006-05-12 Jeremy Blosser <jblosser-smgl@firinn.org>
+	* z-utils/acu-driver: added, Cisco Aironet Utilities
+
 2006-03-02 Jeremy Blosser <jblosser-smgl@firinn.org>
 	* z-security/upek-bsp: added, UPEK fingerprint scanner BSP for bioapi
 	* gurus.gpg: added my guru-signing key 0xAB2600B7
