@@ -1,0 +1,25 @@
+           SPELL=acu-driver   
+         VERSION=2.1
+          SOURCE=linux-$SPELL-v21.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+    SOURCE_HASH=sha512:440c03e9badb796c1ca984beacdeb31ffaa5a0ea0f5d12166404e2a67819c8e65df14dba6d4e33833200968d8ccb58fa73520daf35b710b99cc8009544b5f430
+        WEB_SITE=http://www.cisco.com/
+         ENTERED=20051122
+         UPDATED=20051122
+      LICENCE[0]=http://www.cisco.com/
+          REJECT="has licensing issues and you must register to obtain tarball"
+         ARCHIVE="off"
+            DOCS="$DOCS linux/LICENSE* linux/*.txt"
+           SHORT="Cisco Aironet Utilities for Linux."
+       BUILD_API=2
+cat << EOF
+These are the proprietary kernel drivers and utilities for Cisco's Aironet line
+of 802.11 PCMCIA cards.  To obtain the sources you have to get an account with
+Cisco and agree to their license.
+
+Note: This spell currently installs the utilities, but not the drivers.
+
+Don't forget to download sources to /var/spool/sorcery before casting, from:
+
+http://www.cisco.com/pcgi-bin/tablebuild.pl/aironet-utils-linux
+EOF
