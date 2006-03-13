@@ -2,7 +2,7 @@
          VERSION=2.1
           SOURCE=linux-$SPELL-v21.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-    SOURCE_HASH=sha512:440c03e9badb796c1ca984beacdeb31ffaa5a0ea0f5d12166404e2a67819c8e65df14dba6d4e33833200968d8ccb58fa73520daf35b710b99cc8009544b5f430
+      SOURCE_GPG=gurus.gpg:$SOURCE.sig
         WEB_SITE=http://www.cisco.com/
          ENTERED=20051122
          UPDATED=20051122
