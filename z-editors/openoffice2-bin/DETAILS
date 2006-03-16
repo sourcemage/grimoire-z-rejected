@@ -1,27 +1,26 @@
            SPELL=openoffice2-bin
-         VERSION=2.0.1
+         VERSION=2.0.2-5
 if  [  "${OO2_LOCALE:-en}" == "en"  ]; then
-          SOURCE=OOo_${VERSION}_LinuxIntel_install.tar.gz
+          SOURCE=OOo_${VERSION/-*/}_LinuxIntel_install.tar.gz
      COMMON_PATH=openoffice/stable
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice2
 else
-          SOURCE=OOo_${VERSION}_LinuxIntel_install_${OO2_LOCALE}.tar.gz
+          SOURCE=OOo_${VERSION/-*/}_LinuxIntel_install_${OO2_LOCALE}.tar.gz
      COMMON_PATH=openoffice/localized/${OO2_LOCALE}
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice2
 fi 
-   SOURCE_URL[0]=ftp://ftp.ussg.iu.edu/pub/${COMMON_PATH}/${VERSION}/${SOURCE}
-   SOURCE_URL[1]=http://mirrors.isc.org/pub/${COMMON_PATH}/${VERSION}/${SOURCE}
-   SOURCE_URL[2]=http://mirror.pacific.net.au/${COMMON_PATH}/${VERSION}/${SOURCE}
-   SOURCE_URL[3]=http://downloads.planetmirror.com/pub/${COMMON_PATH}/${VERSION}/${SOURCE}
-   SOURCE_URL[4]=http://ftp.scarlet.be/pub/${COMMON_PATH}/${VERSION}/${SOURCE}
+   SOURCE_URL[0]=ftp://ftp.ussg.iu.edu/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
+   SOURCE_URL[1]=http://mirrors.isc.org/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
+   SOURCE_URL[2]=http://mirror.pacific.net.au/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
+   SOURCE_URL[3]=http://downloads.planetmirror.com/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
+   SOURCE_URL[4]=http://ftp.scarlet.be/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
 #   SOURCE_URL[1]=ftp://ftp.ussg.iu.edu/pub/openoffice/developer/680_m130/$SOURCE
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
-        WEB_SITE=http://www.openoffice.org
       LICENSE[0]=LGPL
        BUILD_API=2
+        WEB_SITE=http://www.openoffice.org
          ENTERED=20050625
          UPDATED=20050625
-      PATCHLEVEL=1
          ARCHIVE="off"
           REJECT="This spell is non-source"
            SHORT="The binary version of OpenOffice 2"
