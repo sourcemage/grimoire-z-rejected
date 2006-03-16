@@ -1,9 +1,10 @@
            SPELL=flash
-         VERSION=7.0r61
+         VERSION=7.0r63
+  SECURITY_PATCH=1
           SOURCE=install_flash_player_7_linux.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE
-     SOURCE_HASH=sha512:732f9cb34f3d743013346e0f88e704acc6e18943604a0568f4f35892fcb75978f6e14460a4710f3a1ca2131e2ef3ef923e7fffd2d872b2ddc6bd1d745386bf9c
+     SOURCE_HASH=sha512:90d31f7368df96733bd204bdf24b638930cba75202696569b9e1d124a917bfa11939901b03902134bf4c583fabb43de9e1fd913710ad5d62dd4647063dd97bee
         WEB_SITE=http://www.macromedia.com
          ENTERED=20020319
          UPDATED=20040529
