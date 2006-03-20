@@ -1,3 +1,6 @@
+2006-03-20 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+	* z-games/zangband: moved from games/games-terminal, non-Free
+
 2006-03-12 Jeremy Blosser <jblosser-smgl@firinn.org>
 	* z-utils/acu-driver: added, Cisco Aironet Utilities
 
