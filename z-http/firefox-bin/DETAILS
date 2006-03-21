@@ -1,17 +1,19 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=1.5rc3
-          SOURCE=firefox-${VERSION}.tar.gz
-     SOURCE_HASH=sha512:bbb9a7ca0880ed87d7046aa443d6d2bb22679aefe13233fcd480a6aff94117e758431722509f06cf601816a15389b91b0ca4f454bd2d2c999c3bd5ae3dce1eb6
+         VERSION=2.0a1
+          SOURCE=firefox-${VERSION}.en-US.linux-i686.tar.gz
+     SOURCE_HASH=sha512:07687b9a362b42b2c0b73cebc254e2e84730b39d8b1ec735bd4c13dcf74661b6175ce65d1cee11de1be41e1bc755fc0523ce035b2cc07b4a15b2442077d2fd61
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/prometheus-mozilla1.8/$SOURCE
 else
          VERSION=1.5.0.1
           SOURCE=firefox-${VERSION}.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
-fi
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
   SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}.asc
+fi
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
+   
         WEB_SITE=http://www.mozilla.org/firefox
          ENTERED=20040902
          UPDATED=20041022

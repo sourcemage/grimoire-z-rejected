@@ -1,1 +1,1 @@
-config_query  FIREFOX_DEVEL  "Install the 1.5 beta version?"  n
+config_query  FIREFOX_DEVEL  "Install the 2.0 alpha version?"  n
