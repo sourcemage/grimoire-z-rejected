@@ -1,9 +1,11 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
          VERSION=2.0a1
-          SOURCE=firefox-${VERSION}.en-US.linux-i686.tar.gz
-     SOURCE_HASH=sha512:07687b9a362b42b2c0b73cebc254e2e84730b39d8b1ec735bd4c13dcf74661b6175ce65d1cee11de1be41e1bc755fc0523ce035b2cc07b4a15b2442077d2fd61
-   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/prometheus-mozilla1.8/$SOURCE
+          SOURCE=bonecho-alpha1.tar.gz
+         SOURCE2=$SOURCE.asc
+      SOURCE_GPG="firefox.gpg:$SOURCE2"
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/bonecho/alpha1/linux-i686/en-US/$SOURCE
+  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/bonecho/alpha1/linux-i686/en-US/$SOURCE2
 else
          VERSION=1.5.0.1
           SOURCE=firefox-${VERSION}.tar.gz
