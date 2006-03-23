@@ -22,7 +22,7 @@
 	  Converted to build_api 2
 	* POST_INSTALL,FINAL: POST_INSTALL renamed to FINAL
 
-2004-04-29 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* HISTORY: MIssing
 	* Bug resolved #6204
 

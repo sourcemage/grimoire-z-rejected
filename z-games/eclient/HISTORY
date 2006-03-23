@@ -23,14 +23,14 @@
 	* PRE_BUILD: Make sure games group exists
 	  Converted to unpack_file
 
-2005-03-31 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-03-31 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Lo-casing eClient
 
 2004-05-03 Seth Woolley <seth@tautology.org>
 	* DETAILS: to fix md5 for SOURCE2.
 	  to fix md5 for SOURCE.
 
-2004-04-22 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: urls fixed as per bug #6249, removed MAINTIANER line
 
 2004-01-23 Eric Sandall <eric@sandall.us>

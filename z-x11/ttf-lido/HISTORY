@@ -19,7 +19,7 @@
 2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE, PREPARE: Move rejected query to CONFIGURE  (Bug #3594)
 
-2004-04-26 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-04-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* Added to z-rejected
 
 2004-03-30 Vladimir Navrat <vn158@seznam.cz>

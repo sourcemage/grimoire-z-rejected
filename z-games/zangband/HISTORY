@@ -1,4 +1,4 @@
-2006-03-18 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2006-03-18 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: new version, added REJECTED reason
 	  fixed LICENSE field, one less source to worry about
 	  bugfix:#10723, BUILD_API\2
@@ -10,7 +10,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-11-28 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2005-11-28 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* PRE_BUILD: unpack api update
 
 2005-03-07 Arjan Bouter <abouter@sourcemage.org>

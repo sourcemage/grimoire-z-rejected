@@ -10,7 +10,7 @@
 	* CONFIGURE: added.
 	* BUILD: modified for api2.
 
-2004-06-07 Andrew "ruskie" Levstik <ruskie@mages.ath.cx>
+2004-06-07 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* BUILD, DEPENDS, DETAILS, HISTORY: minor fixes....
 
 2004-06-01 Pieter Lenaerts <pieter.lenaerts@pandora.be>
