@@ -2,4 +2,11 @@ mk_source_dir  ${SOURCE_DIRECTORY}             &&
 unpack_file ''                                 &&
 cd ${SOURCE_DIRECTORY}                         &&
 sh  ${SOURCE_CACHE}/${SOURCE}  --extract-only  &&
-mv NVIDIA*/* .
+mv NVIDIA*/* .                                 &&
+
+# Apply fix if kernel > 2.6.15
+KER=`get_kernel_version`                       &&
+KER=${KER:0:6}                                 &&
+if (( ${KER//\./} > 2615 )); then
+  patch -p0 < ${SCRIPT_DIRECTORY}/NVIDIA_kernel-1.0-8178-U012206.diff
+fi

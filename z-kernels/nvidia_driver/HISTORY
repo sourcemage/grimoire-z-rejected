@@ -1,3 +1,8 @@
+2006-03-25 Juuso Alasuutari <iuso@sourcemage.org>
+	* PRE_BUILD: Apply patch to fix compile against 2.6.16 
+	  kernels, bug #10748. Thanks to Arnaud Fortier!
+	* NVIDIA_kernel-1.0-8178-U012206.diff: added
+
 2006-01-14 Neuron <vlmarek@volny.cz>
 	* DETAILS: updated to 1.0-8178
 	* DETAILS: added comment about nvidia-xconfig
