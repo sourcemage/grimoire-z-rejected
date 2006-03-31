@@ -1,3 +1,7 @@
+2006-03-31 Flavien Bridault <vlaaad@sourcemage.org
+	* DETAILS: MD5 -> SHA512 for x86_64, updated to 1.4.1,
+	  updated SOURCE_URL
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

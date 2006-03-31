@@ -1,15 +1,15 @@
            SPELL=libcg
-         VERSION=1.4.0
+         VERSION=1.4.1
 if [[ "${HOST%%-*}" == 'x86_64' ]]; then
-          SOURCE=Cg-$VERSION-3_x86_64.tar.gz
-          MD5[0]=5fbaec8ca0ef7e9317c04ec00e7283ce
+          SOURCE=Cg-${VERSION}_x86_64.tar.gz
+     SOURCE_HASH=sha512:9c075054c67d7b81667b5832bc6d87cfc6fcb249b7b230d45118d53ec9359a58ac81714adb92e9332f55dfb4230bbb6f603ec350ab35addc15dc6b2860feb2a5
 else
-          SOURCE=Cg-$VERSION-3_x86.tar.gz
-     SOURCE_HASH=sha512:6f674107b525d6faf422ecb2a10e6bce5cece124949b9502ed50204d5a7363ae4cd9a681210ca29555746369e0df53693c2baad0a4539383a3efdb11c66c60b2
+          SOURCE=Cg-${VERSION}_x86.tar.gz
+     SOURCE_HASH=sha512:d326f730cd6d4950bfeff080866cc76578a9f2eb9af5bac843f4c400cbfd4df6f04a8dc6cec920e24c2da366cec10f7e36a1e7396058e69ac2ee7e06dc68566b
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Cg
           BRANCH=Cg_1.4
-   SOURCE_URL[0]=ftp://download.nvidia.com/developer/cg/$BRANCH/$SOURCE
+   SOURCE_URL[0]=http://download.nvidia.com/developer/cg/$BRANCH/$VERSION/$SOURCE
         WEB_SITE=http://developer.nvidia.com/object/cg_toolkit.html
          ENTERED=20040125
          UPDATED=20050309
