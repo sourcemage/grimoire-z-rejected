@@ -1,7 +1,10 @@
+2006-04-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD: uses disable_pic
+
 2005-11-27 Alex S. Tsamutali <astsmtl@gmail.com>
 	* DETAILS: Updated to 3.7-7 / 3.8-6665
-	           md5 replaced with sha512
-	           LICENSE corrected
+	  md5 replaced with sha512
+	  LICENSE corrected
 	* BUILD: prelinking is always disabled
 	* INSTALL: inisqueak is now installed from build directory
 
@@ -23,6 +26,6 @@
 	* POST_INSTALL,FINAL: POST_INSTALL renamed to FINAL
 
 2004-04-29 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-	* HISTORY: MIssing
+	* HISTORY: Missing
 	* Bug resolved #6204
 

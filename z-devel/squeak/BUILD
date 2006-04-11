@@ -1,6 +1,4 @@
-CFLAGS="${CFLAGS/-DPIC/}"  &&
-CFLAGS="${CFLAGS/-fPIC/}"  &&
-
+disable_pic                &&
 cd  $SOURCE_DIRECTORY      &&
 mkdir  bld                 &&
 cd     bld                 &&
