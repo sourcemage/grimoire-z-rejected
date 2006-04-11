@@ -1,6 +1,7 @@
 2006-04-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: added a new function: disable_pic()
-	  should be used when needing to get rid of -fPIC and -DPIC flags
+	  should be used when needing to get rid of -fPIC and -DPIC flags,
+	  missed a "
 
 2006-04-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * z-games/snes9x: moved to z-games      
