@@ -395,7 +395,6 @@ function default_install_python() {
   python setup.py install ${INSTALL_ROOT:+--root "$INSTALL_ROOT/"}
 }
 
-
 #-------------------------------------------------------------------------
 ## Compatibility code for gracefully failing if the user uses an older
 ## version of sorcery with a spell that calls unpack_file.
@@ -426,3 +425,21 @@ if [[ -z $SMGL_COMPAT_ARCHS ]] ; then
 		ARCHITECTURE[j++]=${SMGL_COMPAT_ARCHS[i]}
 	done
 fi
+
+
+#---
+## disable_pic
+## A function to smartly disable -DPIC and -fPIC flags
+## has one optional parameter: force which forces disable
+#---
+
+disable_pic() {
+if [[ "$SMGL_COMPAT_ARCHS[1]" != "x86_64" ]] ||
+   [[ "$1" == "force ]]
+then
+CFLAGS=${CFLAGS/-fPIC}                    &&
+CFLAGS=${CFLAGS/-DPIC}                    &&
+CXXFLAGS=${CXXFLAGS/-fPIC}                &&
+CXXFLAGS=${CXXFLAGS/-DPIC}
+fi
+}

@@ -1,3 +1,7 @@
+2006-04-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* FUNCTIONS: added a new function: disable_pic()
+	  should be used when needing to get rid of -fPIC and -DPIC flags
+
 2006-04-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
         * z-games/snes9x: moved to z-games      
 
@@ -13,7 +17,7 @@
 
 2006-02-24 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* z-audio/gst-monkeysaudio: moved from normal grimoire due to licensing
-		issues
+	  issues
 
 2006-02-24 Eric Sandall <eric@sandall.us>
 	* z-games/true-combat-elite: Added Wolfenstein: Enemy Territory mod
@@ -28,9 +32,9 @@
 2005-12-02 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* z-video/quicktime-codecs, z-video/real-codecs, z-video/win32codecs,
 	  z-video/xanim-codecs:
-		moved from devel
+	  moved from devel
 	* REJECTED_MSG: get variable values for REJECT and WEB_SITE from DETAILS so
-		it works in PREPARE
+	  it works in PREPARE
 
 2005-11-28 Ladislav Hagara <hgr@vabo.cz>
 	* z-crypto/truecrypt: new spell
@@ -217,7 +221,7 @@
 
 2004-04-12 Eric Sandall <eric@sandall.us>
 	* z-java/jaf,jms,jmx,jdmk,jndi,java_xml_pack,javamail,jdbc-optional,jta:
-	Moved from java due to licensing
+	  Moved from java due to licensing
 
 2004-01-29 Eric Sandall <eric@sandall.us>
 	* Moved z-video/xvid to devel grimoire video-libs/xvid
