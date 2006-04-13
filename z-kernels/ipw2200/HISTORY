@@ -1,3 +1,7 @@
+2006-04-13 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: Updated ipw2200 to 1.1.2 and firmware to 3.0
+	* INSTALL: Fixed firmware copying to work with 3.0
+
 2006-02-21 Juuso Alasuutari <juuso.alasuutari@tamperelainen.org>
 	* DETAILS: updated to 1.0.12, changed WEB_SITE $SPELL.sf.net to 
 	  $SPELL.sourceforge.net
