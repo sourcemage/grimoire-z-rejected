@@ -1,3 +1,15 @@
+2006-04-14 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: Version 1.0-8756
+	* PRE_BUILD, BUILD, INSTALL: Use nvidia's own installer 
+	  executable
+	* PREPARE: Added, checks if X is running, installer won't 
+	  run if it is. Made to display and prompt license 
+	  agreement.
+	* LICENSE: Added, Nvidia's license agreement.
+	* CONFIGURE: Added options to use expert install mode and 
+	  configure xorg automatically
+	* NVIDIA_kernel-1.0-8178-U012206.diff: Deleted
+
 2006-03-25 Juuso Alasuutari <iuso@sourcemage.org>
 	* PRE_BUILD: Apply patch to fix compile against 2.6.16 
 	  kernels, bug #10748. Thanks to Arnaud Fortier!

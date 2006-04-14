@@ -1,0 +1,18 @@
+. $GRIMOIRE/REJECTED_MSG  &&
+
+if [[ -n $(find /tmp -type f -name ".X*-lock" 2>/dev/null) ]]; then
+  message "${PROBLEM_COLOR}You appear to be running X, cannot continue with install. Please exit" &&
+  message "and try again. If you're sure you're not running X, remove stale" &&
+  message ".X*-lock files from /tmp and try again.${DEFAULT_COLOR}" &&
+  exit 1
+fi  &&
+
+if ! spell_ok $SPELL; then
+  cat  $SCRIPT_DIRECTORY/LICENSE                       &&
+  config_query  LEGAL  "Accept license agreement?"  n  &&
+  if [[ $LEGAL != y ]]; then
+    return 1
+  fi
+else
+  message "${MESSAGE_COLOR}Spell already installed, assuming license as accepted.${DEFAULT_COLOR}"
+fi

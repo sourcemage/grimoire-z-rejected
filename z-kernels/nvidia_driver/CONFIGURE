@@ -2,3 +2,5 @@ config_query  VIA4X   "Enable AGP 4x mode on VIA chipsets, which might cause ins
 config_query  ALiAGP  "Enable AGP on ALi chipsets, which might cause instability?"  n
 config_query  AGPSBA  "Enable AGP SBA(Side Band Addressing) on all supported chipsets, which might cause instability?"  n
 config_query  AGPFW   "Enable AGP Fast Writes on all supported chipsets, which might cause instability?"  n
+config_query  EXPERT  "Expert installation mode?"  n
+config_query  XCONF   "Automatically configure xorg.conf after install?"  n

@@ -1,12 +1,20 @@
-mk_source_dir  ${SOURCE_DIRECTORY}             &&
-unpack_file ''                                 &&
-cd ${SOURCE_DIRECTORY}                         &&
-sh  ${SOURCE_CACHE}/${SOURCE}  --extract-only  &&
-mv NVIDIA*/* .                                 &&
+sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
+               --target $SOURCE_DIRECTORY                     &&
+cd $SOURCE_DIRECTORY                                          &&
 
-# Apply fix if kernel > 2.6.15
-KER=`get_kernel_version`                       &&
-KER=${KER:0:6}                                 &&
-if (( ${KER//\./} > 2615 )); then
-  patch -p0 < ${SCRIPT_DIRECTORY}/NVIDIA_kernel-1.0-8178-U012206.diff
+if [[ $VIA4X == "y" ]]; then
+  sedit  "s/NVreg_EnableVia4x =0;/NVreg_EnableVia4x = 1;/"    \
+                                  usr/src/nv/os-registry.c
+fi  &&
+if [[ $ALiAGP == "y" ]]; then
+  sedit "s/NVreg_EnableALiAGP = 0;/NVreg_EnableALiAGP = 1;/"  \
+                                    usr/src/nv/os-registry.c
+fi  &&
+if [[ $AGPSBA == "y" ]]; then
+  sedit "s/NVreg_EnableAGPSBA = 0;/NVreg_EnableAGPSBA = 1;/"  \
+                                    usr/src/nv/os-registry.c
+fi  &&
+if [[ $AGPFW == "y" ]]; then
+  sedit "s/NVreg_EnableAGPFW = 0;/NVreg_EnableAGPFW = 1;/"    \
+                                  usr/src/nv/os-registry.c
 fi

@@ -1,13 +1,9 @@
-sedit 's/ lsmod / true /' usr/src/nv/conftest.sh          &&
-mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/drivers    &&
-mkdir -p ${INSTALL_ROOT}/usr/X11R6/lib/modules/extensions &&
-export IGNORE_CC_MISMATCH=1                               &&
-cd usr/src/nv                                             &&
-make KERNEL_MODLIB=/lib/modules/$(get_kernel_version) KERNEL_UNAME=$(get_kernel_version) module-install &&
-cd $SOURCE_DIRECTORY                                           &&
-sedit 's/install: kernel_module_install/install: /g' Makefile  &&
-make install                                                   &&
+local e X                                                             &&
+if [[ $EXPERT == y ]]; then e='-e'; fi                                &&
+if [[ $XCONF == y ]]; then X='-X'; fi                                 &&
 
-# Copy few files not installed by Makefile
-install --mode=0755 usr/bin/nvidia-{settings,xconfig} /usr/bin &&
-install --mode=0644 usr/share/man/man1/nvidia-{settings,xconfig}.1.gz /usr/share/man/man1
+./nvidia-installer  $e $X -a -q --ui=none --no-runlevel-check         \
+--no-rpms --no-network --x-prefix=$INSTALL_ROOT/usr/X11R6             \
+--x-module-path=$INSTALL_ROOT/usr/X11R6/lib/modules                   \
+--opengl-prefix=$INSTALL_ROOT/usr --utility-prefix=$INSTALL_ROOT/usr  \
+--kernel-name=$(get_kernel_version)
