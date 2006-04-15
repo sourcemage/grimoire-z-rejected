@@ -1,3 +1,6 @@
+2006-04-14 John Harding <johnh@kuberaconsulting.com>
+	* DETAILS: Fix my incorrect instruction and corrected ia32 url, now really fixed
+
 2006-04-14 David Kowis <dkowis@shlrm.org>
 	* DETAILS: as per johnnyi7 on IRC the url for ia32 was broke, now fixed
 
