@@ -1,3 +1,6 @@
+2006-04-14 David Kowis <dkowis@shlrm.org>
+	* DETAILS: as per johnnyi7 on IRC the url for ia32 was broke, now fixed
+
 2006-04-14 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Version 1.0-8756
 	* PRE_BUILD, BUILD, INSTALL: Use nvidia's own installer 
