@@ -6,4 +6,9 @@ if [[ $XCONF == y ]]; then X='-X'; fi                                 &&
 --no-rpms --no-network --x-prefix=$INSTALL_ROOT/usr/X11R6             \
 --x-module-path=$INSTALL_ROOT/usr/X11R6/lib/modules                   \
 --opengl-prefix=$INSTALL_ROOT/usr --utility-prefix=$INSTALL_ROOT/usr  \
---kernel-name=$(get_kernel_version)
+--kernel-name=$(get_kernel_version)                                   &&
+
+# To make sure spell doesn't default to editing xorg.conf after it's 
+# already done once.
+persistent_add  XCONF  &&
+XCONF=n

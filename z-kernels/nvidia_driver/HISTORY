@@ -1,4 +1,8 @@
 2006-04-18 Juuso Alasuutari <iuso@sourcemage.org>
+	* INSTALL: Made sure that if the xorg.conf auto-edit option has 
+	  been selected once, it doesn't default to y on next cast.
+
+2006-04-18 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Dropped "-pkg*" from version numbers.
 
 2006-04-14 John Harding <johnh@kuberaconsulting.com>
