@@ -23,7 +23,8 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/pine$VERSION
          ENTERED=20010922
          UPDATED=20050129
       LICENSE[0]=UW-PINE
-        BUILD_API=2
+          REJECT="is not GPL free"
+       BUILD_API=2
         KEYWORDS="pop3 mail"
            SHORT="pine-pop2 is a pop2 daemon (part of pine)."
 cat << EOF
