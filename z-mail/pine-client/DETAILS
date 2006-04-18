@@ -24,7 +24,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/pine$VERSION
          ENTERED=20010922
          UPDATED=20030810
       LICENSE[0]=UW-PINE
-          REJECT="is not GPL free"
+          REJECT="the license is NON-Free as defined by the FSF"
         KEYWORDS="email mail"
            SHORT="pine is a text-based MIME Email client."
 cat << EOF
