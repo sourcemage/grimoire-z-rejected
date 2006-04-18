@@ -1,0 +1,5 @@
+default_pre_build &&
+if ! `echo ${OPTS} | grep -q ssl` ; then
+  cd ${SOURCE_DIRECTORY} &&
+  patch build < ${SCRIPT_DIRECTORY}/build.patch
+fi

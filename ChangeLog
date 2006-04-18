@@ -1,3 +1,7 @@
+2006-04-18 David Kowis <dkowis@shlrm.org>
+	* z-mail/pine-{client,imap,pop2,pop3}: Pulling pine spells from normal
+	  grimoire into z-rejected due to licensing issues
+	
 2006-04-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: added a new function: disable_pic()
 	  should be used when needing to get rid of -fPIC and -DPIC flags,

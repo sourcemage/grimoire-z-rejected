@@ -1,0 +1,39 @@
+           SPELL=pine-client
+         VERSION=4.64
+       BUILD_API=2
+          SOURCE=pine$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/pine$VERSION
+   SOURCE_URL[0]=http://mirror.sit.wisc.edu/pub/net/mail/pine/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.univ-lyon1.fr/pub/mirrors/unix/pine/$SOURCE
+   SOURCE_URL[2]=ftp://ftp.cac.washington.edu/pine/$SOURCE
+   SOURCE_URL[3]=http://mirrors.sunsite.dk/pine/$SOURCE
+   SOURCE_URL[4]=ftp://ftp.ut.ee/pub/unix/mail/pine/$SOURCE
+   SOURCE_URL[5]=ftp://ftp.uni-magdeburg.de/pub/mirror/ftp.cac.washington.edu/pine/$SOURCE
+   SOURCE_URL[6]=ftp://cis.uniroma2.it/unix/packages/PINE/$SOURCE
+   SOURCE_URL[6]=ftp://mirrors.unam.mx/pub/pine/$SOURCE
+   SOURCE_URL[8]=ftp://sunsite.icm.edu.pl/pub/unix/mail/pine/$SOURCE
+   SOURCE_URL[9]=ftp://giswitch.sggw.waw.pl/pub/unix/pine/$SOURCE
+   SOURCE_URL[10]=ftp://ftp.ucr.ac.cr/pub/Unix/mail/pine/$SOURCE
+   SOURCE_URL[11]=ftp://ftp.eunet.cz/pub/comm/mail/pine/$SOURCE
+   SOURCE_URL[12]=ftp://ftp.gin.cz/pub/MIRRORS/ftp.cac.washington.edu/pine/$SOURCE
+   SOURCE_URL[13]=ftp://ftp.fu-berlin.de/unix/mail/pine/$SOURCE
+   SOURCE_URL[14]=http://ftp.cs.tu-berlin.de/pub/net/mail/pine/$SOURCE
+   SOURCE_URL[15]=http://sonja.fon.bg.ac.yu/mirror/pine/$SOURCE
+     SOURCE_HASH=sha512:a5d62ad26fcd6d832441416dd3f781637dde61899cac5018e07232a7f80461f78d2efb4538be06e03792c1950181242fe0b1a5dc89737e05ea525cc7d37614c6
+        WEB_SITE=http://www.washington.edu/pine
+         ENTERED=20010922
+         UPDATED=20030810
+      LICENSE[0]=UW-PINE
+        KEYWORDS="email mail"
+           SHORT="pine is a text-based MIME Email client."
+cat << EOF
+Pine is a tool for reading, sending, and managing electronic messages.
+Pine was designed by the Office of Computing & Communications at the
+University of Washington specifically with novice computer users in
+mind, but it can be tailored to accommodate the needs of "power users"
+as well.
+
+The source also installs:
+imapd	an Internet Mail Protocol Daemon,
+pico	a text edtior
+EOF

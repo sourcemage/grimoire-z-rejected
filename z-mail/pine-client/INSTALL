@@ -1,0 +1,18 @@
+cd  bin                &&
+cp  rpload  /usr/sbin  &&
+cp  rpdump  /usr/sbin  &&
+cp  mtest   /usr/bin   &&
+cp  pilot   /usr/bin   &&
+cp  pine    /usr/bin   &&
+
+cd  ../doc                         &&
+rm -f pico.1                       &&
+for  MANPAGE  in  `ls  *.1`;  do
+  gzip  -9  $MANPAGE
+  cp  $MANPAGE.gz  /usr/man/man1
+done                               &&
+
+if  spell_ok  stunnel;  then
+  ln  -sf  stunnel.pem  /etc/ssl/certs/imapd.pem
+  ln  -sf  stunnel.pem  /etc/ssl/certs/ipop3d.pem
+fi

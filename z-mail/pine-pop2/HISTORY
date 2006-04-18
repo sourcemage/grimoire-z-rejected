@@ -1,0 +1,102 @@
+2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
+	* DETAILS: (automated) Add KEYWORDS
+
+2006-02-16 Pieter Lenaerts <e-type@sourcemage.org>
+	* added DEPENDS, edited BUILD: optional_depends on linux-pam and openssl
+	* added build.patch, PRE_BUILD: no user input!
+
+2005-11-29 Seth Woolley <seth@tautology.org>
+	* DETAILS: MD5 -> SHA512
+
+2005-05-06 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 4.63
+	* services: removed
+
+2005-01-22 Rafael George <george.rafael@gmail.com>
+	* BUILD: linux-pam rename
+	* TRIGGERS: linux-pam rename
+	* DEPENDS: linux-pam rename
+
+2005-01-20 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 4.62, removed MENU_* items
+	  LICENSE -> LICENSE[0]
+
+2004-07-19 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 4.61
+
+2004-05-12 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 4.60
+
+2003-09-13 Ladislav Hagara <hgr@vabo.cz>
+	* updated to 4.58
+
+2003-08-10 hgg <hgreig@bigpond.net.au>
+	* Revert on_dispel Linux-PAM cast_self (doesn't work the way it is documented)
+
+2003-07-26 hgg <hgreig@bigpond.net.au>
+	* Update TRIGGERS for Linux-PAM
+
+2003-05-30 M.L. <mlubrano@sourcemage.org>
+	* Version++ (4.56).
+
+2003-04-17 M.L. <mlubrano@sourcemage.org>
+	* Version++ (4.55).
+
+2003-03-02 M.L. <mlubrano@sourcemage.org>
+	* Added TRIGGER file.
+
+2003-01-16 M.L. <mlubrano@sourcemage.org>
+	* Version++ (4.53).
+
+2003-01-10 M.L. <mlubrano@sourcemage.org>
+	* Version++ (4.52).
+
+2002-12-14 M.L. <mlubrano@sourcemage.org>
+	* Version++ (4.51).
+
+2002-12-04 M.L. <mlugrano@sourcemage.org>
+	* Added TRIGGERS file (on pam: recast).
+
+2002-12-11 M.L. <mlubrano@sourcemage.org>
+	* Version++ (4.50).
+	  Fixed BUILD file.
+	  Fixed pop2 file.
+
+2002-11-05 M.L. <mlubrano@sourcemage.org>
+	* Added MENU_* entries to DETAILS file.
+
+2002-10-13 M.L. <mlubrano@sourcemage.org>
+	* Fixed bug #1285 (MD5).
+
+2002-08-22 M.L. <m.l@compaqnet.fr>
+	* Added provides file (pop2d).
+
+2002-08-21 M.L. <m.l@compaqnet.fr>
+	* MD5[0] field updated, built from the ".tar" archive.
+
+2002-08-15 M.L. <m.l@compaqnet.fr>
+	* MD5[x] field format conforming to grimoire-gurus handbook.
+	  Added source url of last ressort (sourcemage mirror).
+
+2002-06-11 M.L. <m.l@compaqnet.fr>
+	* Added MD5.
+
+2002-06-10 M.L. <m.l@compaqnet.fr>
+	* Added LICENSE.
+	  !!! TO BE TUNED !!!
+
+2002-06-04 M.L. <m.l@compaqnet.fr>
+	* Gcc3 compile and trial run ok.
+
+2002-05-10 M.L. <m.l@compaqnet.fr>
+	* Split pine into pine-client, pine-pop2, pine-pop3, pine-imap and pico.
+
+2002-04-27 M.L. <m.l@compaqnet.fr>
+	* Added mirrors.
+
+2002-04-15 M.L. <mlubrano@sourcemage.org>
+	* mv Changelog HISTORY
+
+2002-01-15 Kyle Sallee <anonymous@sourcemage.org>
+	* fixed pam authentication & imaps/pop3s
+

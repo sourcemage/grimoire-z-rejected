@@ -1,0 +1,7 @@
+cd  bin                 &&
+cp  imapd   /usr/sbin   &&
+cd  ../doc              &&
+
+if  spell_ok  stunnel;  then
+  ln  -sf  stunnel.pem  /etc/ssl/certs/imapd.pem
+fi
