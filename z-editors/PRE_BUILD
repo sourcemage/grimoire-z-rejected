@@ -1,0 +1,3 @@
+default_pre_build &&
+cd ${SOURCE_DIRECTORY} &&
+patch build < ${SCRIPT_DIRECTORY}/build.patch

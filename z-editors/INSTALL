@@ -1,0 +1,8 @@
+cd  bin &&
+cp  pico /usr/bin &&
+cd  ../doc &&
+
+for  MANPAGE  in  `ls  pico*.1`;  do
+    gzip  -9 ${MANPAGE} &&
+    cp  ${MANPAGE}.gz  /usr/man/man1
+done

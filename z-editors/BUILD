@@ -1,0 +1,1 @@
+./build  DEBUG="${CFLAGS}"  slx
