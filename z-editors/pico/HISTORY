@@ -1,6 +1,6 @@
 2006-04-18 Pieter Lenaerts <e-type@sourcemage.org>
-	* moved to z-rejected/z-editors
 	* DETAILS: added REJECTED
+	* moved from editors/ to z-rejected/z-editors
 
 2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
 	* DETAILS: (automated) Add KEYWORDS
