@@ -1,10 +1,17 @@
            SPELL=winetools-bin
-         VERSION=1.22
-          SOURCE=${SPELL/-bin/}-${VERSION}.tgz
+ if [[ "${WINETOOLS_VERSION}" == "0.9" ]] ; then
+         VERSION=0.9jo-III
+     SOURCE_HASH=sha512:3f5cbe31293f2d08849c5249be08866fdfa745469b17b527f46ae417ce9e80f1aab5f4da500cab33909cb9c955b14b208f5d72ff7d79409c5978a1ab4568cdac
+
+elif [[ "${WINETOOLS_VERSION}" == "2.12" ]] ; then
+         VERSION=212jo
+     SOURCE_HASH=sha512:46438855e53368a96328cdac264a94dc947350f87427ef2b2c97e2addab098f312a94e73ef04aec809ba86cc0f83829a7a128c73768538c5aba02ee5bce9bed4
+fi
+
+          SOURCE=${SPELL/-bin/}-${VERSION}.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL/-bin/}-${VERSION}
-   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL/-bin/}/${SOURCE}
-     SOURCE_HASH=sha512:b89f49c051943837578706d4d93ef08b4cd45dfc438135fe88ffcb8c824c300ef70cad8770e2b79e2175cf771c3cc77e4ea50a985c86d2307b3b7a193080081f
-        WEB_SITE=http://www.franksworld.net/winetools/
+   SOURCE_URL[0]=http://ds80-237-203-29.dedicated.hosteurope.de/wt/${SOURCE}
+        WEB_SITE=http://www.von-thadden.de/Joachim/WineTools/index.html
          ENTERED=20030217
          UPDATED=20030217
           REJECT="binary only"

@@ -1,3 +1,9 @@
+2006-04-13 Pieter Lenaerts <e-type@sourcemage.org>
+	* DETAILS: updated, updated WEB_SITE, SOURCE_URL
+	* DEPENDS: depends wine
+	* added PREPARE: asks for versions
+	* added INSTALL
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
