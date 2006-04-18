@@ -17,6 +17,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/pine${VERSION}
      SOURCE_HASH=sha512:a5d62ad26fcd6d832441416dd3f781637dde61899cac5018e07232a7f80461f78d2efb4538be06e03792c1950181242fe0b1a5dc89737e05ea525cc7d37614c6
         WEB_SITE=http://www.washington.edu/pine
       LICENSE[0]=UW-PINE
+          REJECT="has licensing issues"
          ENTERED=20010922
          UPDATED=20030810
         KEYWORDS="editors"
