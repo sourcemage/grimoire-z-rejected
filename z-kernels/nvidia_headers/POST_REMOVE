@@ -1,8 +1,10 @@
-  XFREE_DIR=${INSTALL_ROOT}/usr/include/GL/xfree &&
-  GL_DIR=${INSTALL_ROOT}/usr/include/GL/ &&	 
-message "${MESSAGE_COLOR}REINSTALLING XFREE86 HEADERS ${SPELL_COLOR}" 
-for i in gl.h  glext.h glx.h glxext.h 
-do  mv -v ${XFREE_DIR}/$i ${GL_DIR} 
-done
-rm  -rf ${XFREE_DIR} 
+local  X_DIR  GL_DIR  i                                      &&
+X_DIR=$INSTALL_ROOT/usr/include/GL/x                         &&
+GL_DIR=$INSTALL_ROOT/usr/include/GL/                         &&
+message "${MESSAGE_COLOR}Restoring X headers${SPELL_COLOR}"  &&
 
+for i in gl.h glext.h glx.h glxext.h; do
+  mv  -v  $X_DIR/$i  $GL_DIR
+done  &&
+
+rm  -rf  $X_DIR

@@ -1,13 +1,13 @@
            SPELL=nvidia_headers
-         VERSION=1.0-7664-pkg1
+         VERSION=1.0-8756
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-        WEB_SITE=http://www.nvidia.com
+        WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030528
          UPDATED=20040226
          ARCHIVE=off
-      LICENSE[0]=http://www.nvidia.com/view.asp?IO=nv_swlicense
+      LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
            SHORT="Header files provided by NVIDIA"
 cat << EOF
 NVIDIA
-These are the header files provided by NVIDIA to compile GL applications for NVIDIA GPUs 
+These are the header files provided by NVIDIA to compile GL applications for NVIDIA GPUs.
 EOF

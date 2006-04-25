@@ -1,3 +1,10 @@
+2006-04-25 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: Updated to 1.0-8756, updated WEB_SITE and LICENSE.
+	* INSTALL: Made all variables local, sanitized code
+	* POST_REMOVE: Made vars local, sanitized
+	* PRE_BUILD: Same here...
+	* PREPARE: ...and here
+
 2006-04-23 David Brown <dmlb2000@gmail.com>
 	* PRE_BUILD: added mk_source_dir so delve will work
 
