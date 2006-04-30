@@ -1,12 +1,19 @@
-local e X                                                             &&
-if [[ $EXPERT == y ]]; then e='-e'; fi                                &&
-if [[ $XCONF == y ]]; then X='-X'; fi                                 &&
+local e X X_PRE X_MOD                                                     &&
+if [[ $EXPERT == y ]]; then e='-e'; fi                                    &&
+if [[ $XCONF == y ]]; then X='-X'; fi                                     &&
 
-./nvidia-installer  $e $X -a -q --ui=none --no-runlevel-check         \
---no-rpms --no-network --x-prefix=$INSTALL_ROOT/usr/X11R6             \
---x-module-path=$INSTALL_ROOT/usr/X11R6/lib/modules                   \
---opengl-prefix=$INSTALL_ROOT/usr --utility-prefix=$INSTALL_ROOT/usr  \
---kernel-name=$(get_kernel_version)                                   &&
+if test "$(get_spell_provider $SPELL X11-SERVER)" = xorg-server; then
+   X_PRE="${INSTALL_ROOT}$(pkg-config --variable=prefix xorg-server)"     &&
+   X_MOD="${INSTALL_ROOT}$(pkg-config --variable=moduledir xorg-server)"  &&
+else
+   X_PRE="${INSTALL_ROOT}/usr/X11R6"                                      &&
+   X_MOD="${INSTALL_ROOT}/usr/X11R6/lib/modules"                          &&
+fi                                                                        &&
+
+./nvidia-installer  $e $X -a -q --ui=none --no-runlevel-check             \
+--no-rpms --no-network --x-prefix=$X_PRE --x-module-path=$X_MOD           \
+--opengl-prefix=$INSTALL_ROOT/usr --utility-prefix=$INSTALL_ROOT/usr      \
+--kernel-name=$(get_kernel_version)                                       &&
 
 # To make sure spell doesn't default to editing xorg.conf after it's 
 # already done once.

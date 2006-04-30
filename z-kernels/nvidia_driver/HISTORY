@@ -1,3 +1,9 @@
+2006-04-30 Robin Cook <rcook@wyrms.net>
+	* DEPENDS: uncommented the X11-SERVER depends
+	* INSTALL: added X_PRE and X_MOD to local variables
+	  added if to test for xorg-modular and set X_PRE and X_MOD
+	  changed nvidia_install command to use X_PRE and X_MOD
+
 2006-04-18 Juuso Alasuutari <iuso@sourcemage.org>
 	* INSTALL: Made sure that if the xorg.conf auto-edit option has 
 	  been selected once, it doesn't default to y on next cast.
