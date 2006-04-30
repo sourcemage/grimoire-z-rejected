@@ -4,10 +4,10 @@ if [[ $XCONF == y ]]; then X='-X'; fi                                     &&
 
 if test "$(get_spell_provider $SPELL X11-SERVER)" = xorg-server; then
    X_PRE="${INSTALL_ROOT}$(pkg-config --variable=prefix xorg-server)"     &&
-   X_MOD="${INSTALL_ROOT}$(pkg-config --variable=moduledir xorg-server)"  &&
+   X_MOD="${INSTALL_ROOT}$(pkg-config --variable=moduledir xorg-server)"  
 else
    X_PRE="${INSTALL_ROOT}/usr/X11R6"                                      &&
-   X_MOD="${INSTALL_ROOT}/usr/X11R6/lib/modules"                          &&
+   X_MOD="${INSTALL_ROOT}/usr/X11R6/lib/modules"                          
 fi                                                                        &&
 
 ./nvidia-installer  $e $X -a -q --ui=none --no-runlevel-check             \

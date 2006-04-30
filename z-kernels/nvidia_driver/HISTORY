@@ -3,6 +3,8 @@
 	* INSTALL: added X_PRE and X_MOD to local variables
 	  added if to test for xorg-modular and set X_PRE and X_MOD
 	  changed nvidia_install command to use X_PRE and X_MOD
+	* PRE_BUILD: added moving of the x/mesalib headers and libs
+	* POST_REMOVE: added to restore the x/mesalib headers and libs
 
 2006-04-18 Juuso Alasuutari <iuso@sourcemage.org>
 	* INSTALL: Made sure that if the xorg.conf auto-edit option has 

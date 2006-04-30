@@ -1,3 +1,24 @@
+message "${MESSAGE_COLOR}Backing up existing X/mesalib headers and libs${DEFAULT_COLOR}"  &&
+
+local  i  X_DIR  GL_DIR  GL_LIB       &&
+X_DIR=$INSTALL_ROOT/usr/include/GL/x  &&
+GL_DIR=$INSTALL_ROOT/usr/include/GL   &&
+GL_LIB=$INSTALL_ROOT/usr/lib          &&
+mkdir  -p  $X_DIR                     &&
+
+if ! [[ -f $X_DIR/done ]]; then
+  for i in gl.h glext.h glx.h glxext.h; do
+    mv -v $GL_DIR/$i $X_DIR  
+    touch $X_DIR/done
+  done
+  for i in libGL.so libGL.so.1 libGL.so.1.2; do
+    mv -v $GL_LIB/$i $X_DIR  &&
+    touch $X_DIR/done
+  done
+else
+  message "${SPELL_COLOR}X headers already backed up${DEFAULT_COLOR}"
+fi  &&
+
 sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
                --target $SOURCE_DIRECTORY                     &&
 cd $SOURCE_DIRECTORY                                          &&
@@ -18,3 +39,4 @@ if [[ $AGPFW == "y" ]]; then
   sedit "s/NVreg_EnableAGPFW = 0;/NVreg_EnableAGPFW = 1;/"    \
                                   usr/src/nv/os-registry.c
 fi
+
