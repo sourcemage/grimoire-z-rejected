@@ -1,3 +1,6 @@
+2006-05-01 Eric Sandall <eric@sandall.us>
+	* CONFLICTS: Conflicts with qemu, not kqemu (itself)
+
 2006-01-26 David Kowis <dkowis@sourcemage.org>
 	* ALL: stole the qemu spell from test
 	* DETAILS: added source2 for kqemu module
@@ -5,7 +8,7 @@
 	* CONFLICTS: made it conflict with qemu
 
 2006-01-10 anoxia <anoxia@sourcemage.org>
-        * DETAILS: updated spell to 0.8.0
+	* DETAILS: updated spell to 0.8.0
 
 2005-11-19 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: fixed wrong quoting in SHORT
@@ -17,3 +20,4 @@
 
 2005-11-02 Andreas van Ruth <avr@gnulinux.nl>
 	* BUILD, DEPENDS, DETAILS, HISTORY: created
+
