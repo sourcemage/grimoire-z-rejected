@@ -2,6 +2,7 @@
 	* DETAILS: Specify GCC_VERSION=3.4
 	* CONFLICTS: Conflicts with qemu, not kqemu (itself)
 	* PRE_BUILD: Run `invoke_gcc` to force using gcc 3.4
+	* TRIGGERS: Added to trigger on cast of linux
 
 2006-01-26 David Kowis <dkowis@sourcemage.org>
 	* ALL: stole the qemu spell from test
