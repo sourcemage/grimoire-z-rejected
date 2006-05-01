@@ -1,1 +1,6 @@
-depends qt-x11
+if [ "${OPERA_RELEASE}" = "8, shared" ]; then
+  depends qt-x11
+fi &&
+if [ "${OPERA_RELEASE}" = "9, shared" ]; then
+  depends qt-x11
+fi

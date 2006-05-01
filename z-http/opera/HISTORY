@@ -1,3 +1,8 @@
+2006-05-01 Vladimir Navrat <vn158@seznam.cz>
+	* DETAILS: Added static and 9.0, no more adware
+	* DEPENDS: For static no qt is needed
+	* PREPARE: Version choose
+
 2006-04-08 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 8.5.4
 

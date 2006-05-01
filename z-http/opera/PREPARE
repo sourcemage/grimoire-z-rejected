@@ -1,0 +1,1 @@
+config_query_list OPERA_RELEASE "Which release would you like to cast?" "8, shared" "8, static" "9, shared" "9, static"

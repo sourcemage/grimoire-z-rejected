@@ -1,18 +1,46 @@
            SPELL=opera
-         VERSION=8.54
+        VERSION4=qt.i386-en
+if [ "${OPERA_RELEASE}" = "9, static" ]; then
+         VERSION=9.0
+	 VERPATH=900
+        VERSION2=20060411.1
+        VERSION3=static
+        VERSION5=beta1
+     SOURCE_HASH=sha512:1bb99cffcac814d322d0b3135290842aa673f00915bf0dcd5d80d9d63e18ac7bb139674cc5c7fc113abda8f9105781879d10e1469e3269e27396e104aa6c6aad
+     SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}-236
+elif [ "${OPERA_RELEASE}" = "9, shared" ]; then
+         VERSION=9.0
+	 VERPATH=900
+        VERSION2=20060411.6
+        VERSION3=shared
+        VERSION5=beta1
+     SOURCE_HASH=sha512:857a8295d8b9223ec8247576424c3aa7308fd593fb6ffbe25ad2ab8ac28155dd8ee659ea4aa387e4596b355ec7c733cfdf85afc8f05bbf3e8d1a246eb0b2d1a7
+     SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}-236
+elif [ "${OPERA_RELEASE}" = "8, static" ]; then
+	VERSION=8.54
+	VERPATH=854
+        VERSION2=20060330.1
+        VERSION3=static
+        VERSION5=final
+     SOURCE_HASH=sha512:972d9a6fb811a0932a2dce3e749a7889ee829875f9579bd30b051c3f5c5fb571e0cfad18cc3b7cd33db523d3d630b2ee51610c6c37cf3ad6864c40bfd6d1f084
+     SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}
+else
+	VERSION=8.54
+	VERPATH=854
         VERSION2=20060330.6
         VERSION3=shared
-        VERSION4=qt.i386-en
-          SOURCE=${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}.tar.bz2
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}
-   SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/854/final/en/i386/shared/${SOURCE}
-   SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/854/final/en/i386/shared/${SOURCE}  
-        WEB_SITE=http://www.opera.com
+        VERSION5=final
      SOURCE_HASH=sha512:ba18749f40832fb86b907c524bec6df0cea352a2f389827975808538863c87647227292660bfd2709634ab0badface7853c80c4847ec2b329d738a16e468b29e
+     SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}
+fi
+          SOURCE=${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}.tar.bz2
+   SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/${VERPATH}/${VERSION5}/en/i386/${VERSION3}/${SOURCE}
+   SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/${VERPATH}/${VERSION5}/en/i386/${VERSION3}/${SOURCE}  
+        WEB_SITE=http://www.opera.com
       LICENCE[0]=UNKNOWN
          ENTERED=20020530
          UPDATED=20040513
-          REJECT="is non-source and has licensing issues (adware) "
+          REJECT="is non-source"
            SHORT="Opera is a small quick qt based browser"
 cat << EOF
 Opera is a fast full featured web browser. It supports plugins and is 
