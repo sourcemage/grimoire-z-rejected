@@ -15,12 +15,12 @@ mkdir  -p  $X_DIR                           &&
 if ! [[ -f $X_DIR/done ]]; then
   for i in gl.h glext.h glx.h glxext.h; do 
      if [ -e $GL_DIR/$i ]; then
-        mv -v $GL_DIR/$i $X_DIR             &&
+        mv -v $GL_DIR/$i $X_DIR             
      fi
   done
   for i in $GL_LIB/libGL.so.*; do
      if [ -e $i ]; then
-        mv -v $i $X_DIR                     &&
+        mv -v $i $X_DIR                     
      fi
   done
   touch $X_DIR/done

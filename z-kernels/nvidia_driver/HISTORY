@@ -1,3 +1,6 @@
+2006-05-02 David Brown <dmlb2000@gmail.com>
+	* PRE_BUILD: fixed syntax errors
+
 2006-05-01 Robin Cook <rcook@wyrms.net>
 	* PRE_BUILD: set GL_LIB depending on mesalib installed
 	  check for file existence before moving
