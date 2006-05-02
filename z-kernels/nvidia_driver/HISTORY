@@ -1,3 +1,10 @@
+2006-05-01 Robin Cook <rcook@wyrms.net>
+	* PRE_BUILD: set GL_LIB depending on mesalib installed
+	  check for file existence before moving
+	* POST_REMOVE: set GL_LIB depending on mesalib installed
+	  check for file existence before moving
+	* volatiles: added for xorg-modular location
+
 2006-04-30 Robin Cook <rcook@wyrms.net>
 	* DEPENDS: uncommented the X11-SERVER depends
 	* INSTALL: added X_PRE and X_MOD to local variables

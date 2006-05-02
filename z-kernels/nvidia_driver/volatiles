@@ -1,1 +1,6 @@
 ^/lib/modules/*/modules.*
+^/usr/lib/libGL.so.*
+^/usr/include/GL/gl.h 
+^/usr/include/GL/glext.h 
+^/usr/include/GL/glx.h 
+^/usr/include/GL/glxext.h
