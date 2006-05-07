@@ -1,3 +1,7 @@
+2006-05-07 George Sherwood <george@beernabeer.com>
+	* INSTALL: Added code to creates links.
+	* POST_INSTALL: Removed.  Bug #10589.
+
 2005-09-14 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 1.1.5.  Removed SOURCE2.
 	* PRE_BUILD: removed.  Security patch not needed
