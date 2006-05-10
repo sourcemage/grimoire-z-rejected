@@ -47,5 +47,10 @@ fi  &&
 if [[ $AGPFW == "y" ]]; then
   sedit "s/NVreg_EnableAGPFW = 0;/NVreg_EnableAGPFW = 1;/"    \
                                   usr/src/nv/os-registry.c
-fi
+fi  &&
 
+#
+# Setup Makefile symlink
+#
+cd  $SOURCE_DIRECTORY/usr/src/nv     &&
+ln  -sfn  Makefile.kbuild  Makefile

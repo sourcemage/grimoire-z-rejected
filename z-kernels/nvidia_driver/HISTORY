@@ -1,3 +1,14 @@
+2006-05-10 Eric Sandall <eric@sandall.us>
+	* PREPARE: Remove check for running X, no longer needed
+	* PRE_BUILD: Setup Makefile -> Makefile.kbuild symlink in usr/src/nv
+	* BUILD: Build the module in BUILD, not INSTALL
+	  Override KERNEL_MODLIB, KERNEL_UNAME, and SYSSRC
+	* INSTALL: No longer use broken nvidia-installer binary.
+	  Manually install binaries, scripts, modules, headers, and libraries
+	  Checked against an installation done by nvidia-installer, only differences
+	  are that we install the html documentation as well and we do not create
+	  /var/lib/nvidia/*.
+
 2006-05-02 David Brown <dmlb2000@gmail.com>
 	* PRE_BUILD: fixed syntax errors
 
