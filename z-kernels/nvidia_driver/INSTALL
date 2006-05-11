@@ -1,4 +1,6 @@
-local e X X_PRE X_MOD                                                     &&
+local e X X_PRE X_MOD KVER                                                &&
+KVER=$(get_kernel_version)                                                &&
+
 if [[ $EXPERT == y ]]; then e='-e'; fi                                    &&
 if [[ $XCONF == y ]]; then X='-X'; fi                                     &&
 

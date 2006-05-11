@@ -3,6 +3,7 @@
 	  instead of $INSTALL_ROOT/usr/X11R6/lib/modules to not break
 	  xorg-modular (Thanks to Robin Cook for pointing out that I broke
 	  xorg-modular ;))
+	  Forgot to set KVER (doesn't transfer from BUILD, stupid me)
 
 2006-05-10 Eric Sandall <eric@sandall.us>
 	* PREPARE: Remove check for running X, no longer needed
