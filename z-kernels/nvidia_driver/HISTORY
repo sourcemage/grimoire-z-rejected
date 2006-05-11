@@ -1,3 +1,9 @@
+2006-05-11 Eric Sandall <eric@sandall.us>
+	* INSTALL: Use $X_PRE instead of $INSTALL_ROOT/usr/X11R6 and $X_MOD
+	  instead of $INSTALL_ROOT/usr/X11R6/lib/modules to not break
+	  xorg-modular (Thanks to Robin Cook for pointing out that I broke
+	  xorg-modular ;))
+
 2006-05-10 Eric Sandall <eric@sandall.us>
 	* PREPARE: Remove check for running X, no longer needed
 	* PRE_BUILD: Setup Makefile -> Makefile.kbuild symlink in usr/src/nv
