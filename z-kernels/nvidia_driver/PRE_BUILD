@@ -53,4 +53,11 @@ fi  &&
 # Setup Makefile symlink
 #
 cd  $SOURCE_DIRECTORY/usr/src/nv     &&
-ln  -sfn  Makefile.kbuild  Makefile
+ln  -sfn  Makefile.kbuild  Makefile  &&
+
+#
+# Modify module-install target to use `depmod -ae` on $KVER rather
+# than the running kernel
+#
+sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  \
+       $SOURCE_DIRECTORY/usr/src/nv/Makefile.kbuild

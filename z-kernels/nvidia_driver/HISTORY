@@ -1,4 +1,6 @@
 2006-05-11 Eric Sandall <eric@sandall.us>
+	* PRE_BUILD: Modify module-install target to use `depmod -ae` on $KVER
+	  rather than the running kernel
 	* INSTALL: Use $X_PRE instead of $INSTALL_ROOT/usr/X11R6 and $X_MOD
 	  instead of $INSTALL_ROOT/usr/X11R6/lib/modules to not break
 	  xorg-modular (Thanks to Robin Cook for pointing out that I broke
