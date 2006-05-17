@@ -1,4 +1,7 @@
 2006-05-17 Juuso Alasuutari <iuso@sourcemage.org>
+	* FINAL: Added, display info message about nvidia-xconfig
+
+2006-05-17 Juuso Alasuutari <iuso@sourcemage.org>
 	* CONFIGURE: Removed nvidia-installer related queries (expert 
 	  install & xorg.conf auto-config)
 	* INSTALL: Removed nvidia-installer related stuff
