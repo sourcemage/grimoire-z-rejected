@@ -1,8 +1,5 @@
-local e X X_PRE X_MOD KVER                                                &&
+local X_PRE X_MOD KVER                                                    &&
 KVER=$(get_kernel_version)                                                &&
-
-if [[ $EXPERT == y ]]; then e='-e'; fi                                    &&
-if [[ $XCONF == y ]]; then X='-X'; fi                                     &&
 
 if test "$(get_spell_provider $SPELL X11-SERVER)" = xorg-server; then
    X_PRE="${INSTALL_ROOT}$(pkg-config --variable=prefix xorg-server)"     &&
@@ -11,14 +8,6 @@ else
    X_PRE="${INSTALL_ROOT}/usr/X11R6"                                      &&
    X_MOD="${INSTALL_ROOT}/usr/X11R6/lib/modules"                          
 fi                                                                        &&
-
-#
-# Do not use NVIDIA's installer anymore
-#
-#./nvidia-installer  $e $X -a -q --ui=none --no-runlevel-check             \
-#--no-rpms --no-network --x-prefix=$X_PRE --x-module-path=$X_MOD           \
-#--opengl-prefix=$INSTALL_ROOT/usr --utility-prefix=$INSTALL_ROOT/usr      \
-#--kernel-name=$(get_kernel_version)                                       &&
 
 #
 # Install kernel module 'nvidia.ko'
@@ -148,9 +137,4 @@ for manual in nvidia-installer.1.gz  nvidia-settings.1.gz  nvidia-xconfig.1.gz
 do
   install  -m 0644  -o root  -g root  $manual  $INSTALL_ROOT/usr/share/man/man1
 done                                         &&
-popd                                         &&
-
-# To make sure spell doesn't default to editing xorg.conf after it's 
-# already done once.
-persistent_add  XCONF  &&
-XCONF=n
+popd
