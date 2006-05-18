@@ -1,14 +1,1 @@
-message "${MESSAGE_COLOR}Backing up existing X headers${DEFAULT_COLOR}"  &&
-local  X_DIR  GL_DIR                  &&
-X_DIR=$INSTALL_ROOT/usr/include/GL/x  &&
-GL_DIR=$INSTALL_ROOT/usr/include/GL   &&
-mkdir  -p  $X_DIR                     &&
-
-if ! [[ -f $X_DIR/done ]]; then
-  for i in gl.h glext.h glx.h glxext.h; do
-    mv -v $GL_DIR/$i $X_DIR  &&
-    touch $X_DIR/done
-  done
-else
-  message "${SPELL_COLOR}X headers already backed up${DEFAULT_COLOR}"
-fi
+true

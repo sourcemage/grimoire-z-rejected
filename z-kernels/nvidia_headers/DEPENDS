@@ -1,2 +1,1 @@
-depends  nvidia_driver  &&
-depends  mktemp
+depends nvidia_driver

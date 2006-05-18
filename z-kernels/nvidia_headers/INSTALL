@@ -1,8 +1,1 @@
-local  GL_DIR  NV_HEAD_DIR  i                                      &&
-GL_DIR=$INSTALL_ROOT/usr/include/GL/                               &&
-NV_HEAD_DIR=$INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0/include/GL  &&
-mkdir  -p  $GL_DIR                                                 &&
-
-for i in gl.h glext.h glx.h glxext.h; do
-  cp  -v  $NV_HEAD_DIR/$i  $GL_DIR
-done
+true
