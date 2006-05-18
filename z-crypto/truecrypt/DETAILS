@@ -1,18 +1,14 @@
            SPELL=truecrypt
-         VERSION=4.1
-
+         VERSION=4.2
           SOURCE=$SPELL-$VERSION-source-code.tar.gz
-   SOURCE_URL[0]=http://dcs.unob.cz/~Ladislav.Hagara/source-mage-files/$SOURCE
       SOURCE_GPG="TrueCrypt_Foundation.gpg:$SOURCE.sig"
-
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=http://www.truecrypt.org/downloads
+   SOURCE_URL[0]=$WEB_SITE/$SOURCE
          SOURCE2=$SOURCE.sig
   SOURCE2_URL[0]=$SOURCE_URL.sig
   SOURCE2_IGNORE=signature
-
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-source-code
-        WEB_SITE=http://www.truecrypt.org/
          ENTERED=20051104
-         UPDATED=20051104
       LICENSE[0]=http://www.truecrypt.org/license.php
        BUILD_API=2
            SHORT="Free open-source disk encryption software for Windows XP/2000/2003 and Linux"
