@@ -3,8 +3,8 @@
           SOURCE=$SPELL-$VERSION-source-code.tar.gz
       SOURCE_GPG="TrueCrypt_Foundation.gpg:$SOURCE.sig"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-        WEB_SITE=http://www.truecrypt.org/downloads
-   SOURCE_URL[0]=$WEB_SITE/$SOURCE
+        WEB_SITE=http://www.truecrypt.org
+   SOURCE_URL[0]=$WEB_SITE/downloads/$SOURCE
          SOURCE2=$SOURCE.sig
   SOURCE2_URL[0]=$SOURCE_URL.sig
   SOURCE2_IGNORE=signature
