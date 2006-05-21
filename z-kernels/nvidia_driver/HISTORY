@@ -1,3 +1,7 @@
+2006-05-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* INSTALL: Create target dir for X drivers if none exists, fixes 
+	  bug #11852
+
 2006-05-17 Juuso Alasuutari <iuso@sourcemage.org>
 	* FINAL: Added, display info message about nvidia-xconfig
 

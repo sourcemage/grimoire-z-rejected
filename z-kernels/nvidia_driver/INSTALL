@@ -91,12 +91,14 @@ popd                                    &&
 # Install X11 modules
 #
 pushd  $SOURCE_DIRECTORY/usr/X11R6/lib/modules  &&
+mkdir -p $X_MOD/drivers                         &&
 for driver in nvidia_drv.o nvidia_drv.so; do
-  install  -m 0644  -o root  -g root  drivers/$driver   \
-           $X_MOD/drivers
+  install  -m 0644  -o root  -g root            \
+     drivers/$driver  $X_MOD/drivers
 done                                            &&
-install  -m 0644  -o root  -g root  extensions/libglx.so.${VERSION/-/.}  \
-         $X_MOD/extensions                  &&
+install  -m 0644  -o root  -g root              \
+extensions/libglx.so.${VERSION/-/.}             \
+                  $X_MOD/extensions             &&
   #
   # Setup extension symlink
   #
