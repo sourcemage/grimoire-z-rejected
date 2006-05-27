@@ -1,3 +1,8 @@
+2006-05-27 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: Fixed arch selection: changed SMGL_COMPAT_ARCHS[0] to 
+	  SMGL_COMPAT_ARCHS[1], x86-64|64 to x86_64, and ia32|32 to 
+	  ia32.
+
 2006-05-21 Juuso Alasuutari <iuso@sourcemage.org>
 	* INSTALL: Create target dir for X drivers if none exists, fixes 
 	  bug #11852
