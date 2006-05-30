@@ -1,3 +1,8 @@
+2006-05-30 Juuso Alasuutari <iuso@sourcemage.org>
+	* TRIGGERS: Added 'on_cast mesalib cast_self' to reinstall 
+	  nvidia_driver's libGL.so.
+	* DETAILS: Added PATCHLEVEL=1.
+
 2006-05-27 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Fixed arch selection: changed SMGL_COMPAT_ARCHS[0] to 
 	  SMGL_COMPAT_ARCHS[1], x86-64|64 to x86_64, and ia32|32 to 
