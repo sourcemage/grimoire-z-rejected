@@ -1,11 +1,11 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jdk1.5-bin
-         VERSION=1_5_0_06
-             VER=1.5.0_06
+         VERSION=1_5_0_07
+             VER=1.5.0_07
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	ia32|32)
           SOURCE=jdk-$VERSION-linux-i586.bin
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      SOURCE_HASH=sha512:fce1c0002c4929d967a4adde1c94b2fbaa587ebbaad76c50ba93ec09b4047f42d9c2d95e9bc84c0adfa638653d272a2414ac8a7963a1c122dccfaad533ccf02e
         ;;
 	x86-64|64)
 	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
