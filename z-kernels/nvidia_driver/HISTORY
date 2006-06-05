@@ -1,6 +1,6 @@
 2006-06-05 Flavien Bridault <vlaaad@sourcemage.org>
 	* DETAILS: Updated to 8762
-	* INSTALL: Fill in the path to libGL.so will be installed
+	* INSTALL: Fill in the path to libGL.so will be installed (bug #12295)
 
 2006-05-30 Juuso Alasuutari <iuso@sourcemage.org>
 	* TRIGGERS: Added 'on_cast mesalib cast_self' to reinstall 
