@@ -45,6 +45,9 @@ popd                                     &&
 # Install OpenGL libraries
 #
 pushd  $SOURCE_DIRECTORY/usr/lib  &&
+
+# Fill in the path to libGL.so
+sed -i 's|__LIBGL_PATH__|/usr/lib|' libGL.la 
 for lib in libGLcore.so.${VERSION/-/.} libGL.la libGL.so.${VERSION/-/.}  \
            libnvidia-tls.so.${VERSION/-/.} libnvidia-cfg.so.${VERSION/-/.}; do
   install  -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
@@ -54,7 +57,7 @@ if  [  !  -d  $INSTALL_ROOT/usr/lib/tls  ];  then
   mkdir  -p  $INSTALL_ROOT/usr/lib/tls
 fi  &&
 
-install  -m 0644  -o root  -g root  tls/libnvidia-tls.so.1.0.8756  \
+install  -m 0644  -o root  -g root  tls/libnvidia-tls.so.1.0.8762  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
   #
   # Create library symlinks
