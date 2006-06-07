@@ -1,3 +1,6 @@
+2006-06-07 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* FUNCTIONS: added functions to check for xorg-modular stuff
+
 2006-04-18 Pieter Lenaerts <e-type@sourcemage.org>
 	* z-editors/pico moved in from devel/editors
 
