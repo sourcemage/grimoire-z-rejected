@@ -1,3 +1,7 @@
+2006-06-09 Arjan Bouter <abouter@sourcemage.org>
+	* FUNCTIONS: added default_games_build from games/FUNCTIONS
+	  to allow spells moved from games to build
+
 2006-06-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: use X11-SERVER nod X11-LIBS for the server check
 

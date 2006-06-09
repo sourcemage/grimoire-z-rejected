@@ -470,3 +470,15 @@ function check_if_xorg_modular_server()
   return 1
 }
 
+#---
+## @Synopsis default_games_build function to replace
+## @Synopsis all the duplication of the same stuff in games-grimoire
+#---
+
+function default_games_build() {
+  OPTS="$OPTS --bindir=${INSTALL_ROOT}/usr/games \
+  --datadir=${INSTALL_ROOT}/usr/share/games \
+  --localstatedir=${INSTALL_ROOT}/var/games"  &&
+  default_build
+}
+

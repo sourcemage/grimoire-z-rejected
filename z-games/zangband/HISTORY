@@ -1,3 +1,7 @@
+2006-06-09 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: fixed sha512sum
+	* BUILD: doesn't need to call bootstrap anymore
+
 2006-03-18 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: new version, added REJECTED reason
 	  fixed LICENSE field, one less source to worry about
