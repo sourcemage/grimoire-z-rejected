@@ -7,6 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.opengl.org
          ENTERED=20010922
          UPDATED=20040717
+      PATCHLEVEL=1
           REJECT="unfree license"
       LICENSE[0]="see NOTICE in the tarball or /usr/share/doc/glut"
             DOCS="$DOCS NOTICE"
