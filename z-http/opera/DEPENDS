@@ -1,6 +1,11 @@
 if [ "${OPERA_RELEASE}" = "8, shared" ]; then
-  depends qt-x11
+  depends  qt-x11  &&
+  depends  zlib
 fi &&
 if [ "${OPERA_RELEASE}" = "9, shared" ]; then
-  depends qt-x11
-fi
+  depends  gcc33   &&
+  depends  qt-x11  &&
+  depends  zlib
+fi  &&
+
+optional_depends  JAVA  ""  ""  "for Java Runtime Environment"

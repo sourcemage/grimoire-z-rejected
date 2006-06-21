@@ -1,3 +1,13 @@
+2006-06-21 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 9.0 final (20060616.5 shared and 20060616.1 static)
+	  Removed UPDATED
+	  Added ftp.olnevhost.net as a US mirror (SOURCE_URL[0])
+	  Make "9, shared" default by moving to "else"
+	* CONFIGURE: Make "9, shared" default
+	* DEPENDS: v9 shared depends on gcc33 (libstdc++.so.5), v8 works fine...
+	  Added optional depends on JAVA for JRE
+	  Both v8 and v9 shared depend on zlib
+
 2006-05-01 Vladimir Navrat <vn158@seznam.cz>
 	* DETAILS: Added static and 9.0, no more adware
 	* DEPENDS: For static no qt is needed
