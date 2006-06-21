@@ -1,21 +1,19 @@
            SPELL=kqemu
-         VERSION=0.8.0
-        VERSION2=0.7.2
+         VERSION=0.8.1
+        VERSION2=1.3.0pre8
           SOURCE=qemu-$VERSION.tar.gz
          SOURCE2=$SPELL-$VERSION2.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/qemu-$VERSION
    SOURCE_URL[0]=http://fabrice.bellard.free.fr/qemu/$SOURCE
   SOURCE2_URL[0]=http://fabrice.bellard.free.fr/qemu/$SOURCE2
-     SOURCE_HASH=sha512:808cbc5c7e80acede06aab7dedc5acd0b13f05ca315e32a3075099cad84d0c34ee218c8e172462f6e612be038cf06cd54f3cdc50a72816a5cf6a8b0f6affc3a7
-    SOURCE2_HASH=sha512:5d6e4130a86a3e295c1d3483845727157ac2a1a411244ed651243227d8804cde82b166c77e5bed6f9ea285d2796a1a4f629b0745a9613d436604635d88197485
-   GCC_VERSION=3.4
+     SOURCE_HASH=sha512:e063a8bf42b767b054d81ea2494b5cf379a2e3b52918bcf2e525955dba6028655747ed229cd35435de15d771acdadd7a0d33ae19cd0ac1799c75a74484e62bfd
+    SOURCE2_HASH=sha512:5a53e161c9023c5c16d029fabb41e40cc7c2183b0cfbd2a405f31445813fe72b876b28c09525d085e45b026af66086e071ac7d2ba2be0ee6450b710bca0be661
+     GCC_VERSION=3.4
     DISTCC_HOSTS=
       LICENSE[0]=GPL/LGPL
       LICENSE[1]=proprietary
-       BUILD_API=2
         WEB_SITE=http://fabrice.bellard.free.fr/qemu
          ENTERED=20060126
-         UPDATED=20060126
            SHORT="QEMU is a generic and open source processor emulator"
 cat << EOF
 QEMU achieves a good emulation speed by using dynamic translation.
