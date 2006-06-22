@@ -1,3 +1,8 @@
+2006-06-14 Daniel Goller <morfic@sourcemage.org>
+	* DETAILS: Add logic for x86_64 source
+	* DEPENDS: Change from JAVA to a list of only 1.5 of jdk/jre, avoids issues with older java
+	* PREPARE: Remove since we did nothing with this
+
 2006-03-17 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to version 2.4.0.2
 

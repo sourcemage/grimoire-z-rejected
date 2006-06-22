@@ -1,9 +1,9 @@
            SPELL=azureus-bin
          PKGNAME=Azureus
          VERSION=2.4.0.2
-if  [  "$AZUREUS_BIN_GTK"  ==  "y"  ];  then
-          SOURCE=${PKGNAME}_${VERSION}_linux.tar.bz2
-     SOURCE_HASH=sha512:91f4e3848d9807d8dbc055b8c55b03ff64ff52451d5a10c9b70664126d77f01d035f864b71e49152b13cbeabe8ad75ff2aaa4a0011c7ff1b0a1e82ffe56cf569
+if  [[  "${HOST%%-*}"  ==  'x86_64'  ]];  then
+          SOURCE=${PKGNAME}_${VERSION}_linux-x86_64.tar.bz2
+     SOURCE_HASH=sha512:cdf00b1dcbb3c4377c5063e5829bc2cf0bcbd519c7278f2cd120dd909e06c74e08dd47496453f18d422b95c264fdeb66f552e401cb79d1389165f7fab3c84302
 else
           SOURCE=${PKGNAME}_${VERSION}_linux.tar.bz2
      SOURCE_HASH=sha512:91f4e3848d9807d8dbc055b8c55b03ff64ff52451d5a10c9b70664126d77f01d035f864b71e49152b13cbeabe8ad75ff2aaa4a0011c7ff1b0a1e82ffe56cf569
@@ -14,7 +14,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/azureus
       LICENCE[0]=GPL
         WEB_SITE=http://azureus.sourceforge.net
          ENTERED=20041128
-         UPDATED=20050212
+         UPDATED=20060612
            SHORT="Azureus is a java bittorrent client"
 cat << EOF
 It provides a bittorrent protocol implementation using java language.
