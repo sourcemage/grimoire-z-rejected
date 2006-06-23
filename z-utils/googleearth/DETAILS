@@ -1,0 +1,16 @@
+\           SPELL=googleearth
+         VERSION=4.0.1563
+          SOURCE=GoogleEarthLinux.bin
+   SOURCE_URL[0]=http://dl.google.com/earth/GE4/${SOURCE}
+     SOURCE_HASH=sha512:6df787a61c944959d4dd0f8d15ef0c89c3b5b920183b9453d19733b08f66a342fc511550b1ae9ba94954e99a3322c895a282d2e28fca3d7791e6dc8c643e8508
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
+        WEB_SITE=http://earth.google.com/index.html
+         ARCHIVE=off
+         ENTERED=20060624
+      LICENSE[0]=UNKNOWN
+          REJECT="is non-source"
+           SHORT="Google Earth provides a 3D interface to the planet"
+cat << EOF
+Google Earth combines satellite imagery, maps and the power of Google Search
+to put the world's geographic information at your fingertips.
+EOF

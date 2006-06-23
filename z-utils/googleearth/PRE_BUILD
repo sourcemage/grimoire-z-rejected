@@ -1,0 +1,5 @@
+mk_source_dir                                                              &&
+verify_file  ''                                                            &&
+cd  $SOURCE_DIRECTORY                                                      &&
+sh  $SOURCE_CACHE/$SOURCE  --noexec  --nox11  --target  .  --  -V
+

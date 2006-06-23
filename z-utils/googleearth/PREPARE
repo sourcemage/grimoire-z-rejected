@@ -1,0 +1,2 @@
+message "${SPELL_COLOR} ${SPELL} won't ARCHIVE installed files${DEFAULT_COLOR}"
+

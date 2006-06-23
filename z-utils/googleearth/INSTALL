@@ -1,0 +1,7 @@
+#${TRACK_ROOT}/bin/sh  setup.sh
+install -m 0755 bin/${SPELL} ${INSTALL_ROOT}/usr/bin                &&
+mkdir -p ${INSTALL_ROOT}/usr/share/${SPELL}                         &&
+tar -xf ${SPELL}-data.tar -C ${INSTALL_ROOT}/usr/share/${SPELL}     &&
+mkdir -p ${INSTALL_ROOT}/usr/lib/${SPELL}                           &&
+tar -xf ${SPELL}-linux-x86.tar -C ${INSTALL_ROOT}/usr/lib/${SPELL}  &&
+${TRACK_ROOT}/bin/sh  postinstall.sh

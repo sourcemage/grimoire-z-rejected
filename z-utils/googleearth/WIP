@@ -1,0 +1,133 @@
+This i get when trying to execute googleearth:
+Couldn't run Google Earth (googleearth-bin). Is GOOGLEEARTH_DATA_PATH set?
+
+running this GOOGLEEARTH_DATA_PATH=/usr/lib/googleearth googleearth i get:
+Google Earth has caught signal 11.
+
+Stacktrace from glibc:
+  ./googleearth-bin(__gxx_personality_v0+0x212) [0x804ab32]
+  ./googleearth-bin [0x804b133]
+  [0xffffe420]
+  /lib/libc.so.6(memcpy+0x15) [0xb62c1475]
+  ./libqt-mt.so.3(_ZN8QImageIO11imageFormatEP9QIODevice+0x47) [0xb6edfb17]
+  ./libqt-mt.so.3(_ZN8QImageIO4readEv+0xd5) [0xb6edfd85]
+  ./libqt-mt.so.3(_ZN7QPixmap12loadFromDataEPKhjPKci+0xb7) [0xb6f2a1e7]
+  ./libqt-mt.so.3(_ZN7QPixmap12loadFromDataEPKhjPKcNS_9ColorModeE+0x4d) [0xb6f2a4ad]
+  ./libbase.so(_ZN5earth6BinRes13ExtractPixmapERK7QStringS3_+0x66) [0xb7909cf6]
+  ./libgoogleearth.so(_ZN5earth6client11ApplicationC1EiPPcb+0x7ef) [0xb786718f]
+  ./googleearth-bin [0x804c73d]
+  /lib/libc.so.6(__libc_start_main+0xe4) [0xb627e024]
+  ./googleearth-bin(__gxx_personality_v0+0x41) [0x804a961]
+
+
+
+
+We apologize for the inconvenience, but Google Earth has crashed.
+ This is a bug in the program, and should never happen under normal
+ circumstances. A bug report and debugging data are now being written
+ to this text file:
+
+    /home/pol/.googleearth/crashlogs/crashlog-26D0989B.txt
+
+This bug report will be sent to Google automatically next time you run
+ Google Earth. Its data, which contains no personal information, will help
+ us correct problems without bothering you further. If you would rather
+ this info not be transmitted, please delete the above file before running
+ the program again. If you want bug reports to NEVER be sent, remove the
+ above 'crashlogs' directory's read/write permissions.
+
+/home/pol/.googleearth/crashlogs/crashlog-26D0989B.txt:
+CRASHLOGVER 1
+CRASHLOGID 0x26D0989B
+APPVERMAJOR 4
+APPVERMINOR 0
+APPVERBUILD 1563
+APPBUILDDATE Jun 11 2006
+APPBUILDTIME 09:26:33
+OSTYPE 10
+OSVERMAJOR 2
+OSVERMINOR 6
+OSVERBUILD 17
+OSVERPATCH 0
+PID 29990
+CRASHSIGNAL 11
+CRASHTIME 1151090007
+PROGRAMUPTIME 12
+
+STACK 0x804ab32
+STACK 0x804b133
+STACK 0xffffe420
+STACK 0xb62c1475
+STACK 0xb6edfb17
+STACK 0xb6edfd85
+STACK 0xb6f2a1e7
+STACK 0xb6f2a4ad
+STACK 0xb7909cf6
+STACK 0xb786718f
+STACK 0x804c73d
+STACK 0xb627e024
+STACK 0x804a961
+
+DSO googleearth-bin/0x8048000/22383
+DSO linux-gate.so.1/0xffffe000/1552
+DSO libcomponent.so/0xb7ee8000/37521
+DSO libfusion.so/0xb7ee3000/13982
+DSO libgeobase.so/0xb7c86000/2405747
+DSO libmath.so/0xb7c79000/47344
+DSO libwmsbase.so/0xb7c2b000/310906
+DSO libnet.so/0xb7bfb000/186225
+DSO libcollada.so/0xb794f000/2713914
+DSO libbase.so/0xb78d2000/492799
+DSO libgoogleearth.so/0xb77a7000/1190295
+DSO libcrypto.so.0.9.8/0xb7681000/1103112
+DSO libcurl.so.3/0xb7658000/159800
+DSO libfreeimage.so.3/0xb75ef000/408888
+DSO libgcc_s.so.1/0xb75e4000/39096
+DSO libGLU.so.1/0xb7566000/507779
+DSO libjpeg.so.62/0xb7546000/126696
+DSO libmng.so.1/0xb74ee000/342604
+DSO libpng12.so.0/0xb74c5000/158324
+DSO libqt-mt.so.3/0xb6c8a000/8349130
+DSO libqui.so.1/0xb6c49000/256348
+DSO libssl.so.0.9.8/0xb6c0e000/221464
+DSO libstdc++.so.6/0xb6b34000/849472
+DSO libtiff.so.3/0xb6ade000/339056
+DSO libz.so.1/0xb6aca000/77380
+DSO libIGCore.so/0xb69dd000/913540
+DSO libIGGfx.so/0xb6922000/717876
+DSO libIGAttrs.so/0xb68ca000/331484
+DSO libIGDisplay.so/0xb68b7000/64488
+DSO libIGGui.so/0xb687a000/227576
+DSO libIGSg.so/0xb6779000/986068
+DSO libIGCollision.so/0xb676b000/51964
+DSO libIGMath.so/0xb6727000/257852
+DSO libIGUtils.so/0xb6703000/130156
+DSO libIGOpt.so/0xb6636000/788040
+DSO libIGExportCommon.so/0xb65b5000/489656
+DSO libcommon.so/0xb6511000/648087
+DSO librender.so/0xb6478000/603691
+DSO libauth.so/0xb63d9000/624447
+DSO libframework.so/0xb6388000/317243
+DSO libm.so.6/0xb6353000/131552
+DSO libc.so.6/0xb6269000/932711
+DSO libpthread.so.0/0xb6258000/53040
+DSO libdl.so.2/0xb6253000/5956
+DSO libXrender.so.1/0xb624a000/28968
+DSO libXcursor.so.1/0xb6240000/34636
+DSO libXft.so.2/0xb622b000/78288
+DSO libfreetype.so.6/0xb61ac000/506204
+DSO libfontconfig.so.1/0xb6179000/179120
+DSO libXext.so.6/0xb6169000/59584
+DSO libX11.so.6/0xb6097000/847852
+DSO libSM.so.6/0xb608e000/29512
+DSO libICE.so.6/0xb6076000/83704
+DSO libGL.so.1/0xb6005000/443628
+DSO ld-linux.so.2/0xb7ef4000/71148
+DSO libXfixes.so.3/0xb6000000/13188
+DSO libexpat.so.1/0xb5fd6000/162548
+DSO libXau.so.6/0xb5fd2000/5972
+DSO libXdmcp.so.6/0xb5fcd000/15220
+DSO libXxf86vm.so.1/0xb5fc7000/17176
+DSO libdrm.so.2/0xb5fc0000/23048
+DSO xlcDef.so.2/0xb5565000/7212
+DSO ximcp.so.2/0xb5548000/109864
