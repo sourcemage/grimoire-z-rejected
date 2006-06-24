@@ -1,1 +1,2 @@
-config_query_list JAVA "Which Java do you want ?" jdk1.5-bin jre1.5-bin
+config_query_list MY_JAVA "Which Java do you want ?" jdk1.5-bin jre1.5-bin &&
+depends $MY_JAVA

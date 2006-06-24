@@ -1,3 +1,6 @@
+2006-06-24 Daniel Goller <morfic@sourcemage.org>
+	* DEPENDS: readd the actual depends line
+
 2006-06-14 Daniel Goller <morfic@sourcemage.org>
 	* DETAILS: Add logic for x86_64 source
 	* DEPENDS: Change from JAVA to a list of only 1.5 of jdk/jre, avoids issues with older java
