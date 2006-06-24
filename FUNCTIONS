@@ -434,14 +434,15 @@ fi
 #---
 
 disable_pic() {
-if [[ "$SMGL_COMPAT_ARCHS[1]" != "x86_64" ]] ||
-   [[ "$1" == "force" ]]
-then
-CFLAGS=${CFLAGS/-fPIC}                    &&
-CFLAGS=${CFLAGS/-DPIC}                    &&
-CXXFLAGS=${CXXFLAGS/-fPIC}                &&
-CXXFLAGS=${CXXFLAGS/-DPIC}
-fi
+  if [[ "${SMGL_COMPAT_ARCHS[1]}" != "x86_64" ]] &&
+     [[ "${SMGL_COMPAT_ARCHS[1]}" != "alpha"  ]] ||
+     [[ "$1" == "force" ]]
+  then
+    CFLAGS=${CFLAGS/-fPIC}                    &&
+    CFLAGS=${CFLAGS/-DPIC}                    &&
+    CXXFLAGS=${CXXFLAGS/-fPIC}                &&
+    CXXFLAGS=${CXXFLAGS/-DPIC}
+  fi
 }
 #
 ## Function to check if we're using xorg-modular libs or not
