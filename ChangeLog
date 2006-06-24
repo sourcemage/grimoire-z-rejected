@@ -1,3 +1,6 @@
+2006-06-24 Thomas Orgis <sobukus@sourcemage.org>
+        * FUNCTIONS: added alpha as PICy arch to disable_pic
+
 2006-06-09 Arjan Bouter <abouter@sourcemage.org>
 	* FUNCTIONS: added default_games_build from games/FUNCTIONS
 	  to allow spells moved from games to build
