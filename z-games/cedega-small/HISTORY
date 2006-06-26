@@ -1,4 +1,7 @@
 2006-06-24 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 5.2.1
+
+2006-06-20 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 5.2
 	  Removed UPDATED
 	  Removed BUILD_API=2 (entire grimoire is api2)
