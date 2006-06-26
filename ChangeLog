@@ -1,5 +1,10 @@
+2006-06-24 Eric Sandall <eric@sandall.us>
+	* z-games/cedega{,-small}: Cedega no longer seems to release any package
+	  except for cedega-small, so cedega is now cedega-small and cedega-small
+	  is deprecated in favor of cedega.
+
 2006-06-24 Thomas Orgis <sobukus@sourcemage.org>
-        * FUNCTIONS: added alpha as PICy arch to disable_pic
+	* FUNCTIONS: added alpha as PICy arch to disable_pic
 
 2006-06-09 Arjan Bouter <abouter@sourcemage.org>
 	* FUNCTIONS: added default_games_build from games/FUNCTIONS
