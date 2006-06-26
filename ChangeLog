@@ -2,6 +2,7 @@
 	* z-games/cedega{,-small}: Cedega no longer seems to release any package
 	  except for cedega-small, so cedega is now cedega-small and cedega-small
 	  is deprecated in favor of cedega.
+	* z-games/point2play{,-small}: Removed deprecated spells
 
 2006-06-24 Thomas Orgis <sobukus@sourcemage.org>
 	* FUNCTIONS: added alpha as PICy arch to disable_pic
