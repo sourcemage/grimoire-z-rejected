@@ -4,6 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-small-$VERSION
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=http://www.transgaming.com/license.php?prepackaged=1
+      PATCHLEVEL=1
         WEB_SITE=http://www.transgaming.com/
          ENTERED=20051108
          ARCHIVE="off"

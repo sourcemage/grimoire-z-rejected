@@ -2,6 +2,7 @@
 	* Renamed to cedega
 	* DETAILS: Updated to 5.2.1
 	  Changed SPELL, SOURCE, and SOURCE_DIRECTORY to use "-small"
+	  Added PATCHLEVEL=1
 
 2006-06-20 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 5.2
