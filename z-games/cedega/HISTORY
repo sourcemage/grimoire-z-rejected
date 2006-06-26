@@ -3,6 +3,8 @@
 	* DETAILS: Updated to 5.2.1
 	  Changed SPELL, SOURCE, and SOURCE_DIRECTORY to use "-small"
 	  Added PATCHLEVEL=1
+	* CONFLICTS: Changed 'cedega' to 'cedega-small'
+	  Removed old conflicts with point2play and point2play-small
 
 2006-06-20 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 5.2
