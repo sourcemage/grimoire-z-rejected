@@ -1,6 +1,7 @@
 2006-06-24 Eric Sandall <eric@sandall.us>
 	* Deprecated in favor of cedega (which now uses cedega-small tarball)
 	* DETAILS: Added PATCHLEVEL=1
+	  Changed VERSION to 'deprecated'
 	* CONFIGURE: Removed
 	* DEPENDS: Depends only on cedega
 	* CONFLICTS: Auto-conflicts with cedega-small

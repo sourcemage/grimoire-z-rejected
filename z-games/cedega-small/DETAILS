@@ -1,5 +1,5 @@
            SPELL=cedega-small
-         VERSION=5.2.1
+         VERSION=deprecated
           SOURCE=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
