@@ -1,3 +1,6 @@
+2006-06-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* INSTALL: removed the last hardcoded version string usage
+
 2006-06-11 Juuso Alasuutari <iuso@sourcemage.org>
 	* PROVIDES: Added, provides OPENGL.
 
