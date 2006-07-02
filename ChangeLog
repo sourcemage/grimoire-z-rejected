@@ -1,3 +1,6 @@
+2006-07-02 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* nvidia-settings: moved from test, requires the closed driver
+
 2006-06-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* z-utils/scim-chinese: move to test, part of 12717
 
