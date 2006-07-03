@@ -1,7 +1,12 @@
            SPELL=eagle-cad
-         VERSION=4.13
-       BUILD_API=2
+         VERSION=4.16r1
+if [ "${EAGLE_LANG}" = "german" ]; then
+          SOURCE=${SPELL%-*}-lin-ger-$VERSION.tgz
+     SOURCE_HASH=sha512:ecafa3376e197c148eefa09cc05be25b83b2b9905bdf9b5f55323d095c52968d706ad8da6effc2251d0c008f11ba59d3c42c3e58209f7cf24adb1cee0e0c8d5c
+else	  
           SOURCE=${SPELL%-*}-lin-eng-$VERSION.tgz
+     SOURCE_HASH=sha512:368ed5493d26d0e1ff1a243c4c3f7cf952fe79e6db54e5fc2e489e709408fc5a904d7deb92b499da1192e6b8cf9bf051ebb0e291a55aeb475fc6ede3262f7722
+fi	  
          SOURCE2=compat-libstdc++-7.3-2.96.118.i386.rpm
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL%-*}-lin-eng-${VERSION%e}
 SOURCE_DIRECTORY2=$BUILD_DIRECTORY/usr
@@ -9,10 +14,8 @@ SOURCE_DIRECTORY2=$BUILD_DIRECTORY/usr
   SOURCE2_URL[0]=http://download.fedora.redhat.com/pub/fedora/linux/core/1/i386/os/Fedora/RPMS/compat-libstdc++-7.3-2.96.118.i386.rpm
         WEB_SITE=http://www.cadsoft.de/
          ENTERED=20041026
-         UPDATED=20041026
       LICENSE[0]=http://www.cadsoft.de/freeware.htm
           REJECT="is non source, limited, for non-commercial use"
-     SOURCE_HASH=sha512:f35776b3d8209dfa989e971dd25850e7d31ce5ca6488b0d93f24942f1f71e9fba7b8eb2b8536a1151af0b20b2bf655d704ab724a9c5e447127a87c11ef5bf1d6
     SOURCE2_HASH=sha512:4418010e575d49d120fd5b7ca9fc04e922a857452ed77d2e4ec5e847713fd3be0d1861f270ce155f77fe0e10fc07f29c985235fa47f22804b801de2be51998b7
            SHORT="The EAGLE Layout Editor is CAD tool for designing PCBs"
 cat << EOF

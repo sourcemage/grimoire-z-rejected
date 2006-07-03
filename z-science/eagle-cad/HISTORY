@@ -1,3 +1,8 @@
+2005-06-29 Vladimir Navrat <vn158@seznam.cz>
+	* DETAILS: update to 4.16r1, german version added
+	* CONFIGURE: query for language, rejected warnings
+	* PREPARE: removed
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

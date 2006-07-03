@@ -1,0 +1,5 @@
+config_query_list EAGLE_LANG "Which language version would you like to cast?" "english" "german"
+
+# Standard rejected warnings.
+#
+source $GRIMOIRE/REJECTED_MSG
