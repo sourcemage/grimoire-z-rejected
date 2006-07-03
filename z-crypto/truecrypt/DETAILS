@@ -1,5 +1,5 @@
            SPELL=truecrypt
-         VERSION=4.2
+         VERSION=4.2a
           SOURCE=$SPELL-$VERSION-source-code.tar.gz
       SOURCE_GPG="TrueCrypt_Foundation.gpg:$SOURCE.sig"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
   SOURCE2_IGNORE=signature
          ENTERED=20051104
       LICENSE[0]=http://www.truecrypt.org/license.php
-       BUILD_API=2
            SHORT="Free open-source disk encryption software for Windows XP/2000/2003 and Linux"
 cat << EOF
 Free open-source disk encryption software for Windows XP/2000/2003 and Linux.
