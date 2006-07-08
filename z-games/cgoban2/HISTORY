@@ -1,0 +1,8 @@
+2006-07-07 John Harding <johnh@kuberaconsulting.com>
+	* created new spell cgoban2. cgoban is no longer being
+	  developed or maintained  and the new version is rewritten from scratch 
+	  using java. It's in z-rejected because of sources not being available.
+	* DETAILS: created
+	* BUILD: has true
+	* INSTALL: added to handle java oriented non-standard install stuff
+	* DEPENDS: created with depends JAVA

@@ -1,0 +1,6 @@
+true                                                                               &&
+. ${SOURCE_DIRECTORY}/setup.sh                                                     &&
+mkdir -p /usr/share/games/cgoban2                                                  &&
+sedit "s:CGOBAN_DIR=/usr/src/cgoban:CGOBAN_DIR=/usr/share/games/cgoban2:"  cgoban  &&
+cp cgoban.jar ${INSTALL_ROOT}/usr/share/games/cgoban2                              &&
+cp cgoban ${INSTALL_ROOT}/usr/games/
