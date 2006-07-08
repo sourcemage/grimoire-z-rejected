@@ -1,10 +1,10 @@
+.  $GRIMOIRE/REJECTED_MSG  &&
+
 message "\n${MESSAGE_COLOR}"  \
   "Skype requires the QT graphics libraries and recommends installing\n"  \
   "the dynamically linked verison of skype which is the default\n"        \
   "installation option below. If you prefer the statically linked\n"      \
   "version of Skype, answer 'n' to the question below."                   \
-  "${DEFAULT_COLOR}\n\n"
+  "${DEFAULT_COLOR}\n"  &&
 
-config_query QT "Build version dynamically linked to QT?" y
-
-message "\n"
+config_query  QT  "Build version dynamically linked to QT?"  y

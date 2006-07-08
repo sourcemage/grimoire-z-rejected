@@ -1,4 +1,0 @@
-#check_hash &&
-mk_source_dir        $SOURCE_DIRECTORY  &&
-cd                   $SOURCE_DIRECTORY  &&
-rpmunpack < $SOURCE_CACHE/$SOURCE | gzip -cd|cpio -i --make-directories 
