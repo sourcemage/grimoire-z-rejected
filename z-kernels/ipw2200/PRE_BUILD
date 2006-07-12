@@ -3,20 +3,26 @@ if [[ $(get_sorcery_kernel_config CONFIG_NET_RADIO) != "y" ]]; then
 your kernel configuration, cannot build ipw2200.${DEFAULT_COLOR}" &&
   return 1
 fi &&
+
 if [[ $(get_sorcery_kernel_config CONFIG_FW_LOADER) != "y" ]] &&
    [[ $(get_sorcery_kernel_config CONFIG_FW_LOADER) != "m" ]]; then
   message "${PROBLEM_COLOR}You don't have CONFIG_FW_LOADER enabled in \
 your kernel configuration, cannot build ipw2200.${DEFAULT_COLOR}" &&
   return 1
 fi &&
+
 if [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_ARC4) != "y" ]] &&
    [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_ARC4) != "m" ]] &&
    [[ $(get_sorcery_kernel_config CONFIG_CRC32) != "y" ]] &&
    [[ $(get_sorcery_kernel_config CONFIG_CRC32) != "m" ]] ; then
   message "${PROBLEM_COLOR}You don't have the right crypto support built in \
 the kernel, CONFIG_CRYPTO_ARC4 and CONFIG_CRC32. These are needed for WEP key \
-support.${DEFAULT_COLOR}"
+support.${DEFAULT_COLOR}" &&
+  if ! query "Continue anyway?"; then
+    return 1
+  fi
 fi &&
+
 if [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_MICHAEL_MIC) != "y" ]] &&
    [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_MICHAEL_MIC) != "m" ]] &&
    [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_AES_586) != "y" ]] &&
@@ -24,9 +30,16 @@ if [[ $(get_sorcery_kernel_config CONFIG_CRYPTO_MICHAEL_MIC) != "y" ]] &&
 then
   message "${PROBLEM_COLOR}You don't have the right crypto support built in \
 the kernel, CONFIG_CRYPTO_AES_586 and CONFIG_MICHAEL_MIC. These are needed \
-for WPA support.${DEFAULT_COLOR}"
+for WPA support.${DEFAULT_COLOR}" &&
+  if ! query "Continue anyway?"; then
+    return 1
+  fi
 fi &&
+
 mk_source_dir ${SOURCE_DIRECTORY} &&
 unpack_file '' &&
 cd $SOURCE_DIRECTORY &&
-unpack_file 2
+unpack_file 2 &&
+
+# Modules already built in BUILD
+sedit  's/install: modules/install:/'  Makefile
