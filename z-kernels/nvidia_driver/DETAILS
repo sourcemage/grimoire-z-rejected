@@ -26,13 +26,13 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
 esac
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030401
-         UPDATED=20050730
       PATCHLEVEL=1
          ARCHIVE=off
           REJECT="Non-GPL compatible software license"
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
-       BUILD_API=2
            SHORT="Driver provided by NVIDIA for NVIDIA GPUs"
+  # Remove this when bug #12843 is fixed
+  STAGED_INSTALL=off
 cat << EOF
 NVIDIA
 These are the nvidia provided binary X drivers for their graphics cards.

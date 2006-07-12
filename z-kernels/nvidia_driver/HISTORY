@@ -1,3 +1,9 @@
+2006-07-13 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: Disabled staged install until bug #12843 is fixed, 
+	  removed UPDATED & BUILD_API.
+	* PRE_BUILD: Added sedit to fix defunct nvidia-settings.desktop.
+	* INSTALL: Install pixmap.
+
 2006-06-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* INSTALL: removed the last hardcoded version string usage
 
