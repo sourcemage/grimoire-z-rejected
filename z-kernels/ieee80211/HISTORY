@@ -1,3 +1,13 @@
+2006-07-12 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: Updated to 1.1.14, removed BUILD_API & UPDATED.
+	* PRE_BUILD: Added sedit to remove duplicate 'make modules' from 
+	  Makefile, added confirmation queries to kernel crypto config 
+	  checks.
+	* BUILD: Do 'make modules' instead of just make to bypass 
+	  useless and annoying remove-old script that interrupts BUILD 
+	  with queries and removes modules from all kernel trees (bug 
+	  #10821).
+
 2006-04-13 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Updated to 1.1.13
 
