@@ -1,13 +1,11 @@
            SPELL=ipw2200_firmware  
-         VERSION=2.3
-       BUILD_API=2
+         VERSION=$FIRMWARE_VERSION
           SOURCE=ipw2200-fw-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/ipw2200-fw
-          MD5[0]=e50a611f0247df208189b26e9e9af458 
    SOURCE_URL[0]=
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://ipw2200.sf.net/
          ENTERED=20040815
-         UPDATED=20041201
       LICENCE[0]=http://ipw2200.sourceforge.net/firmware.php
           REJECT="has licensing issues you must download it from the website"
          ARCHIVE="off"

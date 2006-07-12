@@ -1,0 +1,19 @@
+# Source grimoire FUNCTIONS to have get_kernel_version
+. $SCRIPT_DIRECTORY/../../FUNCTIONS
+
+KERNEL_VERSION=$(get_kernel_version)  &&
+PATCHLEVEL=`echo $KERNEL_VERSION | cut -d. -f2`  &&
+SUBLEVEL=`echo $KERNEL_VERSION | cut -d. -f3`  &&
+tmp=`echo $KERNEL_VERSION | cut -d. -f3 | sed 's/^[0-9]*//g'`  &&
+SUBLEVEL=${SUBLEVEL/$tmp/}  &&
+
+if [ $SUBLEVEL -le 14 -a $PATCHLEVEL -ge 6 ]; then
+  FIRMWARE_VERSION="2.3"
+else
+  if [ $SUBLEVEL -le 16 -a $PATCHLEVEL -ge 6 ]; then
+    FIRMWARE_VERSION="2.4"
+  else
+    FIRMWARE_VERSION="3.0"
+  fi
+fi
+persistent_add FIRMWARE_VERSION

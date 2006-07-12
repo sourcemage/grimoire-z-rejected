@@ -1,2 +1,5 @@
-[ -d "${INSTALL_ROOT}/lib/firmware" ] || mkdir "${INSTALL_ROOT}/lib/firmware" &&
+[ -d "${INSTALL_ROOT}/lib/firmware" ] || mkdir "${INSTALL_ROOT}/lib/firmware"  &&
+if [ "$VERSION" == "3.0" ]; then
+  cd ipw2200-fw-3.0
+fi  &&
 mv ./*.fw "${INSTALL_ROOT}/lib/firmware"
