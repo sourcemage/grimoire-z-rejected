@@ -1,0 +1,14 @@
+.  $GRIMOIRE/REJECTED_MSG  &&
+
+config_query  IASL  "Install iasl, an ASL compiler/decompiler?"  y  &&
+config_query  ACPISRC  "Install acpisrc, a source code conversion tool?"  y  &&
+config_query  ACPIEXEC  "Install acpiexec, a user-space AML interpreter?"  y  &&
+config_query  ACPIXTRACT  "Install acpixtract, an ACPI table extractor?"  y  &&
+
+if [[ $IASL != y ]]  &&
+   [[ $ACPISRC != y ]]  &&
+   [[ $ACPIEXEC != y ]]  &&
+   [[ $ACPIXTRACT != y ]]; then
+  message "You didn't select anything to install!"  &&
+  return 1
+fi

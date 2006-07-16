@@ -1,0 +1,15 @@
+if [[ $IASL == y ]]; then
+  cp tmp/iasl /usr/bin
+fi  &&
+
+if [[ $ACPISRC == y ]]; then
+  cp tmp/acpisrc /usr/bin
+fi  &&
+
+if [[ $ACPIEXEC == y ]]; then
+  cp tmp/acpiexec /usr/bin
+fi  &&
+
+if [[ $ACPIXTRACT == y ]]; then
+  cp tmp/acpixtract /usr/bin
+fi

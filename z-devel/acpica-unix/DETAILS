@@ -1,0 +1,19 @@
+           SPELL=acpica-unix
+         VERSION=20060707
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+      SOURCE_URL=http://developer.intel.com/technology/iapc/acpi/downloads/$SOURCE
+        WEB_SITE=http://developer.intel.com/technology/iapc/acpi/downloads.htm
+     SOURCE_HASH=sha512:cf55bc2a4a07348213cb443336c33e1eba856531f8f928a543f89c365e582d2cee21fc65e62cd5337122e987efffd8afe63a9b5432307a617cc538b0935b30e1
+      LICENSE[0]=http://developer.intel.com/technology/iapc/acpi/license2.htm
+          REJECT="non-Free license"
+         ENTERED=20060716
+           SHORT="Advanced Configuration & Power Interface Component Architecture (ACPI CA)"
+cat << EOF
+Advanced Configuration & Power Interface Component Architecture (ACPI 
+CA) provides a reference implementation of software components that 
+enable OS support for interfaces defined in the ACPI 1.0b specification. 
+This includes: AML interpreter and debugger, Namespace Management, ACPI 
+hardware support, and basic OSPM, including a device power management 
+framework.
+EOF

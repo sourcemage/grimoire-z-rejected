@@ -1,3 +1,7 @@
+2006-07-16 Juuso Alasuutari <iuso@sourcemage.org>
+	* z-devel/acpica-unix: New spell, intel ACPI CA Unix Build 
+	  Environment
+
 2006-07-12 Flavien Bridault <vlaaad@sourcemage.org>
         * gurus.gpg: my key for spell signing added, key id AF8857ED
 
