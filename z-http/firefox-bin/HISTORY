@@ -1,3 +1,8 @@
+2006-07-22 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated devel to 2.0 beta1
+	  Updated stable to 1.5.0.4 and SOURCE_URL
+	* PREPARE: Change for alpha to beta version
+	
 2006-06-11 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated devel to 2.0 alpha3
 

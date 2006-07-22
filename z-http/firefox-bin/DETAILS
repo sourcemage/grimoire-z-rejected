@@ -1,18 +1,18 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=2.0a3
-          SOURCE=bonecho-alpha3.tar.gz
-         SOURCE2=$SOURCE.asc
-      SOURCE_GPG="firefox.gpg:$SOURCE2"
-   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/bonecho/alpha3/linux-i686/en-US/$SOURCE
-  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/bonecho/alpha3/linux-i686/en-US/$SOURCE2
-else
-         VERSION=1.5.0.2
+         VERSION=2.0b1
           SOURCE=firefox-${VERSION}.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
-   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
-  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}.asc
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/2.0b1/linux-i686/en-US/$SOURCE
+  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/2.0b1/linux-i686/en-US/$SOURCE2
+else
+         VERSION=1.5.0.4
+          SOURCE=firefox-${VERSION}.tar.gz
+         SOURCE2=$SOURCE.asc
+      SOURCE_GPG="firefox.gpg:$SOURCE2"
+   SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
+  SOURCE2_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}.asc
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
    
