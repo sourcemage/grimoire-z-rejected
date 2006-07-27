@@ -1,3 +1,6 @@
+2006-07-27 Pieter Lenaerts <e-type@sourcemage.org>
+	* INSTALL: using $INSTALL_ROOT and man pages to /usr/share/man
+
 2006-04-18 Pieter Lenaerts <e-type@sourcemage.org>
 	* DETAILS: added REJECTED
 	* moved from editors/ to z-rejected/z-editors

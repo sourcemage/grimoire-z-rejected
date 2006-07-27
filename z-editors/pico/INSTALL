@@ -1,8 +1,8 @@
 cd  bin &&
-cp  pico /usr/bin &&
+cp  pico ${INSTALL_ROOT}/usr/bin &&
 cd  ../doc &&
 
 for  MANPAGE  in  `ls  pico*.1`;  do
     gzip  -9 ${MANPAGE} &&
-    cp  ${MANPAGE}.gz  /usr/man/man1
+    cp  ${MANPAGE}.gz  ${INSTALL_ROOT}/usr/share/man/man1
 done
