@@ -1,3 +1,7 @@
+2006-27-07 Anton Brondz <dinolinux@gmail.com>
+	* INSTALL: removed cp local.conf because it doesn't exist
+	* DETAILS: fixed wrong SHA512
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
