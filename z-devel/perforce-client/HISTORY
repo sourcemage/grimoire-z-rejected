@@ -1,3 +1,9 @@
+2006-07-28 Treeve Jelbert <treeve@pi.be>
+	* DETAILS: Updated binaries for x86/x86_64 to 2006.1/101890
+	  no longer a special case for amd64
+	  updated documentation p4guide.pdf
+	* INSTALL: nolonger install man page (does not exist)
+
 2006-03-20 Treeve Jelbert <treeve01@pi.be>
 	* DETAILS: Updated binaries for x86 to 2005.2/93627
 

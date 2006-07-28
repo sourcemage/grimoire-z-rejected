@@ -1,23 +1,22 @@
            SPELL=perforce-client
-     DOC_VERSION=042
-       BUILD_API=2
+     DOC_VERSION=061
           SOURCE=p4
          SOURCE2=p4web
-         SOURCE3=p4.1
+         SOURCE3=p4guide.pdf
   FORCE_DOWNLOAD=on
 
 # we use HOST instead of uname -m since spells can be used for cross compiling
 # the exact version number is given by p4 -V
 
 case "${HOST}" in
-  i386-* | i486-* | i586-* | i686-*)
+  i386-* | i486-* | i586-* | i686-* | x86_64-*)
 
-   VERSION_MAJOR=2005.2
-   VERSION_MINOR=93627
-   SHORT_VERSION=05.2
+   VERSION_MAJOR=2006.1
+   VERSION_MINOR=101890
+   SHORT_VERSION=06.1
           P_ARCH=linux26x86
-     SOURCE_HASH=sha512:8a3e6647262d567fa15e01f877239aa0dc447b90b161a6a936b2eb73c5d4225721c57c858f40d5e7b03417a3df71b7bc555a30cafea8842dadda91924e64441a
-    SOURCE2_HASH=sha512:006bc430e9ff656d43a65c2b0730a1c2ed71f9178ce05c77e7b587ab2e2fbd3922ae8cf7c33a9bc3e677bf746f840c781c8d7038dcdc05fae5c8b1e6434b1e7d
+     SOURCE_HASH=sha512:c29730f2ceb5a7175f402a39dce8e3318f86ea69f18ddf878c01c5c4be8c3cafa47b2b3db30a9214c427bb9719b8d58b78de194870a05683f92eb5b2044a69b0
+    SOURCE2_HASH=sha512:f126130086af7ddecef34635d542284261d2bef1738daf1c4a3b73d21ea291ddb1a77773ca77c58a6f70da0795fbbae6018a1ed75a14533e162038398030ce3e
     ;;
 
   powerpc-*)
@@ -30,15 +29,15 @@ case "${HOST}" in
           SOURCE2_HASH=sha1:4c3497bdc4c5d449c8ea9ae8d03bdf0d20a77999
     ;;
 
-  x86_64-*)
+#  x86_64-*)
 
-   VERSION_MAJOR=2005.1
-   VERSION_MINOR=83219
-   SHORT_VERSION=05.1
-          P_ARCH=linux26amd64
-          SOURCE_HASH=sha1:11f7d9886eb1f591a272ff4e66106b941df5f310
-          SOURCE2_HASH=sha1:6efc809088be3bc6e928f3c7cc0a08dcac4cdb24
-    ;;
+#   VERSION_MAJOR=2006.1
+#   VERSION_MINOR=102189
+#   SHORT_VERSION=06.1
+#          P_ARCH=linux26amd64
+#          SOURCE_HASH=sha512:
+#          SOURCE2_HASH=sha512:
+#    ;;
 
 esac
 
@@ -49,13 +48,13 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION_MAJOR
    SOURCE_URL[1]=ftp://ftp.perforce.com/perforce/r$SHORT_VERSION/bin.$P_ARCH/$SOURCE
   SOURCE2_URL[0]=http://www.perforce.com/downloads/perforce/r$SHORT_VERSION/bin.$P_ARCH/$SOURCE2
   SOURCE2_URL[1]=ftp://ftp.perforce.com/perforce/r$SHORT_VERSION/bin.$P_ARCH/$SOURCE2
-  SOURCE3_URL[0]=http://www.perforce.com/perforce/doc.$DOC_VERSION/man/$SOURCE3
+  SOURCE3_URL[0]=http://www.perforce.com/perforce/doc.$DOC_VERSION/manuals/p4guide/$SOURCE3
         WEB_SITE=http://www.perforce.com/
          ENTERED=20020514
-         UPDATED=20050405
-    SOURCE3_HASH=sha1:d756689967841277e893cab9bc0dbc8e95784485
+    SOURCE3_HASH=sha512:68a4fccb8667fe5dcb246c04e4cbbdfeccc329b556c8be6a2f4a324c13870c9c42d625b6aae04c81fea0dc650dc8e6e9ed057a64282e867769750a3a55943d75
       LICENSE[0]=http://www.perforce.com/perforce/price.html
-     GATHER_DOCS=off
+DOCS=$SOURCE3
+#     GATHER_DOCS=off
           REJECT="is non-source and has licensing issues"
            SHORT="Perforce command line client"
 cat << EOF
