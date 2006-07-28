@@ -1,3 +1,9 @@
+2006-07-28 Treeve Jelbert <treeve@pi.be>
+	* DETAILS: version 2006.1/101899
+	  updated documentation p4sag.pdf
+	* BUILD, INSTALL: these two files were inverted
+	* PRE_REMOVE: delete, we should not stop the server here
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 

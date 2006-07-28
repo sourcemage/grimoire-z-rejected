@@ -1,7 +1,0 @@
-# If they're still using the old init script we need to use that to do
-# the shutdown. We'll look for /etc/init.d/p4d.sh to decide
-if [ -x /etc/init.d/p4d.sh ]; then
-    /etc/init.d/p4d.sh stop
-else
-    telinit run p4d stop
-fi
