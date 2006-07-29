@@ -1,0 +1,3 @@
+sedit "/\/opt\/emul32\/lib/d" /etc/ld.so.conf &&
+sedit "/\/opt\/emul32\/usr\/lib/d" /etc/ld.so.conf &&
+rm ${INSTALL_ROOT}/lib/ld-linux.so.2

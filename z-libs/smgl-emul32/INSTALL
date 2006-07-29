@@ -1,0 +1,4 @@
+mkdir -p ${INSTALL_ROOT}/opt/emul32 &&
+cp -ar ${SOURCE_DIRECTORY}/* ${INSTALL_ROOT}/opt/emul32/ &&
+ln -sf ${INSTALL_ROOT}/opt/emul32/lib/ld-linux.so.2 ${INSTALL_ROOT}/lib/ld-linux.so.2
+
