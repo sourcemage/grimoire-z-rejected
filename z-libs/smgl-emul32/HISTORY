@@ -1,2 +1,5 @@
+2006-07-29 Daniel Goller <morfic@sourcemage.org>
+	* DETAILS: Add .txt to url since the default mime type of text/plain didn't get picked up by httpd
+
 2006-07-28 Daniel Goller <morfic@sourcemage.org>
 	* Initial spell
