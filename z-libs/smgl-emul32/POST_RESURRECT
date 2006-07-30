@@ -1,0 +1,7 @@
+if ! grep emul32 ${INSTALL_ROOT}/etc/ld.so.conf ; then
+	echo /opt/emul32/lib >> /etc/ld.so.conf &&
+	echo /opt/emul32/usr/lib >> /etc/ld.so.conf
+fi
+ln -sf /opt/emul32/lib/ld-linux.so.2 /lib/ld-linux.so.2 &&
+if [[ ${INSTALL_ROOT} == "" ]] ; then ldconfig ; fi
+
