@@ -1,5 +1,6 @@
-depends  rpmunpack
-depends  bzip2
+depends  X11-LIBS    &&
+depends  rpmunpack   &&
+depends  bzip2       &&
 if [ "${ATI_DRIVER_QT}" == "y" ]
 then
    depends qt-x11

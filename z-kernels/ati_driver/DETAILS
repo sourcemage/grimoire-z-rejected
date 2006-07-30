@@ -1,24 +1,19 @@
            SPELL=ati_driver
-         VERSION=8.10.19
+         VERSION=8.27.10
 if spell_ok xfree86-4.3
 then
           SOURCE=fglrx-4.3.0-${VERSION}-1.i386.rpm
-          MD5[0]=211e372954856e54ed1c8806fc7ad23f
+     SOURCE_HASH=sha512:46caed7dd6c6c6247f81edf47998ede67349946ff99d10d284c48a430696e0c3ad2443c1847c639f6bf1682f5a2aa32bae495d4c05d01f44b29d2e94b4668d54
 elif spell_ok xorg
 then
           SOURCE=fglrx_6_8_0-${VERSION}-1.i386.rpm
-     SOURCE_HASH=sha512:18ad2aff76667574af9cf67f4191a3e52f0bf3ede8adcb35b9f26b1f1ff27738d67f3ea243d6684cf54d1cdf866f469862d7f6dbe074665fb8572b2c01989c9d
-else
-   message "${PROBLEM_COLOR}You don't have xfree-4.3 nor xorg installed.${DEFAULT_COLOR}"
-   return 1
+     SOURCE_HASH=sha512:afef819789ccefefd9604390e1b6a814ca7ad4602d33c16ef46124b98c96eff63703547ec203ea764c989edd8a721f4d3e5ebcd6e63420a45dc57f79011c1aca
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www2.ati.com/drivers/linux/$SOURCE
         WEB_SITE=http://www.ati.com
          ENTERED=20030911
-         UPDATED=20040416
       LICENSE[0]="GPL/QPL"
-       BUILD_API=2
            SHORT="Driver provided by ATI for Radeon 8500+/FireGL 8700+"
 cat << EOF
 These are the ATI provided binary XFree86 drivers for their graphics cards.

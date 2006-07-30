@@ -1,3 +1,8 @@
+2006-07-30 Treeve Jelbert <treeve@pi.be>
+	* DETAILS: version 8.27.10
+	* DEPENDS: add missing &&    and X11-LIBS
+	* BUILD: I don't think that the kernel patch is relevant anymore?
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
