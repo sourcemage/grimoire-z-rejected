@@ -1,3 +1,7 @@
+2006-07-30 David Kowis <dkowis@shlrm.org>
+	* INSTALL: updated the install pixmap to make sure it doesn't clobber
+	  the directory. Which it does for amd64.
+
 2006-07-13 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Disabled staged install until bug #12843 is fixed, 
 	  removed UPDATED & BUILD_API.

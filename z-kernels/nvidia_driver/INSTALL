@@ -126,7 +126,7 @@ if  [  !  -d  $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0  ];  then
 fi                                                             &&
 cp  -a  *  $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0          &&
 # Install pixmap
-cp  nvidia-settings.png  $INSTALL_ROOT/usr/share/pixmaps       &&
+cp  nvidia-settings.png  $INSTALL_ROOT/usr/share/pixmaps/       &&
 popd                                                           &&
 if  [  !  -d  $INSTALL_ROOT/usr/share/doc/$SPELL  ];  then
   mkdir  -p  $INSTALL_ROOT/usr/share/doc/$SPELL
