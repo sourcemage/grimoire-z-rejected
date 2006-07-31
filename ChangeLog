@@ -1,3 +1,6 @@
+2006-07-31 Juuso Alasuutari <iuso@sourcemage.org>
+	* z-audio/vst_sdk2_3: New spell, VST SDK 2.3 headers.
+
 2006-07-16 Juuso Alasuutari <iuso@sourcemage.org>
 	* z-devel/acpica-unix: New spell, intel ACPI CA Unix Build 
 	  Environment

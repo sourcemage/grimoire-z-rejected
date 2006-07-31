@@ -1,0 +1,5 @@
+local INC_DIR=$INSTALL_ROOT/usr/include/  &&
+mkdir -p $INC_DIR  &&
+cp  $SOURCE_DIRECTORY/vstsdk2.3/source/common/AEffect.h   \
+    $SOURCE_DIRECTORY/vstsdk2.3/source/common/aeffectx.h  \
+    $INC_DIR
