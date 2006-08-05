@@ -1,5 +1,11 @@
+2006-08-04 Daniel Goller <morfic@sourcemage.org>
+	* z-http/nspluginwrapper: New spell, enabling use of 32bit plugins on a 64 bit gtk+2 browser
+
 2006-07-31 Juuso Alasuutari <iuso@sourcemage.org>
 	* z-audio/vst_sdk2_3: New spell, VST SDK 2.3 headers.
+
+2006-07-29 Daniel Goller <morfic@sourcemage.org>
+	* z-libs/smgl-emul32: New spell, enabling use of 32bit plugins and apps on a pure k8_64 install
 
 2006-07-16 Juuso Alasuutari <iuso@sourcemage.org>
 	* z-devel/acpica-unix: New spell, intel ACPI CA Unix Build 
