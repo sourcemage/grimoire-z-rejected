@@ -1,3 +1,7 @@
+2006-08-08 Flavien Bridault <vlaaad@sourcemage.org>
+	* INSTALL: installs libXNVCtrl headers and archive
+	* DETAILS: updated PATCHLEVEL
+
 2006-07-02 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* moved to z-rejected, requires the closed driver
 	* DETAILS: added REJECT, SOURCE_HASH
