@@ -1,8 +1,8 @@
 default_install  &&
 if [ "$(get_spell_provider $X11)" = xorg-server ]; then
-	local X11_PREFIX=/usr
+	local X11_PREFIX=$INSTALL_ROOT/usr
 else
-	local X11_PREFIX=/usr/X11R6
+	local X11_PREFIX=$INSTALL_ROOT/usr/X11R6
 fi  &&
 install -d -m 0755 $X11_PREFIX/include/NVCtrl  &&
 install -m 0444 src/libXNVCtrl/NVCtrlLib.h $X11_PREFIX/include/NVCtrl/  &&

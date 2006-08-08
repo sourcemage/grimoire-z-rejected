@@ -1,4 +1,8 @@
 2006-08-08 Flavien Bridault <vlaaad@sourcemage.org>
+	* INSTALL: fixed, added $INSTALL_ROOT
+	* DETAILS: updated PATCHLEVEL
+
+2006-08-08 Flavien Bridault <vlaaad@sourcemage.org>
 	* INSTALL: installs libXNVCtrl headers and archive
 	* DETAILS: updated PATCHLEVEL
 
