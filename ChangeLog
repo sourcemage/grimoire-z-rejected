@@ -1,3 +1,7 @@
+2006-08-09 Juuso Alasuutari <iuso@sourcemage.org>
+	* z-audio/VST23_WARNING: Added, message about downloading 
+	  Steinberg's VST SDK 2.3 sources for spells that require them.
+
 2006-08-04 Daniel Goller <morfic@sourcemage.org>
 	* z-http/nspluginwrapper: New spell, enabling use of 32bit plugins on a 64 bit gtk+2 browser
 

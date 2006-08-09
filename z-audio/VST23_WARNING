@@ -1,0 +1,14 @@
+# Special messages with regards to VST 2.3 sources.
+#
+message "\n${MESSAGE_COLOR}For $SPELL you need to manually download the sources for VST SDK \
+\nversion 2.3 from Steinberg's website: \
+${DEFAULT_COLOR}\n  http://www.steinberg.net/532+M52087573ab0.html \
+\n${MESSAGE_COLOR}Put the downloaded file in \
+${DEFAULT_COLOR}/var/spool/sorcery/ \
+${MESSAGE_COLOR}so cast will find it.\n"  &&
+
+if ! query "HAVE YOU DOWNLOADED THE SOURCES AND WISH TO CONTINUE CASTING?" n;
+then
+  message "${MESSAGE_COLOR}Please recast when you have the sources!\n${DEFAULT_COLOR}"
+  return 1 
+fi

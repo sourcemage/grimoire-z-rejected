@@ -7,7 +7,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
          ENTERED=20060731
       LICENSE[0]=http://www.steinberg.net/532+M52087573ab0.html
          ARCHIVE=off
-          REJECT="Software has non-Free license. NOTICE: You need to manually download the source for VST SDK version 2.3 from Steinberg's website and place it in /var/spool/sorcery/ before spell can be cast"
+          REJECT="Software has non-Free license"
            SHORT="Steinberg VST PlugIn Software Development Kit"
 cat << EOF
 The Steinberg VST PlugIn Software Development Kit headers are required by some 
