@@ -1,5 +1,6 @@
 2006-08-09 Flavien Bridault <vlaaad@sourcemage.org>
-	* DETAILS: fixed LICENSE[0]
+	* DETAILS: fixed LICENSE[0], added REJECT
+	* PREPARE: added to display reject message 
 
 2006-03-12 Karsten Behrmann <BearPerson@sourcemage.org>
 	* DETAILS: (automated) Add KEYWORDS
