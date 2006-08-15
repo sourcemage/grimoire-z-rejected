@@ -6,7 +6,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_HASH=sha512:b73cb62add9aec8ae046e60a82259cc4f27494318f6a6753879ad224d6c57dff6e53cd29de43dcbad0db720431dc16e1a450f293c514608212082c34e43ba1b0
         WEB_SITE=http://www.opengl.org
          ENTERED=20010922
-         UPDATED=20040717
       PATCHLEVEL=1
           REJECT="unfree license"
       LICENSE[0]="see NOTICE in the tarball or /usr/share/doc/glut"

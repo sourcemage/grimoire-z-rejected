@@ -3,7 +3,6 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030528
-         UPDATED=20040226
       PATCHLEVEL=1
          ARCHIVE=off
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
