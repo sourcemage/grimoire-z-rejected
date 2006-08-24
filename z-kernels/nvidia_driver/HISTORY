@@ -1,3 +1,7 @@
+2006-08-24 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: Updated to 8774
+	* INSTALL: Modified path to nvidia-settings.png
+
 2006-07-30 David Kowis <dkowis@shlrm.org>
 	* INSTALL: updated the install pixmap to make sure it doesn't clobber
 	  the directory. Which it does for amd64.

@@ -2,17 +2,17 @@
            SPELL=nvidia_driver
 case "${SMGL_COMPAT_ARCHS[1]}" in
 	x86_64)
-         VERSION=1.0-8762
+         VERSION=1.0-8774
 	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:61c57bc2f6d5880d7d5b193b51c626b9dedad9d0ced922d7f39d916aec393baee6732030e2ab72957cec8d8e0ce5dea7086a739b34cc532ce4d349c52fb5be78
+     SOURCE_HASH=sha512:a4e85350875d13e94990784884d92e5e9f1d1248043dba4d380ea538a03274d9277d62e2a9565d5b3a95ae5656e51987d76195090d0f595be107f1ab7212dc8e
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
         ;;
 	ia32)
-         VERSION=1.0-8762
+         VERSION=1.0-8774
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:d0f7f772526e297c19dc4e508889c2ff2254f95cb36a4163373b2ea597bf2b9fe8003d525a548b46e99ba92cfc8f6a506c52b2609251ba836d1ba6aa7e6f1c8f
+     SOURCE_HASH=sha512:d231d4bbcc2711a8203083d7f80b9030089e1d6ae2d492ad9732fbde2004d1a1defdb72637b9c1a5478a908c1819ebb339b38960423f02a028a3c047e7d011e7
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
         ;;
 ############################################################
@@ -26,7 +26,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
 esac
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030401
-      PATCHLEVEL=1
          ARCHIVE=off
           REJECT="Non-GPL compatible software license"
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
