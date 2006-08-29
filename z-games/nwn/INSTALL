@@ -1,0 +1,32 @@
+I_DIR="${INSTALL_ROOT}/usr/share/games/$SPELL"   &&
+install  -d  -m 2775  -o root  -g games  $I_DIR  &&
+
+for DIR in ambient data dmvault docs hak lib localvault miles modules music  \
+           nwm override portraits saves servervault texturepacks;            do
+  cp  -a  $DIR  $I_DIR
+done  &&
+
+for FILE in chitin.key dialog.tlk dmclient fixinstall movies-OC.txt  \
+            nwn NWNv129.txt patch.key;                               do
+  cp  -a  $FILE  $I_DIR/$FILE
+done  &&
+
+for BINARY in nwmain nwserver;  do
+  install  -m 2755  -o root  -g games $BINARY  $I_DIR/$BINARY
+done  &&
+
+install_config_file  nwn.ini  $I_DIR/nwn.ini  &&
+
+#
+# Symlink Miles 3D audio library so nwmain passes cleanse check
+#
+ln  -sf  $INSTALL_ROOT/usr/share/games/nwn/miles/libmss.so.6  \
+         $TRACK_ROOT/usr/lib/libmss.so.6                      &&
+
+#
+# Install helper scripts
+#
+for SCRIPT in dmclient nwn nwserver; do
+  install  -m 0755  -o root  -g games  $SCRIPT_DIRECTORY/$SCRIPT        \
+                                       $INSTALL_ROOT/usr/games/$SCRIPT
+done

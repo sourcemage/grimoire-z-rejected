@@ -1,0 +1,5 @@
+2006-08-15 Eric Sandall <eric@sandall.us>
+	* DETAILS,DEPENDS,PRE_BUILD,BUILD,INSTALL,excluded,volatiles: Created
+	  Installation instructions available at
+	  http://nwn.bioware.com/downloads/linuxclient.html
+

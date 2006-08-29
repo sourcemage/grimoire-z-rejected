@@ -1,0 +1,12 @@
+depends  OPENGL               &&
+depends  -sub  X11-LIBS  sdl  &&
+depends  unzip                &&
+
+source  $GRIMOIRE/FUNCTIONS   &&
+
+if  check_if_xorg_modular_libs  sdl;  then
+  depends  libxau      &&
+  depends  libxdmcp    &&
+  depends  libxext     &&
+  depends  libxxf86vm
+fi
