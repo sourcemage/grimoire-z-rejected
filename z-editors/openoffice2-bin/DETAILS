@@ -1,5 +1,5 @@
            SPELL=openoffice2-bin
-         VERSION=2.0.2-5
+         VERSION=2.0.3-7
 if  [  "${OO2_LOCALE:-en}" == "en"  ]; then
           SOURCE=OOo_${VERSION/-*/}_LinuxIntel_install.tar.gz
      COMMON_PATH=openoffice/stable
@@ -17,10 +17,8 @@ fi
 #   SOURCE_URL[1]=ftp://ftp.ussg.iu.edu/pub/openoffice/developer/680_m130/$SOURCE
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=LGPL
-       BUILD_API=2
         WEB_SITE=http://www.openoffice.org
          ENTERED=20050625
-         UPDATED=20050625
          ARCHIVE="off"
           REJECT="This spell is non-source"
            SHORT="The binary version of OpenOffice 2"

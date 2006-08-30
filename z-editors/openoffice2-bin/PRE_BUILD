@@ -7,7 +7,7 @@ unpack_file  ''                   &&
 # versions, so use * wildcard although I don't find that very elegant
 cd  OO*/RPMS  &&
 
-for  PART  in  base  calc  core01  core02  core03  core03u  core04  core04u  core05  core05u  core06  core07  core08  core09  core10  draw  gnome-integration  graphicfilter  impress  javafilter  math  pyuno  spellcheck  testtool  writer  xsltfilter
+for  PART  in  base  calc  core01  core02  core03  core03u  core04  core04u  core05  core05u  core06  core07  core08  core09  core10  draw  gnome-integration  graphicfilter  impress  javafilter  math  pyuno  testtool  writer  xsltfilter
 do
   message  "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"  &&
   rpmunpack  openoffice.org-$PART-$VERSION.i586.rpm           &&
@@ -16,6 +16,6 @@ do
 done  &&
 
 message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
-rpmunpack  desktop-integration/openoffice.org-freedesktop-menus-${VERSION/-5/-3}.noarch.rpm  &&
-gzip  -d  openoffice.org-freedesktop-menus-${VERSION/-5/-3}.cpio.gz     &&
-cpio  -idm  <  openoffice.org-freedesktop-menus-${VERSION/-5/-3}.cpio
+rpmunpack  desktop-integration/openoffice.org-freedesktop-menus-${VERSION/-7/-2}.noarch.rpm  &&
+gzip  -d  openoffice.org-freedesktop-menus-${VERSION/-7/-2}.cpio.gz     &&
+cpio  -idm  <  openoffice.org-freedesktop-menus-${VERSION/-7/-2}.cpio
