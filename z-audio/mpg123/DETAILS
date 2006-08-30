@@ -1,15 +1,13 @@
            SPELL=mpg123
-         VERSION=0.59r
-          SOURCE=$SPELL-$VERSION.tar.gz
+         VERSION=0.60
+          SOURCE=$SPELL-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://www.mpg123.de/$SPELL/$SOURCE
-     SOURCE_HASH=sha512:786aa4f34bc945936c352d31d2a4504b41bcba75baa3fb4f5ac95f9efee5cd22aa6882c9a44c1ed700a985a2d3a35d15eeb099147aa57eadcf43e3197edb4e87
+   SOURCE_URL[0]=http://www.mpg123.de/download/$SOURCE
+     SOURCE_HASH=sha512:490f2e7572fec9372e5270cbf8205b7fd7033508d59090dcf4ce950a97534b05d155eca3e7cd23e04fa0080bafdabfb6e003f8f8b222ededc6cb78b4b34c9baf
         WEB_SITE=http://www.mpg123.de/
          ENTERED=20011104
-         UPDATED=20020907
-      LICENSE[0]=UNKNOWN
+      LICENSE[0]=LGPL
       MAINTAINER=unet@sourcemage.org
-          REJECT="Non-free for comercial use"
            SHORT="mpg123 is an audio player."
 cat << EOF
 Mpg123 is a fast, free and portable MPEG audio player for Unix. It

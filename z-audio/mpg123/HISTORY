@@ -1,3 +1,8 @@
+2006-08-30 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 0.60, removed UPDATED, changed LICENSE to LGPL
+	  fixed SOURCE_URL, removed REJECT
+	* BUILD, Makefile.diff.bz2, CONFIGURE: removed
+
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
