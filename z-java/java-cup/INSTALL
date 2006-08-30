@@ -1,0 +1,2 @@
+mkdir /opt/java-cup &&
+cp -va * /opt/java-cup
