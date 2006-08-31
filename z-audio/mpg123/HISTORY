@@ -1,4 +1,7 @@
 2006-08-31 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: added PATCHLEVEL to honour new config opts
+
+2006-08-31 Thomas Orgis <sobukus@sourcemage.org>
 	* DETAILS, mpg123-0.60.tar.bz2.gpg: Updating source stuff, description
 	* CONFIGURE, DEPENDS, BUILD: enable choice for outputs, optimization...
 	* CONFLICTS: conflict with mpg321 until that symlink
