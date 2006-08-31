@@ -1,3 +1,7 @@
+2006-08-31 Flavien Bridault <vlaaad@sourcemage.org>
+	* TRIGGERS: Added xorg-server
+	* DETAILS: PATCHLEVEL++
+
 2006-08-24 Flavien Bridault <vlaaad@sourcemage.org>
 	* DETAILS: Updated to 8774
 	* INSTALL: Modified path to nvidia-settings.png

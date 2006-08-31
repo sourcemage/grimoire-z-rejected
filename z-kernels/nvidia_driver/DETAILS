@@ -26,6 +26,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
 esac
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030401
+      PATCHLEVEL=1
          ARCHIVE=off
           REJECT="Non-GPL compatible software license"
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html

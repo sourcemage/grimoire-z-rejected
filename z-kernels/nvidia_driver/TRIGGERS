@@ -5,3 +5,4 @@ on_cast  xorg  cast_self
 on_cast  xfree86-devel  cast_self
 #? on_cast  xfree86-libs  cast_self
 on_cast  mesalib  cast_self
+on_cast  xorg-server  cast_self
