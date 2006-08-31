@@ -1,9 +1,6 @@
-bzcat  $SCRIPT_DIRECTORY/Makefile.diff.bz2  |  patch -p0  &&
-
-export CFLAGS="-DI386_ASSEM -DPENTIUM_OPT -DREAL_IS_FLOAT -DLINUX \
-                        -DREAD_MMAP -DOSS -DTERM_CONTROL \
-                        -Wall \
-                        -fomit-frame-pointer -funroll-all-loops \
-                        -finline-functions -ffast-math  \
-                        $CFLAGS"  &&
-make  PREFIX=/usr  linux
+OPTS="--with-audio=$MPG123_AUDIO $OPTS $MPG123_OPTS --with-seektable=$MPG123_SEEKTABLE" &&
+if [[ ${MPG123_CPU} != "auto" ]]
+then
+  OPTS="$OPTS --with-cpu=$MPG123_CPU"
+fi &&
+default_build
