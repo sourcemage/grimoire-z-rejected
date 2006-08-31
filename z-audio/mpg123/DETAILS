@@ -1,18 +1,18 @@
            SPELL=mpg123
          VERSION=0.60
           SOURCE=$SPELL-$VERSION.tar.bz2
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://www.mpg123.de/download/$SOURCE
-     SOURCE_HASH=sha512:490f2e7572fec9372e5270cbf8205b7fd7033508d59090dcf4ce950a97534b05d155eca3e7cd23e04fa0080bafdabfb6e003f8f8b222ededc6cb78b4b34c9baf
-        WEB_SITE=http://www.mpg123.de/
+     SOURCE_GPG=thomas.orgis.gpg:${SOURCE}.sig
+        WEB_SITE=http://www.mpg123.org/
          ENTERED=20011104
       LICENSE[0]=LGPL
       MAINTAINER=unet@sourcemage.org
-           SHORT="mpg123 is an audio player."
+           SHORT="the fast console MPEG audio player"
 cat << EOF
-Mpg123 is a fast, free and portable MPEG audio player for Unix. It
-supports MPEG 1.0/2.0 layers 1, 2 and 3. For full CD quality playback 
-(44 kHz, 16 bit, stereo) a Pentium, SPARCstation10, DEC Alpha or
-similar CPU is required. Mono and/or reduced quality playback (22 kHz 
-or 11 kHz) is even possible on 486 CPUs.
+mpg123 is a real time MPEG1.0/2.0/2.5 Audio Player for Layer 1,2 and Layer3.
+It is small/fast and comes with a nice control interface for frontends
+as well as simple terminal control.
+You can play streams from http (shoutcast, too) and it supports gapless mp3
+playback and relative volume adjustment (normalize RVA2 tags, ReplayGain values).
 EOF

@@ -1,3 +1,9 @@
+2006-08-31 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS, mpg123-0.60.tar.bz2.gpg: Updating source stuff, description
+	* CONFIGURE, DEPENDS, BUILD: enable choice for outputs, optimization...
+	* CONFLICTS: conflict with mpg321 until that symlink
+	  situation is really resolved
+
 2006-08-30 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 0.60, removed UPDATED, changed LICENSE to LGPL
 	  fixed SOURCE_URL, removed REJECT
