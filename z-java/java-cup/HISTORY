@@ -1,2 +1,9 @@
+2006-09-13 Eric Sandall <eric@sandall.us>
+	* DETAILS: Added description
+	  Correct typo in WEB_SITE
+	  Removed TAB
+	  Removed empty SOURCE_URL[0]
+
 2006-08-27 David Brown <dmlb2000@gmail.com>
 	* ALL: created spell
+

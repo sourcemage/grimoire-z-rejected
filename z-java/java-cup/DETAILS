@@ -2,12 +2,16 @@
          VERSION=11a
           SOURCE=develop.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/develop
-   SOURCE_URL[0]=
   SOURCE_HASH[0]=sha512:e4dc07caabc858ef4484b8ef3a94ee72048e200a602ef3cb13b91090904cdd9177c916d53eb8a4c527a7f31ee120f2c2a94ae0fde6b9ac82ea60db9fae395aeb
       LICENSE[0]=GPL
-          REJECT="ssl only downloading"
-	WEB_SITE=http://www2.cs.turn.edu/projects/cup/
+        WEB_SITE=http://www2.cs.tum.edu/projects/cup/
          ENTERED=20030326
+          REJECT="ssl only downloading"
            SHORT="LALR Parser Generator for Java"
 cat << EOF
+Java(tm) Based Constructor of Useful Parsers (CUP for short). CUP is a system
+for generating LALR parsers from simple specifications. It serves the same role
+as the widely used program YACC [1] and in fact offers most of the features of
+YACC. However, CUP is written in Java, uses specifications including embedded
+Java code, and produces parsers which are implemented in Java.
 EOF
