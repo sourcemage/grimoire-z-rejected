@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20050531
          UPDATED=20020531
           REJECT="is non-source and license"
-       BUILD_API=2
            SHORT="Mercury is a Java Based MSN client"
 cat << EOF
 Mercury is a Java Based MSN client.
