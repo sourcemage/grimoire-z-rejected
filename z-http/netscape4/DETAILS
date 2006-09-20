@@ -11,7 +11,6 @@ INSTALL_DIRECTORY=/usr/lib/netscape4
           UPDATED=20020909
             SHORT="netscape navigator is the venerable browser"
            REJECT="is non source"
-       MAINTAINER="Lyon Lemmens <redlemon@knoware.nl>"
 cat << EOF
 Netscape Navigator is an old browser, but still works fine.
 EOF
