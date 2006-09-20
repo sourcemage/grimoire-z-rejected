@@ -1,3 +1,6 @@
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2005-09-23 David Brown <dmlb2000@gmail.com>
         * CONFIGURE: added z-rejected mesg
         * DETAILS: added the REJECT var for the reason

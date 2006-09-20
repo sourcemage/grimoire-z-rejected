@@ -1,7 +1,6 @@
            SPELL=ipw2100 
          VERSION=1.1.0
        FWVERSION=1.3
-       BUILD_API=2
           SOURCE=$SPELL-$VERSION.tgz
 	 SOURCE2=$SPELL-fw-$FWVERSION.tgz
       SOURCE_GPG=gurus.gpg:${SOURCE}.sig
