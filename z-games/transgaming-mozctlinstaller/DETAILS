@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20050420
          UPDATED=20050420
       LICENSE[0]=http://www.transgaming.com/license.php?prepackaged
-       BUILD_API=2
          ARCHIVE="off"
           REJECT="Binary only and license issues"
            SHORT="Mozilla ActiveX Control installer"
