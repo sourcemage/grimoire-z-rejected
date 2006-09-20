@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20051122
       LICENSE[0]='see included License.pdf'
             DOCS="$DOCS *.pdf *.TXT NonGUI_Sample/"
-       BUILD_API=2
            SHORT="UPEK fingerprint scanner driver."
 cat << EOF
 UPEK, Inc.'s BioAPI 1.1 compliant GNU/Linux BSP for their TouchChip TFM/ESS
