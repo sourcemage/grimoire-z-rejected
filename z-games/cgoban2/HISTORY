@@ -1,3 +1,6 @@
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-07-07 John Harding <johnh@kuberaconsulting.com>
 	* created new spell cgoban2. cgoban is no longer being
 	  developed or maintained  and the new version is rewritten from scratch 
