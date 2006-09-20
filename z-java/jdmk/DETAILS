@@ -12,7 +12,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
          ENTERED=20030326
          UPDATED=20030326
          ARCHIVE="off"
-      MAINTAINER=vydra@fria.fri.utc.sk
            SHORT="The Java Dynamic Management Kit (JDMK)."
 cat << EOF
 The Java Dynamic Management Kit (Java DMK) is a Java application 
