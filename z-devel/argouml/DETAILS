@@ -18,7 +18,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
       LICENSE[0]=BSD
       LICENSE[1]=BSD
       LICENSE[2]=BSD
-       BUILD_API=2
           REJECT="is non-source"
            SHORT="Java-based round-trip Universal Modeling Language tool"
 cat << EOF
