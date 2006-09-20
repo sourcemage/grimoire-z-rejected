@@ -16,7 +16,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL/-bin/}-${VERSION}
          UPDATED=20030217
           REJECT="binary only"
       LICENSE[0]=UNKNOWN
-      MAINTAINER=eric@sandall.us
            SHORT="A collection of tools for Wine"
 cat << EOF
  Wine Tools is a collection of tools for Wine.
