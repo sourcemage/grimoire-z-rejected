@@ -2,7 +2,6 @@
          VERSION=1.0.1
           SOURCE=${SPELL}-${VERSION}_i386.tgz
    SOURCE_URL[0]=http://www.zen18864.zen.co.uk/overnet/${VERSION}/${SOURCE}
-       BUILD_API=2
      SOURCE_HASH=sha512:24265268572880c0d36b5c925c93ab5cdcc3c60d251464f8e60672792eeba267b11975efad3c616246ee8253f8dfd3d039f9dfd6e30e7c15fc463a6d952e8d9a
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://ed2k-gtk-gui.sourceforge.net/
