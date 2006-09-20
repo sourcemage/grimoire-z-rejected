@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/ttf
          UPDATED=20020826
          LICENSE=http://www.microsoft.com/info/cpyright.htm
          ARCHIVE="off"
-      MAINTAINER=sorcerer@flamesnyper.com
 	   SHORT="TrueType core fonts for the Web, which are no longer available"
 cat << EOF
 This _was_ the truetype spell, but due to Microsoft's pig-headed refusal to
