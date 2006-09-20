@@ -17,7 +17,6 @@ SECOND_DIRECTORY=$BUILD_DIRECTORY/Squeak-3
       LICENSE[0]=http://squeak.org/SqueakLicense/
       LICENSE[1]=http://squeak.org/SqueakLicense/
       LICENSE[2]=http://squeak.org/SqueakLicense/
-       BUILD_API=2
            SHORT="SmallTalk Development system"
 cat << EOF
 Squeak is a new OpenSource and super portable Smalltalk-80-based
