@@ -1,3 +1,6 @@
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed MAINTAINER.
+
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 	* INSTALL: remove relative paths to grimoire libraries
