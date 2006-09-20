@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
         WEB_SITE=http://morfic.homelinux.org:8080/emul32.txt
          ENTERED=20060728
           REJECT="installs from binary"
-       BUILD_API=2
            SHORT="32bit libs required by various z-rejected application to run on a 64bit install on amd64"
 cat << EOF
 This is a dependency for many z-rejected 32bit apps or plugins to function on a pure 64bit amd64 install.
