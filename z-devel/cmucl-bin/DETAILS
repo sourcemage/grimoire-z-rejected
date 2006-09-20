@@ -14,7 +14,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
     SOURCE2_HASH=sha512:c27d57608d30a02c363ceaad210cc1bd00c734c5c77a7708327eae87e5b79e8400d8b1719eea2d3be2b4f3a59c85baea20864297c5cdff869ff3da372a49653a
       LICENSE[0]=PD
           REJECT="is non source"
-      MAINTAINER=wrunt@hotmail.com
            SHORT="CMUCL is a high-performance, free Common Lisp implementation"
 cat << EOF
 CMUCL is a free implementation of the Common Lisp programming language
