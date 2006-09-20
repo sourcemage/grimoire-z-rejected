@@ -8,7 +8,6 @@ SOURCE_URL[0]=ftp://mirrors.ibiblio.org/pub/mirrors/eclipse/eclipse/downloads/dr
       LICENSE[0]=CPL
       ENTERED=20041110
       UPDATED=20041110
-      BUILD_API=2
 	  REJECT="is non-source"
       SHORT="An attempt to provide open platform for ide-style application development tools"
 cat << EOF
