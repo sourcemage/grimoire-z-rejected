@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20011112
          UPDATED=20011112
           REJECT="license/export issues"
-      MAINTAINER=hvisage@envisage.co.za
      SOURCE_HASH=sha512:53a2cf63f17302b5e70e01bd292b8e492eb12650d9d9a1861d345bcd7b223cfe18e71be430993ac2e7b7fb5a7307739aef3975391bc6f421c9229d47f1ee17b3
       LICENSE[0]=unknown
            SHORT="Sybase Advanced Server 11.0.3.3 Documentation for Linux"
