@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20011112
          UPDATED=20011112
           REJECT="installs developer version from rpm (binary), license/export issues"
-      MAINTAINER=hvisage@envisage.co.za
      SOURCE_HASH=sha512:54d73b47f61b61ad3e8838c45009aae89557f2ba66bf6ae195ee36c12fa9fda52b674bcc263cc73817c759bc019df10059d52ad1c9bca5b16c49157530002283
       LICENSE[0]=unknown
            SHORT="Sybase Advanced Server 11.0.3.3 for Linux"
