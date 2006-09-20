@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
       LICENCE[0]=http://www.cisco.com/
           REJECT="has licensing issues and you must register to obtain tarball"
          ARCHIVE="off"
-      MAINTAINER="dmlb2000@excite.com"
            SHORT="Cisco's VPN Client."
 cat << EOF
 This is Cisco's VPN Client. To obtain the sources you have to get 

@@ -1,3 +1,6 @@
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed MAINTAINER.
+
 2005-06-21 David Brown <dmlb2000@excite.com>
 	* BUILD: added making of the module
 	* PRE_BUILD: added makefile patch because for some reason they didn't have an
