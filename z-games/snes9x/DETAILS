@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-src
          ENTERED=20040108
          UPDATED=20040108
       MAKE_NJOBS=1
-       BUILD_API=2
             DOCS="README.UNIX snes9x/CHANGES.TXT"
            SHORT="Snes9x is a portable, freeware Super Nintendo Entertainment System (SNES) emulator."
 cat << EOF
