@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/admin
          ENTERED=20040202
          UPDATED=20041030
       LICENSE[0]="http://cr.yp.to/distributors.html"
-       BUILD_API=2
            SHORT="A collection of tools for managing UNIX services"
 cat << EOF
 daemontools is a collection of tools for managing UNIX services.
