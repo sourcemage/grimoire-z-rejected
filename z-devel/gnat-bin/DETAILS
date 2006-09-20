@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/gnat-$VERSION-i686-pc-linux-gnu-bin
       LICENSE[0]=GPL
          ENTERED=20050213
          UPDATED=20050213
-       BUILD_API=2
          ARCHIVE=off
             DOCS="COPYING README"
            SHORT="the GNU Ada Translator"
