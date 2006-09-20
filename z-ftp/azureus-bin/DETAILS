@@ -10,7 +10,6 @@ else
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/azureus
    SOURCE_URL[0]=$SOURCEFORGE_URL/azureus/$SOURCE
-       BUILD_API=2
       LICENCE[0]=GPL
         WEB_SITE=http://azureus.sourceforge.net
          ENTERED=20041128
