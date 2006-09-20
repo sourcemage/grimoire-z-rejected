@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/imap-$VERSION
          ENTERED=20050411
          UPDATED=20050411
       LICENSE[0]=UW-FF
-       BUILD_API=2
            SHORT='University of Washington IMAP/POP/SMTP/NNTP client library'
 cat << EOF
 The IMAP4rev1, POP3, SMTP and NNTP client API library, a.k.a. c-client.
