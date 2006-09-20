@@ -13,7 +13,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=UNKNOWN
       LICENSE[1]=UNKNOWN
-       BUILD_API=2
         WEB_SITE=http://www.americasarmy.com/
          ENTERED=20030620
          UPDATED=20030620
