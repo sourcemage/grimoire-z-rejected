@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/xforms
          UPDATED=20020903
      SOURCE_HASH=sha512:8a18a37470cc81fc7bc1a785b9f3f66b687f5a9ecc9c8681cd1c054e2323e4c654499f079f4ffa7b5f13eba89e62a2c25e56d27ea37895b57c7e472786a7bde3
 	  REJECT="is non-source"
-      MAINTAINER=fkb@iago.polito.it
            SHORT="The XForms GUI toolkit"
 cat << EOF
 This is the XForms package, a graphical user interface
