@@ -24,7 +24,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/pine$VERSION
          UPDATED=20050129
       LICENSE[0]=UW-PINE
           REJECT="has licensing issues"
-       BUILD_API=2
         KEYWORDS="pop3 mail"
            SHORT="pine-pop2 is a pop2 daemon (part of pine)."
 cat << EOF
