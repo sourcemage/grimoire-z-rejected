@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/gpc$VERSION
          UPDATED=20020528
 	  REJECT="is non-source and has licensing issues"
      SOURCE_HASH=sha512:1ecc63ae133f92472df5ac198e55a777e84246d7db73b15e9335ff145c458af363e3e64f0ec4e01e4af26dd23c829faf8a70df5059e9fd218d8e16f29618f893
-      MAINTAINER=m.l@compaqnet.fr
            SHORT="A general polygon clipper library (gpc)"
 cat << EOF
 A flexible and highly robust polygon set operations library for use with 
