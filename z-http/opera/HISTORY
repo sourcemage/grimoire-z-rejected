@@ -1,3 +1,6 @@
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* PROVIDES: [automated] Fixed invalid entries.
+
 2006-08-08 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 9.01 final (20060728.5 shared and 20060728.1 static
 
