@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          UPDATED=20011112
       LICENSE[0]=UNKNOWN
           REJECT="is non-source and has licensing issues"
-      MAINTAINER=hvisage@envisage.co.za
            SHORT="Sybase Open Client Libraries for Linux"
 cat << EOF
 Sybase Open Client Libraries for Linux
