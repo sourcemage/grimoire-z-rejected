@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/d4x-$VERSION
      SOURCE_HASH=sha512:010b80f1cf31497866620ae4bcaa0b52fadd408ca11db567ea3746cbe54bbc9e42b6ba48136867da8d359c1a22938044a1b8f2d8ecf6a678d19bf6c2d4cae39c
       LICENSE[0]=UNKNOWN
 	  REJECT="has licensing issues"
-      MAINTAINER=sandalle@yahoo.com
            SHORT='Download Accelerator for X'
 cat << EOF
 This program is a linux graphics program for downloading files through the internet which supports both ftp and http (not completed yet but curent realisation is quite enough for downloading) protocols. Program also supports RESUMING if server side supports it too. It is like kget for linux and ReGet or GetRight for Bill Gates' OS.
