@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/Apachetoolbox-$VERSION
       LICENSE[0]=UNKNOWN
 	        REJECT="files that are not tracked by sorcery"
            SHORT="Apache Toolbox provides a means to easily compile Apache (warning: 80+MB download)."
-      MAINTAINER=eric@schabell.com
 cat << EOF
 
 Warning: currently 82.24MB download.
