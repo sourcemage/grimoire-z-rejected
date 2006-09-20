@@ -12,7 +12,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${PKG_NAME}-${VERSION}
          ENTERED=20030326
          UPDATED=20030326
          ARCHIVE="off"
-      MAINTAINER=vydra@fria.fri.utc.sk
            SHORT="The Java Management Extensions (JMX)."
 cat << EOF
  Java Management Extensions (JMX) represent a universal, open technology 
