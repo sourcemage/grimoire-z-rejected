@@ -1,5 +1,5 @@
-provides  JAXM     &&
-provides  JAXP     &&
-provides  JAXR     &&
-provides  JAX-RPC  &&
-provides  SAAJ
+JAXM
+JAXP
+JAXR
+JAX-RPC
+SAAJ
