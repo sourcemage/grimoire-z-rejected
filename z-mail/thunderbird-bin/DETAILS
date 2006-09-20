@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/thunderbird
          ENTERED=20050301
          UPDATED=20050301
       LICENSE[0]=MOZILLA
-       BUILD_API=2
           REJECT="is pre-compiled sources"
            SHORT="The pre-compiled i686 version of thunderbird mailer"
 cat << EOF
