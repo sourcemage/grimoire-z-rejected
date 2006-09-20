@@ -1,6 +1,5 @@
            SPELL=pine-pop3
          VERSION=4.63
-       BUILD_API=2
           SOURCE=pine$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/pine$VERSION
    SOURCE_URL[0]=http://mirror.sit.wisc.edu/pub/net/mail/pine/$SOURCE
