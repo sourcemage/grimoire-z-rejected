@@ -11,7 +11,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
          ENTERED=20030326
          UPDATED=20030326
          ARCHIVE="off"
-      MAINTAINER=vydra@fria.fri.utc.sk
            SHORT="JavaBeans Activation Framework."
 cat << EOF
 With the JavaBeans Activation Framework standard extension, developers 
