@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
         WEB_SITE=http://www.f-prot.com
          ENTERED=20020921
          UPDATED=20030628
-      MAINTAINER=mlubrano@sourcemage.org
       LICENSE[0]=http://www.f-prot.com/products/fplin.html
 	        REJECT="has licensing issues"
            SHORT="F-Prot AntivirusTM For Linux"
