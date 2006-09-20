@@ -1,6 +1,5 @@
            SPELL=doom-shareware
          VERSION=1.8
-       BUILD_API=2
           SOURCE=doom-${VERSION}.wad.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
    SOURCE_URL[0]=ftp://ftp.idsoftware.com/idstuff/doom/${SOURCE}
