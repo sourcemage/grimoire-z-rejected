@@ -1,3 +1,6 @@
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-01-07 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DETAILS: added REJECT reason
 	* PREPARE, UNATTEND_SAFE: added for z-rejected handling
