@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerolinux
          ENTERED=20050722
          UPDATED=20050722
       LICENSE[0]=UNKNOWN
-       BUILD_API=2
          ARCHIVE="off"
           REJECT="non-source and license"
            SHORT="Linux version of Nero"
