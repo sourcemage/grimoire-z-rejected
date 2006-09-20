@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
 	WEB_SITE=http://java.sun.com/products/jdbc/
          ENTERED=20030326
          UPDATED=20030326
-      MAINTAINER=vydra@fria.fri.utc.sk
            SHORT="JDBC 2.0 Optional Package."
 cat << EOF
 Contains a compiled version (.class files) of the javax.sql 
