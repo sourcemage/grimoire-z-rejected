@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/ClibPDF
          UPDATED=20020203
      SOURCE_HASH=sha512:80bea75f3debdb470c286d9c32057193fdce7d015d288ca1d6f897dc171a337f8c90372d2195b9a83eeafffb34e5e91a1adcdaebc4122c509ab49c6d311e9d08
       LICENSE[0]=http://www.fastio.com/licensePlain.html
-      MAINTAINER="jacksonje@health.missouri.edu"
 	  REJECT="has licensing issues"
            SHORT="ClibPDF is a library for creating PDF files in C programs."
 cat << EOF
