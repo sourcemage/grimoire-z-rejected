@@ -1,3 +1,6 @@
+2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed BUILD_API=2.
+
 2006-01-21 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DEPENDS: added dependency on gcc33 (needs libstdc++.so.5)
 	* UNATTEND_SAFE: added

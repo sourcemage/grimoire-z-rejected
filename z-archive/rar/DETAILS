@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
          ENTERED=20050524
          UPDATED=20050524
       LICENSE[0]=Shareware
-       BUILD_API=2
            SHORT="RAR archive manager"
 cat << EOF
 WinRAR is a powerful archive manager. It can backup your data and reduce
