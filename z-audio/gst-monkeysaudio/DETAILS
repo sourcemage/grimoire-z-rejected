@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_HASH=sha512:54376c1f545374c2840ded50b2d0998f6f56bc28b809628266d5b4a5c71b94921575fc6a077ffaa5a0edc6231bb1d0022c0764a59a4027f9c1dbaaa54facd005
       LICENSE[0]=GPL
       LICENSE[1]="other, see libmonkeysaudio/LICENSE.libmonkeysaudio in the source"
-       BUILD_API=2
          ENTERED=20040519
          UPDATED=20040519
           REJECT="non free license"
