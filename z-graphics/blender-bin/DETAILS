@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SOURCE/.tar.gz/}
          ENTERED=20050309
          UPDATED=20050309
       LICENSE[0]=GPL
-       BUILD_API=2
            SHORT="Opensource 3d modelling/animation tool"
 cat << EOF
 Blender is an opensource 3d modelling/animation tool.
