@@ -13,7 +13,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
          ENTERED=20040422
           REJECT="is non-source"
       LICENSE[0]=freeware
-       BUILD_API=2
          ARCHIVE=off
            SHORT="Transport and economic simulation. Transport Tycoon clone."
 cat << EOF
