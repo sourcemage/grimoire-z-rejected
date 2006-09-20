@@ -25,7 +25,6 @@
    SOURCE5_URL[0]=
          WEB_SITE=http://java.sun.com/j2se/1.4.2/
          WEB_SITE=http://java.sun.com/j2se/1.4.2/
-       MAINTAINER=josebernardo1@yahoo.com
           ENTERED=20021130
           UPDATED=20031029
             SHORT="j2sdk compiles Sun's j2sdk."
