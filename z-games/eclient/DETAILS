@@ -12,7 +12,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_IGNORE="volatile"
   SOURCE2_IGNORE="volatile"
       LICENSE[0]=UNKNOWN
-       BUILD_API=2
         WEB_SITE=http://www.atitd.com/
          ENTERED=20030920
          UPDATED=20040422
