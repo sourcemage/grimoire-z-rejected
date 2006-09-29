@@ -1,19 +1,18 @@
            SPELL=azureus-bin
          PKGNAME=Azureus
-         VERSION=2.4.0.2
+         VERSION=2.5.0.0
 if  [[  "${HOST%%-*}"  ==  'x86_64'  ]];  then
           SOURCE=${PKGNAME}_${VERSION}_linux-x86_64.tar.bz2
-     SOURCE_HASH=sha512:cdf00b1dcbb3c4377c5063e5829bc2cf0bcbd519c7278f2cd120dd909e06c74e08dd47496453f18d422b95c264fdeb66f552e401cb79d1389165f7fab3c84302
+     SOURCE_HASH=sha512:5140fd103924c8bcd333af382c5e874111675311a98950f72ddb2f8cfc16e4ff7fe742314d8f058ede58f0078b35c7e6404950d62e787dd3eee4507e09ec76c3
 else
           SOURCE=${PKGNAME}_${VERSION}_linux.tar.bz2
-     SOURCE_HASH=sha512:91f4e3848d9807d8dbc055b8c55b03ff64ff52451d5a10c9b70664126d77f01d035f864b71e49152b13cbeabe8ad75ff2aaa4a0011c7ff1b0a1e82ffe56cf569
+     SOURCE_HASH=sha512:0ce2736e4741faeac3fa11318fb114e5a9fbf145bab2d5954675c049987086bd4578da46091f376b86ec7b586c4d696eaeb9516eb182333b37d8ce61a63ac5b9
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/azureus
    SOURCE_URL[0]=$SOURCEFORGE_URL/azureus/$SOURCE
       LICENCE[0]=GPL
         WEB_SITE=http://azureus.sourceforge.net
          ENTERED=20041128
-         UPDATED=20060612
            SHORT="Azureus is a java bittorrent client"
 cat << EOF
 It provides a bittorrent protocol implementation using java language.
