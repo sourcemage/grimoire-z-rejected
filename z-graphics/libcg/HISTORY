@@ -1,3 +1,6 @@
+2006-09-29 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: updated to 1.5.0, updated SOURCE_URL
+
 2006-03-31 Flavien Bridault <vlaaad@sourcemage.org
 	* DETAILS: MD5 -> SHA512 for x86_64, updated to 1.4.1,
 	  updated SOURCE_URL

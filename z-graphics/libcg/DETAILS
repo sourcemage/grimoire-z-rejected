@@ -1,18 +1,17 @@
            SPELL=libcg
-         VERSION=1.4.1
+         VERSION=1.5.0
 if [[ "${HOST%%-*}" == 'x86_64' ]]; then
-          SOURCE=Cg-${VERSION}_x86_64.tar.gz
-     SOURCE_HASH=sha512:9c075054c67d7b81667b5832bc6d87cfc6fcb249b7b230d45118d53ec9359a58ac81714adb92e9332f55dfb4230bbb6f603ec350ab35addc15dc6b2860feb2a5
+          SOURCE=Cg-${VERSION:0:3}_x86_64.tar.gz
+     SOURCE_HASH=sha512:cbe5893a495bca22616ec75c88aae41a90317edded8d9a307216967892578556b23e7c2e7e08ae555c6c3e7037199304ba51a0590735c9f1251873789b40dc75
 else
-          SOURCE=Cg-${VERSION}_x86.tar.gz
-     SOURCE_HASH=sha512:d326f730cd6d4950bfeff080866cc76578a9f2eb9af5bac843f4c400cbfd4df6f04a8dc6cec920e24c2da366cec10f7e36a1e7396058e69ac2ee7e06dc68566b
+          SOURCE=Cg-${VERSION:0:3}_x86.tar.gz
+     SOURCE_HASH=sha512:00d3796a7b672dfdabf8e6de7cb5e9263c99be13af9aba64c7a343bf79c3ed15e0357b54b92859eb315f870393bd948a12940885fb12707e4fe12881ed76de87
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/Cg
-          BRANCH=Cg_1.4
-   SOURCE_URL[0]=http://download.nvidia.com/developer/cg/$BRANCH/$VERSION/$SOURCE
+          BRANCH=Cg_1.5
+   SOURCE_URL[0]=http://developer.download.nvidia.com/cg/$BRANCH/$VERSION/$SOURCE
         WEB_SITE=http://developer.nvidia.com/object/cg_toolkit.html
          ENTERED=20040125
-         UPDATED=20050309
           REJECT="non-source plus headers"
       LICENSE[0]=NVIDIA
            SHORT="nvidia Cg libraries"
