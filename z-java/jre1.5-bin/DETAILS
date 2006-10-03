@@ -29,7 +29,6 @@ esac
         WEB_SITE=http://java.sun.com/j2se/1.5.0/download.html
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jre$VER
          ENTERED=20051101
-         UPDATED=20051101
          ARCHIVE="off"
           REJECT="is non-source"
            SHORT="jre1.5-bin is the Java Software Runtime Environment"
