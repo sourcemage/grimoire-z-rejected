@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=GPL
       LICENSE[1]="other, see libmonkeysaudio/LICENSE.libmonkeysaudio in the source"
          ENTERED=20040519
-         UPDATED=20040519
           REJECT="non free license"
             DOCS="COPYING ChangeLog NEWS README libmonkeysaudio/LICENSE.libmonkeysaudio"
            SHORT="a GStreamer plug-in for decoding Monkey's Audio files"
