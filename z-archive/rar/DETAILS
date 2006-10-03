@@ -6,7 +6,6 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
         WEB_SITE=http://www.rarlab.com/
          ENTERED=20050524
-         UPDATED=20050524
       LICENSE[0]=Shareware
            SHORT="RAR archive manager"
 cat << EOF
