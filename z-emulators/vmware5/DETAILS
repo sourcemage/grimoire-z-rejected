@@ -5,7 +5,6 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/vmware-distrib
         WEB_SITE=http://www.vmware.com
          ENTERED=20041012
-         UPDATED=20041012
       LICENSE[0]=UNKNOWN
           REJECT='license issues, must obtain tarball via website'
 	BUILD_API=2
