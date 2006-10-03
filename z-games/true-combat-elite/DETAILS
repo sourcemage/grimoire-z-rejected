@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[0]=ID
         WEB_SITE=http://www.truecombat.com/
          ENTERED=20060224
-         UPDATED=20060224
          ARCHIVE=off
           REJECT="binary only game"
             DOCS="README"
