@@ -5,7 +5,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
       SOURCE_GPG=gurus.gpg:$SOURCE.sig
         WEB_SITE=http://www.cisco.com/
          ENTERED=20051122
-         UPDATED=20051122
       LICENCE[0]=http://www.cisco.com/
           REJECT="has licensing issues and you must register to obtain tarball"
          ARCHIVE="off"
