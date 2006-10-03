@@ -6,7 +6,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
           MD5[0]=9c9a7834960d6b1126e3683da9efdb35  
 	WEB_SITE=http://www.cisco.com/
          ENTERED=20040920
-         UPDATED=20040920
       LICENCE[0]=http://www.cisco.com/
           REJECT="has licensing issues and you must register to obtain tarball"
          ARCHIVE="off"
