@@ -5,7 +5,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=ftp://ftp.eng.auburn.edu/pub/grasp/jgrasp/$SOURCE
         WEB_SITE=http://www.jgrasp.org
          ENTERED=20040607
-         UPDATED=20040607
           REJECT="license issues"
      SOURCE_HASH=sha512:64d82bbdadbd47208a440e395d10725aaadcec76e75cb642055e82e4180d56cb196e68a0c3845827f35e43e370a7df1ef630006e68e9c282739d566e4d5e310f
       LICENSE[0]=http://www.jgrasp.org/license.html
