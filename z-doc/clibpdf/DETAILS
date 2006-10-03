@@ -5,7 +5,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/ClibPDF
    SOURCE_URL[0]=http://www.fastio.com/$SOURCE
         WEB_SITE=http://www.fastio.com/
          ENTERED=20020203
-         UPDATED=20020203
      SOURCE_HASH=sha512:80bea75f3debdb470c286d9c32057193fdce7d015d288ca1d6f897dc171a337f8c90372d2195b9a83eeafffb34e5e91a1adcdaebc4122c509ab49c6d311e9d08
       LICENSE[0]=http://www.fastio.com/licensePlain.html
 	  REJECT="has licensing issues"
