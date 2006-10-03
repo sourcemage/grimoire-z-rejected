@@ -15,7 +15,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
       LICENSE[1]=UNKNOWN
         WEB_SITE=http://www.americasarmy.com/
          ENTERED=20030620
-         UPDATED=20030620
          ARCHIVE="off"
           REJECT="binary only game"
            SHORT='U.S. Army simulation game'
