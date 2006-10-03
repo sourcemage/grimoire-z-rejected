@@ -6,7 +6,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/thunderbird
      SOURCE_HASH=sha512:78f57d0128b5f162ce3851b70a15dae247f88736c7489b3a20f8fc8a0ade77133f4d09eb2b16026a553a432cf6b4e8a36233b31b2fd9bba780e079bfb01ae843
         WEB_SITE=http://www.mozilla.org/projects/thunderbird
          ENTERED=20050301
-         UPDATED=20050301
       LICENSE[0]=MOZILLA
           REJECT="is pre-compiled sources"
            SHORT="The pre-compiled i686 version of thunderbird mailer"
