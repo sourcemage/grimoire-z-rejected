@@ -6,7 +6,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_HASH=sha512:5c1510a7952f1a5a591bb791314bf69c2296cd7df1c55dab20a3943f06b248d3e3a2158b15a5acf8a3fd16b69dceaed0b3763ed6bda66bfbd99b48c2d8e5399d
         WEB_SITE=http://www.sybase.com/linux/ase/
          ENTERED=20011112
-         UPDATED=20011112
       LICENSE[0]=UNKNOWN
           REJECT="is non-source and has licensing issues"
            SHORT="Sybase Open Client Libraries for Linux"
