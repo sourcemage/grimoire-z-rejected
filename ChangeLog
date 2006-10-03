@@ -1,3 +1,7 @@
+2006-10-03 Arjan Bouter <abouter@sourcemage.org>
+	* z-devel/esharp: new spell, adds c-sharp to eclipse
+	* z-devel/phpeclipse: new spell, adds php to eclipse
+
 2006-08-29 Eric Sandall <eric@sandall.us>
 	* z-games/nwn: Added Neverwinter Nights package
 
