@@ -5,7 +5,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
           MD5[0]=e4fd246ae127357a878d249e1f6ad640
         WEB_SITE=http://www.transgaming.com/
          ENTERED=20050420
-         UPDATED=20050420
       LICENSE[0]=http://www.transgaming.com/license.php?prepackaged
          ARCHIVE="off"
           REJECT="Binary only and license issues"
