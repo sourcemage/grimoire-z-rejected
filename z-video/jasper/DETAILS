@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
       LICENSE[0]=JASPER
           REJECT="Restrictions due to jpeg-2000 patents - check http://www.ece.uvic.ca/~mdadams/jasper/LICENSE"
          ENTERED=20040118
-         UPDATED=20040118
            SHORT="Jpeg-2000 video lib"
 cat << EOF
 The JasPer Project is an open-source initiative to provide a free 
