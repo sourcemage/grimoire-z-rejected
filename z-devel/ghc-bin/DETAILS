@@ -8,7 +8,6 @@ SOURCE_URL[0]=http://www.haskell.org/ghc/dist/$VERSION/ghc-$VERSION-i386-unknown
         WEB_SITE=http://www.haskell.org/ghc
           REJECT="is binary install and has license issues"
          ENTERED=20020325
-         UPDATED=20020325
            SHORT="The Glasgow Haskell compiler"
 cat << EOF
 GHC is a state-of-the-art, open source, compiler and interactive 
