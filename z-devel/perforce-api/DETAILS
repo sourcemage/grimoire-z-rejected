@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION_MAJOR
    SOURCE_URL[1]=ftp://ftp.perforce.com/perforce/r03.2/bin.linux80x86/$SOURCE
         WEB_SITE=http://www.perforce.com
          ENTERED=20040402
-         UPDATED=20040402
 	  MD5[0]="0f0a7c84ae9986635ab2adfa38e9faa0"
       LICENSE[0]=http://www.perforce.com/perforce/price.html
 	  REJECT="is non-source and has licensing issues"
