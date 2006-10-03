@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_HASH=sha512:bb683c165abfe8fcf3e20d8dc32e690f483e9b3257b0dacca3572d3cd96475f7e9b73a951135fac278d94313673a307131fc760f2e0ea61df911c3f6c93d89dd
       LICENSE[0]="free for non-comercial use"
          ENTERED=20040429
-         UPDATED=20040429
            SHORT="dega is a Sega Master System / Mark III / Game Gear emulator"
 cat << EOF
 A sega emulator:
