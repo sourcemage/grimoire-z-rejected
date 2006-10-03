@@ -6,7 +6,6 @@
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}
         WEB_SITE=http://ed2k-gtk-gui.sourceforge.net/
          ENTERED=20041120
-         UPDATED=20041120
       LICENSE[0]=GPL
            SHORT="core binaries for ed2k-gtk-gui"
 cat << EOF
