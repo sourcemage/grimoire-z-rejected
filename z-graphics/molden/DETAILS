@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}${VERSION}
         WEB_SITE=http://www.cmbi.kun.nl/~schaft/molden/molden.html
           REJECT="has licensing issues"
          ENTERED=20020801
-         UPDATED=20020801
       LICENSE[0]=http://www.cmbi.kun.nl/~schaft/molden/CopyRight.html
            SHORT='Molecular Density visualizer for Mopac/Ampac'
 cat << EOF
