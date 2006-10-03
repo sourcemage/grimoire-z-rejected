@@ -9,7 +9,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-${VERSION}
           REJECT="is non-source"
 	      WEB_SITE=http://java.sun.com/products/javamail/
          ENTERED=20030326
-         UPDATED=20030326
          ARCHIVE="off"
            SHORT="The JavaMail API provides a set of abstract classes that model a mail system."
 cat << EOF
