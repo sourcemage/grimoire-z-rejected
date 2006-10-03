@@ -5,7 +5,6 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/XnView-1.68-x86-unknown-linux2.x-static
    SOURCE_URL[0]=ftp://www.zoo-logique.org/${SPELL}/download/${SOURCE}
         WEB_SITE=http://perso.wanadoo.fr/pierre.g/${SPELL}/
          ENTERED=20040624
-         UPDATED=20040624
      SOURCE_HASH=sha512:f1ab660d7bc3597b2e4e7ee085216384a2d46f56ae5c86e15881bddd4219d5b1f76eefa8acf5b1ed5c1dc267b2306ce566aeb7443017a8597c66652764d74054
       LICENSE[0]=UNKNOWN
            SHORT="XnView is a tool that does many things with images"
