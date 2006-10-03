@@ -6,7 +6,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/imap-$VERSION
    SOURCE_URL[0]=ftp://ftp.cac.washington.edu/imap/$SOURCE
         WEB_SITE=http://www.washington.edu/imap/
          ENTERED=20050411
-         UPDATED=20050411
       LICENSE[0]=UW-FF
            SHORT='University of Washington IMAP/POP/SMTP/NNTP client library'
 cat << EOF
