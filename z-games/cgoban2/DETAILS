@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/cgoban
       LICENSE[0]=UNKNOWN
           REJECT="binary only game with unknown licensing"
          ENTERED=20060707
-         UPDATED=20060707
            SHORT="CGoban2 provides go-related services using java 1.3 or later"
 cat << EOF
 CGoban 2 has two parts:
