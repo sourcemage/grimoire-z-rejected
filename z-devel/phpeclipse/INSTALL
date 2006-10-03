@@ -1,0 +1,2 @@
+cp -r $SOURCE_DIRECTORY/plugins/* $INSTALL_ROOT/usr/share/eclipse/plugins/
+cp -r $SOURCE_DIRECTORY/features/* $INSTALL_ROOT/usr/share/eclipse/features/

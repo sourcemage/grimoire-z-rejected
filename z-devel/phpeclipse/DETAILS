@@ -1,0 +1,13 @@
+           SPELL=phpeclipse
+         VERSION=1.1.8
+          SOURCE="net.sourceforge.phpeclipse_1.1.8.bin.dist.zip"
+   SOURCE_URL[0]=${SOURCEFORGE_URL}/${SPELL}/${SOURCE}
+     SOURCE_HASH=sha512:ef6a52cf8f00371903a57da7e3ab108d51d96a359239c8bc34f24c760259e33ea43f392ef1490f5d05adfd402f458f6c69c7a040ade99aac4dc485935808d915
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/phpeclipse"
+        WEB_SITE=http://www.sourceforge.net/projects/phpeclipse/
+      LICENSE[0]=CPL
+         ENTERED=20061002
+           SHORT="Eclipse PHP plugin"
+cat << EOF
+PHPEclipse adds PHP support to Eclipse.
+EOF
