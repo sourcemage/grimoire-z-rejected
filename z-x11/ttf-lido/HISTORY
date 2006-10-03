@@ -1,3 +1,6 @@
+2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed UPDATED.
+
 2006-27-07 Anton Brondz <dinolinux@gmail.com>
 	* INSTALL: removed cp local.conf because it doesn't exist
 	* DETAILS: fixed wrong SHA512

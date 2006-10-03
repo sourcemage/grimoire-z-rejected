@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
     SOURCE2_HASH=sha512:ef81d513b0b143bf483668d97451f4825dbae872e69fc4a766cb4996a7774c0c24bebe7bb7c066a0f813320f1d9bb6f6ef475e9e4c4b1585eb1b98a46815f96c
       LICENSE[0]=http://www.stormtype.com/license.html
          ENTERED=20040426
-         UPDATED=20040426
           REJECT="is free for non-commercial use only"
            SHORT="LIDO STF fonts are a set of free high quality fonts"
 cat << EOF
