@@ -1,0 +1,14 @@
+           SPELL=esharp
+         VERSION=3.0.0
+          SOURCE="fr.improve.csharp.editor_$VERSION.jar"
+   SOURCE_URL[0]=http://www.improve-technologies.com/alpha/updates/plugins/$SOURCE
+     SOURCE_HASH=sha512:19998810e13e20d77795c89b544397fd5f835423fe904a3d9bd694e9534df8ca2c84319b7169f38382559355a78414ab95b0774db352c3a2d52c26b38b221678
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/esharp"
+        WEB_SITE=http://www.improve-technologies.com/alpha/esharp
+      LICENSE[0]=CPL
+         ENTERED=20061002
+           SHORT="Eclipse c-sharp plugin"
+cat << EOF
+The eclipse esharp plugin adds C# support to the Eclipse IDE.  The features
+include: Syntax highlighting, content assistant and auto indentation.
+EOF
