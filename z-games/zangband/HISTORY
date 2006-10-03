@@ -1,3 +1,6 @@
+2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: [automated] Removed UPDATED.
+
 2006-06-09 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: fixed sha512sum
 	* BUILD: doesn't need to call bootstrap anymore

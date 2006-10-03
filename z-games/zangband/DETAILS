@@ -13,7 +13,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}
       LICENSE[0]=http://www.zangband.org/Technical.aspx
       LICENSE[1]=http://www.zangband.org/Technical.aspx
          ENTERED=20021001
-         UPDATED=20021001
           REJECT="Licensing issue"
            SHORT="Single-player rogue-like game"
 cat << EOF
