@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/ttf
 	  REJECT="has licensing issues"
         WEB_SITE=http://www.microsoft.com/typography/fontpack/default.htm
          ENTERED=20020826
-         UPDATED=20020826
          LICENSE=http://www.microsoft.com/info/cpyright.htm
          ARCHIVE="off"
 	   SHORT="TrueType core fonts for the Web, which are no longer available"
