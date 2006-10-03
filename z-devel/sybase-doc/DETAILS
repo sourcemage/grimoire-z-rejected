@@ -5,7 +5,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://download.sybase.com/pub/ase1103_linux/$SOURCE
         WEB_SITE=http://www.sybase.com/linux/ase/
          ENTERED=20011112
-         UPDATED=20011112
           REJECT="license/export issues"
      SOURCE_HASH=sha512:53a2cf63f17302b5e70e01bd292b8e492eb12650d9d9a1861d345bcd7b223cfe18e71be430993ac2e7b7fb5a7307739aef3975391bc6f421c9229d47f1ee17b3
       LICENSE[0]=unknown
