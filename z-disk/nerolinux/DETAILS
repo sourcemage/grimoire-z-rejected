@@ -7,7 +7,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerolinux
      SOURCE_HASH=sha512:376e61e82d976a14dbdf60e3e137ac4a7e10d7ce367194081abccb832f388b42104217397cb141bf17f1ee3a4812b990b85c76943eecc9fe3ddf757d76827877
         WEB_SITE=http://www.nero.com
          ENTERED=20050722
-         UPDATED=20050722
       LICENSE[0]=UNKNOWN
          ARCHIVE="off"
           REJECT="non-source and license"
