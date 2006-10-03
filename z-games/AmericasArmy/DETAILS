@@ -10,7 +10,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
      SOURCE_HASH=sha512:1b953bcbaa0978df5ab7291ed05cc456917e146995c1f7571fab924e715c4dc8d2733e1b7c06109fafc1dec1f3d42d706cbb2ec285b8cfb15d0fd864e000408f
         WEB_SITE=http://www.americasarmy.com/
          ENTERED=20030620
-         UPDATED=20030620
       LICENSE[0]=UNKNOWN
           REJECT="binary only game"
          ARCHIVE=off
