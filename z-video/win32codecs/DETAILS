@@ -13,7 +13,6 @@ fi
    SOURCE_URL[0]=ftp://mplayerhq.hu/MPlayer/releases/codecs/$SOURCE
         WEB_SITE=http://www.mplayerhq.hu
          ENTERED=20040713
-         UPDATED=20040713
       LICENSE[0]=PD
          ARCHIVE=off
      GATHER_DOCS=off
