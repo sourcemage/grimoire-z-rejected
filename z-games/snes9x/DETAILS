@@ -8,7 +8,6 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-src
       LICENSE[0]="non-commercial license (see license.txt in package)"
           REJECT="non-commercial license (see license.txt in package)"
          ENTERED=20040108
-         UPDATED=20040108
       MAKE_NJOBS=1
             DOCS="README.UNIX snes9x/CHANGES.TXT"
            SHORT="Snes9x is a portable, freeware Super Nintendo Entertainment System (SNES) emulator."
