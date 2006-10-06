@@ -1,3 +1,6 @@
+2006-10-06 Juuso Alasuutari <iuso@sourcemage.org>
+	* z-java/java.sh: Removed bashism.
+
 2006-10-03 Arjan Bouter <abouter@sourcemage.org>
 	* z-devel/esharp: new spell, adds c-sharp to eclipse
 	* z-devel/phpeclipse: new spell, adds php to eclipse

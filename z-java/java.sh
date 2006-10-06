@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/sh
 #
 JAVA_HOME=/usr/lib/j2sdk
 
