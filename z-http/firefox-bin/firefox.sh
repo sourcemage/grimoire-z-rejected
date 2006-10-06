@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Check for var 
 
 if [ -z "$FIREFOX" ]; then 
