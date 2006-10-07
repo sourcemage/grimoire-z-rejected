@@ -1,11 +1,11 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=2.0rc1
+         VERSION=2.0rc2
           SOURCE=firefox-${VERSION}.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
-   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/2.0rc1/linux-i686/en-US/$SOURCE
-  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/2.0rc1/linux-i686/en-US/$SOURCE2
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/2.0rc2/linux-i686/en-US/$SOURCE
+  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/2.0rc2/linux-i686/en-US/$SOURCE2
 else
          VERSION=1.5.0.7
           SOURCE=firefox-${VERSION}.tar.gz
