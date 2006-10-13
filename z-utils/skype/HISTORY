@@ -1,3 +1,10 @@
+2006-10-13 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: Updated to 1.3.0.53.
+	* INSTALL: Added install of skype-action-handler, removed 
+	  install of extra icons, added slashes to dir names and quoted 
+	  them for robustness, added missing $INSTALL_ROOT to desktop 
+	  file target.
+
 2006-07-08 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Updated to 1.3.0.30, switched from .rpm to .tar.bz2 
 	  sources, changed LICENSE to point to installed license doc, 

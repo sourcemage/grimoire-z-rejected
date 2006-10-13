@@ -1,14 +1,14 @@
              SPELL=skype
-           VERSION=1.3.0.30
-  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+           VERSION=1.3.0.53
+  SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
 if [[ $QT == y ]]; then
 # dynamic version
-            SOURCE=$SPELL-beta-$VERSION.tar.bz2
-       SOURCE_HASH=sha512:35770344c7ba00f36bf82d8e96c0fda1c9ee1a0ebaba45b1ad91bf233b299f3d66258f8e465fbabdf13df785550f98bb84f282ca60a776a62895fd5b1d350933
+            SOURCE=$SPELL-$VERSION-generic.tar.bz2
+       SOURCE_HASH=sha512:f085d79fe06e1a5667cc9fb48d830585ce77ba229236378162705487de0eb6082974e7a55d629d5ca225cbb30dffe57924a8e6cc81a76e53e4e4aa32082ccb44
 else
 # static version
-            SOURCE=$SPELL-beta_staticQT-$VERSION.tar.bz2
-       SOURCE_HASH=sha512:efc878d71aa7247aa40a266b3dab3263352bdcc31e0b7414790c534cb1c356d938b376c1fe0c6295c8bc9d27392af726c34f768198d0f13331fbbef7c4a5fc3c
+            SOURCE=${SPELL}_staticQT-$VERSION-generic.tar.bz2
+       SOURCE_HASH=sha512:3a1168e006a588e206fe142ef4cdd153922b40848699be0c607a7bdbebf8510c428ce54b8acb7b6457fe5449437a693e5d0f3638c376ddfc46aae4ea796be913
 fi
           WEB_SITE=http://www.skype.com/
      SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE

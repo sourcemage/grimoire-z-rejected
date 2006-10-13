@@ -1,33 +1,30 @@
-cd $SOURCE_DIRECTORY  &&
+cd  "$SOURCE_DIRECTORY"  &&
 
 # executables
-cp  skype                 $INSTALL_ROOT/usr/bin  &&
-cp  skype-callto-handler  $INSTALL_ROOT/usr/bin  &&
+cp  skype                 "$INSTALL_ROOT/usr/bin/"  &&
+cp  skype-action-handler  "$INSTALL_ROOT/usr/bin/"  &&
+cp  skype-callto-handler  "$INSTALL_ROOT/usr/bin/"  &&
 
 # resources
-mkdir -p      $INSTALL_ROOT/usr/share/skype  &&
-cp -r  lang   $INSTALL_ROOT/usr/share/skype  &&
-cp -r  sound  $INSTALL_ROOT/usr/share/skype  &&
+mkdir -p      "$INSTALL_ROOT/usr/share/skype/"  &&
+cp -r  lang   "$INSTALL_ROOT/usr/share/skype/"  &&
+cp -r  sound  "$INSTALL_ROOT/usr/share/skype/"  &&
 
 # dbus config
-mkdir -p        $INSTALL_ROOT/etc/dbus-1/system.d  &&
-cp  skype.conf  $INSTALL_ROOT/etc/dbus-1/system.d  &&
+mkdir -p        "$INSTALL_ROOT/etc/dbus-1/system.d/"  &&
+cp  skype.conf  "$INSTALL_ROOT/etc/dbus-1/system.d/"  &&
 
 # docs
-mkdir -p     $INSTALL_ROOT/usr/share/doc/skype  &&
-cp  README   $INSTALL_ROOT/usr/share/doc/skype  &&
-cp  LICENSE  $INSTALL_ROOT/usr/share/doc/skype  &&
+mkdir -p     "$INSTALL_ROOT/usr/share/doc/skype/"  &&
+cp  README   "$INSTALL_ROOT/usr/share/doc/skype/"  &&
+cp  LICENSE  "$INSTALL_ROOT/usr/share/doc/skype/"  &&
 
-# icons (create symlinks for backwards compatibility)
-cp  icons/*  $INSTALL_ROOT/usr/share/icons              &&
-cp  icons/*  $INSTALL_ROOT/usr/share/pixmaps            &&
-ln -s  $INSTALL_ROOT/usr/share/icons/skype_48_32.png    \
-       $INSTALL_ROOT/usr/share/icons/skype.png          &&
-ln -s  $INSTALL_ROOT/usr/share/pixmaps/skype_48_32.png  \
-       $INSTALL_ROOT/usr/share/pixmaps/skype.png        &&
+# icons
+cp  icons/skype_48_32.png  "$INSTALL_ROOT/usr/share/icons/skype.png"    &&
+cp  icons/skype_48_32.png  "$INSTALL_ROOT/usr/share/pixmaps/skype.png"  &&
 
 # desktop file
-cp  skype.desktop  /usr/share/applications  &&
+cp  skype.desktop  "$INSTALL_ROOT/usr/share/applications/"  &&
 
 # import plugins dir
-mkdir -p  $INSTALL_ROOT/usr/lib/skype/import_plugins
+mkdir -p  "$INSTALL_ROOT/usr/lib/skype/import_plugins/"
