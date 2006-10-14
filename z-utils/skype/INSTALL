@@ -20,10 +20,13 @@ cp  README   "$INSTALL_ROOT/usr/share/doc/skype/"  &&
 cp  LICENSE  "$INSTALL_ROOT/usr/share/doc/skype/"  &&
 
 # icons
+mkdir -p                   "$INSTALL_ROOT/usr/share/icons/"             &&
+mkdir -p                   "$INSTALL_ROOT/usr/share/pixmaps/"           &&
 cp  icons/skype_48_32.png  "$INSTALL_ROOT/usr/share/icons/skype.png"    &&
 cp  icons/skype_48_32.png  "$INSTALL_ROOT/usr/share/pixmaps/skype.png"  &&
 
 # desktop file
+mkdir -p           "$INSTALL_ROOT/usr/share/applications/"  &&
 cp  skype.desktop  "$INSTALL_ROOT/usr/share/applications/"  &&
 
 # import plugins dir
