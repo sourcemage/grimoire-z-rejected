@@ -1,3 +1,6 @@
+2006-10-14 Ladislav Hagara <hgr@vabo.cz>
+	* INSTALL: added "mkdir -p $INSTALL_ROOT/usr/share/pixmaps/"
+
 2006-08-31 Flavien Bridault <vlaaad@sourcemage.org>
 	* TRIGGERS: Added xorg-server
 	* DETAILS: PATCHLEVEL++
