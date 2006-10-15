@@ -1,3 +1,6 @@
+2006-10-15 Juuso Alasuutari <iuso@sourcemage.org>
+	* UNATTEND_SAFE: Added.
+
 2006-10-14 Juuso Alasuutari <iuso@sourcemage.org>
 	* INSTALL: Added some mkdir commands for robustness.
 
