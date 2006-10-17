@@ -1,3 +1,6 @@
+2006-10-17 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated devel to 2.0 RC3
+
 2006-10-08 George Sherwood <george@beernabeer.com>
 	* firefox-bin: Added $@ for command line arguements. Bug #13164.
 
