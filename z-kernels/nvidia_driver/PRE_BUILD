@@ -1,3 +1,5 @@
+unpack_file ''  &&
+
 message "${MESSAGE_COLOR}Backing up existing X/mesalib headers and libs${DEFAULT_COLOR}"  &&
 
 local  i  X_DIR  GL_DIR  GL_LIB             &&

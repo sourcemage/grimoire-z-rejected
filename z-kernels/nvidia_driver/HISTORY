@@ -1,3 +1,8 @@
+2006-10-19 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 1.0-8776, SECURITY_PATCH=1
+	  http://nvidia.custhelp.com/cgi-bin/nvidia.cfg/php/enduser/std_adp.php?p_faqid=1971
+	* PRE_BUILD: added unpack_file
+
 2006-10-14 Ladislav Hagara <hgr@vabo.cz>
 	* INSTALL: added "mkdir -p $INSTALL_ROOT/usr/share/pixmaps/"
 
