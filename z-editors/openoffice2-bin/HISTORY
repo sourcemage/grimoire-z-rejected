@@ -1,3 +1,7 @@
+2006-10-22 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: 2.0.4-5; switched two urls around to try to improve speed
+	* PRE_BUILD: generalised; now installs all packages
+
 2006-08-30 Flavien Bridault <vlaaad@sourcemage.org>
 	* DETAILS: Updated all versions to 2.0.3-7
 	* PRE_BUILD: Updated to work with new version

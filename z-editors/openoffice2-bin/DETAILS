@@ -1,5 +1,5 @@
            SPELL=openoffice2-bin
-         VERSION=2.0.3-7
+         VERSION=2.0.4-5
 if  [  "${OO2_LOCALE:-en}" == "en"  ]; then
           SOURCE=OOo_${VERSION/-*/}_LinuxIntel_install.tar.gz
      COMMON_PATH=openoffice/stable
@@ -9,8 +9,8 @@ else
      COMMON_PATH=openoffice/localized/${OO2_LOCALE}
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice2
 fi 
-   SOURCE_URL[0]=ftp://ftp.ussg.iu.edu/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
-   SOURCE_URL[1]=http://mirrors.isc.org/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
+   SOURCE_URL[0]=http://mirrors.isc.org/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
+   SOURCE_URL[1]=ftp://ftp.ussg.iu.edu/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
    SOURCE_URL[2]=http://mirror.pacific.net.au/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
    SOURCE_URL[3]=http://downloads.planetmirror.com/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
    SOURCE_URL[4]=http://ftp.scarlet.be/pub/${COMMON_PATH}/${VERSION/-*/}/${SOURCE}
