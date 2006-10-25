@@ -1,3 +1,7 @@
+2006-10-18 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: Updated to 1_4_2_12
+	* DEPENDS: No longer needs gcc33 
+
 2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
 	* PROVIDES: [automated] Fixed invalid entries.
 
