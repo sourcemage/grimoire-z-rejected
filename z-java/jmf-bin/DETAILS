@@ -8,6 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${PKG_NAME}-${VERSION}
           MD5[0]=7dd3dbf6af76c07fba32d662ba4b5243
 	WEB_SITE=http://java.sun.com/products/JavaManagement/
          ENTERED=20050605
+      PATCHLEVEL=1
          REJECT="is non-source"
            SHORT="The Java Media Framework (JMF)."
 cat << EOF

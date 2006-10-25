@@ -1,3 +1,6 @@
 cd ${INSTALL_ROOT}/usr/share &&
 
-yes | sh $SOURCE_CACHE/$SOURCE
+yes | sh $SOURCE_CACHE/$SOURCE &&
+install -m 0755 $SCRIPT_DIRECTORY/profile.d/jmf.sh  \
+                      $INSTALL_ROOT/etc/profile.d/  &&
+sedit "s/VERSION/$VERSION/"  $INSTALL_ROOT/etc/profile.d/jmf.sh
