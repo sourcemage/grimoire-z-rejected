@@ -1,6 +1,9 @@
 2006-10-26 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* INSTALL: use TRACK_ROOT when linking #9163
 
+2006-10-23 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated stable and devel to 2.0
+
 2006-10-17 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated devel to 2.0 RC3
 
