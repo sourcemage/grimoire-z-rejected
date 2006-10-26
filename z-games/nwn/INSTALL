@@ -20,8 +20,8 @@ install_config_file  nwn.ini  $I_DIR/nwn.ini  &&
 #
 # Symlink Miles 3D audio library so nwmain passes cleanse check
 #
-ln  -sf  $INSTALL_ROOT/usr/share/games/nwn/miles/libmss.so.6  \
-         $TRACK_ROOT/usr/lib/libmss.so.6                      &&
+ln  -sf  $TRACK_ROOT/usr/share/games/nwn/miles/libmss.so.6  \
+         $INSTALL_ROOT/usr/lib/libmss.so.6                      &&
 
 #
 # Install helper scripts

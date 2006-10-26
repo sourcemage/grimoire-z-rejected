@@ -1,3 +1,6 @@
+2006-10-26 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* INSTALL: use TRACK_ROOT when linking #9163
+
 2006-05-07 George Sherwood <george@beernabeer.com>
 	* INSTALL: Added code to creates links.
 	* POST_INSTALL: Removed.  Bug #10589.

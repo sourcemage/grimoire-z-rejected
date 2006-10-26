@@ -11,5 +11,5 @@ for  LINK  in  "sbase"  "scalc"  "sdraw"  "simpress"  "smath"  "soffice"  "swrit
 do
   message  "${MESSAGE_COLOR}Creating link for $LINK${DEFAUL_COLOR}"                             &&
   rm  -f  /usr/bin/$LINK                                                                        &&
-  ln  -s  /opt/openoffice/program/$LINK  /usr/bin/$LINK
+  ln -s $TRACK_ROOT/opt/openoffice/program/$LINK  /usr/bin/$LINK
 done

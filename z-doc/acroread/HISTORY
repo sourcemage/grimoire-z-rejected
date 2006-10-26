@@ -1,3 +1,6 @@
+2006-10-26 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* INSTALL: use TRACK_ROOT when linking #9163
+
 2006-09-12 Robin Cook <rcook@wyrms.net>
 	* DETAILS: updated VERSION to 7.0.8
 

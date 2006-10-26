@@ -11,9 +11,9 @@ cp  -f  ./ipopd/ipop3d  /usr/sbin/  &&
 cp  -f  ./mtest/mtest   /usr/bin/   &&
 
 if  spell_ok  stunnel;  then
-  ln  -sf  /etc/stunnel/stunnel.pem   \
+  ln -sf $TRACK_ROOT/etc/stunnel/stunnel.pem   \
            /etc/ssl/certs/imapd.pem   &&
-  ln  -sf  /etc/stunnel/stunnel.pem   \
+  ln -sf $TRACK_ROOT/etc/stunnel/stunnel.pem   \
            /etc/ssl/certs/ipop3d.pem
 fi  &&
 
