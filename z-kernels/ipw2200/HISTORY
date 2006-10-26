@@ -1,3 +1,6 @@
+2006-10-27 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: Updated to 1.2.0.
+
 2006-07-12 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Updated to 1.1.3, removed BUILD_API & UPDATED, 
 	  corrected LICENCE to LICENSE.
