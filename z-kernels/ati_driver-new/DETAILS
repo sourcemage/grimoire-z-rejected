@@ -1,0 +1,54 @@
+. $GRIMOIRE/FUNCTIONS
+persistent_add ATI_XVER
+persistent_add ATI_ARCH
+local ATI_WWW
+local ATI_FILE
+local ATI_HASH
+           SPELL=ati_driver-new
+         VERSION="${ATI_VERSION:-8.29.6}"
+if [[ ! check_if_xorg_modular_libs ]] &&
+   [[ "$(get_spell_provider $SPELL X11-LIBS)" != "xorg" ]]
+then
+        ATI_XVER=4_3_0
+else
+        ATI_XVER=6_8_0
+fi
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
+        ATI_ARCH=x86_64
+         ATI_WWW="64bit/"
+        ATI_FILE=64
+elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "ia32" ]]; then
+        ATI_ARCH=i386
+         ATI_WWW=""
+        ATI_FILE=""
+else
+  message "Unsupported architecture ${SMGL_COMPAT_ARCHS[1]}"
+fi
+case "$VERSION $ATI_ARCH $ATI_XVER" in
+   "8.29.6 i386 6_8_0")SOURCE_HASH=sha512:18630d6eeb5799a466290ae9dbcfdadf03949befa42fdcb62d923afc55b1ffe92e8d13659f2c6f081af3edbc5cfeb62bcff4ac1f10d47913e73a25b242a7bcb1 ;;
+   "8.29.6 i386 4_3_0")SOURCE_HASH=sha512:ccab65e5f69cd6796c3ad599c320ab6e9eae61a0f30970026bde59bd043c9996de7ec9bdb98db1e6b8784df8fdd11c84186f0eeefb63499d1cea10a0507a6f5e ;;
+ "8.29.6 x86_64 6_8_0")SOURCE_HASH=sha512:c692c337d1575e04c59330aa14eea606923cf35eff5e94e567abd29652577c54c2360e2e20884001dd92e273f01dcdec46e90a043941d23cae8a0644e79d06d1 ;;
+ "8.29.6 x86_64 4_3_0")SOURCE_HASH=sha512:86e2638c5df5d39f80b5029ed010c30dac599150d1f74febe5db54ae723aaa021860c39a3c4e21e29c50246e8b3ea4a86321caf1df2d56b55042ad51e4e0db4e ;;
+   "8.28.8 i386 6_8_0")SOURCE_HASH=sha512:59e64076cc7690235152d3d856bf1b398f43bfebb6e400db48c0932551d1304881296685fc5c41e46092582c51922dd6239bdbfaf47f7986b14afe64841a81e7 ;;
+   "8.28.8 i386 4_3_0")SOURCE_HASH=sha512:ba4d9c45c645bb9bc562dbdbb9d780acf00d26c973e42e4e022d07398f1645311058c7707912b96d35d00c2dd4a5d485c88329142c930c33ac92d018975391e2 ;;
+ "8.28.8 x86_64 6_8_0")SOURCE_HASH=sha512:37ec5edadb16a6bcbedaab1bf2b465a363d8940286d6fe57b0cfb8ba8cfe19a08de76d0ada7737f85da3bdd19d23a04e6b2e644380160790cabc5c33b0e776c4 ;;
+ "8.28.8 x86_64 4_3_0")SOURCE_HASH=sha512:ac04e9b184730ed1bb3203fc45b3819f2640a31010d713e51a9f6d3860558b92e1314b21b577df387114195c020be21beb8980167f3666f55ad8e4570a6bdd2d ;;
+                     *) message "Unsupported architecture, version and X version"
+esac
+          SOURCE=fglrx${ATI_FILE}_${ATI_XVER}-${VERSION}-1.${ATI_ARCH}.rpm
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://www2.ati.com/drivers/linux/${ATI_WWW}${SOURCE}
+        WEB_SITE=http://www.ati.com
+         ENTERED=20030911
+          REJECT="Non-GPL compatible software license"
+      LICENSE[0]="GPL/QPL"
+           SHORT="Driver provided by ATI for Radeon 8500+/FireGL 8700+"
+cat << EOF
+These are the ATI provided binary XFree86 drivers for their graphics cards.
+
+The ATI Proprietary Linux driver currently supports RADEON 8500 and later AGP
+or PCI Express graphics products, as well as FireGL 8700 and later products. We
+do not currently plan to include support for any products earlier than this.
+Drivers for earlier products should already be available from the DRI Project
+or Utah-GLX project.
+EOF

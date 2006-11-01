@@ -1,0 +1,6 @@
+. $GRIMOIRE/REJECTED_MSG  &&
+message "The following driver versions are available:" &&
+message "8.29.6 - Doesn't support r85xx-92xx!!!"  &&
+message "8.28.8 - Supports r85xx and above"  &&
+config_query_list ATI_VERSION "Which version do you want?" \
+                  '8.29.6' '8.28.8'

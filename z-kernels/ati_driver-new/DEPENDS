@@ -1,0 +1,8 @@
+depends  X11-LIBS        &&
+depends  rpmunpack       &&
+depends  bzip2           &&
+depends  smgl-gl_select  &&
+if [[ "${ATI_DRIVER_QT}" == "y" ]]
+then
+   depends qt-x11
+fi
