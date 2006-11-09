@@ -1,3 +1,8 @@
+2006-11-08 David Brown <dmlb2000@gmail.com>
+	* INSTALL: added patch for glext.h
+	* glext-redef.patch: removes a redefinition of something so glut can 
+	  build
+
 2006-11-08 Flavien Bridault <vlaaad@sourcemage.org>
 	* DETAILS: 1.0-9629 
 
