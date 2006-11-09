@@ -1,5 +1,5 @@
 2006-11-08 David Brown <dmlb2000@gmail.com>
-	* INSTALL: added patch for glext.h
+	* INSTALL: added patch for glext.h fixed -p value
 	* glext-redef.patch: removes a redefinition of something so glut can 
 	  build
 
