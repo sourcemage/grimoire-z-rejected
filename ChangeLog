@@ -1,3 +1,6 @@
+2006-11-08 David Brown <dmlb2000@gmail.com>
+	* .gitignore: added
+
 2006-11-01 David Kowis <dkowis@shlrm.org>
 	* z-kernels/ati_driver-new: New ati_driver spell to test
 
