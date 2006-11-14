@@ -8,7 +8,8 @@ case $MOZILLA in
 			if [ -e /usr/lib/mozilla/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/mozilla/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/mozilla/plugins/
+			cp libflashplayer.so /usr/lib/mozilla/plugins/ &&
+			cp flashplayer.xpt /usr/lib/mozilla/plugins/
 		fi
 	;;
 esac &&
@@ -29,7 +30,8 @@ case $FIREFOX in
 	                if [ -e $FIREFOX_DIR/plugins/flashplayer.xpt ]; then
 	                        rm -f $FIREFOX_DIR/plugins/flashplayer.xpt
 	                fi
-	                cp libflashplayer.so $FIREFOX_DIR/plugins/
+	                cp libflashplayer.so $FIREFOX_DIR/plugins/ &&
+	                cp flashplayer.xpt $FIREFOX_DIR/plugins/
 		fi
 	;;
 esac &&
@@ -44,7 +46,8 @@ case $SEAMONKEY in
 			if [ -e /usr/lib/seamonkey/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/seamonkey/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/seamonkey/plugins/
+			cp libflashplayer.so /usr/lib/seamonkey/plugins/ &&
+			cp flashplayer.xpt /usr/lib/seamonkey/plugins/
 		fi
 	;;
 esac &&
@@ -59,7 +62,8 @@ case $FIRE_BIN in
 			if [ -e /opt/firefox/plugins/flashplayer.xpt ]; then
 				rm -f /opt/firefox/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /opt/firefox/plugins/
+			cp libflashplayer.so /opt/firefox/plugins/ &&
+			cp flashplayer.xpt /opt/firefox/plugins/
 		fi
 	;;
 esac &&
@@ -79,7 +83,8 @@ case $KDEBASE in
 		if ! [ -d /usr/lib/konqueror ]; then
 			mkdir --mode=755 /usr/lib/konqueror
 		fi
-		cp libflashplayer.so /usr/lib/konqueror/
+		cp libflashplayer.so /usr/lib/konqueror/ &&
+		cp flashplayer.xpt /usr/lib/konqueror/
 	;;
 esac &&
 
@@ -94,7 +99,8 @@ case $OPERA in
 			if [ -e /usr/lib/opera/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/opera/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/opera/plugins/
+			cp libflashplayer.so /usr/lib/opera/plugins/ &&
+			cp flashplayer.xpt /usr/lib/opera/plugins/
 		fi
 	;;
 esac &&
@@ -110,7 +116,8 @@ case $NETSCAPE in
 			if [ -e /usr/lib/netscape4/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/netscape4/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/netscape4/plugins/
+			cp libflashplayer.so /usr/lib/netscape4/plugins/ &&
+			cp flashplayer.xpt /usr/lib/netscape4/plugins/
 		fi
 	;;
 esac

@@ -1,16 +1,16 @@
            SPELL=flash
-         VERSION=beta_101806
-          SOURCE=FP9_plugin_$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/flash-player-plugin-9.0.21.55
-   SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer9_update/$SOURCE
-#     SOURCE_HASH=sha512:eade113af7210654716a720cbe5767f5be08219451cf2057b4cd094801161083c802ab54a449ba0ac2da7e431c61153ae6ab410f5739a1dd0de4332945ab21da
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
-      LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
+         VERSION=7.0r68
+  SECURITY_PATCH=2
+          SOURCE=install_flash_player_7_linux.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_7_linux
+   SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE
+     SOURCE_HASH=sha512:eade113af7210654716a720cbe5767f5be08219451cf2057b4cd094801161083c802ab54a449ba0ac2da7e431c61153ae6ab410f5739a1dd0de4332945ab21da
         WEB_SITE=http://www.macromedia.com
          ENTERED=20020319
+      LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
           REJECT="is non-source and has licensing issues"
-           SHORT="Macromedia Flash Plugin for Web Browsers"
             DOCS="Readme.htm Readme.txt"
+           SHORT="Macromedia Flash Plugin v7 for Web Browsers."
 cat << EOF
-Macromedia Flash Plugin for web browsers.
+Macromedia Flash Plugin version 7 for web browsers.
 EOF

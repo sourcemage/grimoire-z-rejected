@@ -1,7 +1,3 @@
-2006-11-01 Eric Sandall <eric@sandall.us>
-	* DETAILS: Updated to flash9 beta (released on 10-18-06 as v9.0.21.55)
-	  Descriptions no longer refer to v7
-
 2006-09-14 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 7.0r68, SECURITY_PATCH=2, removed UPDATED
 	  http://www.adobe.com/support/security/bulletins/apsb06-11.html
