@@ -1,3 +1,8 @@
+2006-11-15 Alexander Tsamutali <astsmtl@gmail.com>
+	* DEPENDS: now depends on NS-PLUGIN-COMPATIBLE
+	  instead of GRAPHICAL-WEB-BROWSER
+	* CONFIGURE, INSTALL: added support for xulrunner
+
 2006-09-14 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 7.0r68, SECURITY_PATCH=2, removed UPDATED
 	  http://www.adobe.com/support/security/bulletins/apsb06-11.html

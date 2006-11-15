@@ -9,10 +9,11 @@ echo "Seamonkey" &&
 echo "Konqueror"  &&
 echo "Opera" &&
 echo "Netscape (not version 4.x)" &&
+echo "XULRunner" &&
 
 echo "Select which currently installed applications you wish to install Flash for."  &&
 
-persistent_add MOZILLA FIREFOX SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE  &&
+persistent_add MOZILLA FIREFOX SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE XULRUNNER &&
 
 if  spell_ok  mozilla
 then
@@ -81,5 +82,15 @@ then
     NETSCAPE=y
   else
     NETSCAPE=n
+	fi
+fi &&
+
+if  spell_ok  xulrunner
+then
+  if query "Do you wish to install the plugin for XULRunner?" y
+  then
+    XULRUNNER=y
+  else
+    XULRUNNER=n
 	fi
 fi
