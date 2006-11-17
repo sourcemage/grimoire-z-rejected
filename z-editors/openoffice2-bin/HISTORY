@@ -1,3 +1,7 @@
+2006-11-17 Arjan Bouter <abouter@sourcemage.org>
+	* locales: added nl
+	* OOo_2.0.4_LinuxIntel_install_nl.tar.gz.sig: added
+
 2006-10-26 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* INSTALL: use TRACK_ROOT when linking #9163
 
