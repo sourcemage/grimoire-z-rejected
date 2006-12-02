@@ -1,15 +1,47 @@
---- vmware-install.pl	2004-06-11 03:32:52.000000000 +0200
-+++ vmware-install.pl	2004-10-13 08:32:12.935562032 +0200
+diff -u -r vmware-distrib.orig/bin/vmware-config.pl vmware-distrib/bin/vmware-config.pl
+--- vmware-distrib.orig/bin/vmware-config.pl	2006-12-02 13:39:25.000000000 -0600
++++ vmware-distrib/bin/vmware-config.pl	2006-12-02 13:44:24.000000000 -0600
 @@ -7,6 +7,8 @@
  
  use strict;
  
 +$| = 1;
 +
- # Constants
- my $cInstallerFileName = 'vmware-install.pl';
- my $cModuleUpdaterFileName = 'install.pl';
-@@ -1978,39 +1980,11 @@
+ # Use Config module to update VMware host-wide configuration file
+ # BEGINNING_OF_CONFIG_DOT_PM
+ #!/usr/bin/perl
+@@ -21,6 +23,9 @@
+ ###
+ 
+ use strict;
++
++$| = 1;
++
+ package VMware::Config;
+ 
+ my %PREF;
+@@ -1532,6 +1537,8 @@
+ 
+ use strict;
+ 
++$| = 1;
++
+ # Create a temporary directory
+ #
+ # They are a lot of small utility programs to create temporary files in a
+diff -u -r vmware-distrib.orig/bin/vmware-uninstall.pl vmware-distrib/bin/vmware-uninstall.pl
+--- vmware-distrib.orig/bin/vmware-uninstall.pl	2006-12-02 13:39:25.000000000 -0600
++++ vmware-distrib/bin/vmware-uninstall.pl	2006-12-02 13:38:03.000000000 -0600
+@@ -7,6 +7,8 @@
+ 
+ use strict;
+ 
++$| = 1;
++
+ # Use Config module to update VMware host-wide configuration file
+ # BEGINNING_OF_CONFIG_DOT_PM
+ # END_OF_CONFIG_DOT_PM
+@@ -2054,39 +2056,11 @@
      return $initscriptsdir;
    }
  
@@ -53,45 +85,20 @@
 +
    return $answer;
  }
-
---- bin/vmware-config.pl	2004-06-11 03:32:54.000000000 +0200
-+++ bin/vmware-config.pl	2004-10-13 08:37:01.403708208 +0200
-@@ -7,6 +7,8 @@
  
- use strict;
- 
-+$| = 1;
-+
- # Use Config module to update VMware host-wide configuration file
- # BEGINNING_OF_CONFIG_DOT_PM
- #!/usr/bin/perl
-@@ -21,6 +23,7 @@
- ###
- 
- use strict;
-+$| = 1;
- package VMware::Config;
- 
- my %PREF;
-@@ -1483,6 +1486,7 @@
- #!/usr/bin/perl
- 
- use strict;
-+$| = 1;
- 
- # Create a temporary directory
- #
---- installer/services.sh	2004-10-13 19:03:24.677182184 +0200
-+++ installer/services.sh	2004-10-13 19:03:56.798299032 +0200
-@@ -22,6 +22,11 @@
- # BEGINNING_OF_TMPDIR_DOT_SH
+diff -u -r vmware-distrib.orig/installer/services.sh vmware-distrib/installer/services.sh
+--- vmware-distrib.orig/installer/services.sh	2006-12-02 13:39:25.000000000 -0600
++++ vmware-distrib/installer/services.sh	2006-12-02 13:45:55.000000000 -0600
+@@ -26,6 +26,11 @@
+ # BEGINNING_OF_UTIL_DOT_SH
  #!/bin/sh
  
 +function echo ()
 +{
-+	builtin echo "$@"
++       builtin echo "$@"
 +}
 +
- # Create a temporary directory
- #
- # They are a lot of small utility programs to create temporary files in a
+ # A few utility functions used by our shell scripts. These are patched in during
+ # make.
+ 
+
