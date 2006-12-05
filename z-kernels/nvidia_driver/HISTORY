@@ -1,5 +1,7 @@
 2006-12-05 Flavien Bridault <vlaaad@sourcemage.org>
-	* DETAILS: Updated to 1.0-9631, updated both SOURCE_URL 
+	* DETAILS: Updated to 1.0-9631, updated both SOURCE_URL
+	* CONFLICTS: Conflicts with nvidia-settings spell since it is now
+	  included in the driver
 
 2006-11-08 David Brown <dmlb2000@gmail.com>
 	* INSTALL: added patch for glext.h fixed -p value
