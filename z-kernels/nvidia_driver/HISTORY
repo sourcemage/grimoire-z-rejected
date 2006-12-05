@@ -1,3 +1,6 @@
+2006-12-05 Flavien Bridault <vlaaad@sourcemage.org>
+	* DETAILS: Updated to 1.0-9631, updated both SOURCE_URL 
+
 2006-11-08 David Brown <dmlb2000@gmail.com>
 	* INSTALL: added patch for glext.h fixed -p value
 	* glext-redef.patch: removes a redefinition of something so glut can 
