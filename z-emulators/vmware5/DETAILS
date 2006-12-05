@@ -1,14 +1,13 @@
            SPELL=vmware5
-         VERSION=5.0.0-13124
+         VERSION=5.5.2-29772
           SOURCE=VMware-workstation-$VERSION.tar.gz
-          MD5[0]=9b91ced926a620d2b6d37f1b5b982ea1
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/vmware-distrib
-        WEB_SITE=http://www.vmware.com
-         ENTERED=20041012
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=UNKNOWN
           REJECT='license issues, must obtain tarball via website'
-	BUILD_API=2
          ARCHIVE=off
+         ENTERED=20041012
+        WEB_SITE=http://www.vmware.com
            SHORT="The VMWare virtual machine."
 cat << EOF
 VMware Workstation is powerful virtual machine software for developers and system 
