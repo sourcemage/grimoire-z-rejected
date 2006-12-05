@@ -1,12 +1,12 @@
            SPELL=nvidia-settings
          VERSION=1.0
-          SOURCE=$SPELL-$VERSION.tar.gz
+#          SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://download.nvidia.com/XFree86/nvidia-settings/$SOURCE
-     SOURCE_HASH=sha512:e0f73d01b8a01a3e21a535197c9a9d80afd22e0eeb2f0613b49c050c9181e42eeec4288b305a5fcb4f17b99f5bea092d70a7a635f31dc98992289a4777a9eb49
+#   SOURCE_URL[0]=http://download.nvidia.com/XFree86/nvidia-settings/$SOURCE
+#     SOURCE_HASH=sha512:e0f73d01b8a01a3e21a535197c9a9d80afd22e0eeb2f0613b49c050c9181e42eeec4288b305a5fcb4f17b99f5bea092d70a7a635f31dc98992289a4777a9eb49
         WEB_SITE=http://www.nvidia.com
          ENTERED=20040918
-      PATCHLEVEL=2
+      PATCHLEVEL=3
          LICENSE=GPL
           REJECT="depends on the closed-source driver"
         KEYWORDS="x11"

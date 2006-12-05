@@ -1,3 +1,6 @@
+2006-11-20 Flavien Bridault <vlaaad@sourcemage.org>
+	* Deprecated because nvidia_driver spell now installs nvidia-settings itself
+
 2006-08-08 Flavien Bridault <vlaaad@sourcemage.org>
 	* INSTALL: fixed, added $INSTALL_ROOT
 	* DETAILS: updated PATCHLEVEL

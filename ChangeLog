@@ -1,3 +1,7 @@
+2006-12-05 Flavien Bridault <vlaaad@sourcemage.org>
+	* z-x11/nvidia-settingsv: deprecated because it has been included for
+	  a while in the nvidia_driver spell
+
 2006-11-08 David Brown <dmlb2000@gmail.com>
 	* .gitignore: added
 
