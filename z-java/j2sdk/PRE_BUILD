@@ -1,4 +1,4 @@
-if [[ $(uname -r) == 2.6.* ]]; then 
+if [[ $(get_running_kernel_version) == 2.6.* ]]; then 
  if [ $(cat /proc/meminfo | grep SwapFree |awk '$1=="SwapFree:"{print $2;}') -gt "1300000000" ] ;
     then mk_source_dir	$SOURCE_DIRECTORY	2g           
     else export TMPFS=off &&
