@@ -1,10 +1,10 @@
            SPELL=jasper
-         VERSION=1.700.5
+         VERSION=1.900.0
           SOURCE=${SPELL}-$VERSION.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}-$VERSION
    SOURCE_URL[0]=http://www.ece.uvic.ca/~mdadams/jasper/software/$SOURCE
         WEB_SITE=http://www.ece.uvic.ca/~mdadams/jasper/
-     SOURCE_HASH=sha512:902693edf61aee58b6f5f34746bc2bbb4215f2d0f7d043463e558ef6cca5f5dd30f9212f4ab1a3d236820a92a3c3f0379665630af1c047a49655c14961d12375
+     SOURCE_HASH=sha512:4f2c5374da7d3ae8bcccdfa7616f280ac71c0ed76353bd197ee7ebb628ea87da334d9405775a42441076a58b78069b1c451a176ddfa70e51559bd32847b46985
       LICENSE[0]=JASPER
           REJECT="Restrictions due to jpeg-2000 patents - check http://www.ece.uvic.ca/~mdadams/jasper/LICENSE"
          ENTERED=20040118
