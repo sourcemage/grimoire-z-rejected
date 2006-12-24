@@ -1,5 +1,5 @@
 depends  unixodbc  &&
-depends  X11-LIBS  &&
+optional_depends  X11-LIBS "" "" "To run gui applications" &&
 
 if  [  "$(get_spell_provider  $SPELL  X11-LIBS)"  ==  "xorg-server"  ];  then
   depends  libxi
