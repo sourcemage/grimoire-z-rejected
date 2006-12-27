@@ -1,3 +1,7 @@
+2006-12-27 Treeve Jelbert <treeve@pi.be>
+	* DETAILS: version 1.0-9746
+	* INSTALL: disable glext-redef.patch, does not apply
+
 2006-12-05 Flavien Bridault <vlaaad@sourcemage.org>
 	* DETAILS: Updated to 1.0-9631, updated both SOURCE_URL
 	* CONFLICTS: Conflicts with nvidia-settings spell since it is now
