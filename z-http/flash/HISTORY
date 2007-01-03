@@ -1,3 +1,6 @@
+2007-01-03 Juuso Alasuutari <iuso@sourcemage.org>
+	* DETAILS: Version 7.0.69.0 (bug #13368).
+
 2006-11-15 Alexander Tsamutali <astsmtl@gmail.com>
 	* DEPENDS: now depends on NS-PLUGIN-COMPATIBLE
 	  instead of GRAPHICAL-WEB-BROWSER
