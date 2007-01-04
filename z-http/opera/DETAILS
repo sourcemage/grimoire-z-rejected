@@ -35,7 +35,7 @@ fi
 #
 # Currently only v9 is signed, v8 uses sha512
 #
-if list_find "$OPERA_RELEASE" "9.*"; then
+if [[ ${OPERA_RELEASE:0:1} == 9 ]]; then
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
 fi
    SOURCE_URL[0]=ftp://ftp.olnevhost.net/pub/opera/linux/${VERPATH}/${VERSION5}/en/i386/${VERSION3}/${SOURCE}
