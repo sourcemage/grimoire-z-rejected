@@ -1,3 +1,9 @@
+2007-01-04 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: made the list_find not use a regex - preparation for #13356
+
+2007-01-03 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to 9.10 final. Bug #13375.
+
 2006-11-15 Alexander Tsamutali <astsmtl@gmail.com>
 	* PROVIDES: Added NS-PLUGIN-COMPATIBLE
 
