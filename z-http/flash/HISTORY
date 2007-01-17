@@ -1,3 +1,8 @@
+2007-01-17 Eric Sandall <eric@sandall.us>
+	* DETAILS: Updated to 9.0.31.0
+	  Added FORCE_DOWNLOAD="on" as the SOURCE is unversioned
+	  SOURCE_DIRECTORY now updates with newer releases
+
 2007-01-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Version 7.0.69.0 (bug #13368).
 
