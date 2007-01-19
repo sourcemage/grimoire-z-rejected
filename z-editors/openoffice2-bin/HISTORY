@@ -1,3 +1,6 @@
+2007-01-19 Pieter Lenaerts <e-type@sourcemage.org>
+	* INSTALL: creates /usr/share/icons
+
 2006-11-17 Arjan Bouter <abouter@sourcemage.org>
 	* locales: added nl
 	* OOo_2.0.4_LinuxIntel_install_nl.tar.gz.sig: added
