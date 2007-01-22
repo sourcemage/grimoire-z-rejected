@@ -1,15 +1,14 @@
            SPELL=ghc-bin
-         VERSION=6.4
-            ARCH="$(uname -m)" 
-  [[ "$ARCH" = i686 ]] && ARCH=i386
-          SOURCE=ghc-$VERSION-$ARCH-unknown-linux.tar.bz2
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/ghc-$VERSION
-SOURCE_URL[0]=http://www.haskell.org/ghc/dist/$VERSION/ghc-$VERSION-i386-unknown-linux.tar.bz2
-if [[ "$ARCH" = i386 ]]; then
-     SOURCE_HASH=sha512:10d8b7ce1437f796f65ae123d92137844bae75ab318ff5b6934e4347df9040272bd8f4e47e256d7197b31e37f5054d317a01950ae39b0f165ef9ef5ccaa7b8cd
-elif [[ "$ARCH" = x86_64 ]]; then
-     SOURCE_HASH=sha512:b921ee4ab5eadb2eb73eeb8ea14c52ecbe438fb0d72d8d4e5d246151f350713b620eb7cb2339b263b4212f00001e9aa1b88f521a3422c38193418cba42b3355f
+         VERSION=6.6
+if [[ ${SMGL_COMPAT_ARCH[1]} == x86_64 ]]; then
+     SOURCE_HASH=sha512:a9126f4069144a2c5df8b6e9a91eb943507e5bc3dec10a7d3fee2fd3491fc88a3c205263583a8c431d0c0363195fffc0339045303ce3c042e6d693d1c7177729
+          SOURCE=ghc-$VERSION-x86_64-unknown-linux.tar.bz2
+else
+     SOURCE_HASH=sha512:a9126f4069144a2c5df8b6e9a91eb943507e5bc3dec10a7d3fee2fd3491fc88a3c205263583a8c431d0c0363195fffc0339045303ce3c042e6d693d1c7177729
+          SOURCE=ghc-$VERSION-i386-unknown-linux.tar.bz2
 fi
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ghc-$VERSION
+   SOURCE_URL[0]=http://www.haskell.org/ghc/dist/$VERSION/$SOURCE
       LICENSE[0]="The Glasgow Haskell Compiler License"
         WEB_SITE=http://www.haskell.org/ghc
           REJECT="is binary install and has license issues"
