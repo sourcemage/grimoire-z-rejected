@@ -2,6 +2,7 @@
 	* INSTALL: Install libnvidia-wfb.so (bug #13484).
 	* DETAILS: PATCHLEVEL=1
 	* UNATTEND_SAFE: Added.
+	* PREPARE: Minor fix to license prompting conditional.
 
 2006-12-27 Treeve Jelbert <treeve@pi.be>
 	* DETAILS: version 1.0-9746
