@@ -27,6 +27,7 @@ esac
 #      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030401
+      PATCHLEVEL=1
   SECURITY_PATCH=1
          ARCHIVE=off
           REJECT="Non-GPL compatible software license"

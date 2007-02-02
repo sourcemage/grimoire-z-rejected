@@ -95,20 +95,24 @@ popd                                    &&
 # Install X11 modules
 #
 pushd  $SOURCE_DIRECTORY/usr/X11R6/lib/modules  &&
+cp  libnvidia-wfb.so.${VERSION/-/.}  "$X_MOD/"  &&
 mkdir -p $X_MOD/drivers                         &&
 for driver in nvidia_drv.o nvidia_drv.so; do
   install  -m 0644  -o root  -g root            \
      drivers/$driver  $X_MOD/drivers
 done                                            &&
+mkdir -p "$X_MOD/extensions"                    &&
 install  -m 0644  -o root  -g root              \
 extensions/libglx.so.${VERSION/-/.}             \
                   $X_MOD/extensions             &&
   #
-  # Setup extension symlink
+  # Setup symlinks
   #
+  ln  -sfn  "$X_MOD/libnvidia-wfb.so.${VERSION/-/.}"  \
+            "$X_MOD/libnvidia-wfb.so"                 &&
   pushd  $X_MOD/extensions  &&
-  ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so          &&
-  popd                                                   &&
+  ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
+  popd                                                &&
 popd                                            &&
 
 #
