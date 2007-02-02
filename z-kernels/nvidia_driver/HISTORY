@@ -1,6 +1,7 @@
 2007-02-02 Juuso Alasuutari <iuso@sourcemage.org>
 	* INSTALL: Install libnvidia-wfb.so (bug #13484).
 	* DETAILS: PATCHLEVEL=1
+	* UNATTEND_SAFE: Added.
 
 2006-12-27 Treeve Jelbert <treeve@pi.be>
 	* DETAILS: version 1.0-9746
