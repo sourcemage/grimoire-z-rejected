@@ -20,6 +20,7 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/pine${VERSION}
          ENTERED=20010922
          UPDATED=20030810
         KEYWORDS="editors"
+      PATCHLEVEL=1
            SHORT="pico is a small text editor (part of pine)."
 cat << EOF
 Pine is a tool for reading, sending, and managing electronic messages.
