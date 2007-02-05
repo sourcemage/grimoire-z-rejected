@@ -1,3 +1,10 @@
+function ask_spell()
+{
+  if spell_ok $1; then
+    config_query $3 "Do you wish to install the plugin for $2?" y
+  fi
+}
+
 # Standard rejected warnings.
 #
 source $GRIMOIRE/REJECTED_MSG  &&
@@ -15,82 +22,11 @@ echo "Select which currently installed applications you wish to install Flash fo
 
 persistent_add MOZILLA FIREFOX SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE XULRUNNER &&
 
-if  spell_ok  mozilla
-then
-  if query "Do you wish to install the plugin for Mozilla?" y
-  then
-    MOZILLA=y
-  else
-    MOZILLA=n
-	fi 
-fi  &&
-
-if  spell_ok  firefox
-then
-  if query "Do you wish to install the plugin for Firefox?" y
-  then 
-    FIREFOX=y
-  else
-    FIREFOX=n
-	fi
-fi &&
-
-if  spell_ok  seamonkey
-then
-  if query "Do you wish to install the plugin for Seamonkey?" y
-  then 
-    SEAMONKEY=y
-  else
-    SEAMONKEY=n
-	fi
-fi &&
-
-if spell_ok firefox-bin
-then
-  if query "Do you with to install the plugin for Firefox-bin?" y
-  then
-    FIRE_BIN=y
-  else
-    FIRE_BIN=n
-        fi
-fi &&
-
-if  spell_ok  kdebase
-then
-  if query "Do you wish to install the plugin for Konqueror?" y
-  then
-    KDEBASE=y
-  else
-    KDEBASE=n
-  fi
-fi &&
-
-if  spell_ok  opera
-then
-  if query "Do you wish to install the plugin for Opera?" y
-  then
-    OPERA=y
-  else
-    OPERA=n
-  fi
-fi &&
-
-if  spell_ok  netscape4
-then
-  if query "Do you wish to install the plugin for Netscape?" y
-  then
-    NETSCAPE=y
-  else
-    NETSCAPE=n
-	fi
-fi &&
-
-if  spell_ok  xulrunner
-then
-  if query "Do you wish to install the plugin for XULRunner?" y
-  then
-    XULRUNNER=y
-  else
-    XULRUNNER=n
-	fi
-fi
+ask_spell mozilla Mozilla MOZILLA
+ask_spell firefox Firefox FIREFOX
+ask_spell seamonkey Seamonkey SEAMONKEY
+ask_spell firefox-bin Firefox-bin FIRE_BIN
+ask_spell kdebase Konqueror KDEBASE
+ask_spell opera Opera OPERA
+ask_spell netscape4 Netscape NETSCAPE
+ask_spell xulrunner XULRunner XULRUNNER
