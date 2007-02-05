@@ -1,2 +1,3 @@
-depends ieee80211       &&
-depends wireless_tools
+depends  wireless_tools  &&
+
+optional_depends  ieee80211  ""  ""  "to use external IEEE80211 stack"

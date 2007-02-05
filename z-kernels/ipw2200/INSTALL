@@ -1,4 +1,5 @@
-make KVER=$(get_kernel_version) install &&
-message "${MESSAGE_COLOR}Installing firmware${DEFAULT_COLOR}" &&
-[ -d "${INSTALL_ROOT}/lib/firmware" ] || mkdir "${INSTALL_ROOT}/lib/firmware" &&
-mv $SPELL-fw-$FWVERSION/* "${INSTALL_ROOT}/lib/firmware"
+make  KVER=$(get_kernel_version)  install  &&
+
+message  "${MESSAGE_COLOR}Installing firmware...$DEFAULT_COLOR"  &&
+mkdir -p  "$INSTALL_ROOT/lib/firmware"                           &&
+mv  $SPELL-fw-$FWVERSION/*  "$INSTALL_ROOT/lib/firmware/"
