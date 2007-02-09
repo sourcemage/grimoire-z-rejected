@@ -1,0 +1,27 @@
+cd  ${INSTALL_ROOT}/usr/lib  &&
+
+yes | sh $SOURCE_CACHE/$SOURCE  &&
+
+if [[ "${ARCHITECTURE[0]}" == "i386" || "${ARCHITECTURE[0]}" == "i486" ]]
+then
+	message "${PROBLEM_COLOR}The package says i586 so if you really are running an i386 or i486 you may experience problems with this package${DEFAULT_COLOR}"
+fi
+
+if [[ "${SMGL_COMPAT_ARCH[0]}" == "ia32" ]]
+then	
+	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
+	then
+		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
+                       ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libjavaplugin_oji.so
+	fi
+
+	if [ -d ${INSTALL_ROOT}/usr/lib/firefox/plugins ]
+	then
+		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
+                       ${INSTALL_ROOT}/usr/lib/firefox/plugins/libjavaplugin_oji.so
+	fi
+fi  &&
+
+mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
+install -m 0644 $SECTION_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/  &&
+ln -sfn ${INSTALL_ROOT}/usr/lib/jdk$VER/ ${INSTALL_ROOT}/usr/lib/j2sdk

@@ -1,3 +1,7 @@
+2006-02-08 David Kowis <dkowis@shlrm.org>
+	* CONFLICTS: added a conflicts on jdk6-bin. Technically they don't conflict
+	  We just dont' have a way to select which one would be active...
+
 2006-12-24 David Kowis <dkowis@shlrm.org>
 	* DEPENDS: Changed X11-LIBS to optional, because it's only needed to run guis. not everything
 

@@ -1,3 +1,6 @@
+2007-02-08 David Kowis <dkowis@shlrm.org>
+	* CONFLICTS: Made conflict with jdk6-bin
+
 2006-10-18 Flavien Bridault <vlaaad@sourcemage.org>
 	* DETAILS: Updated to 1_4_2_12
 	* DEPENDS: No longer needs gcc33 
