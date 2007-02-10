@@ -2,6 +2,9 @@ sedit  "s/\/usr\/local\/Adobe\/Acrobat${VERSION2}.${VERSION3}/\/usr\/lib\/acrore
 install  -d  -m  755  /usr/lib/acroread                                      &&
 echo -en "\nn\n" | ./INSTALL   &&
 
+#replace acroread script with updated for expr error. Bug 13507
+cp $SCRIPT_DIRECTORY/acroread $INSTALL_ROOT/usr/lib/acroread/bin  &&
+
 ln -sf $TRACK_ROOT/usr/lib/acroread/bin/acroread  /usr/bin/acroread  &&
 
 if  [  "$ACROREAD_MOZILLA"  ==  "y"  ];  then

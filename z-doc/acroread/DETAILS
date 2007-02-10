@@ -1,5 +1,5 @@
             SPELL=acroread
-          VERSION=7.0.8
+          VERSION=7.0.9
          VERSION2=`echo $VERSION | cut -d. -f1`
          VERSION3=`echo $VERSION | cut -d. -f2`
          VERSION4=`echo $VERSION | cut -d. -f3`
