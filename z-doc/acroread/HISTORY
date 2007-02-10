@@ -1,6 +1,6 @@
 2007-02-10 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to version 7.0.9
-	* DEPENDS: No longer depends gcc33
+	* DEPENDS: No longer depends gcc33. Added depends gtk+2 Bug 13290.
 	* INSTALL: copy fixed acroread script. Bug 13507.
 	* acroread: Script updated to fix expression errors. Bug 13507.
 
