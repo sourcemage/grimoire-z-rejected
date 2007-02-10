@@ -1,3 +1,6 @@
+2007-02-10 Ethan Grammatikidis <eekee57@fastmail.fm>
+	* DETAILS: Updated to 1.5.0.11. Bug 13494.
+
 2007-02-08 David Kowis <dkowis@shlrm.org>
 	* CONFLICTS: made conflict with jdk6-bin
 
