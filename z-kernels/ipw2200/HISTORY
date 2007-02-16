@@ -1,3 +1,6 @@
+2007-02-16 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* CONFLICTS: removed ipw2200_driver, deprecation complete
+
 2007-02-05 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Version 1.2.1.
 	* DEPENDS: Made ieee80211 optional.
