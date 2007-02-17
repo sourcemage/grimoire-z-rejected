@@ -1,5 +1,5 @@
            SPELL=vmware5
-         VERSION=5.5.2-29772
+         VERSION=5.5.3-34685
           SOURCE=VMware-workstation-$VERSION.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/vmware-distrib
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
