@@ -17,6 +17,7 @@ fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
         WEB_SITE=http://www.mozilla.org/firefox
          ENTERED=20040902
+  SECURITY_PATCH=1
       LICENSE[0]=MOZILLA
           REJECT="is non-source"
            SHORT="The binary version of firefox."
