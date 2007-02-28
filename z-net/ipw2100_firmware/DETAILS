@@ -10,7 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/ipw2100-fw
       LICENCE[0]=http://ipw2100.sourceforge.net/firmware.php
           REJECT="has licensing issues you must download it from the website"
          ARCHIVE="off"
-           SHORT="Intel ProWireless 2100 kernel drivers"
+           SHORT="Intel ProWireless 2100 firmware"
 cat << EOF
-This is the Intel Pro Wireless 2100 driver found on the website ipw2200.sf.net if you want more info than that check out the web site
+This is the Intel Pro Wireless 2100 firmware found on the website ipw2200.sf.net if you want more info than that check out the web site
 EOF
