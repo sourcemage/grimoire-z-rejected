@@ -16,7 +16,7 @@
 	* BUILD: modified for api2.
 	* INSTALL: added for api2.
 
-2004-05-21 Eric Sandall <eric@sandall.us>
+2004-05-21 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
 	* HISTORY: Formatted to Guru Handbook
 
@@ -42,7 +42,7 @@
 2002-11-24 Geoffrey Derber <gderber@sourcemage.org>
 	* DETAILS: Fixed MD5 field
 
-2002-11-08 Eric Sandall <eric@sandall.us>
+2002-11-08 Eric Sandall <sandalle@sourcemage.org>
 	* Applied Bug #1558 (ML's fix)
 	* BUILD: Replaced TABs with SPACEs
 	* DETAILS: Modifed SOURCE_URL due to change on site

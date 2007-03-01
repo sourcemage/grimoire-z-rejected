@@ -24,7 +24,7 @@
 2003-01-20 Seth Woolley <seth@tautology.org>
 	* Fixed possible MD5 issue.
 
-2002-09-06 Eric Sandall <eric@sandall.us>
+2002-09-06 Eric Sandall <sandalle@sourcemage.org>
 	* Updated SOURCE2_URL to proper format
 	  Added MD5[1] and corrected MD5[0] to use .tar
 	  Modified BUILD and SOURCE2 to use .bz2 as specified in Bug #353

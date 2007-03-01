@@ -44,7 +44,7 @@
 	  Total rewrite due to new make system.
 	  Happened to make Eric's changes kind of obsolete.
 
-2002-09-17 Eric Sandall <eric@sandall.us>
+2002-09-17 Eric Sandall <sandalle@sourcemage.org>
 	* Removed optional dependency for xfree86
 
 2002-04-15 Eric Sandall <sandalle@yahoo.com>

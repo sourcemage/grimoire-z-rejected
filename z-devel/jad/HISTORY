@@ -10,7 +10,7 @@
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2004-12-04 Eric Sandall <eric@sandall.us>
+2004-12-04 Eric Sandall <sandalle@sourcemage.org>
 	* Added to z-rejected/z-devel  (Bug #7007)
 	* DETAILS: Web page and SOURCE_URL have moved
 	* BUILD: Run only `true`
