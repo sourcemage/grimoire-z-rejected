@@ -31,12 +31,12 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* PRE_BUILD: unpack api update
 
-2005-04-05 Eric Sandall <sandalle@sourcemage.org>
+2005-04-05 Eric Sandall <eric@sandall.us>
 	* BUILD: Apply 2.6.11 patch if needed
 	* 2.6.10-fix.patch: Removed
 	* 8.10.19-2.6.11.patch: Added (patch URL from Andrew Levstik)
 
-2005-04-03 Eric Sandall <sandalle@sourcemage.org>
+2005-04-03 Eric Sandall <eric@sandall.us>
 	* DETAILS: Reworded SHORT and description to give a little more detail
 	  about what this driver is for. Grabbed from:
 	  http://www.ati.com/products/catalyst/linux.html
@@ -50,10 +50,10 @@
 	* CONFIGURE: Added the REJECTED_MSG(why is this in CONFIGURE
 	  and not in PREPARE???)
 
-2005-03-12 Eric Sandall <sandalle@sourcemage.org>
+2005-03-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 8.10.19
 
-2005-02-09 Eric Sandall <sandalle@sourcemage.org>
+2005-02-09 Eric Sandall <eric@sandall.us>
 	* CONFIGURE: Added closing parenthesis. :)
 
 2005-02-06 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
@@ -67,13 +67,13 @@
 	* libstdc++.so.5: this is needed to run fgl_glxgears
 	  I tried building it but that one seg faulted on run
 
-2004-10-18 Eric Sandall <sandalle@sourcemage.org>
+2004-10-18 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Added "&&"
 
 2004-09-09 Eric Schabell <eschabell@sourcemage.org>
 	* DETAILS, BUILD: updated for v3.11.1, fixes bug #7036.
 
-2004-07-17 Eric Sandall <sandalle@sourcemage.org>
+2004-07-17 Eric Sandall <eric@sandall.us>
 	* DETAILS: Renamed to ati_driver
 	  Added md5sum
 	* CONFLICTS: Conflicts with ATI_driver
@@ -87,7 +87,7 @@
 2004-03-15 Chris Dennis <Chris.Dennis@UAlberta.NET>
 	* DETAILS: Updated to 3.7.6
 
-2003-12-10 Eric Sandall <sandalle@sourcemage.org>
+2003-12-10 Eric Sandall <eric@sandall.us>
 	* DETAILS: Put quotes around the dual licenses
 	* HISTORY: Formatted to Guru Handbook
 

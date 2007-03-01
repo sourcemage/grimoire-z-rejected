@@ -2,7 +2,7 @@
 	* CONFIGURE: remember previous answers to the questions about
 	  installing plugins
 
-2007-01-17 Eric Sandall <sandalle@sourcemage.org>
+2007-01-17 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 9.0.31.0
 	  Added FORCE_DOWNLOAD="on" as the SOURCE is unversioned
 	  SOURCE_DIRECTORY now updates with newer releases
@@ -45,11 +45,11 @@
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2005-01-19 Eric Sandall <sandalle@sourcemage.org>
+2005-01-19 Eric Sandall <eric@sandall.us>
 	* CONFIGURE: Uppercase firefox when printing it
 	  Use spell_ok instead of spell_installed
 
-2004-10-22 Eric Sandall <sandalle@sourcemage.org>
+2004-10-22 Eric Sandall <eric@sandall.us>
 	* INSTALL: Use generic /usr/lib/firefox for firefox plug-in
 
 2004-08-22 Eric Schabell <eschabell@sourcemage.org>
@@ -79,21 +79,21 @@
 	* CONFIGURE, BUILD: Added support for firefox. Modified 
 	  support to Konqueror
 
-2004-05-20 Eric Sandall <sandalle@sourcemage.org>
+2004-05-20 Eric Sandall <eric@sandall.us>
 	* DETAILS: md5sum changed again, removed MAINTAINER and
 	  removed TABs
 
 2004-05-03 Seth Woolley <seth@tautology.org>
 	* DETAILS: to fix md5 for SOURCE.
 
-2003-11-03 Eric Sandall <sandalle@sourcemage.org>
+2003-11-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Changed requires to depends, uppercase provides
 	* HISTORY: Formatted to Guru Handbook
 
-2003-09-20 Eric Sandall <sandalle@sourcemage.org>
+2003-09-20 Eric Sandall <eric@sandall.us>
 	* Now installs for mozilla-nightly and Firebird as well
 
-2003-09-19 Eric Sandall <sandalle@sourcemage.org>
+2003-09-19 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Added conflicts against swift-flash
 
 2003-08-22 Geoffrey Derber <gderber@sourcemage.org>

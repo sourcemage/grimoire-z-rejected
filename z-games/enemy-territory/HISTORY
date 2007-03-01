@@ -1,7 +1,7 @@
 2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2006-02-24 Eric Sandall <sandalle@sourcemage.org>
+2006-02-24 Eric Sandall <eric@sandall.us>
 	* DETAILS: Put planetmirror.com first as it returns HTML files less often
 	  Replace md5sum with GPG signature (old md5sum matches the signed tarball)
 	  Formatted long description to <80 columns
@@ -11,7 +11,7 @@
 	* TODO: Do not use '-R' in INSTALL for chown/chmod as that'll take ownership
 	  of mod files (e.g. True Combat: Elite)
 
-2005-11-13 Eric Sandall <sandalle@sourcemage.org>
+2005-11-13 Eric Sandall <eric@sandall.us>
 	* PRE_BUILD: Make sure games group exists
 
 2005-05-10 Geoffrey Derber <gderber@sourcemage.org>
@@ -23,7 +23,7 @@
 2005-01-15 Geoffrey Derber <gderber@sourcemage.org>
 	* DETAILS: updated to version 2.56 patch 2
 
-2004-07-12 Eric Sandall <sandalle@sourcemage.org>
+2004-07-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Removed MAINTAINER
 	  Cleaned up spacing
 	* PRE_BUILD: Remove rejected query

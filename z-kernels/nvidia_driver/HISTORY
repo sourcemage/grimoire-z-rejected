@@ -85,7 +85,7 @@
 	  install & xorg.conf auto-config)
 	* INSTALL: Removed nvidia-installer related stuff
 
-2006-05-11 Eric Sandall <sandalle@sourcemage.org>
+2006-05-11 Eric Sandall <eric@sandall.us>
 	* PRE_BUILD: Modify module-install target to use `depmod -ae` on $KVER
 	  rather than the running kernel
 	* INSTALL: Use $X_PRE instead of $INSTALL_ROOT/usr/X11R6 and $X_MOD
@@ -94,7 +94,7 @@
 	  xorg-modular ;))
 	  Forgot to set KVER (doesn't transfer from BUILD, stupid me)
 
-2006-05-10 Eric Sandall <sandalle@sourcemage.org>
+2006-05-10 Eric Sandall <eric@sandall.us>
 	* PREPARE: Remove check for running X, no longer needed
 	* PRE_BUILD: Setup Makefile -> Makefile.kbuild symlink in usr/src/nv
 	* BUILD: Build the module in BUILD, not INSTALL
@@ -178,7 +178,7 @@
 	* NVIDIA-Linux-x86-1.0-7676-pkg1.run.sig: added
 	* NVIDIA-Linux-x86_64-1.0-7676-pkg2.run.sig: added
 
-2005-08-23 Eric Sandall <sandalle@sourcemage.org>
+2005-08-23 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Added dependency on X11-SERVER (Bug #9594)
 
 2005-08-10 David Brown <dmlb2000@gmail.com>
@@ -235,12 +235,12 @@
 	* NVIDIA_kernel-1.0-7167-1233959.diff, NVIDIA_kernel-1.0-7167-1237815.diff:
 	  deleted patches, already applied in this version
 
-2005-03-14 Eric Sandall <sandalle@sourcemage.org>
+2005-03-14 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated UPDATED
 	* NVIDIA_kernel-1.0-7167-1233959.diff, NVIDIA_kernel-1.0-7167-1237815.diff:
 	  Added from http://www.nvnews.net/vbulletin/showthread.php?t=47405
 
-2005-03-12 Eric Sandall <sandalle@sourcemage.org>
+2005-03-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.0.7167
 	* NVIDIA_glx-1.0.6106-defines.patch, linux-2.6.9.patch,
 	  NVIDIA_glx-1.0.6106-glheader.patch, linux-2.6.8.1.patch: Removed
@@ -278,7 +278,7 @@
 	* DETAILS: Updated to 1.0-6629
 	* BUILD: deactivated hopefully obsolete patches
 
-2004-10-22 Eric Sandall <sandalle@sourcemage.org>
+2004-10-22 Eric Sandall <eric@sandall.us>
 	* BUILD: Apply linux-2.6.9.patch on 2.6.9 machines
 	  Apply linux-2.6.8.1.patch on 2.6.8.1 machines
 	* linux-2.6.9.patch: Patch to compile on 2.6.9  (Bug #7464)
@@ -290,19 +290,19 @@
 2004-08-17 Wolfgang Scheicher <worf@sbox.tu-graz.ac.at>
 	* PRE_BUILD: Extract SOURCE to a subdir, so it works with tmpfs
 
-2004-08-10 Eric Sandall <sandalle@sourcemage.org>
+2004-08-10 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.0-6111
 
-2004-07-25 Eric Sandall <sandalle@sourcemage.org>
+2004-07-25 Eric Sandall <eric@sandall.us>
 	* DETAILS: BUILD_API=2
 	* BUILD: Converted to BUILD_API 2
 	* INSTALL: Added
 	  Added sedit from Eric Laberge to fix compilation while X is running
 
-2004-07-18 Eric Sandall <sandalle@sourcemage.org>
+2004-07-18 Eric Sandall <eric@sandall.us>
 	* DETAILS: Remove extra '-' in SOURCE_DIRECTORY  (Thanks low)
 
-2004-07-17 Eric Sandall <sandalle@sourcemage.org>
+2004-07-17 Eric Sandall <eric@sandall.us>
 	* DETAILS: Fix md5sum
 	  Change LICENSE to LICENSE[0]
 	  Removed TAB
@@ -349,12 +349,12 @@
 	* DETAILS: remove C.Brien's patch, not needed any more
 	* BUILD: reorder the sedits to after the patch is applied, remove application of old SOURCE3 patch
 
-2003-12-03 Eric Sandall <sandalle@sourcemage.org>
+2003-12-03 Eric Sandall <eric@sandall.us>
 	* 2.6.0-test5.patch: Removed, no longer needed as of -test11
 	* BUILD: Removed application of 2.6.0-test5.patch
 	* HISTORY: Formatted to Guru Handbook
 
-2003-09-20 Eric Sandall <sandalle@sourcemage.org>
+2003-09-20 Eric Sandall <eric@sandall.us>
 	* 2.6.0-test5.patch: Patch to compile on linux 2.6.0-test5 (Bug #4317)
 
 2003-09-19 hgg <hgreig@bigpond.net.au>
@@ -388,17 +388,17 @@
 2003-07-29 hgg <hgreig@bigpond.net.au>
 	* fix bug #3777 AGAIN!!!
 
-2003-07-26 Eric Sandall <sandalle@sourcemage.org>
+2003-07-26 Eric Sandall <eric@sandall.us>
 	* BUILD: Now tests for kernel with uname
 	  Reverted to testing against 'linux' spell version
 
 2003-07-26 hgg <hgreig@bigpond.net.au>
 	* fix bug #3777
 
-2003-07-24 Eric Sandall <sandalle@sourcemage.org>
+2003-07-24 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Removed as they no longer exist (Bug #3839)
 
-2003-07-17 Eric Sandall <sandalle@sourcemage.org>
+2003-07-17 Eric Sandall <eric@sandall.us>
 	* Patch doesn't work, but also it's only needed
 	  for linux >= 2.5.0, so I've fixed that part
 

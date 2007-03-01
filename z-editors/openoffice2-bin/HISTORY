@@ -19,7 +19,7 @@
 2006-03-16 George Sherwood <george@beernabeer.com>
 	* locales: French version released.
 
-2006-03-09 Eric Sandall <sandalle@sourcemage.org>
+2006-03-09 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 2.0.2-5
 	  VERSION now has their -<release> included
 	* PRE_BUILD: Use $VERSION instead of hardcoding it
@@ -75,7 +75,7 @@
 	* DETAILS, PRE_BUILD, INSTALL: Update to version 122
 	* DEPENDS: removed rpmunpack, added alien
 
-2005-07-29 Eric Sandall <sandalle@sourcemage.org>
+2005-07-29 Eric Sandall <eric@sandall.us>
 	* DETAILS: Added usage of GPG checking
 	* PRE_BUILD: Updated for GPG checking
 	  Use SOURCE_DIRECTORY and mk_source_dir

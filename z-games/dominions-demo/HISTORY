@@ -1,14 +1,14 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-11-13 Eric Sandall <sandalle@sourcemage.org>
+2005-11-13 Eric Sandall <eric@sandall.us>
 	* PRE_BUILD: Make sure games group exists
 
 2004-04-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: changed the url as per bug #6248
 	  removed maintainer line
 
-2003-11-01 Eric Sandall <sandalle@sourcemage.org>
+2003-11-01 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Changed requires to depends, and uppercase
 
 2003-09-19 Arwed v. Merkatz <v.merkatz@gmx.net>

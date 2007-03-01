@@ -14,7 +14,7 @@
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2005-01-23 Eric Sandall <sandalle@sourcemage.org>
+2005-01-23 Eric Sandall <eric@sandall.us>
 	* POST_REMOVE,FINAL: Use spell_ok instead of spell_installed
 	* POST_INSTALL,FINAL: POST_INSTALL renamed to FINAL
 
@@ -23,7 +23,7 @@
 	* CONFIGURE: modified to use grimoire rejected message.
 	* INSTALL: added for api2.
 
-2004-05-21 Eric Sandall <sandalle@sourcemage.org>
+2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE, PREPARE: Move rejected query to CONFIGURE  (Bug #3594)
 
 2004-04-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>

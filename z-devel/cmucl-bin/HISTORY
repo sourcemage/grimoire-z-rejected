@@ -25,10 +25,10 @@
 	* POST_BUILD: branched to final for api2 compliance.
 	* CONFIGURE: updated to use grimoire rejected message.
 
-2003-10-29 Eric Sandall <sandalle@sourcemage.org>
+2003-10-29 Eric Sandall <eric@sandall.us>
 	* PROVIDES: Provides LISP
 
-2003-10-27 Eric Sandall <sandalle@sourcemage.org>
+2003-10-27 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Conflicts with clisp
 	* HISTORY: Formatted to Guru Handbook
 
@@ -39,7 +39,7 @@
 2003-04-13 Geoffrey Derber <gderber@sourcemage.org>
 	* DETAILS: Updated to version 18e
 
-2003-04-04 Eric Sandall <sandalle@sourcemage.org>
+2003-04-04 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Added conflicts gcl and provides lisp
 
 2002-11-24 Geoffrey Derber <ashaman@sourcemage.org>
