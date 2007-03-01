@@ -39,7 +39,7 @@
 	* z-devel/esharp: new spell, adds c-sharp to eclipse
 	* z-devel/phpeclipse: new spell, adds php to eclipse
 
-2006-08-29 Eric Sandall <sandalle@sourcemage.org>
+2006-08-29 Eric Sandall <eric@sandall.us>
 	* z-games/nwn: Added Neverwinter Nights package
 
 2006-08-27 David Brown <dmlb2000@gmail.com>
@@ -78,7 +78,7 @@
 2006-06-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* z-utils/scim-chinese: move to test, part of 12717
 
-2006-06-24 Eric Sandall <sandalle@sourcemage.org>
+2006-06-24 Eric Sandall <eric@sandall.us>
 	* z-games/cedega{,-small}: Cedega no longer seems to release any package
 	  except for cedega-small, so cedega is now cedega-small and cedega-small
 	  is deprecated in favor of cedega.
@@ -126,10 +126,10 @@
 	* z-audio/gst-monkeysaudio: moved from normal grimoire due to licensing
 	  issues
 
-2006-02-24 Eric Sandall <sandalle@sourcemage.org>
+2006-02-24 Eric Sandall <eric@sandall.us>
 	* z-games/true-combat-elite: Added Wolfenstein: Enemy Territory mod
 
-2006-02-15 Eric Sandall <sandalle@sourcemage.org>
+2006-02-15 Eric Sandall <eric@sandall.us>
 	* z-games/eClient: Removed long deprecated spell
 
 2006-01-28 David Kowis <dkowis@sourcemage.org>
@@ -149,31 +149,31 @@
 2005-11-27 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* z-devel/squeak: moved from devel non-Free
 
-2005-11-15 Eric Sandall <sandalle@sourcemage.org>
+2005-11-15 Eric Sandall <eric@sandall.us>
 	* accounts, groups: Sync with test
 
-2005-11-13 Eric Sandall <sandalle@sourcemage.org>
+2005-11-13 Eric Sandall <eric@sandall.us>
 	* accounts: Sync with test
 	* groups: Sync with test
 	  Added disk:6:, cdrom:24:, and floppy:25:
 
-2005-11-08 Eric Sandall <sandalle@sourcemage.org>
+2005-11-08 Eric Sandall <eric@sandall.us>
 	* z-games/cedega: Updated to 5.0, now includes Point2Play and Cedega
 	* z-games/cedega-small: Branched from cedega. Same, but point2play-small
 	* z-games/point2play: Deprecated in favour of cedega
 	* z-games/point2play-small: Deprecated in favour of cedega-small
 
-2005-10-13 Eric Sandall <sandalle@sourcemage.org>
+2005-10-13 Eric Sandall <eric@sandall.us>
 	* gurus.gpg: Added 38D489C7 (RSA for sha512) and revoked E08D7131
 	  Updated all tarballs signed with E08D7131 to 38D489C7
 
 2005-09-09 Jason Flatt <jflatt@sourcemage.org>
 	* Moved z-net/djbdns from devel.
 
-2005-08-17 Eric Sandall <sandalle@sourcemage.org>
+2005-08-17 Eric Sandall <eric@sandall.us>
 	* gurus.gpg: Integrated from test grimoire
 
-2005-07-29 Eric Sandall <sandalle@sourcemage.org>
+2005-07-29 Eric Sandall <eric@sandall.us>
 	* gurus.gpg: Integrated from devel grimoire
 
 2005-06-20 Andrew Stitt <astitt@sourcemage.org>
@@ -183,13 +183,13 @@
 2005-05-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* games-z-rejected: moved to z-rejected/z-games
 
-2005-04-08 Eric Sandall <sandalle@sourcemage.org>
+2005-04-08 Eric Sandall <eric@sandall.us>
 	* accounts, groups: Synched with devel
 
-2005-04-07 Eric Sandall <sandalle@sourcemage.org>
+2005-04-07 Eric Sandall <eric@sandall.us>
 	* FUNCTIONS: Integrated changes from devel so z-rejected has them too
 
-2005-03-09 Eric Sandall <sandalle@sourcemage.org>
+2005-03-09 Eric Sandall <eric@sandall.us>
 	* z-graphics/Cg: Renamed to z-graphics/libcg (already a nwes/cg spell)
 
 2005-02-25 Ladislav Hagara <hgr@vabo.cz>
@@ -199,7 +199,7 @@
 	* REJECTED_MSG: fix typo spell_spell -> spell_ok
 	* z-devel/perforce-proxy: added new spell for perforce proxying
 
-2005-01-23 Eric Sandall <sandalle@sourcemage.org>
+2005-01-23 Eric Sandall <eric@sandall.us>
 	* REJECTED_MSG: Renamed spell_installed to spell_ok
 	  Removed #!/bin/bash
 	* z-java/java-functions: Removed #!/bin/bash
@@ -323,13 +323,13 @@
 	* z-utils/skype: Added
 	* z-editors/Openoffice-bin: Updated to 1.1.2
 
-2004-05-21 Eric Sandall <sandalle@sourcemage.org>
+2004-05-21 Eric Sandall <eric@sandall.us>
 	* z-editors/OOodi2: Removed, replaced by OOodi
 
-2004-04-12 Eric Sandall <sandalle@sourcemage.org>
+2004-04-12 Eric Sandall <eric@sandall.us>
 	* z-java/jaf,jms,jmx,jdmk,jndi,java_xml_pack,javamail,jdbc-optional,jta:
 	  Moved from java due to licensing
 
-2004-01-29 Eric Sandall <sandalle@sourcemage.org>
+2004-01-29 Eric Sandall <eric@sandall.us>
 	* Moved z-video/xvid to devel grimoire video-libs/xvid
 

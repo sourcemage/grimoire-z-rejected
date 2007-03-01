@@ -13,21 +13,21 @@
 	* INSTALL: added for api2.
 	* CONFIGURE: updated to use grimoire rejected message.
 
-2004-06-01 Eric Sandall <sandalle@sourcemage.org>
+2004-06-01 Eric Sandall <eric@sandall.us>
 	* DETAILS: md5sum changed again
 
 2004-05-03 Seth Woolley <seth@tautology.org>
 	* DETAILS: to fix md5 for SOURCE.
 
-2004-02-24 Eric Sandall <sandalle@sourcemage.org>
+2004-02-24 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 4.0
 	  Removed MAINTAINER and a TAB
 
-2003-11-04 Eric Sandall <sandalle@sourcemage.org>
+2003-11-04 Eric Sandall <eric@sandall.us>
 	* BUILD, CONFIGURE, PRE_BUILD: fixed per bug 4760
 	* PRE_BUILD: removed, moved the z-rejected prompt to CONFIGURE
 
-2003-11-04 Eric Sandall <sandalle@sourcemage.org>
+2003-11-04 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 3.9, added md5sum
 	* BUILD: Added '&&'s for completeness
 	* HISTORY: Formatted to Guru Handbook

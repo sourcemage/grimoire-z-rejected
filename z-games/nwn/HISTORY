@@ -1,7 +1,7 @@
 2006-10-26 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* INSTALL: use TRACK_ROOT not INSTALL_ROOT when linking #9163
 
-2006-08-15 Eric Sandall <sandalle@sourcemage.org>
+2006-08-15 Eric Sandall <eric@sandall.us>
 	* DETAILS,DEPENDS,PRE_BUILD,BUILD,INSTALL,excluded,volatiles: Created
 	  Installation instructions available at
 	  http://nwn.bioware.com/downloads/linuxclient.html

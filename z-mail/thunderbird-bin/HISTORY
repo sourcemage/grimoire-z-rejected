@@ -13,13 +13,13 @@
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2005-03-12 Eric Sandall <sandalle@sourcemage.org>
+2005-03-12 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Depends on gcc33
 
-2005-03-03 Eric Sandall <sandalle@sourcemage.org>
+2005-03-03 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Conflicts with thunderbird
 
-2005-03-01 Eric Sandall <sandalle@sourcemage.org>
+2005-03-01 Eric Sandall <eric@sandall.us>
 	* Added to z-rejected/z-http  (Bug #8334)
 	* Needs to setup gcc33 properly for test/devel grimoires
 

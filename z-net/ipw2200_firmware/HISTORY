@@ -37,7 +37,7 @@
 2004-08-21 David Brown <dmlb2000@excite.com>
 	* BUILD cleaned up /usr/src/ dir 
 
-2004-08-20 Eric Sandall <sandalle@sourcemage.org>
+2004-08-20 Eric Sandall <eric@sandall.us>
 	* HISTORY: Removed execute bit
 	  Fixed David's creation date ;
 	* DETAILS: Use bughost.org instead of David's server (update from David)

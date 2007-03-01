@@ -20,16 +20,16 @@
 	* CONFIGURE: added standard z-rejected CONFIGURE, spell moved to
 	  z-rejected
 
-2004-09-13 Eric Sandall <sandalle@sourcemage.org>
+2004-09-13 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Conflicts with openglut
 
-2004-08-06 Eric Sandall <sandalle@sourcemage.org>
+2004-08-06 Eric Sandall <eric@sandall.us>
 	* DETAILS: BUILD_API=2
 	* BUILD: Converted to BUILD_API 2
 	* INSTALL: Added
 	* HISTORY: Formatted to Guru Handbook
 
-2004-07-17 Eric Sandall <sandalle@sourcemage.org>
+2004-07-17 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated UPDATED
 	  Removed TABs
 	  Shortened SHORT
@@ -47,7 +47,7 @@
 2003-10-03 hgg <hgreig@bigpond.net.au>
 	* DEPENDS: Change requires x11-libs to depends x11-libs
 
-2003-09-22 Eric Sandall <sandalle@sourcemage.org>
+2003-09-22 Eric Sandall <eric@sandall.us>
 	* PROVIDES: Provides GLUT
 	* CONFLICTS: Conflicts with freeglut
 

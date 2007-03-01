@@ -4,7 +4,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-10-11 Eric Sandall <sandalle@sourcemage.org
+2005-10-11 Eric Sandall <eric@sandall.us
 	* PROVIDES: Provides SSH
 
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
@@ -13,13 +13,13 @@
 2005-03-10 Ladislav Hagara <hgr@vabo.cz>
 	* CONFLICTS: added dropbear
 
-2005-01-23 Eric Sandall <sandalle@sourcemage.org>
+2005-01-23 Eric Sandall <eric@sandall.us>
 	* CONFIGURE: Use spell_ok instead of spell_installed
 
 2005-01-23 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* CONFLICTS: added conflict to lower cased linux-pam
 
-2004-08-06 Eric Sandall <sandalle@sourcemage.org>
+2004-08-06 Eric Sandall <eric@sandall.us>
 	* DETAILS: Removed TABs
 	* CONFIGURE: Converted to config_query
 	* BUILD: Use config_query responses
@@ -30,7 +30,7 @@
 	* CONFIGURE: updated to use grimoire rejected message.
 	* PREPARE: removed.
 
-2003-09-16 Eric Sandall <sandalle@sourcemage.org>
+2003-09-16 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Added conflicts to lsh
 
 2003-07-17 Geoffrey Derber <ashaman@sourcemage.org>

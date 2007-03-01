@@ -12,7 +12,7 @@
 	* INSTALL, CONFIGURE: cleaned up config_query_options and started
 	  to investigate for bug #7502.
 
-2004-08-03 Eric Sandall <sandalle@sourcemage.org>
+2004-08-03 Eric Sandall <eric@sandall.us>
 	* DEPENDS: SDL renamed to sdl
 	 Cleaned up TABs and spaces
 
@@ -28,7 +28,7 @@
 	* winex.patch, BUILD: removed usage of old patch, need someone to 
 	  test the results as it builds fine here on i686, bug #4757.
 
-2004-05-21 Eric Sandall <sandalle@sourcemage.org>
+2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
 
 2003-07-06 Jose Bernardo Silva <jbernardo@sourcemage.org>

@@ -122,14 +122,14 @@
 	* INSTALL: add ln -s in /usr/bin
 	* FINAL: deleted.  Not using the installer version.
 
-2005-03-31 Eric Sandall <sandalle@sourcemage.org>
+2005-03-31 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Depends on gcc33 (Thanks sleon)
 	  Formatted to Guru Handbook
 
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2004-10-22 Eric Sandall <sandalle@sourcemage.org>
+2004-10-22 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated UPDATED
 	* INSTALL: Create generic /usr/lib/firefox for plug-ins
 

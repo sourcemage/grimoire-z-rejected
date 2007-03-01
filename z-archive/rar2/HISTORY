@@ -29,7 +29,7 @@
 	* INSTALL: added for api2.
 	* CONFIGURE: modified to use z-rejected reject messages.
 
-2004-05-20 Eric Sandall <sandalle@sourcemage.org>
+2004-05-20 Eric Sandall <eric@sandall.us>
 	* PREPARE, CONFIGURE: Renamed PREPARE to CONFIGURE to query for z-rejected
 	status at configure time.
 

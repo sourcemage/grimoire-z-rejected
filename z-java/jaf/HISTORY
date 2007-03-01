@@ -21,10 +21,10 @@
 	* PRE_BUILD: cleaned up.
 	* CONFIGURE: modified to use grimoire reject message.
 
-2004-04-12 Eric Sandall <sandalle@sourcemage.org>
+2004-04-12 Eric Sandall <eric@sandall.us>
 	* Moved to z-rejected/z-java for licensing issues
 
-2003-10-29 Eric Sandall <sandalle@sourcemage.org>
+2003-10-29 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Depends on JAVA
 	* PROVIDES: Uppercase provides
 	* HISTORY: Formatted to Guru Handbook

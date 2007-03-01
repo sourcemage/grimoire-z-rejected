@@ -10,7 +10,7 @@
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2004-10-18 Eric Sandall <sandalle@sourcemage.org>
+2004-10-18 Eric Sandall <eric@sandall.us>
 	* DEPENDS: Depends on rpmunpack (removed from basesystem)
 
 2004-08-05 Eric Schabell <eschabell@sourcemage.org>
@@ -18,14 +18,14 @@
 	* INSTALL, FINAL: added for api2.
 	* CONFIGURE: updated to use grimoire rejected message.
 
-2004-05-21 Eric Sandall <sandalle@sourcemage.org>
+2004-05-21 Eric Sandall <eric@sandall.us>
 	* CONFIGURE, PRE_BUILD: Move rejected query to CONFIGURE (Bug #3594)
 	* HISTORY: Formatted to Guru handbook
 
-2002-12-31 Eric Sandall <sandalle@sourcemage.org>
+2002-12-31 Eric Sandall <eric@sandall.us>
 	* DETAILS: Fixed MD5
 
-2002-12-30 Eric Sandall <sandalle@sourcemage.org>
+2002-12-30 Eric Sandall <eric@sandall.us>
 	* HISTORY: Created
 	* DETAILS: Added MD5, LICENSE and rejected info
 	* Moved to z-rejected from libs due to licensing

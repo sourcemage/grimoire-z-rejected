@@ -28,25 +28,25 @@
 2005-04-01 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 1.0-7174
 
-2005-03-12 Eric Sandall <sandalle@sourcemage.org>
+2005-03-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.0.7167
 
-2005-02-28 Eric Sandall <sandalle@sourcemage.org>
+2005-02-28 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Conflicts with mesalib as well
 
-2005-01-29 Eric Sandall <sandalle@sourcemage.org>
+2005-01-29 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.0-6629-pkg1
 
-2005-01-28 Eric Sandall <sandalle@sourcemage.org>
+2005-01-28 Eric Sandall <eric@sandall.us>
 	* All of z-rejected is build_api 2 ;)
 	* BUILD: Run only `true`
 	* INSTALL: Branched from BUILD
 	  Converted to build_api 2
 
-2004-08-12 Eric Sandall <sandalle@sourcemage.org>
+2004-08-12 Eric Sandall <eric@sandall.us>
 	* DETAILS: Updated to 1.0-6111-pkg1
 
-2004-07-17 Eric Sandall <sandalle@sourcemage.org>
+2004-07-17 Eric Sandall <eric@sandall.us>
 	* DETAILS: Renamed to nvidia_headers
 	  Removed TAB
 	  Shortened SHORT
@@ -70,7 +70,7 @@
 	  Some installs will have a cache so added a PREPARE file to remove bad cache 
 	  before any problems occur
 
-2003-06-15 Eric Sandall <sandalle@sourcemage.org>
+2003-06-15 Eric Sandall <eric@sandall.us>
 	* DETAILS: Some cleanup
 
 2003-06-06 hgg <hgreig@bigpond.net.au>

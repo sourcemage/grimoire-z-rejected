@@ -11,10 +11,10 @@
 	* BUILD: prelinking is always disabled
 	* INSTALL: inisqueak is now installed from build directory
 
-2005-02-28 Eric Sandall <sandalle@sourcemage.org>
+2005-02-28 Eric Sandall <eric@sandall.us>
 	* CONFLICTS: Removed conflicting spell
 
-2004-12-16 Eric Sandall <sandalle@sourcemage.org>
+2004-12-16 Eric Sandall <eric@sandall.us>
 	* Renamed to squeak
 	* DETAILS: Renamed to squeak
 	  Removed MAINTAINER
