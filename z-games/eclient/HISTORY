@@ -1,11 +1,11 @@
 2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
-2006-04-21 Eric Sandall <eric@sandall.us>
+2006-04-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: SOURCE and SOURCE2 constantly change, marking with
 	  SOURCE*_IGNORE=volatile
 
-2006-02-17 Eric Sandall <eric@sandall.us>
+2006-02-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: SOURCE_URL and SOURCE2_URL changed
 	  SOURCE2 changed to download update-launcher, elaunch no longer exists
 	  Updated VERSION to 20050217
@@ -26,7 +26,7 @@
 2005-12-01 Seth Woolley <seth@tautology.org>
 	* DETAILS: MD5 -> SHA512
 
-2005-11-13 Eric Sandall <eric@sandall.us>
+2005-11-13 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Make sure games group exists
 	  Converted to unpack_file
 
@@ -40,12 +40,12 @@
 2004-04-22 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: urls fixed as per bug #6249, removed MAINTIANER line
 
-2004-01-23 Eric Sandall <eric@sandall.us>
+2004-01-23 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on X11-SERVER, not -LIBS
 
-2003-11-01 Eric Sandall <eric@sandall.us>
+2003-11-01 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Changed requires to depends, and uppercase
 
-2003-09-20 Eric Sandall <eric@sandall.us>
+2003-09-20 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

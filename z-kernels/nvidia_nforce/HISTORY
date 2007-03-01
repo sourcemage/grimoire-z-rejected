@@ -10,7 +10,7 @@
 	  kernel and this only works on 2.4.x (nforce3 support, etc. 
 	  added)
 
-2004-07-17 Eric Sandall <eric@sandall.us>
+2004-07-17 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Renamed to nvidia_nforce
 	  Removed MAINTAINER
 	  Shortened SHORT
