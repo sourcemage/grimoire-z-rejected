@@ -14,7 +14,7 @@
 	* DETAILS: Updated binaries for x86 to 2005.1
 	* PRE_BUILD: Updated to use SOURCE_HASH checking
 
-2005-08-10 Eric Sandall <eric@sandall.us>
+2005-08-10 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Binaries updates for x86
 
 2005-04-05 Benoit PAPILLAULT <benoit.papillault@sourcemage.org>
@@ -35,7 +35,7 @@
 	  add FORCE_DOWNLOAD;
 	* FINAL: FORCE_DOWNLOAD is used instead of removing files from cache.
 
-2005-02-16 Eric Sandall <eric@sandall.us>
+2005-02-16 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: p4 and p4web updated to 2004.2/75008
 
 2005-02-06 David Brown <dmlb2000@excite.com>
@@ -58,12 +58,12 @@
 	* CONFIGURE: updated to use grimoire rejected message.
 	* POST_BUILD: branched to FINAL and removed.
 
-2004-06-24 Eric Sandall <eric@sandall.us>
+2004-06-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Fixed md5sums (binaries changed, verified with Tony)
 	Removed MAINTAINER
 	Removed TABs
 
-2004-05-21 Eric Sandall <eric@sandall.us>
+2004-05-21 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE: Added to query for rejected status
 
 2004-05-03 Seth Woolley <seth@tautology.org>

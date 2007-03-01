@@ -77,7 +77,7 @@
 2005-02-01 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: version bump to 1.0.0.1
 
-2005-01-05 Eric Sandall <eric@sandall.us>
+2005-01-05 Eric Sandall <sandalle@sourcemage.org>
 	* Applied John's patch  (Bug #7889)
 
 2004-12-27 John Harding	<johnh@kuberaconsulting.com>

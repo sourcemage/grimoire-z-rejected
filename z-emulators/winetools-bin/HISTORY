@@ -19,9 +19,9 @@
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2004-05-21 Eric Sandall <eric@sandall.us>
+2004-05-21 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
 
-2003-02-17 Eric Sandall <eric@sandall.us>
+2003-02-17 Eric Sandall <sandalle@sourcemage.org>
 	* Created spell
 

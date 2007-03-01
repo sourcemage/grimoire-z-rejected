@@ -4,7 +4,7 @@
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2004-11-22 Eric Sandall <eric@sandall.us>
+2004-11-22 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE: Changed `exit` to `return 1`  (Bug #7649)
 
 2004-09-30 Ladislav Hagara <hgr@vabo.cz>

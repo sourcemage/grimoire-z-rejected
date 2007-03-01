@@ -16,7 +16,7 @@
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2004-11-22 Eric Sandall <eric@sandall.us>
+2004-11-22 Eric Sandall <sandalle@sourcemage.org>
 	* INSTALL: Changed `exit 1` to `return 1`  (Bug #7649)
 
 2004-08-08 Eric Schabell <eschabell@sourcemage.org>
@@ -24,10 +24,10 @@
 	* INSTALL: added for api2.
 	* CONFIGURE: modified to use grimoire rejected message.
 
-2004-05-21 Eric Sandall <eric@sandall.us>
+2004-05-21 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
 
-2003-11-03 Eric Sandall <eric@sandall.us>
+2003-11-03 Eric Sandall <sandalle@sourcemage.org>
 	* PROVIDES: Upper-case provides
 	* HISTORY: Formatted to Guru Handbook
 

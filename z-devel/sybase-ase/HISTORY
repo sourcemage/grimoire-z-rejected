@@ -10,7 +10,7 @@
 2005-03-30 Andrew Stitt <astitt@sourcemage.org>
 	* CONFIGURE: remove relative paths to grimoire libraries
 
-2004-10-18 Eric Sandall <eric@sandall.us>
+2004-10-18 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on rpmunpack (removed from basesystem)
 
 2004-08-03 Eric Schabell <eschabell@sourcemage.org>
@@ -22,7 +22,7 @@
 	* PRE_BUILD: removed, as it tries to patch before sources 
 	  have been unpacked.
 
-2004-05-21 Eric Sandall <eric@sandall.us>
+2004-05-21 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE, PRE_BUILD: Move rejected query to CONFIGURE  (Bug #3594)
 	* HISTORY: Formatted to Guru Handbook
 

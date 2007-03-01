@@ -16,7 +16,7 @@
 	* INSTALL, FINAL: added for api2.
 	* POST_INSTALL: moved to FINAL.
 
-2004-05-21 Eric Sandall <eric@sandall.us>
+2004-05-21 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE, PRE_BUILD: Moved rejected query to CONFIGURE  (Bug #3594)
 	* HISTORY: Formatted to Guru Handbook
 

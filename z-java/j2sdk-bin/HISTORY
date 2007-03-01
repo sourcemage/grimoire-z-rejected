@@ -14,10 +14,10 @@
 2006-02-11 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 1_4_2_10
 
-2005-12-19 Eric Sandall <eric@sandall.us>
+2005-12-19 Eric Sandall <sandalle@sourcemage.org>
 	* PROVIDES: Provides a Java Developer Kit (needed by db for Java support)
 
-2005-12-08 Eric Sandall <eric@sandall.us>
+2005-12-08 Eric Sandall <sandalle@sourcemage.org>
 	* CONFLICTS: Also conflicts with jre1.5-bin
 
 2005-11-19 George Sherwood <george@beernabeer.com>
@@ -38,7 +38,7 @@
 2005-06-26 George Sherwood <george@beernabeer.com>
 	* volatiles: Added file to ignore lib. (Bug #8987)
 
-2005-05-17 Eric Sandall <eric@sandall.us>
+2005-05-17 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on gcc33 (for libstdc++.so.5)
 
 2005-04-26 George Sherwood <george@beernabeer.com>
@@ -72,7 +72,7 @@
 2004-08-14 Eric Schabell <eschabell@sourcemage.org>
 	* CONFIGURE: z-java/JAVA_WARNING added.
 
-2004-08-05 Eric Sandall <eric@sandall.us>
+2004-08-05 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: unixODBC renamed to unixodbc
 
 2004-07-29 Eric Schabell <eschabell@sourcemage.org>
@@ -102,14 +102,14 @@
 	* BUILD: don't link all binaries to /usr/bin, as that overwrites files
 	  of gcj and isn't needed (java.sh sets the path)
 
-2004-03-30 Eric Sandall <eric@sandall.us>
+2004-03-30 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD,CONFIGURE: Moved rejected query to before cast starts
 
 2003-12-14 hgg <hgreig@bigpond.net.au>
 	* BUILD,java.sh: now installs this file for setting of $JAVA_HOME
 	* POST_INSTALL: deleted (see above)
 
-2003-10-29 Eric Sandall <eric@sandall.us>
+2003-10-29 Eric Sandall <sandalle@sourcemage.org>
 	* PROVIDES: Uppercase provides
 
 2003-10-18 hgg <hgreig@bigpond.net.au>
@@ -118,7 +118,7 @@
 2003-05-15 Seth Woolley <seth@tautology.org>
 	* PRE_BUILD: added unpack to PRE_BUILD for SOURCE
 
-2003-05-09 Eric Sandall <eric@sandall.us>
+2003-05-09 Eric Sandall <sandalle@sourcemage.org>
 	* PREPARE: Added support for SPARC architecture (couldn't find PPC files) i586 is default, just in case the selection is 
 	  somehow missed...
 

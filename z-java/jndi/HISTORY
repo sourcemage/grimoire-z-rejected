@@ -18,10 +18,10 @@
 	  remind user about sources.
 	* PRE_BUILD: cleaned up old reject message.
 
-2004-04-12 Eric Sandall <eric@sandall.us>
+2004-04-12 Eric Sandall <sandalle@sourcemage.org>
 	* Moved to z-rejected/z-java for licensing issues
 
-2003-10-29 Eric Sandall <eric@sandall.us>
+2003-10-29 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on JAVA
 	* HISTORY: Formatted to Guru Handbook
 

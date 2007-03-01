@@ -48,7 +48,7 @@
 2005-01-20 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 4.62
 
-2004-07-19 Eric Sandall <eric@sandall.us>
+2004-07-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 4.61
 
 2004-05-12 Ladislav Hagara <hgr@vabo.cz>
@@ -57,7 +57,7 @@
 2003-09-13 Ladislav Hagara <hgr@vabo.cz>
 	* updated to 4.58
 
-2003-08-23 Eric Sandall <eric@sandall.us>
+2003-08-23 Eric Sandall <sandalle@sourcemage.org>
 	* Updated to 4.56 (Bug #4081)
 
 2003-08-10 hgg <hgreig@bigpond.net.au>
@@ -66,14 +66,14 @@
 2003-07-26 hgg <hgreig@bigpond.net.au>
 	* Update TRIGGERS for Linux-PAM
 
-2003-01-16 Eric Sandall <eric@sandall.us>
+2003-01-16 Eric Sandall <sandalle@sourcemage.org>
 	* Updated to v4.53
 
-2002-12-16 Eric Sandall <eric@sandall.us>
+2002-12-16 Eric Sandall <sandalle@sourcemage.org>
 	* Updated to v4.51 (Bug #1958, thanks to M.L.)
 	* Added Linux-PAM and openssl as optional_depends
 
-2002-11-23 Eric Sandall <eric@sandall.us>
+2002-11-23 Eric Sandall <sandalle@sourcemage.org>
 	* Updated to v4.50 (Bug #1781, thanks to M.L.)
 
 2002-07-17 Eric Sandall <sandalle@yahoo.com>

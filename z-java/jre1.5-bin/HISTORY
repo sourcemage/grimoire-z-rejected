@@ -26,10 +26,10 @@
 2006-08-06 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 1.5.0.7
 
-2005-12-08 Eric Sandall <eric@sandall.us>
+2005-12-08 Eric Sandall <sandalle@sourcemage.org>
 	* CONFLICTS: Also conflicts with jdk1.5-bin
 
-2005-12-07 Eric Sandall <eric@sandall.us>
+2005-12-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 1.5.0.6
 
 2005-12-06 Andrew Stitt <astitt@sourcemage.org>

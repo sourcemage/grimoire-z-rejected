@@ -15,7 +15,7 @@
 	  other applications may expect it
 	* POST_INSTALL: call to default_post_install at the end
 
-2004-11-22 Eric Sandall <eric@sandall.us>
+2004-11-22 Eric Sandall <sandalle@sourcemage.org>
 	* CONFIGURE,PRE_REMOVE: Changed `exit 1` to `return 1`  (Bug #7649)
 
 2004-10-14 Eric Schabell <eschabell@sourcemage.org>

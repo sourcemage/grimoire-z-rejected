@@ -40,7 +40,7 @@
 	* INSTALL: removed kernel check for in-built ieee80211
 	* ieee80211-1.0.3.tgz.sig: deleted
 
-2006-01-11 Eric Sandall <eric@sandall.us>
+2006-01-11 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated short and long descriptions according to the website
 
 2005-07-30 David Brown <dmlb2000@gmail.com>
