@@ -1,3 +1,7 @@
+2007-03-02 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 1.5.0_11
+	* PROVIDES: Provides JDK5
+
 2006-02-08 David Kowis <dkowis@shlrm.org>
 	* CONFLICTS: added a conflicts on jdk6-bin. Technically they don't conflict
 	  We just dont' have a way to select which one would be active...
