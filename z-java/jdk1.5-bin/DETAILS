@@ -28,6 +28,7 @@ case "${SMGL_COMPAT_ARCHS[0]}" in
 esac
         WEB_SITE=http://java.sun.com/j2se/1.5.0/download.html
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk$VER
+      PATCHLEVEL=1
          ENTERED=20041006
          ARCHIVE="off"
           REJECT="is non-source"

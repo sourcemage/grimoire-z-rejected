@@ -7,7 +7,7 @@ then
 	message "${PROBLEM_COLOR}The package says i586 so if you really are running an i386 or i486 you may experience problems with this package${DEFAULT_COLOR}"
 fi
 
-if [[ "${SMGL_COMPAT_ARCH[0]}" == "ia32" ]]
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "ia32" ]]
 then	
 	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
 	then
