@@ -1,10 +1,10 @@
            SPELL=nerolinux
-         VERSION=2.1.0.3-x86
+         VERSION=2.1.0.4b-x86
           SOURCE=$SPELL-$VERSION.rpm
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/nerolinux
    SOURCE_URL[0]=ftp://ftp.us.nero.com/$SOURCE
    SOURCE_URL[1]=http://httpdl1.nero.com/$SOURCE
-     SOURCE_HASH=sha512:f06746cd22a0f6177ef09ec24b5e010016f74864121d3d3bd8af7d457f640facde5d8ed08c9a52a101c20f6ee1717b1938f9049616df0f441313e43b1211b9cf
+     SOURCE_HASH=sha512:9aebc1771ba517cffc8c3131c01df2bcbee109127241e777057f8207a9eeccad0cb8741dc6233f72a5b0319b9d985aed6a9c7074c23217586ce1be7db7ccc21c
         WEB_SITE=http://www.nero.com
          ENTERED=20050722
       LICENSE[0]=UNKNOWN
