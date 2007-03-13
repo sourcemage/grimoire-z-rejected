@@ -9,8 +9,8 @@ case "${SMGL_COMPAT_ARCHS[1]}" in
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
         ;;
 	ia32)
-         VERSION=1.0-9746
-     SOURCE_HASH=sha512:bb7d25e0aba2a09d87cbec3e1fa4d40d38963fd8fa7611beb6480430b7383cf3345f525dc8c2357ecef4de8e9c1bb6a7c0a3c5bceb1f514307bb09f84d4a9752
+         VERSION=1.0-9755
+     SOURCE_HASH=sha512:6b9c4bd2e008a1800752c91ab68c5b38d48d7e934bdbd5e1304f4861b7d18b8d415f450acb981219aa56457501adccb2dff2b34e4c358ff553896d8598c7c31b
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
@@ -27,7 +27,7 @@ esac
 #      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030401
-      PATCHLEVEL=1
+      PATCHLEVEL=0
   SECURITY_PATCH=1
          ARCHIVE=off
           REJECT="Non-GPL compatible software license"
