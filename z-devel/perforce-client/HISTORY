@@ -1,3 +1,6 @@
+2007-03-18 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated binaries for x86 and powerpc. Bug #12132
+
 2006-07-28 Treeve Jelbert <treeve@pi.be>
 	* DETAILS: Updated binaries for x86/x86_64 to 2006.1/101890
 	  no longer a special case for amd64
