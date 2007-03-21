@@ -1,3 +1,7 @@
+2007-03-21 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Not sure why unixodbc was commented out, but it is required
+	  Partially fixes Bug #13643
+
 2007-03-05 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Increment PATCHLEVEL to 1 so people have the plugin
 	  installed
