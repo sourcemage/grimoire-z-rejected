@@ -1,4 +1,5 @@
 default_pre_build                       &&
 cd   ${SOURCE_DIRECTORY}/lib/xtra/graf  &&
 unpack_file 2                           &&
-cd  ${SOURCE_DIRECTORY}
+cd  ${SOURCE_DIRECTORY}                 &&
+sedit 's#^DESTDIR = .*#DESTDIR = $(datadir)/zangband/#' makefile.in
