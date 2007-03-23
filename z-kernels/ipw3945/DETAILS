@@ -1,0 +1,26 @@
+           SPELL=ipw3945
+         VERSION=1.2.0
+       FWVERSION=1.14.2
+        DVERSION=1.7.22
+          SOURCE=$SPELL-$VERSION.tgz
+	 SOURCE2=$SPELL-ucode-$FWVERSION.tgz
+         SOURCE3=${SPELL}d-${DVERSION}.tgz
+     SOURCE_HASH=sha512:327a502cdc73f22ac3e81b3267542071b41ef62e2d6f739cb221b28604da76e0a3bce9023e09332a004d4271e50583bc366aa263f2b8b70e8917f4eac58be68d 
+    SOURCE2_HASH=sha512:9631e86ede7c4cf382b497e3557b7f66a502359099eb262f1d234e9d7e1f363743ba4bf16e1b1e9e07e6557907dfdffa6f1354c2ccd6bdb5e3b6048b6e481b09
+    SOURCE3_HASH=sha512:9dad50fdb21935f1b4fd7714f1e72a8117bf40a64d7d40cb12d15af0e426706576819b0f285c53b9f449fecef903b11a1e594e0a833fdcd1af3ed7859b6e8ac2
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+  SOURCE2_URL[0]=http://bughost.org/ipw3945/ucode/${SOURCE2}
+  SOURCE3_URL[0]=http://bughost.org/ipw3945/daemon/${SOURCE3}
+        WEB_SITE=http://$SPELL.sourceforge.net/
+         ENTERED=20070423
+      LICENSE[0]=GPL
+          REJECT="Binary regulatory daemon and binary firmware see $WEB_SITE for more information"
+           SHORT="Intel PRO/Wireless 2200BG Driver for Linux"
+cat << EOF
+This project was created by Intel to enable support for the Intel PRO/Wireless
+3945ABG Network Connection adapter. This project (IPW3945) is intended to be a
+community effort as much as is possible. As with our other wireless adapters,
+there are some working constraints related to documentation we can make publicly
+available.
+EOF

@@ -1,0 +1,25 @@
+make  KVER=$(get_kernel_version)  install  &&
+
+message  "${MESSAGE_COLOR}Installing firmware...$DEFAULT_COLOR"  &&
+mkdir -p  "$INSTALL_ROOT/lib/firmware"                           &&
+mv  $SPELL-ucode-$FWVERSION/$SPELL.ucode  "$INSTALL_ROOT/lib/firmware/$SPELL.ucode" &&
+message "${MESSAGE_COLOR}Installing regulatory daemon...${DEFAULT_COLOR}" &&
+local arch
+case "${SMGL_COMPAT_ARCHS[1]}" in
+  ia32)
+    arch=x86
+  ;;
+  x86_64)
+    arch=x86_64
+  ;;
+  *)
+    message "${PROBLEM_COLOR}${SPELL}d isn't built for your arch${DEFAULT_COLOR}"
+    
+  ;;
+esac
+for file in ${arch}/${SPELL}d ${SPELL}d-start ${SPELL}d-stop
+do
+  cp ${SPELL}d-${DVERSION}/${file} ${INSTALL_ROOT}/sbin &&
+  chmod +x ${INSTALL_ROOT}/sbin/$(basename $file)
+done &&
+cp ${SPELL_DIRECTORY}/${SPELL}d ${INSTALL_ROOT}/etc/modprobe.d/${SPELL}d

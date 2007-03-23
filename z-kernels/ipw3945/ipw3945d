@@ -1,0 +1,2 @@
+install ipw3945 modprobe --ignore-install ipw3945 && /sbin/ipw3945d-start
+remove  ipw3945 /sbin/ipw3945d-stop && modprobe -r --ignore-remove ipw3945

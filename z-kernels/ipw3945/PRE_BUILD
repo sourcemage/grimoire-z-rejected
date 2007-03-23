@@ -1,0 +1,59 @@
+if [[ $(get_kernel_config CONFIG_NET_RADIO) != y ]]
+then
+  message "${PROBLEM_COLOR}You don't have CONFIG_NET_RADIO"     \
+          "enabled in your kernel configuration, cannot build"  \
+          "ipw2200.${DEFAULT_COLOR}"                            &&
+  return 1
+fi  &&
+
+local  _FW_LOADER=$(get_kernel_config CONFIG_FW_LOADER)  &&
+
+if [[ $_FW_LOADER != y &&
+      $_FW_LOADER != m ]]
+then
+  message "${PROBLEM_COLOR}You don't have CONFIG_FW_LOADER"     \
+          "enabled in your kernel configuration, cannot build"  \
+          "ipw2200.${DEFAULT_COLOR}"                            &&
+  return 1
+fi  &&
+
+local  _CRYPTO_ARC4=$(get_kernel_config CONFIG_CRYPTO_ARC4)  &&
+local  _CRC32=$(get_kernel_config CONFIG_CRC32)              &&
+
+if [[ $_CRYPTO_ARC4 != y   &&
+      $_CRYPTO_ARC4 != m   &&
+      $_CRC32 != y         &&
+      $_CRC32 != m         ]]
+then
+  message "${PROBLEM_COLOR}You don't have the right crypto support"    \
+          "built in the kernel, CONFIG_CRYPTO_ARC4 and CONFIG_CRC32."  \
+          "These are needed for WEP key support.${DEFAULT_COLOR}"      &&
+  if ! query "Continue anyway?"; then
+    return 1
+  fi
+fi  &&
+
+local  _CRYPTO_MICHAEL_MIC=$(get_kernel_config CONFIG_CRYPTO_MICHAEL_MIC)  &&
+local  _CRYPTO_AES_586=$(get_kernel_config CONFIG_CRYPTO_AES_586)          &&
+
+if [[ $_CRYPTO_MICHAEL_MIC != y &&
+      $_CRYPTO_MICHAEL_MIC != m &&
+      $_CRYPTO_AES_586 != y     &&
+      $_CRYPTO_AES_586 != m     ]]
+then
+  message "${PROBLEM_COLOR}You don't have the right crypto support"  \
+          "built in the kernel, CONFIG_CRYPTO_AES_586 and"           \
+          "CONFIG_MICHAEL_MIC. These are needed for WPA"             \
+          "support.${DEFAULT_COLOR}"                                 &&
+  if ! query "Continue anyway?"; then
+    return 1
+  fi
+fi  &&
+
+mk_source_dir  "$SOURCE_DIRECTORY"  &&
+unpack_file  ''                     &&
+cd  "$SOURCE_DIRECTORY"             &&
+pushd  ${SOURCE_DIRECTORY}          &&
+unpack_file  2                      &&
+unpack_file  3                      &&
+popd
