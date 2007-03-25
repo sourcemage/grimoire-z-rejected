@@ -1,3 +1,6 @@
+2007-03-25 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 4.3
+
 2006-07-03 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 4.2a, removed BUILD_API
 	* BUILD: removed chmod and sedit, worthless now
