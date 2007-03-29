@@ -1,0 +1,6 @@
+mkdir -p ${INSTALL_ROOT}/usr/games                 &&
+mkdir -p ${INSTALL_ROOT}/usr/share/games/${SPELL}  &&
+chown root.games ${INSTALL_ROOT}/usr/games         &&
+
+install -o root -g games -m 755 ${SPELL} ${INSTALL_ROOT}/usr/games  &&
+install ${SPELL}.hlp ${INSTALL_ROOT}/usr/share/games/${SPELL}
