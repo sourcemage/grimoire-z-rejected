@@ -1,5 +1,6 @@
 2007-04-01 Jeremy Blosser <jblosser-smgl@firinn.org>
 	* accounts, groups: Sync with primary grimoire.
+	* z-mail/qmail: Added, vanilla qmail spell.
 
 2007-03-29 Pol Vinogradov <vin.public@gmail.com>
 	* z-games/crafty: moved from games grimoire, chess engine
