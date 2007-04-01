@@ -3,15 +3,20 @@
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.qmail.org/netqmail-1.05.tar.gz
-        WEB_SITE=http://lifewithqmail.org/lwq.html
+        WEB_SITE=http://www.qmail.org/netqmail/
          ENTERED=20040322
          UPDATED=20050120
      SOURCE_HASH=sha512:9504e3ff98e5c9278000cd9dd12eecfa504a7604641ff5b2ed735d6bfacfbd0ae69a4b9c7287217320f15fd51e4e94fe6d85c927b9c7dc07f62fe7cccb7d7070
       LICENSE[0]=UNKNOWN
           REJECT="has license issues"
-           SHORT='qmail is Mail Transport Agent'
+           SHORT='netqmail qmail patch distribution'
 cat << EOF
 qmail is a small, fast, secure replacement for the SENDMAIL package,
 which is the program that actually receives, routes, and delivers
 electronic mail.
+
+netqmail is a community-assembled distribution of qmail from the official
+qmail-1.03.tar.gz and patches approved by the community.  D. J.
+Bernstein did not participate in, nor has he been asked to approve of
+this distribution.
 EOF

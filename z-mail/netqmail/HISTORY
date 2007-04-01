@@ -1,3 +1,6 @@
+2007-04-01 Jeremy Blosser <jblosser-smgl@firinn.org>
+	* DETAILS: Update WEB_SITE, SHORT, and description.
+
 2007-03-31 David Brown <dmlb2000@gmail.com>
 	* POST_INSTALL: removed moved to end of INSTALL
 
