@@ -45,7 +45,7 @@ hiding, virtual domains, null clients, list-owner rewriting, relay control,
 double-bounce recording, arbitrary RFC 822 address lists, cross-host mailing
 list loop detection, per-recipient checkpointing, downed host backoffs,
 independent message retry schedules, etc. qmail also includes a drop-in
-``sendmail'' wrapper so that it will be used transparently by your current UAs.
+"sendmail" wrapper so that it will be used transparently by your current UAs.
 
 NOTE: This spell installs according to DJB's required default paths.  Also, it
 runs via regular init.d, with smtp provided by xinetd.  It does not yet
