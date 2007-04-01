@@ -1,11 +1,24 @@
 mk_source_dir  $SOURCE_DIRECTORY  &&
 cd  $SOURCE_DIRECTORY             &&
+
 unpack_file  ''                   &&
 
-#cd  OOO680_m3_native_packed-2_en-US.8968/RPMS  &&
-# Extracted root directories don't have the same names between localized
-# versions, so use * wildcard although I don't find that very elegant
-cd  OO*/RPMS  &&
+#
+# Not all tarballs are created equal
+#
+if    [[  "$OO2_LOCALE"  ==  "nb"  ||
+          "$OO2_LOCALE"  ==  "nn"  ]];  then
+  cd  RPMS
+elif  [[  "$OO2_LOCALE"  ==  "ru"  ||
+          "$OO2_LOCALE"  ==  "tr"  ]];  then
+  cd  $OO2_LOCALE/RPMS
+else
+  #
+  # Extracted root directories don't have the same names between localized
+  # versions, so use * wildcard although I don't find that very elegant
+  #
+  cd  OO*/RPMS
+fi  &&
 
 for  FILE  in  *.rpm
 do
@@ -18,6 +31,6 @@ do
 done  &&
 
 message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&
-rpmunpack  desktop-integration/openoffice.org-freedesktop-menus-${VERSION/-?/}*.noarch.rpm  &&
-gzip  -d  openoffice.org-freedesktop-menus-${VERSION/-?/}*.cpio.gz     &&
-cpio  -idm  <  openoffice.org-freedesktop-menus-${VERSION/-?/}*.cpio
+rpmunpack  desktop-integration/openoffice.org-redhat-menus-${VERSION/.0/}*.noarch.rpm  &&
+gzip  -d  openoffice.org-redhat-menus-${VERSION/.0/}*.cpio.gz     &&
+cpio  -idm  <  openoffice.org-redhat-menus-${VERSION/.0/}*.cpio

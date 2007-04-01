@@ -3,7 +3,6 @@
 source $GRIMOIRE/REJECTED_MSG   &&
 
 persistent_add OO2_LOCALE  &&
-OO2_LOCALE=en  &&
 if  query  "Do you want to select a localization?" n; then
     local ALL_LOCALES=$( cat $SCRIPT_DIRECTORY/locales )  &&
     echo $ALL_LOCALES  &&
@@ -14,4 +13,8 @@ if  query  "Do you want to select a localization?" n; then
                   ""                                                \
                   0  0  5                                           \
                   $ALL_LOCALES )
+else
+  if  [[  -z  $OO2_LOCALE  ]];  then
+    OO2_LOCALE=en
+  fi
 fi

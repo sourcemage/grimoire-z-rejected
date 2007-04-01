@@ -1,3 +1,23 @@
+2007-03-30 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2.2.0
+	* CONFIGURE: Renamed to PREPARE so we have OO2_LOCALES set in DETAILS
+	  Only set OO2_LOCALE if not configuring, defalt to en
+	* PRE_BUILD: RPM doesn't use .0 in VERSIONs
+	  Switch to Redhat menus as the freedesktop ones fail to gunzip
+	  Some languages (e.g. nb) do not have the OO* directory...
+	  And "ru" and "tr" use yet another subdir...
+	* INSTALL: Use VERSION (minus the .0) for directory to copy
+	  use SOURCE_DIRECTORY rather than BUILD_DIRECTORY
+	  Some languages (e.g. nb) do not have the OO* directory...
+	  And "ru" and "tr" use yet another subdir...
+	* locales: Added Italy (it)
+	  Added (nb)
+	  Added (nn)
+	  Added (pl)
+	  Added Russia (ru)
+	  Added (tr)
+	  Removed Netherlands (nl)
+
 2007-01-19 Pieter Lenaerts <e-type@sourcemage.org>
 	* INSTALL: creates /usr/share/icons
 
