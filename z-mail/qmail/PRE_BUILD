@@ -8,6 +8,11 @@ if  [  "$QMAIL_PATCH_LOCALBIND"  ==  "y"  ];  then
   patch -p0 <$SCRIPT_DIRECTORY/patches/local-bind
 fi  &&
 
+if  !  is_depends_enabled  $SPELL  groff;  then
+  sed  -i  -e  '/auto_qmail,"man\//d'  hier.c  &&
+  sed  -i  -e  '/auto_qmail,"man\//d'  install-big.c
+fi  &&
+
 mkdir  -p  /var/qmail  &&
 
 create_account  alias   /var/qmail/alias  /bin/false  &&

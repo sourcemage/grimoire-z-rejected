@@ -1,1 +1,1 @@
-depends  groff
+optional_depends  groff  ""  ""  "to build man pages"

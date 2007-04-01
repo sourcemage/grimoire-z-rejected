@@ -1,2 +1,6 @@
 2007-04-01 Jeremy Blosser <jblosser-smgl@firinn.org>
+	* DEPENDS, PRE_BUILD, BUILD: Make groff dependency / man pages
+	  optional.
+
+2007-04-01 Jeremy Blosser <jblosser-smgl@firinn.org>
 	* ALL: Initial spell commit.
