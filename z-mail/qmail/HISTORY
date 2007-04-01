@@ -1,4 +1,5 @@
 2007-04-01 Jeremy Blosser <jblosser-smgl@firinn.org>
+   * CONFLICTS: Add.
 	* DEPENDS, PRE_BUILD, BUILD: Make groff dependency / man pages
 	  optional.
 
