@@ -1,4 +1,0 @@
-if [ "$USE_SUPERVISE" == "y" ];
-then
-    depends supervise-scripts
-fi

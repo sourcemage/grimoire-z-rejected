@@ -1,12 +1,18 @@
-/usr/bin/install  -d  "${INSTALL_ROOT}/service"   &&
+cd  command  &&
 
-cd  ${SOURCE_DIRECTORY}/${SPELL}-${VERSION}/src  &&
+if  [  "${DAEMONTOOLS_INSTALL_PATHS}"  ==  "fhs"  ];  then
+  /usr/bin/install  -d      "/etc/service"                                    &&
+  /usr/bin/install  -m 755  `cat ../package/commands` "${INSTALL_ROOT}/sbin"
+else
+  /usr/bin/install  -d      "/service"                 &&
+  /usr/bin/install  -d      "${INSTALL_ROOT}/command"  &&
+  /usr/bin/install  -m 755  `cat ../package/commands`  \
+                            "${INSTALL_ROOT}/command"  &&
+  if  [  "${DAEMONTOOLS_SYMLINKS}"  ==  "y"  ];  then
+    while read i;  do
+      ln  -sf  /command/$i  /usr/local/bin/$i
+    done  <../package/commands
+  fi
+fi  &&
 
-/usr/bin/install  -d  ${INSTALL_ROOT}/usr/bin         &&
-/usr/bin/install  -m  755  `cat ../package/commands`  \
-                      ${INSTALL_ROOT}/usr/bin         &&
-
-cd  ${SOURCE_DIRECTORY}/${SPELL}-${VERSION}  &&
-
-mv  package/README      ${SOURCE_DIRECTORY}  &&
-mv  src/{CHANGES,TODO}  ${SOURCE_DIRECTORY}
+cd  ..

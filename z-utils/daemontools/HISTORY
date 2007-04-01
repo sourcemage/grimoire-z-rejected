@@ -1,3 +1,18 @@
+2007-04-01 Jeremy Blosser <jblosser-smgl@firinn.org>
+	* 0.76-errno.patch: Deleted in favor of -include /usr/include/errno.h
+	* BUILD: Add -include /usr/include/errno.h, remove patching, switch
+	  from make to package/compile
+	* CONFIGURE: Apply spell namespace to variables, query about install
+	  paths, drop supervise-scripts dependencies/queries.
+	* DEPENDS, TRIGGERS: Deleted; drop unnecessary supervise-scripts.
+	* DETAILS: Add more license info, add to DOCS.
+	* FINAL: Improve inittab handling.
+	* INSTALL: Account for different install paths.
+	* init.d/svscan: General improvements, remove supervise-scripts,
+	  account for different install paths.
+	* POST_REMOVE, POST_RESURRECT: Added.
+	* PRE_BUILD, daemontools-docs.tar.bz2: Added for more docs.
+
 2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed BUILD_API=2.
 
@@ -14,9 +29,10 @@
 	* FINAL: svscan-start does not exists. Use svscanboot.
 	* init.d/svscan: Likewise.
 
-2005-02-18 Eric Sandall <sandalle@sourcemage.org>
+2005-02-18 Eric Sandall <eric@sandall.us>
 	* Applied Jeremy's patch  (Bug #8027)
-	* Moved from net/daemontools to z-rejected/z-utils/daemontools  (Bug #8027)
+	* Moved from net/daemontools to z-rejected/z-utils/daemontools  (Bug
+	  #8027)
 	* DEPENDS: Removed circular dependency on supervise-scripts (for now)
 	* BUILD,INSTALL: Cleaned up spacing
 	  Added "&&"s
@@ -26,8 +42,8 @@
 	* HISTORY: Formatted to Guru Handbook
 
 2005-01-18 Jeremy Blosser <jblosser@firinn.org>
-	* Modified spell to be more consistant with other spells in the djb/qmail
-	  suite
+	* Modified spell to be more consistant with other spells in the
+	  djb/qmail suite
 	* FINAL: run svscan from /etc/inittab
 	* BUILD/INSTALL: use internal configure instead of sedit to set install
 	  locations

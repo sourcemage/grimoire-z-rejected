@@ -1,106 +1,88 @@
 #!/bin/bash
 
-# Note: svscan maybe started and respawned directly from inittab.
-# This init.d script primarily exists to provide the stop function during
-# shutdown.
+# Note: svscan may be started and respawned directly from inittab.
 
-PROGRAM="/usr/bin/svscanboot" # default option
+if [ -x "/command/svscan" ]; then
+  PROGRAM="/command/svscan"
+elif [ -x "/sbin/svscan" ]; then
+  PROGRAM="/sbin/svscan"
+else
+  error "svscan not found"
+fi
 
-if [ -f /etc/sorcery/local/depends/daemontools.p ] ; 
-then
-    . /etc/sorcery/local/depends/daemontools.p
-    if [ "$USE_SUPERVISE" == "y" ];
-    then
-	PROGRAM="/usr/bin/svscan-start"
-    fi
+if [ -d "/service" ]; then
+  ARGS="/service"
+elif [ -d "/etc/service" ]; then
+  ARGS="/etc/service"
+else
+  error "service directory not found"
 fi
 
 RUNLEVEL=3
-NEEDS="+network" # not strictly true, but most services should go down before they lose networking
-
-DJBDT_SVCDIR="/service"
+NEEDS="+network"
 
 . /etc/init.d/smgl_init
 
-
-restart()
-{
-    run_func stop  &&
-    run_func start
-}
-
+SUPERVISE_IN_INITTAB="`grep '^supervise:' /etc/inittab`"
 
 start()
 {
-  if grep -q -e "^svscanboot:.*" /etc/inittab ; 
-  then
-      echo "Not start $PROGRAM, init will restart it."
+  if [ -n "${SUPERVISE_IN_INITTAB}" ]; then
+    echo "svscan is being run from /etc/inittab."
   else
-      echo "Starting svscanboot..."
-      if ! pgrep -f "$PROGRAM" >/dev/null; then
-          ${PROGRAM} &
-	  evaluate_retval
-      fi
+    _start 
   fi
 }
 
-
-reload()
+stop_services()
 {
-  run_func restart
+  echo -n "Stopping supervised services... "
+  if [ `/bin/ls "${ARGS}" | wc -l` -gt 0 ]; then
+    echo
+    for SVC in "${ARGS}/"*; do
+      echo "Stopping $SVC..."
+      svc -dx "$SVC"
+      evaluate_retval
+      if [ -d "$SVC/log" ]; then
+        echo "Stopping $SVC/log..."
+        svc -dx "$SVC/log"
+        evaluate_retval
+      fi
+    done
+  else
+    echo "no services found."
+  fi
 }
-
 
 stop()
 {
-    echo -n "Stopping svscan services... "
-    if [ `ls $DJBDT_SVCDIR | wc -l` -gt 0 ]; 
-    then
-        echo
-        for SVC in ${DJBDT_SVCDIR}/*; 
-        do
-	    echo "Stopping $SVC..."
-	    svc -dx "$SVC"
-	    evaluate_retval
-            if [[ -d "$SVC/log" ]]; 
-            then
-                echo "Stopping $SVC/log..."
-                svc -dx "$SVC/log"
-                evaluate_retval
-            fi
-        done
-    else
-	echo "no services found."
-    fi
+  stop_services
 
-    if grep -q -e "^svscanboot:.*" /etc/inittab ; 
-    then
-	echo "Not stop $PROGRAM, init will restart it."
-    else
-	echo "Killing ${PROGRAM}..." 
-	pkill -f "${PROGRAM}"
-	evaluate_retval
-    fi
+  if [ -n "${SUPERVISE_IN_INITTAB}" ]; then
+    echo "svscan is being run from /etc/inittab and cannot be stopped."
+  else
+    _stop
+  fi
 }
 
+restart()
+{
+  if [ -n "${SUPERVISE_IN_INITTAB}" ]; then
+    stop_services
+    _stop
+    echo "svscan will be restarted by init."
+  else
+    _restart
+  fi
+}
 
 status()
 {
-  SVPID=`pgrep -f "${PROGRAM}"`
-  if [ -n "${SVPID}" ]; then
-      echo -n "svscan (pid ${SVPID}) is running, "
-      if grep -q -e "^svscanboot:.*" /etc/inittab ; 
-      then
-	  echo "started by inittab."
-      else
-	  echo "started standalone."
-      fi
+  _status
+  if [ -n "${SUPERVISE_IN_INITTAB}" ]; then
+    echo "run from /etc/inittab."
   else
-      echo "svscan is not running"
+    echo "run standalone."
   fi
-  if [ `ls $DJBDT_SVCDIR | wc -l` -gt 0 ]; then
-      svstat $DJBDT_SVCDIR
-  else
-      echo "services not found"
-  fi
+  svstat "${ARGS}/"*
 }

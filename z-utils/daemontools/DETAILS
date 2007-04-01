@@ -8,6 +8,8 @@ SOURCE_DIRECTORY=${BUILD_DIRECTORY}/admin
          ENTERED=20040202
          UPDATED=20041030
       LICENSE[0]="http://cr.yp.to/distributors.html"
+      LICENSE[1]="http://cr.yp.to/softwarelaw.html"
+            DOCS="${DOCS} *.html"
            SHORT="A collection of tools for managing UNIX services"
 cat << EOF
 daemontools is a collection of tools for managing UNIX services.
@@ -21,4 +23,8 @@ timestamps each line and, for each log, includes or excludes lines
 matching specified patterns. It automatically rotates logs to limit the
 amount of disk space used. If the disk fills up, it pauses and tries
 again, without losing any data.
+
+This spell by default builds an "official" package, using DJB's required
+installation paths and behaviors.  Options are provided to install to
+FHS-compliant paths as well.
 EOF
