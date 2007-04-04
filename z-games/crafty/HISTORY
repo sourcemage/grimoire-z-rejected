@@ -1,3 +1,7 @@
+2007-04-04 Pol Vinogradov <vin.public@gmail.com>
+	* BUILD: moved our CFLAGS back and quoted, added disable_pic
+	* DETAILS: updated to 20.14
+
 2007-03-29 Pol Vinogradov <vin.public@gmail.com>
 	* PREPARE, UNATTEND_SAFE: added for z-rejected stuff
 	* INSTALL: some fixes

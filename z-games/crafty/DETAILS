@@ -1,10 +1,10 @@
            SPELL=crafty
-         VERSION=20.1
+         VERSION=20.14
           SOURCE=$SPELL-$VERSION.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=ftp://ftp.cis.uab.edu/pub/hyatt/source/$SOURCE
         WEB_SITE=http://www.cis.uab.edu/hyatt/hyatt.html
-     SOURCE_HASH=sha512:6437eb48b843d27d9105800f3bb7016c4e1d0f36609bca314ed313fbae60707cc05720fb579568c249bf4b16f5e79eb723c48278989612d5545489352af3163a
+     SOURCE_HASH=sha512:7518ff4077892c535d58be0aab80c9bcf463dcbd6bf4a2e4fc88302e8bb9839810663b096ad995105a2d8bce0ee491bcce86df5f648e580f096b2fd49854d024
       LICENSE[0]=UNKNOWN
           REJECT="has license issues"
          ENTERED=20030412

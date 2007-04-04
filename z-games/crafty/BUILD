@@ -1,5 +1,5 @@
-#sedit "s/\CXFLAGS=\$(CFLAGS) \\\/CXFLAGS='\$(CFLAGS)' \\\/g" Makefile  &&
-unset CFLAGS  &&
+disable_pic  &&
+sedit "s/\CXFLAGS=\$(CFLAGS) \\\/CXFLAGS='\$(CFLAGS)' \\\/g" Makefile  &&
 sedit '/-o crafty/s/CC/CXX/g' Makefile  &&
 sedit "s:\"crafty.hlp\":\"${TRACK_ROOT}/usr/share/games/${SPELL}/crafty.hlp\":" option.c  &&
 sedit "s/-lpthread/-lpthread -lstdc++/g" Makefile  &&
