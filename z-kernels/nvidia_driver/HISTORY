@@ -1,3 +1,7 @@
+2007-04-11 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* INSTALL: also install an unversioned libwfb.so
+	* DETAILS: PATCHLEVEL++
+
 2007-03-13 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 1.0-9755
 

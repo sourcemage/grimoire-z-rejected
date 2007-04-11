@@ -110,6 +110,8 @@ extensions/libglx.so.${VERSION/-/.}             \
   #
   ln  -sfn  "$X_MOD/libnvidia-wfb.so.${VERSION/-/.}"  \
             "$X_MOD/libnvidia-wfb.so"                 &&
+  ln  -sfn  "$X_MOD/libnvidia-wfb.so.${VERSION/-/.}"  \
+            "$X_MOD/libwfb.so"                        &&
   pushd  $X_MOD/extensions  &&
   ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
   popd                                                &&
