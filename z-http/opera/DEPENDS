@@ -3,7 +3,6 @@ if [ "${OPERA_RELEASE}" = "8, shared" ]; then
   depends  zlib
 fi &&
 if [ "${OPERA_RELEASE}" = "9, shared" ]; then
-  depends  gcc33   &&
   depends  qt-x11  &&
   depends  zlib
 fi  &&
