@@ -1,3 +1,6 @@
+2007-04-15 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* z-net/ucspi-tcp: moved from test #8026
+
 2007-04-11 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* z-graphics/Cg, z-games/AmericasArmy: deleted, deprecated
 
