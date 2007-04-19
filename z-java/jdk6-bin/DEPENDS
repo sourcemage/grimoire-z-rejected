@@ -1,6 +1,10 @@
 depends  unixodbc  &&
 optional_depends  X11-LIBS "" "" "To run gui applications" &&
 
-if  [  "$(get_spell_provider  $SPELL  X11-LIBS)"  ==  "xorg-server"  ];  then
-  depends  libxi
+source  $GRIMOIRE/FUNCTIONS  &&
+
+if  check_if_xorg_modular_libs
+then
+  depends  libxi  &&
+  depends  libxtst
 fi

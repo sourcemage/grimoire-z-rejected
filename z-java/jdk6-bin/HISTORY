@@ -1,3 +1,7 @@
+2007-04-20 Pol Vinogradov <vin.public@gmail.com>
+	* DEPENDS: added libxtst for modular xorg, use
+	  check_if_xorg_modular_libs now
+
 2007-02-08 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: version bump to 6u1
 
