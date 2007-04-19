@@ -1,7 +1,7 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jdk6-bin
          VERSION=6u1
-             VER=1.6.0
+             VER=1.6.0_01
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	ia32|32)
           SOURCE=jdk-$VERSION-linux-i586.bin
@@ -27,7 +27,7 @@ case "${SMGL_COMPAT_ARCHS[0]}" in
 	;;
 esac
         WEB_SITE=http://java.sun.com/javase/downloads/index.jsp
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk$VER
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk${VER/_01}
          ENTERED=20070208
          ARCHIVE="off"
           REJECT="is non-source"
