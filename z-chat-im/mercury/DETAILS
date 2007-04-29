@@ -1,13 +1,12 @@
            SPELL=mercury
-         VERSION=1711_B06
-          SOURCE=1711B06.zip
+         VERSION=1.8
+          SOURCE=${VERSION}.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.beernabeer.com/$SOURCE
 #  SOURCE_URL[0]=http://download.sourcemage.org/mirror/$SOURCE
-     SOURCE_HASH=sha512:abc745edeb6b7e5f5e3f572f9f11717486a6ae55a81d9084e33e902d7321cd630b0f48e2a78e246486f3f6dd403f45a6f966ac6fe1712be90e0322d539c58827
+     SOURCE_HASH=sha512:97649b8a1e6a750e47e56a7a97b6e7d595fa1bf80a2805e200bc8604bac444d028f72e0f9be7a1a9a0325b3f50fa089bf98afb8742a41a910a27c7488967bb8c
         WEB_SITE=http://www.mercury.to
          ENTERED=20050531
-         UPDATED=20020531
           REJECT="is non-source and license"
            SHORT="Mercury is a Java Based MSN client"
 cat << EOF
