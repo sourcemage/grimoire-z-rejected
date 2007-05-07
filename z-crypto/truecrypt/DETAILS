@@ -1,5 +1,5 @@
            SPELL=truecrypt
-         VERSION=4.3
+         VERSION=4.3a
           SOURCE=$SPELL-$VERSION-source-code.tar.gz
       SOURCE_GPG="TrueCrypt_Foundation.gpg:$SOURCE.sig"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-source-code
