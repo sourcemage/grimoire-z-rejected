@@ -1,3 +1,6 @@
+2007-05-13 Colin "Phoul" Childs <phoul@sourcemage.org>
+	* DETAILS: Version bumped to 1.0-9755 to clear up dl issues.
+
 2007-02-19 David Kowis <dkowis@shlrm.org>
 	* ALL: copied from the nvidia_driver spell and modified to install the legacy driver
 
