@@ -1,3 +1,7 @@
+2007-05-25 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated to version 3.0.0.0. Fixed SOURCE_URL.
+	* DEPENDS: now depends gtk+2
+
 2007-03-10 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to version 2.1.0.4b
 
