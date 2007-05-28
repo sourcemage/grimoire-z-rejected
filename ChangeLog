@@ -1,3 +1,6 @@
+2007-05-27 Robin Cook <rcook@wyrms.net>
+	* added new spell z-emulators/vmware6
+
 2007-05-18 Elisamuel Resto <ryuji@mages.ath.cx>
 	* z-mail/imap, z-mail/c-client: Moved to test due to licence change
 	  to APACHE from upstream, deleted from z-rejected since it now is in

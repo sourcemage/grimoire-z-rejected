@@ -1,0 +1,110 @@
+diff -u -r vmware-distrib.orig/bin/vmware-config.pl vmware-distrib/bin/vmware-config.pl
+--- vmware-distrib.orig/bin/vmware-config.pl	2007-05-01 23:52:50.000000000 -0500
++++ vmware-distrib/bin/vmware-config.pl	2007-05-27 20:35:13.000000000 -0500
+@@ -7,6 +7,8 @@
+ 
+ use strict;
+ 
++$| = 1;
++
+ # Use Config module to update VMware host-wide configuration file
+ # BEGINNING_OF_CONFIG_DOT_PM
+ #!/usr/bin/perl
+@@ -21,6 +23,9 @@
+ ###
+ 
+ use strict;
++
++$| = 1;
++
+ package VMware::Config;
+ 
+ my %PREF;
+@@ -511,6 +516,8 @@
+ 
+ use strict;
+ 
++$| = 1;
++
+ # Moved out of config.pl to support $gOption in spacechk_answer
+ my %gOption;
+ # Moved from various scripts that include util.pl
+diff -u -r vmware-distrib.orig/bin/vmware-uninstall.pl vmware-distrib/bin/vmware-uninstall.pl
+--- vmware-distrib.orig/bin/vmware-uninstall.pl	2007-05-01 23:52:33.000000000 -0500
++++ vmware-distrib/bin/vmware-uninstall.pl	2007-05-27 20:39:24.000000000 -0500
+@@ -7,11 +7,15 @@
+ 
+ use strict;
+ 
++$| = 1;
++
+ # BEGINNING_OF_UTIL_DOT_PL
+ #!/usr/bin/perl
+ 
+ use strict;
+ 
++$| = 1;
++
+ # Moved out of config.pl to support $gOption in spacechk_answer
+ my %gOption;
+ # Moved from various scripts that include util.pl
+@@ -2712,39 +2716,11 @@
+     return $initscriptsdir;
+   }
+ 
+-  # The "SuSE version >= 7.1" way
+-  $initdir = '/etc/init.d';
+-  if (check_answer_initdirpath($initdir, 'default') eq '') {
+-    # The "SuSE version < 7.1" way
+-    $initdir = '/sbin/init.d';
+-    if (check_answer_initdirpath($initdir, 'default') eq '') {
+-      # The "RedHat" way
+-      $initdir = '/etc/rc.d';
+-      if (check_answer_initdirpath($initdir, 'default') eq '') {
+-        # The "Debian" way
+-        $initdir = '/etc';
+-        if (check_answer_initdirpath($initdir, 'default') eq '') {
+-          $initdir = '';
+-        }
+-      }
+-    }
+-  }
+-  $answer = get_persistent_answer('What is the directory that contains the init'
+-                                  .' directories (rc0.d/ to rc6.d/)?'
+-                                  , 'INITDIR', 'initdirpath', $initdir);
+-
+-  # The usual way
+-  $initscriptsdir = $answer . '/init.d';
+-  if (check_answer_initscriptsdirpath($initscriptsdir, 'default') eq '') {
+-    # The "SuSE version >= 7.1" way
+-    $initscriptsdir = $answer;
+-    if (check_answer_initscriptsdirpath($initscriptsdir, 'default') eq '') {
+-      $initscriptsdir = '';
+-    }
+-  }
+-  $answer = get_persistent_answer('What is the directory that contains the init'
+-                                  .' scripts?', 'INITSCRIPTSDIR'
+-                                  , 'initscriptsdirpath', $initscriptsdir);
++  # The "Fake smgl" way
++  $initscriptsdir = $answer = $initdir = '/tmp/vmware_rc.d';
++  db_add_answer('INITDIR', $answer);
++  db_add_answer('INITSCRIPTSDIR', $answer);
++
+   return $answer;
+ }
+ 
+diff -u -r vmware-distrib.orig/installer/services.sh vmware-distrib/installer/services.sh
+--- vmware-distrib.orig/installer/services.sh	2007-05-01 23:52:51.000000000 -0500
++++ vmware-distrib/installer/services.sh	2007-05-27 20:40:41.000000000 -0500
+@@ -26,6 +26,11 @@
+ # BEGINNING_OF_UTIL_DOT_SH
+ #!/bin/sh
+ 
++function echo ()
++{
++       builtin echo "$@"
++}
++
+ # A few utility functions used by our shell scripts. These are patched in 
+ # during make.
+

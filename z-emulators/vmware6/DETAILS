@@ -1,0 +1,27 @@
+           SPELL=vmware6
+         VERSION=6.0.0-45731
+          SOURCE=VMware-workstation-${VERSION}.${VMWARE_X86}.tar.gz
+   SOURCE_URL[0]=http://www.vmware.com/download/ws/
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/vmware-distrib
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      LICENSE[0]=UNKNOWN
+          REJECT='license issues, must obtain tarball via website'
+         ARCHIVE=off
+         ENTERED=20070527
+        WEB_SITE=http://www.vmware.com
+           SHORT="The VMWare virtual machine."
+cat << EOF
+VMware Workstation is powerful virtual machine software for developers and system 
+administrators who want to revolutionize software development, testing and deployment 
+in their enterprise. Shipping for more than five years and winner of over a dozen 
+major product awards, VMware Workstation enables software developers to develop and 
+test the most complex networked server-class applications running on Microsoft Windows, 
+Linux or NetWare all on a single desktop. Essential features such as virtual networking, 
+live snapshots, drag and drop and shared folders, and PXE support make VMware Workstation 
+the most powerful and indispensable tool for enterprise IT developers and system 
+administrators.
+
+WARNING: You must download the SOURCE file on your own and place it into
+/var/spool/sorcery. You also need to buy a license, please see the website for
+more information. 
+EOF
