@@ -19,7 +19,7 @@ else
   cd   $SOURCE_DIRECTORY/OO*/RPMS
 fi  &&
 
-cp  -Rv  opt/openoffice.org${VERSION/.0}/*  $INSTALLDIR              &&
+cp  -Rv  opt/openoffice.org${VERSION%.*}/*  $INSTALLDIR              &&
 cp  -Rv  usr/share/icons/*  $INSTALL_ROOT/usr/share/icons  &&
 
 # create bin links for executables.
