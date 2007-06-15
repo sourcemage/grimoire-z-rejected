@@ -1,3 +1,8 @@
+2007-06-15 Robin Cook <rcook@wyrms.net>
+	* PREPARE: added for query on FLASH_BETA
+	* DETAILS: added FLASH_BETA details
+	* INSTALL: don't try copying the xpt file with FLASH_BETA
+
 2007-02-05 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* CONFIGURE: remember previous answers to the questions about
 	  installing plugins
