@@ -1,3 +1,13 @@
+2007-06-15 Treeve jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.4.0.74
+	  use .bz2
+	* DEPENDS: add qt4, alsa-lib
+
+2006-12-09 Treeve jelbert <treeve@sourcemage.org>
+	* DETAILS; use -1mdk*.rpm. as it supports gcc-4*
+	* DEPENDS: remove gcc33
+	* PRE_BUILD: added
+
 2006-10-15 Juuso Alasuutari <iuso@sourcemage.org>
 	* UNATTEND_SAFE: Added.
 
@@ -25,14 +35,14 @@
 	* desktop/skype.desktop: Deleted, now installed from source 
 	  package during INSTALL.
 
-2006-01-31 Treeve jelbert <treeve01@pi.be>
+2006-01-31 Treeve jelbert <treeve@sourcemage.org>
 	* DETAILS: Version 1.2.0.21-1   ( dynamic )
 
-2005-10-25 Treeve jelbert <treeve01@pi.be>
+2005-10-25 Treeve jelbert <treeve@sourcemage.org>
 	* DETAILS: Version 1.2.0.18
 	  security fixes
 
-2005-10-14 Treeve jelbert <treeve01@pi.be>
+2005-10-14 Treeve jelbert <treeve@sourcemage.org>
 	* DETAILS: use .rpm file, as it is compatible with gcc{4.0,3.4}
 	* PRE_BUILD: add
 	* DEPENDS: add rpmunpack for dynamic version 
@@ -77,7 +87,7 @@
 2005-02-01 John Harding <johnh@kuberaconsulting.com>
 	* DETAILS: version bump to 1.0.0.1
 
-2005-01-05 Eric Sandall <sandalle@sourcemage.org>
+2005-01-05 Eric Sandall <eric@sandall.us>
 	* Applied John's patch  (Bug #7889)
 
 2004-12-27 John Harding	<johnh@kuberaconsulting.com>

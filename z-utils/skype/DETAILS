@@ -1,19 +1,13 @@
              SPELL=skype
-           VERSION=1.3.0.53
+           VERSION=1.4.0.74
   SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
-if [[ $QT == y ]]; then
-# dynamic version
-            SOURCE=$SPELL-$VERSION-generic.tar.bz2
-       SOURCE_HASH=sha512:f085d79fe06e1a5667cc9fb48d830585ce77ba229236378162705487de0eb6082974e7a55d629d5ca225cbb30dffe57924a8e6cc81a76e53e4e4aa32082ccb44
-else
-# static version
-            SOURCE=${SPELL}_staticQT-$VERSION-generic.tar.bz2
-       SOURCE_HASH=sha512:3a1168e006a588e206fe142ef4cdd153922b40848699be0c607a7bdbebf8510c428ce54b8acb7b6457fe5449437a693e5d0f3638c376ddfc46aae4ea796be913
-fi
+            SOURCE=$SPELL-$VERSION.bz2
+       SOURCE_HASH=sha512:19df660bf7286efe0e939e8f8c5adee764bcc3377b883e1b51a1299f3a770da3fbe8a9fbf95a6ec6f34448ebfdb3c9e6ee3841f3989c8649f031a60a3c88e369
           WEB_SITE=http://www.skype.com/
      SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
         LICENSE[0]=/usr/share/doc/skype/LICENSE
            ENTERED=20040624
+        ARCHIVE=off
 	    REJECT="Non-Free license"
              SHORT="Voice over IP (voip) client."
 cat << EOF
