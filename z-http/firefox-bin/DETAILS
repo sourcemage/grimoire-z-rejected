@@ -1,11 +1,11 @@
            SPELL=firefox-bin
 if [ "$FIREFOX_DEVEL" == "y" ]; then
-         VERSION=3.0a5
-          SOURCE=granparadiso-alpha5.tar.bz2
+         VERSION=3.0a6
+          SOURCE=granparadiso-alpha6.tar.bz2
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
-   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/granparadiso/alpha5/linux-i686/en-US/$SOURCE
-  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/granparadiso/alpha5/linux-i686/en-US/$SOURCE2
+   SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/granparadiso/alpha6/linux-i686/en-US/$SOURCE
+  SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/granparadiso/alpha6/linux-i686/en-US/$SOURCE2
 else
          VERSION=2.0.0.4
           SOURCE=firefox-${VERSION}.tar.gz
