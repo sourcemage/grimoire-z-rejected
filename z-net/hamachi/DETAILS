@@ -1,0 +1,30 @@
+           SPELL=hamachi
+         VERSION=0.9.9.9-20-lnx
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=http://files.hamachi.cc/linux/$SOURCE
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+      LICENCE[0]=
+        WEB_SITE=https://secure.logmein.com/products/hamachi/vpn.asp
+         ENTERED=20070709
+          REJECT='binary only and license issues'
+           SHORT='Secure easy VPN'
+            DOCS='LICENSE README'
+cat << EOF
+LogMeIn Hamachi is a VPN service that easily sets up in 10 minutes, and enables
+secure remote access to your business network, anywhere there's an Internet
+connection.
+
+It works with your existing firewall, and requires no additional configuration.
+Hamachi is the first networking application to deliver an unprecedented level
+of direct peer-to-peer connectivity. It is simple, secure, and cost-effective.
+
+Advantages of LogMeIn Hamachi
+ * LAN over the Internet  Arrange multiple computers into their own secure
+   network, just as if they were connected by a physical cable.
+ * Remote Access  Remote control any machine on your network with remote
+   desktop.
+ * Files and Network Drives  Access critical files and network drives.
+ * Zero-configuration  Works without having to adjust a firewall or router.
+ * Security  Industry leading encryption and authentication.
+EOF
