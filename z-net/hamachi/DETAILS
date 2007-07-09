@@ -4,7 +4,7 @@
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://files.hamachi.cc/linux/$SOURCE
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
-      LICENCE[0]=
+      LICENCE[0]=UNKNOWN
         WEB_SITE=https://secure.logmein.com/products/hamachi/vpn.asp
          ENTERED=20070709
           REJECT='binary only and license issues'
