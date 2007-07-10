@@ -1,3 +1,7 @@
+2007-07-10 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: version 88.10.5
+	* PREPARE, PRE_BUILD: added food and waste addons
+	* INSTALL: added food and waste, cleaned up vars
 2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed BUILD_API=2.
 

@@ -4,4 +4,10 @@ ask_continue_with_rejected         &&
 create_group  games                &&
 mk_source_dir   $SOURCE_DIRECTORY  &&
 unpack_file  ''                    &&
-unpack_file  '2'
+unpack_file  '2'                   &&
+if [[ "${SIMTRANS_WASTE}" = "y" ]]; then
+unpack_file  '3'
+fi                                 &&
+if [[ "${SIMTRANS_FACTFOOD}" = "y" ]]; then
+unpack_file  '4'
+fi

@@ -1,15 +1,27 @@
         PKG_NAME=simutrans
            SPELL=${PKG_NAME}
-         VERSION=0.82.15.7exp
-     PKG_VERSION=0_82_15_7exp
-          SOURCE=simulinux-$PKG_VERSION.tar.gz
-         SOURCE2=simubase-$PKG_VERSION.zip
+         VERSION=88.10.5
+     PKG_VERSION=88-10-5
+    FOOD_VERSION=88-10-4
+   WASTE_VERSION=86-03
+          SOURCE=simulinux-$PKG_VERSION.zip
+         SOURCE2=simupak64-$PKG_VERSION.zip
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
-   SOURCE_URL[0]=http://www.s-line.de/homepages/simutrans/data/$SOURCE
-  SOURCE2_URL[0]=http://www.s-line.de/homepages/simutrans/data/$SOURCE2
-     SOURCE_HASH=sha512:d1a3fd3b21c269e0424da816c9632c0e6372045fcea87c8feec2f55a334156f6c5c6aefdb0318dfb7e81d922276c645975a201c502997dd524d6f75c4cf18509
-    SOURCE2_HASH=sha512:1d169bd4a213496b1c5749929d66b5c45d8a92cedfbba00590570ce6ec043a0eb56231a206d330c03938d5f79c021df36f36fd6ba9adf3db30310ac6c2a721f4
-        WEB_SITE=http://www.simutrans.de/
+   SOURCE_URL[0]=http://64.simutrans.com/$SOURCE
+  SOURCE2_URL[0]=http://64.simutrans.com/$SOURCE2
+     SOURCE_HASH=sha512:33a060da2183d7b72fd8b46724c2e1ad19fd269b9ffcaf5e1076732d0e90eac216f00f4f935d7eb20d505c449a1f5adbec09d88cbc5cf5bdffe52ac05ed6b9cd
+    SOURCE2_HASH=sha512:3812832c4fd957b27a7671916a6b1bc1008d5656b55b86b515a63f10cd0f6da0fafced15b1c1fef46f26c25501041a3bb5f9969e7de94b505cdee0815d770920
+if [[ "$SIMTRANS_WASTE" = "y" ]] ; then
+         SOURCE3="waste64-${WASTE_VERSION}.zip"
+    SOURCE3_HASH=sha512:b6f7126e4df1a513927cd20ce0e8944c4cd569c9eaa81ee971f638607e011696841f6c50519d86a723a74312b6152920bf1e03b4d26f802583ebfc768bd57bce
+  SOURCE3_URL[0]=http://64.simutrans.com/$SOURCE3
+fi
+if [[ "$SIMTRANS_FACTFOOD" = "y" ]] ; then
+         SOURCE4="factory-food64-${FOOD_VERSION}.zip"
+    SOURCE4_HASH=sha512:d4ef75b43348c53d8046871d08b92fd8db6da1edc34ec1c6ab336bd82c82283bc55094097e2a18ddee80544a0f84b0b96f40fe61670bfca9f79344977de9e946
+  SOURCE4_URL[0]=http://64.simutrans.com/$SOURCE4
+fi
+        WEB_SITE=http://www.simutrans.com/
          ENTERED=20040422
           REJECT="is non-source"
       LICENSE[0]=freeware

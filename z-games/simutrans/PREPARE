@@ -1,0 +1,2 @@
+config_query SIMTRANS_WASTE "Download the factory food addon?" n &&
+config_query SIMTRANS_FACTFOOD "Download the waste addon?" n
