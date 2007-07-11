@@ -1,3 +1,6 @@
+2007-07-11 Arjan Bouter <abouter@sourcemage.org>
+	* gurus.gpg: added my key
+
 2007-07-09 Eric Sandall <sandalle@sourcemage.org>
 	* z-net/hamachi: Added an easy-to-use VPN
 	* z-net/ghamachi: Added a GTK+2 GUI for hamachi
