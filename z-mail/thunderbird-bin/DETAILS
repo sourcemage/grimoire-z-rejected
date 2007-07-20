@@ -1,12 +1,12 @@
            SPELL=thunderbird-bin
-         VERSION=2.0.0.4
+         VERSION=2.0.0.5
           SOURCE=thunderbird-${VERSION}.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/thunderbird
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/$VERSION/linux-i686/en-US/$SOURCE
-     SOURCE_HASH=sha512:0570b337c295f1a82b3667fdc16f7a206439a3dc7cf6742475f69a814ae15afd028d6b77fa69b3f4cec13790e319b7360b78ee79ad41f2f8ee4f43e4a0dfa421
+     SOURCE_HASH=sha512:c7481ec080f00abf1b7f4938be6cd72329fc5f9c2a56fe8839caa0844fbc870d4a6137d8b8012264369aa00b8f8eec495b5f8e9c24b84e35ea2aa9582d589731
         WEB_SITE=http://www.mozilla.org/projects/thunderbird
          ENTERED=20050301
-  SECURITY_PATCH=1
+  SECURITY_PATCH=2
       LICENSE[0]=MOZILLA
           REJECT="is pre-compiled sources"
            SHORT="The pre-compiled i686 version of thunderbird mailer"
