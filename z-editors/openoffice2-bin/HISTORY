@@ -1,7 +1,3 @@
-2007-07-11 Arjan Bouter <abouter@sourcemage.org>
-	* DETAILS: version bumped to 2.2.1
-	* locales: added dutch
-
 2007-06-13 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD, INSTALL: Use ${VERSION%.*} instead of ${VERSION/.0/} to
 	  always remove the last digit for "branch" (e.g. 2.2)
