@@ -1,3 +1,6 @@
+2007-07-29 Eric Sandall <sandalle@sourcemage.org>
+	* PROVIDES: Also provides JDK5 (Bug #13891)
+
 2007-07-23 David Brown <dmlb2000@gmail.com>
 	* DETAILS: updated 6u2
 
