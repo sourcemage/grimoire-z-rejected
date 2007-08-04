@@ -1,7 +1,7 @@
 mk_source_dir  $SOURCE_DIRECTORY  &&
 cd  $SOURCE_DIRECTORY             &&
-
 unpack_file  ''                   &&
+#verify_file  '1'                  &&
 
 #
 # Not all tarballs are created equal
@@ -25,9 +25,16 @@ do
   FILE="${FILE%.i586.rpm}"
   PART=$(sed 's/openoffice.org-\([^-]*\)-.*$/\1/;' <<< $FILE)
   message  "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"  &&
-  rpmunpack  $FILE.i586.rpm &&
-  gzip  -d   $FILE.cpio.gz  &&
-  cpio  -idm  <  $FILE.cpio
+
+  if  [[  "$FILE"  ==  "openoffice.org-core04u-2.2.1-9161.i586.rpm"  ]];  then
+    rpmunpack  $SOURCE_CACHE/$SOURCE2  &&
+    gzip  -d   ${SOURCE2/.i586.rpm/.cpio.gz}  &&
+    cpio  -idm  <  ${SOURCE2/.i586.rpm/.cpio}
+  else
+    rpmunpack  $FILE.i586.rpm &&
+    gzip  -d   $FILE.cpio.gz  &&
+    cpio  -idm  <  $FILE.cpio
+  fi
 done  &&
 
 message  "${MESSAGE_COLOR}Extracting icons ${DEFAULT_COLOR}"  &&

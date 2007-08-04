@@ -1,3 +1,7 @@
+2007-08-04 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Addes second SOURCE for English version to fix broken core04u
+	* PRE_BUILD: Unpack the uncorrupted core04u instead of the corrupt core04u
+
 2007-07-11 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: version bumped to 2.2.1
 	* locales: added dutch

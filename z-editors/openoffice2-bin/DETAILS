@@ -2,6 +2,9 @@
          VERSION=2.2.1
 if  [  "${OO2_LOCALE:-en}" == "en"  ]; then
           SOURCE=OOo_${VERSION/-*/}_LinuxIntel_install_en-US.tar.gz
+         SOURCE2=openoffice.org-core04u-2.2.1-9161.i586.rpm
+  SOURCE2_URL[0]=http://live.prooo-box.org/openoffice.org/linux/OOo_2.2.1_LinuxIntel_de_rpms/RPMS/$SOURCE2
+     SOURCE2_GPG="gurus.gpg:$SOURCE.sig"
      COMMON_PATH=openoffice/stable/${VERSION/-*/}
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice2
 else
