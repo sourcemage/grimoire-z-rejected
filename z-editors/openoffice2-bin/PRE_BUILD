@@ -26,7 +26,7 @@ do
   PART=$(sed 's/openoffice.org-\([^-]*\)-.*$/\1/;' <<< $FILE)
   message  "${MESSAGE_COLOR}Extracting $PART ${DEFAULT_COLOR}"  &&
 
-  if  [[  "$FILE"  ==  "openoffice.org-core04u-2.2.1-9161.i586.rpm"  ]];  then
+  if  [[  "$PART"  ==  "core04u"  ]];  then
     rpmunpack  $SOURCE_CACHE/$SOURCE2  &&
     gzip  -d   ${SOURCE2/.i586.rpm/.cpio.gz}  &&
     cpio  -idm  <  ${SOURCE2/.i586.rpm/.cpio}

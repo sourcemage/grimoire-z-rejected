@@ -1,6 +1,7 @@
 2007-08-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Addes second SOURCE for English version to fix broken core04u
 	* PRE_BUILD: Unpack the uncorrupted core04u instead of the corrupt core04u
+	  Use PART to compare instead of FILE, works better
 	* UNATTEND_SAFE: Safe for unattended updates
 
 2007-07-11 Arjan Bouter <abouter@sourcemage.org>
