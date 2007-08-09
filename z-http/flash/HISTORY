@@ -1,3 +1,6 @@
+2007-08-09 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 9.0.48.0
+
 2007-06-15 Robin Cook <rcook@wyrms.net>
 	* PREPARE: added for query on FLASH_BETA
 	* DETAILS: added FLASH_BETA details
