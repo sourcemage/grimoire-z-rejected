@@ -1,6 +1,6 @@
 cd  ${INSTALL_ROOT}/usr/lib  &&
 
-yes | sh $SOURCE_CACHE/$SOURCE  &&
+sh $SOURCE_CACHE/$SOURCE --accept-license &&
 
 if [[ "${ARCHITECTURE[0]}" == "i386" || "${ARCHITECTURE[0]}" == "i486" ]]
 then

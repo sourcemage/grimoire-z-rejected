@@ -4,17 +4,17 @@
              VER=1.5.0_12
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	ia32|32)
-          SOURCE=jdk-$VERSION-linux-i586.bin
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+          SOURCE=jdk-$VERSION-dlj-linux-i586.bin
+     SOURCE_HASH=sha512:0b169c94d93fdf58aaa9909d91e2aef9f3bc311cb2c646f2716e99017c6c2e827acee573f545ddd789c7441a3be289bc5b9d0ca5c411937243b533f274a5cd46
         ;;
 	x86-64|64)
 	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
 	  then
-          SOURCE=jdk-$VERSION-linux-amd64.bin
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+          SOURCE=jdk-$VERSION-dlj-linux-amd64.bin
+     SOURCE_HASH=sha512:3da7caedc103736ce0fd8955c155a0c0ae839c6492eab55c5d1d470ddbf7e16ee7e1b7d4b1743995115877cd2727ab998c6d594e0edffde1875255f7026c337b
           else
-          SOURCE=jdk-$VERSION-linux-i586.bin
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+          SOURCE=jdk-$VERSION-dlj-linux-i586.bin
+     SOURCE_HASH=sha512:0b169c94d93fdf58aaa9909d91e2aef9f3bc311cb2c646f2716e99017c6c2e827acee573f545ddd789c7441a3be289bc5b9d0ca5c411937243b533f274a5cd46
 	  fi
 	;;
 ###########################################################################
@@ -26,7 +26,9 @@ case "${SMGL_COMPAT_ARCHS[0]}" in
 	     VER=Unsupported
 	;;
 esac
-        WEB_SITE=http://java.sun.com/j2se/1.5.0/download.html
+      SOURCE_URL=http://dlc.sun.com/dlj/binaries/$SOURCE
+         LICENSE=DLJ
+        WEB_SITE=https://jdk-distros.dev.java.net/developer.html
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk$VER
       PATCHLEVEL=1
          ENTERED=20041006
@@ -38,7 +40,6 @@ The Java Development Kit is a feature-complete development and
 deployment platform. The JDK contains the Java Plug-In for Netscape 4.x 
 and Mozilla/Netscape 6.x.
 
-Note: You need to download the JDK installer yourself from the Sun Website,
-see 'gaze website jdk1.5-bin' for the location. Put the downloaded file in
-/var/spool/sorcery so cast will find it.
+The DLJ license allows linux distributions to distribute the JDK. One must
+agree to the license before one can install the software.
 EOF
