@@ -1,29 +1,14 @@
 # Special messages with regards to Java sources.
 #
 message "\n${MESSAGE_COLOR}" \
-        "For ${SPELL} you have to download the sources yourself from the Sun Website, see\n\n" \
-        "${PROBLEM_COLOR}'gaze what ${SPELL}'${MESSAGE_COLOR}\n\n" \
-        "for the files and location. Put the downloaded files in /var/spool/sorcery \n" \
-        "so cast will find it.${DEFAULT_COLOR}\n"
+        "For ${SPELL} you have to agree to the DLJ license.\n\n" \
+        "Available at http://dlc.sun.com/dlj/DLJ-v1.1.txt${DEFAULT_COLOR}\n\n" &&
 
-local JAVA_SOURCE_NUMBER
-local JAVA_SVAR
-local JAVA_ALL_SOURCES="y"
-for JAVA_SOURCE_NUMBER in $(get_source_nums X); do
-	JAVA_SOURCE_NUMBER=${JAVA_SOURCE_NUMBER/X/}
-	JAVA_SVAR="SOURCE${JAVA_SOURCE_NUMBER}"
-	message "${MESSAGE_COLOR}Verifying ${SOURCE_CACHE}/${!JAVA_SVAR}${DEFAULT_COLOR}"
-	if [ ! -e $SOURCE_CACHE/${!JAVA_SVAR} ]; then
-		JAVA_ALL_SOURCES="n"
-	fi
-done
-
-if [[ "$JAVA_ALL_SOURCES" != "y" ]]; then
-if ! query "YOU HAVE DOWNLOADED THE SOURCES AND WISH TO CONTINUE CASTING?" n;
-then
-  message "${MESSAGE_COLOR}Please recast when you have the sources!\n"
-  return 1 
-fi
+if ! spell_ok ${SPELL} ; then
+  if ! query  "Do you agree to the terms in the DLJ License?" n; then
+    return 1
+  fi
 else 
-	message "${MESSAGE_COLOR}All sources already downloaded!. Continuing.${DEFAULT_COLOR}"
+  message "${MESSAGE_COLOR}Already agreed to license\n${DEFAULT_COLOR}"
 fi
+
