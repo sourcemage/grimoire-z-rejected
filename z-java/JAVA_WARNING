@@ -2,13 +2,13 @@
 #
 message "\n${MESSAGE_COLOR}" \
         "For ${SPELL} you have to agree to the DLJ license.\n\n" \
-        "Available at http://dlc.sun.com/dlj/DLJ-v1.1.txt${DEFAULT_COLOR}\n\n" &&
+        "Available at http://dlc.sun.com/dlj/DLJ-v1.1.txt${DEFAULT_COLOR}\n" &&
 
-if ! spell_ok ${SPELL} ; then
-  if ! query  "Do you agree to the terms in the DLJ License?" n; then
-    return 1
-  fi
+config_query DLJ_AGREE "Do you agree to the DLJ License?" n &&
+
+if [[ "$DLJ_AGREE" != "y" ]] ; then
+  return 1
 else 
-  message "${MESSAGE_COLOR}Already agreed to license\n${DEFAULT_COLOR}"
+  message "${MESSAGE_COLOR}Agreed to license, proceeding with install.\n${DEFAULT_COLOR}"
 fi
 
