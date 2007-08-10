@@ -1,3 +1,6 @@
+2007-08-09 David Kowis <dkowis@shlrm.org>
+	* DETAILS, INSTALL: updated to use the DLJ licensed binaries
+
 2007-07-29 Eric Sandall <sandalle@sourcemage.org>
 	* PROVIDES: Also provides JDK5 (Bug #13891)
 

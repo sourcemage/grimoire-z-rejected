@@ -5,16 +5,16 @@
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	ia32|32)
           SOURCE=jdk-$VERSION-linux-i586.bin
-      SOURCE_HASH=sha512:e087d3b5364e8de970d8e564e899c69061eed6162d178ae51f19f60b9b4627fc334feeccbb1663f8622f32770c6eb2dda00e526a36299842ab109f87c57a3ec9
+      SOURCE_HASH=sha512:a5c924543b25358176aba3eb9ebd250e063a23a43afec5d887e6d3ea4f12f3d71740dfb75629047f3557df562d9f1d7c998b28fe0570c6b84f0f5cae2d3785c9
         ;;
 	x86-64|64)
 	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
 	  then
           SOURCE=jdk-$VERSION-linux-amd64.bin
-      SOURCE_HASH=sha512:6bd1f5c675d5cdb23efe388804036a36de27e86cdeb5b437c7ac32b14046973bae8f7d238264546501a6781bb4e7c8b6474129fe6bd446610a8cc908091c9be0
+      SOURCE_HASH=sha512:e0c9a1e1744cce4531c38f5de10b4c5ec229a4fcbb05c01599d2490f4b688601b24ff67cd928a180e7a9222f27fd9ad0938399f83b0d8b2213990e57f6430dd2
           else
           SOURCE=jdk-$VERSION-linux-i586.bin
-      SOURCE_HASH=sha512:e087d3b5364e8de970d8e564e899c69061eed6162d178ae51f19f60b9b4627fc334feeccbb1663f8622f32770c6eb2dda00e526a36299842ab109f87c57a3ec9
+      SOURCE_HASH=sha512:a5c924543b25358176aba3eb9ebd250e063a23a43afec5d887e6d3ea4f12f3d71740dfb75629047f3557df562d9f1d7c998b28fe0570c6b84f0f5cae2d3785c9
 	  fi
 	;;
 ###########################################################################
@@ -26,6 +26,8 @@ case "${SMGL_COMPAT_ARCHS[0]}" in
 	     VER=Unsupported
 	;;
 esac
+      SOURCE_URL=http://dlc.sun.com/dlj/binaries/$SOURCE
+         LICENSE=DLJ
         WEB_SITE=http://java.sun.com/javase/downloads/index.jsp
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk${VER/_01}
          ENTERED=20070208
@@ -36,8 +38,4 @@ cat << EOF
 The Java Development Kit is a feature-complete development and
 deployment platform. The JDK contains the Java Plug-In for Netscape 4.x 
 and Mozilla/Netscape 6.x, if you've installed the i586.
-
-Note: You need to download the JDK installer yourself from the Sun Website,
-see 'gaze website $SPELL' for the location. Put the downloaded file in
-/var/spool/sorcery so cast will find it.
 EOF
