@@ -1,9 +1,9 @@
            SPELL=fasm
-         VERSION=1.58
+         VERSION=1.67.22
           SOURCE=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://flatassembler.net/$SOURCE
-     SOURCE_HASH=sha512:adcf7b2c5f0b41ef3e1ae985bc8c39bf3ce73edebd433fc28e08fe1bd830a02915abdcd14c41201526a9dbe178a83e68e400b80bdec6a59ec2dc80b9433add73
+     SOURCE_HASH=sha512:c43365ef451ea5d6f71ea7b98337c27a24363fcf1f28e4177bde6e2cb3b6d523134d9eb2f5aa9ef0a75a90a905a1211c40dea072c61f1e3af4075a98fa72c4ef
         WEB_SITE=http://flatassembler.net/
          ENTERED=20050207
       LICENSE[0]=license.txt
@@ -13,7 +13,7 @@ cat << EOF
 FASM is a fast and efficient self-assembling 80x86 assembler.
  
 Currently it supports all 8086-80486/Pentium instructions with MMX, SSE,
-SSE2, SSE3 and 3DNow! extensions.
+SSE2, SSE3 and 3DNow! extensions and x86-64 (AMD64 and EM64T).
 
 It can produce output in binary, MZ, PE, COFF or ELF format.
 
