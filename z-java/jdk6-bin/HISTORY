@@ -1,3 +1,7 @@
+2007-08-19 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Increment PATCHLEVEL to install plugin (for ia32 architectures)
+	* INSTALL: SMGL_COMPAT_ARCH[0] -> SMGL_COMPAT_ARCHS[1]
+
 2007-08-09 David Kowis <dkowis@shlrm.org>
 	* DETAILS, INSTALL: updated to use the DLJ licensed binaries
 

@@ -2,6 +2,7 @@
            SPELL=jdk6-bin
          VERSION=6u2
              VER=1.6.0_02
+      PATCHLEVEL=1
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	ia32|32)
           SOURCE=jdk-$VERSION-dlj-linux-i586.bin
