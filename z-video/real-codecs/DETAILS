@@ -1,13 +1,13 @@
            SPELL=real-codecs
-         VERSION=20040626
+         VERSION=20050115
 if [ "$(uname -m)" == "ppc" ]; then
           SOURCE=rp8codecs-ppc-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/rp8codecs-ppc-$VERSION
-          MD5[0]=f045a1bfd8318277ece8012eb133f7a5
+          MD5[0]=ce733449d4ea35bdc4fc30d81b990915
 else
           SOURCE=rp9codecs-$VERSION.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/rp9codecs-$VERSION
-     SOURCE_HASH=sha512:7dea2c7a824b6584a091d13d2e7f72634af8a3c98536440f710029c9cdbdddead1a956959c9de0f882f21c986d21b352d3bbc517336938178fd9d8a2ea16a443
+     SOURCE_HASH=sha512:e262e30a59fd7dfe05e38b2b174270afa2675d9608ef3cdca56a4ed2bf02ac181868288b0566171265baa7c65967e8cdcb2c98d4a466f27221b47d6798a1ee0d
 fi
    SOURCE_URL[0]=ftp://mplayerhq.hu/MPlayer/releases/codecs/$SOURCE
         WEB_SITE=http://www.mplayerhq.hu
