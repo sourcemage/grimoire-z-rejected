@@ -1,2 +1,2 @@
-make &&
-make lowercase
+make LNG="$JA2_LANG" SGPDATADIR="$JA2_DATA" &&
+make LNG="$JA2_LANG" SGPDATADIR="$JA2_DATA" lowercase
