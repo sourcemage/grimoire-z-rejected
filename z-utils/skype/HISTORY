@@ -1,3 +1,11 @@
+2007-09-14 Treeve jelbert <treeve@sourcemage.org>
+	* DETAILS: version 1.4.0.99
+	  add DOCS
+	  fix typo is SOURCE name
+	* DEPENDS: add qt4 -sub DBUS
+	* PREPARE: deleted
+	* INSTALL: adapt to new file names
+
 2007-06-15 Treeve jelbert <treeve@sourcemage.org>
 	* DETAILS: version 1.4.0.74
 	  use .bz2

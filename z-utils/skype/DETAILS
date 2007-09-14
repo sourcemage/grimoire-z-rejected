@@ -1,13 +1,14 @@
              SPELL=skype
-           VERSION=1.4.0.74
+           VERSION=1.4.0.99
   SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
-            SOURCE=$SPELL-$VERSION.bz2
-       SOURCE_HASH=sha512:19df660bf7286efe0e939e8f8c5adee764bcc3377b883e1b51a1299f3a770da3fbe8a9fbf95a6ec6f34448ebfdb3c9e6ee3841f3989c8649f031a60a3c88e369
+            SOURCE=$SPELL-$VERSION.tar.bz2
+       SOURCE_HASH=sha512:d424f35c425623c678359bd6d55672a9aca78bcc11c2db48267ff8f21903a419f55c0c9b4f6befcc90a3775de6d9103ba193930c3d0a634fd1ade087f7092427
           WEB_SITE=http://www.skype.com/
      SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
         LICENSE[0]=/usr/share/doc/skype/LICENSE
            ENTERED=20040624
         ARCHIVE=off
+           DOCS="README LICENSE"
 	    REJECT="Non-Free license"
              SHORT="Voice over IP (voip) client."
 cat << EOF
