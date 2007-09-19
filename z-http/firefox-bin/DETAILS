@@ -7,17 +7,18 @@ if [ "$FIREFOX_DEVEL" == "y" ]; then
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/granparadiso/alpha7/linux-i386/en-US/$SOURCE
   SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/granparadiso/alpha7/linux-i386/en-US/$SOURCE2
 else
-         VERSION=2.0.0.6
+         VERSION=2.0.0.7
           SOURCE=firefox-${VERSION}.tar.gz
-         SOURCE2=$SOURCE.asc
-      SOURCE_GPG="firefox.gpg:$SOURCE2"
+#        SOURCE2=$SOURCE.asc
+#     SOURCE_GPG="firefox.gpg:$SOURCE2"
    SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}
-  SOURCE2_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}.asc
+# SOURCE2_URL[0]=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$VERSION/linux-i686/en-US/${SOURCE}.asc
+     SOURCE_HASH=sha512:2acfb0d644d97ace06d4cdd60a8eba86e914ad9a7e2548cefa33247d358297dee2e3c62d4f73b549e8f0cd8e7fd249ea70686fc37d877d5c50478372716f7a7e
 fi
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/firefox
         WEB_SITE=http://www.mozilla.org/firefox
          ENTERED=20040902
-  SECURITY_PATCH=5
+  SECURITY_PATCH=6
       LICENSE[0]=MOZILLA
           REJECT="is non-source"
            SHORT="The binary version of firefox."
