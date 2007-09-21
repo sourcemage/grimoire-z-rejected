@@ -1,3 +1,7 @@
+2007-09-21 George Sherwood <george@beernabeer.com>
+	* DETAILS: Updated devel to 3.0a8.
+	* firefox.gpg: Added new sig
+
 2007-09-19 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated stable to version 2.0.0.7. SECURITY_PATCH++
 	  New sig not in firefox.gpg
