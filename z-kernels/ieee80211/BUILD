@@ -1,1 +1,1 @@
-make KVER=$(get_kernel_version)
+echo y | make KVER=$(get_kernel_version)

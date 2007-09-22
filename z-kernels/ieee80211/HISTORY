@@ -1,3 +1,6 @@
+2007-09-22 Eric Sandall <sandalle@sourcemage.org>
+	* BUILD: Pass 'y' to make to continue if it will overwrite kernel modules
+
 2007-09-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 1.2.18 (works with 2.6.22)
 
