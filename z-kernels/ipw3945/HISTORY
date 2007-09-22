@@ -1,5 +1,10 @@
+2007-09-21 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD: Doesn't seem to require CONFIG_NET_RADIO (which I cannot
+	  find in my linux-2.6.22/.config anyways)
+
 2007-05-15 David Brown <dmlb2000@gmail.com>
 	* DETAILS: updated to 1.2.1
 
 2007-04-23 David Brown <dmlb2000@gmail.com>
 	* ALL: created spell (really forked the ipw2200 and changes things)
+

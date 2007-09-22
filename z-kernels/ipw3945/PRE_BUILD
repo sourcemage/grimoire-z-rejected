@@ -1,11 +1,3 @@
-if [[ $(get_kernel_config CONFIG_NET_RADIO) != y ]]
-then
-  message "${PROBLEM_COLOR}You don't have CONFIG_NET_RADIO"     \
-          "enabled in your kernel configuration, cannot build"  \
-          "ipw2200.${DEFAULT_COLOR}"                            &&
-  return 1
-fi  &&
-
 local  _FW_LOADER=$(get_kernel_config CONFIG_FW_LOADER)  &&
 
 if [[ $_FW_LOADER != y &&
