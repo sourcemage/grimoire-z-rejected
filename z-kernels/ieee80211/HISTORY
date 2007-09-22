@@ -1,3 +1,6 @@
+2007-09-21 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 1.2.18 (works with 2.6.22)
+
 2007-02-05 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Version 1.2.16.
 
@@ -50,3 +53,4 @@
 	* ALL: created spell
 	* BUILD: did check for subsystem if it's already in the kernel
 	* INSTALL: same check for subsystem if it's already in the kernel
+
