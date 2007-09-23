@@ -1,2 +1,2 @@
-install ipw3945 modprobe --ignore-install ipw3945 && /sbin/ipw3945d-start
-remove  ipw3945 /sbin/ipw3945d-stop && modprobe -r --ignore-remove ipw3945
+install ipw3945 modprobe --ignore-install ipw3945 && if [ ! -e /lib64 ]; then ln -s /lib /lib64 && touch /var/tmp/ipw3945_lib64.fix; fi && /sbin/ipw3945d-start && if [ -f /var/tmp/ipw3945_lib64.fix ]; then rm /lib64 /var/tmp/ipw3945_lib64.fix; fi
+remove  ipw3945 if [ ! -e /lib64 ]; then ln -s /lib /lib64 && touch /var/tmp/ipw3945_lib64.fix; fi && /sbin/ipw3945d-stop && if [ -f /var/tmp/ipw3945_lib64.fix ]; then rm /lib64 /var/tmp/ipw3945_lib64.fix; fi && modprobe -r --ignore-remove ipw3945

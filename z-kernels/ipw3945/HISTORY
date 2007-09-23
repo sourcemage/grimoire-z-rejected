@@ -1,5 +1,11 @@
 2007-09-22 Eric Sandall <sandalle@sourcemage.org>
 	* UNATTEND_SAFE: Safe to reinstall unattended
+	* ipw3945d: The /sbin/ipw3945d binary is linked specifically against
+	  /lib64/ld-linux-x86-64.so.2 and won't find ld-linux-x86-64.so.2
+	  if it's in LD_LIBRARY_PATH somewhere else (e.g. /lib).
+	  So, the modprobe.d script will now temporarily create /lib64 -> /lib
+	  if there is no /lib64 directory (in case people are using /lib64)
+	  while the daemon is started or stopped.
 
 2007-09-21 Eric Sandall <sandalle@sourcemage.org>
 	* PRE_BUILD: Doesn't seem to require CONFIG_NET_RADIO (which I cannot
