@@ -1,3 +1,8 @@
+2007-10-02 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: Fixed SOURCE_URL[0]
+	  fixed version in the descriptions
+	  updated FLASH_BETA=y to 100107
+
 2007-08-09 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 9.0.48.0
 
