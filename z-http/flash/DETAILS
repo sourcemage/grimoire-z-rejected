@@ -1,9 +1,9 @@
            SPELL=flash
 if [[ "${FLASH_BETA}" == "y" ]]; then
 
-         VERSION=061107
+         VERSION=100107
           SOURCE=flashplayer9_install_linux_${VERSION}.tar.gz
-   SOUREC_URL[0]=http://download.macromedia.com/pub/labs/flashplayer9_update/${SOURCE}
+   SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer9_update/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_9_linux
 
 else
@@ -21,8 +21,8 @@ fi
         WEB_SITE=http://www.macromedia.com
          ENTERED=20020319
           REJECT="is non-source and has licensing issues"
-           SHORT="Macromedia Flash Plugin v7 for Web Browsers."
+           SHORT="Macromedia Flash Plugin v9 for Web Browsers."
             DOCS="Readme.htm Readme.txt"
 cat << EOF
-Macromedia Flash Plugin version 7 for web browsers.
+Macromedia Flash Plugin version 9 for web browsers.
 EOF
