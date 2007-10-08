@@ -1,3 +1,5 @@
 2007-10-07 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 2.14.1.5 (somenow 2.14.1.5 > 2.14.4)
+	  Now iwlwifi-3945-1.ucode instead of iwlwifi-3945.ucode
 	* DETAILS, CONFIGURE, PRE_BUILD, BUILD, INSTALL: Created
 
