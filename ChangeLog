@@ -1,5 +1,6 @@
 2007-10-07 Eric Sandall <sandalle@sourcemage.org>
 	* z-net/iwlwifi-3945-ucode: Added firmware code for the Intel 3945
+	* z-net/iwlwifi-4965-ucode: Added firmware code for the Intel 4965
 
 2007-07-29 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* z-games/ja2-stracciatella: a port of Jagged Alliance 2 to SDL
