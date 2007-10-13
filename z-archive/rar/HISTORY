@@ -1,3 +1,7 @@
+2007-10-13 Elisamuel Resto <ryuji@mages.ath.cx>
+	* DETAILS: version updated to 3.71 (3.7.1)
+	* DEPENDS: removed, current version works with gcc and gcc34
+
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.
 

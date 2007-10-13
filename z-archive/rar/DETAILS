@@ -1,8 +1,8 @@
            SPELL=rar
-         VERSION=3.5.b1
-          SOURCE="$SPELL"linux-$VERSION.tar.gz
+         VERSION=3.7.1
+          SOURCE="${SPELL}linux-${VERSION}.tar.gz"
    SOURCE_URL[1]=http://www.rarlab.com/rar/$SOURCE
-     SOURCE_HASH=sha512:b67db043559bbea3406460b464dd0400aaa872aae3c3a47db8a3e19b59b5dbad9f5a8be69d738c7af75c9bbaf2cc403b812092444d8c43ee07070870c30abdf8
+     SOURCE_HASH=sha512:cf93bcefc7eb29b896b5d6875627bab5970a5836eb10f4db91b7c4e0fec4a958a44f4db769b2618775963d0af413b9e32815fcc6a000bdc317749976bc241226
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
         WEB_SITE=http://www.rarlab.com/
          ENTERED=20050524
