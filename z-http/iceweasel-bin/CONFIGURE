@@ -1,0 +1,6 @@
+# Standard rejected warnings.
+source $GRIMOIRE/REJECTED_MSG &&
+
+config_query ICEBIN_ICEWEASEL_LINK "Create a symlink to iceweasel?" n &&
+config_query ICEBIN_FIREFOX_LINK "Create a symlink to firefox?" n &&
+config_query ICEBIN_MOZILLA_LINK "Create a symlink to mozilla?" n
