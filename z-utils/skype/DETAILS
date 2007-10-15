@@ -1,8 +1,8 @@
              SPELL=skype
-           VERSION=1.4.0.99
+           VERSION=1.4.0.118
+       SOURCE_HASH=sha512:d3ffd996325e037feb0e9a5e4dd0044f9dd3b185cdb726d65e056b2e8d9f1402d782e740ec5d667912fc0517206984d7fb7d8f6e6a54f0531fa303cea6c2049c
   SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
             SOURCE=$SPELL-$VERSION.tar.bz2
-       SOURCE_HASH=sha512:d424f35c425623c678359bd6d55672a9aca78bcc11c2db48267ff8f21903a419f55c0c9b4f6befcc90a3775de6d9103ba193930c3d0a634fd1ade087f7092427
           WEB_SITE=http://www.skype.com/
      SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
         LICENSE[0]=/usr/share/doc/skype/LICENSE
