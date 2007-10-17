@@ -1,3 +1,6 @@
+2007-10-18 Lalo Martins <lalo@sourcemage.org>
+	* DETAILS: Fixed typo in if (platform) test
+
 2007-08-04 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS: Updated to 6.6.1
 
