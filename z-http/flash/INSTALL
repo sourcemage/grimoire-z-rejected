@@ -152,4 +152,22 @@ case $XULRUNNER in
 			fi
 		fi
 	;;
+esac &&
+
+case $ICE_BIN in
+        y|Y)
+		if [ -d /opt/iceweasel/plugins ]; then
+			message "${MESSAGE_COLOR}Installing for Iceweasel-bin${DEFAULT_COLOR}\n"
+			if [ -e /opt/iceweasel/plugins/libflashplayer.so ]; then
+				rm -f /opt/iceweasel/plugins/libflashplayer.so
+			fi
+			if [ -e /opt/iceweasel/plugins/flashplayer.xpt ]; then
+				rm -f /opt/iceweasel/plugins/flashplayer.xpt
+			fi
+			cp libflashplayer.so /opt/iceweasel/plugins/ &&
+			if [[ "${FLASH_BETA}" == "n" ]]; then
+				cp flashplayer.xpt /opt/iceweasel/plugins/
+			fi
+		fi
+	;;
 esac
