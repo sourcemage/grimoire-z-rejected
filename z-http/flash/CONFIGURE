@@ -21,7 +21,7 @@ echo "Iceweasel" &&
 
 echo "Select which currently installed applications you wish to install Flash for."  &&
 
-persistent_add MOZILLA FIREFOX SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE XULRUNNER ICE_BIN &&
+persistent_add MOZILLA FIREFOX SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE XULRUNNER ICE_BIN ICEWEASEL &&
 
 ask_spell mozilla Mozilla MOZILLA
 ask_spell firefox Firefox FIREFOX
@@ -31,4 +31,5 @@ ask_spell kdebase Konqueror KDEBASE
 ask_spell opera Opera OPERA
 ask_spell netscape4 Netscape NETSCAPE
 ask_spell xulrunner XULRunner XULRUNNER
+ask_spell iceweasel Iceweasel ICEWEASEL
 ask_spell iceweasel-bin Iceweasel-bin ICE_BIN

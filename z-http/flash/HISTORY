@@ -1,3 +1,6 @@
+2007-10-22 Pol Vinogradov <vin.public@gmail.com>
+	* CONFIGURE, INSTALL: added iceweasel support
+
 2007-10-20 Alexander Tsamutali <astsmtl@gmail.com>
 	* CONFIGURE, INSTALL: added support for iceweasel-bin
 
