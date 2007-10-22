@@ -1,3 +1,6 @@
+2007-10-22 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: updated spell to 0.7
+
 2007-09-10 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* PRE_BUILD, lowercase.patch: removed
 	* BUILD: brought over PRE_BUILD code
