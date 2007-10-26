@@ -1,3 +1,7 @@
+2007-10-26 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: sha512sums were wrong, weren't the ones for DLJ archives.
+	  Fixes bug #14065
+
 2007-10-24 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: Updated to version 1.5.0_13
 
