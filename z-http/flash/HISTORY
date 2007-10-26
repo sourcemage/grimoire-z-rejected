@@ -1,3 +1,9 @@
+2007-10-22 Pol Vinogradov <vin.public@gmail.com>
+	* CONFIGURE, INSTALL: added iceweasel support
+
+2007-10-20 Alexander Tsamutali <astsmtl@gmail.com>
+	* CONFIGURE, INSTALL: added support for iceweasel-bin
+
 2007-10-02 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: Fixed SOURCE_URL[0]
 	  fixed version in the descriptions
