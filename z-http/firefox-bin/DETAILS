@@ -7,7 +7,7 @@ if [ "$FIREFOX_DEVEL" == "y" ]; then
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/granparadiso/alpha8/linux-i386/en-US/$SOURCE
   SOURCE2_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/granparadiso/alpha8/linux-i386/en-US/$SOURCE2
 else
-         VERSION=2.0.0.7
+         VERSION=2.0.0.9
           SOURCE=firefox-${VERSION}.tar.gz
          SOURCE2=$SOURCE.asc
       SOURCE_GPG="firefox.gpg:$SOURCE2"
