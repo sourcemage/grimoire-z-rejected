@@ -2,5 +2,8 @@ depends  rpmunpack     &&
 depends  mktemp        &&
 depends  JAVA          &&
 optional_depends openoffice2-bin-lang-nl \
-  '' '' 'For the Dutch languagepack'
-
+  '' '' 'For the Dutch languagepack'     &&
+optional_depends openoffice2-bin-lang-fr \
+  '' '' 'For the French languagepack'     &&
+optional_depends openoffice2-bin-lang-es \
+  '' '' 'For the Spanish languagepack'
