@@ -1,3 +1,11 @@
+2007-11-05 Arjan Bouter <abouter@sourcemage.org>
+	* WIP: removed
+	* DETAILS: version bump to 2.3.0
+	* PRE_BUILD: commented out the core04 extraction
+	* FINAL: added message about languagepacks
+	* locales: removed
+	* removed language selection
+
 2007-08-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Addes second SOURCE for English version to fix broken core04u
 	* PRE_BUILD: Unpack the uncorrupted core04u instead of the corrupt core04u

@@ -1,17 +1,8 @@
            SPELL=openoffice2-bin
-         VERSION=2.2.1
-if  [  "${OO2_LOCALE:-en}" == "en"  ]; then
+         VERSION=2.3.0
           SOURCE=OOo_${VERSION/-*/}_LinuxIntel_install_en-US.tar.gz
-         SOURCE2=openoffice.org-core04u-2.2.1-9161.i586.rpm
-  SOURCE2_URL[0]=http://live.prooo-box.org/openoffice.org/linux/OOo_2.2.1_LinuxIntel_de_rpms/RPMS/$SOURCE2
-     SOURCE2_GPG="gurus.gpg:$SOURCE.sig"
      COMMON_PATH=openoffice/stable/${VERSION/-*/}
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice2
-else
-          SOURCE=OOo_${VERSION/-*/}_LinuxIntel_install_${OO2_LOCALE}.tar.gz
-     COMMON_PATH=openoffice/localized/${OO2_LOCALE}/${VERSION/-*/}
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice2
-fi 
    SOURCE_URL[0]=http://mirrors.isc.org/pub/${COMMON_PATH}/${SOURCE}
    SOURCE_URL[1]=ftp://ftp.ussg.iu.edu/pub/${COMMON_PATH}/${SOURCE}
    SOURCE_URL[2]=http://mirror.pacific.net.au/${COMMON_PATH}/${SOURCE}
