@@ -1,5 +1,7 @@
 2007-11-06 Arjan Bouter <abouter@sourcemage.org>
 	* z-editors/openoffice2-bin-lang-nl: added dutch languagepack
+	* z-editors/openoffice2-bin-lang-fr: added french languagepack
+	* z-editors/openoffice2-bin-lang-es: added spanish languagepack
 
 2007-10-26 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* z-x11/openmotif: moved from main grimoire here, non-Free license
