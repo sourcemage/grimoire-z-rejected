@@ -1,0 +1,30 @@
+           SPELL=openoffice2-bin-lang-nl
+         VERSION=2.3.0
+        OOO_LANG=nl
+       LANG_PATH="openoffice/localized/$OOO_LANG/$VERSION"
+          SOURCE="OOo_${VERSION}_LinuxIntel_langpack_${OOO_LANG}.tar.gz"
+   SOURCE_URL[0]="http://mirrors.isc.org/pub/${LANG_PATH}/$SOURCE"
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig"
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/OOG680_m5_native_packed-1_${OOO_LANG}.9221
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.openoffice.org
+         ENTERED=20050625
+         ARCHIVE="off"
+          REJECT="This spell is non-source"
+           SHORT="The binary version of OpenOffice 2"
+cat << EOF
+OpenOffice.org is the open source project through which Sun Microsystems has
+released the technology for the popular StarOffice[tm] Productivity Suite.
+All of the StarOffice code is available under the GNU Lesser General Public
+License (LGPL) as well as the Sun Industry Standards Source License (SISSL).
+
+Sun is participating as a member of the OpenOffice.org community.
+OpenOffice.org is being hosted by CollabNet. 
+
+The suite includes:
+scalc    -  A spreadsheet application
+sdraw    -  A vector drawing program
+simpress -  A presentation program
+smath    -  An equation editor
+swriter  -  A word processor
+EOF
