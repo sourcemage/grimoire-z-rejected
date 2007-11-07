@@ -1,3 +1,6 @@
+2007-11-07 Martin Spitzbarth <m.spitzbarth@gmx.de>
+	* z-kernels/ati-fglrx: new spell for ATI's proprietary display drivers
+
 2007-11-06 Arjan Bouter <abouter@sourcemage.org>
 	* z-editors/openoffice2-bin-lang-nl: added dutch languagepack
 	* z-editors/openoffice2-bin-lang-fr: added french languagepack
