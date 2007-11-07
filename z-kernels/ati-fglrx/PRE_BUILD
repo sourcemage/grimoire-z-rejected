@@ -1,0 +1,72 @@
+local ATI_XPROVIDER
+
+#
+# Verify and extract the source
+#
+mkdir -p ${SOURCE_DIRECTORY} &&
+verify_file &&
+
+# copy the self-extracting package in order to chmod +x
+cp ${SOURCE_CACHE}/${SOURCE} ${SOURCE_DIRECTORY} &&
+cd ${SOURCE_DIRECTORY} &&
+chmod +x $SOURCE &&
+
+# This next line may be dirty
+# Syntax: <self-extractor> --extract <directory name>
+./${SOURCE} --extract archive &&
+
+# Clean up: Move documentation around to get a clean /usr/share/doc/fglrx
+cd ${SOURCE_DIRECTORY} &&
+mv archive/common/usr/share/doc/fglrx documentation &&
+
+#
+# Patches
+#
+
+# We don't always build for the currently running kernel
+sedit "s:^KVER .*:KVER            = $(get_kernel_version):" \
+      archive/common/lib/modules/fglrx/build_mod/2.6.x/Makefile
+local ATI_XPROVIDER
+local ATI_XVERSION
+ATI_XPROVIDER="$(get_spell_provider $SPELL X11-SERVER)" &&
+
+#
+# Preparing the build directory structure
+#
+
+# Original files are in ./archive, and the work is done in ./build
+mkdir build &&
+
+
+# Merge files from different source directories to match the system
+cp -R archive/common/* build &&
+
+case $ATI_XPROVIDER in
+        xorg-server)
+                ATI_XVERSION=x710
+        ;;
+        xorg)
+                ATI_XVERSION=x960
+        ;;
+        *)
+                message "${PROBLEM_COLOR}" \
+                        "Unknown X server: $ATI_XPROVIDER" \
+                        "${DEFAULT_COLOR}"
+        ;;
+esac &&
+
+case "${SMGL_COMPAT_ARCHS[1]}" in
+        "ia32")
+                cp -R archive/arch/x86/* build &&
+                cp -R archive/${ATI_XVERSION}/* build
+        ;;
+        "x86_64")
+                cp -R archive/arch/x86_64/* build &&
+                cp -R archive/${ATI_XVERSION}_64a/* build
+        ;;
+        *)
+                message "${PROBLEM_COLOR}" \
+                        "Unsupported architecture: ${SMGL_COMPAT_ARCHS[1]}" \
+                        "${DEFAULT_COLOR}"
+        ;;
+esac

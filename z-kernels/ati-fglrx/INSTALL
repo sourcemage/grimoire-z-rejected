@@ -1,0 +1,20 @@
+cd ${SOURCE_DIRECTORY} &&
+
+# Install the fglrx kernel module to a hopefully sane location
+mkdir -p /lib/modules/$(get_kernel_version)/kernel/drivers/char/drm &&
+install -m 644 build/lib/modules/fglrx/build_mod/fglrx.ko \
+               ${INSTALL_ROOT}/lib/modules/$(get_kernel_version)/kernel/drivers/char/drm &&
+
+# There is basically a complete filesystem structure present with ready to use
+# files. We do a little clean up and merge it as a whole into $INSTALL_ROOT.
+
+rm -R build/usr/src build/usr/share/doc &&
+mv build/usr/X11R6/bin build/usr/bin &&
+chmod 0755 build/usr/bin/* &&
+
+# Abuse tar as a copy command that merges the build directory
+# with ${INSTALL_ROOT}.
+# lib is left out intentionally, as fglrx.ko is the only useful file in it and
+# it was copied earlier in this script.
+cd ${SOURCE_DIRECTORY}/build &&
+tar -c etc/ati opt usr | tar -x --directory ${INSTALL_ROOT}/

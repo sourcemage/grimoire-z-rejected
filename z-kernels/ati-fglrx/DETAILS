@@ -1,0 +1,20 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=ati-fglrx
+         VERSION=8.42.3
+          SOURCE=ati-driver-installer-${VERSION}-x86.x86_64.run
+     SOURCE_HASH=sha512:341e5f17babf4bdd17bf6ced6b885787ceaa50e66370841b63fd4f156576247536c3963c59dbe6c4ab3763c39889c0566db8ac3d38857111525aa186adaff562
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+   SOURCE_URL[0]=https://a248.e.akamai.net/f/674/9206/0/www2.ati.com/drivers/linux/${SOURCE}
+        WEB_SITE=http://www.ati.com
+         ENTERED=20071107
+          REJECT="Non-GPL compatible software license"
+      LICENSE[0]="GPL/QPL"
+            DOCS="documentation/*"
+           SHORT="X Window display driver for the ATI graphics accelerators"
+cat << EOF
+Display driver files for the ATI RADEON (9500 and later), MOBILITY RADEON (M10
+and later), RADEON XPRESS IGP and FireGL (Z1 and later) series of graphics
+accelerators.  This package provides 2D display drivers, precompiled kernel
+modules, kernel module build environment, control panel source code and
+hardware accelerated OpenGL.
+EOF
