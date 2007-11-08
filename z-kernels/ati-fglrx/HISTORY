@@ -1,3 +1,6 @@
+2007-11-08 Martin Spitzbarth <m.spitzbarth@gmx.de>
+	* DOWNLOAD: Added the file to pass --no-check-certificate to wget
+
 2007-11-07 Martin Spitzbarth <m.spitzbarth@gmx.de>
-	* BUILD, DEPENDS, DETAILS, INSTALL, LICENSE, PRE_BUILD, PREPARE, TRIGGERS:
+	* BUILD,DEPENDS,DETAILS,INSTALL,LICENSE,PRE_BUILD,PREPARE,TRIGGERS:
 	  Created the spell
