@@ -1,3 +1,7 @@
+2007-11-09 David Brown <dmlb2000@gmail.com>
+	* PRE_BUILD: added patch for 2.6.24 kernels
+	* ipw3945-2.6.24.patch: added patch for 2.6.24 kernels
+
 2007-09-25 David Brown <dmlb2000@gmail.com>
 	* DETAILS: updated to 1.2.2
 

@@ -45,6 +45,11 @@ fi  &&
 mk_source_dir  "$SOURCE_DIRECTORY"  &&
 unpack_file  ''                     &&
 cd  "$SOURCE_DIRECTORY"             &&
+case "$(get_kernel_version)" in
+  2.6.24*)
+    patch -p1 < ${SPELL_DIRECTORY}/ipw3945-2.6.24.patch
+  ;;
+esac                                &&
 pushd  ${SOURCE_DIRECTORY}          &&
 unpack_file  2                      &&
 unpack_file  3                      &&
