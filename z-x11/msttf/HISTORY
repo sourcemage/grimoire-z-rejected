@@ -1,3 +1,6 @@
+2007-11-14 Julien "_kaze_" ROZO <julien@rozo.org>
+	* CONFLICTS: added conflict with webcore-fonts
+
 2007-03-01 Eric Sandall <sandalle@sourcemage.org>
 	* UNATTEND_SAFE: Added, as this is safe to recast after having
 	  already agreed to the restrictions.

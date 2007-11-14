@@ -1,2 +1,2 @@
-conflicts  truetype
-
+conflicts  truetype  &&
+conflicts  webcore-fonts
