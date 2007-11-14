@@ -1,0 +1,26 @@
+           SPELL=webcore-fonts
+	 VERSION=3.0
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://avi.alkalay.net/software/$SPELL/$SOURCE
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+	  REJECT="has licensing issues"
+        WEB_SITE=http://avi.alkalay.net/linux/docs/font-howto/Font.html#msfonts
+         ENTERED=20071114
+         LICENSE=http://www.microsoft.com/info/cpyright.mspx
+         ARCHIVE="off"
+	   SHORT="Collection of minimum popular high quality TrueType fonts"
+cat << EOF
+Collection of high quality TrueType fonts, default in any MS Windows
+installation (including Vista), and Office 2007 installation.
+These are also the main webfonts as specified in microsoft.com/typography
+The fonts:
+Andale Mono, Arial, Arial Black, Calibri, Cambria, Candara, Consolas,
+Constantia, CorbelComic, Courier New, Georgia, Impact, Lucida Sans,
+Lucida Console, Microsoft Sans Serif, Symbol, Tahoma, Times New Roman,
+Trebuchet, Verdana, Webdings, Wingdings, Wingding 2, Wingding 3.
+
+Note:  To do anything useful with these fonts you'll have to add the line
+'FontPath "/usr/share/fonts/truetype"' to the Files section of your
+/etc/X11/xorg.conf file.
+EOF

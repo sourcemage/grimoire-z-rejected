@@ -1,3 +1,9 @@
+2007-11-14 Julien "_kaze_" ROZO <julien@rozo.org>
+	* z-x11/webcore-fonts: new spell, collection of high quality TrueType
+	  fonts found in any MS Windows installation (including Vista), and
+	  Office 2007 installation.
+	* gurus.gpg: added my key
+
 2007-11-06 Arjan Bouter <abouter@sourcemage.org>
 	* z-editors/openoffice2-bin-lang-nl: added dutch languagepack
 	* z-editors/openoffice2-bin-lang-fr: added french languagepack

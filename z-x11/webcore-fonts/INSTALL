@@ -1,0 +1,5 @@
+mkdir    -p  /usr/share/fonts/truetype                      &&
+install  -o root  -g root  -m 644  -p                       \
+	$SOURCE_DIRECTORY/fonts/*.ttf /usr/share/fonts/truetype &&
+install  -o root  -g root  -m 644  -p                       \
+	$SOURCE_DIRECTORY/vista/*.TTF /usr/share/fonts/truetype
