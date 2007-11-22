@@ -1,0 +1,28 @@
+           SPELL=warsow-bin
+         VERSION=0.32
+          SOURCE=warsow_0.32_linux.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/warsow
+   SOURCE_URL[0]=http://www.megami.de/warsow/releases/$SOURCE
+     SOURCE_HASH=sha1:05691ca3aea23de5280b88004a05491339a6eee6
+      LICENSE[0]="GPL for engine, freeware content"
+        WEB_SITE=http://www.warsow.net/
+         ENTERED=20071122
+         ARCHIVE="off"
+          REJECT="binary distribution, non-free content"
+           SHORT="fast paced multiplayer FPS"
+cat << EOF
+Warsow is a First-person shooter (FPS) game designed for online play. Many
+games, as detailed below, have inspired Warsow, yet it is its own unique game.
+Similarities to Quake 3 CPMA and Unreal Tournament series are probably the most
+evident. The team has sought to create a fun, fast, action-packed game which
+may be seen as a critique of the many realistic, slow, warfare-orientated
+First-person-shooters that saturate todays FPS market.
+
+Concept:
+  * Standalone game for Windows and Linux under General Public License
+  * eSports oriented FPS
+  * Gameplay focused on speed, trick jumps and art of move
+  * Complete Power-up system, including exclusive weak and strong fire mode
+    for each gun
+  * Cartoonish graphics, mixing Cyberpunk / Industrial / SciFi themes
+EOF
