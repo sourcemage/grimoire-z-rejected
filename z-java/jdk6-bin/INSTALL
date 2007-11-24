@@ -1,6 +1,4 @@
-cd  ${INSTALL_ROOT}/usr/lib  &&
-
-sh $SOURCE_CACHE/$SOURCE --accept-license --unpack &&
+cp -va $SOURCE_DIRECTORY /usr/lib  &&
 
 if [[ "${ARCHITECTURE[0]}" == "i386" || "${ARCHITECTURE[0]}" == "i486" ]]
 then

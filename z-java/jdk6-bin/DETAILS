@@ -2,7 +2,7 @@
            SPELL=jdk6-bin
          VERSION=6u3
              VER=1.6.0_03
-      PATCHLEVEL=1
+      PATCHLEVEL=2
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	ia32|32)
           SOURCE=jdk-$VERSION-dlj-linux-i586.bin
@@ -30,7 +30,7 @@ esac
       SOURCE_URL=http://dlc.sun.com/dlj/binaries/$SOURCE
          LICENSE=DLJ
         WEB_SITE=http://java.sun.com/javase/downloads/index.jsp
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk${VER/_01}
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk${VER}
          ENTERED=20070208
          ARCHIVE="off"
           REJECT="is non-source"
