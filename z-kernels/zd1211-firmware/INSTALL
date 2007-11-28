@@ -1,0 +1,2 @@
+mkdir -p $INSTALL_ROOT/lib/firmware/zd1211 &&
+cp -r zd1211_* $INSTALL_ROOT/lib/firmware/zd1211

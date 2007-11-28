@@ -1,0 +1,13 @@
+           SPELL=zd1211-firmware
+         VERSION=1.4
+          SOURCE=$SPELL-$VERSION.tar.bz2
+     SOURCE_HASH=sha512:210cf3438f2e3498cec06068020af7069d5c67469dbfc4c984c995cfc69192067184af2b04ee1f5642af25ab784c6b9a2e49f4fee3e2c144a5f88722e0462890
+   SOURCE_URL[0]=$SOURCEFORGE_URL/zd1211/${SOURCE}
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+        WEB_SITE=http://zd1211.wiki.sourceforge.net/
+         ENTERED=20071128
+      LICENSE[0]=GPL
+           SHORT="zd1211 firmware"
+cat << EOF
+zd1211-firmware is needed by the kernel driver.
+EOF
