@@ -1,4 +1,10 @@
-patch -p1 < $SCRIPT_DIRECTORY/vmware.patch &&
+patch -p1 < $SCRIPT_DIRECTORY/vmware.patch                &&
+
+cd vmware-vix                                             &&
+tar xvzf vmware-vix.tar.gz > /dev/null                    &&
+patch -p0 < $SCRIPT_DIRECTORY/vmware-vix.patch            &&
+tar cvzf vmware-vix.tar.gz vmware-vix-distrib > /dev/null &&
+cd $SOURCE_DIRECTORY                                      &&
 
 ./vmware-install.pl
 

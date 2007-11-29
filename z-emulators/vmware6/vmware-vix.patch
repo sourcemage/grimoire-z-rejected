@@ -1,37 +1,6 @@
-diff -u -r vmware-distrib-orig/bin/vmware-config.pl vmware-distrib/bin/vmware-config.pl
---- vmware-distrib-orig/bin/vmware-config.pl	2007-11-28 21:38:25.000000000 -0600
-+++ vmware-distrib/bin/vmware-config.pl	2007-11-28 22:00:51.000000000 -0600
-@@ -7,6 +7,8 @@
- 
- use strict;
- 
-+$| = 1;
-+
- # Use Config module to update VMware host-wide configuration file
- # BEGINNING_OF_CONFIG_DOT_PM
- #!/usr/bin/perl
-@@ -21,6 +23,9 @@
- ###
- 
- use strict;
-+
-+$| = 1;
-+
- package VMware::Config;
- 
- my %PREF;
-@@ -511,6 +516,8 @@
- 
- use strict;
- 
-+$| = 1;
-+
- # Moved out of config.pl to support $gOption in spacechk_answer
- my %gOption;
- # Moved from various scripts that include util.pl
-diff -u -r vmware-distrib-orig/bin/vmware-uninstall.pl vmware-distrib/bin/vmware-uninstall.pl
---- vmware-distrib-orig/bin/vmware-uninstall.pl	2007-11-28 21:38:24.000000000 -0600
-+++ vmware-distrib/bin/vmware-uninstall.pl	2007-11-28 22:04:11.000000000 -0600
+diff -u -r vmware-vix-distrib-orig/bin/vmware-uninstall-vix.pl vmware-vix-distrib/bin/vmware-uninstall-vix.pl
+--- vmware-vix-distrib-orig/bin/vmware-uninstall-vix.pl	2007-10-08 10:18:10.000000000 -0500
++++ vmware-vix-distrib/bin/vmware-uninstall-vix.pl	2007-11-28 23:21:18.000000000 -0600
 @@ -7,11 +7,15 @@
  
  use strict;
@@ -99,9 +68,9 @@ diff -u -r vmware-distrib-orig/bin/vmware-uninstall.pl vmware-distrib/bin/vmware
    return $answer;
  }
  
-diff -u -r vmware-distrib-orig/installer/services.sh vmware-distrib/installer/services.sh
---- vmware-distrib-orig/installer/services.sh	2007-11-28 21:38:26.000000000 -0600
-+++ vmware-distrib/installer/services.sh	2007-11-28 22:00:51.000000000 -0600
+diff -u -r vmware-vix-distrib-orig/installer/services.sh vmware-vix-distrib/installer/services.sh
+--- vmware-vix-distrib-orig/installer/services.sh	2007-10-08 10:18:11.000000000 -0500
++++ vmware-vix-distrib/installer/services.sh	2007-11-28 23:22:22.000000000 -0600
 @@ -26,6 +26,11 @@
  # BEGINNING_OF_UTIL_DOT_SH
  #!/bin/sh
@@ -114,4 +83,4 @@ diff -u -r vmware-distrib-orig/installer/services.sh vmware-distrib/installer/se
  # A few utility functions used by our shell scripts. These are patched in 
  # during make.
  
-Only in vmware-distrib-orig: vmware-install.pl
+Only in vmware-vix-distrib-orig: vmware-install.pl

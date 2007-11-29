@@ -1,3 +1,8 @@
+2007-11-29 Robin Cook <rcook@wyrms.net>
+	* DETAILS: updated to 6.0.2
+	* INSTALL: updated vmware.patch
+	  added new patch vmware-vix.patch
+
 2007-05-27 Robin Cook <rcook@wyrms.net>
 	* Created from the vmware5 spell
 

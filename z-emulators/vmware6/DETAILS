@@ -1,5 +1,5 @@
            SPELL=vmware6
-         VERSION=6.0.0-45731
+         VERSION=6.0.2-59824
           SOURCE=VMware-workstation-${VERSION}.${VMWARE_X86}.tar.gz
    SOURCE_URL[0]=http://www.vmware.com/download/ws/
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/vmware-distrib
