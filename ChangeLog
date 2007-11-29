@@ -1,6 +1,10 @@
 2007-11-29 Robin Cook <rcook@wyrms.net>
 	* gurus.gpg: added my key
 
+2007-11-28 Arjan Bouter <abouter@sourcemage.org>
+	* z-kernels/zd1211-firmware: new spell, firmware for the
+	  zd1211 kernel driver
+
 2007-11-22 Alexander Tsamutali <astsmtl@gmail.com>
 	* z-games/warsow-bin: new spell, a fast paced multiplayer FPS
 
