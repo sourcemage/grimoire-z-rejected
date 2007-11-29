@@ -1,5 +1,6 @@
 2007-11-29 Eric Sandall <sandalle@sourcemage.org>
 	* UNATTEND_SAFE: Safe to update unattended
+	* CONFLICTS: Removed, deprecated cedega-small removed
 
 2007-07-04 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 6.0.2
