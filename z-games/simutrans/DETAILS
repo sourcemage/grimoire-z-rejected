@@ -1,30 +1,30 @@
         PKG_NAME=simutrans
            SPELL=${PKG_NAME}
-         VERSION=88.10.5
-     PKG_VERSION=88-10-5
-    FOOD_VERSION=88-10-4
-   WASTE_VERSION=86-03
+         VERSION=99.16
+     PKG_VERSION=99-16
+    FOOD_VERSION=99-16
+   WASTE_VERSION=99-13
           SOURCE=simulinux-$PKG_VERSION.zip
-         SOURCE2=simupak64-$PKG_VERSION.zip
+         SOURCE2=pak64-$PKG_VERSION.zip
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}
-   SOURCE_URL[0]=http://64.simutrans.com/$SOURCE
-  SOURCE2_URL[0]=http://64.simutrans.com/$SOURCE2
-     SOURCE_HASH=sha512:33a060da2183d7b72fd8b46724c2e1ad19fd269b9ffcaf5e1076732d0e90eac216f00f4f935d7eb20d505c449a1f5adbec09d88cbc5cf5bdffe52ac05ed6b9cd
-    SOURCE2_HASH=sha512:3812832c4fd957b27a7671916a6b1bc1008d5656b55b86b515a63f10cd0f6da0fafced15b1c1fef46f26c25501041a3bb5f9969e7de94b505cdee0815d770920
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+  SOURCE2_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE2
+     SOURCE_HASH=sha512:278605d638484cd6560ef5249f17f2801afe7ece27d0abeb694180cf3c6fc3966f18626ecd3c688266a228fecea5bfd661e8bcdf17dc8c108d0d2e21084a2d87
+    SOURCE2_HASH=sha512:21a7adf442042a67d92bf77cbac4e081723fa9cdd3cd854c1777012fbd9200c8f78acf2c091c1ce52c32a48e21a5591cc8cd71e39ef4ba9cfd46954e40f5cdab
 if [[ "$SIMTRANS_WASTE" = "y" ]] ; then
-         SOURCE3="waste64-${WASTE_VERSION}.zip"
+         SOURCE3="simupak64-waste-${WASTE_VERSION}.zip"
     SOURCE3_HASH=sha512:b6f7126e4df1a513927cd20ce0e8944c4cd569c9eaa81ee971f638607e011696841f6c50519d86a723a74312b6152920bf1e03b4d26f802583ebfc768bd57bce
-  SOURCE3_URL[0]=http://64.simutrans.com/$SOURCE3
+  SOURCE3_URL[0]=http://download.simutrans.com/pak64/$SOURCE3
 fi
 if [[ "$SIMTRANS_FACTFOOD" = "y" ]] ; then
-         SOURCE4="factory-food64-${FOOD_VERSION}.zip"
-    SOURCE4_HASH=sha512:d4ef75b43348c53d8046871d08b92fd8db6da1edc34ec1c6ab336bd82c82283bc55094097e2a18ddee80544a0f84b0b96f40fe61670bfca9f79344977de9e946
-  SOURCE4_URL[0]=http://64.simutrans.com/$SOURCE4
+         SOURCE4="pak64-addon-food-${FOOD_VERSION}.zip"
+    SOURCE4_HASH=sha512:d78da45bc71a617c3759f6f2e18307d9fd44fcc5f72ea18f5685a16f30a180970668fec95ccdad9dc8ec8727fd6b304b2b8c9fbe0b06232d1588aa151791a8e8
+  SOURCE4_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE4
 fi
         WEB_SITE=http://www.simutrans.com/
          ENTERED=20040422
           REJECT="is non-source"
-      LICENSE[0]=freeware
+      LICENSE[0]=ART
          ARCHIVE=off
            SHORT="Transport and economic simulation. Transport Tycoon clone."
 cat << EOF

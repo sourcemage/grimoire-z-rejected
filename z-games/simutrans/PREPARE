@@ -1,2 +1,3 @@
-config_query SIMTRANS_WASTE "Download the factory food addon?" n &&
-config_query SIMTRANS_FACTFOOD "Download the waste addon?" n
+#the waste addon is somehow only downloadable with a browser
+config_query SIMTRANS_WASTE "Download the waste addon? (please download manually)" n &&
+config_query SIMTRANS_FACTFOOD "Download the factory food addon?" n

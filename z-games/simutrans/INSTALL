@@ -2,4 +2,5 @@ mkdir  -p  ${INSTALL_ROOT}/usr/share/games/${SPELL}          &&
 cp -f -r /usr/src/${SPELL}/* ${INSTALL_ROOT}/usr/share/games/${SPELL} &&
 chmod -fR a+r ${INSTALL_ROOT}/usr/share/games/${SPELL}/*  &&
 mkdir  -p  ${INSTALL_ROOT}/usr/games  &&
-install $SCRIPT_DIRECTORY/simutrans /usr/games
+install $SCRIPT_DIRECTORY/simutrans /usr/games &&
+install $SCRIPT_DIRECTORY/desktop/* /usr/share/applications/
