@@ -8,7 +8,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_9_linux
 
 else
 
-         VERSION=9.0.48.0
+         VERSION=9.0.115.0
   SECURITY_PATCH=2
           SOURCE=install_flash_player_9_linux.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE

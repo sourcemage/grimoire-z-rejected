@@ -1,5 +1,5 @@
 case $MOZILLA in
-	y|Y)	
+	y|Y)
 		if [ -d /usr/lib/mozilla/plugins ]; then
 			message "${MESSAGE_COLOR}Installing for Mozilla${DEFAULT_COLOR}\n"
 			if [ -e /usr/lib/mozilla/plugins/libflashplayer.so ]; then
@@ -8,10 +8,7 @@ case $MOZILLA in
 			if [ -e /usr/lib/mozilla/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/mozilla/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/mozilla/plugins/ &&
-			if [[ "${FLASH_BETA}" == "n" ]]; then
-		 		cp flashplayer.xpt /usr/lib/mozilla/plugins/
-			fi
+			cp libflashplayer.so /usr/lib/mozilla/plugins/
 		fi
 	;;
 esac &&
@@ -32,10 +29,7 @@ case $FIREFOX in
 	                if [ -e $FIREFOX_DIR/plugins/flashplayer.xpt ]; then
 	                        rm -f $FIREFOX_DIR/plugins/flashplayer.xpt
 	                fi
-	                cp libflashplayer.so $FIREFOX_DIR/plugins/ &&
-			if [[ "${FLASH_BETA}" == "n" ]]; then
-	                        cp flashplayer.xpt $FIREFOX_DIR/plugins/
-                        fi
+	                cp libflashplayer.so $FIREFOX_DIR/plugins/
 		fi
 	;;
 esac &&
@@ -50,10 +44,7 @@ case $SEAMONKEY in
 			if [ -e /usr/lib/seamonkey/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/seamonkey/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/seamonkey/plugins/ &&
-			if [[ "${FLASH_BETA}" == "n" ]]; then
-				cp flashplayer.xpt /usr/lib/seamonkey/plugins/
-			fi
+			cp libflashplayer.so /usr/lib/seamonkey/plugins/
 		fi
 	;;
 esac &&
@@ -68,16 +59,13 @@ case $FIRE_BIN in
 			if [ -e /opt/firefox/plugins/flashplayer.xpt ]; then
 				rm -f /opt/firefox/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /opt/firefox/plugins/ &&
-			if [[ "${FLASH_BETA}" == "n" ]]; then
-				cp flashplayer.xpt /opt/firefox/plugins/
-			fi
+			cp libflashplayer.so /opt/firefox/plugins/
 		fi
 	;;
 esac &&
 
 case $KDEBASE in
-	y|Y)	
+	y|Y)
 		message "${MESSAGE_COLOR}Installing for Konqueror${DEFAULT_COLOR}\n"
 		message "${MESSAGE_COLOR}" \
 						"After install, add /usr/lib/konqueror to the Plugins folders\n" \
@@ -91,16 +79,13 @@ case $KDEBASE in
 		if ! [ -d /usr/lib/konqueror ]; then
 			mkdir --mode=755 /usr/lib/konqueror
 		fi
-		cp libflashplayer.so /usr/lib/konqueror/ &&
-		if [[ "${FLASH_BETA}" == "n" ]]; then
-			cp flashplayer.xpt /usr/lib/konqueror/
-		fi
+		cp libflashplayer.so /usr/lib/konqueror/
 	;;
 esac &&
 
 
 case $OPERA in
-	y|Y)	
+	y|Y)
 		if [ -d /usr/lib/opera/plugins ]; then
 			message "${MESSAGE_COLOR}Installing for Opera${DEFAULT_COLOR}\n"
 			if [ -e /usr/lib/opera/plugins/libflashplayer.so ]; then
@@ -109,17 +94,14 @@ case $OPERA in
 			if [ -e /usr/lib/opera/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/opera/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/opera/plugins/ &&
-			if [[ "${FLASH_BETA}" == "n" ]]; then
-				cp flashplayer.xpt /usr/lib/opera/plugins/
-			fi
+			cp libflashplayer.so /usr/lib/opera/plugins/
 		fi
 	;;
 esac &&
 
 
 case $NETSCAPE in
-	y|Y)	
+	y|Y)
 		if [ -d /usr/lib/netscape4/plugins ]; then
 			message "${MESSAGE_COLOR}Installing for Netscape${DEFAULT_COLOR}\n"
 			if [ -e /usr/lib/netscape4/plugins/libflashplayer.so ]; then
@@ -128,16 +110,13 @@ case $NETSCAPE in
 			if [ -e /usr/lib/netscape4/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/netscape4/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/netscape4/plugins/ &&
-			if [[ "${FLASH_BETA}" == "n" ]]; then
-				cp flashplayer.xpt /usr/lib/netscape4/plugins/
-			fi
+			cp libflashplayer.so /usr/lib/netscape4/plugins/
 		fi
 	;;
 esac &&
 
 case $XULRUNNER in
-	y|Y)	
+	y|Y)
 		if [ -d /usr/lib/xulrunner/plugins ]; then
 			message "${MESSAGE_COLOR}Installing for XULRunner${DEFAULT_COLOR}\n"
 			if [ -e /usr/lib/xulrunner/plugins/libflashplayer.so ]; then
@@ -146,10 +125,7 @@ case $XULRUNNER in
 			if [ -e /usr/lib/xulrunner/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/xulrunner/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/xulrunner/plugins/ &&
-			if [[ "${FLASH_BETA}" == "n" ]]; then
-				cp flashplayer.xpt /usr/lib/xulrunner/plugins/
-			fi
+			cp libflashplayer.so /usr/lib/xulrunner/plugins/
 		fi
 	;;
 esac &&
@@ -164,10 +140,7 @@ case $ICEWEASEL in
 			if [ -e /usr/lib/iceweasel/plugins/flashplayer.xpt ]; then
 				rm -f /usr/lib/iceweasel/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/iceweasel/plugins/ &&
-			if [[ "${FLASH_BETA}" == "n" ]]; then
-				cp flashplayer.xpt /usr/lib/iceweasel/plugins/
-			fi
+			cp libflashplayer.so /usr/lib/iceweasel/plugins/
 		fi
 	;;
 esac &&
@@ -182,10 +155,7 @@ case $ICE_BIN in
 			if [ -e /opt/iceweasel/plugins/flashplayer.xpt ]; then
 				rm -f /opt/iceweasel/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /opt/iceweasel/plugins/ &&
-			if [[ "${FLASH_BETA}" == "n" ]]; then
-				cp flashplayer.xpt /opt/iceweasel/plugins/
-			fi
+			cp libflashplayer.so /opt/iceweasel/plugins/
 		fi
 	;;
 esac
