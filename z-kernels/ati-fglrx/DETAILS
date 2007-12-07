@@ -1,8 +1,9 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=ati-fglrx
-         VERSION=8.42.3
-          SOURCE=ati-driver-installer-${VERSION}-x86.x86_64.run
-     SOURCE_HASH=sha512:341e5f17babf4bdd17bf6ced6b885787ceaa50e66370841b63fd4f156576247536c3963c59dbe6c4ab3763c39889c0566db8ac3d38857111525aa186adaff562
+         VERSION=8.433
+# This mess is intended. Driver version 8.433 comes in package version 7-11.
+          SOURCE=ati-driver-installer-7-11-x86.x86_64.run
+     SOURCE_HASH=sha512:92e2b1fcd39efed07292e93c62880aa4c24e40e3e0fa5dc467a617a3d55c04fb6b7a3a208497a41e282b30546dca922c4618bddf1be390b72ddad8a391565166
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=https://a248.e.akamai.net/f/674/9206/0/www2.ati.com/drivers/linux/${SOURCE}
         WEB_SITE=http://www.ati.com

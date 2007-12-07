@@ -1,4 +1,5 @@
 local ATI_XPROVIDER
+local ATI_XVERSION
 
 #
 # Verify and extract the source
@@ -19,15 +20,10 @@ chmod +x $SOURCE &&
 cd ${SOURCE_DIRECTORY} &&
 mv archive/common/usr/share/doc/fglrx documentation &&
 
-#
-# Patches
-#
-
 # We don't always build for the currently running kernel
 sedit "s:^KVER .*:KVER            = $(get_kernel_version):" \
       archive/common/lib/modules/fglrx/build_mod/2.6.x/Makefile
-local ATI_XPROVIDER
-local ATI_XVERSION
+
 ATI_XPROVIDER="$(get_spell_provider $SPELL X11-SERVER)" &&
 
 #
@@ -46,12 +42,15 @@ case $ATI_XPROVIDER in
                 ATI_XVERSION=x710
         ;;
         xorg)
-                ATI_XVERSION=x960
+                ATI_XVERSION=x$(get_installed_version xorg) &&
+                # The next two lines convert x6.9.0 to x690
+                ATI_XVERSION=${ATI_XVERSION/./} &&
+                ATI_XVERSION=${ATI_XVERSION/./}
         ;;
         *)
                 message "${PROBLEM_COLOR}" \
-                        "Unknown X server: $ATI_XPROVIDER" \
-                        "${DEFAULT_COLOR}"
+                        "Incompatible provider for X11-SERVER: " \
+                        "${SPELL_COLOR}$ATI_XPROVIDER${DEFAULT_COLOR}"
         ;;
 esac &&
 

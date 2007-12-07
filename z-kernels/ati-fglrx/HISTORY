@@ -1,3 +1,9 @@
+2007-12-07 Martin Spitzbarth <m.spitzbarth@gmx.de>
+	* DETAILS: Updated to 8.433
+	* PRE_BUILD: Version lookup for xorg, clarifying an error message
+	* INSTALL: adjusted install paths for xorg-server
+	* UNATTENDED_SAFE: added
+
 2007-11-08 Martin Spitzbarth <m.spitzbarth@gmx.de>
 	* DOWNLOAD: Added the file to pass --no-check-certificate to wget
 

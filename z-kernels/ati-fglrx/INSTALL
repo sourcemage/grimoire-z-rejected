@@ -10,6 +10,17 @@ install -m 644 build/lib/modules/fglrx/build_mod/fglrx.ko \
 
 rm -R build/usr/src build/usr/share/doc &&
 mv build/usr/X11R6/bin build/usr/bin &&
+case $(get_spell_provider $SPELL X11-SERVER) in
+        "xorg-server")
+                mv build/usr/X11R6/include/* build/usr/include &&
+                mkdir -p build/usr/lib/xorg &&
+
+# the lib* stands for lib or lib64 respectively.
+                mv build/usr/X11R6/lib*/* build/usr/lib/xorg &&
+
+                rm -R build/usr/X11R6
+        ;;
+esac &&
 chmod 0755 build/usr/bin/* &&
 
 # Abuse tar as a copy command that merges the build directory
@@ -18,3 +29,5 @@ chmod 0755 build/usr/bin/* &&
 # it was copied earlier in this script.
 cd ${SOURCE_DIRECTORY}/build &&
 tar -c etc/ati opt usr | tar -x --directory ${INSTALL_ROOT}/
+
+# 
