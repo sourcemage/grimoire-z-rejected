@@ -1,6 +1,6 @@
 # Standard rejected warnings.
 #
-source $GRIMOIRE/REJECTED_MSG
+source $GRIMOIRE/REJECTED_MSG                        &&
 
 config_query_option  ION3_XINERAMA                   \
                      "Enable Xinerama support?"  y   \

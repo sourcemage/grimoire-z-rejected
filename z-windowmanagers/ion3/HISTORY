@@ -3,6 +3,8 @@
 	           added REJECT reason
 	* CONFIGURE: added reject message
 	* spell moved from windowmanagers to z-windowmanagers
+	* DEPENDS: cleaned up
+	* PRE_BUILD: added
 
 2007-12-05 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: this version was LGPL

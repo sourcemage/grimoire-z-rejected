@@ -1,0 +1,6 @@
+default_pre_build     &&
+cd $SOURCE_DIRECTORY  &&
+sedit 's#^PREFIX=/usr/local#PREFIX=/usr#' system.mk            &&
+sedit 's#^LUA_DIR=/usr/local#LUA_DIR=/usr#' system.mk    &&
+sedit 's#^PREFIX=/usr/local#PREFIX=/usr#' build/system-inc.mk  &&
+sedit 's#/usr/local#/usr#' libextl/libextl-mkexports.in
