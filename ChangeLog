@@ -1,5 +1,6 @@
 2007-12-16 Alexander Tsamutali <astsmtl@gmail.com>
 	* z-http/icecat-bin: new spell, the GNU version of the Firefox browser
+	* z-http/iceweasel-bin: deprecated in favour of icecat-bin
 
 2007-11-29 Eric Sandall <sandalle@sourcemage.org>
 	* z-games/cedega-small: Remove deprecated spell

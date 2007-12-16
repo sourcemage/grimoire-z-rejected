@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Iceweasel
-Exec=iceweasel-bin
-Icon=/opt/iceweasel/icons/default.xpm
-Terminal=false
-Type=Application
-Categories=Application;Network;Browsers
