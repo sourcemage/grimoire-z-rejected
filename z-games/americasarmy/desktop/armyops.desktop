@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=America's Army
+Exec=/usr/share/games/americasarmy/armyops
+Icon=/usr/share/games/americasarmy/ArmyOps.xpm
+Terminal=false
+Type=Application
+Categories=Application;Game;Fun;
+
