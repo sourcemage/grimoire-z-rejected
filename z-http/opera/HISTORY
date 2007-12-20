@@ -1,3 +1,6 @@
+2007-12-21 Remko van der Vossen <wich@sourcemage.org>
+	* DEPENDS: Typo (9 preview -> 9.5 preview)
+
 2007-12-19 Remko van der Vossen <wich@sourcemage.org>
 	* DETAILS: Updated to 9.25
 	* DETAILS, DEPENDS, PREPARE: Added 9.50b preview

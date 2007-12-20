@@ -6,7 +6,7 @@ if [ "${OPERA_RELEASE}" = "9, shared" ]; then
   depends  qt-x11  &&
   depends  zlib
 fi  &&
-if [ "${OPERA_RELEASE}" = "9 preview, shared" ]; then
+if [ "${OPERA_RELEASE}" = "9.5 preview, shared" ]; then
   depends  qt-x11  &&
   depends  zlib
 fi  &&
