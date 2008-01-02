@@ -17,11 +17,11 @@ echo "Konqueror"  &&
 echo "Opera" &&
 echo "Netscape (not version 4.x)" &&
 echo "XULRunner" &&
-echo "Iceweasel" &&
+echo "Icecat" &&
 
 echo "Select which currently installed applications you wish to install Flash for."  &&
 
-persistent_add MOZILLA FIREFOX SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE XULRUNNER ICE_BIN ICEWEASEL &&
+persistent_add MOZILLA FIREFOX SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE XULRUNNER ICE_BIN ICECAT &&
 
 ask_spell mozilla Mozilla MOZILLA
 ask_spell firefox Firefox FIREFOX
@@ -31,5 +31,5 @@ ask_spell kdebase Konqueror KDEBASE
 ask_spell opera Opera OPERA
 ask_spell netscape4 Netscape NETSCAPE
 ask_spell xulrunner XULRunner XULRUNNER
-ask_spell iceweasel Iceweasel ICEWEASEL
-ask_spell iceweasel-bin Iceweasel-bin ICE_BIN
+ask_spell icecat Icecat ICECAT
+ask_spell icecat-bin Icecat-bin ICE_BIN

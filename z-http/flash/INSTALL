@@ -130,32 +130,32 @@ case $XULRUNNER in
 	;;
 esac &&
 
-case $ICEWEASEL in
+case $ICECAT in
         y|Y)
-		if [ -d /usr/lib/iceweasel/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for Iceweasel${DEFAULT_COLOR}\n"
-			if [ -e /usr/lib/iceweasel/plugins/libflashplayer.so ]; then
-				rm -f /usr/lib/iceweasel/plugins/libflashplayer.so
+		if [ -d /usr/lib/icecat/plugins ]; then
+			message "${MESSAGE_COLOR}Installing for Icecat${DEFAULT_COLOR}\n"
+			if [ -e /usr/lib/icecat/plugins/libflashplayer.so ]; then
+				rm -f /usr/lib/icecat/plugins/libflashplayer.so
 			fi
-			if [ -e /usr/lib/iceweasel/plugins/flashplayer.xpt ]; then
-				rm -f /usr/lib/iceweasel/plugins/flashplayer.xpt
+			if [ -e /usr/lib/icecat/plugins/flashplayer.xpt ]; then
+				rm -f /usr/lib/icecat/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /usr/lib/iceweasel/plugins/
+			cp libflashplayer.so /usr/lib/icecat/plugins/
 		fi
 	;;
 esac &&
 
 case $ICE_BIN in
         y|Y)
-		if [ -d /opt/iceweasel/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for Iceweasel-bin${DEFAULT_COLOR}\n"
-			if [ -e /opt/iceweasel/plugins/libflashplayer.so ]; then
-				rm -f /opt/iceweasel/plugins/libflashplayer.so
+		if [ -d /opt/icecat/plugins ]; then
+			message "${MESSAGE_COLOR}Installing for Icecat-bin${DEFAULT_COLOR}\n"
+			if [ -e /opt/icecat/plugins/libflashplayer.so ]; then
+				rm -f /opt/icecat/plugins/libflashplayer.so
 			fi
-			if [ -e /opt/iceweasel/plugins/flashplayer.xpt ]; then
-				rm -f /opt/iceweasel/plugins/flashplayer.xpt
+			if [ -e /opt/icecat/plugins/flashplayer.xpt ]; then
+				rm -f /opt/icecat/plugins/flashplayer.xpt
 			fi
-			cp libflashplayer.so /opt/iceweasel/plugins/
+			cp libflashplayer.so /opt/icecat/plugins/
 		fi
 	;;
 esac
