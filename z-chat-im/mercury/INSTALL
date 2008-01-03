@@ -1,22 +1,43 @@
-INSTALLDIR=/usr/share/Mercury
+INSTALLDIR=${INSTALL_ROOT}/usr/share/mercury
 
-mkdir -p $INSTALLDIR 						&&
+mkdir -p $INSTALLDIR                                                 &&
 
-cp -rv ./* $INSTALLDIR 						&&
+cd ${SOURCE_DIRECTORY}                                               &&
 
-cp -rv $SPELL_DIRECTORY/bin/Mercury_Messenger $INSTALLDIR 	&&
-cp -rv $SPELL_DIRECTORY/mercury.png /usr/share/pixmaps 		&&
+if spell_installed kdebase ; then
+  cp ./usr/share/applnk/Internet/Mercury.desktop \
+     $INSTALL_ROOT/usr/share/applnk/Internet/
+fi                                                                   &&
 
-if [ -d $JAVA_HOME/jre/lib/i386 ]; then
-   i386=i386
-fi
+if [ -e ${INSTALL_ROOT}/usr/share/gnome/apps/Internet ] ; then
+  cp ./usr/share/gnome/apps/Internet/Mercury.desktop \
+     $INSTALL_ROOT/usr/share/gnome/apps/Internet/
+fi                                                                   &&
 
-if [ ! -f $JAVA_HOME/jre/lib/$i386/libtray.so ]; then
-   cp -rv $INSTALLDIR/libtray.so $JAVA_HOME/jre/lib/$i386/
-fi
+if [ -e ${INSTALL_ROOT}/usr/share/applications ] ; then
+  cp ./usr/share/gnome/apps/Internet/Mercury.desktop \
+     $INSTALL_ROOT/usr/share/applications/
+fi                                                                   &&
 
-chmod -R 755 $INSTALLDIR					&&
+cp ./usr/share/icons/crystalsvg/48x48/apps/mercurylogo.png \
+   ${INSTALL_ROOT}/usr/share/icons/
 
-ln -s $INSTALLDIR/Mercury_Messenger /usr/bin/Mercury_Messenger &&
+cp -r ./usr/share/mercury/* ${INSTALLDIR}/
+
+cp -r ./usr/share/pixmaps/mercurylogo.png \
+      ${INSTALL_ROOT}/usr/share/pixmaps
+
+install -m 0755 $SPELL_DIRECTORY/bin/Mercury_Messenger \
+                $INSTALL_ROOT/usr/bin/                               &&
+
+#if [ -d $JAVA_HOME/jre/lib/i386 ]; then
+#   i386=i386
+#fi
+
+#if [ ! -f $JAVA_HOME/jre/lib/$i386/libtray.so ]; then
+#   cp -rv $INSTALLDIR/libtray.so $JAVA_HOME/jre/lib/$i386/
+#fi
+
+chmod -R 755 $INSTALLDIR                                             &&
 
 JAVA_HOME=$(cat /etc/profile.d/java.sh | grep -i JAVA_HOME= | cut -c11-0)

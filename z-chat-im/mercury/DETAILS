@@ -1,11 +1,10 @@
            SPELL=mercury
-         VERSION=1.8
-          SOURCE=${VERSION}.zip
+         VERSION=1.9
+          SOURCE=mercury-messenger-${VERSION}.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://www.beernabeer.com/$SOURCE
-#  SOURCE_URL[0]=http://download.sourcemage.org/mirror/$SOURCE
-     SOURCE_HASH=sha512:97649b8a1e6a750e47e56a7a97b6e7d595fa1bf80a2805e200bc8604bac444d028f72e0f9be7a1a9a0325b3f50fa089bf98afb8742a41a910a27c7488967bb8c
-        WEB_SITE=http://www.mercury.to
+     SOURCE_HASH=sha512:c886c3db2030591024bc10693ecc46117f9264f84845033ea1036e9dc14cdc8cdc464bc1747f3280591e853b491eb14a347d84d344a2da389bd5b2212d95933b
+        WEB_SITE=http://www.mercury.im
          ENTERED=20050531
           REJECT="is non-source and license"
            SHORT="Mercury is a Java Based MSN client"
@@ -17,7 +16,7 @@ With Mercury you can do the same things as with your normal messenger:
     * Add a display picture (also know as avatar)
     * Send files through the msn server (for people with a firewall etc..) or direct
     * Play games (Tic Tac Toe and Connect4 only at the moment)
-    * Watch the webcam of your friends (Mercury auto-saves these sessions on the disk and can convert them to Quicktime movies, click here for more info)
+    * Watch the webcam of your friends (Mercury auto-saves these sessions on the disk and can convert them to Quicktime movies.
     * Allow other people to watch your webcam
     * Video conference is implemented (both sending and receiving) but still a beta feature. 
 EOF
