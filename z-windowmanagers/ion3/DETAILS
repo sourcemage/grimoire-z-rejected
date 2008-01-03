@@ -1,5 +1,5 @@
            SPELL=ion3
-         VERSION=3rc-20071130
+         VERSION=3rc-20071220
           SOURCE=ion-$VERSION.tar.gz
          SOURCE2=$SOURCE.asc
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/ion-$VERSION"
