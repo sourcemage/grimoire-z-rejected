@@ -1,3 +1,6 @@
+2008-01-05 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 4.44.1.20
+
 2007-10-07 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 4.44.1.18 (somenow 4.44.1.18 > 4.44.17)
 	  Now iwlwifi-4965-1.ucode instead of iwlwifi-4965.ucode
