@@ -1,3 +1,6 @@
+2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated to version 6u4
+
 2007-11-24 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: SOURCE_DIRECTORY uses _03, not _01 now
 	  Updated PATCHLEVEL, anyone on amd64 will have no JAVA from this
