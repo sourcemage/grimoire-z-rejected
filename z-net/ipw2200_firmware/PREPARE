@@ -1,5 +1,5 @@
 # Source grimoire FUNCTIONS to have get_kernel_version
-. $SCRIPT_DIRECTORY/../../FUNCTIONS
+. $GRIMOIRE/FUNCTIONS
 
 KERNEL_VERSION=$(get_kernel_version)  &&
 PATCHLEVEL=`echo $KERNEL_VERSION | cut -d. -f2`  &&
