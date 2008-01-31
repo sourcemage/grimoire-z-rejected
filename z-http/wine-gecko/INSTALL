@@ -1,0 +1,2 @@
+mkdir -p $INSTALL_ROOT/usr/share/wine/gecko  &&
+cp $SOURCE_CACHE/$SOURCE $INSTALL_ROOT/usr/share/wine/gecko

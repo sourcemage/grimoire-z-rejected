@@ -1,0 +1,22 @@
+           SPELL=wine-gecko
+         VERSION=0.1.0
+          SOURCE=${SPELL/-/_}-$VERSION.cab
+   SOURCE_URL[0]=$SOURCEFORGE_URL/wine/$SOURCE
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+      LICENSE[0]=MPL
+        WEB_SITE=http://wiki.winehq.org/Gecko
+        KEYWORDS="emulator x11 libs"
+         ENTERED=20080131
+           SHORT='WINE MSHTML Gecko code'
+cat << EOF
+ome users recreate their .wine often and don't want to have to download gecko
+repeatedly, will find this information useful.
+
+MSHTML code looks for cab file in $data_dir/gecko (that is usually
+/usr/share/wine/gecko). Alternatively, if you run Wine from build dir, it looks
+for $build_dir/../gecko. Wine checks it both in wineprefixcreate and, if Gecko
+is not installed, on first usage. It means that if you download wine_gecko from
+SourceForge and put it in the right place, you will no longer have to care
+about installing Gecko.
+EOF
