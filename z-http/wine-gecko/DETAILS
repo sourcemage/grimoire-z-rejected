@@ -10,7 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
          ENTERED=20080131
            SHORT='WINE MSHTML Gecko code'
 cat << EOF
-ome users recreate their .wine often and don't want to have to download gecko
+Some users recreate their .wine often and don't want to have to download gecko
 repeatedly, will find this information useful.
 
 MSHTML code looks for cab file in $data_dir/gecko (that is usually
