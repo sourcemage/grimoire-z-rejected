@@ -1,0 +1,24 @@
+           SPELL=nerogame
+         VERSION=2.0
+          SOURCE=nero2_linux_i386.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/nero2_linux_i386
+   SOURCE_URL[0]=http://z.cs.utexas.edu/users/nn/nero/downloads/${SOURCE}
+     SOURCE_HASH=sha512:00954171d3dffcb9b42207eacbc648d078c91d37317ee99a93bf26ef90c2c847d63dce7ba0098cde6a23c2bf28903a26ed5fa7edf76ce44c9aa3550274c21b0b
+      LICENSE[0]=UNKNOWN
+        WEB_SITE=http://www.nerogame.org
+         ENTERED=20080203
+         ARCHIVE="off"
+          REJECT="binary distribution, non-free content"
+           SHORT="Neuro-Evolving Robotic Operatives"
+cat << EOF
+Neuro-Evolving Robotic Operatives, or NERO for short, is a unique computer
+game that lets you play with adapting intelligent agents hands-on. Evolve
+your own robot army by tuning their artificial brains for challenging tasks,
+then pit them against your friends' teams in online competitions!
+
+NERO is a result of an academic research project in artificial intelligence,
+based on the rtNEAT algorithm. It is also a platform for future research on
+intelligent agent technology. The NERO project is run by the Neural Networks
+Group of the Department of Computer Sciences at the University of Texas at
+Austin.
+EOF

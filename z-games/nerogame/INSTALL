@@ -1,0 +1,7 @@
+INSTALL_DIR=${INSTALL_ROOT}/opt/nerogame &&
+mkdir $INSTALL_DIR &&
+cp -v ${SPELL_DIRECTORY}/nerogame ${INSTALL_ROOT}/usr/games &&
+cp -rv * $INSTALL_DIR &&
+cd $INSTALL_DIR &&
+find_and_scam &&
+chmod 750 nero.bin
