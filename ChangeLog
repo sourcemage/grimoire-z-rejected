@@ -1,3 +1,9 @@
+2008-02-03 Alexander Tsamutali <astsmtl@gmail.com>
+	* FUNCTIONS: added find_and_scam, games_make_proper_binary,
+	  default_games_post_install from games grimoire
+	* z-games/FUNCTIONS: default_post_install is now
+	  default_games_post_install
+
 2008-01-31 Eric Sandall <sandalle@sourcemage.org>
 	* z-http/wine-gecko: Added WINE MSHTML Gecko code
 

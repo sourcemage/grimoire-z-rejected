@@ -1,0 +1,7 @@
+#-------------------------------------------------------------------------
+## Section-default post install script.
+#-------------------------------------------------------------------------
+
+function default_post_install() {
+  default_games_post_install
+}
