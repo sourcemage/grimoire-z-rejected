@@ -1,6 +1,12 @@
-default_pre_build &&
+mk_source_dir $SOURCE_DIRECTORY &&
 cd $SOURCE_DIRECTORY &&
+unpack_file &&
+rm *.exe && # Ouch!..
+
 INSTALL_DIR=${TRACK_ROOT}/opt/warsow &&
 sedit "s:BINARY_DIR=:BINARY_DIR=${INSTALL_DIR}:" warsow &&
 sedit "s:DATA_DIR=:DATA_DIR=${INSTALL_DIR}:" warsow &&
-sedit "s:USEHOMEDIR=:USEHOMEDIR=1:" warsow
+sedit "s:BINARY_DIR=:BINARY_DIR=${INSTALL_DIR}:" wsw_server &&
+sedit "s:DATA_DIR=:DATA_DIR=${INSTALL_DIR}:" wsw_server &&
+sedit "s:BINARY_DIR=:BINARY_DIR=${INSTALL_DIR}:" wswtv_server &&
+sedit "s:DATA_DIR=:DATA_DIR=${INSTALL_DIR}:" wswtv_server

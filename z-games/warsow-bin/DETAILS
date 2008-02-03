@@ -1,9 +1,12 @@
            SPELL=warsow-bin
-         VERSION=0.32
-          SOURCE=warsow_0.32_linux.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/warsow
-   SOURCE_URL[0]=http://www.megami.de/warsow/releases/$SOURCE
-     SOURCE_HASH=sha1:05691ca3aea23de5280b88004a05491339a6eee6
+         VERSION=0.4
+          SOURCE=warsow_0.4_unified.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/warsow_0.4_unified
+   SOURCE_URL[0]=ftp://ftp.snt.utwente.nl/pub/games/warsow/linux/$SOURCE
+   SOURCE_URL[1]=http://www.enkydia.eu/warsow/$SOURCE
+   SOURCE_URL[2]=http://www.gamezoo.it/downloads/wsw/$SOURCE
+   SOURCE_URL[3]=http://67250.com/warsow/0.4/$SOURCE
+     SOURCE_HASH=md5:fcf88aeada971a108895eb5480005c49
       LICENSE[0]="GPL for engine, freeware content"
         WEB_SITE=http://www.warsow.net/
          ENTERED=20071122

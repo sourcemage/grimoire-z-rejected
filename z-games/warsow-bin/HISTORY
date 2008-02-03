@@ -1,3 +1,8 @@
+2008-02-03 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to 0.4, new mirrors
+	* PRE_BUILD: Adopted for 0.4
+	* INSTALL: Adopted for 0.4, now uses find_and_scam
+
 2007-11-22 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS, DEPENDS, PRE_BUILD, BUILD, INSTALL, HISTORY:
 	  Created this spell

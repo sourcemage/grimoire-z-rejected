@@ -1,6 +1,7 @@
 INSTALL_DIR=${INSTALL_ROOT}/opt/warsow &&
 mkdir $INSTALL_DIR &&
-mv -v warsow ${INSTALL_ROOT}/usr/games &&
+mv -v warsow wsw_server wswtv_server ${INSTALL_ROOT}/usr/games &&
 cp -rv * $INSTALL_DIR &&
-chown -R root:games ${INSTALL_ROOT}/usr/games/warsow $INSTALL_DIR &&
-chmod 750 ${INSTALL_ROOT}/usr/games/warsow $INSTALL_DIR
+cd $INSTALL_DIR &&
+find_and_scam &&
+chmod 755 {warsow,wsw_server,wswtv_server}.{i386,x86_64}
