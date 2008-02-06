@@ -1,3 +1,7 @@
+2008-02-06 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: removed mktemp (deprecated), is a part
+	  of coreutils now (which included in basesystem)
+
 2008-01-22 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 169.09
 
