@@ -1,3 +1,10 @@
+2008-01-29 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.3.0
+	  new url
+	* PRE_BUILD, patches: delete
+	* DEPENDS: add fontconfig. freetype2, expat
+	* BUILD: add make_single
+
 2006-09-27 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: FUNCTIONS is not sourced here automatically, so source it for
 	  check_if_xorg_modular_libs().

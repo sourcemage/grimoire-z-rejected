@@ -1,5 +1,7 @@
 .  $GRIMOIRE/FUNCTIONS  &&
-
+depends fontconfig &&
+depends freetype2  &&    
+depends expat      &&
 depends  X11-LIBS  &&
 
 if  check_if_xorg_modular_libs ;  then
