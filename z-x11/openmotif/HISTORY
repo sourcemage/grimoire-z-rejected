@@ -1,3 +1,13 @@
+2008-02-06 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Optionally depend on libxft, jpeg, and libpng
+	* PRE_BUILD: Apply no-demos.patch
+	* UP_TRIGGERS: libXm.so.3 is no longer installed, now libXm.so.4
+	  This only works for updating one openmotif to another, it does not fix
+	  switching MOTIF providers
+	* no-demos.patch: Do not build demos (such as column)
+	  Have to patch configure instead of configure.ac as `autoreconf` fails
+	  See Bug #14262
+
 2008-01-29 Treeve Jelbert <treeve@sourcemage.org>
 	* DETAILS: version 2.3.0
 	  new url

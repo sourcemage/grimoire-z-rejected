@@ -1,9 +1,25 @@
 .  $GRIMOIRE/FUNCTIONS  &&
-depends fontconfig &&
-depends freetype2  &&    
+
 depends expat      &&
-depends  X11-LIBS  &&
+depends fontconfig &&
+depends freetype2  &&
+depends X11-LIBS   &&
 
 if  check_if_xorg_modular_libs ;  then
-  depends  libxp
-fi
+  depends  libxp  &&
+
+  optional_depends  libxft                        \
+                    '--enable-xft'                \
+                    '--disable-xft'               \
+                    'for XFT font anti-aliasing'
+fi  &&
+
+optional_depends  jpeg                      \
+                  '--enable-jpeg'           \
+                  '--disable-jpeg'          \
+                  'for JPEG image support'  &&
+
+optional_depends  libpng                   \
+                  '--enable-png'           \
+                  '--disable-png'          \
+                  'for PNG image support'
