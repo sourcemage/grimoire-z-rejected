@@ -1,7 +1,3 @@
-2008-02-06 Vlad Glagolev <stealth@sourcemage.org>
-	* DEPENDS: removed mktemp (deprecated), is a part
-	  of coreutils now (which included in basesystem)
-
 2007-12-29 Pol Vinogradov <vin.public@gmail.com>
 	* DEPENDS: added Russian languagepack
 
@@ -149,3 +145,4 @@
 
 2005-06-26 George Sherwood <george@beernabeer.com>
 	* All files: Created Spell
+

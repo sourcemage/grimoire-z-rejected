@@ -1,7 +1,3 @@
-2008-02-06 Vlad Glagolev <stealth@sourcemage.org>
-	* DEPENDS: removed mktemp (deprecated), is a part
-	  of coreutils now (which included in basesystem)
-
 2007-10-19 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated to version 96.43.01
 
@@ -424,3 +420,4 @@
 
 2003-04-01 Gareth Clay <garethclay@ntlworld.com>
 	* Created this spell
+

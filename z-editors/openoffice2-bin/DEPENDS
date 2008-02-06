@@ -1,4 +1,5 @@
 depends  rpmunpack     &&
+depends  mktemp        &&
 depends  JAVA          &&
 optional_depends openoffice2-bin-lang-nl \
   '' '' 'For the Dutch languagepack'     &&
