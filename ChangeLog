@@ -1,3 +1,7 @@
+2008-02-07 Alexander Tsamutali <astsmtl@gmail.com>
+	* FUNCTIONS: added grimoire_parse_iw and grimoire_exists functions from
+	  games
+
 2008-02-06 Pol Vinogradov <vin.public@gmail.com>
 	* z-http/iceweasel-bin: removed deprecated spell
 
