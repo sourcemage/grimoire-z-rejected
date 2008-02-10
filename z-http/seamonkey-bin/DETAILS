@@ -1,12 +1,12 @@
            SPELL=seamonkey-bin
-         VERSION=1.1.7
+         VERSION=1.1.8
           SOURCE=seamonkey-${VERSION}.en-US.linux-i686.tar.gz
-     SOURCE_HASH=sha512:a2ed261caa277bdf61161a82b97a2b00e90d46db25bf26d281a3dc6e9e8592e4be3d1acbbe3a2d068b849b6e338f72f68b64e06a0a421021e13e9375a229564c:UPSTREAM_HASH
+     SOURCE_HASH=sha512:5d28b831363766de08ade3f6ee32ef97dfebbb35762979cbd9db24b4043d96644c56a841dde3d288bc07d9d3c683140e4ede81ff44851ada75ded7617439d02f:UPSTREAM_HASH
    SOURCE_URL[0]=http://releases.mozilla.org/pub/mozilla.org/seamonkey/releases/$VERSION/${SOURCE}
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/seamonkey
         WEB_SITE=http://www.mozilla.org/seamonkey
          ENTERED=20070722
-  SECURITY_PATCH=2
+  SECURITY_PATCH=3
       LICENSE[0]=MOZILLA
           REJECT="is non-source"
            SHORT="The binary version of seamonkey."

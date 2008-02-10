@@ -1,6 +1,0 @@
-2007-12-16 Alexander Tsamutali <astsmtl@gmail.com>
-	* Deprecated in favour of icecat
-
-2007-10-14 Alexander Tsamutali <astsmtl@gmail.com>
-	* BUILD, CONFIGURE, DEPENDS, DETAILS, HISTORY, INSTALL, PROVIDES:
-	  Created this spell

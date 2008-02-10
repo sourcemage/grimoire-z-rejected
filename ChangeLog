@@ -6,6 +6,9 @@
 	* FUNCTIONS: added grimoire_parse_iw and grimoire_exists functions from
 	  games
 
+2008-02-06 Pol Vinogradov <vin.public@gmail.com>
+	* z-http/iceweasel-bin: removed deprecated spell
+
 2008-02-03 Alexander Tsamutali <astsmtl@gmail.com>
 	* FUNCTIONS: added find_and_scam, games_make_proper_binary,
 	  default_games_post_install from games grimoire
