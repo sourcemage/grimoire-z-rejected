@@ -1,0 +1,27 @@
+           SPELL=fretsonfire-bin
+         VERSION=1.2.512
+          SOURCE=FretsOnFire-1.2.512-linux.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/FretsOnFire
+   SOURCE_URL[0]=$SOURCEFORGE_URL/fretsonfire/$SOURCE
+     SOURCE_HASH=sha512:5217c2122e5b9243ff3cbfd56536336c1d5b67ae92c16faf5602f89745d98226db4d3e461c8a4b3ac62014dc4bddfeb3db5dfeb1d0e3023dd044ef43e603da47
+      LICENSE[0]="GPL for everything, except songs and fonts"
+        WEB_SITE=http://fretsonfire.sourceforge.net/
+         ENTERED=20080210
+         ARCHIVE="off"
+          REJECT="binary distribution, non-free songs and fonts"
+           SHORT="a game of musical skill and fast fingers"
+cat << EOF
+Frets on Fire is a game of musical skill and fast fingers. The aim of the game
+is to play guitar with the keyboard as accurately as possible.
+
+Features:
+
+    * Unique inverted keyboard gameplay style
+    * Support for guitar controllers and generic joysticks
+    * Includes a song editor for making your own tunes
+    * Compete with others on the World Charts
+    * Hundreds of songs composed by the community
+    * Supports importing Guitar Hero I and Guitar Hero II songs
+    * Multiplatform; runs on Windows, Linux, Mac OS X and FreeBSD
+    * Open source, full Python source code available
+EOF
