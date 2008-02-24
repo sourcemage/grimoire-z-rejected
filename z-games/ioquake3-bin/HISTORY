@@ -1,0 +1,3 @@
+2008-02-25 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS, LICENSE, CONFIGURE, DEPENDS, PREPARE, PRE_BUILD, BUILD,
+	  INSTALL, HISTORY: Created this spell

@@ -1,0 +1,14 @@
+source $GRIMOIRE/REJECTED_MSG
+
+if [[ $LEGAL == y ]] || ([[ -z $LEGAL ]] && spell_ok $SPELL)
+then
+    message "${MESSAGE_COLOR}License has been accepted before," \
+            "continuing without interrupt.${DEFAULT_COLOR}"
+else
+    cat $SPELL_DIRECTORY/LICENSE &&
+    config_query LEGAL "Accept license agreement?" n &&
+    if [[ $LEGAL != y ]]
+    then
+        return 1
+    fi
+fi

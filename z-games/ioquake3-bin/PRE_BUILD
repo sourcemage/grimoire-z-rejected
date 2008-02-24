@@ -1,0 +1,10 @@
+mk_source_dir $SOURCE_DIRECTORY &&
+cd $SOURCE_DIRECTORY &&
+sh $SOURCE_CACHE/$SOURCE --tar xf &&
+persistent_add ARCH &&
+case "${SMGL_COMPAT_ARCHS[1]}" in
+    ia32) ARCH=i386 ;;
+    x86_64) ARCH=x86_64 ;;
+esac &&
+tar xf ioquake3.${ARCH}.tar &&
+tar xf idpatchpk3s.tar -C baseq3

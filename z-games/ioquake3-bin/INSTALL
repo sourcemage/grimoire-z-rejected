@@ -1,0 +1,10 @@
+INSTALL_DIR=${INSTALL_ROOT}/opt/ioquake3 &&
+mkdir $INSTALL_DIR &&
+cp -rv baseq3 {ioquake3,ioq3ded}.${ARCH} quake3.png \
+COPYING id_patch_pk3s_Q3A_EULA.txt README $INSTALL_DIR &&
+cp -v $PAK0_PK3 ${INSTALL_DIR}/baseq3 &&
+cp -v bin/Linux/x86/ioquake3 $INSTALL_DIR &&
+cd $INSTALL_DIR &&
+find_and_scam &&
+chmod 750 ioquake3 {ioquake3,ioq3ded}.${ARCH} &&
+ln -sv ${INSTALL_DIR}/ioquake3 ${INSTALL_ROOT}/usr/games/ioquake3
