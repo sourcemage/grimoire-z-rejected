@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /opt/teewars
+./teewars_srv $@

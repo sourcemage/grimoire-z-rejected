@@ -1,0 +1,18 @@
+           SPELL=teewars-bin
+         VERSION=0.3.4
+          SOURCE=teewars-${VERSION}-linux_x86.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/teewars-${VERSION}-linux_x86
+   SOURCE_URL[0]=http://www.teewars.com/files/$SOURCE
+     SOURCE_HASH=sha512:4ccf72fc51b0319d72548c4b98ce9d01362b533afd9aaada29d3af74e706d956690bbeae08263beaebcf82bc7563b4bd9a55ee88a353241c617eb617d51bfd79
+      LICENSE[0]=http://ix.teewars.com/trac/browser/tags/release-${VERSION}/license.txt
+        WEB_SITE=http://www.teewars.com/
+         ENTERED=20080302
+         ARCHIVE="off"
+          REJECT="binary distribution, non-free license"
+           SHORT="a fast-paced sidescrolling multiplayer-only shoot 'em up game"
+cat << EOF
+Teewars is a fast-paced sidescrolling multiplayer-only shoot 'em up game. The
+game features cartoon-themed graphics and physics, and relies heavily on classic
+shooter weaponry and gameplay. The controls are heavily inspired by the FPS
+genre of computer games.
+EOF
