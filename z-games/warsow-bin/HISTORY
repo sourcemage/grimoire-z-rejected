@@ -1,5 +1,5 @@
 2008-03-02 Alexander Tsamutali <astsmtl@gmail.com>
-	* DETAILS: Updated to 0.42, new mirrors
+	* DETAILS: Updated to 0.42, new mirrors, marked hash as UPSTREAM_HASH
 	* PRE_BUILD: Adopted for new release
 
 2008-02-11 Alexander Tsamutali <astsmtl@gmail.com>
