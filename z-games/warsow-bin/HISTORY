@@ -1,3 +1,7 @@
+2008-03-02 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Updated to 0.42, new mirrors
+	* PRE_BUILD: Adopted for new release
+
 2008-02-11 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS: Updated to 0.41, new mirrors
 

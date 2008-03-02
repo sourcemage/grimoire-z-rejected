@@ -1,7 +1,6 @@
-mk_source_dir $SOURCE_DIRECTORY &&
+default_pre_build &&
 cd $SOURCE_DIRECTORY &&
-unpack_file &&
-rm *.exe && # Ouch!..
+rm *.exe libs/*.dll libs/*.dylib && # Ooops!..
 
 INSTALL_DIR=${TRACK_ROOT}/opt/warsow &&
 sedit "s:BINARY_DIR=:BINARY_DIR=${INSTALL_DIR}:" warsow &&
