@@ -1,0 +1,5 @@
+./install-inform7.sh --prefix "$INSTALL_ROOT"/usr &&
+cd "$INSTALL_ROOT"/usr &&
+mkdir -p share/man/man1 &&
+mv man/man1/i7.1 share/man/man1 &&
+rmdir -p --ignore-fail-on-non-empty man/man1

@@ -1,0 +1,43 @@
+           SPELL=inform
+         VERSION=5J39_Linux_all
+          SOURCE="I7_$VERSION.tar.gz"
+   SOURCE_URL[0]=http://www.$SPELL-fiction.org/I7Downloads/$SOURCE
+     SOURCE_HASH=sha512:86591b25814d2242c0d1730105c7270decc6b5090750a984bc330152a55ea9c463eb20bf8dbdda166f1205fa2a8db092113e812097526bd2ea6e614a8aa6e1e9
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/${SPELL}7-${VERSION%%_*}"
+        WEB_SITE="http://www.inform-fiction.org"
+      LICENSE[0]=Inform/GPL
+         ENTERED=20080224
+          REJECT="binary"
+           SHORT="a design system for interactive fiction"
+cat << EOF
+Inform is a design system for interactive fiction, a new medium for writers
+which began with adventure games in the late 1970s and is now used for
+everything from literary narrative fiction through to plotless conceptual
+art, and plenty more adventure games too. Since its introduction in 1993,
+Inform has become a standard tool.  Three years in the making, Inform 7 is
+a radical reinvention of the way interactive fiction is designed, guided
+both by contemporary work in semantics and by the practical experience of
+some of the world's best-known writers of IF.
+
+An easily learned but flexible one-window user interface makes the cycle
+of writing and testing rapid and painless. Inform creates, manages, edits,
+indexes, tests, and even helps to publish works of IF without fuss or screen
+clutter.  Inform itself is a free download. It produces works playable on a
+vast range of computers: distribute these free or for profit with no rights
+implications or financial obligations to the author of Inform. Convenient
+publishing features include help with drawing maps, producing websites,
+cover art, bibliographic data, walkthrough solutions and more.
+
+In place of traditional computer programming, the design is built by writing
+natural English-language sentences: *Martha is a woman in the Vineyard.
+*The cask is either customs sealed, liable to tax or stolen goods.  *The
+prevailing wind is a direction that varies.  *The Old Ice House overlooks
+the Garden.  *A container is bursting if the total weight of things in it
+is greater than its breaking strain.
+
+Inform's power lie in its ability to describe: to lay down general rules
+about "closed doors", or "bursting containers", or "unmarried men liked by
+Martha". At its best, expressing IF in natural language results in source
+text which is not only quick to write, but very often works first time,
+and is exceptionally readable.
+EOF
