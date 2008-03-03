@@ -1,0 +1,4 @@
+default_pre_build &&
+mk_source_dir $SOURCE2_DIRECTORY &&
+cd $SOURCE2_DIRECTORY &&
+unpack_file 2

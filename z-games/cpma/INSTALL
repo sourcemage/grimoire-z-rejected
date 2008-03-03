@@ -1,0 +1,11 @@
+INSTALL_DIR=${INSTALL_ROOT}/opt/ioquake3/cpma &&
+mkdir $INSTALL_DIR &&
+cp -rv * $INSTALL_DIR &&
+cd $INSTALL_DIR &&
+find_and_scam &&
+
+BASEQ3_DIR=${INSTALL_ROOT}/opt/ioquake3/baseq3 &&
+cd $SOURCE2_DIRECTORY &&
+cp -v * $BASEQ3_DIR &&
+chmod 640 ${BASEQ3_DIR}/map_cpm*.pk3 &&
+chown root:games ${BASEQ3_DIR}/map_cpm*.pk3

@@ -1,0 +1,35 @@
+            SPELL=cpma
+          VERSION=1.45
+           SOURCE=${SPELL}${VERSION/./}-nomaps.zip
+          SOURCE2=$SPELL-mappack-full.zip
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+SOURCE2_DIRECTORY=$BUILD_DIRECTORY/$SPELL-mappack-full
+    SOURCE_URL[0]=http://download.sourcemage.org/mirror/$SOURCE
+   SOURCE2_URL[0]=http://download.sourcemage.org/mirror/$SOURCE2
+      SOURCE_HASH=sha512:f1d06d5403d76055260a46efe44f1067e4fa39b362221c947394fae1fcab2edfe59ecd487432d5c44071ea7d248c99dc2a23bcfb5fef72c527846edd86fbc41f
+     SOURCE2_HASH=sha512:bbc1ddd378f76ece224403ac7e1aeb1de2fec2756f438be07fb8f018e5e8cc6679cbf574eac51ce75daa0ee53b8b095ce5b46dffbd120df5450039ce754b9b37
+       LICENSE[0]="UNKNOWN"
+       LICENSE[1]="UNKNOWN"
+         WEB_SITE=http://www.promode.org/
+          ENTERED=20080303
+          ARCHIVE="off"
+           REJECT="unknown license"
+   STAGED_INSTALL="off"
+            SHORT="a free modification for Quake III Arena"
+cat << EOF
+Challenge ProMode Arena (CPMA or CPM; unofficially Promode) is a free
+modification for id Software's first-person shooter computer game Quake III
+Arena (Q3A). CPMA provides a gamemode which includes physics allowing for
+air-control, rebalanced weapons, fast weapon switching, improvements of jumping
+techniques. It also provides a vanilla (unmodified physics engine) Quake III
+(VQ3) support, Multiview GTV and demo technology, enhanced bots AI, new maps,
+etc.
+
+Challenge ProMode Arena became the primary competitive mod for Q3A since the
+Cyberathlete Professional League announced CPMA as it's basis for competition.
+The mod has its own division in Cyberathlete Amateur League, and also has its
+own competitions and leagues.
+
+CPMA physics has been implemented in other Q3A notable modifications, DeFRaG
+and Orange Smoothie Productions (OSP).
+EOF
