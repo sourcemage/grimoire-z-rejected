@@ -1,0 +1,5 @@
+INSTALL_DIR=${INSTALL_ROOT}/opt/ioquake3/osp &&
+mkdir $INSTALL_DIR &&
+cp -rv * $INSTALL_DIR &&
+cd $INSTALL_DIR &&
+find_and_scam

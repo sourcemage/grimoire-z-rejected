@@ -1,0 +1,4 @@
+default_pre_build &&
+cd $SOURCE_DIRECTORY &&
+rm *.exe &&
+rm -r voodoo VoodooStats-ReadME.txt
