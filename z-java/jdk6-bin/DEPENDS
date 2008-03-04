@@ -1,4 +1,6 @@
 depends  unixodbc  &&
+depends  alsa-lib  &&
+depends  gcc33     &&
 optional_depends  X11-LIBS "" "" "To run gui applications" &&
 
 source  $GRIMOIRE/FUNCTIONS  &&

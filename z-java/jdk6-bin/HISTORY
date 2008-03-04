@@ -1,4 +1,7 @@
 2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DEPENDS: added alsa-lib and gcc33
+
+2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated to version 6u4
 
 2007-11-24 Eric Sandall <sandalle@sourcemage.org>
