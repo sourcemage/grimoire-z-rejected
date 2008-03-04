@@ -1,3 +1,6 @@
+2008-03-04 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DEPENDS: added alsa-lib
+
 2008-02-01 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 1.5.0_14 / 5.0u14
 
