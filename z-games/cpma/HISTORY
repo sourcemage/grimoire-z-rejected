@@ -1,3 +1,6 @@
+2008-03-07 Alexander Tsamutali <astsmtl@gmail.com>
+	* DETAILS: Changed SOURCE_URL's
+
 2008-03-03 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS, DEPENDS, PREPARE, PRE_BUILD, BUILD, INSTALL, FINAL, HISTORY:
 	  Created this spell
