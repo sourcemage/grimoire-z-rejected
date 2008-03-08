@@ -1,1 +1,2 @@
-depends  unixodbc
+depends  unixodbc  &&
+depends alsa-lib

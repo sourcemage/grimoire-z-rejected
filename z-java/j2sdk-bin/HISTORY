@@ -1,3 +1,11 @@
+2008-03-08 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 1_4_2_17
+	* CONFIGURE: now uses JAVA_WARNING in SPELL_DIRECTORY instead of the one
+	  in SECTION_DIRECTORY (there's no DJL version for j2sdk 1.4.2)
+	* DEPENDS: added alsa-lib
+	* JAVA_WARNING: added, to warn users they have to download the source
+	  file before casting
+
 2007-10-24 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated to 1_4_2_16
 
