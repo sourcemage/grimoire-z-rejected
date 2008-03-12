@@ -1,6 +1,3 @@
-2008-03-12 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
-	* DEPENDS: removed mktemp
-
 2008-02-12 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated to version 96.43.05
 	
