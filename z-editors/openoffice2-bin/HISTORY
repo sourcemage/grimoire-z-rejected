@@ -1,6 +1,3 @@
-2008-03-12 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
-	* DEPENDS: removed mktemp
-
 2007-12-29 Pol Vinogradov <vin.public@gmail.com>
 	* DEPENDS: added Russian languagepack
 
