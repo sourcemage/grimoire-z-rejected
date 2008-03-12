@@ -1,3 +1,6 @@
+2008-03-12 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on gmp
+
 2007-12-29 Pol Vinogradov <vin.public@gmail.com>
 	* DEPENDS: added Russian languagepack
 
