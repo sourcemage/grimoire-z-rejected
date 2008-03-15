@@ -4,8 +4,10 @@ cd  "$SOURCE_DIRECTORY"  &&
 cp  skype                 "$INSTALL_ROOT/usr/bin/"  &&
 
 # resources
-mkdir -p      "$INSTALL_ROOT/usr/share/skype/"  &&
-cp -r  sounds  "$INSTALL_ROOT/usr/share/skype/"  &&
+mkdir -p       "$INSTALL_ROOT/usr/share/skype/"  &&
+cp -r avatars  "$INSTALL_ROOT/usr/share/skype/"  &&
+cp -r lang     "$INSTALL_ROOT/usr/share/skype/"  &&
+cp -r sounds   "$INSTALL_ROOT/usr/share/skype/"  &&
 
 # dbus config
 mkdir -p        "$INSTALL_ROOT/etc/dbus-1/system.d/"  &&
