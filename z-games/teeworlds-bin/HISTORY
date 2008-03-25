@@ -1,5 +1,6 @@
 2008-03-25 Alexander Tsamutali <astsmtl@gmail.com>
-	* Renamed this spell to teeworlds-bin
+	* Renamed from teewars-bin to teeworlds-bin
+	* DETAILS: Updated to 0.4.1
 
 2008-03-02 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS, PREPARE, DEPENDS, BUILD, INSTALL, HISTORY, teewars,

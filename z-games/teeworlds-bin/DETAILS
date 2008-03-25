@@ -1,0 +1,18 @@
+           SPELL=teeworlds-bin
+         VERSION=0.4.1
+          SOURCE=teeworlds-${VERSION}-linux_x86.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/teeworlds-${VERSION}-linux_x86
+   SOURCE_URL[0]=http://www.teeworlds.com/files/$SOURCE
+     SOURCE_HASH=sha512:10317577f5a657f16c4d160591e04cfe90ba8dbaeeb3c6d16aa67ebd3bb419c9bf7636eb33f2b617159dba1abc2e21f25e415e2019734d91220c228e1023f8ae
+      LICENSE[0]=http://trac.teeworlds.com/trac/browser/tags/release-0.4.1/license.txt
+        WEB_SITE=http://www.teeworlds.com/
+         ENTERED=20080302
+         ARCHIVE="off"
+          REJECT="binary distribution"
+           SHORT="a fast-paced sidescrolling multiplayer-only shoot 'em up game"
+cat << EOF
+Teeworlds is a fast-paced sidescrolling multiplayer-only shoot 'em up game. The
+game features cartoon-themed graphics and physics, and relies heavily on classic
+shooter weaponry and gameplay. The controls are heavily inspired by the FPS
+genre of computer games.
+EOF
