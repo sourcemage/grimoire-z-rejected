@@ -1,3 +1,11 @@
+2008-03-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 1_5_0_15, fixed WEB_SITE
+	* DEPENDS: added alsa-lib as dependency, and X11-LIBS as optional one
+	* CONFIGURE: now uses JAVA_WARNING in SPELL_DIRECTORY instead of the one
+	  in SECTION_DIRECTORY (there's no DJL version for jre 1.5.0)
+	* JAVA_WARNING: added, to warn users they have to download the source
+	  file before casting
+
 2007-06-30 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to 1.5.0_12
 

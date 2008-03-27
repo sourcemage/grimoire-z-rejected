@@ -1,20 +1,20 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jre1.5-bin
-         VERSION=1_5_0_12
-             VER=1.5.0_12
+         VERSION=1_5_0_15
+             VER=1.5.0_15
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	ia32|32)
           SOURCE=jre-$VERSION-linux-i586.bin
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      SOURCE_HASH=sha512:a52008d7ab731fd8b16cece053e9efe146b46afccd0200c3e2716a1f54380c132afd6fe8180f4d9834b3021cf924dd6c500f94cbfe2fb834f03d441590477537
         ;;
 	x86-64|64)
 	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
 	  then
           SOURCE=jre-$VERSION-linux-amd64.bin
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      SOURCE_HASH=sha512:fa8f1773fb8edf6fd516af87634eccb2d6b604830ee9898a8f24546cdb7e5e8138a3b4a9b27a9ca50afee03c921cda1833900994a33c58d3e61d4c5558d4b4ed
           else
           SOURCE=jre-$VERSION-linux-i586.bin
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      SOURCE_HASH=sha512:a52008d7ab731fd8b16cece053e9efe146b46afccd0200c3e2716a1f54380c132afd6fe8180f4d9834b3021cf924dd6c500f94cbfe2fb834f03d441590477537
 	  fi
 	;;
 ###########################################################################
@@ -26,7 +26,7 @@ case "${SMGL_COMPAT_ARCHS[0]}" in
 	     VER=Unsupported
 	;;
 esac
-        WEB_SITE=http://java.sun.com/j2se/1.5.0/download.html
+        WEB_SITE=http://java.sun.com/javase/downloads/index_jdk5.jsp
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jre$VER
          ENTERED=20051101
          ARCHIVE="off"

@@ -1,1 +1,9 @@
-depends  unixodbc
+depends  unixodbc  &&
+depends  alsa-lib  &&
+
+optional_depends  X11-LIBS "" "" "To run gui applications" &&
+
+. $GRIMOIRE/FUNCTIONS  &&
+if check_if_xorg_modular_libs; then
+  depends  libxi
+fi
