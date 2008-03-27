@@ -1,3 +1,6 @@
+2008-03-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 6u5
+
 2008-01-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DEPENDS: added alsa-lib and gcc33
 
