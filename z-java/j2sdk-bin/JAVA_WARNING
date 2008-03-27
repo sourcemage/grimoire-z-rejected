@@ -5,7 +5,7 @@ message "\n${MESSAGE_COLOR}For $SPELL you need to manually download the sources 
 ${DEFAULT_COLOR}\n  http://java.sun.com/j2se/1.4.2/download.html \
 \n${MESSAGE_COLOR}Put the downloaded file in \
 ${DEFAULT_COLOR}/var/spool/sorcery/ \
-${MESSAGE_COLOR}so cast will find it.\n"  &&
+${MESSAGE_COLOR}so cast will find it.\n${DEFAULT_COLOR}"  &&
 
 if ! query "HAVE YOU DOWNLOADED THE SOURCES AND WISH TO CONTINUE CASTING?" n;
 then
