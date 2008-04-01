@@ -10,4 +10,6 @@ optional_depends openoffice2-bin-lang-ru \
 optional_depends openoffice2-bin-lang-fr \
   '' '' 'For the French languagepack'    &&
 optional_depends openoffice2-bin-lang-es \
-  '' '' 'For the Spanish languagepack'
+  '' '' 'For the Spanish languagepack'   &&
+optional_depends openoffice2-bin-lang-sv \
+  '' '' 'For the Swedish languagepack'
