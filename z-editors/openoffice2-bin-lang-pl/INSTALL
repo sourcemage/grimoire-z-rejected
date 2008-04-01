@@ -3,5 +3,5 @@ if ! [[ -d $INSTALLDIR ]] ; then
   mkdir -p $INSTALLDIR
 fi
 cd    $SOURCE_DIRECTORY/RPMS          &&
-cp -r $SOURCE_DIRECTORY/RPMS/opt/openoffice.org2.3/* \
+cp -r $SOURCE_DIRECTORY/RPMS/opt/openoffice.org${VERSION%.*}/* \
       $INSTALL_ROOT/opt/openoffice/
