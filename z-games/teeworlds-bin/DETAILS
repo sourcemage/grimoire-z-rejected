@@ -1,9 +1,9 @@
            SPELL=teeworlds-bin
-         VERSION=0.4.1
+         VERSION=0.4.2
           SOURCE=teeworlds-${VERSION}-linux_x86.tar.gz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/teeworlds-${VERSION}-linux_x86
    SOURCE_URL[0]=http://www.teeworlds.com/files/$SOURCE
-     SOURCE_HASH=sha512:10317577f5a657f16c4d160591e04cfe90ba8dbaeeb3c6d16aa67ebd3bb419c9bf7636eb33f2b617159dba1abc2e21f25e415e2019734d91220c228e1023f8ae
+     SOURCE_HASH=sha512:feb2b55ecc85d4a0274657b7d6f98b2b4624125464964a743d0046533dd9770e8277366baec0b2574b832e997f2098ef0b1b45573c15c2b21193b1432fe3cda0
       LICENSE[0]=http://trac.teeworlds.com/trac/browser/tags/release-0.4.1/license.txt
         WEB_SITE=http://www.teeworlds.com/
          ENTERED=20080302
