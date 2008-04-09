@@ -1,22 +1,18 @@
            SPELL=flash
-if [[ "${FLASH_BETA}" == "y" ]]; then
-
+if [[ $FLASH_BETA == y ]]; then
          VERSION=100107
-          SOURCE=flashplayer9_install_linux_${VERSION}.tar.gz
+          SOURCE=flashplayer9_install_linux_$VERSION.tar.gz
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer9_update/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_9_linux
-
 else
-
-         VERSION=9.0.115.0
-  SECURITY_PATCH=2
+         VERSION=9.0.124.0
+  SECURITY_PATCH=3
           SOURCE=install_flash_player_9_linux.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SOURCE/.tar.gz/}
-
 fi
   FORCE_DOWNLOAD="on"
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+      SOURCE_GPG=gurus.gpg:$SOURCE.sig
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
         WEB_SITE=http://www.macromedia.com
          ENTERED=20020319
