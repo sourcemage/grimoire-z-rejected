@@ -1,3 +1,7 @@
+2008-04-12 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: updated version to 173.08
+	  this beta version builds with 2.6.25-rcx kernels
+
 2008-02-27 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 169.12
 
