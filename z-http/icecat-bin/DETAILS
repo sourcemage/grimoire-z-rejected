@@ -1,7 +1,8 @@
            SPELL=icecat-bin
-         VERSION=2.0.0.11-g1
+         VERSION=2.0.0.13-g1
+  SECURITY_PATCH=1
           SOURCE=icecat-${VERSION}-i386.tar.bz2
-     SOURCE_HASH=sha512:ff9cec9101f0bdb3a9ed1bdb02c1b4fde13b39223eacdba560e7d6aad4033ff5a25d71caa826f5277803dd60fd8adfe6e969bff27799c4f004c913688047e299
+     SOURCE_HASH=sha512:e4788391c038ab32bec8f80e65698f8c75f9cddad69930174dc019110f39f522d16d2d5cdaf7a2c9729bed4565378ecb93b7c87d33d620b6357c056fa3662d3c
    SOURCE_URL[0]=http://gnuzilla.gnu.org/download/${SOURCE}
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/icecat-$VERSION-i386
         WEB_SITE=http://www.gnu.org/software/gnuzilla/
