@@ -1,0 +1,14 @@
+# Special messages with regards to JRE 1.6.0 sources.
+#
+message "\n${MESSAGE_COLOR}For $SPELL you need to manually download the sources for JRE \
+\nversion 6 in self-extracting format from Sun's website: \
+${DEFAULT_COLOR}\n  ${WEB_SITE} \
+\n${MESSAGE_COLOR}Put the downloaded file in \
+${DEFAULT_COLOR}/var/spool/sorcery/ \
+${MESSAGE_COLOR}so cast will find it.\n${DEFAULT_COLOR}"  &&
+
+if ! query "HAVE YOU DOWNLOADED THE SOURCES AND WISH TO CONTINUE CASTING?" n;
+then
+  message "${MESSAGE_COLOR}Please recast when you have the sources!\n${DEFAULT_COLOR}"
+  return 1 
+fi

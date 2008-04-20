@@ -1,0 +1,4 @@
+2008-04-20 Julien "_kaze_" ROZO <julien@rozo.org>
+	* BUILD, CONFIGURE, CONFLICTS, DEPENDS, DETAILS, FINAL, INSTALL, java.sh,
+	  JAVA_WARNING, PRE_BUILD, PROVIDES, UNATTEND_SAFE: created this spell
+

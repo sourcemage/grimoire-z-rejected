@@ -1,0 +1,41 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=jre6-bin
+         VERSION=6u6
+             VER=1.6.0_06
+case "${SMGL_COMPAT_ARCHS[0]}" in
+	ia32|32)
+          SOURCE=jre-$VERSION-linux-i586.bin
+      SOURCE_HASH=sha512:2a61dbd1bd3eb72327f8561599e43d29ae59fe2fd9cb9306e657c70c39357563126fa2fb0dd3e41d4dc8c28b0a27c67c1c2c5a3abb018913280282a7e551e4d6
+        ;;
+	x86-64|64)
+	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
+	  then
+          SOURCE=jre-$VERSION-linux-x64.bin
+      SOURCE_HASH=sha512:4e215a65109f0a70b9f64a7298ed99d9a410877c4c968f4cb8bba7433c5865d6ef4bdfd7b3f06cbedfa1443d6a3fdbe3c68ea928ea907c67d21be0f984998047
+          else
+          SOURCE=jre-$VERSION-linux-i586.bin
+      SOURCE_HASH=sha512:2a61dbd1bd3eb72327f8561599e43d29ae59fe2fd9cb9306e657c70c39357563126fa2fb0dd3e41d4dc8c28b0a27c67c1c2c5a3abb018913280282a7e551e4d6
+	  fi
+	;;
+###########################################################################
+# Missing support for sparc and sparcv9 tarballs say solaris not linux :\
+###########################################################################
+	*)
+	  SOURCE=
+	 VERSION=Unsupported
+	     VER=Unsupported
+	;;
+esac
+        WEB_SITE=http://java.sun.com/javase/downloads/index.jsp
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/jre$VER
+         ENTERED=20080420
+         ARCHIVE="off"
+          REJECT="is non-source"
+           SHORT="Java Software Runtime Environment"
+cat << EOF
+The JRE contains the Java Plug-In for Netscape 4.x and Mozilla/Netscape 6.x.
+
+Note: You need to download the JRE installer yourself from the Sun Website,
+see 'gaze website ${SPELL}' for the location. Put the downloaded file in
+/var/spool/sorcery so cast will find it.
+EOF

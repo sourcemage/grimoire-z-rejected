@@ -1,0 +1,50 @@
+cd  ${INSTALL_ROOT}/usr/lib  &&
+
+yes | sh $SOURCE_CACHE/$SOURCE  &&
+
+if [[ "${ARCHITECTURE[0]}" == "i386" || "${ARCHITECTURE[0]}" == "i486" ]]
+then
+	message "${PROBLEM_COLOR}The package says i586 so if you really are running an i386 or i486 you may experience problems with this package${DEFAULT_COLOR}"
+fi &&
+
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "ia32" ]]
+then	
+message "${MESSAGE_COLOR}Determine which browser plugins to install${DEFAULT_COLOR}" &&
+	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
+	then
+                message "${MESSAGE_COLOR}Installing plugin for mozilla${DEFAULT_COLOR}" &&
+		ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
+                       ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libjavaplugin_oji.so
+	fi
+
+	if [ -d ${INSTALL_ROOT}/usr/lib/firefox/plugins ]
+	then
+                message "${MESSAGE_COLOR}Installing plugin for firefox${DEFAULT_COLOR}" &&
+		ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
+                       ${INSTALL_ROOT}/usr/lib/firefox/plugins/libjavaplugin_oji.so
+	fi
+        if [ -d ${INSTALL_ROOT}/opt/firefox/plugins ]
+	then
+                message "${MESSAGE_COLOR}Installing plugin for firefox-bin${DEFAULT_COLOR}" &&
+		ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
+                       ${INSTALL_ROOT}/opt/firefox/plugins/libjavaplugin_oji.so
+	fi
+
+        if [ -d ${INSTALL_ROOT}/usr/lib/seamonkey/plugins ]
+	then
+                message "${MESSAGE_COLOR}Installing plugin for seamonkey${DEFAULT_COLOR}" &&
+		ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
+                       ${INSTALL_ROOT}/usr/lib/seamonkey/plugins/libjavaplugin_oji.so
+	fi
+
+        if [ -d ${INSTALL_ROOT}/usr/lib/opera/plugins ]
+	then
+                message "${MESSAGE_COLOR}Installing plugin for opera${DEFAULT_COLOR}" &&
+		ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
+                       ${INSTALL_ROOT}/usr/lib/opera/plugins/libjavaplugin_oji.so
+	fi
+fi  &&
+
+mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
+install -m 0644 $SCRIPT_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/  &&
+sedit  "s/J2SDKDIR/jre$VER/"  ${INSTALL_ROOT}/etc/profile.d/java.sh
