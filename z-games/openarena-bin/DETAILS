@@ -1,0 +1,19 @@
+           SPELL=openarena-bin
+	  SPELLX=openarena
+         VERSION=0.7.6
+             VER=076
+          SOURCE=oa${VER}.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELLX}-${VERSION}
+   SOURCE_URL=http://download.tuxfamily.org/${SPELLX}/rel/${VER}/${SOURCE}
+  SOURCE_HASH=sha512:0a380adbf0b6ed6618fca617db178f9323931bce0fd119604e0112c080df8ca7e85b3f783622a66c53626d1832e416d0fc3ab6bc893f98a39415681f9047cfa5
+      LICENSE=GPL
+        WEB_SITE=http://openarena.ws/
+         ENTERED=20080422
+         ARCHIVE="off"
+          REJECT="binary distribution"
+           SHORT="an open-source FPS based on Q3A engine"
+cat << EOF
+OpenArena is an open-source content package for Quake III Arena licensed under
+the GPL, effectively creating a free stand-alone game.
+You do not need Quake III Arena to play this game.
+EOF
