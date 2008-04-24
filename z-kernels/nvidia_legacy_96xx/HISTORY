@@ -3,19 +3,20 @@
 
 2008-02-12 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated to version 96.43.05
-	
+
 2007-10-19 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated to version 96.43.01
 
 2007-05-14 Colin "Phoul" Childs <phoul@sourcemage.org>
 	* ALL: copied from the nvidia_legacy spell and modified to install the
-	legacy drivers for the 96xx series.
+	  legacy drivers for the 96xx series.
 
 2007-05-13 Colin "Phoul" Childs <phoul@sourcemage.org>
 	* DETAILS: Version bumped to 1.0-9755 to clear up dl issues.
 
 2007-02-19 David Kowis <dkowis@shlrm.org>
-	* ALL: copied from the nvidia_driver spell and modified to install the legacy driver
+	* ALL: copied from the nvidia_driver spell and modified to install the
+	  legacy driver
 
 2007-02-05 David Kowis <dkowis@shlrm.org>
 	* DETAILS: Someone forgot the hash for the x86_64 source
@@ -37,11 +38,11 @@
 
 2006-11-08 David Brown <dmlb2000@gmail.com>
 	* INSTALL: added patch for glext.h fixed -p value
-	* glext-redef.patch: removes a redefinition of something so glut can 
+	* glext-redef.patch: removes a redefinition of something so glut can
 	  build
 
 2006-11-08 Flavien Bridault <vlaaad@sourcemage.org>
-	* DETAILS: 1.0-9629 
+	* DETAILS: 1.0-9629
 
 2006-10-19 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 1.0-8776, SECURITY_PATCH=1
@@ -64,7 +65,7 @@
 	  the directory. Which it does for amd64.
 
 2006-07-13 Juuso Alasuutari <iuso@sourcemage.org>
-	* DETAILS: Disabled staged install until bug #12843 is fixed, 
+	* DETAILS: Disabled staged install until bug #12843 is fixed,
 	  removed UPDATED & BUILD_API.
 	* PRE_BUILD: Added sedit to fix defunct nvidia-settings.desktop.
 	* INSTALL: Install pixmap.
@@ -80,24 +81,24 @@
 	* INSTALL: Fill in the path to libGL.so will be installed (bug #12295)
 
 2006-05-30 Juuso Alasuutari <iuso@sourcemage.org>
-	* TRIGGERS: Added 'on_cast mesalib cast_self' to reinstall 
+	* TRIGGERS: Added 'on_cast mesalib cast_self' to reinstall
 	  nvidia_driver's libGL.so.
 	* DETAILS: Added PATCHLEVEL=1.
 
 2006-05-27 Juuso Alasuutari <iuso@sourcemage.org>
-	* DETAILS: Fixed arch selection: changed SMGL_COMPAT_ARCHS[0] to 
-	  SMGL_COMPAT_ARCHS[1], x86-64|64 to x86_64, and ia32|32 to 
+	* DETAILS: Fixed arch selection: changed SMGL_COMPAT_ARCHS[0] to
+	  SMGL_COMPAT_ARCHS[1], x86-64|64 to x86_64, and ia32|32 to
 	  ia32.
 
 2006-05-21 Juuso Alasuutari <iuso@sourcemage.org>
-	* INSTALL: Create target dir for X drivers if none exists, fixes 
+	* INSTALL: Create target dir for X drivers if none exists, fixes
 	  bug #11852
 
 2006-05-17 Juuso Alasuutari <iuso@sourcemage.org>
 	* FINAL: Added, display info message about nvidia-xconfig
 
 2006-05-17 Juuso Alasuutari <iuso@sourcemage.org>
-	* CONFIGURE: Removed nvidia-installer related queries (expert 
+	* CONFIGURE: Removed nvidia-installer related queries (expert
 	  install & xorg.conf auto-config)
 	* INSTALL: Removed nvidia-installer related stuff
 
@@ -140,32 +141,33 @@
 	* POST_REMOVE: added to restore the x/mesalib headers and libs
 
 2006-04-18 Juuso Alasuutari <iuso@sourcemage.org>
-	* INSTALL: Made sure that if the xorg.conf auto-edit option has 
+	* INSTALL: Made sure that if the xorg.conf auto-edit option has
 	  been selected once, it doesn't default to y on next cast.
 
 2006-04-18 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Dropped "-pkg*" from version numbers.
 
 2006-04-14 John Harding <johnh@kuberaconsulting.com>
-	* DETAILS: Fix my incorrect instruction and corrected ia32 url, now really fixed
+	* DETAILS: Fix my incorrect instruction and corrected ia32 url, now really
+	  fixed
 
 2006-04-14 David Kowis <dkowis@shlrm.org>
 	* DETAILS: as per johnnyi7 on IRC the url for ia32 was broke, now fixed
 
 2006-04-14 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: Version 1.0-8756
-	* PRE_BUILD, BUILD, INSTALL: Use nvidia's own installer 
+	* PRE_BUILD, BUILD, INSTALL: Use nvidia's own installer
 	  executable
-	* PREPARE: Added, checks if X is running, installer won't 
-	  run if it is. Made to display and prompt license 
+	* PREPARE: Added, checks if X is running, installer won't
+	  run if it is. Made to display and prompt license
 	  agreement.
 	* LICENSE: Added, Nvidia's license agreement.
-	* CONFIGURE: Added options to use expert install mode and 
+	* CONFIGURE: Added options to use expert install mode and
 	  configure xorg automatically
 	* NVIDIA_kernel-1.0-8178-U012206.diff: Deleted
 
 2006-03-25 Juuso Alasuutari <iuso@sourcemage.org>
-	* PRE_BUILD: Apply patch to fix compile against 2.6.16 
+	* PRE_BUILD: Apply patch to fix compile against 2.6.16
 	  kernels, bug #10748. Thanks to Arnaud Fortier!
 	* NVIDIA_kernel-1.0-8178-U012206.diff: added
 
@@ -359,11 +361,13 @@
 	* BUILD: Changed accordingly
 
 2003-12-16 hgg <hgreig@bigpond.net.au>
-	* BUILD: head and tail need -n for posix conformance, since I rebuilt with nptl
+	* BUILD: head and tail need -n for posix conformance, since I rebuilt with
+	  nptl
 
 2003-12-14 hgg <hgreig@bigpond.net.au>
 	* DETAILS: remove C.Brien's patch, not needed any more
-	* BUILD: reorder the sedits to after the patch is applied, remove application of old SOURCE3 patch
+	* BUILD: reorder the sedits to after the patch is applied, remove
+	  application of old SOURCE3 patch
 
 2003-12-03 Eric Sandall <sandalle@sourcemage.org>
 	* 2.6.0-test5.patch: Removed, no longer needed as of -test11
