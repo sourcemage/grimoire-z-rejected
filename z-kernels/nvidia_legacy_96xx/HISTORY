@@ -1,3 +1,6 @@
+2008-04-24 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Removed dependency on mktemp (now provided by coreutils)
+
 2008-02-12 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated to version 96.43.05
 	
