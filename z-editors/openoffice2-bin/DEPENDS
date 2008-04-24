@@ -1,6 +1,5 @@
 depends  gmp           &&
 depends  JAVA          &&
-depends  mktemp        &&
 depends  rpmunpack     &&
 
 optional_depends openoffice2-bin-lang-nl \
