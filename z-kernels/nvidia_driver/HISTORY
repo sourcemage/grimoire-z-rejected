@@ -1,3 +1,6 @@
+2008-04-24 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Removed dependency on mktemp (now provided by coreutils)
+
 2008-04-12 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: updated version to 173.08
 	  this beta version builds with 2.6.25-rcx kernels
