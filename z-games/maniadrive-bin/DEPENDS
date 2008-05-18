@@ -1,0 +1,4 @@
+depends OPENGL   &&
+depends X11-LIBS &&
+depends openal   &&
+sub_depends openal ALSA

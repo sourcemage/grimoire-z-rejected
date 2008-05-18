@@ -1,0 +1,18 @@
+           SPELL=maniadrive-bin
+         VERSION=1.2
+          SOURCE=ManiaDrive-${VERSION}-linux-i386.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/ManiaDrive-${VERSION}-linux-i386
+   SOURCE_URL[0]=$SOURCEFORGE_URL/maniadrive/$SOURCE
+     SOURCE_HASH=sha512:fcc3371b607ffb3681fb323f93e547f0fe6ba6c8e1f32c19367e2dc1b6688304ce392553695a6e25be739d04d64e9610cd0302f25d7ba6c769df4f55ae45aea6
+      LICENSE[0]="GPL"
+        WEB_SITE=http://maniadrive.raydium.org/
+         ENTERED=20080518
+         ARCHIVE="off"
+          REJECT="binary distribution"
+           SHORT="a free clone of Trackmania"
+cat << EOF
+ManiaDrive is a free clone of Trackmania, the great game from Nadéo studio, and
+is an arcade car game on acrobatic tracks, with a quick and nervous gameplay
+(tracks almost never exceed one minute), and features a network mode,
+as the original.
+EOF
