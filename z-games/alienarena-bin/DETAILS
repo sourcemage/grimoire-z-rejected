@@ -1,0 +1,19 @@
+           SPELL=alienarena-bin
+         VERSION=20080227
+          SOURCE=alienarena2008-linux${VERSION}.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/alienarena2008
+   SOURCE_URL[0]=http://icculus.org/alienarena/Files/$SOURCE
+     SOURCE_HASH=sha512:0fd548114c79d0b08e224b1106e712bb2797eb578191d80f0619f7f0657e12c7e39c6f249267a6f3b37c9bc12c31c88e24a60f0b2008620cdc5188cff31cc51f
+      LICENSE[0]="GPL for engine, freeware content"
+        WEB_SITE=http://red.planetarena.org/
+         ENTERED=20080526
+         ARCHIVE="off"
+          REJECT="binary distribution, non-free content"
+           SHORT="a free standalone deathmatch game with a retro alien theme"
+cat << EOF
+Alien Arena is a free standalone deathmatch game based on source code released
+by id Software. Begun by COR Entertainment in 2004, the game combines a
+1950s-era sci-fi atmosphere with gameplay similar to the Quake, Doom, and
+Unreal Tournament series. Alien Arena focuses mainly on online multiplayer
+action, although it does contain single player campaigns against bots.
+EOF
