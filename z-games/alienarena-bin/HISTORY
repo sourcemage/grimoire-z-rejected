@@ -1,3 +1,3 @@
 2008-05-26 Alexander Tsamutali <astsmtl@gmail.com>
-	* DETAILS, DEPENDS, BUILD, INSTALL, HISTORY, crded, crx, crx.sdl:
-	  Created
+	* PREPARE, DETAILS, DEPENDS, BUILD, INSTALL, HISTORY,
+	  crded, crx, crx.sdl: Created
