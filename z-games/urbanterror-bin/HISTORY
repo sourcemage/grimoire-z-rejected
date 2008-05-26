@@ -1,0 +1,3 @@
+2008-05-26 Alexander Tsamutali <astsmtl@gmail.com>
+	* PREPARE, DETAILS, DEPENDS, PRE_BUILD, BUILD, INSTALL, HISTORY,
+	  ioUrbanTerror, ioUrTded: Created

@@ -1,0 +1,21 @@
+           SPELL=urbanterror-bin
+         VERSION=4.1
+          SOURCE=UrbanTerror_${VERSION/./}_FULL.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/UrbanTerror
+   SOURCE_URL[0]=ftp://ftp.snt.utwente.nl/pub/games/urbanterror/$SOURCE
+   SOURCE_URL[1]=http://mirror.kickassctf.com/$SOURCE
+   SOURCE_URL[2]=http://mrsentry.net/release/$SOURCE
+     SOURCE_HASH=md5:1370306ea236f65f595e7ca70765e469:UPSTREAM_HASH
+      LICENSE[0]="GPL for engine, freeware content"
+        WEB_SITE=http://www.urbanterror.net/
+         ENTERED=20080526
+         ARCHIVE="off"
+          REJECT="binary distribution, non-free content"
+           SHORT="tactical shooter based on Quake III"
+cat << EOF
+Urban Terror can best be described as: "Where Quake meets reality"; it is
+realism based to a certain extent (environments/weapons/player models), but
+also goes by the motto: "fun over realism" (fast gameplay and lots of action).
+This combination of reality and action results in a very unique, enjoyable
+and addictive game.
+EOF

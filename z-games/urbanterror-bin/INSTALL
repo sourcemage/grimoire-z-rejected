@@ -1,0 +1,7 @@
+INSTALL_DIRECTORY=$INSTALL_ROOT/opt/urbanterror &&
+mkdir -p $INSTALL_DIRECTORY &&
+cp -rv * $INSTALL_DIRECTORY &&
+cp -v $SPELL_DIRECTORY/{ioUrbanTerror,ioUrTded} $INSTALL_ROOT/usr/games &&
+cd $INSTALL_DIRECTORY &&
+find_and_scam &&
+chmod 750 {ioUrbanTerror,ioUrTded}.{i386,x86_64}
