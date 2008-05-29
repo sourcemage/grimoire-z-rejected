@@ -1,2 +1,4 @@
 default_install  &&
-install_wmfiles
+install_wmfiles  &&
+install -m 0755 startpwm3 $INSTALL_ROOT/usr/bin/ &&
+install -m 0755 pwm3.desktop $INSTALL_ROOT/usr/share/xsessions

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Ion
-Comment=This session logs you into Ion
-Exec=startion
-TryExec=startion
+Comment=This session logs you into Ion3
+Exec=startion3
+TryExec=startion3
 Icon=
 Type=Application
