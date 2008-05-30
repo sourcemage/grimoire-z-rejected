@@ -1,0 +1,42 @@
+            SPELL=worldofpadman-bin
+          VERSION=1.2
+           SOURCE=worldofpadman.run
+          SOURCE2=wop_patch_${VERSION/./_}.run
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/worldofpadman
+SOURCE2_DIRECTORY=$BUILD_DIRECTORY/wop_patch_${VERSION/./_}
+    SOURCE_URL[0]=http://thilo.kickchat.com/download/$SOURCE
+    SOURCE_URL[1]=http://btc3x6.che.uni-bayreuth.de/~tl/wop_final/$SOURCE
+    SOURCE_URL[2]=ftp://ftp.snt.utwente.nl/pub/games/worldofpadman/linux/$SOURCE
+   SOURCE2_URL[0]=ftp://ftp.kickchat.com/wop/$SOURCE2
+   SOURCE2_URL[1]=ftp://ftp.snt.utwente.nl/pub/games/worldofpadman/linux/$SOURCE2
+   SOURCE2_URL[2]=http://www.hessenfragger.de/uploads/$SOURCE2
+      SOURCE_HASH=md5:c7650414d7865ddac26ada6b3f7b8cc9:UPSTREAM_HASH
+     SOURCE2_HASH=md5:3468fc91889795471bc68e35ea334614:UPSTREAM_HASH
+       LICENSE[0]="GPL for engine, freeware content"
+         WEB_SITE=http://worldofpadman.com/
+          ENTERED=20080530
+          ARCHIVE="off"
+           REJECT="binary distribution, non-free content"
+            SHORT="FPS based on the ioquake3 engine and the Padman comic strip"
+cat << EOF
+Developed and headed by the professional cartoonist and illustrator ENTE,
+PadWorld Entertainment, the Team behind World of Padman (WoP) proudly present
+a free multiplayer standalone game for Windows, MacOSX and Linux that's powered
+by an extended Quake3-Engine based on the source of ioquake3.
+
+WoP is the domain of ENTE's comic strip super-hero bad-boy Padman and his
+motley crew, and their mission is to make your game with some seriously
+addictive fun, whatever your skill level, and whatever character role you jump
+into.
+
+Over the years maps have been revamped, bot play improved, killer-ducks kept
+hungry, weapons repolished, menu's redesigned, and much more, such as new
+sounds, skins, secrets, effects, and power-ups! In all, there are 13 maps.
+Each supports up to 7 game types, comprising WoP's unique Spray Your Color
+Free For All (SYC FFA), Spray Your Color Team Play (SYC TP), Last Pad Standing
+(LPS), and of course Big Balloon (BB), as well as those old favourites Death
+Match, Team Death Match, and Tourney. Meet scaled-up and richly detailed maps
+of everyday places where imaginative characters go berserk with an array of
+colourful plastic weaponry and power-ups and start rockin' to the Dieselkopf
+soundtrack, and the Pad-Anthem performed by Green Sun; so grab those earphones.
+EOF

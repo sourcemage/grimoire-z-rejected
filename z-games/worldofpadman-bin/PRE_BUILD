@@ -1,0 +1,22 @@
+unpack_file &&
+unpack_file 2 &&
+
+mk_source_dir $SOURCE_DIRECTORY &&
+cd $SOURCE_DIRECTORY &&
+sh $SOURCE_CACHE/$SOURCE --tar xf &&
+mkdir wop &&
+tar xf wop-data.tar -C wop &&
+tar xf readme.tar &&
+
+mk_source_dir $SOURCE2_DIRECTORY &&
+cd $SOURCE2_DIRECTORY &&
+sh $SOURCE_CACHE/$SOURCE2 --tar xf &&
+persistent_add ARCH &&
+case "${SMGL_COMPAT_ARCHS[1]}" in
+    ia32) ARCH=i386 ;;
+    x86_64) ARCH=x86_64 ;;
+esac &&
+tar xf wop-engine.${ARCH}.tar &&
+mkdir wop &&
+tar xf wop-data-1.2.tar -C wop &&
+tar xf extras.tar -C wop

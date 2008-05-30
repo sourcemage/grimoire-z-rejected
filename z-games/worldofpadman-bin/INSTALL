@@ -1,0 +1,12 @@
+INSTALL_DIRECTORY=${INSTALL_ROOT}/opt/worldofpadman &&
+mkdir -p $INSTALL_DIRECTORY &&
+cd $SOURCE_DIRECTORY &&
+cp -rv wop readme readme.html gpl.txt wop.png $INSTALL_DIRECTORY &&
+cd $SOURCE2_DIRECTORY &&
+cp -rv wop {wop-engine,wopded}.${ARCH} copyright_{en,de}.txt wop_patch_1_2.txt \
+       $INSTALL_DIRECTORY &&
+cp -v bin/Linux/x86/WoP $INSTALL_DIRECTORY &&
+cd $INSTALL_DIRECTORY &&
+find_and_scam &&
+chmod 750 WoP {wop-engine,wopded}.${ARCH} &&
+ln -sv ${INSTALL_DIRECTORY}/WoP ${INSTALL_ROOT}/usr/games/WoP
