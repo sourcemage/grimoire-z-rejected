@@ -1,3 +1,4 @@
 2008-05-30 Alexander Tsamutali <astsmtl@gmail.com>
 	* DETAILS, LICENSE, DEPENDS, PREPARE, PRE_BUILD, BUILD, INSTALL,
 	  HISTORY: Created this spell
+	* FINAL: Added to remove $SOURCE2_DIRECTORY
