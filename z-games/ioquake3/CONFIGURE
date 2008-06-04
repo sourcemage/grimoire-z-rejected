@@ -1,0 +1,11 @@
+until [[ "$VALID_PATH" ]]
+do
+    config_query_string PAK0_PK3 "Please enter full path to original pak0.pk3: "
+    if [[ -f "$PAK0_PK3" ]]
+    then
+        VALID_PATH=True
+    else
+        message "${MESSAGE_COLOR}Invalid path!${DEFAULT_COLOR}"
+        persistent_remove PAK0_PK3
+    fi
+done

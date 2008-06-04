@@ -1,0 +1,3 @@
+2008-06-04 Alexander Tsamutali <astsmtl@gmail.com>
+	* PREPARE, DETAILS, DEPENDS, CONFLICTS, PRE_BUILD, BUILD, INSTALL,
+	  FINAL, HISTORY: Created

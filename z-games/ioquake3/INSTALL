@@ -1,0 +1,10 @@
+INSTALL_DIRECTORY=$INSTALL_ROOT/opt/ioquake3 &&
+COPYDIR="$INSTALL_DIRECTORY" make copyfiles &&
+cp -v misc/setup/ioquake3.sh $INSTALL_DIRECTORY &&
+ln -vs $INSTALL_DIRECTORY/ioquake3.sh $INSTALL_ROOT/usr/games/ioquake3 &&
+cd $SOURCE2_DIRECTORY &&
+cp -vr * $INSTALL_DIRECTORY &&
+cp -v $PAK0_PK3 $INSTALL_DIRECTORY/baseq3 &&
+cd $INSTALL_DIRECTORY &&
+find_and_scam &&
+chmod 750 ioquake3.i386 ioq3ded.i386 ioquake3.sh

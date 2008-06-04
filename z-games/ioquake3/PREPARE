@@ -1,0 +1,10 @@
+if [ ! -e $SOURCE_CACHE/quake3-latest-pk3s.zip ]; then
+  message "${MESSAGE_COLOR}Please download the latest id point release patch \
+from ${DEFAULT_COLOR}http://ioquake3.org/patch-data/${MESSAGE_COLOR} and put \
+it in ${DEFAULT_COLOR}${SOURCE_CACHE}${MESSAGE_COLOR} so cast will find it."
+  return 1
+fi
+
+config_query IOQUAKE3_SVN_AUTOUPDATE \
+             "Automatically update on every system update?" \
+             ${IOQUAKE3_SVN_AUTOUPDATE:-n}
