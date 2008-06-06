@@ -1,3 +1,7 @@
+2008-06-06 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 20080603
+
 2008-05-26 Alexander Tsamutali <astsmtl@gmail.com>
 	* PREPARE, DETAILS, DEPENDS, BUILD, INSTALL, HISTORY,
 	  crded, crx, crx.sdl: Created
+

@@ -1,9 +1,9 @@
            SPELL=alienarena-bin
-         VERSION=20080227
+         VERSION=20080603
           SOURCE=alienarena2008-linux${VERSION}.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/alienarena2008
    SOURCE_URL[0]=http://icculus.org/alienarena/Files/$SOURCE
-     SOURCE_HASH=sha512:0fd548114c79d0b08e224b1106e712bb2797eb578191d80f0619f7f0657e12c7e39c6f249267a6f3b37c9bc12c31c88e24a60f0b2008620cdc5188cff31cc51f
+     SOURCE_HASH=sha512:cd9d2dd7b5c829d1d3f68b81475a00ee96ea1796b9306d3f66cf26d940191bf0ff74cbc771cd6dcf028af110165ee225500326865e711c347e6e86a1cec186fb
       LICENSE[0]="GPL for engine, freeware content"
         WEB_SITE=http://red.planetarena.org/
          ENTERED=20080526
