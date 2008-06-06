@@ -1,12 +1,12 @@
             SPELL=cpma
-          VERSION=1.45
+          VERSION=1.46
            SOURCE=${SPELL}${VERSION/./}-nomaps.zip
           SOURCE2=$SPELL-mappack-full.zip
  SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 SOURCE2_DIRECTORY=$BUILD_DIRECTORY/$SPELL-mappack-full
     SOURCE_URL[0]=http://ftp1.srv.endpoint.nu/pub/repository/challenge-tv/demostorage/files/cpm/$SOURCE
    SOURCE2_URL[0]=http://ftp1.srv.endpoint.nu/pub/repository/challenge-tv/demostorage/files/cpm/$SOURCE2
-      SOURCE_HASH=sha512:f1d06d5403d76055260a46efe44f1067e4fa39b362221c947394fae1fcab2edfe59ecd487432d5c44071ea7d248c99dc2a23bcfb5fef72c527846edd86fbc41f
+      SOURCE_HASH=sha512:339220d9b585f9b474f8b86eb30fb5fcc00bc9bf16322e62d65c43eeca2e5391a4784cbad6def9cdd84790d241ac3b0ab7dcbbed00172346ca9dffeb6b272417
      SOURCE2_HASH=sha512:bbc1ddd378f76ece224403ac7e1aeb1de2fec2756f438be07fb8f018e5e8cc6679cbf574eac51ce75daa0ee53b8b095ce5b46dffbd120df5450039ce754b9b37
        LICENSE[0]="UNKNOWN"
        LICENSE[1]="UNKNOWN"
