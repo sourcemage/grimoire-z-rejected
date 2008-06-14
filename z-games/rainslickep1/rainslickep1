@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Script to run RainSlickEp1
+#
+
+/usr/share/games/rainslickep1/RainSlickEp1

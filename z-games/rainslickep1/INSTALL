@@ -1,0 +1,6 @@
+mkdir  $INSTALL_ROOT/usr/share/games/$SPELL                       &&
+chown -R root:games $SOURCE_DIRECTORY/*                           &&
+chmod a+rx RainSlickEp1_bin                                       &&
+cp -arv $SOURCE_DIRECTORY/* $INSTALL_ROOT/usr/share/games/$SPELL  &&
+install -m 0750 -o root -g games  $SCRIPT_DIRECTORY/rainslickep1  \
+        $INSTALL_ROOT/usr/games/rainslickep1

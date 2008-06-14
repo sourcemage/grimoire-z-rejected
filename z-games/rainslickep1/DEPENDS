@@ -1,0 +1,19 @@
+depends  g++       &&
+depends  OPENGL    &&
+depends  X11-LIBS  &&
+
+. $GRIMOIRE/FUNCTIONS  &&
+
+if check_if_xorg_modular_libs; then
+  depends  libdrm      &&
+  depends  libx11      &&
+  depends  libxau      &&
+  depends  libxcb      &&
+  depends  libxdamage  &&
+  depends  libxdmcp    &&
+  depends  libxext     &&
+  depends  libxfixes   &&
+  depends  libxrandr   &&
+  depends  libxrender  &&
+  depends  libxxf86vm
+fi

@@ -1,0 +1,35 @@
+           SPELL=rainslickep1
+         VERSION=r3
+          SOURCE=${SPELL}_linux_$VERSION.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://download.playgreenhouse.com/rainslickep1_linux_r3.tgz
+      SOURCE_GPG=gurus.gpg:$SOURCE.sig:WORKS_FOR_ME
+        WEB_SITE=http://www.playgreenhouse.com/game/HOTHG-000001-01
+         ENTERED=20080613
+          REJECT="binary distribution, non-free content"
+           SHORT='Episodic RPG-adventure game from Penny Arcade'
+cat << EOF
+On the Rain-Slick Precipice of Darkness is an episodic RPG-adventure game
+series set in a deranged comic-book meets-pulp-horror 1920s universe. Armed
+with unconventional weaponry and witty repartee, you join forces with the Gabe
+and Tycho, the crime-solving team of the Startling Developments Detective
+Agency to make war on bizarre enemies and solve the mysteries hidden deep in
+the sinister heart of New Arcadia.
+
+From the hilarious and twisted minds of Penny Arcade creators Mike "Gabe"
+Krahulik and Jerry "Tycho" Holkins, legendary game designer Ron Gilbert and
+veteran producers at Hothead Games comes a 100% authentic and hilarious Penny
+Arcade experience.
+
+Requirements:
+  * Linux® 32-bit x86
+  * Pentium® III, AMDAthlonTM 1.0 GHz or better
+  * ATI RadeonTM 9500 or better, NVIDIA GeForceTM FX 5200 or better, Intel®
+    GMA 950 or better with 64 MB of video memory (shared or dedicated)*
+  * 512 MB of available system memory
+  * OS-supported keyboard and mouse
+  * OS-supported sound card
+  * 350 MB of available hard drive space
+  * One-time Internet connection required to activate
+  * *video cards require latest drivers supporting OpenGL.
+EOF
