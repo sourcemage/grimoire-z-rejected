@@ -81,7 +81,7 @@
 
 2007-12-16 Arjan Bouter <abouter@sourcemage.org>
 	* z-windowmanagers/ion3: moved spell from windowmanagers
-	                         working on the update to the latest version
+	  working on the update to the latest version
 
 2007-12-16 Alexander Tsamutali <astsmtl@gmail.com>
 	* z-http/icecat-bin: new spell, the GNU version of the Firefox browser
@@ -220,24 +220,26 @@
 	  have licensing issues (bug #12963)
 
 2006-08-09 Juuso Alasuutari <iuso@sourcemage.org>
-	* z-audio/VST23_WARNING: Added, message about downloading 
+	* z-audio/VST23_WARNING: Added, message about downloading
 	  Steinberg's VST SDK 2.3 sources for spells that require them.
 
 2006-08-04 Daniel Goller <morfic@sourcemage.org>
-	* z-http/nspluginwrapper: New spell, enabling use of 32bit plugins on a 64 bit gtk+2 browser
+	* z-http/nspluginwrapper: New spell, enabling use of 32bit plugins on a 64
+	  bit gtk+2 browser
 
 2006-07-31 Juuso Alasuutari <iuso@sourcemage.org>
 	* z-audio/vst_sdk2_3: New spell, VST SDK 2.3 headers.
 
 2006-07-29 Daniel Goller <morfic@sourcemage.org>
-	* z-libs/smgl-emul32: New spell, enabling use of 32bit plugins and apps on a pure k8_64 install
+	* z-libs/smgl-emul32: New spell, enabling use of 32bit plugins and apps on
+	  a pure k8_64 install
 
 2006-07-16 Juuso Alasuutari <iuso@sourcemage.org>
-	* z-devel/acpica-unix: New spell, intel ACPI CA Unix Build 
+	* z-devel/acpica-unix: New spell, intel ACPI CA Unix Build
 	  Environment
 
 2006-07-12 Flavien Bridault <vlaaad@sourcemage.org>
-        * gurus.gpg: my key for spell signing added, key id AF8857ED
+	* gurus.gpg: my key for spell signing added, key id AF8857ED
 
 2006-07-08 John Harding <johnh@kuberaconsulting.com>
 	* z-games/cgoban2: added new java-based binary-only game
@@ -273,14 +275,14 @@
 2006-04-18 David Kowis <dkowis@shlrm.org>
 	* z-mail/pine-{client,imap,pop2,pop3}: Pulling pine spells from normal
 	  grimoire into z-rejected due to licensing issues
-	
+
 2006-04-11 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* FUNCTIONS: added a new function: disable_pic()
 	  should be used when needing to get rid of -fPIC and -DPIC flags,
 	  missed a "
 
 2006-04-03 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-        * z-games/snes9x: moved to z-games      
+	* z-games/snes9x: moved to z-games
 
 2006-03-20 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* z-games/zangband: moved from games/games-terminal, non-Free
@@ -413,8 +415,8 @@
 	* z-mail/netqmail: created new section z-mail for new spell
 	  netqmail, bug #6767.
 	* MAINTAINER: added at grimoire level, only holds generic guru
-	  address so never needs to be modified again. Removed all 
-		section MAINTAINER files, waste of space.
+	  address so never needs to be modified again. Removed all
+	  section MAINTAINER files, waste of space.
 
 2004-09-16 Eric Schabell <z-rejected@sourcemage.org>
 	* z-utils/skype: version bump 0_91_0_12.
@@ -463,25 +465,25 @@
 	* z-video: section api2 compliant and rejected msg.
 	* z-windowmanagers: section api2 compliant and rejected msg.
 	* z-security: section api2 compliant and rejected msg.
-	* REJECTED_MSG: added small warning about sorcery failure 
+	* REJECTED_MSG: added small warning about sorcery failure
 	  to handle queries correctly to prevent bug submissions.
 
 2004-08-03 Eric Schabell <z-rejected@sourcemage.org>
 	* z-archive: section completed for api2 and rejected msg.
 	* z-audio: section completed for api2 and rejected msg.
 	* z-crypto: section completed for api2 and rejected msg.
-	
+
 2004-08-02 Eric Schabell <z-rejected@sourcemage.org>
 	* z-emulator: section completed for api2 and rejected msg.
 
 2004-07-28 Eric Schabell <z-rejected@sourcemage.org>
 	* z-java/j2sdk-bin: clean-up, fixed bugs #7183, #7139.
 	* REJECTED_MSG: moved the sorcery lib rejected message here for
-	  better control. I am the only one using it so can be removed 
+	  better control. I am the only one using it so can be removed
 	  from sorcery as often need to customize for individual spells.
 	  Note that I have moved from 'return 1' for errors to 'exit' as
-	  currently sourcery is not honoring our rejected responses. 
-		
+	  currently sourcery is not honoring our rejected responses.
+
 2004-07-07 Eric Schabell <z-rejected@sourcemage.org>
 	* MAINTAINER: updated to show transfer of guru-ship.
 
