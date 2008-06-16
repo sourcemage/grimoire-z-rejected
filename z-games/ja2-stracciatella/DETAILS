@@ -1,8 +1,8 @@
            SPELL=ja2-stracciatella
-         VERSION=0.9
+         VERSION=0.10
           SOURCE="ja2-$VERSION-source.tar.bz2"
    SOURCE_URL[0]=http://ja2.dragonriders.de/files/$SOURCE
-     SOURCE_HASH=sha512:5833e7cdbd8a92d860cb04d99ea6145b4b59157b01a879a57e54caef742b91e264ae843ad933270c460cc51aa01ccffa6bb47d41bea9fa1a97a90e584b5c26f9
+     SOURCE_HASH=sha512:966c5ec3e3908967b545a499c00ba4742b5758453b0f7fc6e8d933cf81217f61e658ff69a3d001e1e7f6b4167e37590b2c9694a741befa47590ee5fafa7e0f69
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/ja2-$VERSION"
         WEB_SITE="http://ja2.dragonriders.de"
       LICENSE[0]=SFI-SCLA
