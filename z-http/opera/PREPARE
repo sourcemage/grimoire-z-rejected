@@ -1,1 +1,15 @@
-config_query_list OPERA_RELEASE "Which release would you like to cast?" "9, shared" "9, static" "8, shared" "8, static" "9.5 preview, shared" "9.5 preview, static"
+persistent_load
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+  persistent_add OPERA_RELEASE
+  OPERA_RELEASE="9, shared" 
+elif [[ ${SMGL_COMPAT_ARCHS[1]} == "ia32" ]]; then
+  if [[ ${OPERA_RELEASE:0:1} == "8" ]] ||
+     [[ ${OPERA_RELEASE} == "9.5 preview, static" ]] ||
+     [[ ${OPERA_RELEASE} == "9.5 preview, shared" ]]; then
+    persistent_remove OPERA_RELEASE
+  fi
+  config_query_list OPERA_RELEASE "Which release would you like to cast?" "9, shared" "9, static" "9 qt4, static"
+else
+  message "${PROBLEM_COLOR}Opera is not available for platform ${SMGL_COMPAT_ARCHS[1]}${DEFAUL_COLOR}"
+  false
+fi

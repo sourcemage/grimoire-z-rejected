@@ -1,14 +1,9 @@
-if [ "${OPERA_RELEASE}" = "8, shared" ]; then
-  depends  qt-x11  &&
-  depends  zlib
-fi &&
 if [ "${OPERA_RELEASE}" = "9, shared" ]; then
-  depends  qt-x11  &&
-  depends  zlib
-fi  &&
-if [ "${OPERA_RELEASE}" = "9.5 preview, shared" ]; then
-  depends  qt-x11  &&
-  depends  zlib
-fi  &&
+  depends qt-x11  &&
+  depends zlib
+elif [ "${OPERA_RELEASE}" = "9, qt4" ]; then
+  depends qt4 &&
+  depends zlib
+fi
 
 optional_depends  JAVA  ""  ""  "for Java Runtime Environment"

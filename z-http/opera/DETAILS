@@ -1,67 +1,54 @@
            SPELL=opera
-        VERSION4=qt.i386-en
-if [ "${OPERA_RELEASE}" = "9.5 preview, static" ]; then
-         VERSION=9.50b2
-         VERPATH=950b2
-        VERSION2=20080422.1
-        VERSION3=static
-        VERSION5=final
-        VERSION6=1933
-     COMPRESSION=gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION:0:4}-${VERSION2}-${VERSION3}-${VERSION4:0:7}-${VERSION6}
-elif [ "${OPERA_RELEASE}" = "9.5 preview, shared" ]; then
-         VERSION=9.50b2
-         VERPATH=950b2
-        VERSION2=20080422.6
-        VERSION3=shared
-        VERSION5=final
-        VERSION6=1933
-     COMPRESSION=gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION:0:4}-${VERSION2}-${VERSION3}-${VERSION4:0:7}-${VERSION6}
-elif [ "${OPERA_RELEASE}" = "9, static" ]; then
-         VERSION=9.27
-         VERPATH=927
-        VERSION2=20080331.1
-        VERSION3=static
-        VERSION5=final
-     COMPRESSION=bz2
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}-709
-elif [ "${OPERA_RELEASE}" = "8, static" ]; then
-         VERSION=8.54
-         VERPATH=854
-        VERSION2=20060330.1
-        VERSION3=static
-        VERSION5=final
-     COMPRESSION=bz2
-     SOURCE_HASH=sha512:972d9a6fb811a0932a2dce3e749a7889ee829875f9579bd30b051c3f5c5fb571e0cfad18cc3b7cd33db523d3d630b2ee51610c6c37cf3ad6864c40bfd6d1f084
-     SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}
-elif [ "${OPERA_RELEASE}" = "8, shared" ]; then
-         VERSION=8.54
-         VERPATH=854
-        VERSION2=20060330.6
-        VERSION3=shared
-        VERSION5=final
-     COMPRESSION=bz2
-     SOURCE_HASH=sha512:ba18749f40832fb86b907c524bec6df0cea352a2f389827975808538863c87647227292660bfd2709634ab0badface7853c80c4847ec2b329d738a16e468b29e
-     SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}
+if [ "${OPERA_RELEASE}" = "9, static" ]; then
+           VERSION=9.50
+            LINKED=static
+           RELEASE=final
+          LANGUAGE=en
+          COMPILER=gcc4
+                QT=qt3
+          PLATFORM=i386
+       COMPRESSION=bz2
+             BUILD=2042
+            SOURCE=${SPELL}-${VERSION}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}.tar.${COMPRESSION}
+  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}
+         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${LINKED}/${SOURCE}
+elif [ "${OPERA_RELEASE}" = "9 qt4, static" ]; then
+           VERSION=9.50
+           RELEASE=final
+          LANGUAGE=en
+          COMPILER=gcc4
+                QT=qt4
+          PLATFORM=i386
+       COMPRESSION=bz2
+             BUILD=2042
+            SOURCE=${SPELL}-${VERSION}.${COMPILER}-${QT}.${PLATFORM}.tar.${COMPRESSION}
+  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${QT}.${PLATFORM}
+         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${SOURCE}
 else
-         VERSION=9.27
-         VERPATH=927
-        VERSION2=20080331.6
-        VERSION3=shared
-        VERSION5=final
-     COMPRESSION=bz2
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}-709
+           VERSION=9.50
+            LINKED=shared
+           RELEASE=final
+          LANGUAGE=en
+          COMPILER=gcc4
+                QT=qt3
+  if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+          PLATFORM=x86_64
+  else
+          PLATFORM=i386
+  fi
+       COMPRESSION=bz2
+             BUILD=2042
+            SOURCE=${SPELL}-${VERSION}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}.tar.${COMPRESSION}
+  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}
+  if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${SOURCE}
+  else
+         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${LINKED}/${SOURCE}
+  fi
 fi
-          SOURCE=${SPELL}-${VERSION}-${VERSION2}-${VERSION3}-${VERSION4}.tar.${COMPRESSION}
-#
-# Currently only v9 is signed, v8 uses sha512
-#
-if [[ ${OPERA_RELEASE:0:1} == 9 ]]; then
+     SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/${DIST_PATH}
+     SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/${DIST_PATH}
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
-fi
-   SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/${VERPATH}/${VERSION5}/en/i386/${VERSION3}/${SOURCE}
-   SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/${VERPATH}/${VERSION5}/en/i386/${VERSION3}/${SOURCE}  
       LICENCE[0]=UNKNOWN
         WEB_SITE=http://www.opera.com/
          ENTERED=20020530
@@ -69,8 +56,8 @@ fi
            SHORT="Opera is a small quick qt based browser"
 cat << EOF
 Opera is a fast full featured web browser. It supports plugins and is 
-very customizable. It now uses the qt3 widget set. 
+very customizable. It now uses the qt4 widget set. 
 
 The shared version is now included here because the current grimoire 
-uses qt3. 
+uses qt4. 
 EOF
