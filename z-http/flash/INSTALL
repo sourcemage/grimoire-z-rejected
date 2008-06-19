@@ -1,64 +1,77 @@
 case $MOZILLA in
 	y|Y)
-		if [ -d /usr/lib/mozilla/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for Mozilla${DEFAULT_COLOR}\n"
-			if [ -e /usr/lib/mozilla/plugins/libflashplayer.so ]; then
+		if [[ -d /usr/lib/mozilla/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for Mozilla${DEFAULT_COLOR}\n" &&
+
+			if [[ -e /usr/lib/mozilla/plugins/libflashplayer.so ]]; then
 				rm -f /usr/lib/mozilla/plugins/libflashplayer.so
-			fi
-			if [ -e /usr/lib/mozilla/plugins/flashplayer.xpt ]; then
+			fi &&
+
+			if [[ -e /usr/lib/mozilla/plugins/flashplayer.xpt ]]; then
 				rm -f /usr/lib/mozilla/plugins/flashplayer.xpt
-			fi
+			fi &&
+
 			cp libflashplayer.so /usr/lib/mozilla/plugins/
 		fi
 	;;
 esac &&
 
 case $FIREFOX in
-        y|Y)
-		FIREFOX_VERSION=$(installed_version firefox)
-		if [ "$FIREFOX_VERSION" == "cvs" ]; then
+	y|Y)
+		FIREFOX_VERSION=$(installed_version firefox) &&
+		if [[ "$FIREFOX_VERSION" == "cvs" ]]; then
 			FIREFOX_DIR="/usr/lib/firefox-0.8.0+"
 		else
 			FIREFOX_DIR="/usr/lib/firefox"
-		fi
-		if [ -d $FIREFOX_DIR/plugins ]; then
-	                message "${MESSAGE_COLOR}Installing for firefox${DEFAULT_COLOR}\n"
-	                if [ -e $FIREFOX_DIR/plugins/libflashplayer.so ]; then
+		fi &&
+
+		if [[ -d $FIREFOX_DIR/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for firefox${DEFAULT_COLOR}\n" &&
+
+			if [[ -e $FIREFOX_DIR/plugins/libflashplayer.so ]]; then
 				rm -f $FIREFOX_DIR/plugins/libflashplayer.so
-	                	fi
-	                if [ -e $FIREFOX_DIR/plugins/flashplayer.xpt ]; then
-	                        rm -f $FIREFOX_DIR/plugins/flashplayer.xpt
-	                fi
-	                cp libflashplayer.so $FIREFOX_DIR/plugins/
+			fi &&
+
+			if [[ -e $FIREFOX_DIR/plugins/flashplayer.xpt ]]; then
+				rm -f $FIREFOX_DIR/plugins/flashplayer.xpt
+			fi &&
+
+			cp libflashplayer.so $FIREFOX_DIR/plugins/
 		fi
 	;;
 esac &&
 
 case $SEAMONKEY in
-        y|Y)
-		if [ -d /usr/lib/seamonkey/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for Seamonkey${DEFAULT_COLOR}\n"
-			if [ -e /usr/lib/seamonkey/plugins/libflashplayer.so ]; then
+	y|Y)
+		if [[ -d /usr/lib/seamonkey/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for Seamonkey${DEFAULT_COLOR}\n" &&
+
+			if [[ -e /usr/lib/seamonkey/plugins/libflashplayer.so ]]; then
 				rm -f /usr/lib/seamonkey/plugins/libflashplayer.so
-			fi
-			if [ -e /usr/lib/seamonkey/plugins/flashplayer.xpt ]; then
+			fi &&
+
+			if [[ -e /usr/lib/seamonkey/plugins/flashplayer.xpt ]]; then
 				rm -f /usr/lib/seamonkey/plugins/flashplayer.xpt
-			fi
+			fi &&
+
 			cp libflashplayer.so /usr/lib/seamonkey/plugins/
 		fi
 	;;
 esac &&
 
 case $FIRE_BIN in
-        y|Y)
-		if [ -d /opt/firefox/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for Firefox-bin${DEFAULT_COLOR}\n"
-			if [ -e /opt/firefox/plugins/libflashplayer.so ]; then
+	y|Y)
+		if [[ -d /opt/firefox/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for Firefox-bin${DEFAULT_COLOR}\n" &&
+
+			if [[ -e /opt/firefox/plugins/libflashplayer.so ]]; then
 				rm -f /opt/firefox/plugins/libflashplayer.so
-			fi
-			if [ -e /opt/firefox/plugins/flashplayer.xpt ]; then
+			fi &&
+
+			if [[ -e /opt/firefox/plugins/flashplayer.xpt ]]; then
 				rm -f /opt/firefox/plugins/flashplayer.xpt
-			fi
+			fi &&
+
 			cp libflashplayer.so /opt/firefox/plugins/
 		fi
 	;;
@@ -66,34 +79,63 @@ esac &&
 
 case $KDEBASE in
 	y|Y)
-		message "${MESSAGE_COLOR}Installing for Konqueror${DEFAULT_COLOR}\n"
-		message "${MESSAGE_COLOR}" \
-						"After install, add /usr/lib/konqueror to the Plugins folders\n" \
-						"list and click on the \"Scan for New Plugins\" button${DEFAULT_COLOR}\n"
-		if [ -e /usr/lib/konqueror/libflashplayer.so ]; then
+		message "${MESSAGE_COLOR}Installing for Konqueror (KDE3)${DEFAULT_COLOR}\n"
+		message "${MESSAGE_COLOR}\n" \
+				"After install, add /usr/lib/konqueror to the Plugins folders\n" \
+				"list and click on the \"Scan for New Plugins\" button${DEFAULT_COLOR}\n" &&
+
+		if [[ -e /usr/lib/konqueror/libflashplayer.so ]]; then
 			rm -f /usr/lib/konqueror/libflashplayer.so
-		fi
-		if [ -e /usr/lib/konqueror/flashplayer.xpt ]; then
+		fi &&
+
+		if [[ -e /usr/lib/konqueror/flashplayer.xpt ]]; then
 			rm -f /usr/lib/konqueror/flashplayer.xpt
-		fi
-		if ! [ -d /usr/lib/konqueror ]; then
+		fi &&
+
+		if ! [[ -d /usr/lib/konqueror ]]; then
 			mkdir --mode=755 /usr/lib/konqueror
-		fi
+		fi &&
+
 		cp libflashplayer.so /usr/lib/konqueror/
 	;;
 esac &&
 
+case $KDEBASE4 in
+	y|Y)
+		message "${MESSAGE_COLOR}Installing for Konqueror (KDE4)${DEFAULT_COLOR}\n"
+		message "${MESSAGE_COLOR}" \
+				"After install, add /usr/lib/konqueror to the Plugins folders\n" \
+				"list and click on the \"Scan for New Plugins\" button${DEFAULT_COLOR}\n" &&
+
+		if [[ -e /usr/lib/konqueror/libflashplayer.so ]]; then
+			rm -f /usr/lib/konqueror/libflashplayer.so
+		fi &&
+
+		if [[ -e /usr/lib/konqueror/flashplayer.xpt ]]; then
+			rm -f /usr/lib/konqueror/flashplayer.xpt
+		fi &&
+
+		if ! [[ -d /usr/lib/konqueror ]]; then
+			mkdir --mode=755 /usr/lib/konqueror
+		fi &&
+
+		cp libflashplayer.so /usr/lib/konqueror/
+	;;
+esac &&
 
 case $OPERA in
 	y|Y)
-		if [ -d /usr/lib/opera/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for Opera${DEFAULT_COLOR}\n"
-			if [ -e /usr/lib/opera/plugins/libflashplayer.so ]; then
+		if [[ -d /usr/lib/opera/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for Opera${DEFAULT_COLOR}\n" &&
+
+			if [[ -e /usr/lib/opera/plugins/libflashplayer.so ]]; then
 				rm -f /usr/lib/opera/plugins/libflashplayer.so
-			fi
-			if [ -e /usr/lib/opera/plugins/flashplayer.xpt ]; then
+			fi &&
+
+			if [[ -e /usr/lib/opera/plugins/flashplayer.xpt ]]; then
 				rm -f /usr/lib/opera/plugins/flashplayer.xpt
-			fi
+			fi &&
+
 			cp libflashplayer.so /usr/lib/opera/plugins/
 		fi
 	;;
@@ -102,14 +144,17 @@ esac &&
 
 case $NETSCAPE in
 	y|Y)
-		if [ -d /usr/lib/netscape4/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for Netscape${DEFAULT_COLOR}\n"
-			if [ -e /usr/lib/netscape4/plugins/libflashplayer.so ]; then
+		if [[ -d /usr/lib/netscape4/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for Netscape${DEFAULT_COLOR}\n" &&
+
+			if [[ -e /usr/lib/netscape4/plugins/libflashplayer.so ]]; then
 				rm -f /usr/lib/netscape4/plugins/libflashplayer.so
-			fi
-			if [ -e /usr/lib/netscape4/plugins/flashplayer.xpt ]; then
+			fi &&
+
+			if [[ -e /usr/lib/netscape4/plugins/flashplayer.xpt ]]; then
 				rm -f /usr/lib/netscape4/plugins/flashplayer.xpt
-			fi
+			fi &&
+
 			cp libflashplayer.so /usr/lib/netscape4/plugins/
 		fi
 	;;
@@ -117,44 +162,52 @@ esac &&
 
 case $XULRUNNER in
 	y|Y)
-		if [ -d /usr/lib/xulrunner/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for XULRunner${DEFAULT_COLOR}\n"
-			if [ -e /usr/lib/xulrunner/plugins/libflashplayer.so ]; then
+		if [[ -d /usr/lib/xulrunner/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for XULRunner${DEFAULT_COLOR}\n" &&
+
+			if [[ -e /usr/lib/xulrunner/plugins/libflashplayer.so ]]; then
 				rm -f /usr/lib/xulrunner/plugins/libflashplayer.so
-			fi
-			if [ -e /usr/lib/xulrunner/plugins/flashplayer.xpt ]; then
+			fi &&
+			if [[ -e /usr/lib/xulrunner/plugins/flashplayer.xpt ]]; then
 				rm -f /usr/lib/xulrunner/plugins/flashplayer.xpt
-			fi
+			fi &&
+
 			cp libflashplayer.so /usr/lib/xulrunner/plugins/
 		fi
 	;;
 esac &&
 
 case $ICECAT in
-        y|Y)
-		if [ -d /usr/lib/icecat/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for Icecat${DEFAULT_COLOR}\n"
-			if [ -e /usr/lib/icecat/plugins/libflashplayer.so ]; then
+	y|Y)
+		if [[ -d /usr/lib/icecat/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for Icecat${DEFAULT_COLOR}\n" &&
+
+			if [[ -e /usr/lib/icecat/plugins/libflashplayer.so ]]; then
 				rm -f /usr/lib/icecat/plugins/libflashplayer.so
-			fi
-			if [ -e /usr/lib/icecat/plugins/flashplayer.xpt ]; then
+			fi &&
+
+			if [[ -e /usr/lib/icecat/plugins/flashplayer.xpt ]]; then
 				rm -f /usr/lib/icecat/plugins/flashplayer.xpt
-			fi
+			fi &&
+
 			cp libflashplayer.so /usr/lib/icecat/plugins/
 		fi
 	;;
 esac &&
 
 case $ICE_BIN in
-        y|Y)
-		if [ -d /opt/icecat/plugins ]; then
-			message "${MESSAGE_COLOR}Installing for Icecat-bin${DEFAULT_COLOR}\n"
-			if [ -e /opt/icecat/plugins/libflashplayer.so ]; then
+	y|Y)
+		if [[ -d /opt/icecat/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for Icecat-bin${DEFAULT_COLOR}\n" &&
+
+			if [[ -e /opt/icecat/plugins/libflashplayer.so ]]; then
 				rm -f /opt/icecat/plugins/libflashplayer.so
-			fi
-			if [ -e /opt/icecat/plugins/flashplayer.xpt ]; then
+			fi &&
+
+			if [[ -e /opt/icecat/plugins/flashplayer.xpt ]]; then
 				rm -f /opt/icecat/plugins/flashplayer.xpt
-			fi
+			fi &&
+
 			cp libflashplayer.so /opt/icecat/plugins/
 		fi
 	;;

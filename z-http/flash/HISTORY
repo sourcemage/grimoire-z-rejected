@@ -1,3 +1,8 @@
+2008-06-19 Elisameul Resto <ryuji@sourcemage.org>
+	* CONFLICTS, DEPENDS: double-spaces removed
+	* INSTALL: chained all the code; readability; added support for KDE4
+	* CONFIGURE: chained all the code; added support for KDE4
+
 2008-06-17 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: updated beta to astro - 051508
 
