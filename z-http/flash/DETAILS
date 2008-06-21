@@ -14,11 +14,11 @@ fi
   FORCE_DOWNLOAD="on"
       SOURCE_GPG=gurus.gpg:$SOURCE.sig
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
+     GATHER_DOCS=off
         WEB_SITE=http://www.macromedia.com
          ENTERED=20020319
           REJECT="is non-source and has licensing issues"
-           SHORT="Macromedia Flash Plugin v9 for Web Browsers."
-            DOCS="Readme.htm Readme.txt"
+           SHORT="Macromedia Flash Plugin for Web Browsers"
 cat << EOF
-Macromedia Flash Plugin version 9 for web browsers.
+Macromedia Flash Plugin for web browsers.
 EOF
