@@ -1,5 +1,5 @@
            SPELL=openoffice2-bin
-         VERSION=2.4.0
+         VERSION=2.4.1
           SOURCE=OOo_${VERSION/-*/}_LinuxIntel_install_en-US.tar.gz
      COMMON_PATH=openoffice/stable/${VERSION/-*/}
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice2
