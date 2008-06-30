@@ -1,3 +1,7 @@
+2008-06-30 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: PATCHLEVEL=1
+	* desktop/*.desktop: fixed icon names
+
 2008-06-29 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to version 2.4.1
 
