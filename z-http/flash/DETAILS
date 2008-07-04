@@ -1,6 +1,6 @@
            SPELL=flash
 if [[ $FLASH_BETA == y ]]; then
-         VERSION=051508
+         VERSION=070208
           SOURCE=flashplayer10_install_linux_$VERSION.tar.gz
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_10_linux
@@ -10,8 +10,8 @@ else
           SOURCE=install_flash_player_9_linux.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SOURCE/.tar.gz/}
-fi
   FORCE_DOWNLOAD="on"
+fi
       SOURCE_GPG=gurus.gpg:$SOURCE.sig
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
      GATHER_DOCS=off
