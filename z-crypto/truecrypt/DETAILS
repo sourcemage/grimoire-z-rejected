@@ -1,16 +1,19 @@
            SPELL=truecrypt
-         VERSION=4.3a
-          SOURCE=$SPELL-$VERSION-source-code.tar.gz
-      SOURCE_GPG="TrueCrypt_Foundation.gpg:$SOURCE.sig"
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-source-code
+         VERSION=6.0
+     SOURCE_ORIG="TrueCrypt $VERSION Source.tar.gz"
+          SOURCE="TrueCrypt-$VERSION-Source.tar.gz"
+     SOURCE_HASH=sha512:afbec5257f8abf03aff86dc1ef866f141d08df4ba87dee6689f81e06b3ce269f645a9470f2719e83e37291e4bc6c9f2f93c4a122aff77dd9b99c250b28e3143d
+
+         SOURCE2=wxGTK-2.8.8.tar.gz
+     SOURCE2_URL=$SOURCEFORGE_URL/wxwindows/$SOURCE2
+    SOURCE2_HASH=sha512:de9c03156e29425f51c83fbca71bb83d107a1f11aa094df7c559b894c95de0991a7a2f624071d1533c54cc1d1ff62a04d38017616b712c1273c622221c61cd8e
+
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-source
         WEB_SITE=http://www.truecrypt.org
-   SOURCE_URL[0]=$WEB_SITE/downloads/$SOURCE
-         SOURCE2=$SOURCE.sig
-  SOURCE2_URL[0]=$SOURCE_URL.sig
-  SOURCE2_IGNORE=signature
+   SOURCE_URL[0]=
          ENTERED=20051104
       LICENSE[0]=http://www.truecrypt.org/license.php
-           SHORT="Free open-source disk encryption software for Windows XP/2000/2003 and Linux"
+           SHORT="free open-source disk encryption software"
 cat << EOF
 Free open-source disk encryption software for Windows XP/2000/2003 and Linux.
 EOF

@@ -1,3 +1,9 @@
+2008-07-05 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 6.0, added wxGTK sources, updated
+	* PREPARE, PRE_BUILD: added
+	* BUILD, DEPENDS, INSTALL: updated
+	* TRIGGERS, TrueCrypt_Foundation.gpg: removed
+
 2007-05-07 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 4.3a
 
