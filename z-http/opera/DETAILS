@@ -1,6 +1,6 @@
            SPELL=opera
 if [ "${OPERA_RELEASE}" = "9, static" ]; then
-           VERSION=9.50
+           VERSION=9.51
             LINKED=static
            RELEASE=final
           LANGUAGE=en
@@ -8,24 +8,24 @@ if [ "${OPERA_RELEASE}" = "9, static" ]; then
                 QT=qt3
           PLATFORM=i386
        COMPRESSION=bz2
-             BUILD=2042
+             BUILD=2061
             SOURCE=${SPELL}-${VERSION}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}.tar.${COMPRESSION}
   SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}
          DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${LINKED}/${SOURCE}
 elif [ "${OPERA_RELEASE}" = "9 qt4, static" ]; then
-           VERSION=9.50
+           VERSION=9.51
            RELEASE=final
           LANGUAGE=en
           COMPILER=gcc4
                 QT=qt4
           PLATFORM=i386
        COMPRESSION=bz2
-             BUILD=2042
+             BUILD=2061
             SOURCE=${SPELL}-${VERSION}.${COMPILER}-${QT}.${PLATFORM}.tar.${COMPRESSION}
   SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${QT}.${PLATFORM}
          DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${SOURCE}
 else
-           VERSION=9.50
+           VERSION=9.51
             LINKED=shared
            RELEASE=final
           LANGUAGE=en
@@ -37,7 +37,7 @@ else
           PLATFORM=i386
   fi
        COMPRESSION=bz2
-             BUILD=2042
+             BUILD=2061
             SOURCE=${SPELL}-${VERSION}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}.tar.${COMPRESSION}
   SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}
   if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
