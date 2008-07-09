@@ -1,9 +1,9 @@
-. DETAILS > /dev/null  &&
+. $SCRIPT_DIRECTORY/DETAILS > /dev/null  &&
 
 if [ ! -e "/var/spool/sorcery/$SOURCE_ORIG" ]; then
 
 message "
-${MESSAGE_COLOR}Source code package ${FILE_COLOR}$SOURCE ${PROBLEM_COLOR}is missing${MESSAGE_COLOR}.
+${MESSAGE_COLOR}Source code package \"${FILE_COLOR}$SOURCE_ORIG${MESSAGE_COLOR}\" ${PROBLEM_COLOR}is missing${MESSAGE_COLOR}.
 You have to download it from ${QUERY_COLOR}http://www.truecrypt.org/downloads2.php${MESSAGE_COLOR}
 and put it into ${QUERY_COLOR}/var/spool/sorcery${MESSAGE_COLOR}.${DEFAULT_COLOR}
 "

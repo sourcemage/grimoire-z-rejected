@@ -1,8 +1,8 @@
            SPELL=truecrypt
-         VERSION=6.0
+         VERSION=6.0a
      SOURCE_ORIG="TrueCrypt $VERSION Source.tar.gz"
           SOURCE="TrueCrypt-$VERSION-Source.tar.gz"
-     SOURCE_HASH=sha512:afbec5257f8abf03aff86dc1ef866f141d08df4ba87dee6689f81e06b3ce269f645a9470f2719e83e37291e4bc6c9f2f93c4a122aff77dd9b99c250b28e3143d
+     SOURCE_HASH=sha512:5c78e4e573646294ea18d8e67762e1fd80d2c15a9942d8f52e66183dd54184bae15481b44a5e4222dfcbeaa1628d5f83da6641ca385874ce4be5eb572d94224e
 
          SOURCE2=wxGTK-2.8.8.tar.gz
      SOURCE2_URL=$SOURCEFORGE_URL/wxwindows/$SOURCE2

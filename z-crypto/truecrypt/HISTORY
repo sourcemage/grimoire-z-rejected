@@ -1,3 +1,7 @@
+2008-07-09 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 6.0a
+	* PREPARE: updated
+
 2008-07-05 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 6.0, added wxGTK sources, updated
 	* PREPARE, PRE_BUILD: added
