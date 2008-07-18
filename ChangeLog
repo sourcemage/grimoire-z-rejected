@@ -1,3 +1,7 @@
+2008-07-18 Alexander Tsamutali <astsmtl@gmail.com>
+	* z-http/xulrunner-bin: Mozilla runtime package that can be used to
+	  bootstrap XUL+XPCOM applications
+
 2008-06-26 Alexander Tsamutali <astsmtl@gmail.com>
 	* z-audio/tuxguitar-bin: new spell, multitrack tablature editor and
 	  player
