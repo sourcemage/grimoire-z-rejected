@@ -1,0 +1,13 @@
+           SPELL=rawtherapee
+         VERSION=2.4M1
+          SOURCE="${SPELL}24m1.tgz"
+   SOURCE_URL[0]=http://www.${SPELL}.com/${SOURCE}
+     SOURCE_HASH=sha512:5c43c188b721218394f513ff3dd130b898df4c271e0e859f3b48fcd430f6c4c938f4ab4cffc22ba1302d44962a2054b0de07a54651502aeb86872ae25a8e41d3
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/RawTherapee2.4m1"
+        WEB_SITE="http://www.rawtherapee.com"
+      LICENSE[0]=UNK
+         ENTERED=20080721
+           SHORT="RAW converter and digital photo processing software"
+cat << EOF
+Raw Therapee is a RAW converter and digital photo processing software.
+EOF
