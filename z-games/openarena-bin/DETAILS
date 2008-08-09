@@ -1,11 +1,11 @@
            SPELL=openarena-bin
 	  SPELLX=openarena
-         VERSION=0.7.6
-             VER=076
+         VERSION=0.8.0
+             VER=080
           SOURCE=oa${VER}.zip
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELLX}-${VERSION}
    SOURCE_URL=http://download.tuxfamily.org/${SPELLX}/rel/${VER}/${SOURCE}
-  SOURCE_HASH=sha512:0a380adbf0b6ed6618fca617db178f9323931bce0fd119604e0112c080df8ca7e85b3f783622a66c53626d1832e416d0fc3ab6bc893f98a39415681f9047cfa5
+  SOURCE_HASH=sha512:ebbcdb5b1cfdc94c8e034e689e80de9c7a08e00f1b4a8023d4889cde2743e75cf80ee9f58b351d3f76b54074683eb9669c3ecf7a0e4ff14e1e52d582430b1afe
       LICENSE=GPL
         WEB_SITE=http://openarena.ws/
          ENTERED=20080422

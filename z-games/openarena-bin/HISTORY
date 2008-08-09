@@ -1,3 +1,6 @@
+2008-08-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 0.8.0
+
 2008-04-22 Julien "_kaze_" ROZO <julien@rozo.org>
 	* BUILD, DEPENDS, DETAILS, INSTALL, POST_INSTALL, PRE_BUILD, PREPARE,
 	  oa_ded, openarena: created this spell
