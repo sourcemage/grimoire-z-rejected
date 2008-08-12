@@ -1,6 +1,6 @@
            SPELL=flash
 if [[ $FLASH_BETA == y ]]; then
-         VERSION=070208
+         VERSION=081108
           SOURCE=flashplayer10_install_linux_$VERSION.tar.gz
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_10_linux
