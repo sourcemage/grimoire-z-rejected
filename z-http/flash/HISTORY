@@ -1,3 +1,6 @@
+2008-08-12 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DETAILS: updated FLASH_BETA=y to 081108
+
 2008-07-04 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: updated FLASH_BETA=y to 070208
 	  only the nonbeta sources are unversioned
