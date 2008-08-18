@@ -1,3 +1,6 @@
+2008-08-18 Julien "_kaze_" ROZO <julien@rozo.org>
+	* INSTALL: fixed permissions on scripts installed from SPELL_DIRECTORY
+
 2008-08-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 0.8.0
 

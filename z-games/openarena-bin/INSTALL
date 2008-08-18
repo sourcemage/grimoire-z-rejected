@@ -5,4 +5,4 @@ cp -v ${SPELL_DIRECTORY}/oa_ded ${INSTALL_ROOT}/usr/games  &&
 cp -rv * $INSTALL_DIR  &&
 cd $INSTALL_DIR  &&
 find_and_scam  &&
-chmod 750 {oa_ded,openarena}.{i386,x86_64}
+chmod 750 {oa_ded,openarena}.{i386,x86_64} ${INSTALL_ROOT}/usr/games/{oa_ded,openarena}
