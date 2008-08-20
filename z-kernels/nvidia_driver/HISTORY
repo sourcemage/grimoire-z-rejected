@@ -1,3 +1,7 @@
+2008-08-20 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS, PREPARE: added the possibility to use either beta or
+	  stable version
+
 2008-08-19 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 177.67
 
