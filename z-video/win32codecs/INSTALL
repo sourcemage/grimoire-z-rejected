@@ -1,4 +1,5 @@
-rm -rf old.* &&
+# remove broken stuff before installation
+rm -rf old.* {cook,drvc}.so &&
 
 install -vm 755 -d "$INSTALL_ROOT/usr/lib/win32" &&
 install -vm 755 * "$INSTALL_ROOT/usr/lib/win32"
