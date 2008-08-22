@@ -17,4 +17,6 @@ CGoban 2 has two parts:
 
 If you download cgoban 2, you will be able to log in to the Kiseido Go Server without having to download the client every time. In addition, you can edit and create SGF Go files on 
 your local disk with CGoban 2.
+
+NOTE: This is an old version, if you want to play on the gokgs.com servers, you need to use java webstart from there.
 EOF
