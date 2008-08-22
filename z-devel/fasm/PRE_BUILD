@@ -1,5 +1,6 @@
-mk_source_dir  $SOURCE_DIRECTORY  &&
-cd  $SOURCE_DIRECTORY             &&
-unpack_file         &&
-mv  fasm     fasm2                &&
-mv  fasm2/*  $SOURCE_DIRECTORY/
+mk_source_dir $SOURCE_DIRECTORY &&
+cd $SOURCE_DIRECTORY            &&
+unpack_file                     &&
+mv fasm fasm2                   &&
+mv fasm2/* $SOURCE_DIRECTORY/   &&
+rm -r fasm2
