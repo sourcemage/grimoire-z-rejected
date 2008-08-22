@@ -1,3 +1,8 @@
+2008-08-22 Martin Spitzbarth <m.spitzbarth@gmx.de>
+	* DETAILS: updated SOURCE_URL and all its mirrors
+	* INSTALL: changed ln -s to ln -sf, fixing bug 13078,
+	  create the directory usr/games if necessary
+
 2007-12-18 Arjan Bouter <abouter@sourcemage.org>
 	* desktop/et.desktop: added
 

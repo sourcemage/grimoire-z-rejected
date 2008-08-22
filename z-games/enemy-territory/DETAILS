@@ -2,14 +2,8 @@
          VERSION=2.60
           SOURCE=et-linux-${VERSION}.x86.run
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=http://3dgamers.planetmirror.com/pub/3dgamers/games/wolfensteinet/$SOURCE
-   SOURCE_URL[1]=http://ftp7.3dgamers.com/pub/3dgamers/games/wolfensteinet/$SOURCE
-   SOURCE_URL[2]=http://3dgamers.intelenet.net/pub/3dgamers/games/wolfensteinet/$SOURCE
-   SOURCE_URL[3]=http://3dgxfer1.3dgamers.com/3dgamers/games/wolfensteinet/$SOURCE
-   SOURCE_URL[4]=http://ftp4.3dgamers.com/pub/3dgamers/games/wolfensteinet/$SOURCE
-   SOURCE_URL[5]=http://3dgxfer2.3dgamers.com/3dgamers/games/wolfensteinet/$SOURCE
-   SOURCE_URL[6]=ftp://3dgr35g:mr23g239a@3dgamers.mirror.internode.on.net/3dgamers/games/wolfensteinet/$SOURCE
-   SOURCE_URL[7]=http://3dgamers.iinet.net.au/pub/3dgamers/games/wolfensteinet/$SOURCE
+   SOURCE_URL[0]=http://ftp.games.skynet.be/pub/wolfenstein/$SOURCE
+   SOURCE_URL[1]=ftp://ftp.filearena.net/mnt5/FreeBSD/ports/distfiles/$SOURCE
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENSE[0]=ID
         WEB_SITE=http://www.castlewolfenstein.com

@@ -13,8 +13,8 @@ install -m755 bin/Linux/x86/*.x86 $I_DIR &&
 # Setup symlinks for mods (e.g. True Combat: Elite)
 #
 pushd  $I_DIR             &&
-ln  -s  et.x86     et     &&
-ln  -s  etded.x86  etded  &&
+ln  -sf et.x86     et     &&
+ln  -sf etded.x86  etded  &&
 popd                      &&
 
 install openurl.sh $I_DIR 		&&
@@ -28,6 +28,13 @@ echo -e "#!/bin/sh \n
 # Needed to make symlinks/shortcuts work. \n
 # the binaries must run with correct working directory \n
 cd "${I_DIR}" \n ./etded.x86 \$* \n exit \$?" > etded &&
+
+# make sure that usr/games exists before installing files into it
+if [[ ! -e ${INSTALL_ROOT}/usr/games ]]
+then
+    install -m 0750 --group=games --directory  ${INSTALL_ROOT}/usr/games
+fi &&
+
 install et ${INSTALL_ROOT}/usr/games &&
 install etded ${INSTALL_ROOT}/usr/games &&
 mkdir -p ${INSTALL_ROOT}/usr/share/applnk/Games/ &&
