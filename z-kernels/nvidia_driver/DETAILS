@@ -1,29 +1,31 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_driver
 if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=177.67
+         VERSION=177.68
 else
          VERSION=173.14.12
 fi
 case "${SMGL_COMPAT_ARCHS[1]}" in
 	x86_64)
 if [[ $NVIDIA_BETA == y ]]; then
-     SOURCE_HASH=sha512:742d01ea2114968c2fa7942ddcb2e1dc325494e2aade1e2902d6f7f3c76a7629706b5e79402806178702c23cbf5ed09d9ee5a60d8d9b356af625f91ca5d56b86
+     SOURCE_HASH=sha512:dcbea256a751eddbca80f9c930a86246306c04a7cd5722467e7818ff511215b1129c333db5331f7e8243495b127c3239557ed62f328ae732bc767c6a20b23c50
+      SOURCE_URL=http://http.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 else
      SOURCE_HASH=sha512:eb94d7cce96e330ef6d1ef60342d1fb8459e5a4d156408ea9cd3d68cff0a6a346ba3ad9508fed2ad88b4666522e82c235e88698a4d8116881af8d8533c988923
+      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 fi
 	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
-      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
         ;;
 	ia32)
 if [[ $NVIDIA_BETA == y ]]; then
-     SOURCE_HASH=sha512:af2f4acbdb9774aa45d962f6c142d033049f02e5522ae0afb63e95848c9fa2f12751cd1acee063911be0ff2f017ff1cbcacaeaa4a22f9e3579910cb50b2fc91f
+     SOURCE_HASH=sha512:0246c2ce65a6438f7260df6d6adf70035e10b7991d964651bb75f6170a1489d1b26248103377ee6e45c32b05cb291f28b29f2fb683e60f8824c0dbb510c76d11
+      SOURCE_URL=http://http.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 else
      SOURCE_HASH=sha512:8e1393c99e673337fef164d9cbe9f9e16e6292bba4d5233a261bcee72cf174c6991bec25579c05f08a013d5caa0812005379b53996f157816bf71c0804c09db9
+      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 fi
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
-      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
         ;;
 ############################################################
