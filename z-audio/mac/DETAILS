@@ -1,0 +1,23 @@
+           SPELL=mac
+         VERSION=3.99-u4-b5
+          SOURCE=$SPELL-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=http://supermmx.org/linux/mac/
+   SOURCE_URL[0]=http://supermmx.org/resources/linux/mac/$SOURCE
+     SOURCE_HASH=sha512:0598e0d1985f9d15882b7af6bb90d933b92f9cc33919b21472ddd8816a8dc285fd93ae9fb15468ca371ed8eef79923189c9ed2b8c09a213b3fedf6a2fc683e41
+      LICENSE[0]=http://www.monkeysaudio.com/license.html
+         ENTERED=20080824
+        KEYWORDS="audio"
+           SHORT="Monkey's Audio Codec is a lossless audio codec. (.ape files)"
+cat << EOF
+Monkey's Audio is a fast and easy way to compress digital music.  Unlike
+traditional methods such as mp3, ogg, or lqt that permanently discard quality to
+save space, Monkey's Audio only makes perfect, bit-for-bit copies of your music.
+That means it always sounds perfect - exactly the same as the original.  Even
+though the sound is perfect, it still saves a lot of space. (think of it as a
+beefed-up Winzip for your music) The other great thing is that you can always
+decompress your Monkey's Audio files back to the exact, original files.  That
+way, you'll never have to recopy your CD collection to switch formats, and
+you'll always be able to recreate the original music CD if something ever
+happens to yours.
+EOF
