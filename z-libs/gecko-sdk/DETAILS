@@ -1,9 +1,9 @@
            SPELL=gecko-sdk
-         VERSION=1.7.3
+         VERSION=1.7.13
           SOURCE=gecko-sdk-i686-pc-linux-gnu-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
    SOURCE_URL[0]=http://ftp.mozilla.org/pub/mozilla.org/mozilla/releases/mozilla$VERSION/$SOURCE
-     SOURCE_HASH=sha512:03703f75f4a2629a1f038808f7926731c011b0748f82cc1d0d292e128034cf962d33240cc765799d1fe6d665108a316675567c2610d7efa29ff6526662210dbc
+     SOURCE_HASH=sha512:1a704608ee7d502a34437e4a23eec08ca86da9f360289c833a2461cd88c0be370f2f8b3b75c6bcdbf79d5b4eb0777705d0fffff6a87cbd835de848e28c22b694
         WEB_SITE=http://mplayerplug-in.sourceforge.net/install.php
          ENTERED=20041009
           REJECT="installs from binary"
