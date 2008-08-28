@@ -1,3 +1,7 @@
+2008-08-28 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated beta version to 177.70, SOURCE must be declared and set
+	  before use
+
 2008-08-22 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated beta version to 177.68, using a different mirror for this
 	  version

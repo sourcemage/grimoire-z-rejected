@@ -1,31 +1,31 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_driver
 if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=177.68
+         VERSION=177.70
 else
          VERSION=173.14.12
 fi
 case "${SMGL_COMPAT_ARCHS[1]}" in
 	x86_64)
+	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
 if [[ $NVIDIA_BETA == y ]]; then
-     SOURCE_HASH=sha512:dcbea256a751eddbca80f9c930a86246306c04a7cd5722467e7818ff511215b1129c333db5331f7e8243495b127c3239557ed62f328ae732bc767c6a20b23c50
+     SOURCE_HASH=sha512:cf851670016765e161f649c8a7599dfc217bc2068c4e354657d3f7ff20b391f08bd08a2fb6689e0a8a745f1ce1230ad2032cd5dbbada1c2d8682eb3ead683842
       SOURCE_URL=http://http.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 else
      SOURCE_HASH=sha512:eb94d7cce96e330ef6d1ef60342d1fb8459e5a4d156408ea9cd3d68cff0a6a346ba3ad9508fed2ad88b4666522e82c235e88698a4d8116881af8d8533c988923
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 fi
-	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
         ;;
 	ia32)
+          SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
 if [[ $NVIDIA_BETA == y ]]; then
-     SOURCE_HASH=sha512:0246c2ce65a6438f7260df6d6adf70035e10b7991d964651bb75f6170a1489d1b26248103377ee6e45c32b05cb291f28b29f2fb683e60f8824c0dbb510c76d11
+     SOURCE_HASH=sha512:ab5fe3130759e3defb16dbe00ae8042e34b6f19401071d309ab998b862be9827afd3879e2bf799870a67ae1118c8fb6dbf383662535de6c47a83035f465e86c3
       SOURCE_URL=http://http.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 else
      SOURCE_HASH=sha512:8e1393c99e673337fef164d9cbe9f9e16e6292bba4d5233a261bcee72cf174c6991bec25579c05f08a013d5caa0812005379b53996f157816bf71c0804c09db9
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 fi
-          SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
         ;;
 ############################################################
