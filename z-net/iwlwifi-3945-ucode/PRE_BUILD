@@ -1,8 +1,6 @@
 local  _FW_LOADER=$(get_kernel_config CONFIG_FW_LOADER)  &&
 
-if [[ $_FW_LOADER != y &&
-      $_FW_LOADER != m ]]
-then
+if [[ $_FW_LOADER != y && $_FW_LOADER != m ]]; then
   message "${PROBLEM_COLOR}You don't have CONFIG_FW_LOADER"    \
           "enabled in your kernel configuration, cannot load"  \
           "$SPELL.${DEFAULT_COLOR}"                            &&
