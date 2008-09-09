@@ -1,3 +1,7 @@
+2008-09-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* INSTALL: fixed a typo when reverting message to DEFAULT_COLOR
+	  (T was missing), uses INSTALL_ROOT when removing script-made symlinks
+
 2008-06-30 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: PATCHLEVEL=1
 	* desktop/*.desktop: fixed icon names
