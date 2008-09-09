@@ -1,0 +1,41 @@
+           SPELL=openoffice3-bin
+         VERSION=3.0.0rc1
+    VERSION_DATE=20080904
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
+          SOURCE=OOo_${VERSION}_${VERSION_DATE}_LinuxX86-64_install_en-US.tar.gz
+     SOURCE_HASH=sha512:35fcc8615ad3acfb08379364e18f10a5415bf53d79421eb6e240992cb068dff8f0b7a9289748d2557eccd15b6a553d52483b8af9dd6b0648aba11a96caeb8591
+         OO_ARCH=x86_64
+else
+          SOURCE=OOo_${VERSION}_${VERSION_DATE}_LinuxIntel_install_en-US.tar.gz
+     SOURCE_HASH=sha512:81e01be0d229b2e0feda2d6d9fc8fc97087e20979ccfc6774326a0e567effb32d4fbc8f692a6e0dc77fbb8a60f8fb926d50646b99d7e3d26163ae59913710be0
+         OO_ARCH=i586
+fi
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/openoffice3
+     COMMON_PATH=openoffice/contrib/rc/${VERSION}
+   SOURCE_URL[0]=http://mirrors.isc.org/pub/${COMMON_PATH}/${SOURCE}
+   SOURCE_URL[1]=ftp://ftp.ussg.iu.edu/pub/${COMMON_PATH}/${SOURCE}
+   SOURCE_URL[2]=http://mirror.pacific.net.au/${COMMON_PATH}/${SOURCE}
+   SOURCE_URL[3]=http://ftp.scarlet.be/pub/${COMMON_PATH}/${SOURCE}
+   SOURCE_URL[4]=http://downloads.planetmirror.com/pub/${COMMON_PATH}/${SOURCE}
+      LICENSE[0]=LGPL
+        WEB_SITE=http://www.openoffice.org
+         ENTERED=20080909
+         ARCHIVE="off"
+          REJECT="This spell is non-source"
+           SHORT="The binary version of OpenOffice 3"
+cat << EOF
+OpenOffice.org is the open source project through which Sun Microsystems has
+released the technology for the popular StarOffice[tm] Productivity Suite.
+All of the StarOffice code is available under the GNU Lesser General Public
+License (LGPL) as well as the Sun Industry Standards Source License (SISSL).
+
+Sun is participating as a member of the OpenOffice.org community.
+OpenOffice.org is being hosted by CollabNet. 
+
+The suite includes:
+scalc    -  A spreadsheet application
+sdraw    -  A vector drawing program
+simpress -  A presentation program
+smath    -  An equation editor
+swriter  -  A word processor
+EOF

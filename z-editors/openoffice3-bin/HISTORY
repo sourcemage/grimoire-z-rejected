@@ -1,0 +1,4 @@
+2008-09-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* BUILD, CONFLICTS, DEPENDS, DETAILS, HISTORY, INSTALL, PRE_BUILD, PREPARE,
+	  UNATTEND_SAFE, volatiles : created this spell
+
