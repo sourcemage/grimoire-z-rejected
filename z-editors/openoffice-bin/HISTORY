@@ -1,3 +1,6 @@
+2008-09-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* CONFLICTS: removed OpenOffice, added openoffice3-bin
+
 2008-04-24 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Removed dependency on mktemp (now provided by coreutils)
 
