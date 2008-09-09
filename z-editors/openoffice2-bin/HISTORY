@@ -1,4 +1,5 @@
 2008-09-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* CONFLICTS: added openoffice3-bin
 	* INSTALL: fixed a typo when reverting message to DEFAULT_COLOR
 	  (T was missing), uses INSTALL_ROOT when removing script-made symlinks
 
