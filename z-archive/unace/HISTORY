@@ -2,6 +2,7 @@
 	* DETAILS: Use versioned SOURCE_DIRECTORY
 	* PRE_BUILD: Create SOURCE_DIRECTORY before unpacking, otherwise a
 	  file is created at the same location as SOURCE_DIRECTORY
+	* UNATTEND_SAFE: This spell is safe for unattended updates
 
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.
