@@ -1,3 +1,7 @@
+2008-09-10 Eric Sandall <sandalle@sourcemage.org>
+	* PRE_BUILD: Create SOURCE_DIRECTORY before unpacking, otherwise a
+	  file is created at the same location as SOURCE_DIRECTORY
+
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.
 
