@@ -1,4 +1,5 @@
 2008-09-10 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Use versioned SOURCE_DIRECTORY
 	* PRE_BUILD: Create SOURCE_DIRECTORY before unpacking, otherwise a
 	  file is created at the same location as SOURCE_DIRECTORY
 
