@@ -1,3 +1,7 @@
+2008-09-10 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS, PRE_BUILD: added BUILD_VERSION to handle which build of openoffice3
+	  we are installing, in case two builds are embed into installation tarball
+
 2008-09-09 George Sherwood <gsherwood@sourcemage.org>
 	* PRE_BUILD: Adjusted FILENAME variable.
 

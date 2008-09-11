@@ -1,5 +1,6 @@
            SPELL=openoffice3-bin
          VERSION=3.0.0rc1
+   BUILD_VERSION=9350
     VERSION_DATE=20080904
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
           SOURCE=OOo_${VERSION}_${VERSION_DATE}_LinuxX86-64_install_en-US.tar.gz
