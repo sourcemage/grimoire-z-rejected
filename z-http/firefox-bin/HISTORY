@@ -1,3 +1,6 @@
+2008-09-26 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated stable to version 3.0.3
+
 2008-09-24 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated stable to version 3.0.2. SECURITY_PATCH++
 	  http://www.mozilla.org/security/known-vulnerabilities/firefox30.html
