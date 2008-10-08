@@ -1,3 +1,8 @@
+2008-10-07 George Sherwood <gsherwood@sourcemage.org>
+	* CONFIGURE: Added query to use java with X
+	* DEPENDS: If you want to use with X depends
+	  libxi, libxtst, libxext, libx11, libxau
+
 2008-08-08 Eric Sandall <sandalle@sourcemage.org>
 	* JAVA_WARNING: Don't bother querying and breaking unattended casts,
 	  but rather just check if the SOURCE exists and complain if not
