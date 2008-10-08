@@ -1,0 +1,157 @@
+local X_PRE X_MOD KVER                                                    &&
+KVER=$(get_kernel_version)                                                &&
+
+if test "$(get_spell_provider $SPELL X11-SERVER)" = xorg-server; then
+   X_PRE="${INSTALL_ROOT}$(pkg-config --variable=prefix xorg-server)"     &&
+   X_MOD="${INSTALL_ROOT}$(pkg-config --variable=moduledir xorg-server)"  
+else
+   X_PRE="${INSTALL_ROOT}/usr/X11R6"                                      &&
+   X_MOD="${INSTALL_ROOT}/usr/X11R6/lib/modules"                          
+fi                                                                        &&
+
+#
+# Install kernel module 'nvidia.ko'
+#
+pushd  $SOURCE_DIRECTORY/usr/src/nv                  &&
+make  KERNEL_MODLIB=$INSTALL_ROOT/lib/modules/$KVER  \
+      KERNEL_UNAME=$KVER                             \
+      SYSSRC=$INSTALL_ROOT/lib/modules/$KVER/source  \
+      -f Makefile.kbuild  module-install             &&
+popd                                                 &&
+
+#
+# Install binaries and script
+#
+pushd  $SOURCE_DIRECTORY/usr/bin  &&
+for file in nvidia-bug-report.sh nvidia-settings nvidia-xconfig;  do
+  install  -m 0755  -o root  -g root  $file  $INSTALL_ROOT/usr/bin
+done                              &&
+popd                              &&
+install  -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &&
+
+#
+# Install OpenGL headers
+#
+pushd  $SOURCE_DIRECTORY/usr/include/GL  &&
+if  [  !  -d  $X_PRE/include/GL  ];  then
+  mkdir  -p  $X_PRE/include/GL
+fi                                       &&
+#patch -p0 < ${SPELL_DIRECTORY}/glext-redef.patch &&
+for file in glext.h gl.h glxext.h glx.h; do
+  install  -m 0644  -o root  -g root  $file  $X_PRE/include/GL/
+done                                     &&
+popd                                     &&
+
+#
+# Install OpenGL libraries
+#
+pushd  $SOURCE_DIRECTORY/usr/lib  &&
+
+# Fill in the path to libGL.so
+sed -i 's|__LIBGL_PATH__|/usr/lib|' libGL.la 
+for lib in libGLcore.so.${VERSION/-/.} libGL.la libGL.so.${VERSION/-/.}  \
+           libnvidia-tls.so.${VERSION/-/.} libnvidia-cfg.so.${VERSION/-/.}; do
+  install  -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
+done                              &&
+
+if  [  !  -d  $INSTALL_ROOT/usr/lib/tls  ];  then
+  mkdir  -p  $INSTALL_ROOT/usr/lib/tls
+fi  &&
+
+install  -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
+         $INSTALL_ROOT/usr/lib/tls                                 &&
+  #
+  # Create library symlinks
+  #
+  pushd  $INSTALL_ROOT/usr/lib                                   &&
+  ln  -sfn  libGLcore.so.${VERSION/-/.}      libGLcore.so.1      &&
+  ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
+  ln  -sfn  libGL.so.1                       libGL.so            &&
+  ln  -sfn  libnvidia-cfg.so.${VERSION/-/.}  libnvidia-cfg.so.1  &&
+  ln  -sfn  libnvidia-cfg.so.1               libnvidia-cfg.so    &&
+  ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
+  popd                                                           &&
+  pushd  $INSTALL_ROOT/usr/lib/tls                               &&
+  ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
+  popd                                                           &&
+popd                              &&
+
+#
+# Install X11 OpenGL libraries
+#
+pushd  $SOURCE_DIRECTORY/usr/X11R6/lib  &&
+for lib in libXvMCNVIDIA.a libXvMCNVIDIA.so.${VERSION/-/.}; do
+  install  -m 0644  -o root  -g root  $lib  $X_PRE/lib
+done                                    &&
+  #
+  # Setup symlinks
+  #
+  pushd  $X_PRE/lib                                     &&
+  ln  -sfn  libXvMCNVIDIA.so.${VERSION/-/.}  libXvMCNVIDIA_dynamic.so.1  &&
+  popd                                                                   &&
+popd                                    &&
+
+#
+# Install X11 modules
+#
+pushd  $SOURCE_DIRECTORY/usr/X11R6/lib/modules  &&
+cp  libnvidia-wfb.so.${VERSION/-/.}  "$X_MOD/"  &&
+mkdir -p $X_MOD/drivers                         &&
+for driver in nvidia_drv.o nvidia_drv.so; do
+  install  -m 0644  -o root  -g root            \
+     drivers/$driver  $X_MOD/drivers
+done                                            &&
+mkdir -p "$X_MOD/extensions"                    &&
+install  -m 0644  -o root  -g root              \
+extensions/libglx.so.${VERSION/-/.}             \
+                  $X_MOD/extensions             &&
+  #
+  # Setup symlinks
+  #
+  ln  -sfn  "$X_MOD/libnvidia-wfb.so.${VERSION/-/.}"  \
+            "$X_MOD/libnvidia-wfb.so"                 &&
+  ln  -sfn  "$X_MOD/libnvidia-wfb.so.${VERSION/-/.}"  \
+            "$X_MOD/libwfb.so"                        &&
+  pushd  $X_MOD/extensions  &&
+  ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
+  popd                                                &&
+popd                                            &&
+
+#
+# Install Freedesktop.org spec
+#
+install  -m 0644  -o root  -g root                                         \
+         $SOURCE_DIRECTORY/usr/share/applications/nvidia-settings.desktop  \
+         $INSTALL_ROOT/usr/share/applications                              &&
+
+#
+# Install documentation
+#
+pushd  $SOURCE_DIRECTORY/usr/share/doc                         &&
+if  [  !  -d  $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0  ];  then
+  mkdir  -p  $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0
+fi                                                             &&
+cp  -a  *  $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0          &&
+
+# Install pixmap
+popd                                                           &&
+mkdir -p $INSTALL_ROOT/usr/share/pixmaps/                      &&
+cp  usr/share/pixmaps/nvidia-settings.png  $INSTALL_ROOT/usr/share/pixmaps/       &&
+
+if  [  !  -d  $INSTALL_ROOT/usr/share/doc/$SPELL  ];  then
+  mkdir  -p  $INSTALL_ROOT/usr/share/doc/$SPELL
+fi                                                             &&
+install  -m 0644  -o root  -g root  $SOURCE_DIRECTORY/LICENSE  \
+         $INSTALL_ROOT/usr/share/doc/$SPELL                    &&
+install  -m 0644  -o root  -g root  $SOURCE_DIRECTORY/LICENSE  \
+         $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0            &&
+
+#
+# Install man pages
+#
+pushd  $SOURCE_DIRECTORY/usr/share/man/man1  &&
+for manual in nvidia-installer.1.gz  nvidia-settings.1.gz  nvidia-xconfig.1.gz
+do
+  install  -m 0644  -o root  -g root  $manual  $INSTALL_ROOT/usr/share/man/man1
+done                                         &&
+popd
