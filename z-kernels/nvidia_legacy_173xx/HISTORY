@@ -1,5 +1,6 @@
-2008-10-07 Julien "_kaze_" ROZO <julien@rozo.org>
-	* DETAILS: updated stable version to 177.80
+2008-10-08 Julien "_kaze_" ROZO <julien@rozo.org>
+	* ALL: branched from nvidia_driver at version 173.14.12,
+	  last driver to support GeForceFX GPU
 
 2008-09-27 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated beta version to 177.78
