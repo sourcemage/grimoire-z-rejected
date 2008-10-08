@@ -1,9 +1,10 @@
 depends  unixodbc  &&
 depends  alsa-lib  &&
 
-optional_depends  X11-LIBS "" "" "To run gui applications" &&
-
-. $GRIMOIRE/FUNCTIONS  &&
-if check_if_xorg_modular_libs; then
-  depends  libxi
+if [[ "$JRE6_BIN_X" == "y" ]]; then
+depends libxi &&
+depends libxtst &&
+depends libxext &&
+depends libx11 &&
+depends libxau
 fi

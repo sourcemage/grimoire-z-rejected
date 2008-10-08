@@ -1,9 +1,15 @@
            SPELL=teeworlds-bin
-         VERSION=0.4.2
-          SOURCE=teeworlds-${VERSION}-linux_x86.tar.gz
-SOURCE_DIRECTORY=${BUILD_DIRECTORY}/teeworlds-${VERSION}-linux_x86
+         VERSION=0.4.3
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then 
+       TEEW_ARCH=x86_64
+     SOURCE_HASH=sha512:cf53e264a47bbb5c6a238d61e09220cca73157d3ed050eacc711c6f9031015bcbf761edd6a2e87fed9d783a2133cf6789e0c8ef1172e98f4839d5612f1d82bab
+else
+       TEEW_ARCH=x86
+     SOURCE_HASH=sha512:f85846dd40f3b8fe17ded25b185bf9b6f7fafa0ab9ece8006a19dc5220470d106734b93051bd5869f67fbb40533c8b917b5401064b42b69c16773e5adb59497e
+fi
+          SOURCE=teeworlds-${VERSION}-linux_${TEEW_ARCH}.tar.gz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/teeworlds-${VERSION}-linux_${TEEW_ARCH}
    SOURCE_URL[0]=http://www.teeworlds.com/files/$SOURCE
-     SOURCE_HASH=sha512:feb2b55ecc85d4a0274657b7d6f98b2b4624125464964a743d0046533dd9770e8277366baec0b2574b832e997f2098ef0b1b45573c15c2b21193b1432fe3cda0
       LICENSE[0]=http://trac.teeworlds.com/trac/browser/tags/release-0.4.1/license.txt
         WEB_SITE=http://www.teeworlds.com/
          ENTERED=20080302
