@@ -1,7 +1,3 @@
-2008-10-08 Julien "_kaze_" ROZO <julien@rozo.org>
-	* z-kernels/nvidia_legacy_173xx: new spell, last branch of nvidia
-	  driver to support GeForceFX GPU
-
 2008-09-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* z-editors/openoffice3-bin: new spell, binary version of OpenOffice.org 3
 
