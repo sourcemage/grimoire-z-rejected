@@ -1,3 +1,7 @@
+2008-10-08 George Sherwood <gsherwood@sourcemage.org>
+	* CONFIGURE: Combine firefox and xulrunner
+	* INSTALL: Combine firefox and xulrunner
+
 2008-08-12 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
 	* DETAILS: updated FLASH_BETA=y to 081108
 

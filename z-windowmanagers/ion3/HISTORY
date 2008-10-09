@@ -1,4 +1,7 @@
 2008-05-29 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: version 20081002
+
+2008-05-29 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: version 20080411
 	* startpwm3, pwm3.desktop: added loginmanager files for pwm3
 	* startion3: fixed executable names.

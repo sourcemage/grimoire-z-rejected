@@ -18,25 +18,17 @@ esac &&
 
 case $FIREFOX in
 	y|Y)
-		FIREFOX_VERSION=$(installed_version firefox) &&
-		if [[ "$FIREFOX_VERSION" == "cvs" ]]; then
-			FIREFOX_DIR="/usr/lib/firefox-0.8.0+"
-		else
-			FIREFOX_DIR="/usr/lib/firefox"
-		fi &&
+		if [[ -d /usr/lib/xulrunner/plugins ]]; then
+			message "${MESSAGE_COLOR}Installing for Firefox/XULRunner${DEFAULT_COLOR}\n" &&
 
-		if [[ -d $FIREFOX_DIR/plugins ]]; then
-			message "${MESSAGE_COLOR}Installing for firefox${DEFAULT_COLOR}\n" &&
-
-			if [[ -e $FIREFOX_DIR/plugins/libflashplayer.so ]]; then
-				rm -f $FIREFOX_DIR/plugins/libflashplayer.so
+			if [[ -e /usr/lib/xulrunner/plugins/libflashplayer.so ]]; then
+				rm -f /usr/lib/xulrunner/plugins/libflashplayer.so
+			fi &&
+			if [[ -e /usr/lib/xulrunner/plugins/flashplayer.xpt ]]; then
+				rm -f /usr/lib/xulrunner/plugins/flashplayer.xpt
 			fi &&
 
-			if [[ -e $FIREFOX_DIR/plugins/flashplayer.xpt ]]; then
-				rm -f $FIREFOX_DIR/plugins/flashplayer.xpt
-			fi &&
-
-			cp libflashplayer.so $FIREFOX_DIR/plugins/
+			cp libflashplayer.so /usr/lib/xulrunner/plugins/
 		fi
 	;;
 esac &&
@@ -156,23 +148,6 @@ case $NETSCAPE in
 			fi &&
 
 			cp libflashplayer.so /usr/lib/netscape4/plugins/
-		fi
-	;;
-esac &&
-
-case $XULRUNNER in
-	y|Y)
-		if [[ -d /usr/lib/xulrunner/plugins ]]; then
-			message "${MESSAGE_COLOR}Installing for XULRunner${DEFAULT_COLOR}\n" &&
-
-			if [[ -e /usr/lib/xulrunner/plugins/libflashplayer.so ]]; then
-				rm -f /usr/lib/xulrunner/plugins/libflashplayer.so
-			fi &&
-			if [[ -e /usr/lib/xulrunner/plugins/flashplayer.xpt ]]; then
-				rm -f /usr/lib/xulrunner/plugins/flashplayer.xpt
-			fi &&
-
-			cp libflashplayer.so /usr/lib/xulrunner/plugins/
 		fi
 	;;
 esac &&
