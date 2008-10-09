@@ -1,4 +1,4 @@
-cd $SOURCE_DIRECTORY  		&&
-echo y | ./install.sh -s	&&
+cd $SOURCE_DIRECTORY &&
+echo y | ./install.sh -s &&
 ln -sf $TRACK_ROOT/usr/lib/libXm.so.2 /usr/lib/opera/plugins/libXm.so.1 &&
 ln -sf $TRACK_ROOT/usr/lib/libXm.so.2 /usr/lib/opera/plugins/libXm.so.3
