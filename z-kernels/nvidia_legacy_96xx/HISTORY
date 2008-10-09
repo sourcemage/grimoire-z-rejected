@@ -1,3 +1,6 @@
+2008-10-10 Ladislav Hagara <hgr@vabo.cz>
+	* CONFLICTS: updated
+
 2008-04-24 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Removed dependency on mktemp (now provided by coreutils)
 
