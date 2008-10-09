@@ -1,2 +1,3 @@
 conflicts nvidia_driver &&
-conflicts nvidia-settings y
+conflicts nvidia_legacy_96xx &&
+conflicts nvidia_legacy_173xx
