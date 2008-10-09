@@ -1,5 +1,5 @@
 . $GRIMOIRE/FUNCTIONS
-           SPELL=nvidia_driver
+           SPELL=nvidia_legacy_173xx
 if [[ $NVIDIA_BETA == y ]]; then
          VERSION=177.78
 else

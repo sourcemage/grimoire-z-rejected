@@ -1,3 +1,7 @@
+2008-10-09 Ladislav Hagara <hgr@vabo.cz>
+	* z-x11/nvidia-settings: removed deprecated spell
+	* z-kernels/nvidia_headers: removed deprecated spell
+
 2008-10-08 Julien "_kaze_" ROZO <julien@rozo.org>
 	* z-kernels/nvidia_legacy_173xx: new spell, last branch of nvidia
 	  driver to support GeForceFX GPU
