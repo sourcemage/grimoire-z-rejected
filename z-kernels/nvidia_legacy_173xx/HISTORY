@@ -1,4 +1,9 @@
 2008-10-10 Ladislav Hagara <hgr@vabo.cz>
+	* PRE_BUILD, NVIDIA_173.14.12_2.6.27.patch: added due to linux 2.6.27
+	  from http://kanotix.com/files/173.14.12/NVIDIA_173.14.12_2.6.27.patch
+	* INSTALL, glext-redef.patch: removed disabled patch
+
+2008-10-10 Ladislav Hagara <hgr@vabo.cz>
 	* CONFLICTS: updated
 
 2008-10-08 Julien "_kaze_" ROZO <julien@rozo.org>

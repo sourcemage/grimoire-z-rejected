@@ -36,7 +36,7 @@ pushd  $SOURCE_DIRECTORY/usr/include/GL  &&
 if  [  !  -d  $X_PRE/include/GL  ];  then
   mkdir  -p  $X_PRE/include/GL
 fi                                       &&
-#patch -p0 < ${SPELL_DIRECTORY}/glext-redef.patch &&
+
 for file in glext.h gl.h glxext.h glx.h; do
   install  -m 0644  -o root  -g root  $file  $X_PRE/include/GL/
 done                                     &&
