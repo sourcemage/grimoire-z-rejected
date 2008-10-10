@@ -23,6 +23,13 @@ message "${MESSAGE_COLOR}Determine which browser plugins to install${DEFAULT_COL
 		ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
                        ${INSTALL_ROOT}/usr/lib/firefox/plugins/libjavaplugin_oji.so
 	fi
+	if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]
+	then
+                message "${MESSAGE_COLOR}Installing plugin for xulrunner${DEFAULT_COLOR}" &&
+		ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
+                       ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libjavaplugin_oji.so
+	fi
+
         if [ -d ${INSTALL_ROOT}/opt/firefox/plugins ]
 	then
                 message "${MESSAGE_COLOR}Installing plugin for firefox-bin${DEFAULT_COLOR}" &&

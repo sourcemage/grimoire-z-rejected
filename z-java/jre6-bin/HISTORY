@@ -1,3 +1,6 @@
+2008-10-09 Eric Sandall <sandalle@sourcemage.org>
+	* INSTALL: Add support for xulrunner
+
 2008-10-07 George Sherwood <gsherwood@sourcemage.org>
 	* CONFIGURE: Added query to use java with X
 	* DEPENDS: If you want to use with X depends
