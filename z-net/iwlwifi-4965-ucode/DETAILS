@@ -1,9 +1,12 @@
            SPELL=iwlwifi-4965-ucode
-         VERSION=228.57.1.21
-          SOURCE=$SPELL-$VERSION.tgz
+         VERSION=228.57.2.21
+          SOURCE=$SPELL-${VERSION/2.21/1.21}.tgz
+         SOURCE2=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://intellinuxwireless.org/iwlwifi/downloads/$SOURCE
+  SOURCE2_URL[0]=http://intellinuxwireless.org/iwlwifi/downloads/$SOURCE2
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+     SOURCE2_GPG="gurus.gpg:$SOURCE2.sig:WORKS_FOR_ME"
       LICENSE[0]=http://intellinuxwireless.org/LICENSE.iwlwifi-ucode
         WEB_SITE=http://intellinuxwireless.org/iwlwifi/
          ENTERED=20071007
