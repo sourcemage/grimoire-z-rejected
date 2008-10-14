@@ -1,3 +1,7 @@
+2008-10-14 George Sherwood <gsherwood@sourcemage.org>
+	PREPARE: Adjusted devel version question
+	DETAILS: Updated devel to 3.1b1. Updated devel SOURCE_URL
+
 2008-09-26 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated stable to version 3.0.3
 
@@ -8,7 +12,7 @@
 2008-09-06 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated devel to 3.1-alpha2. Updated devel SOURCE_URL.
 	  Updated devel SOURCE
-	* PREPARE: Adjusted devel version quesiton
+	* PREPARE: Adjusted devel version question
 
 2008-07-18 George Sherwood <george@beernabeer.com>
 	* DETAILS: Updated to version 3.0.  SECURITY_PATCH++
