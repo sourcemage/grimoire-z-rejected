@@ -1,3 +1,6 @@
+2008-10-17 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 10.0.12.36
+
 2008-10-08 George Sherwood <gsherwood@sourcemage.org>
 	* CONFIGURE: Combine firefox and xulrunner
 	* INSTALL: Combine firefox and xulrunner

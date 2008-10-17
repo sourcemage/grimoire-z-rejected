@@ -5,9 +5,9 @@ if [[ $FLASH_BETA == y ]]; then
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_10_linux
 else
-         VERSION=9.0.124.0
+         VERSION=10.0.12.36
   SECURITY_PATCH=3
-          SOURCE=install_flash_player_9_linux.tar.gz
+          SOURCE=install_flash_player_10_linux.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SOURCE/.tar.gz/}
   FORCE_DOWNLOAD="on"
