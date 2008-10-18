@@ -1,3 +1,10 @@
+2008-10-14 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 228.57.2.21
+	  Provide both 228.57.2.21 (2.6.27+ kernels) and 228.57.1.21 (pre-2.6.27 kernels)
+	* PRE_BUILD: Unpack both firmware blobs
+	* INSTALL: Install both firmware blobs
+	  Use cp instead of mv
+
 2008-10-06 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 228.57.1.21
 

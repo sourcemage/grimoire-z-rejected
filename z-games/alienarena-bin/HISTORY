@@ -1,3 +1,9 @@
+2008-10-17 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 20081016
+	* PRE_BUILD: added, to unpack the archive in SOURCE_DIRECTORY
+	* crx.sdl: removed, sdl version is no longer available
+	* INSTALL: removed installation and permissions change on crx.sdl
+
 2008-06-06 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 20080603
 
