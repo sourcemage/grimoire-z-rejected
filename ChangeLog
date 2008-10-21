@@ -1,3 +1,6 @@
+2008-10-19 George Sherwood <gsherwood@sourcemage.org>
+	* z-http/firefox-obstcp: Added new spell. Patched version of firefox
+
 2008-10-09 Ladislav Hagara <hgr@vabo.cz>
 	* z-x11/nvidia-settings: removed deprecated spell
 	* z-kernels/nvidia_headers: removed deprecated spell

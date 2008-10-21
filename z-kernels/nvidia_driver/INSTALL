@@ -110,8 +110,15 @@ extensions/libglx.so.${VERSION/-/.}             \
   #
   ln  -sfn  "$X_MOD/libnvidia-wfb.so.${VERSION/-/.}"  \
             "$X_MOD/libnvidia-wfb.so"                 &&
-  ln  -sfn  "$X_MOD/libnvidia-wfb.so.${VERSION/-/.}"  \
-            "$X_MOD/libwfb.so"                        &&
+
+  #
+  # If libwfb.so is a file, it's probably from xorg-server, leave alone
+  # Bug #14819
+  #
+  if [[ ! -f "$X_MOD/libwfb.so" ]]; then
+    ln  -sfn  "$X_MOD/libnvidia-wfb.so.${VERSION/-/.}"  \
+              "$X_MOD/libwfb.so"
+  fi  &&
   pushd  $X_MOD/extensions  &&
   ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
   popd                                                &&
