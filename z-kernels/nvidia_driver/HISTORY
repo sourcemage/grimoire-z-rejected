@@ -1,3 +1,11 @@
+2008-10-20 Eric Sandall <sandalle@sourcemage.org>
+	* Bug #14819
+	* INSTALL: Only install nVidia's libwfb.so symlink if xorg-server
+	  didn't already install libwfb.so
+	* PRE_REMOVE: Remove libwfb.so from nvidia's install log if libwfb.so
+	  is a file (from xorg-server) instead of a symlink (from this spell)
+	* REPAIR^all^PRE_REMOVE: Update tablet's PRE_REMOVE so the first cast works
+
 2008-10-10 Ladislav Hagara <hgr@vabo.cz>
 	* CONFLICTS: updated
 
