@@ -1,5 +1,6 @@
 2008-10-21 Eric Sandall <sandalle@sourcemage.org>
 	* PROVIDES: Provides NVIDIA proprietary drivers
+	* INSTALL: Fix Bug #14845 (create missing /usr/share/applications)
 
 2008-10-10 Ladislav Hagara <hgr@vabo.cz>
 	* CONFLICTS: updated
