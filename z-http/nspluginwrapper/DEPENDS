@@ -1,3 +1,0 @@
-depends  linux32      &&
-depends  smgl-emul32 
-

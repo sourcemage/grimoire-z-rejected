@@ -127,6 +127,10 @@ popd                                            &&
 #
 # Install Freedesktop.org spec
 #
+if [[ ! -d $INSTALL_ROOT/usr/share/applications ]];  then
+  mkdir -p $INSTALL_ROOT/usr/share/applications
+fi  &&
+
 install  -m 0644  -o root  -g root                                         \
          $SOURCE_DIRECTORY/usr/share/applications/nvidia-settings.desktop  \
          $INSTALL_ROOT/usr/share/applications                              &&

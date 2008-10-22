@@ -1,3 +1,7 @@
+2008-10-21 Eric Sandall <sandalle@sourcemage.org>
+	* PROVIDES: Provides NVIDIA proprietary drivers
+	* INSTALL: Fix Bug #14845 (create missing /usr/share/applications)
+
 2008-10-20 Eric Sandall <sandalle@sourcemage.org>
 	* Bug #14819
 	* INSTALL: Only install nVidia's libwfb.so symlink if xorg-server

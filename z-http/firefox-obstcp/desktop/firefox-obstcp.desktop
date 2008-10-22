@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Firefox-Obstcp
-Exec=firefox-obstcp
-Icon=/opt/firefox-obstcp/icons/mozicon16.xpm
-Terminal=false
-Type=Application
-Categories=Application;Network;Browsers
