@@ -1,3 +1,0 @@
-depends JAVA 		&&
-depends gtk+2		&&
-depends ant		

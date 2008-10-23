@@ -1,3 +1,6 @@
+2008-10-23 Julien "_kaze_" ROZO <julien@rozo.org>
+	* z-devel/eclipse-bin: moved spell to binary grimoire
+
 2008-10-21 George Sherwood <gsherwood@sourcemage.org>
 	* bin-http/firefox-obstcp: Moved spell to binary grimoire
 	* bin-editors/openoffice2-bin-lang-es: Moved spell to binary grimoire
