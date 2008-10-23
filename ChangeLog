@@ -2,25 +2,25 @@
 	* z-devel/eclipse-bin: moved spell to binary grimoire
 
 2008-10-21 George Sherwood <gsherwood@sourcemage.org>
-	* bin-http/firefox-obstcp: Moved spell to binary grimoire
-	* bin-editors/openoffice2-bin-lang-es: Moved spell to binary grimoire
-	* bin-editors/openoffice2-bin-lang-fr: Moved spell to binary grimoire
-	* bin-editors/openoffice2-bin-lang-nl: Moved spell to binary grimoire
-	* bin-editors/openoffice2-bin-lang-pl: Moved spell to binary grimoire
-	* bin-editors/openoffice2-bin-lang-ru: Moved spell to binary grimoire
-	* bin-editors/openoffice2-bin-lang-sv: Moved spell to binary grimoire
-	* bin-editors/openoffice2-bin: Moved spell to binary grimoire
-	* bin-editors/openoffice3-bin: Moved spell to binary grimoire
-	* bin-editors/openoffice-bin: Moved spell to binary grimoire
-	* bin-http/firefox-bin: Moved spell to binary grimoire
-	* bin-http/icecat-bin: Moved spell to binary grimoire
-	* bin-http/netscape4: Moved spell to binary grimoire
-	* bin-http/nspluginwrapper: Moved spell to binary grimoire
-	* bin-http/seamonkey-bin: Moved spell to binary grimoire
-	* bin-http/tomcat-4-bin: Moved spell to binary grimoire
-	* bin-http/xulrunner-bin: Moved spell to binary grimoire
-	* bin-audio/tuxguitar-bin: Moved spell to binary grimoire
-	* bin-mail/thunderbird-bin: Moved spell to binary grimoire
+	* z-http/firefox-obstcp: Moved spell to binary grimoire
+	* z-editors/openoffice2-bin-lang-es: Moved spell to binary grimoire
+	* z-editors/openoffice2-bin-lang-fr: Moved spell to binary grimoire
+	* z-editors/openoffice2-bin-lang-nl: Moved spell to binary grimoire
+	* z-editors/openoffice2-bin-lang-pl: Moved spell to binary grimoire
+	* z-editors/openoffice2-bin-lang-ru: Moved spell to binary grimoire
+	* z-editors/openoffice2-bin-lang-sv: Moved spell to binary grimoire
+	* z-editors/openoffice2-bin: Moved spell to binary grimoire
+	* z-editors/openoffice3-bin: Moved spell to binary grimoire
+	* z-editors/openoffice-bin: Moved spell to binary grimoire
+	* z-http/firefox-bin: Moved spell to binary grimoire
+	* z-http/icecat-bin: Moved spell to binary grimoire
+	* z-http/netscape4: Moved spell to binary grimoire
+	* z-http/nspluginwrapper: Moved spell to binary grimoire
+	* z-http/seamonkey-bin: Moved spell to binary grimoire
+	* z-http/tomcat-4-bin: Moved spell to binary grimoire
+	* z-http/xulrunner-bin: Moved spell to binary grimoire
+	* z-audio/tuxguitar-bin: Moved spell to binary grimoire
+	* z-mail/thunderbird-bin: Moved spell to binary grimoire
 
 2008-10-19 George Sherwood <gsherwood@sourcemage.org>
 	* z-http/firefox-obstcp: Added new spell. Patched version of firefox
