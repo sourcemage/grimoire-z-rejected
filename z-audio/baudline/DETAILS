@@ -1,0 +1,20 @@
+           SPELL=baudline
+         VERSION=1.07
+          SOURCE=${SPELL}_${VERSION}_linux_i686.tar.gz
+   SOURCE_URL[0]=http://www.baudline.com/$SOURCE
+     SOURCE_HASH=sha512:4b3ec128969836e30e9c6fdbc4a62b1364a0623a8ab9f8719bf4043354f13a649f071ee88e8bd448b6336c1e938b7234284ba536bab387db6f721e1826af17e8
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/${SPELL}_${VERSION}_linux_i686"
+        WEB_SITE=http://www.baudline.com/
+      LICENSE[0]=Free To Use But Restricted
+         ENTERED=20081030
+           SHORT="a time-frequency browser designed for scientific visualization"
+cat << EOF
+Baudline is a time-frequency browser designed for scientific visualization of
+the spectral domain. Signal analysis is performed by Fourier, correlation,
+and raster transforms that create colorful spectrograms with vibrant
+detail. Conduct test and measurement experiments with the built in
+function generator, or play back audio files with a multitude of effects and
+filters. The baudline signal analyzer combines fast digital signal processing,
+versatile high speed displays, and continuous capture tools for hunting down
+and studying elusive signal characteristics.
+EOF
