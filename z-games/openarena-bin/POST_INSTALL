@@ -6,6 +6,7 @@
 #
 
 function default_post_install() {
+  games_make_proper_binary &&
   real_default_post_install
 }
 
