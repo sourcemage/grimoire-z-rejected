@@ -1,7 +1,10 @@
+2008-11-10 Julien "_kaze_" ROZO <julien@rozo.org>
+	* PRE_INSTALL: added, removes Windows and Mac OS X files
+
 2008-11-02 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 0.8.1
 	* INSTALL: removed permissions fix on scripts installed from SPELL_DIRECTORY
-	* POST_INSTALL: added games_make_proper_binary call to redefined
+	* POST_INSTALL: added games_make_proper_binary call in redefined
 	  default_post_install to fix permissions on those scripts
 
 2008-08-18 Julien "_kaze_" ROZO <julien@rozo.org>
