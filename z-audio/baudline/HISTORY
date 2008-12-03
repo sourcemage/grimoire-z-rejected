@@ -1,3 +1,6 @@
+2008-12-01 David Kowis <dkowis@shlrm.org>
+	* DETAILS: quoting LICENSE to fix a glitch
+
 2008-10-30 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS, BUILD, INSTALL: spell created, version 1.07
 
