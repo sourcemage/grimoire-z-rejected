@@ -1,3 +1,6 @@
+2008-12-05 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 1_5_0_17
+
 2008-03-27 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 1_5_0_15, fixed WEB_SITE
 	* DEPENDS: added alsa-lib as dependency, and X11-LIBS as optional one

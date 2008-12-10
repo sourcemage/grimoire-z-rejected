@@ -1,20 +1,20 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jre6-bin
-         VERSION=6u10
-             VER=1.6.0_10
+         VERSION=6u11
+             VER=1.6.0_11
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	ia32|32)
           SOURCE=jre-$VERSION-linux-i586.bin
-      SOURCE_HASH=sha512:535d7e07e39beb7666fb374aa26621afde73b7511db66afa0ee1e6869e6fca0abe6ba7b3856f6349854072da79615f4266242c351a9b6ec2cc94502e6425d34f
+      SOURCE_HASH=sha512:10ff5443cb5cd5362dbd28024f11d2f0777be821bfc59f5ac46637071708fe4ce67e3c01de3fa8ef387ef980629422bf0d1d25c63b8c3863d87c8f65d8e15219
         ;;
 	x86-64|64)
 	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
 	  then
           SOURCE=jre-$VERSION-linux-x64.bin
-      SOURCE_HASH=sha512:c5a16f543cdb6f68cf90f5c329012a9b6c13f8facca94f783c65b864c13c0655c97458d82c4bbe19f76079451c58a4eeafef1af82fc17bb9275f4bad40736e5f
+      SOURCE_HASH=sha512:900cd7ca8827129fe475ed9f7b29f39f28074c0a45447c3e6371863de920bf32f96235e3f340b608d77a3c0520a0c22f7c87c394096b4d8947ad8b605b3fac9d
           else
           SOURCE=jre-$VERSION-linux-i586.bin
-      SOURCE_HASH=sha512:535d7e07e39beb7666fb374aa26621afde73b7511db66afa0ee1e6869e6fca0abe6ba7b3856f6349854072da79615f4266242c351a9b6ec2cc94502e6425d34f
+      SOURCE_HASH=sha512:10ff5443cb5cd5362dbd28024f11d2f0777be821bfc59f5ac46637071708fe4ce67e3c01de3fa8ef387ef980629422bf0d1d25c63b8c3863d87c8f65d8e15219
 	  fi
 	;;
 ###########################################################################
