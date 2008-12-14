@@ -1,3 +1,6 @@
+2008-12-14 Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+	* DEPENDS: added libxscrnsaver #14957
+
 2008-06-19 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 2.0.0.72
 
