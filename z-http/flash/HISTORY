@@ -1,3 +1,6 @@
+2008-12-19 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated stable to 10.0.15.3, SECURITY_PATCH++
+
 2008-10-17 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 10.0.12.36
 
@@ -196,4 +199,3 @@
 2002-03-19 Eric Schabell <eric@schabell.com>
 	* HISTORY: Added. The reason for rejection
 	  is due to non-source component.
-
