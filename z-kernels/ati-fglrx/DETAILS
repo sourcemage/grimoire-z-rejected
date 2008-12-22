@@ -1,7 +1,7 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=ati-fglrx
-         VERSION=8.5
-          SOURCE=ati-driver-installer-8-5-x86.x86_64.run
+         VERSION=8.12
+          SOURCE=ati-driver-installer-${VERSION/./-}-x86.x86_64.run
 #     SOURCE_HASH=sha512:89e3409580a54fcbe2833b7b44e91847a62b5599ab6c5caf7b95e3e8688fcaa7f52a71ebcd6901d7711622375c9d2f494a05bf3151d516baa699113f20e78721
       SOURCE_GPG=gurus.gpg:$SOURCE.sig:WORKS_FOR_ME
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
