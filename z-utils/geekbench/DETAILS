@@ -1,0 +1,16 @@
+           SPELL=geekbench
+         VERSION=2.1.0
+          SOURCE="Geekbench21-Linux.tar.gz"
+   SOURCE_URL[0]=http://www.primatelabs.ca/download/${SOURCE}
+     SOURCE_HASH=sha512:4fe6819ddc655371e6d1656d6cfc0afa9179edca44dc8564130b64d93674b4ac832019979fe6bc4afec4086abb4e1f0fc6d3d9a38e1526b1f61ca52cf1764951
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/Geekbench21-Linux"
+        WEB_SITE="http://www.primatelabs.ca/geekbench/"
+      LICENSE[0]=UNKNOWN
+         ENTERED=20081231
+           SHORT="set of benchmarks"
+cat << EOF
+Geekbench provides a comprehensive set of benchmarks engineered to quickly
+and accurately measure processor and memory performance. Designed to make
+benchmarks easy to run and easy to understand, Geekbench takes the guesswork
+out of producing robust and reliable benchmark results.
+EOF
