@@ -1,8 +1,9 @@
            SPELL=ja2-stracciatella
-         VERSION=0.10
+         VERSION=0.11
           SOURCE="ja2-$VERSION-source.tar.bz2"
    SOURCE_URL[0]=http://ja2.dragonriders.de/files/$SOURCE
-     SOURCE_HASH=sha512:966c5ec3e3908967b545a499c00ba4742b5758453b0f7fc6e8d933cf81217f61e658ff69a3d001e1e7f6b4167e37590b2c9694a741befa47590ee5fafa7e0f69
+   SOURCE_URL[1]=http://tron.homeunix.org/ja2/$SOURCE
+     SOURCE_HASH=sha512:55b3fd4f503980b3706244f0bbfe8ff89de562cd6279f32bf487ef55f38535d12385f49faa708db1f62edffb10a0053dbf346eddb3b9765f5447109ca04ca45c
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/ja2-$VERSION"
         WEB_SITE="http://ja2.dragonriders.de"
       LICENSE[0]=SFI-SCLA
