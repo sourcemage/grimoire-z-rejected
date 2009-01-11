@@ -34,7 +34,9 @@ sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
                --target $SOURCE_DIRECTORY                     &&
 cd $SOURCE_DIRECTORY                                          &&
 
-patch -p0 < ${SPELL_DIRECTORY}/NVIDIA_173.14.12_2.6.27.patch  &&
+if [[ $NVIDIA_BETA != y ]]; then
+  patch -p0 < ${SPELL_DIRECTORY}/NVIDIA_173.14.12_2.6.27.patch
+fi  &&
 
 if [[ $VIA4X == "y" ]]; then
   sedit  "s/NVreg_EnableVia4x =0;/NVreg_EnableVia4x = 1;/"    \
