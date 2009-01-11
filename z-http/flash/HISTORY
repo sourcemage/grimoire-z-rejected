@@ -1,3 +1,6 @@
+2009-01-11 Vlad Glagolev <stealth@sourcemage.org>
+	* CONFIGURE, INSTALL: added Midori
+
 2008-12-19 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated stable to 10.0.15.3, SECURITY_PATCH++
 
