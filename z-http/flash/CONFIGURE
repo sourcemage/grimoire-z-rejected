@@ -12,6 +12,7 @@ source $GRIMOIRE/REJECTED_MSG  &&
 echo "Flash works with the following programs:"  &&
 echo "Mozilla"  &&
 echo "Firefox/XULRunner"   &&
+echo "Midori/WebKit" &&
 echo "Seamonkey" &&
 echo "Konqueror (KDE 3.x/4.x)" &&
 echo "Opera" &&
@@ -20,10 +21,11 @@ echo "Icecat" &&
 
 echo "Select which currently installed applications you wish to install Flash for."  &&
 
-persistent_add MOZILLA FIREFOX SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE XULRUNNER ICE_BIN ICECAT &&
+persistent_add MOZILLA FIREFOX MIDORI SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE XULRUNNER ICE_BIN ICECAT &&
 
 ask_spell mozilla Mozilla MOZILLA &&
 ask_spell xulrunner "Firefox/XULRunner" FIREFOX &&
+ask_spell midori "Midori/WebKit" MIDORI &&
 ask_spell seamonkey Seamonkey SEAMONKEY &&
 ask_spell firefox-bin Firefox-bin FIRE_BIN &&
 ask_spell kdebase "Konqueror (KDE3)" KDEBASE &&
