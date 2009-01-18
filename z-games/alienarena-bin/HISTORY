@@ -1,3 +1,8 @@
+2009-01-16 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 20090109
+	* PRE_BUILD: removed, no longer needed
+	* INSTALL : fixed the installation process in $INSTALL_ROOT/usr/games/
+
 2008-10-17 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 20081016
 	* PRE_BUILD: added, to unpack the archive in SOURCE_DIRECTORY
