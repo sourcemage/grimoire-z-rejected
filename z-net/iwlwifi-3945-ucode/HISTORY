@@ -1,5 +1,8 @@
 2009-01-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated spell to 15.28.1.8
+	  Updated to 15.28.2.8 for ucode-2 and also provide 15.28.1.8 for
+	  ucode-1. Not sure when ucode-1 becomes deprecated as my 2.6.28.1
+	  kernel still uses ucode-1
 
 2008-09-08 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 15.28.1.6

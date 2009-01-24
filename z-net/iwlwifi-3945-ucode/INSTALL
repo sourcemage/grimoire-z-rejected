@@ -1,3 +1,4 @@
 message "${MESSAGE_COLOR}Installing firmware...$DEFAULT_COLOR" &&
 install -vm 755 -d "$INSTALL_ROOT/lib/firmware" &&
-install -vm 644 ${SPELL/-ucode/}-1.ucode "$INSTALL_ROOT/lib/firmware"
+install -vm 644 $SPELL-$VERSION2/${SPELL/-ucode/}-1.ucode "$INSTALL_ROOT/lib/firmware"  &&
+install -vm 644 $SPELL-$VERSION/${SPELL/-ucode/}-2.ucode $INSTALL_ROOT/lib/firmware
