@@ -1,4 +1,4 @@
 message  "${MESSAGE_COLOR}Installing firmware...$DEFAULT_COLOR"                         &&
 mkdir -p  $INSTALL_ROOT/lib/firmware                                                    &&
-cp -v $SPELL-${VERSION/2.23/1.21/}/${SPELL/-ucode/}-1.ucode $INSTALL_ROOT/lib/firmware  &&
+cp -v $SPELL-$VERSION2/${SPELL/-ucode/}-1.ucode $INSTALL_ROOT/lib/firmware  &&
 cp -v $SPELL-$VERSION/${SPELL/-ucode/}-2.ucode $INSTALL_ROOT/lib/firmware
