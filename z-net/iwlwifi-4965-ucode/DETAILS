@@ -1,6 +1,7 @@
            SPELL=iwlwifi-4965-ucode
-         VERSION=228.57.2.21
-          SOURCE=$SPELL-${VERSION/2.21/1.21}.tgz
+         VERSION=228.57.2.23
+        VERSION2=228.57.1.21
+          SOURCE=$SPELL-$VERSION2.tgz
          SOURCE2=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://intellinuxwireless.org/iwlwifi/downloads/$SOURCE

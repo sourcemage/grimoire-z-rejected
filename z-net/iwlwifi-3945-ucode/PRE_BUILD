@@ -7,4 +7,7 @@ if [[ $_FW_LOADER != y && $_FW_LOADER != m ]]; then
   return 1
 fi  &&
 
-default_pre_build
+mk_source_dir  $SOURCE_DIRECTORY  &&
+cd  $SOURCE_DIRECTORY             &&
+unpack_file  ''                   &&
+unpack_file  '2'

@@ -1,3 +1,9 @@
+2009-01-23 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated ucode-2 to 228.57.2.23
+	  Use VERSION2 instead of ${VERSION/2.23/1.21} to make updates easier
+	* INSTALL: Updated ucode-2 to 228.57.2.23
+	  Use VERSION2 instead of ${VERSION/2.23/1.21} to make updates easier
+
 2008-10-14 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 228.57.2.21
 	  Provide both 228.57.2.21 (2.6.27+ kernels) and 228.57.1.21 (pre-2.6.27 kernels)
