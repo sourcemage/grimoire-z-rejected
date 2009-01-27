@@ -1,3 +1,6 @@
+2009-01-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 71.86.06, fixed bug #14483
+
 2008-10-21 Eric Sandall <sandalle@sourcemage.org>
 	* PROVIDES: Provides NVIDIA proprietary drivers
 	* INSTALL: Fix Bug #14845 (create missing /usr/share/applications)
