@@ -1,5 +1,5 @@
            SPELL=wine-gecko
-         VERSION=0.1.0
+         VERSION=0.9.0
           SOURCE=${SPELL/-/_}-$VERSION.cab
    SOURCE_URL[0]=$SOURCEFORGE_URL/wine/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
