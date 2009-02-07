@@ -9,6 +9,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
         WEB_SITE=http://www.ati.com
          ENTERED=20071107
           REJECT="Non-GPL compatible software license"
+      PATCHELEVL=1
            SHORT="X Window display driver for the ATI graphics accelerators"
             DOCS="documentation/*"
 cat << EOF

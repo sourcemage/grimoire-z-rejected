@@ -1,5 +1,5 @@
 2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
-	* DETAILS: updated spell to 9.1
+	* DETAILS: updated spell to 9.1, patchlevel++
 	* DEPENDS: use xorg-server, smgl-gl_select
 	* INSTALL: updates for smgl-gl_select
 	* PRE_BUILD: updates for smgl-gl_select
