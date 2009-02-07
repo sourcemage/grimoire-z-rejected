@@ -1,33 +1,68 @@
 cd ${SOURCE_DIRECTORY} &&
+local ARCHLIB
+case "${SMGL_COMPAT_ARCHS[1]}" in
+          "ia32") ARCHLIB=lib   ;;
+        "x86_64") ARCHLIB=lib64   ;;
+               *)  message "${PROBLEM_COLOR}" \
+                        "Unsupported architecture: ${SMGL_COMPAT_ARCHS[1]}" \
+                        "${DEFAULT_COLOR}" &&
+                return 1  ;;
+esac
+
 
 # Install the fglrx kernel module to a hopefully sane location
-mkdir -p /lib/modules/$(get_kernel_version)/kernel/drivers/char/drm &&
-install -m 644 build/lib/modules/fglrx/build_mod/fglrx.ko \
+mkdir -vp ${INSTALL_ROOT}/lib/modules/$(get_kernel_version)/kernel/drivers/char/drm &&
+install -v -m 644 build/lib/modules/fglrx/build_mod/fglrx.ko \
                ${INSTALL_ROOT}/lib/modules/$(get_kernel_version)/kernel/drivers/char/drm &&
 
-# There is basically a complete filesystem structure present with ready to use
-# files. We do a little clean up and merge it as a whole into $INSTALL_ROOT.
+# verify if there is anything conflicting with any of the other GL providers
+# nvidia_* or mesalib or xorg-server and if so put it under an ati specific
+# directory and updated smgl-gl_select
 
-rm -R build/usr/src build/usr/share/doc &&
-mv build/usr/X11R6/bin build/usr/bin &&
-case $(get_spell_provider $SPELL X11-SERVER) in
-        "xorg-server")
-                mv build/usr/X11R6/include/* build/usr/include &&
-                mkdir -p build/usr/lib/xorg &&
+cd build
+mkdir -vp $INSTALL_ROOT/usr/share/applications/ \
+          $INSTALL_ROOT/usr/share/applnk/ \
+          $INSTALL_ROOT/usr/share/icons/ \
+          $INSTALL_ROOT/usr/share/man/man8/ \
+          $INSTALL_ROOT/usr/include/GL/ \
+          $INSTALL_ROOT/usr/include/X11/extensions/ \
+          $INSTALL_ROOT/usr/lib/ati/ \
+          $INSTALL_ROOT/usr/lib/xorg/modules/ \
+          $INSTALL_ROOT/usr/lib/xorg/modules/dri/ \
+          $INSTALL_ROOT/usr/lib/xorg/modules/drivers/ \
+          $INSTALL_ROOT/usr/lib/xorg/modules/extensions/ati \
+          $INSTALL_ROOT/usr/lib/xorg/modules/linux  &&
+cp -vr etc/ati $INSTALL_ROOT/etc/ &&
+cp -vr usr/X11R6/$ARCHLIB/modules/linux/* \
+       $INSTALL_ROOT/usr/lib/xorg/modules/linux  &&
+cp -vr usr/X11R6/$ARCHLIB/modules/extensions/* \
+       $INSTALL_ROOT/usr/lib/xorg/modules/extensions/ati  &&
+cp -vr usr/X11R6/$ARCHLIB/modules/drivers/* \
+       $INSTALL_ROOT/usr/lib/xorg/modules/drivers/  &&
+cp -vr usr/X11R6/$ARCHLIB/modules/dri/* \
+       $INSTALL_ROOT/usr/lib/xorg/modules/dri/  &&
+rm -rf usr/X11R6/$ARCHLIB/modules/{dri,drivers,extensions,linux}  &&
+cp -vr usr/X11R6/$ARCHLIB/modules/* \
+       $INSTALL_ROOT/usr/lib/xorg/modules/  &&
+rm -rf usr/X11R6/$ARCHLIB/modules  &&
+cp -vr usr/X11R6/$ARCHLIB/libGL.so.1.2 \
+       $INSTALL_ROOT/usr/lib/ati/  &&
+pushd  $INSTALL_ROOT/usr/lib/ati/ &&
+ln -sfv libGL.so.1.2 libGL.so &&
+popd &&
+rm -f usr/X11R6/$ARCHLIB/libGL.so.1.2  &&
+cp -vr usr/X11R6/$ARCHLIB/* \
+       $INSTALL_ROOT/usr/lib/  &&
+cp -vr usr/X11R6/include/X11/extensions/* \
+       $INSTALL_ROOT/usr/include/X11/extensions/  &&
+cp -vr usr/X11R6/bin/* $INSTALL_ROOT/usr/bin/  && 
+cp -vr usr/include/GL/* $INSTALL_ROOT/usr/include/GL/  &&
+cp -vr usr/$ARCHLIB/* $INSTALL_ROOT/usr/lib/  &&
+cp -vr usr/sbin/* $INSTALL_ROOT/usr/sbin/  &&
+cp -vr usr/share/man/man8/* $INSTALL_ROOT/usr/share/man/man8/  &&
+cp -vr usr/share/icons/* $INSTALL_ROOT/usr/share/icons/  &&
+cp -vr usr/share/gnome/apps/* $INSTALL_ROOT/usr/share/applications/  &&
+cp -vr usr/share/ati $INSTALL_ROOT/usr/share/  &&
+cp -vr usr/share/applnk/* $INSTALL_ROOT/usr/share/applnk/  &&
+cp -vr opt/kde3/share/applnk/* $INSTALL_ROOT/usr/share/applications/
 
-# the lib* stands for lib or lib64 respectively.
-                mv build/usr/X11R6/lib*/* build/usr/lib/xorg &&
-
-                rm -R build/usr/X11R6
-        ;;
-esac &&
-chmod 0755 build/usr/bin/* &&
-
-# Abuse tar as a copy command that merges the build directory
-# with ${INSTALL_ROOT}.
-# lib is left out intentionally, as fglrx.ko is the only useful file in it and
-# it was copied earlier in this script.
-cd ${SOURCE_DIRECTORY}/build &&
-tar -c etc/ati opt usr | tar -x --directory ${INSTALL_ROOT}/
-
-# 

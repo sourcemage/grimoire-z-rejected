@@ -1,12 +1,11 @@
-. $GRIMOIRE/FUNCTIONS
            SPELL=ati-fglrx
-         VERSION=8.12
+         VERSION=9.1
           SOURCE=ati-driver-installer-${VERSION/./-}-x86.x86_64.run
 #     SOURCE_HASH=sha512:89e3409580a54fcbe2833b7b44e91847a62b5599ab6c5caf7b95e3e8688fcaa7f52a71ebcd6901d7711622375c9d2f494a05bf3151d516baa699113f20e78721
-      SOURCE_GPG=gurus.gpg:$SOURCE.sig:WORKS_FOR_ME
+     SOURCE_HASH=sha512:367b1c7ffa2b2b5e4a50c3d742267e04cf90bea23c7f1c9576e697e516eed6e9197b4d93277e9761008a491029146fd03c80e0eae3680bfbf887d670b0f50e5c
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=https://a248.e.akamai.net/f/674/9206/0/www2.ati.com/drivers/linux/64bit/${SOURCE} 
-      LICENSE[0]="GPL/QPL"
+      LICENSE[0]="$GRIMOIRE/$SECTION/$SPELL/LICENSE"
         WEB_SITE=http://www.ati.com
          ENTERED=20071107
           REJECT="Non-GPL compatible software license"

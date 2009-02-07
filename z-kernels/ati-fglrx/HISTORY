@@ -1,10 +1,11 @@
-2008-12-22 Pol Vinogradov <vin.public@gmail.com>
-	* DETAILS: updated to 8.12, fixed SOURCE to use VERSION
-	* PRE_BUILD: sedit -> sed -i, added dirty hack to make it build with
-	  recent kernels
+2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated spell to 9.1
+	* DEPENDS: use xorg-server, smgl-gl_select
+	* INSTALL: updates for smgl-gl_select
+	* PRE_BUILD: updates for smgl-gl_select
 
 2008-06-01 Bearcat M. Sandor <sorceror@feiline-soul.net>
-	* DETAILS: Updated to 8.5
+     * DETAILS: Updated to 8.5
 
 2008-05-15 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 8.476
@@ -22,6 +23,6 @@
 	* DOWNLOAD: Added the file to pass --no-check-certificate to wget
 
 2007-11-07 Martin Spitzbarth <m.spitzbarth@gmx.de>
-	* BUILD, DEPENDS, DETAILS, INSTALL, LICENSE, PRE_BUILD, PREPARE,
-	  TRIGGERS: Created the spell
+	* BUILD,DEPENDS,DETAILS,INSTALL,LICENSE,PRE_BUILD,PREPARE,TRIGGERS:
+	  Created the spell
 

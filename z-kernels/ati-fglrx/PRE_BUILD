@@ -1,4 +1,3 @@
-local ATI_XPROVIDER
 local ATI_XVERSION
 
 #
@@ -21,10 +20,8 @@ cd ${SOURCE_DIRECTORY} &&
 mv archive/common/usr/share/doc/fglrx documentation &&
 
 # We don't always build for the currently running kernel
-sed -i "s:^KVER .*:KVER            = $(get_kernel_version):" \
-      archive/common/lib/modules/fglrx/build_mod/2.6.x/Makefile &&
-
-ATI_XPROVIDER="$(get_spell_provider $SPELL X11-SERVER)" &&
+sedit "s:^KVER .*:KVER            = $(get_kernel_version):" \
+      archive/common/lib/modules/fglrx/build_mod/2.6.x/Makefile
 
 #
 # Preparing the build directory structure
@@ -37,25 +34,12 @@ mkdir build &&
 # Merge files from different source directories to match the system
 cp -R archive/common/* build &&
 
-sed -i 's:MODULE_LICENSE("Proprietary. (C) 2002 - ATI Technologies, Starnberg, GERMANY");:MODULE_LICENSE("GPL");:' \
-      build/lib/modules/fglrx/build_mod/firegl_public.c &&
-
-case $ATI_XPROVIDER in
-        xorg-server)
-                ATI_XVERSION=x710
-        ;;
-        xorg)
-                ATI_XVERSION=x$(get_installed_version xorg) &&
-                # The next two lines convert x6.9.0 to x690
-                ATI_XVERSION=${ATI_XVERSION/./} &&
-                ATI_XVERSION=${ATI_XVERSION/./}
-        ;;
-        *)
-                message "${PROBLEM_COLOR}" \
-                        "Incompatible provider for X11-SERVER: " \
-                        "${SPELL_COLOR}$ATI_XPROVIDER${DEFAULT_COLOR}"
-        ;;
-esac &&
+if grep -q "1.5" <<< $(installed_version xorg-server)
+then
+  ATI_XVERSION=x740
+else
+  ATI_XVERSION=x710
+fi  &&
 
 case "${SMGL_COMPAT_ARCHS[1]}" in
         "ia32")
@@ -66,9 +50,11 @@ case "${SMGL_COMPAT_ARCHS[1]}" in
                 cp -R archive/arch/x86_64/* build &&
                 cp -R archive/${ATI_XVERSION}_64a/* build
         ;;
-        *)
+               *)
                 message "${PROBLEM_COLOR}" \
                         "Unsupported architecture: ${SMGL_COMPAT_ARCHS[1]}" \
-                        "${DEFAULT_COLOR}"
+                        "${DEFAULT_COLOR}" &&
+                return 1
         ;;
 esac
+
