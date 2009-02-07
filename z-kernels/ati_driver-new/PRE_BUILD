@@ -1,13 +1,1 @@
-. $GRIMOIRE/FUNCTIONS                       &&
-mk_source_dir $SOURCE_DIRECTORY             &&
-cd $SOURCE_DIRECTORY                        &&
-unpack_file ''                              &&
-if [[ "${ATI_DRIVER_QT}" == "y" ]]
-then
-   mkdir -p ${SOURCE_DIRECTORY}/fglpanel    &&
-   cd fglpanel                              &&
-   tar -zxvf ${SOURCE_DIRECTORY}/usr/src/ATI/fglrx_panel_sources.tgz  &&
-   cd $SOURCE_DIRECTORY
-fi                                          &&
-sedit "s:ln\ \-s:cp\ \-v:g" lib/modules/fglrx/make_install.sh
-
+true
