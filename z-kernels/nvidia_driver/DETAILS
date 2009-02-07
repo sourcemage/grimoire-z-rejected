@@ -42,6 +42,7 @@ esac
          ENTERED=20030401
   SECURITY_PATCH=1
           REJECT="Non-Free Software license"
+      PATCHLEVEL=1
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
            SHORT="Driver provided by NVIDIA for NVIDIA GPUs"
 cat << EOF

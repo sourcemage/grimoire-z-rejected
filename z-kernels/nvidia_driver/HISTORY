@@ -1,7 +1,7 @@
 2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: xorg-server
 	* DETAILS: patchlevel by default is 0, ARCHIVE even if binary,
-	  bug has been fixed, fixed rejected reason
+	  bug has been fixed, fixed rejected reason, patchlevel++
 	* INSTALL: fixups for smgl-gl_select
 	* POST_REMOVE: removed
 	* PRE_BUILD: fixups
