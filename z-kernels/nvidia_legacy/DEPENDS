@@ -1,2 +1,3 @@
-depends  X11-SERVER  &&
+depends  xorg-server  &&
+depends  smgl-gl_select  &&
 depends  which

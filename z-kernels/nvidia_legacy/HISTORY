@@ -1,3 +1,12 @@
+2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: drop archive=off and other such useless stuff,
+	  updated to latest version
+	* PRE_BUILD: no longer needed to backup stuff
+	* glext-redef.patch: not used, removed
+	* POST_REMOVE: removed
+	* INSTALL: modified for smgl-gl_select
+	* DEPENDS: added smgl-gl_select, xorg-server
+
 2009-01-27 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 71.86.06
 
