@@ -1,7 +1,7 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_legacy_173xx
 if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=173.14.15
+         VERSION=173.14.16
 else
          VERSION=173.14.12
 fi
@@ -9,7 +9,7 @@ case "${SMGL_COMPAT_ARCHS[1]}" in
 	x86_64)
 	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
 if [[ $NVIDIA_BETA == y ]]; then
-     SOURCE_HASH=sha512:2d89faf6cc87861ba5dc8296a9b1622d4aa21fc598d49d8d96f8cdb9e4dfb9a183627434df3a95e7c42f9ee6f18ccbda276ca5a8df955cbd26a11bad40352dba
+     SOURCE_HASH=sha512:4c4dde74ae6897c5ff4c0dc6abf42433fafa975504a460d48aa4520b022f5000170f881a812b4f1a95553f143e17d05f1bfc55ef1f3390192823abdf6cc2f1ed
       SOURCE_URL=ftp://download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 else
      SOURCE_HASH=sha512:eb94d7cce96e330ef6d1ef60342d1fb8459e5a4d156408ea9cd3d68cff0a6a346ba3ad9508fed2ad88b4666522e82c235e88698a4d8116881af8d8533c988923
@@ -20,7 +20,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
 	ia32)
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
 if [[ $NVIDIA_BETA == y ]]; then
-     SOURCE_HASH=sha512:e78d1d4ee731f398d28b60b34302272e1716922b4dc358b125fa8736d62810e2df5972662d7cc953ffe07f1c8218752b9c9adcc942cf86f03dfcc6a9dd837cc7
+     SOURCE_HASH=sha512:cc3c631fa47d4ae3deb762f9ca2178dbdbab20120a223e538dcc97ed26b319c4df9c40c336d9b64e84f4c044e3db8c62019d886a5d0ce30d84f40e8c4e7ca2b4
       SOURCE_URL=ftp://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 else
      SOURCE_HASH=sha512:8e1393c99e673337fef164d9cbe9f9e16e6292bba4d5233a261bcee72cf174c6991bec25579c05f08a013d5caa0812005379b53996f157816bf71c0804c09db9
@@ -40,14 +40,10 @@ esac
 #      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030401
-      PATCHLEVEL=0
   SECURITY_PATCH=1
-         ARCHIVE=off
           REJECT="Non-GPL compatible software license"
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
            SHORT="Driver provided by NVIDIA for NVIDIA GPUs"
-  # Remove this when bug #12843 is fixed
-  STAGED_INSTALL=off
 cat << EOF
 NVIDIA
 These are the nvidia provided binary X drivers for their graphics cards.
