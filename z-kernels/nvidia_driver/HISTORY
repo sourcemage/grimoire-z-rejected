@@ -2,7 +2,7 @@
 	* DEPENDS: xorg-server
 	* DETAILS: patchlevel by default is 0, ARCHIVE even if binary,
 	  bug has been fixed, fixed rejected reason, patchlevel++
-	* INSTALL: fixups for smgl-gl_select
+	* INSTALL: fixups for smgl-gl_select, libGLcore is something different
 	* POST_REMOVE: removed
 	* PRE_BUILD: fixups
 	* glext-redef.patch: removed

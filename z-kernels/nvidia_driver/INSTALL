@@ -38,7 +38,7 @@ pushd  $SOURCE_DIRECTORY/usr/lib  &&
 
 # Fill in the path to libGL.so
 sed -i 's|__LIBGL_PATH__|/usr/lib|' libGL.la 
-for lib in libGL.la  \
+for lib in libGL.la  libGLcore.so.${VERSION/-/.} \
            libnvidia-tls.so.${VERSION/-/.} libnvidia-cfg.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                              &&
@@ -58,6 +58,7 @@ install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
   ln  -sfn  libGL.so.1                       libGL.so            &&
   popd
   pushd  $INSTALL_ROOT/usr/lib                                   &&
+  ln  -sfn  libGLcore.so.${VERSION/-/.}      libGLcore.so.1      &&
   ln  -sfn  libnvidia-cfg.so.${VERSION/-/.}  libnvidia-cfg.so.1  &&
   ln  -sfn  libnvidia-cfg.so.1               libnvidia-cfg.so    &&
   ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
@@ -71,7 +72,8 @@ popd                              &&
 # Install X11 OpenGL libraries
 #
 pushd  $SOURCE_DIRECTORY/usr/X11R6/lib  &&
-for lib in libXvMCNVIDIA.a libXvMCNVIDIA.so.${VERSION/-/.}; do
+for lib in libGLcore.so.${VERSION/-/.} \
+				    libXvMCNVIDIA.a libXvMCNVIDIA.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                                    &&
   #
@@ -106,7 +108,6 @@ ln  -sfn  "libnvidia-wfb.so.${VERSION/-/.}"  \
           "libwfb.so"                        &&
 pushd  $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia  &&
 ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
-ln  -sfn  libGLcore.so.${VERSION/-/.}      libGLcore.so.1      &&
 popd                                                &&
 popd                                            &&
 popd
