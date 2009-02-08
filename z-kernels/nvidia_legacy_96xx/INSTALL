@@ -1,13 +1,5 @@
-local X_PRE X_MOD KVER                                                    &&
+local X_MOD KVER                                                    &&
 KVER=$(get_kernel_version)                                                &&
-
-if test "$(get_spell_provider $SPELL X11-SERVER)" = xorg-server; then
-   X_PRE="${INSTALL_ROOT}$(pkg-config --variable=prefix xorg-server)"     &&
-   X_MOD="${INSTALL_ROOT}$(pkg-config --variable=moduledir xorg-server)"  
-else
-   X_PRE="${INSTALL_ROOT}/usr/X11R6"                                      &&
-   X_MOD="${INSTALL_ROOT}/usr/X11R6/lib/modules"                          
-fi                                                                        &&
 
 #
 # Install kernel module 'nvidia.ko'
@@ -24,21 +16,18 @@ popd                                                 &&
 #
 pushd  $SOURCE_DIRECTORY/usr/bin  &&
 for file in nvidia-bug-report.sh nvidia-settings;  do
-  install  -m 0755  -o root  -g root  $file  $INSTALL_ROOT/usr/bin
+  install -v -m 0755  -o root  -g root  $file  $INSTALL_ROOT/usr/bin
 done                              &&
 popd                              &&
-install  -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &&
+install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &&
 
 #
 # Install OpenGL headers
 #
 pushd  $SOURCE_DIRECTORY/usr/include/GL  &&
-if  [  !  -d  $X_PRE/include/GL  ];  then
-  mkdir  -p  $X_PRE/include/GL
-fi                                       &&
-#patch -p0 < ${SPELL_DIRECTORY}/glext-redef.patch &&
+mkdir  -vp  $INSTALL_ROOT/usr/include/GL/nvidia
 for file in glext.h gl.h glx.h; do
-  install  -m 0644  -o root  -g root  $file  $X_PRE/include/GL/
+  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/GL/nvidia/
 done                                     &&
 popd                                     &&
 
@@ -49,26 +38,25 @@ pushd  $SOURCE_DIRECTORY/usr/lib  &&
 
 # Fill in the path to libGL.so
 sed -i 's|__LIBGL_PATH__|/usr/lib|' libGL.la 
-for lib in libGLcore.so.${VERSION/-/.} libGL.la libGL.so.${VERSION/-/.}  \
-           libnvidia-tls.so.${VERSION/-/.} ; do
-  install  -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
+for lib in libGL.la  libGLcore.so.${VERSION/-/.} \
+           libnvidia-tls.so.${VERSION/-/.}; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                              &&
-
-if  [  !  -d  $INSTALL_ROOT/usr/lib/tls  ];  then
-  mkdir  -p  $INSTALL_ROOT/usr/lib/tls
-fi  &&
-
-install  -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
+mkdir -vp $INSTALL_ROOT/usr/lib/nvidia \
+          $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia/  &&
+cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/nvidia/ &&
+mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
+install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
   #
   # Create library symlinks
   #
-  pushd  $INSTALL_ROOT/usr/lib                                   &&
-  ln  -sfn  libGLcore.so.${VERSION/-/.}      libGLcore.so.1      &&
+  pushd  $INSTALL_ROOT/usr/lib/nvidia                            &&
   ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
   ln  -sfn  libGL.so.1                       libGL.so            &&
-  ln  -sfn  libnvidia-cfg.so.${VERSION/-/.}  libnvidia-cfg.so.1  &&
-  ln  -sfn  libnvidia-cfg.so.1               libnvidia-cfg.so    &&
+  popd
+  pushd  $INSTALL_ROOT/usr/lib                                   &&
+  ln  -sfn  libGLcore.so.${VERSION/-/.}      libGLcore.so.1      &&
   ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
   popd                                                           &&
   pushd  $INSTALL_ROOT/usr/lib/tls                               &&
@@ -81,12 +69,12 @@ popd                              &&
 #
 pushd  $SOURCE_DIRECTORY/usr/X11R6/lib  &&
 for lib in libXvMCNVIDIA.a libXvMCNVIDIA.so.${VERSION/-/.}; do
-  install  -m 0644  -o root  -g root  $lib  $X_PRE/lib
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                                    &&
   #
   # Setup symlinks
   #
-  pushd  $X_PRE/lib                                     &&
+  pushd  $INSTALL_ROOT/usr/lib                                     &&
   ln  -sfn  libXvMCNVIDIA.so.${VERSION/-/.}  libXvMCNVIDIA_dynamic.so.1  &&
   popd                                                                   &&
 popd                                    &&
@@ -94,39 +82,33 @@ popd                                    &&
 #
 # Install X11 modules
 #
-pushd  $SOURCE_DIRECTORY/usr/X11R6/lib/modules  &&
-#cp  libnvidia-wfb.so.${VERSION/-/.}  "$X_MOD/"  &&
-mkdir -p $X_MOD/drivers                         &&
+pushd  $SOURCE_DIRECTORY/usr/X11R6/lib/modules/  &&
+mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/nvidia/  &&
+mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/drivers                         &&
 for driver in nvidia_drv.o nvidia_drv.so; do
-  install  -m 0644  -o root  -g root            \
-     drivers/$driver  $X_MOD/drivers
+  install -v -m 0644  -o root  -g root            \
+     drivers/$driver  $INSTALL_ROOT/usr/lib/xorg/modules/drivers/
 done                                            &&
-mkdir -p "$X_MOD/extensions"                    &&
-install  -m 0644  -o root  -g root              \
-extensions/libglx.so.${VERSION/-/.}             \
-                  $X_MOD/extensions             &&
-  #
-  # Setup symlinks
-  #
-#  ln  -sfn  "$X_MOD/libnvidia-wfb.so.${VERSION/-/.}"  \
-#            "$X_MOD/libnvidia-wfb.so"                 &&
-  pushd  $X_MOD/extensions  &&
-  ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
-  popd                                                &&
+install -v -m 0644  -o root  -g root extensions/libglx.so.${VERSION/-/.} \
+        $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia             &&
+#
+# Setup symlinks
+#
+pushd  $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia  &&
+ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
+popd                                                &&
 popd                                            &&
+popd
 
 #
 # Install Freedesktop.org spec
 #
-if [[ ! -d $INSTALL_ROOT/usr/share/applications ]];  then
-  mkdir -p $INSTALL_ROOT/usr/share/applications
-fi  &&
-
+mkdir -vp $INSTALL_ROOT/usr/share/applications
 install  -m 0644  -o root  -g root                                         \
          $SOURCE_DIRECTORY/usr/share/applications/nvidia-settings.desktop  \
          $INSTALL_ROOT/usr/share/applications                              &&
 
-#
+
 # Install documentation
 #
 pushd  $SOURCE_DIRECTORY/usr/share/doc                         &&
@@ -140,9 +122,7 @@ popd                                                           &&
 mkdir -p $INSTALL_ROOT/usr/share/pixmaps/                      &&
 cp  usr/share/pixmaps/nvidia-settings.png  $INSTALL_ROOT/usr/share/pixmaps/       &&
 
-if  [  !  -d  $INSTALL_ROOT/usr/share/doc/$SPELL  ];  then
-  mkdir  -p  $INSTALL_ROOT/usr/share/doc/$SPELL
-fi                                                             &&
+mkdir  -p  $INSTALL_ROOT/usr/share/doc/$SPELL
 install  -m 0644  -o root  -g root  $SOURCE_DIRECTORY/LICENSE  \
          $INSTALL_ROOT/usr/share/doc/$SPELL                    &&
 install  -m 0644  -o root  -g root  $SOURCE_DIRECTORY/LICENSE  \

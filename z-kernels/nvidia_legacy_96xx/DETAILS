@@ -1,17 +1,17 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_legacy_96xx
-         VERSION=96.43.07
+         VERSION=96.43.10
 case "${SMGL_COMPAT_ARCHS[1]}" in
 	x86_64)
-     SOURCE_HASH=sha512:b5b2a6b8c243fc968662479598b5420b15b15a8a0412e97586c63c8e8be43a422165ca5acbb98ba610f77273f53d029bb63388d01b03844d726527d604e7928c
+     SOURCE_HASH=sha512:0b5ec79441b3f47fa04573cc02b4c40a1f38a81200f1852b714474aad262f7fc4265a02f43600e16b1ccd09efc112432b6147702f4a1e02d73b39619969cdd08
 	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
-      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
+      SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
         ;;
 	ia32)
-     SOURCE_HASH=sha512:7b5bab3dbb8173e422231f0cf18b74c6588f91ec0643045c0deee0cbe65a31b9a529283b25cbfef7d80a8b75ccde8893056a34155eaa892b51891afb1eae345a
+     SOURCE_HASH=sha512:80ee48aab7077d1042f5759a6b2036cb9d6efd8ee54571cfe2e45a6c0566b40f5690774024255d1e37eb1415653fe581764679fb1ac69ec716c4885ce6f468b4
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
-      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
+      SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
         ;;
 ############################################################
@@ -28,12 +28,9 @@ esac
          ENTERED=20030401
       PATCHLEVEL=1
   SECURITY_PATCH=1
-         ARCHIVE=off
           REJECT="Non-GPL compatible software license"
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
            SHORT="Driver provided by NVIDIA for NVIDIA GPUs"
-  # Remove this when bug #12843 is fixed
-  STAGED_INSTALL=off
 cat << EOF
 NVIDIA
 These are the nvidia provided binary X drivers for their graphics cards.

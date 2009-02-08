@@ -1,3 +1,12 @@
+2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: use xorg-server and added smgl-gl_select
+	* DETAILS: updated to .10
+	* INSTALL: modified for smgl-gl_select
+	* POST_REMOVE: removed
+	* PRE_BUILD: no longer backup
+	* glext-redef.patch: removed
+	* volatiles: removed
+
 2009-01-27 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 96.43.07, fixed bug #14483
 
