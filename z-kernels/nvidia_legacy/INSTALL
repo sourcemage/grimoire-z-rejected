@@ -24,11 +24,11 @@ install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &
 #
 # Install OpenGL headers
 #
+mkdir  -vp  $INSTALL_ROOT/usr/include/GL/nvidia &&
 pushd  $SOURCE_DIRECTORY/usr/include/GL  &&
 # workaround absent file from legacy
 cp $INSTALL_ROOT/usr/include/GL/mesa/glxext.h \
    $INSTALL_ROOT/usr/include/GL/nvidia/  &&
-mkdir  -vp  $INSTALL_ROOT/usr/include/GL/nvidia &&
 for file in glext.h gl.h glx.h; do
   install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/GL/nvidia/
 done                                     &&
@@ -40,8 +40,8 @@ popd                                     &&
 pushd  $SOURCE_DIRECTORY/usr/lib  &&
 
 # Fill in the path to libGL.so
-sed -i 's|__LIBGL_PATH__|/usr/lib|' libGL.la 
-for lib in libGL.la  libGLcore.so.${VERSION/-/.} \
+sed -i 's|__LIBGL_PATH__|/usr/lib|' libGL.la
+for lib in libGL.la libGLcore.so.${VERSION/-/.} \
            libnvidia-tls.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                              &&
@@ -86,8 +86,8 @@ popd                                    &&
 # Install X11 modules
 #
 pushd  $SOURCE_DIRECTORY/usr/X11R6/lib/modules/  &&
-mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/nvidia/  &&
-mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/drivers                         &&
+mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/drivers    &&
+mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia  &&
 for driver in nvidia_drv.o nvidia_drv.so; do
   install -v -m 0644  -o root  -g root            \
      drivers/$driver  $INSTALL_ROOT/usr/lib/xorg/modules/drivers/
@@ -101,7 +101,6 @@ pushd  $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia  &&
 ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
 popd                                                &&
 popd                                            &&
-popd
 
 #
 # Install Freedesktop.org spec
