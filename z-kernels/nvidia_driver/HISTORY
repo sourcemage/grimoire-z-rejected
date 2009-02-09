@@ -3,7 +3,8 @@
 	* FINAL: run internal glselect
 	* PRE_REMOVE: return back to mesa on dispel
 	* REPAIR^all^PRE_REMOVE: return back to mesa on dispel
-	* POST_RESURRECT: added for glselect
+	* POST_RESURRECT: added for glselect, fixed
+	* INSTALL: fixup
 
 2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: xorg-server
