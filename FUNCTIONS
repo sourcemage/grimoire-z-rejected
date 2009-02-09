@@ -615,3 +615,5 @@ function get_kernel_config()
     get_sorcery_kernel_config "$1" || get_running_kernel_config "$1"
   fi
 }
+
+. $GRIMOIRE/glselect.function

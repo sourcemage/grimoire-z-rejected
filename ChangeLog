@@ -1,3 +1,8 @@
+2009-02-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* .glselect/{nvidia,ati,mesa}-filelist: added from gl_select
+	* glselect.function: gl_select as a function
+	* FUNCTIONS: source glselect.function
+
 2009-01-05 Julien "_kaze_" ROZO <julien@rozo.org>
 	* z-utils/geekbench: new spell, a set of benchmarks
 
