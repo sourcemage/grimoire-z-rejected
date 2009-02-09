@@ -1,3 +1,9 @@
+2009-02-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: removed smgl-gl_select, now uses internal
+	* FINAL: run internal glselect
+	* PRE_REMOVE: return back to mesa on dispel
+	* REPAIR^all^PRE_REMOVE: return back to mesa on dispel
+
 2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: drop archive=off and other such useless stuff,
 	  updated to latest version
