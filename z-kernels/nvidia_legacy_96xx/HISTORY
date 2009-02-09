@@ -3,8 +3,8 @@
 	* FINAL: run internal glselect
 	* PRE_REMOVE: return back to mesa on dispel
 	* REPAIR^all^PRE_REMOVE: return back to mesa on dispel
-	* POST_RESURRECT: added for glselect
-	* INSTALL: copy glxext.h from mesa to avoid a bad link
+	* POST_RESURRECT: added for glselect, fixed
+	* INSTALL: copy glxext.h from mesa to avoid a bad link, fixups
 
 2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: use xorg-server and added smgl-gl_select

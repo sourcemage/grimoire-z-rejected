@@ -25,10 +25,10 @@ install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &
 # Install OpenGL headers
 #
 pushd  $SOURCE_DIRECTORY/usr/include/GL  &&
+mkdir  -vp  $INSTALL_ROOT/usr/include/GL/nvidia &&
 # workaround absent file from legacy
 cp $INSTALL_ROOT/usr/include/GL/mesa/glxext.h \
    $INSTALL_ROOT/usr/include/GL/nvidia/  &&
-mkdir  -vp  $INSTALL_ROOT/usr/include/GL/nvidia &&
 for file in glext.h gl.h glx.h; do
   install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/GL/nvidia/
 done                                     &&
