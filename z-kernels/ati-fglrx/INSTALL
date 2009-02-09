@@ -65,4 +65,13 @@ cp -vr usr/share/gnome/apps/* $INSTALL_ROOT/usr/share/applications/  &&
 cp -vr usr/share/ati $INSTALL_ROOT/usr/share/  &&
 cp -vr usr/share/applnk/* $INSTALL_ROOT/usr/share/applnk/  &&
 cp -vr opt/kde3/share/applnk/* $INSTALL_ROOT/usr/share/applications/
+mkdir -vp $INSTALL_ROOT/usr/include/GL/ati/  &&
+cp -vr $INSTALL_ROOT/usr/include/GL/mesa/gl.h \
+       $INSTALL_ROOT/usr/include/GL/ati/  &&
+cp -vr $INSTALL_ROOT/usr/include/GL/mesa/glext.h \
+       $INSTALL_ROOT/usr/include/GL/ati/  &&
+cp -vr $INSTALL_ROOT/usr/include/GL/mesa/glx.h \
+       $INSTALL_ROOT/usr/include/GL/ati/  &&
+cp -vr $INSTALL_ROOT/usr/include/GL/mesa/glxext.h \
+       $INSTALL_ROOT/usr/include/GL/ati/
 
