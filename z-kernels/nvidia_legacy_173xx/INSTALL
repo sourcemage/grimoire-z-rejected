@@ -45,8 +45,6 @@ done                              &&
 mkdir -vp $INSTALL_ROOT/usr/lib/nvidia \
           $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia/  &&
 cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/nvidia &&
-cp -vr libGLcore.so.${VERSION/-/.} \
-       $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia/  &&
 mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
 install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
@@ -87,9 +85,6 @@ popd                                    &&
 # Install X11 modules
 #
 pushd  $SOURCE_DIRECTORY/usr/X11R6/lib/modules/  &&
-mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/nvidia/  &&
-cp -v libnvidia-wfb.so.${VERSION/-/.}  \
-   $INSTALL_ROOT/usr/lib/xorg/modules/nvidia/ &&
 mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/drivers                         &&
 for driver in nvidia_drv.o nvidia_drv.so; do
   install -v -m 0644  -o root  -g root            \
@@ -100,11 +95,6 @@ install -v -m 0644  -o root  -g root extensions/libglx.so.${VERSION/-/.} \
 #
 # Setup symlinks
 #
-pushd $INSTALL_ROOT/usr/lib/xorg/modules/nvidia/  &&
-ln  -sfn  "libnvidia-wfb.so.${VERSION/-/.}"  \
-          "libnvidia-wfb.so"     &&
-ln  -sfn  "libnvidia-wfb.so.${VERSION/-/.}"  \
-          "libwfb.so"                        &&
 pushd  $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia  &&
 ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
 popd                                                &&
