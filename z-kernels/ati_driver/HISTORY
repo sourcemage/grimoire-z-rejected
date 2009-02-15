@@ -1,3 +1,7 @@
+2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* BUILD, DEPENDS, PRE_BUILD, TRIGGERS: deprecating to ati-fglrx
+	* CONFLICTS, DETAILS,	INSTALL, PROVIDES: deprecating to ati-fglrx
+
 2008-04-04 Eric Sandall <sandalle@sourcemage.org>
 	* PROVIDES: Provides FGLRX
 

@@ -1,3 +1,20 @@
+2009-02-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: removed smgl-gl_select, now uses internal
+	* FINAL: run internal glselect
+	* PRE_REMOVE: return back to mesa on dispel
+	* REPAIR^all^PRE_REMOVE: return back to mesa on dispel
+	* POST_RESURRECT: added for glselect, fixed
+	* INSTALL: workaround for missing glxext.h
+
+2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: drop archive=off and other such useless stuff,
+	  updated to latest version
+	* PRE_BUILD: no longer needed to backup stuff
+	* glext-redef.patch: not used, removed
+	* POST_REMOVE: removed
+	* INSTALL: modified for smgl-gl_select
+	* DEPENDS: added smgl-gl_select, xorg-server
+
 2009-01-27 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 71.86.06
 

@@ -1,1 +1,2 @@
 provides FGLRX
+provides OPENGL

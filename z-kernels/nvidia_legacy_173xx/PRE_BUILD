@@ -1,35 +1,5 @@
 unpack_file ''  &&
 
-message "${MESSAGE_COLOR}Backing up existing X/mesalib headers and libs${DEFAULT_COLOR}"  &&
-
-local  i  X_DIR  GL_DIR  GL_LIB             &&
-X_DIR=$INSTALL_ROOT/usr/include/GL/x        &&
-GL_DIR=$INSTALL_ROOT/usr/include/GL         &&
-
-if spell_ok mesalib; then  
-   GL_LIB=$INSTALL_ROOT/usr/lib                       
-else 
-   GL_LIB=$INSTALL_ROOT/usr/X11R6/lib
-fi                                          &&
-
-mkdir  -p  $X_DIR                           &&
-
-if ! [[ -f $X_DIR/done ]]; then
-  for i in gl.h glext.h glx.h glxext.h; do 
-     if [ -e $GL_DIR/$i ]; then
-        mv -v $GL_DIR/$i $X_DIR             
-     fi
-  done
-  for i in $GL_LIB/libGL.so.*; do
-     if [ -e $i ]; then
-        mv -v $i $X_DIR                     
-     fi
-  done
-  touch $X_DIR/done
-else
-  message "${SPELL_COLOR}X/mesalib headers and libs already backed up${DEFAULT_COLOR}"
-fi  &&
-
 sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
                --target $SOURCE_DIRECTORY                     &&
 cd $SOURCE_DIRECTORY                                          &&

@@ -1,1 +1,3 @@
 conflicts  ATI_driver  y
+conflicts  ati_driver-new y
+conflicts  ati-fglrx y

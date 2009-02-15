@@ -1,12 +1,1 @@
-#
-# If libwfb.so is a file and not a symlink it's from xorg-server, remove
-# from this spell's install log
-# Bug #14819
-#
-if [[ -f $INSTALL_ROOT/usr/lib/xorg/modules/libwfb.so &&
-    ! -h $INSTALL_ROOT/usr/lib/xorg/modules/libwfb.so ]];  then
-  sedit '/\/usr\/lib\/xorg\/modules\/libwfb.so/d' $INSTALL_LOGS/$SPELL-$(installed_version $SPELL)
-
-fi  &&
-
-default_pre_remove
+glselect mesa

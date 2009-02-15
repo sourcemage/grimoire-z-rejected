@@ -1,3 +1,21 @@
+2009-02-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: removed smgl-gl_select, now uses internal
+	* FINAL: run internal glselect
+	* PRE_REMOVE: return back to mesa on dispel
+	* REPAIR^all^PRE_REMOVE: return back to mesa on dispel
+	* POST_RESURRECT: added for glselect, fixed
+	* INSTALL: fixups
+
+2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: use xorg-server and smgl-gl_select
+	* DETAILS: updated beta to .16
+	* INSTALL: modified for smgl-gl_select
+	* PRE_BUILD: no longer backup
+	* POST_REMOVE: removed
+	* PRE_REMOVE: removed
+	* REPAIR^all^PRE_REMOVE: removed
+	* volatiles: removed
+
 2009-01-06 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: NVIDIA_BETA 173.14.15, updated SOURCE_URL
 	* PRE_BUILD: patch only stable version

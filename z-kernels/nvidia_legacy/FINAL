@@ -1,1 +1,2 @@
+glselect nvidia &&
 message "${MESSAGE_COLOR}NOTICE: You can run nvidia-xconfig to auto-configure X for nvidia_driver.${DEFAULT_COLOR}"

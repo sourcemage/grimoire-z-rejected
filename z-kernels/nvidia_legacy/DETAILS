@@ -1,39 +1,35 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_legacy
-         VERSION=71.86.06
+         VERSION=71.86.08
 case "${SMGL_COMPAT_ARCHS[1]}" in
-	x86_64)
-     SOURCE_HASH=sha512:dd9bba44934fe7a415c5d906315b4111ca81bd69a319995e99bfb5867706ae848dab607be3f0909171f952a512fed9b9381379f487589b5eb5b31b159b6346c1
-	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
-      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
+  x86_64)
+     SOURCE_HASH=sha512:907a48f5a2d67a7fe96edfec5e89310995c66ffbf7c524e30a697dcbf078272dc6015d35073f8af7009872658dac194091373ef1ea6208be8a1869ee6ca9d977
+          SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
+      SOURCE_URL=ftp://download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
         ;;
-	ia32)
-     SOURCE_HASH=sha512:e7f6cd1d9086934f513d14f7087943e392b469b27b011206bfc94c59d283df30c754a429fbb5285fc50c9ef5ae3aca4c258f15c54893e41245a020351ce8da99
+  ia32)
+     SOURCE_HASH=sha512:97dc54f3652781a420a13f84d0cb150824329fffe5d590a8efba76aabdc3175f2ccff69ba8382a2ff9bcf5210c0b64a7a148d6a666c9f5b6d4e5f4976b28a4b4
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
-      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
+      SOURCE_URL=ftp://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
         ;;
 ############################################################
 # missing ia64 support we don't have an arch spec for it???
 ############################################################
-	*)
-	 VERSION=${SMGL_COMPAT_ARCHS[0]}
-	  SOURCE=
+  *)
+         VERSION=${SMGL_COMPAT_ARCHS[0]}
+          SOURCE=
       SOURCE_URL=
         ;;
 esac
 #      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030401
-      PATCHLEVEL=1
   SECURITY_PATCH=1
-         ARCHIVE=off
           REJECT="Non-GPL compatible software license"
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
            SHORT="Driver provided by NVIDIA for NVIDIA GPUs"
-  # Remove this when bug #12843 is fixed
-  STAGED_INSTALL=off
 cat << EOF
 NVIDIA
 These are the nvidia provided binary X drivers for their graphics cards.

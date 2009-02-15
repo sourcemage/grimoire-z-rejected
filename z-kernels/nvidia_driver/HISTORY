@@ -1,3 +1,26 @@
+2009-02-11 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated stable version to 180.29
+
+2009-02-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: removed smgl-gl_select, now uses internal
+	* FINAL: run internal glselect
+	* PRE_REMOVE: return back to mesa on dispel
+	* REPAIR^all^PRE_REMOVE: return back to mesa on dispel
+	* POST_RESURRECT: added for glselect, fixed
+	* INSTALL: fixup
+
+2009-02-08 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DEPENDS: xorg-server
+	* DETAILS: patchlevel by default is 0, ARCHIVE even if binary,
+	  bug has been fixed, fixed rejected reason, patchlevel++
+	* INSTALL: fixups for smgl-gl_select, libGLcore is something different
+	* POST_REMOVE: removed
+	* PRE_BUILD: fixups
+	* glext-redef.patch: removed
+	* volatiles: removed
+	* PRE_REMOVE: removed
+	* REPAIR^all^PRE_REMOVE: removed
+
 2009-01-29 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated beta version to 180.27
 
