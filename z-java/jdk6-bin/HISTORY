@@ -1,3 +1,8 @@
+2009-02-15 David Kowis <dkowis@shlrm.org>
+	* PRE_BUILD: changed extraction method to use the one sun provides
+	  This also builds a few more jars than it used to.
+	* INSTALL: fixed installing of plugins, and added amd64 plugin
+
 2009-02-08 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 6u12
 
