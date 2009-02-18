@@ -1,3 +1,8 @@
+2009-02-17 Eric Sandall <sandalle@sourcemage.org>
+	* INSTALL: Install plugins to xulrunner instead of firefox
+	  Firefox picks up it's plugins from xulrunner now:
+	  /usr/lib/firefox/plugins -> /usr/lib/xulrunner/plugins
+
 2009-02-15 David Kowis <dkowis@shlrm.org>
 	* PRE_BUILD: changed extraction method to use the one sun provides
 	  This also builds a few more jars than it used to.

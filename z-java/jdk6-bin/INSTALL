@@ -15,12 +15,12 @@ then
 		              ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libnpjp2.so
 	fi &&
 
-	if [ -d ${INSTALL_ROOT}/usr/lib/firefox/plugins ]
+	if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]
 	then
 		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
-                      ${INSTALL_ROOT}/usr/lib/firefox/plugins/libjavaplugin_oji.so &&
+                      ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libjavaplugin_oji.so &&
 		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/i386/libnpjp2.so \
-		              ${INSTALL_ROOT}/usr/lib/firefox/plugins/libnpjp2.so
+		              ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libnpjp2.so
 	fi
 elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
 	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
@@ -29,10 +29,10 @@ elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
 		              ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libnpjp2.so
 	fi &&
 
-	if [ -d ${INSTALL_ROOT}/usr/lib/firefox/plugins ]
+	if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]
 	then
 		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/amd64/libnpjp2.so \
-		              ${INSTALL_ROOT}/usr/lib/firefox/plugins/libnpjp2.so
+		              ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libnpjp2.so
 	fi
 fi  &&
 
