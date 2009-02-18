@@ -2,54 +2,55 @@ cp -pPR jdk$VER "$INSTALL_ROOT/usr/lib" &&
 
 if [[ "${ARCHITECTURE[0]}" == "i386" || "${ARCHITECTURE[0]}" == "i486" ]]
 then
-	message "${PROBLEM_COLOR}The package says i586 so if you really are running an i386 or i486 you may experience problems with this package${DEFAULT_COLOR}"
+  message "${PROBLEM_COLOR}The package says i586 so if you really are running an i386 "  \
+          "or i486 you may experience problems with this package${DEFAULT_COLOR}"
 fi
 
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "ia32" ]]
 then	
-	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
-	then
-		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
-		              ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libjavaplugin_oji.so &&
-		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/i386/libnpjp2.so \
-		              ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libnpjp2.so
-	fi &&
+  if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
+  then
+    ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
+           ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libjavaplugin_oji.so &&
+    ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/i386/libnpjp2.so \
+           ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libnpjp2.so
+  fi &&
 
-	if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]
-	then
-		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
-                      ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libjavaplugin_oji.so &&
-		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/i386/libnpjp2.so \
-		              ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libnpjp2.so
-	fi
+  if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]
+  then
+    ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
+           ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libjavaplugin_oji.so &&
+    ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/i386/libnpjp2.so \
+           ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libnpjp2.so
+  fi
 
-	if [ -d ${INSTALL_ROOT}/opt/firefox/plugins ]
-	then
-		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
-                       ${INSTALL_ROOT}/opt/firefox/plugins/libjavaplugin_oji.so &&
-		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/i386/libnpjp2.so \
-		       ${INSTALL_ROOT}/opt/firefox/plugins/libnpjp2.so
-	fi
+  if [ -d ${INSTALL_ROOT}/opt/firefox/plugins ]
+  then
+    ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
+    ${INSTALL_ROOT}/opt/firefox/plugins/libjavaplugin_oji.so &&
+    ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/i386/libnpjp2.so \
+           ${INSTALL_ROOT}/opt/firefox/plugins/libnpjp2.so
+  fi
 
 elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
-	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
-	then
-		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/amd64/libnpjp2.so \
-		              ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libnpjp2.so
-	fi &&
+  if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
+  then
+    ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/amd64/libnpjp2.so \
+           ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libnpjp2.so
+  fi &&
 
-	if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]
-	then
-		ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/amd64/libnpjp2.so \
-		              ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libnpjp2.so
-	fi
+  if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]
+  then
+    ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/lib/amd64/libnpjp2.so \
+           ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libnpjp2.so
+  fi
 
-        if [ -d ${INSTALL_ROOT}/opt/firefox/plugins ]
-        then
-                message "${MESSAGE_COLOR}Installing plugin for firefox-bin${DEFAULT_COLOR}" &&
-                ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/lib/amd64/libnpjp2.so \
-                       ${INSTALL_ROOT}/opt/firefox/plugins/libnpjp2.so
-        fi
+  if [ -d ${INSTALL_ROOT}/opt/firefox/plugins ]
+  then
+    message "${MESSAGE_COLOR}Installing plugin for firefox-bin${DEFAULT_COLOR}" &&
+    ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/lib/amd64/libnpjp2.so \
+           ${INSTALL_ROOT}/opt/firefox/plugins/libnpjp2.so
+  fi
 fi  &&
 
 mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
