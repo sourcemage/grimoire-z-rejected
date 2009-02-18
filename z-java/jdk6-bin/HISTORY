@@ -2,6 +2,7 @@
 	* INSTALL: Install plugins to xulrunner instead of firefox
 	  Firefox picks up it's plugins from xulrunner now:
 	  /usr/lib/firefox/plugins -> /usr/lib/xulrunner/plugins
+	  Added plugin support for firefox-bin (/opt/firefox/plugins)
 
 2009-02-15 David Kowis <dkowis@shlrm.org>
 	* PRE_BUILD: changed extraction method to use the one sun provides
