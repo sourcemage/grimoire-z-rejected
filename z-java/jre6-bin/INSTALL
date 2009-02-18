@@ -17,12 +17,6 @@ message "${MESSAGE_COLOR}Determine which browser plugins to install${DEFAULT_COL
                        ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libjavaplugin_oji.so
 	fi
 
-	if [ -d ${INSTALL_ROOT}/usr/lib/firefox/plugins ]
-	then
-                message "${MESSAGE_COLOR}Installing plugin for firefox${DEFAULT_COLOR}" &&
-		ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
-                       ${INSTALL_ROOT}/usr/lib/firefox/plugins/libjavaplugin_oji.so
-	fi
 	if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]
 	then
                 message "${MESSAGE_COLOR}Installing plugin for xulrunner${DEFAULT_COLOR}" &&
