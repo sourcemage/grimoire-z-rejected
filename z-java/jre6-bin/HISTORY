@@ -3,6 +3,7 @@
 	  Do not install plugins to /usr/lib/firefox/plugins as this is just
 	  a symlink to /usr/lib/xulrunner/plugins and would have the plugins
 	  installed twice and recorded by two different packages
+	  Added x86_64 support for firefox-bin (/opt/firefox/plugins)
 
 2009-02-08 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 6u12
