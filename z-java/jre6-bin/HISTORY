@@ -1,3 +1,6 @@
+2009-02-17 Eric Sandall <sandalle@sourcemage.org>
+	* INSTALL: Add x86_64 support (amd64/libpjp2.so)
+
 2009-02-08 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 6u12
 

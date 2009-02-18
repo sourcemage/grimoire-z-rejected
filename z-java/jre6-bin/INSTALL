@@ -50,6 +50,19 @@ message "${MESSAGE_COLOR}Determine which browser plugins to install${DEFAULT_COL
 		ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
                        ${INSTALL_ROOT}/usr/lib/opera/plugins/libjavaplugin_oji.so
 	fi
+elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
+        if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
+        then
+                ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/lib/amd64/libnpjp2.so \
+                       ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libnpjp2.so
+        fi &&
+
+       if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]
+       then
+                message "${MESSAGE_COLOR}Installing plugin for xulrunner${DEFAULT_COLOR}"
+                ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/lib/amd64/libnpjp2.so \
+                       ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libnpjp2.so
+        fi
 fi  &&
 
 mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
