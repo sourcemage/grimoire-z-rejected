@@ -1,3 +1,14 @@
+2009-02-17 Eric Sandall <sandalle@sourcemage.org>
+	* INSTALL: Install plugins to xulrunner instead of firefox
+	  Firefox picks up it's plugins from xulrunner now:
+	  /usr/lib/firefox/plugins -> /usr/lib/xulrunner/plugins
+	  Added plugin support for firefox-bin (/opt/firefox/plugins)
+
+2009-02-15 David Kowis <dkowis@shlrm.org>
+	* PRE_BUILD: changed extraction method to use the one sun provides
+	  This also builds a few more jars than it used to.
+	* INSTALL: fixed installing of plugins, and added amd64 plugin
+
 2009-02-08 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 6u12
 

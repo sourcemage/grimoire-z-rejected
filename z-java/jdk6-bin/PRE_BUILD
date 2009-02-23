@@ -1,7 +1,6 @@
 verify_file  ''                   &&
 mk_source_dir  $SOURCE_DIRECTORY  &&
-unzip -qq -d $BUILD_DIRECTORY $SOURCE_CACHE/$SOURCE || true  &&
-cd  $SOURCE_DIRECTORY             &&
+cd $SOURCE_DIRECTORY &&
 
 #
 # Java binaries have hardcoded /lib64/ld-linux-x86-64.so.2
@@ -14,10 +13,4 @@ then
   fi
 fi  &&
 
-#
-# Unpack JAR files
-#
-for pack_file in jre/lib/rt.pack jre/lib/jsse.pack jre/lib/charsets.pack lib/tools.pack jre/lib/ext/localedata.pack
-do
-  bin/unpack200 $pack_file ${pack_file/pack/jar}
-done
+/bin/bash $SOURCE_CACHE/$SOURCE --accept-license --unpack
