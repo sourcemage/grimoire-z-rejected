@@ -3,29 +3,27 @@
 if [[ $NVIDIA_BETA == y ]]; then
          VERSION=180.27
 else
-         VERSION=180.29
+         VERSION=180.35
 fi
 case "${SMGL_COMPAT_ARCHS[1]}" in
 	x86_64)
 	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
 if [[ $NVIDIA_BETA == y ]]; then
      SOURCE_HASH=sha512:7d4c14000ffde2adbb288ad17f0ff47c20f90c27ba181991acfe819d14307a43d08b61c5d61a02140eccc74c903c01be11ba2087db860a4a42549d64fea8aff6
-      SOURCE_URL=http://http.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 else
-     SOURCE_HASH=sha512:6df370f623b920dd04005206145b32c3ac470e0204524e853bc8e51e1942ae2235cc57fd6f16f4570bd7b1674af48d4a4d5e5c466a60c84fbc51160a733db5b9
-      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
+     SOURCE_HASH=sha512:1ca652a7a32576bf3959fcc15326ce6ba2aa1ed19c6a8dcb62eeab070098afbf097451ad2d27e75d79b456af73f0f2141bf8a076471ac512526c500064922e91
 fi
+      SOURCE_URL=http://http.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
         ;;
 	ia32)
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
 if [[ $NVIDIA_BETA == y ]]; then
      SOURCE_HASH=sha512:e121764b0246679967a2debc8c8a814933ac16f25e8697ac27f0be4e67f0f04a6dc5764d45febbb74d8ba19040ec9850108e5bb5b7df4443e4150c3b34291688
-      SOURCE_URL=http://http.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 else
-     SOURCE_HASH=sha512:3bed18ab0bc31a43094ed08c27a4bd0475ee37dcf60f99dfe4ec7a3c9aaa4a6cb63a5186efcacb3a27e9e8ebe661549a28b48ec56037517c27c6ec3c3fe8e82e
-      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
+     SOURCE_HASH=sha512:6684bc43c941b72db0929d3da15ac680b9aa8c5acd574a74b53cdbd84175e273d60fac6381edc9b62f0f5bde25040c0958a285b7df092356be0016d48f1ce6d5
 fi
+      SOURCE_URL=http://http.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
         ;;
 ############################################################
