@@ -1,3 +1,6 @@
+2009-02-26 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: NVIDIA_BETA 173.14.17
+
 2009-02-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: removed smgl-gl_select, now uses internal
 	* FINAL: run internal glselect

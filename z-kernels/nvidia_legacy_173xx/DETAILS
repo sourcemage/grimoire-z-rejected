@@ -1,7 +1,7 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_legacy_173xx
 if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=173.14.16
+         VERSION=173.14.17
 else
          VERSION=173.14.12
 fi
@@ -20,7 +20,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
 	ia32)
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
 if [[ $NVIDIA_BETA == y ]]; then
-     SOURCE_HASH=sha512:cc3c631fa47d4ae3deb762f9ca2178dbdbab20120a223e538dcc97ed26b319c4df9c40c336d9b64e84f4c044e3db8c62019d886a5d0ce30d84f40e8c4e7ca2b4
+     SOURCE_HASH=sha512:635cbdff578212fc07deba1095b34869e90abcb7aa94cdc4ceedaf73e7d04e105e980949d2aa2b02418f3fd71d5ec3aacdd3d1c47895b605e4f0c56ecb80cd45
       SOURCE_URL=ftp://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 else
      SOURCE_HASH=sha512:8e1393c99e673337fef164d9cbe9f9e16e6292bba4d5233a261bcee72cf174c6991bec25579c05f08a013d5caa0812005379b53996f157816bf71c0804c09db9
