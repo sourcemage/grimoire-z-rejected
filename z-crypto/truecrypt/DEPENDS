@@ -1,2 +1,2 @@
-depends device-mapper  &&
+depends lvm &&
 depends fuse
