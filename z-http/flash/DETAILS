@@ -1,18 +1,26 @@
            SPELL=flash
-if [[ $FLASH_BETA == y ]]; then
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+         VERSION=10.0.22.87
+          SOURCE=libflashplayer-$VERSION.linux-x86_64.so.tar.gz
+   SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
+     SOURCE_HASH=sha512:834207c802742134eefdd36a8ada6627fdce23b871f6d7745cc92e05f1a7046fa9d6d0945f5e2ef3187c24e1954fb3e2ea5c3def00d80d2c625bcb1f712b6cab
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+else
+ if [[ $FLASH_BETA == y ]]; then
          VERSION=081108
           SOURCE=flashplayer10_install_linux_$VERSION.tar.gz
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_10_linux
 else
-         VERSION=10.0.22.87
-  SECURITY_PATCH=5
+         VERSION=10.0.15.3
+  SECURITY_PATCH=4
           SOURCE=install_flash_player_10_linux.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SOURCE/.tar.gz/}
   FORCE_DOWNLOAD="on"
-fi
+ fi
       SOURCE_GPG=gurus.gpg:$SOURCE.sig
+fi
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
      GATHER_DOCS=off
         WEB_SITE=http://www.macromedia.com
