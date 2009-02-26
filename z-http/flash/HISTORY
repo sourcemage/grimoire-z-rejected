@@ -1,3 +1,7 @@
+2009-02-26 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 10.0.22.87, SECURITY_PATCH=5
+	  http://www.adobe.com/support/security/bulletins/apsb09-01.html
+
 2009-01-11 Vlad Glagolev <stealth@sourcemage.org>
 	* CONFIGURE, INSTALL: added Midori
 
