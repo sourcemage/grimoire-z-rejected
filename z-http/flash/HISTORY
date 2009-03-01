@@ -1,3 +1,6 @@
+2009-03-02 Vlad Glagolev <stealth@sourcemage.org>
+	* INSTALL: .plugins -> plugins for midori
+
 2009-02-26 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Added 64-bit beta version
 	* PRE_BUILD: Added to handle 64-bit version
