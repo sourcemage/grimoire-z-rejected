@@ -35,17 +35,17 @@ esac &&
 
 case $MIDORI in
 	y|Y)
-		if [[ -d /usr/lib/midori/.plugins ]]; then
+		if [[ -d /usr/lib/midori/plugins ]]; then
 			message "${MESSAGE_COLOR}Installing for Midori/WebKit${DEFAULT_COLOR}\n" &&
 
-			if [[ -e /usr/lib/midori/.plugins/libflashplayer.so ]]; then
-				rm -f /usr/lib/midori/.plugins/libflashplayer.so
+			if [[ -e /usr/lib/midori/plugins/libflashplayer.so ]]; then
+				rm -f /usr/lib/midori/plugins/libflashplayer.so
 			fi &&
-			if [[ -e /usr/lib/midori/.plugins/flashplayer.xpt ]]; then
-				rm -f /usr/lib/midori/.plugins/flashplayer.xpt
+			if [[ -e /usr/lib/midori/plugins/flashplayer.xpt ]]; then
+				rm -f /usr/lib/midori/plugins/flashplayer.xpt
 			fi &&
 
-			cp libflashplayer.so /usr/lib/midori/.plugins/
+			cp libflashplayer.so /usr/lib/midori/plugins/
 		fi
 	;;
 esac &&

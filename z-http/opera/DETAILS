@@ -1,11 +1,12 @@
            SPELL=opera
 
-           VERSION=9.63
+           VERSION=9.64
            RELEASE=final
           LANGUAGE=en
           COMPILER=gcc4
        COMPRESSION=bz2
-             BUILD=2474
+             BUILD=2480
+    SECURITY_PATCH=1
   if [[ "${OPERA_RELEASE}" = "9, static" ]]; then
             LINKED=static
                 QT=qt3
