@@ -1,3 +1,12 @@
+2009-03-05 Treeve Jelbert <treeve@sourcemage.org>
+	* DETAILS: version 2.3.1
+	* DEPENDS: remove libxp (dead), add libx11, libxmu,libxt, libxmu, libtool
+	* PRE_BUILD: use sed instead of patch, then autoreconf
+	  no-demos.patch: delete
+	  remove Xprint usage, as it is dead
+	* BUILD: remove xorg_modular checks
+	* PREPARE: add, to warn that spell is broken
+
 2008-02-06 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Optionally depend on libxft, jpeg, and libpng
 	* PRE_BUILD: Apply no-demos.patch

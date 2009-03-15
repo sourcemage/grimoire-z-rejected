@@ -1,3 +1,11 @@
 default_pre_build                             &&
 cd  $SOURCE_DIRECTORY                         &&
-patch -p1 < $SCRIPT_DIRECTORY/no-demos.patch
+# don't build or install demos
+sed -i '/^demos/D' configure.ac       &&
+sed -i 's/demos//;s/doc \\/doc/' Makefile.am &&
+rm -r demos &&
+# remove XPrint usage
+#sed -i '/Print/D' lib/Xm/XmAll.h lib/Xm/Xm.h &&
+#sed -i 's/-lXp //' lib/Xm/Makefile.am &&
+touch INSTALL NEWS AUTHORS COPYING    &&
+autoreconf -f -i
