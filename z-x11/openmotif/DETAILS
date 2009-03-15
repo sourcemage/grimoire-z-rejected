@@ -1,9 +1,9 @@
            SPELL=openmotif
-         VERSION=2.3.0
-          SOURCE=$SPELL-$VERSION.tar.gz
+         VERSION=2.3.1
+     SOURCE_HASH=sha512:c6555e39b93e669c997cf9d381384179b585ff2759502f84ef644d91e324d0a40fa0e738d329d703f71f0e5a2259b6a22e9b8bfc11ba6f9c96794feb2315f8a8
+          SOURCE=$SPELL-$VERSION-1.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=ftp://ftp.ics.com/openmotif/${VERSION//.0}/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:f560c9b150c260c3633ac02cf3e3dd6f3dfb564560c2ac2d4f5806b32e4b3ddc2ac67953fded9355bf546fe696f9d32b2f71c95e3f13f8f15182a14fdf5fd80d
+   SOURCE_URL[0]=ftp://ftp.ics.com/openmotif/${VERSION//.1}/$VERSION/$SOURCE
         WEB_SITE=http://www.motifzone.net/
          ENTERED=20020510
       LICENSE[0]=http://www.opengroup.org/openmotif/license

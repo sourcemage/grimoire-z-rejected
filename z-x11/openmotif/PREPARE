@@ -1,0 +1,3 @@
+message ${PROBLEM_COLOR}this spell is completely broken, \
+as it relies on libxp, which is DEAD${DEFAULT_COLOR}
+return 1

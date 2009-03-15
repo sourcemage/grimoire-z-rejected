@@ -3,16 +3,15 @@
 depends expat      &&
 depends fontconfig &&
 depends freetype2  &&
-depends X11-LIBS   &&
-
-if  check_if_xorg_modular_libs ;  then
-  depends  libxp  &&
-
-  optional_depends  libxft                        \
-                    '--enable-xft'                \
-                    '--disable-xft'               \
-                    'for XFT font anti-aliasing'
-fi  &&
+depends libtool    &&
+depends libx11     &&
+depends libxt      &&
+depends libxmu     &&
+depends printproto &&
+optional_depends  libxft                        \
+                  '--enable-xft'                \
+                  '--disable-xft'               \
+                  'for XFT font anti-aliasing'  &&
 
 optional_depends  jpeg                      \
                   '--enable-jpeg'           \
