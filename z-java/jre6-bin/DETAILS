@@ -1,33 +1,33 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jre6-bin
-         VERSION=6u12
-             VER=1.6.0_12
+         VERSION=6u13
+             VER=1.6.0_13
 case "${SMGL_COMPAT_ARCHS[0]}" in
-	ia32|32)
+        ia32|32)
           SOURCE=jre-$VERSION-linux-i586.bin
-      SOURCE_HASH=sha512:df87c7b5e4b34e090eefc006db1e5ec905f39ec9f4d0a76d089023f570bc23dac0ab01140adcbfba28679e25dc50bf835cf166496880f967c634d09ff613f86a
+      SOURCE_HASH=sha512:492fc9c493202fd233662f64312b92a9cec2340c426b8d5f311e62c5d16d68aadf53ecd75cca25527190e9295f6c3fa1961e849ce57fa7144757c289b2efe460
         ;;
-	x86-64|64)
-	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
-	  then
+      x86-64|64)
+          if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
+          then
           SOURCE=jre-$VERSION-linux-x64.bin
       SOURCE_HASH=sha512:6e91c2b5a542b6f16e1f36905b5bd2ec65adeaefa022c43b749e1db37ba4597b38f340af0d6468c620edba68050edee71a69f76412ffb7dde1071497a05c6caa
           else
           SOURCE=jre-$VERSION-linux-i586.bin
-      SOURCE_HASH=sha512:df87c7b5e4b34e090eefc006db1e5ec905f39ec9f4d0a76d089023f570bc23dac0ab01140adcbfba28679e25dc50bf835cf166496880f967c634d09ff613f86a
-	  fi
-	;;
+      SOURCE_HASH=sha512:492fc9c493202fd233662f64312b92a9cec2340c426b8d5f311e62c5d16d68aadf53ecd75cca25527190e9295f6c3fa1961e849ce57fa7144757c289b2efe460
+          fi
+        ;;
 ###########################################################################
 # Missing support for sparc and sparcv9 tarballs say solaris not linux :\
 ###########################################################################
-	*)
-	  SOURCE=
-	 VERSION=Unsupported
-	     VER=Unsupported
-	;;
+        *)
+          SOURCE=
+         VERSION=Unsupported
+             VER=Unsupported
+        ;;
 esac
         WEB_SITE=http://java.sun.com/javase/downloads/index.jsp
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/jre$VER
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/jre$VER"
          ENTERED=20080420
          ARCHIVE="off"
           REJECT="is non-source"
