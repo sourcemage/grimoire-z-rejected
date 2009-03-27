@@ -11,7 +11,7 @@ case "${SMGL_COMPAT_ARCHS[0]}" in
           if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
           then
           SOURCE=jre-$VERSION-linux-x64.bin
-      SOURCE_HASH=sha512:6e91c2b5a542b6f16e1f36905b5bd2ec65adeaefa022c43b749e1db37ba4597b38f340af0d6468c620edba68050edee71a69f76412ffb7dde1071497a05c6caa
+      SOURCE_HASH=sha512:89c7a5f4b6361eddbf898813f6093a01c068b2f987d8b94346ba1afdb7a903838a7dccf1c57a6fe5a17de19f75baeaa9b59778d3ecb76c16f4a8a276d17fa2bb
           else
           SOURCE=jre-$VERSION-linux-i586.bin
       SOURCE_HASH=sha512:492fc9c493202fd233662f64312b92a9cec2340c426b8d5f311e62c5d16d68aadf53ecd75cca25527190e9295f6c3fa1961e849ce57fa7144757c289b2efe460
