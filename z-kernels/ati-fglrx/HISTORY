@@ -1,3 +1,6 @@
+2009-03-31 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* REPAIR^all^PRE_REMOVE: fix sourcing
+
 2009-02-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: removed smgl-gl_select, now uses internal
 	* FINAL: run internal glselect
