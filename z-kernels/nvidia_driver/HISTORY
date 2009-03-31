@@ -1,3 +1,6 @@
+2009-03-31 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* REPAIR^all^PRE_REMOVE: fix sourcing
+
 2009-03-07 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated beta version to 180.37
 
