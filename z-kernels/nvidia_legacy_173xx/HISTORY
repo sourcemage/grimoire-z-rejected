@@ -1,3 +1,6 @@
+2009-03-31 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* REPAIR^all^PRE_REMOVE: fix sourcing
+
 2009-02-26 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: NVIDIA_BETA 173.14.17
 
