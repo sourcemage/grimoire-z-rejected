@@ -1,3 +1,7 @@
+2009-04-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: Fixed SOURCE_URL[0]
+	  updated spell to 9.3
+
 2009-02-09 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DEPENDS: removed smgl-gl_select, now uses internal
 	* FINAL: run internal glselect
