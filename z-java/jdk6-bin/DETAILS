@@ -33,7 +33,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk${VER}
          ENTERED=20070208
          ARCHIVE="off"
           REJECT="is non-source"
-           SHORT="jdk6-bin is the Java Software Development Kit"
+           SHORT="Java Software Development Kit"
 cat << EOF
 The Java Development Kit is a feature-complete development and
 deployment platform. The JDK contains the Java Plug-In for Netscape 4.x 

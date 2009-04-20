@@ -1,5 +1,6 @@
 2009-04-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated x86 and x86_64 to 6u13
+	  Shortened SHORT
 	* DEPENDS: Removed gcc33, libstdc++.so.5 is no longer needed
 	  Bug #15164
 	  Remove xorg-modular check and add as dependencies
