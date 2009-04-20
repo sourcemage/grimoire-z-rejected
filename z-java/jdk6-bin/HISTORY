@@ -1,3 +1,7 @@
+2009-04-19 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Removed gcc33, libstdc++.so.5 is no longer needed
+	  Bug #15164
+
 2009-02-17 Eric Sandall <sandalle@sourcemage.org>
 	* INSTALL: Install plugins to xulrunner instead of firefox
 	  Firefox picks up it's plugins from xulrunner now:
