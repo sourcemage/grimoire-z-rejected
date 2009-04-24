@@ -1,3 +1,8 @@
+2009-04-23 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
+	* DETAILS: updated spell to 9.4
+	* INSTALL: some fixes
+	* PRE_BUILD: added 1.6
+
 2009-04-01 Andraž "ruskie" Levstik <ruskie@mages.ath.cx>
 	* DETAILS: Fixed SOURCE_URL[0]
 	  updated spell to 9.3

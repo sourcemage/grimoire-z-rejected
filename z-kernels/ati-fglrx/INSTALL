@@ -1,8 +1,8 @@
 cd ${SOURCE_DIRECTORY} &&
-local ARCHLIB
+local ARCHLIB ARCH2
 case "${SMGL_COMPAT_ARCHS[1]}" in
-          "ia32") ARCHLIB=lib   ;;
-        "x86_64") ARCHLIB=lib64   ;;
+          "ia32") ARCHLIB=lib ; ARCH2="" ;;
+        "x86_64") ARCHLIB=lib64 ; ARCH2="_64a"  ;;
                *)  message "${PROBLEM_COLOR}" \
                         "Unsupported architecture: ${SMGL_COMPAT_ARCHS[1]}" \
                         "${DEFAULT_COLOR}" &&
@@ -42,6 +42,8 @@ cp -vr usr/X11R6/$ARCHLIB/modules/drivers/* \
 cp -vr usr/X11R6/$ARCHLIB/modules/dri/* \
        $INSTALL_ROOT/usr/lib/xorg/modules/dri/  &&
 rm -rf usr/X11R6/$ARCHLIB/modules/{dri,drivers,extensions,linux}  &&
+mv -v usr/X11R6/$ARCHLIB/modules/*.a \
+       $INSTALL_ROOT/usr/lib/  &&
 cp -vr usr/X11R6/$ARCHLIB/modules/* \
        $INSTALL_ROOT/usr/lib/xorg/modules/  &&
 rm -rf usr/X11R6/$ARCHLIB/modules  &&
@@ -51,13 +53,21 @@ pushd  $INSTALL_ROOT/usr/lib/ati/ &&
 ln -sfv libGL.so.1.2 libGL.so &&
 popd &&
 rm -f usr/X11R6/$ARCHLIB/libGL.so.1.2  &&
-cp -vr usr/X11R6/$ARCHLIB/* \
+pushd usr/X11R6/$ARCHLIB &&
+for lib in * ; do
+cp -vr $lib \
        $INSTALL_ROOT/usr/lib/  &&
+ln -sf $INSTALL_ROOT/usr/lib/$lib $INSTALL_ROOT/usr/lib/${lib/.1.0} &&
+ln -sf $INSTALL_ROOT/usr/lib/$lib $INSTALL_ROOT/usr/lib/${lib/.1}
+done
+popd
 cp -vr usr/X11R6/include/X11/extensions/* \
        $INSTALL_ROOT/usr/include/X11/extensions/  &&
+chmod +x usr/X11R6/bin/* &&
 cp -vr usr/X11R6/bin/* $INSTALL_ROOT/usr/bin/  && 
 cp -vr usr/include/GL/* $INSTALL_ROOT/usr/include/GL/  &&
 cp -vr usr/$ARCHLIB/* $INSTALL_ROOT/usr/lib/  &&
+chmod +x usr/sbin/* &&
 cp -vr usr/sbin/* $INSTALL_ROOT/usr/sbin/  &&
 cp -vr usr/share/man/man8/* $INSTALL_ROOT/usr/share/man/man8/  &&
 cp -vr usr/share/icons/* $INSTALL_ROOT/usr/share/icons/  &&
