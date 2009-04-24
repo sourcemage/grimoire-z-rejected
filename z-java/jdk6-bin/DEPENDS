@@ -1,12 +1,7 @@
-depends  unixodbc  &&
 depends  alsa-lib  &&
-depends  gcc33     &&
-optional_depends  X11-LIBS "" "" "To run gui applications" &&
-
-source  $GRIMOIRE/FUNCTIONS  &&
-
-if  check_if_xorg_modular_libs
-then
-  depends  libxi  &&
-  depends  libxtst
-fi
+depends  gcc       &&
+depends  libx11    &&
+depends  libxext   &&
+depends  libxt     &&
+depends  libxtst   &&
+depends  unixodbc
