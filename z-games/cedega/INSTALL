@@ -1,2 +1,3 @@
 chown  root.games  *  -R  &&
-cp  -a  *  $INSTALL_ROOT/
+install_config_file  etc/cedega.conf $INSTALL_ROOT/etc/cedega.conf &&
+cp  -a  usr/*  $INSTALL_ROOT/usr

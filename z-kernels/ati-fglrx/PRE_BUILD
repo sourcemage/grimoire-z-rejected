@@ -34,7 +34,7 @@ mkdir build &&
 # Merge files from different source directories to match the system
 cp -R archive/common/* build &&
 
-if grep -q "1.5" <<< $(installed_version xorg-server)
+if grep -E -q "1\.5|1\.6" <<< $(installed_version xorg-server)
 then
   ATI_XVERSION=x740
 else

@@ -1,3 +1,4 @@
+depends  dbus-python   &&
 depends  python        &&
 depends  pygtk2        &&
 depends  gtk-engines2  &&

@@ -1,3 +1,8 @@
+2009-05-06 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 7.2 (release 000133)
+	* DEPENDS: Depends on dbus-python
+	* INSTALL: New directory structure for installation
+
 2007-11-29 Eric Sandall <sandalle@sourcemage.org>
 	* UNATTEND_SAFE: Safe to update unattended
 	* CONFLICTS: Removed, deprecated cedega-small removed

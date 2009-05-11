@@ -1,20 +1,20 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jdk6-bin
-         VERSION=6u12
-             VER=1.6.0_12
+         VERSION=6u13
+             VER=1.6.0_13
 case "${SMGL_COMPAT_ARCHS[0]}" in
 	ia32|32)
           SOURCE=jdk-$VERSION-dlj-linux-i586.bin
-      SOURCE_HASH=sha512:f4dc8a41a7c05874d81ccd98695d0e5ae1f0fb75557b5af27e33b30c1e7c273e6f3711742b74d38d5d980cbc879c4b95db124a0af89063064eecc409892bb332
+      SOURCE_HASH=sha512:f7f90d82d24c67d757c809961f62f1bc8414d2f0e0366dfc321b338fc9f07fc0907ef1f4d4c8a95fb2efa3985238bb377cc90df4f73520a63278be060fd1188d
         ;;
 	x86-64|64)
 	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
 	  then
           SOURCE=jdk-$VERSION-dlj-linux-amd64.bin
-      SOURCE_HASH=sha512:1f40273c48f64acbf2054606efbac837962a5ae393d2c71dfe1e92c699e4fb3a61643192a53f277b0f63c6da3103b6cb5d8b7266de924dcefa8109955b8cb1d2
+      SOURCE_HASH=sha512:41ef052b6b6d5a1fd91fa6accb619b3108125f668993fae39ba2860ec62dd2dd7083acb9ba85a4647ad1c232a60a09c90fb848ecabfca79917292ef6d9f40b85
           else
           SOURCE=jdk-$VERSION-dlj-linux-i586.bin
-      SOURCE_HASH=sha512:f4dc8a41a7c05874d81ccd98695d0e5ae1f0fb75557b5af27e33b30c1e7c273e6f3711742b74d38d5d980cbc879c4b95db124a0af89063064eecc409892bb332
+      SOURCE_HASH=sha512:f7f90d82d24c67d757c809961f62f1bc8414d2f0e0366dfc321b338fc9f07fc0907ef1f4d4c8a95fb2efa3985238bb377cc90df4f73520a63278be060fd1188d
 	  fi
 	;;
 ###########################################################################
@@ -33,7 +33,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk${VER}
          ENTERED=20070208
          ARCHIVE="off"
           REJECT="is non-source"
-           SHORT="jdk6-bin is the Java Software Development Kit"
+           SHORT="Java Software Development Kit"
 cat << EOF
 The Java Development Kit is a feature-complete development and
 deployment platform. The JDK contains the Java Plug-In for Netscape 4.x 

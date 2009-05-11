@@ -1,8 +1,9 @@
            SPELL=cedega
-         VERSION=6.0.2
-          SOURCE=$SPELL-small-$VERSION.tgz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-small-$VERSION
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
+         VERSION=7.2
+         RELEASE=000133
+          SOURCE=$SPELL-$RELEASE.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
       LICENSE[0]=http://www.transgaming.com/license.php?prepackaged=1
       PATCHLEVEL=1
         WEB_SITE=http://www.transgaming.com/

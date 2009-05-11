@@ -1,6 +1,0 @@
-. $GRIMOIRE/FUNCTIONS  &&
-if check_if_xorg_modular_libs ; then
-smgl-gl_select -s mesa
-else
-smgl_gl-select -s monolithic
-fi
