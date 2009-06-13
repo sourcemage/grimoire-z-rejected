@@ -1,3 +1,6 @@
+2009-06-12 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated ucode-2 to 15.32.2.9
+
 2009-01-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated spell to 15.28.1.8
 	  Updated to 15.28.2.8 for ucode-2 and also provide 15.28.1.8 for
