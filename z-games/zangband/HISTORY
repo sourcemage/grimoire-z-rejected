@@ -1,3 +1,6 @@
+2009-07-19 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: fixed source urls, graf version 304
+
 2008-06-23 Arjan Bouter <abouter@sourcemage.org>
 	* configs,volatiles: added savegame and setting dirs
 	* desktop/zangband.desktop: fixed file permissions
