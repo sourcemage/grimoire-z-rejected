@@ -8,7 +8,7 @@ else
      SOURCE_HASH="sha512:33f462beb879cafc877f076720b96455fc6ad9ede80b6d5303938810c9a6c73a75044c2b298719aeab5a815cd0c1e5391ff22b2ae89a514c1c9883bed174c668"
 fi
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/Cg"
-   SOURCE_URL[0]="http://developer.download.nvidia.com/cg/Cg-${VERSION}/${SOURCE}"
+   SOURCE_URL[0]="http://developer.download.nvidia.com/cg/Cg_${VERSION}/${SOURCE}"
         WEB_SITE="http://developer.nvidia.com/object/cg_toolkit.html"
          ENTERED="20040125"
           REJECT="non-source plus headers"
