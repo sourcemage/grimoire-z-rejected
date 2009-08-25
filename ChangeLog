@@ -1,3 +1,6 @@
+2009-08-18 Donald Johnson <ltdonny@gmail.com>
+	* z-graphics/blender-bin: spell deprecated, moved to binary
+
 2009-04-25 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
 	* z-kernels/ati_driver-new: removed, has been deprecated in favour of ati-fglrx
 	* z-kernels/ati_driver: removed, has been deprecated in favour of ati-fglrx
