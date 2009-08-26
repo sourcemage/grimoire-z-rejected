@@ -1,0 +1,18 @@
+            SPELL=acml32
+          VERSION=4.3.0
+          SOURCE=acml-${VERSION//./-}-gfortran-32bit.tgz
+     SOURCE_HASH=sha512:a24f702428bdcfcffe6f55a0539633d7ceb3b79db30f2ad1caab0c52d5aff31e13e9d0709e3f5039a55b0dc4b929f515665c9e3c50c11c1512b2d2f1b48e8eba 
+          RELEASE=1
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+          LICENSE=ACML
+         WEB_SITE=http://www.amd.com/acml
+          ENTERED=20090117
+         KEYWORDS="mpi infiniband"
+           REJECT="must download from the website because of proprietary license"
+             DOCS="${DOCS} ACML-EULA.txt README.64-bit ReleaseNotes ReleaseNotes.acml_mv"
+          ARCHIVE=off
+            SHORT="openmpi is an open MPI implementation"
+
+cat <<EOF
+
+EOF

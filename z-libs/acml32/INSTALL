@@ -1,0 +1,11 @@
+cd ${SOURCE_DIRECTORY} &&
+for dir in gfortran32*
+do
+  mkdir -p "${INSTALL_ROOT}/usr/lib/$dir"     \
+           "${INSTALL_ROOT}/usr/include/$dir" \
+           "${INSTALL_ROOT}/usr/share/doc/$SPELL/$dir"    &&
+  cp -a $dir/lib/* "${INSTALL_ROOT}/usr/lib/$dir"         &&
+  cp -a $dir/include/* "${INSTALL_ROOT}/usr/include/$dir" &&
+  cp -a $dir/examples "${INSTALL_ROOT}/usr/share/doc/$SPELL/$dir"
+done &&
+cp -a Doc "${INSTALL_ROOT}/usr/share/doc/$SPELL"
