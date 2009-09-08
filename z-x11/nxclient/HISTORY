@@ -1,3 +1,5 @@
 2009-09-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* BUILD, DEPENDS, desktop, DETAILS, INSTALL: spell created
+	* INSTALL: changed install path to /usr/NX (seems to be
+          mandatory)
 
