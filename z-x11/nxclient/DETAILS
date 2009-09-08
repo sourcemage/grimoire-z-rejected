@@ -1,0 +1,20 @@
+           SPELL=nxclient
+         VERSION=6.i386
+          SOURCE="${SPELL}-3.3.0-${VERSION}.tar.gz"
+   SOURCE_URL[0]=http://64.34.161.181/download/3.3.0/Linux/${SOURCE}
+     SOURCE_HASH=sha512:67cdb04f84060f4d6af7779091ad353152680f978bf013819a91e5c2926d7d827f7e5142ab69da50062d3c2df174d8099cec2e56574696c207f298892afe6124
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/NX"
+        WEB_SITE="http://www.nomachine.com"
+      LICENSE[0]=http://www.nomachine.com/licensing
+         ENTERED=20090908
+           SHORT="the client for the NX terminal server"
+cat << EOF
+NoMachine NX is a fast and scalable terminal server system based on the X11
+protocol. NX lets you work fluently even across slow links like modems and
+provides a full set of administration tools that make it a complete desktop
+virtualization solution for your organization.
+
+This package contains the graphical front-end used to access X, RDP and RFB
+sessions on a remote NX Server. It also includes NX X compression libraries
+and utilities needed by both NX Client and Server.
+EOF
