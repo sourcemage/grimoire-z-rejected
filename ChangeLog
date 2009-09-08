@@ -1,6 +1,7 @@
 2009-09-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* z-x11/nxclient: new spell, a client for the NX terminal server
 	* z-x11/nxnode: new spell, files required by the nxserver
+	* z-x11/nxserver: new spell, the NX terminal server
 
 2009-08-23 Donald Johnson <ltdonny@gmail.com>
 	* z-libs/acml32: New spell, AMD Core Math Library (32-bit)
