@@ -1,2 +1,0 @@
-mkdir -p ${INSTALL_ROOT}/usr/NX                    &&
-cp -R ${SOURCE_DIRECTORY}/* ${INSTALL_ROOT}/usr/NX
