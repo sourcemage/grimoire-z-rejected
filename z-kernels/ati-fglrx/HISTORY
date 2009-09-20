@@ -1,3 +1,6 @@
+2009-09-20 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
+	* INSTALL: fixed the install of the ati-fglrx dri module #15422
+
 2009-04-25 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
 	* DEPENDS: added DPMS sub_depends for xorg-server
 
