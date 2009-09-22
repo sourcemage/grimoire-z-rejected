@@ -40,7 +40,7 @@ cp -vr usr/X11R6/$ARCHLIB/modules/extensions/* \
 cp -vr usr/X11R6/$ARCHLIB/modules/drivers/* \
        $INSTALL_ROOT/usr/lib/xorg/modules/drivers/  &&
 cp -vr usr/X11R6/$ARCHLIB/modules/dri/* \
-       $INSTALL_ROOT/usr/lib/xorg/modules/dri/  &&
+       $INSTALL_ROOT/usr/lib/dri/  &&
 rm -rf usr/X11R6/$ARCHLIB/modules/{dri,drivers,extensions,linux}  &&
 mv -v usr/X11R6/$ARCHLIB/modules/*.a \
        $INSTALL_ROOT/usr/lib/  &&
@@ -49,7 +49,7 @@ cp -vr usr/X11R6/$ARCHLIB/modules/* \
 rm -rf usr/X11R6/$ARCHLIB/modules  &&
 cp -vr usr/X11R6/$ARCHLIB/libGL.so.1.2 \
        $INSTALL_ROOT/usr/lib/ati/  &&
-pushd  $INSTALL_ROOT/usr/lib/ati/ &&
+pushd  $INSTALL_ROOT/usr/lib/ &&
 ln -sfv libGL.so.1.2 libGL.so &&
 popd &&
 rm -f usr/X11R6/$ARCHLIB/libGL.so.1.2  &&
