@@ -1,26 +1,26 @@
            SPELL=opera
 
-           VERSION=9.64
+           VERSION=10.00
            RELEASE=final
           LANGUAGE=en
           COMPILER=gcc4
        COMPRESSION=bz2
-             BUILD=2480
-    SECURITY_PATCH=1
-  if [[ "${OPERA_RELEASE}" = "9, static" ]]; then
-            LINKED=static
-                QT=qt3
+             BUILD=4585
+
+  if [[ "${OPERA_RELEASE}" = "10 qt4, bundled" ]]; then
+
+                QT=bundled-qt4
+    if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+          PLATFORM=x86_64
+    else
           PLATFORM=i386
-            SOURCE=${SPELL}-${VERSION}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}.tar.${COMPRESSION}
-  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}
-         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${LINKED}/${SOURCE}
-  elif [[ "${OPERA_RELEASE}" = "9 qt4, static" ]]; then
-                QT=qt4
-          PLATFORM=i386
+    fi
             SOURCE=${SPELL}-${VERSION}.${COMPILER}-${QT}.${PLATFORM}.tar.${COMPRESSION}
   SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${QT}.${PLATFORM}
          DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${SOURCE}
-  else
+
+  elif [[ "${OPERA_RELEASE}" = "10 qt3, shared" ]]; then
+
             LINKED=shared
                 QT=qt3
     if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
@@ -35,10 +35,24 @@
     else
          DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${LINKED}/${SOURCE}
     fi
+
+  else
+
+                QT=qt4
+    if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+          PLATFORM=x86_64
+    else
+          PLATFORM=i386
+    fi
+            SOURCE=${SPELL}-${VERSION}.${COMPILER}-${QT}.${PLATFORM}.tar.${COMPRESSION}
+  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${QT}.${PLATFORM}
+         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${SOURCE}
+
   fi
 
      SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/${DIST_PATH}
      SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/${DIST_PATH}
+     SOURCE_URL[2]=ftp://ftp.opera.com/pub/opera/linux/${DIST_PATH}
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENCE[0]=UNKNOWN
         WEB_SITE=http://www.opera.com/
