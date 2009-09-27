@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=nxclient
+Type=Application
+Comment=the client for the NX terminal server
+Exec=/opt/NX/bin/nxclient
+Icon=
+Categories=Applications;X11;Client;
+Term=
