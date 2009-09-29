@@ -1,5 +1,12 @@
+2009-09-10 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated beta version to 190.32
+
+2009-09-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* PRE_BUILD: make configuration changes in the
+	  correct header
+
 2009-08-24 Julien "_kaze_" ROZO <julien@rozo.org>
-	* DETAILS: updated stable version to 185.18.36, beta version to 190.25
+	* DETAILS: updated stable version to 185.18.36
 
 2009-08-03 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated stable version to 185.18.31

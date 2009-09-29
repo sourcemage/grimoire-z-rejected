@@ -1,6 +1,23 @@
-if [ "${OPERA_RELEASE}" = "9, shared" ]; then
-  depends qt-x11  &&
-  depends zlib
-fi
+depends libx11 &&
+depends libxext &&
+depends libice &&
+depends libsm &&
+depends zlib &&
+
+if [[ "${OPERA_RELEASE}" == "10 qt4, shared" ]]; then
+  depends qt4
+elif [[ "${OPERA_RELEASE}" == "10 qt4, bundled" ]]; then
+  depends glib2 &&
+  depends nas &&
+  depends libpng &&
+  depends libxi &&
+  depends libxrender &&
+  depends libxrandr &&
+  depends freetype2 &&
+  depends fontconfig
+elif [[ "${OPERA_RELEASE}" == "10 qt3, shared" ]]; then
+  depends qt-x11
+fi &&
 
 optional_depends  JAVA  ""  ""  "for Java Runtime Environment"
+

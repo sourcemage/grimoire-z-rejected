@@ -1,3 +1,11 @@
+2009-09-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* z-x11/nxclient: new spell, a client for the NX terminal server
+
+2009-08-23 Donald Johnson <ltdonny@gmail.com>
+	* z-libs/acml32: New spell, AMD Core Math Library (32-bit)
+	* z-libs/acml64: New spell, AMD Core Math Library (64-bit)
+	* z-libs/acml64-int64: New spell, AMD Core Math Library (64-bit)
+
 2009-08-18 Donald Johnson <ltdonny@gmail.com>
 	* z-graphics/blender-bin: spell deprecated, moved to binary
 

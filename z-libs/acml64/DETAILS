@@ -1,0 +1,36 @@
+            SPELL=acml64
+          VERSION=4.3.0
+          SOURCE=acml-${VERSION//./-}-gfortran-64bit.tgz
+     SOURCE_HASH=sha512:bb7957b8644d267960489d2484c374402c98932e927b44bd9694c026a3544e5b2acb4d0541d28faed44cf03de6603a3abd37f1758d1c40ae6c822ca7c58052ee 
+          RELEASE=1
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+          LICENSE=ACML
+           REJECT="must download from the website because of proprietary license"
+         WEB_SITE=http://www.amd.com/acml
+          ENTERED=20090117
+             DOCS="${DOCS} ACML-EULA.txt README.64-bit ReleaseNotes ReleaseNotes.acml_mv"
+         KEYWORDS="mpi infiniband"
+            SHORT="openmpi is an open MPI implementation"
+     ARCHIVE=off
+
+cat <<EOF
+ACML provides a free set of thoroughly optimized and threaded math routines for
+HPC, scientific, engineering and related compute-intensive applications. ACML
+is ideal for weather modeling, computational fluid dynamics, financial
+analysis, oil and gas applications and more.
+
+ACML consists of the following main components:
+
+    * A full implementation of Level 1, 2 and 3 Basic Linear Algebra
+     Subroutines (BLAS), with key routines optimized for high performance on
+     AMD Opteron(tm) processors.
+    * A full suite of Linear Algebra (LAPACK) routines. As well as taking
+    * advantage of the highly-tuned BLAS kernels, a key set of LAPACK routines
+     has been further optimized to achieve considerably higher performance
+     than standard LAPACK implementations.
+    * A comprehensive suite of Fast Fourier Transforms (FFTs) in both single-,
+     double-, single-complex and double-complex data types.
+    * Fast scalar, vector, and array math transcendental library routines
+     optimized for high performance on AMD Opteron processors.
+    * Random Number Generators in both single- and double-precision.
+EOF
