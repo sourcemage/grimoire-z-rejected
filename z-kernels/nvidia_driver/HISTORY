@@ -1,3 +1,6 @@
+2009-10-19 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: fixed sha512 hash for beta ia32 (190.40)
+
 2009-10-18 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated beta version to 190.40
 
