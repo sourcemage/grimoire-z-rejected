@@ -1,3 +1,6 @@
+2009-10-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated stable version to 190.42
+
 2009-10-19 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: fixed sha512 hash for beta ia32 (190.40)
 
