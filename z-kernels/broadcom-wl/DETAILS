@@ -1,0 +1,29 @@
+           SPELL=broadcom-wl
+         VERSION=5.10.91.9.3
+if [[ ${SMGL_COMPAT_ARCHS[1]} == x86_64 ]]; then
+  BROADCOM_WL_ARCH=64
+     SOURCE_HASH=sha512:033f8d9a8bef1ee4ac6d92ed69692b8c8f15efedd42c6e97b750ab14d34cfdb467f02303fa81f5352955d08510a30e9b04e52e8896e3faa8c2004c60af78332c
+else
+  BROADCOM_WL_ARCH=32
+     SOURCE_HASH=sha512:5a78352083440a6fc915859c29e8fe0dbbb58c6b7c0942646780633b4561ba3cbfddc99ef05407998066c36f6bd3a584d51f9f2757dd905e550cef4329c0cf6b
+fi
+          SOURCE=hybrid-portsrc-x86_${BROADCOM_WL_ARCH}-v${VERSION}.tar.gz
+   SOURCE_URL[0]=http://www.broadcom.com/docs/linux_sta/$SOURCE
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE=http://www.broadcom.com/support/802.11/linux_sta.php
+     GATHER_DOCS=off
+      LICENSE[0]=Mixed/Proprietary
+         ENTERED=20091125
+          REJECT="Contains non-modification firmware binary"
+           SHORT="Broadcom 802.11abg networking drivers"
+cat << EOF
+These packages contain Broadcom's IEEE 802.11a/b/g/n hybrid Linux device driver
+for use with Broadcom's BCM4311-, BCM4312-, BCM4321-, and BCM4322-based hardware.
+
+The hybrid binary file is agnostic to the specific version of the Linux kernel
+because it is designed to perform all interactions with the operating system
+through operating-system-specific files and an operating system abstraction
+layer file. All Linux operating-system-specific code is provided in source form,
+making it possible to retarget to different kernel versions and fix operating
+system related issues.
+EOF
