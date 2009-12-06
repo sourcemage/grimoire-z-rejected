@@ -1,2 +1,6 @@
+2009-12-06 Vlad Glagolev <stealth@sourcemage.org>
+	* PRE_BUILD: apply the patch
+	* sched.patch: added, to fix compilation with kernel 2.6.32
+
 2009-11-25 Vlad Glagolev <stealth@sourcemage.org>
 	* {PRE_,}BUILD, DETAILS, DEPENDS, FINAL, TRIGGERS: spell created
