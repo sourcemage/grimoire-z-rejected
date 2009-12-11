@@ -1,3 +1,6 @@
+2009-12-11 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 10.0.42.34
+
 2009-11-23 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DEPENDS: added nspr and nss, flash plugin binary is linked against
 	  them
