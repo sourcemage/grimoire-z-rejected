@@ -6,17 +6,17 @@ else
          VERSION=190.53
 fi
 case "${SMGL_COMPAT_ARCHS[1]}" in
-	x86_64)
-	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
+        x86_64)
+          SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
 if [[ $NVIDIA_BETA == y ]]; then
      SOURCE_HASH=sha512:ddcc9b58de12de115b26a6648feddea6d25788162113882781e7483bae2058d6445462c0ea5e2ecce39bae7dcc4bd15447954a2350575adf7f1f3e8d5adabbf9
 else
-     SOURCE_HASH=sha512:929c7bce39e6aa1a8092a5d2af9c93c621b91a73987f3332de9ced30c074eb3497134a23c5d656e1ed4db41a96275018c1479a87fc52b3c233f60e4b194302f7
+     SOURCE_HASH=sha512:84ac7ef4a62fc17879e43c9fdd3298805bd7e32f36975c79e52e04c5d4c1cfda46e5ed875d695cc7c6a3cfaacde1ab0fbf07a1bc8ca61100a6fcc5e03728cbb3
 fi
       SOURCE_URL=http://http.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
         ;;
-	ia32)
+        ia32)
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
 if [[ $NVIDIA_BETA == y ]]; then
      SOURCE_HASH=sha512:ddd60c1edc6fea4aad5a5aaff2fa6a081ca2c94ec9793dd0c8b6a1054034ad4d0dca212c036699a2b079bbf9db705cec38b351ba80fd4d0f79bd313a50458e72
@@ -29,9 +29,9 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
 ############################################################
 # missing ia64 support we don't have an arch spec for it???
 ############################################################
-	*)
-	 VERSION=${SMGL_COMPAT_ARCHS[0]}
-	  SOURCE=
+        *)
+         VERSION=${SMGL_COMPAT_ARCHS[0]}
+          SOURCE=
       SOURCE_URL=
         ;;
 esac
