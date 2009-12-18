@@ -1,3 +1,6 @@
+2009-12-18 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated ucode-2 to 228.61.2.24
+
 2009-01-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated ucode-2 to 228.57.2.23
 	  Use VERSION2 instead of ${VERSION/2.23/1.21} to make updates easier

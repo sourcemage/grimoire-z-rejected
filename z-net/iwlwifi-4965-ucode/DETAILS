@@ -1,5 +1,5 @@
            SPELL=iwlwifi-4965-ucode
-         VERSION=228.57.2.23
+         VERSION=228.61.2.24
         VERSION2=228.57.1.21
           SOURCE=$SPELL-$VERSION2.tgz
          SOURCE2=$SPELL-$VERSION.tgz
