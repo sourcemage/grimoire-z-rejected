@@ -1,2 +1,2 @@
-make WX_ROOT=$SOURCE_DIRECTORY/wxGTK-2.8.8 wxbuild  &&
-make
+make WX_ROOT=$SOURCE_DIRECTORY/wxGTK-$WXVERSION wxbuild &&
+PKCS11_INC="/usr/include/opensc/" make

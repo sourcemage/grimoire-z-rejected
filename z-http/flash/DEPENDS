@@ -1,1 +1,3 @@
-depends NS-PLUGIN-COMPATIBLE
+depends NS-PLUGIN-COMPATIBLE &&
+depends nspr &&
+depends nss

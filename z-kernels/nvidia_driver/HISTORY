@@ -1,3 +1,27 @@
+2009-12-17 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated stable to 190.53 (x86_64)
+
+2009-12-16 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated stable to 190.53
+
+2009-12-07 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated beta version to 195.22
+
+2009-11-07 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated beta version to 190.42
+
+2009-10-27 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated stable version to 190.42
+
+2009-10-19 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: fixed sha512 hash for beta ia32 (190.40)
+
+2009-10-18 George Sherwood <gsherwood@sourcemage.org>
+	* DETAILS: Updated beta version to 190.40
+
+2009-10-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: updated beta version to 190.36
+
 2009-09-10 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated beta version to 190.32
 

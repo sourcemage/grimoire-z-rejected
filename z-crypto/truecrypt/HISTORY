@@ -1,3 +1,8 @@
+2009-11-17 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 6.3, WXVERSION=2.8.10
+	* DEPENDS: added opensc
+	* PRE_BUILD: added sed -i
+
 2009-02-26 Ladislav Hagara <hgr@vabo.cz>
 	* DEPENDS: device-mapper is provided by lvm now
 

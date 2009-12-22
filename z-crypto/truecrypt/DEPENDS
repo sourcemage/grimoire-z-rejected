@@ -1,2 +1,3 @@
 depends lvm &&
-depends fuse
+depends fuse &&
+depends opensc

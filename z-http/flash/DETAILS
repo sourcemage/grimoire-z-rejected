@@ -1,9 +1,10 @@
            SPELL=flash
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=10.0.32.18
+         VERSION=10.0.42.34
           SOURCE=libflashplayer-$VERSION.linux-x86_64.so.tar.gz
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
-     SOURCE_HASH=sha512:f2d043a9fa09a2265c6ed60acb459fa99cb06ce2e71078b50cb3e5e7dc6684c5a433bc6062b4798f9dcc059af45641975a9af83eba999c237e092c38feb90d27
+#     SOURCE_HASH=sha512:f2d043a9fa09a2265c6ed60acb459fa99cb06ce2e71078b50cb3e5e7dc6684c5a433bc6062b4798f9dcc059af45641975a9af83eba999c237e092c38feb90d27
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 else
  if [[ $FLASH_BETA == y ]]; then
@@ -12,7 +13,7 @@ else
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_10_linux
 else
-         VERSION=10.0.32.18
+         VERSION=10.0.42.34
   SECURITY_PATCH=5
           SOURCE=install_flash_player_10_linux.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE

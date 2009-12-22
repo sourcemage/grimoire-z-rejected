@@ -1,5 +1,10 @@
+2009-11-26 Vlad Glagolev <stealth@sourcemage.org>
+	* z-kernels/broadcom-wl: new spell, Broadcom 802.11abg networking drivers
+
 2009-09-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* z-x11/nxclient: new spell, a client for the NX terminal server
+	* z-x11/nxnode: new spell, files required by the nxserver
+	* accounts, groups: added user and group for nx
 
 2009-08-23 Donald Johnson <ltdonny@gmail.com>
 	* z-libs/acml32: New spell, AMD Core Math Library (32-bit)
