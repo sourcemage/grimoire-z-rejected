@@ -1,3 +1,5 @@
 depends lvm &&
 depends fuse &&
-depends opensc
+depends opensc &&
+
+suggest_depends sudo "" "" "to create volume as a simple user"

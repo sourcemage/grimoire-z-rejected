@@ -1,3 +1,8 @@
+2010-01-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 6.3a
+	* DEPENDS: added sudo as suggested dependency, to create volume as 
+	  a simple user
+
 2009-11-17 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 6.3, WXVERSION=2.8.10
 	* DEPENDS: added opensc
