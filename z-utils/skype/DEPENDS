@@ -1,4 +1,7 @@
-depends  alsa-lib &&
-depends  dbus   &&
-depends -sub DBUS qt4 &&
-depends libxscrnsaver
+depends alsa-lib &&
+depends libxscrnsaver &&
+
+if [[ "$SKYPE_STATIC" == "n" ]]; then
+  depends dbus &&
+  depends -sub DBUS qt4
+fi

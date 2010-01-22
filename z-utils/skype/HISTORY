@@ -1,5 +1,6 @@
 2010-01-21 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 2.1.0.81
+	* PREPARE, DETAILS, DEPENDS: added options to cast static version
 
 2009-11-09 Vasil Yonkov <bustervill@gmail.com>
 	* DETAILS: updated spell to 2.1.0.47
