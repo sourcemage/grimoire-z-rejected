@@ -1,3 +1,6 @@
+2010-01-22 Ladislav Hagara <hgr@vabo.cz>
+	* DEPENDS: added -sub ACCESS for qt4 #15539
+
 2010-01-21 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 2.1.0.81
 	* PREPARE, DETAILS, DEPENDS: added options to cast static version

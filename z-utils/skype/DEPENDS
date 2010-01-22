@@ -3,5 +3,5 @@ depends libxscrnsaver &&
 
 if [[ "$SKYPE_STATIC" == "n" ]]; then
   depends dbus &&
-  depends -sub DBUS qt4
+  depends -sub "DBUS ACCESS" qt4
 fi
