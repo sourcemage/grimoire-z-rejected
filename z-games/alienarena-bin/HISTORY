@@ -1,3 +1,7 @@
+2009-12-30 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 20091227
+	* INSTALL: fixed +x permission of binaries in $INSTALL_DIR
+
 2009-01-16 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 20090109
 	* PRE_BUILD: removed, no longer needed

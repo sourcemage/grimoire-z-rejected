@@ -1,8 +1,14 @@
              SPELL=skype
-           VERSION=2.1.0.47
-       SOURCE_HASH=sha512:01d63c9ef8720fc7bd4f008bdfd6da9b2969b7697ffe7b3676e421ef831fe000d0e82d93250957c32f1dab88361943b2cc3443f52e9ab29241af58eee3458fa9
-  SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+           VERSION=2.1.0.81
+if [[ $SKYPE_STATIC == y ]]; then
+            SOURCE=${SPELL}_static-$VERSION.tar.bz2
+       SOURCE_HASH=sha512:4a47b447b173205af0fd9198b39dfc2d57e32bdaf160deb024e49afcbe7dc4a615e1646b5118bf8af52ad3c0958ce705106ccb7abed0c3d44d57b5101eef6a83
+  SOURCE_DIRECTORY="$BUILD_DIRECTORY/${SPELL}_static-$VERSION"
+else
             SOURCE=$SPELL-$VERSION.tar.bz2
+       SOURCE_HASH=sha512:14e5b63d8603449bd1508dd8f2c3e780eb4cf5cbb2c1e960f745e8d4fc9802eceb835a2a4996e0e11f08394fb38b0ef6b08de4f0ed7cd192bb2a19748b9fef60
+  SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+fi
           WEB_SITE=http://www.skype.com/
      SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
         LICENSE[0]=/usr/share/doc/skype/LICENSE
