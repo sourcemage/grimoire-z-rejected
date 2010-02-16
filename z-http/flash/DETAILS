@@ -1,6 +1,6 @@
            SPELL=flash
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=10.0.45.2
+         VERSION=10.0.42.34
           SOURCE=libflashplayer-$VERSION.linux-x86_64.so.tar.gz
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
