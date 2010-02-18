@@ -8,8 +8,8 @@ then
 fi &&
 
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "ia32" ]]
-then	
-message "${MESSAGE_COLOR}Determine which browser plugins to install${DEFAULT_COLOR}" &&
+then
+	message "${MESSAGE_COLOR}Determine which browser plugins to install${DEFAULT_COLOR}" &&
 	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
 	then
                 message "${MESSAGE_COLOR}Installing plugin for mozilla${DEFAULT_COLOR}" &&

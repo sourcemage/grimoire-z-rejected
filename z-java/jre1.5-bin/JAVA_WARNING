@@ -10,5 +10,5 @@ ${MESSAGE_COLOR}so cast will find it.\n${DEFAULT_COLOR}"  &&
 if ! query "HAVE YOU DOWNLOADED THE SOURCES AND WISH TO CONTINUE CASTING?" n;
 then
   message "${MESSAGE_COLOR}Please recast when you have the sources!\n${DEFAULT_COLOR}"
-  return 1 
+  return 1
 fi
