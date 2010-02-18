@@ -4,4 +4,4 @@ depends  libx11    &&
 depends  libxext   &&
 depends  libxt     &&
 depends  libxtst   &&
-depends  unixodbc
+depends  ODBC-MGR
