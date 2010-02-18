@@ -1,3 +1,6 @@
+2010-02-17 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on any provider of ODBC-MGR now
+
 2008-04-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* CONFLICTS: Made conflict with jre6-bin
 
