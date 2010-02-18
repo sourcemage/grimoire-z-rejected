@@ -7,7 +7,7 @@ then
 fi
 
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "ia32" ]]
-then	
+then
   if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
   then
     ln -sf ${INSTALL_ROOT}/usr/lib/jdk$VER/jre/plugin/i386/ns7/libjavaplugin_oji.so  \
