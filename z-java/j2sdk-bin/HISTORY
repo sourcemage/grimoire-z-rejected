@@ -29,7 +29,7 @@
 
 2006-10-18 Flavien Bridault <vlaaad@sourcemage.org>
 	* DETAILS: Updated to 1_4_2_12
-	* DEPENDS: No longer needs gcc33 
+	* DEPENDS: No longer needs gcc33
 
 2006-09-21 Juuso Alasuutari <iuso@sourcemage.org>
 	* PROVIDES: [automated] Fixed invalid entries.
@@ -109,7 +109,7 @@
 2004-07-28 Eric Schabell <eschabell@sourcemage.org>
 	* WIP: removed, not really applicable for z-rejected as we never
 	  move spells into 'stable.'
-	* CONFIGURE: uses REJECTED_MSG file and has been updated to include 
+	* CONFIGURE: uses REJECTED_MSG file and has been updated to include
 	  spell specific warnings about source downloads.
 	* FINAL: added to source java.sh for JAVA_HOME to be set.
 
@@ -145,8 +145,8 @@
 	* PRE_BUILD: added unpack to PRE_BUILD for SOURCE
 
 2003-05-09 Eric Sandall <sandalle@sourcemage.org>
-	* PREPARE: Added support for SPARC architecture (couldn't find PPC files) i586 is default, just in case the selection is 
-	  somehow missed...
+	* PREPARE: Added support for SPARC architecture (couldn't find PPC files)
+	  i586 is default, just in case the selection is somehow missed...
 
 2003-03-17 Arwed v. Merkatz <v.merkatz@gmx.net>
 	* DEPENDS: added DEPENDS file and depends on unixODBC
