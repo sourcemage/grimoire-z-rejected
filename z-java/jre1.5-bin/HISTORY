@@ -1,3 +1,6 @@
+2010-02-17 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on any provider of ODBC-MGR now
+
 2009-08-25 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 1_5_0_20
 
