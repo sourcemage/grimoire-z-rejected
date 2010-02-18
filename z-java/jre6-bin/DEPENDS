@@ -1,4 +1,4 @@
-depends  unixodbc  &&
+depends  ODBC-MGR  &&
 depends  alsa-lib  &&
 
 if [[ "$JRE6_BIN_X" == "y" ]]; then
