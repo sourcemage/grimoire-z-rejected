@@ -1,3 +1,6 @@
+2010-02-17 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on any provider of ODBC-MGR now
+
 2008-04-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* CONFLICTS: Made conflict with jre6-bin
 
@@ -42,7 +45,7 @@
 	* PROVIDES: added JAVA-1.4
 
 2005-01-30 Arjan Bouter <abouter@sourcemage.org>
-        * BUILD: spell_installed -> spell_ok conversion
+	* BUILD: spell_installed -> spell_ok conversion
 	  looks like you missed one Eric ;)
 
 2005-01-23 Eric Sandall <sandalle@sourcemage.org>
@@ -60,7 +63,7 @@
 	  with getting version numbers in the j2sdk spell logs.
 
 2004-08-23 Eric Schabell <eschabell@sourcemage.org>
-	* CONFIGURE, INSTALL, BUILD: removed some more sorcery 
+	* CONFIGURE, INSTALL, BUILD: removed some more sorcery
 	  function calls that are messing with installwatch.
 	* HISTORY: cleaning up long lines.
 
@@ -93,18 +96,18 @@
 	* CONFIGURE: Needs "&&" after the ask_rejected.
 
 2004-01-10 hgg <hgreig@bigpond.net.au>
-	* BUILD: export MAKE_NJOBS=1 instead of unset MAKE_NJOBS (caused 
+	* BUILD: export MAKE_NJOBS=1 instead of unset MAKE_NJOBS (caused
 	  error message if unset).
 
 2004-01-09 hgg <hgreig@bigpond.net.au>
-	* j2sdk-1_4_2-kernel.patch,PRE_BUILD: add with a check for 2.6.X 
+	* j2sdk-1_4_2-kernel.patch,PRE_BUILD: add with a check for 2.6.X
 	  headers in /usr/include/linux.
-	* j2sdk-1_4_2-smgl.patch: disable some deprecated Linuxthreads calls 
+	* j2sdk-1_4_2-smgl.patch: disable some deprecated Linuxthreads calls
 	  that caused problems with some gcc and glibc versions.
 	* BUILD: swap POOPY for MOZPLUG.
 
 2004-01-08 hgg <hgreig@bigpond.net.au>
-	* PRE_BUILD: 2.6 kernel uses different /proc interface. Check for 
+	* PRE_BUILD: 2.6 kernel uses different /proc interface. Check for
 	  kernel version before checking for free space bug #5486.
 	* j2sdk-1_4_2-smgl.patch: fix for alsa 1.0.0rc2.
 
@@ -113,7 +116,7 @@
 	* POST_INSTALL: deleted (see above).
 
 2003-11-28 hgg <hgreig@bigpond.net.au>
-	* DEPENDS: change to X11-LIBS now I have fixed the xfree86-libs and 
+	* DEPENDS: change to X11-LIBS now I have fixed the xfree86-libs and
 	  xdirectfb spell.
 
 2003-11-25 hgg <hgreig@bigpond.net.au>
@@ -126,19 +129,19 @@
 	* PROVIDES: Uppercase provides.
 
 2003-10-29 hgg <hgreig@bigpond.net.au>
-	* DETAILS: Update to 1.4.2. Remove LFS patches, remove extra sources. 
-	* DEPENDS: add alsa-libs and unixODBC and X11-SERVER (wants to link to 
+	* DETAILS: Update to 1.4.2. Remove LFS patches, remove extra sources.
+	* DEPENDS: add alsa-libs and unixODBC and X11-SERVER (wants to link to
 	  libXi.so, which is not provided by xfree86-libs spell).
-	* PREBUILD,CONFIGURE,DETAILS: remove sun's binary bootstrap version from 
-	  this spell the j2sdk-bin spell is just fine for bootstrapping if no 
-		system version is installed change "available swap" check to the currently 
+	* PREBUILD,CONFIGURE,DETAILS: remove sun's binary bootstrap version from
+	  this spell the j2sdk-bin spell is just fine for bootstrapping if no
+		system version is installed change "available swap" check to the currently
 		needed size and use awk (thanks dufflebunk).
-	* BUILD: turn off verbose make, add HOTSPOT_BUILD_JOBS for systems with 
-	  MAKE_NJOBS>1 clean up and move non-system specific stuff into a single 
-		patch, change one of the plugin links. Change MILESTONE to just SMGL, and 
-		make BUILD_NUMBER sane if you are unlucky enough to cast it twice in the 
+	* BUILD: turn off verbose make, add HOTSPOT_BUILD_JOBS for systems with
+	  MAKE_NJOBS>1 clean up and move non-system specific stuff into a single
+		patch, change one of the plugin links. Change MILESTONE to just SMGL, and
+		make BUILD_NUMBER sane if you are unlucky enough to cast it twice in the
 	  same day.
-	* j2sdk-1_4_2-smgl.patch: my patch to take care of paths, gcc3.3.X errors, 
+	* j2sdk-1_4_2-smgl.patch: my patch to take care of paths, gcc3.3.X errors,
 	  make system checks.
 	* j2sdk-1_4_2-use-lesstif.patch: my patch to allow use of lesstif libXm.a.
 
@@ -150,17 +153,17 @@
 	* DETAILS: Updated so everyone has to rebuild and track it (security feature).
 
 2003-09-19 hgg <hgreig@bigpond.net.au>
-	* CONFLICTS: Removed CONFLICTS so j2sdk-bin can be the bootstrap 
+	* CONFLICTS: Removed CONFLICTS so j2sdk-bin can be the bootstrap
 	  compiler (now dispelled in BUILD).
 
 2003-09-10 hgg <hgreig@bigpond.net.au>
-	* PREPARE,CONFIGURE,PREBUILD: Moved PREPARE to CONFIGURE, moved binary setup 
-	  to PRE_BUILD, redid JAVA_HOME to also check for a working javac, added 
-		check to PREPARE to start configure if the latest changes aren't in 
-		$SPELL_CONFIG.
+	* PREPARE,CONFIGURE,PREBUILD: Moved PREPARE to CONFIGURE, moved binary setup
+	  to PRE_BUILD, redid JAVA_HOME to also check for a working javac, added
+	  check to PREPARE to start configure if the latest changes aren't in
+	  $SPELL_CONFIG.
 
 2003-09-09 hgg <hgreig@bigpond.net.au>
-	* BUILD: Now builds in "sane" mode so a failure causes an exit and it doesn't 
+	* BUILD: Now builds in "sane" mode so a failure causes an exit and it doesn't
 	  bundle up the debug image.
 
 2003-04-18 Seth Woolley <seth@tautology.org>
@@ -170,15 +173,15 @@
 	* DETAILS: Modified DETAILS to correct MD5.
 
 2003-01-25 Jose Bernardo Silva <jbernardo@sourcemage.org>
-	* BUILD: Fixed the last small things in BUILD, including a "rm -f j2sdk" 
+	* BUILD: Fixed the last small things in BUILD, including a "rm -f j2sdk"
 	  because "ln -sf" doesn't replace existing links as it should.
 
 2003-01-19 Jose Bernardo Silva <jbernardo@sourcemage.org>
-	* BUILD,DETAILS: Updated the spell to 1.4.1, according with the latest LFS 
+	* BUILD,DETAILS: Updated the spell to 1.4.1, according with the latest LFS
 	  hints. Fixed the "second cast only" bug.
 
 2002-12-11 Geoffrey Derber <gderber@sourcemage.org>
-	* DETAILS: added zero_the_hero's website as a mirror of some of the download 
+	* DETAILS: added zero_the_hero's website as a mirror of some of the download
 	  files.
 
 2002-12-09 Geoffrey Derber <gderber@sourcemage.org>

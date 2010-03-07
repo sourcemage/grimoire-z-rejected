@@ -3,10 +3,9 @@ depends  zlib        &&
 depends  tcsh        &&
 depends  cpio        &&
 depends  alsa-lib    &&
-depends  unixodbc    &&
+depends  ODBC-MGR    &&
 depends  zip         &&
 if [ "$BOOTSTRAP" = "spell" ]
-then depends j2sdk-bin
+  then depends j2sdk-bin
 fi                   &&
-optional_depends "lesstif" "use-lesstif" "" "To substitute LessTif for the bundled version of Motif" 
-
+optional_depends "lesstif" "use-lesstif" "" "To substitute LessTif for the bundled version of Motif"

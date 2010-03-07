@@ -30,11 +30,11 @@
             SHORT="j2sdk compiles Sun's j2sdk."
 
 cat << EOF
-Java 2 Platform, Standard Edition (J2SETM) software is the premier solution for 
-rapidly developing and deploying mission-critical, enterprise applications. 
-Version 1.4.2 builds upon Java technology's cross-platform support and robust 
-security model with new features and functionality, enhanced performance and 
-scalability, and improved reliability and serviceability. 
+Java 2 Platform, Standard Edition (J2SETM) software is the premier solution for
+rapidly developing and deploying mission-critical, enterprise applications.
+Version 1.4.2 builds upon Java technology's cross-platform support and robust
+security model with new features and functionality, enhanced performance and
+scalability, and improved reliability and serviceability.
 
 Thanks to LFS hints(http://tushar.lfsforum.org/)
 

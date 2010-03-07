@@ -1,3 +1,6 @@
+2010-02-02 Pol Vinogradov <vin.public@gmail.com>
+	* INSTALL: fixed installation on x86_64 platforms
+
 2008-06-06 Alexander Tsamutali <astsmtl@gmail.com>
 	* PROVIDES: Now provides QUAKE3
 

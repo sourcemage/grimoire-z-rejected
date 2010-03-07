@@ -37,7 +37,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk$VER
            SHORT="jdk1.5-bin is the Java Software Development Kit"
 cat << EOF
 The Java Development Kit is a feature-complete development and
-deployment platform. The JDK contains the Java Plug-In for Netscape 4.x 
+deployment platform. The JDK contains the Java Plug-In for Netscape 4.x
 and Mozilla/Netscape 6.x.
 
 The DLJ license allows linux distributions to distribute the JDK. One must

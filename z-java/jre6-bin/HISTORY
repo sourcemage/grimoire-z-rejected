@@ -1,3 +1,6 @@
+2010-02-17 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: Depends on any provider of ODBC-MGR now
+
 2009-11-21 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 6u17
 
@@ -50,3 +53,4 @@
 2008-04-20 Julien "_kaze_" ROZO <julien@rozo.org>
 	* BUILD, CONFIGURE, CONFLICTS, DEPENDS, DETAILS, FINAL, INSTALL, java.sh,
 	  JAVA_WARNING, PRE_BUILD, PROVIDES, UNATTEND_SAFE: created this spell
+

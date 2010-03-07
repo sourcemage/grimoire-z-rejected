@@ -1,11 +1,11 @@
-if [[ $(get_running_kernel_version) == 2.6.* ]]; then 
+if [[ $(get_running_kernel_version) == 2.6.* ]]; then
  if [ $(cat /proc/meminfo | grep SwapFree |awk '$1=="SwapFree:"{print $2;}') -gt "1300000000" ] ;
-    then mk_source_dir	$SOURCE_DIRECTORY	2g           
+    then mk_source_dir	$SOURCE_DIRECTORY	2g
     else export TMPFS=off &&
           mk_source_dir $SOURCE_DIRECTORY
  fi
 elif [ $(cat /proc/meminfo |awk '$1=="Swap:"{print $NF;}') -gt "1300000000" ] ;
-     then mk_source_dir	$SOURCE_DIRECTORY	2g           
+     then mk_source_dir	$SOURCE_DIRECTORY	2g
      else export TMPFS=off &&
      mk_source_dir $SOURCE_DIRECTORY
 fi                                                   &&
@@ -14,9 +14,9 @@ unpack_file 	     &&
 unpack_file 2	     &&
 unpack_file 3            &&
 if [ "$CERT" = "yes" ]
-then unpack_file 5       
+then unpack_file 5
 fi                                                   &&
-# apply patches 
+# apply patches
 patch -p1 < $SCRIPT_DIRECTORY/j2sdk-1_4_2-smgl.patch &&
 if  grep UTS_RELEASE  /usr/include/linux/version.h | grep -q \"2.6; then
     patch -p1 < $SCRIPT_DIRECTORY/j2sdk-1_4_2-kernel2.6.patch
@@ -24,4 +24,4 @@ fi                                                   &&
 # JAVA_HOME mightn't be set if j2sdk-bin has just been installed
 if spell_ok j2sdk-bin;  then
   export JAVA_HOME=/usr/lib/j2sdk${BIN_VERSION}
-fi                                              
+fi

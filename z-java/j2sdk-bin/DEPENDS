@@ -1,2 +1,2 @@
-depends  unixodbc  &&
+depends ODBC-MGR  &&
 depends alsa-lib

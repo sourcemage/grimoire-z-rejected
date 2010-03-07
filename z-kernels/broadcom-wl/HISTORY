@@ -1,3 +1,7 @@
+2010-02-13 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 5.60.48.36; fixed long description wrap
+	* sched.patch: removed
+
 2009-12-06 Vlad Glagolev <stealth@sourcemage.org>
 	* PRE_BUILD: apply the patch
 	* sched.patch: added, to fix compilation with kernel 2.6.32

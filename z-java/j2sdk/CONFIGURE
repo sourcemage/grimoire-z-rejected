@@ -26,13 +26,12 @@ $JAVA_HOME\n(If compilation fails due to this bootstrap compiler \n then use cas
 SUN's binary)\n\nDo you want to use \"java\" to bootstrap j2sdk compilation ? \nIf you answer 'n',I'll \
 use SUN's binary.${DEFAULT_COLOR}"  y;
   then
-    BOOTSTRAP=system 
+    BOOTSTRAP=system
   else
-    BOOTSTRAP=spell 
+    BOOTSTRAP=spell
   fi
- 
-  CONFIGURED=yes  
-  BOOTSTRAP=$BOOTSTRAP 
 
+  CONFIGURED=yes
+  BOOTSTRAP=$BOOTSTRAP
 fi
 

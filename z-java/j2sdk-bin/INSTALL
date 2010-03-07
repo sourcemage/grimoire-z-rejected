@@ -3,7 +3,7 @@ cd  ${INSTALL_ROOT}/usr/lib  &&
 if [ "$ARCH" = "sparc" ]
 then
 	tail +522 $SOURCE_CACHE/$SOURCE | bunzip2 | tar -xf -  &&
-	
+
 	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
 	then
 		ln -sf ${INSTALL_ROOT}/usr/lib/j2sdk$VER/jre/plugin/sparc/mozilla/javaplugin_oji.so  ${INSTALL_ROOT}/usr/lib/mozilla/plugins/javaplugin_oji.so
@@ -12,7 +12,7 @@ then
 elif [ "$ARCH" = "ppc" ]
 then
 	tail +400 $SOURCE_CACHE/$SOURCE | bunzip2 | tar -xf -  &&
-	
+
 	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
 	then
 		ln -sf ${INSTALL_ROOT}/usr/lib/j2sdk$VER/jre/plugin/ppc/mozilla/javaplugin_oji.so  ${INSTALL_ROOT}/usr/lib/mozilla/plugins/javaplugin_oji.so
@@ -21,7 +21,7 @@ then
 elif [ "$ARCH" = "i386" ]
 then
 	yes | sh $SOURCE_CACHE/$SOURCE  &&
-	
+
 	if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
 	then
 		ln -sf ${INSTALL_ROOT}/usr/lib/j2sdk$VER/jre/plugin/i386/ns610-gcc32/libjavaplugin_oji.so  ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libjavaplugin_oji.so

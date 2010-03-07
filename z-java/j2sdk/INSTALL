@@ -6,12 +6,12 @@ then
 	install -d /usr/java					                                &&
 	cp -av  j2sdk-image /usr/java/$SPELL-$VERSION-${BUILD_NUMBER}	&&
 	cd /usr/java                                                  &&
-	
+
 	for i in *;
 	do
 		[ "$i" = "$SPELL-$VERSION-${BUILD_NUMBER}" ] ||  rm -rf $i;
 	done &&
-	
+
 	# I want to track the 30+ MB we just installed and this turns installwatch back on
 	#
 	ln -snf $SPELL-$VERSION-${BUILD_NUMBER} j2sdk    &&
@@ -23,7 +23,7 @@ then
 	mkdir -p /etc/.java	                                                      &&
 	chmod a+w /etc/.java                                                      &&
 	PLUG=/usr/lib/mozilla/plugins/                                            &&
-	
+
 	if [ -d $PLUG ]
 	then
 		echo "Installing for Mozilla" &&
@@ -57,20 +57,20 @@ then
 	ln -sf $TRACK_ROOT/usr/java/j2sdk/jre/plugin/i386/ns610/libjavaplugin_oji.so $PLUG/libjavaplugin_oji.so &&
 	ln -sf $TRACK_ROOT/usr/java/j2sdk/jre/plugin/i386/ns4/libjavaplugin.so $PLUG/libjavaplugin.so	&&
 
-	# now remove j2sdk-bin bootstrap compiler if installed 
+	# now remove j2sdk-bin bootstrap compiler if installed
 	#
 	if    spell_ok      j2sdk-bin
   then
 		dispel  j2sdk-bin  &&
 		BOOTSTRAP=system   &&
 		sedit "s/j2sdk\:j2sdk-bin\:on\:required\:\://g" $DEPENDS_STATUS
-	fi                                                     
+	fi
 
 	mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
 	install -m 0644 $SECTION_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/ &&
 	ln -sfn ${INSTALL_ROOT}/usr/lib/j2sdk$VER/ ${INSTALL_ROOT}/usr/lib/j2sdk
 
-else 
+else
 	message "${WARNING}SORRY, JAVA APPEARS TO HAVE FAILED BUILDING${DEFAULT_COLOR}" &&
 	rm -rf /opt/java/                                                               &&
   false

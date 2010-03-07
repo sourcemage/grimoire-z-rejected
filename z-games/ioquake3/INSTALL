@@ -7,4 +7,4 @@ cp -vr * $INSTALL_DIRECTORY &&
 cp -v $PAK0_PK3 $INSTALL_DIRECTORY/baseq3 &&
 cd $INSTALL_DIRECTORY &&
 find_and_scam &&
-chmod 750 ioquake3.i386 ioq3ded.i386 ioquake3.sh
+chmod 750 ioquake3.${SMGL_COMPAT_ARCHS[1]} ioq3ded.${SMGL_COMPAT_ARCHS[1]} ioquake3.sh
