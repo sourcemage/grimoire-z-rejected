@@ -1,15 +1,15 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_legacy_96xx
-         VERSION=96.43.11
+         VERSION=96.43.16
 case "${SMGL_COMPAT_ARCHS[1]}" in
 	x86_64)
-     SOURCE_HASH=sha512:75f65788d3eb1223433e7dcd180d4578921b2df8f1dbcad8783847f2c7e963f7a05dbd1a0d2bf038a8804bee138baa20ffbe45fd8eb521b2608a18d2e0f5c704
+     SOURCE_HASH=sha512:3fc14b2d93ba3432e3df19367d28a8fe6949e6042c08d8e6d123675843264664e350ac651ca5176cbc6d5311292bcf5320a729f32b101f4f7e1746205f887d0b
 	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
         ;;
 	ia32)
-     SOURCE_HASH=sha512:ee7afbb3d184572f1da624a6c9d7ecfb64f9fca2ba49eec7b1793db8bb8fc166cfd8b1cde4a66c90c02bce2df82cebbef61c06dcee2020172cb49d8c5612af0f
+     SOURCE_HASH=sha512:25d55232a67f9bad9bcd40f595923af2541172f5253c942b3f4612509bf3dc0672571144a78ca85e7a58ea3ca659455454075f77e7772e0fcb4c3b7053f41912
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
@@ -26,7 +26,6 @@ esac
 #      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030401
-      PATCHLEVEL=1
   SECURITY_PATCH=1
           REJECT="Non-GPL compatible software license"
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
