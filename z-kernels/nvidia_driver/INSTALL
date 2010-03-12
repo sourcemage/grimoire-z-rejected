@@ -102,6 +102,89 @@ popd                                            &&
 popd
 
 #
+# Install Cuda headers
+#
+pushd  $SOURCE_DIRECTORY/usr/include/cuda  &&
+mkdir  -vp  $INSTALL_ROOT/usr/include/cuda
+for file in cudaGL.h cuda.h; do
+  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/cuda/
+done                                     &&
+popd                                     &&
+
+#
+# Install Cuda libraries
+#
+pushd  $SOURCE_DIRECTORY/usr/lib  &&
+for lib in libcuda.so.${VERSION/-/.}; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
+done                                    &&
+  #
+  # Setup symlinks
+  #
+  pushd  $INSTALL_ROOT/usr/lib                                   &&
+  ln  -sfn  libcuda.so.${VERSION/-/.}  libcuda.so.1              &&
+  ln  -sfn  libcuda.so.1  libcuda.so                             &&
+  popd                                                           &&
+popd                                    &&
+
+#
+# Install VDPAU headers
+#
+pushd  $SOURCE_DIRECTORY/usr/include/vdpau  &&
+mkdir  -vp  $INSTALL_ROOT/usr/include/vdpau
+for file in vdpau.h vdpau_x11.h; do
+  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/vdpau/
+done                                     &&
+popd                                     &&
+
+#
+# Install VDPAU libraries
+#
+pushd  $SOURCE_DIRECTORY/usr/lib/vdpau  &&
+mkdir  -vp  $INSTALL_ROOT/usr/lib/vdpau
+for lib in libvdpau_nvidia.so.${VERSION/-/.} libvdpau_trace.so.${VERSION/-/.}; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/vdpau/
+done                                    &&
+  #
+  # Setup symlinks
+  #
+  pushd  $INSTALL_ROOT/usr/lib                                   &&
+  ln  -sfn  libvdpau_nvidia.so.${VERSION/-/.}  libvdpau_nvidia.so.1            &&
+  ln  -sfn  libvdpau_nvidia.so.1  libvdpau_nvidia.so                           &&
+  ln  -sfn  libvdpau_trace.so.${VERSION/-/.}  libvdpau_trace.so.1              &&
+  ln  -sfn  libvdpau_trace.so.1  libvdpau_trace.so                             &&
+  popd                                                           &&
+popd                                    &&
+
+#
+# Install OpenCL headers
+#
+if [[ "$NVIDIA_BETA" == "y" ]]; then
+pushd  $SOURCE_DIRECTORY/usr/include/CL  &&
+mkdir  -vp  $INSTALL_ROOT/usr/include/CL
+for file in cl_gl.h cl.h cl_platform.h; do
+  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/CL/
+done                                     &&
+popd                                     &&
+
+#
+# Install OpenCL libraries
+#
+pushd  $SOURCE_DIRECTORY/usr/lib  &&
+for lib in libOpenCL.so.1.0.0; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/
+done                                    &&
+  #
+  # Setup symlinks
+  #
+  pushd  $INSTALL_ROOT/usr/lib                                   &&
+  ln  -sfn  libOpenCL.so.1.0.0 libOpenCL.so.1                    &&
+  ln  -sfn  libOpenCL.so.1 libOpenCL.so                          &&
+  popd                                                           &&
+popd
+fi &&
+
+#
 # Install Freedesktop.org spec
 #
 install  -m 0644  -o root  -g root                                         \

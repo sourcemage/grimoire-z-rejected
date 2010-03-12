@@ -1,3 +1,9 @@
+2010-03-12 Julien "_kaze_" ROZO <julien@rozo.org>
+	* INSTALL: added installation of libs and headers for cuda and vdpau,
+	  and installation of libs and headers for OpenCL for beta version
+	* PRE_BUILD, nvidia-190-2.6.33.patch, nvidia-195-2.6.33.patch: added patches
+	  to fix compilation issue with 2.6.33 kernel
+
 2009-12-23 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated beta version to 195.30
 
