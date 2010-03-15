@@ -1,3 +1,6 @@
+2010-03-14 Julien "_kaze_" ROZO <julien@rozo.org>
+	* INSTALL: fixed vdpau libs installation
+
 2010-03-12 Julien "_kaze_" ROZO <julien@rozo.org>
 	* INSTALL: added installation of libs and headers for cuda and vdpau,
 	  and installation of libs and headers for OpenCL for beta version

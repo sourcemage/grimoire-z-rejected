@@ -140,6 +140,11 @@ popd                                     &&
 #
 # Install VDPAU libraries
 #
+pushd  $SOURCE_DIRECTORY/usr/lib  &&
+for lib in libvdpau.so.${VERSION/-/.}; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/
+done                                    &&
+popd                                    &&
 pushd  $SOURCE_DIRECTORY/usr/lib/vdpau  &&
 mkdir  -vp  $INSTALL_ROOT/usr/lib/vdpau
 for lib in libvdpau_nvidia.so.${VERSION/-/.} libvdpau_trace.so.${VERSION/-/.}; do
@@ -148,7 +153,11 @@ done                                    &&
   #
   # Setup symlinks
   #
-  pushd  $INSTALL_ROOT/usr/lib                                   &&
+  pushd  $INSTALL_ROOT/usr/lib                                                 &&
+  ln  -sfn  libvdpau.so.${VERSION/-/.}  libvdpau.so.1                          &&
+  ln  -sfn  libvdpau.so.1  libvdpau.so                                         &&
+  popd                                                                         &&
+  pushd  $INSTALL_ROOT/usr/lib/vdpau                                           &&
   ln  -sfn  libvdpau_nvidia.so.${VERSION/-/.}  libvdpau_nvidia.so.1            &&
   ln  -sfn  libvdpau_nvidia.so.1  libvdpau_nvidia.so                           &&
   ln  -sfn  libvdpau_trace.so.${VERSION/-/.}  libvdpau_trace.so.1              &&
