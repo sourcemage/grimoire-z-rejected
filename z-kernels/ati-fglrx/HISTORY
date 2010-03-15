@@ -1,3 +1,9 @@
+2010-03-14 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 10.2
+	* INSTALL: fixed path for symlinks to libGL.so
+	* PRE_BUILD, fglrx-2.6.33.patch: fixed compilation issue with kernel
+	  2.6.33
+
 2009-11-29 Pol Vinogradov <vin.public@gmail.com>
 	* DETAILS: Updated to 9.11
 	* PRE_BUILD: removed ATI_XVERSION, no x710_64a directory in archive
