@@ -37,11 +37,7 @@ cd  $SOURCE_DIRECTORY/usr/src/nv     &&
 ln  -sfn  Makefile.kbuild  Makefile  &&
 
 # patch for 2.6.33 kernel
-if [[ "$(get_kernel_version|cut -d. -f3)" == "33" ]]; then
+if [[ "$(get_kernel_version|cut -c5-6)" == "33" ]] && [[ "$NVIDIA_BETA" == "n" ]]; then
     cd  $SOURCE_DIRECTORY  &&
-    if [[ "$NVIDIA_BETA" == "y" ]]; then
-        patch -p0 < $SCRIPT_DIRECTORY/nvidia-195-2.6.33.patch
-    else
-        patch -p0 < $SCRIPT_DIRECTORY/nvidia-190-2.6.33.patch
-    fi
+    patch -p0 < $SCRIPT_DIRECTORY/nvidia-190-2.6.33.patch
 fi

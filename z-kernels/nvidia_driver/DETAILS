@@ -1,7 +1,7 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_driver
 if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=195.30
+         VERSION=195.36.15
 else
          VERSION=190.53
 fi
@@ -9,7 +9,7 @@ case "${SMGL_COMPAT_ARCHS[1]}" in
         x86_64)
           SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
 if [[ $NVIDIA_BETA == y ]]; then
-     SOURCE_HASH=sha512:6071a757cc7ff460073e83674033d6ef4d111b1bef1c1511e73663e98583f982b11dbf0e1a5d0cfd1a60ea0606fad4b389b619bcbad279b244a2c8a9d39895d8
+     SOURCE_HASH=sha512:910d3f6703222177a27125fdba353d10a0df3cb0cd5ca872cc8739caeeb9847a6ab3aacd5a5c8b4ee1092bbcdde05ec825df1f547eca1f3f47bc85502ae939d7
 else
      SOURCE_HASH=sha512:84ac7ef4a62fc17879e43c9fdd3298805bd7e32f36975c79e52e04c5d4c1cfda46e5ed875d695cc7c6a3cfaacde1ab0fbf07a1bc8ca61100a6fcc5e03728cbb3
 fi
