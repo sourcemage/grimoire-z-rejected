@@ -34,10 +34,4 @@ sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  usr/src/nv/Makefile.kbuild  &&
 # Setup Makefile symlink
 #
 cd  $SOURCE_DIRECTORY/usr/src/nv     &&
-ln  -sfn  Makefile.kbuild  Makefile  &&
-
-# patch for 2.6.33 kernel
-if [[ "$(get_kernel_version|cut -c5-6)" == "33" ]] && [[ "$NVIDIA_BETA" == "n" ]]; then
-    cd  $SOURCE_DIRECTORY  &&
-    patch -p0 < $SCRIPT_DIRECTORY/nvidia-190-2.6.33.patch
-fi
+ln  -sfn  Makefile.kbuild  Makefile

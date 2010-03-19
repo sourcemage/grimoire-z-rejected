@@ -1,5 +1,7 @@
 2010-03-20 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated stable to 195.36.15
+	* PRE_BUILD: don't apply the patch
+	* nvidia-195-2.6.33.patch: really removed, no longer needed
 
 2010-03-17 Sukneet Basuta <sukneet@sourcemage.org>
 	* DETAILS: updated beta to 195.36.15
