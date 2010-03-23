@@ -1,5 +1,6 @@
 2010-03-23 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: fixed sha512 hash for beta ia32, same as stable
+	  fixed sha512 hash for stable x86_64, same as beta
 
 2010-03-20 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated stable to 195.36.15
