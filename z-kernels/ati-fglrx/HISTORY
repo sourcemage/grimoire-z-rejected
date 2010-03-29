@@ -1,3 +1,6 @@
+2010-03-29 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 10.3
+
 2010-03-14 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 10.2
 	* INSTALL: fixed path for symlinks to libGL.so
