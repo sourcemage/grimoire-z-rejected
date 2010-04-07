@@ -1,11 +1,11 @@
            SPELL=acpica-unix
-         VERSION=20080729
+         VERSION=20100331
           SOURCE=$SPELL-$VERSION.tar.gz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-      SOURCE_URL=http://developer.intel.com/technology/iapc/acpi/downloads/$SOURCE
-        WEB_SITE=http://developer.intel.com/technology/iapc/acpi/downloads.htm
-     SOURCE_HASH=sha512:ebbc32f34dea5381da081a428169eccafad6dc0bc364ba9ebba1fa185f861f948ca24c04226ae392ddafd0953d36f3a7863cebf6de40c7488b185222d10f4d0b
-      LICENSE[0]=http://developer.intel.com/technology/iapc/acpi/license2.htm
+      SOURCE_URL=http://acpica.org/download/$SOURCE
+        WEB_SITE=http://acpica.org
+     SOURCE_HASH=sha512:2f56b973f8e6a0e553720eb0e10b8e5d42daa4356063da024d192a901286aadf162a7e402f24665b2b9c03e0b10daec25ec3a7bcc51c381b32fd248914addf16
+      LICENSE[0]="GPL, commercial"
           REJECT="non-Free license"
          ENTERED=20060716
            SHORT="Advanced Configuration & Power Interface Component Architecture (ACPI CA)"
