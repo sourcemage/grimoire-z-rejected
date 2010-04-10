@@ -1,7 +1,7 @@
            SPELL=ati-fglrx
-         VERSION=9.11
+         VERSION=10.3
           SOURCE=ati-driver-installer-${VERSION/./-}-x86.x86_64.run
-     SOURCE_HASH=sha512:7e247e828d0bc70ca9108ba57e8219ea509d666dcba887bf38a9e64f5f34d7387545fa95a6c3ea4f2ac7744f1bdc16f57286df58a94a5cd1352553cda9f0c71c
+     SOURCE_HASH=sha512:3c2e147a88f426fb01cf795b7dba9f29bb5517fd7a345bffcc0b10bdbec0800c2bfa7628bed9bc0cd5daf950c593ea540fca26e223324e33b8c169648080b31b
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=https://a248.e.akamai.net/f/674/9206/0/www2.ati.com/drivers/linux/${SOURCE} 
       LICENSE[0]="$GRIMOIRE/$SECTION/$SPELL/LICENSE"

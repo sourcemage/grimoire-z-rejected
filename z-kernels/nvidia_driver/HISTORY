@@ -1,5 +1,25 @@
-2010-02-04 Julien "_kaze_" ROZO <julien@rozo.org>
-	* DETAILS: updated beta version to 195.36.03
+2010-03-23 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: fixed sha512 hash for beta ia32, same as stable
+	  fixed sha512 hash for stable x86_64, same as beta
+
+2010-03-20 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated stable to 195.36.15
+	* PRE_BUILD: don't apply the patch
+	* nvidia-195-2.6.33.patch: really removed, no longer needed
+
+2010-03-17 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated beta to 195.36.15
+	* PRE_BUILD: changed kernel version check (to apply patch) so it is more robust
+	* nvidia-195-2.6.33.patch: removed, no longer needed
+
+2010-03-14 Julien "_kaze_" ROZO <julien@rozo.org>
+	* INSTALL: fixed vdpau libs installation
+
+2010-03-12 Julien "_kaze_" ROZO <julien@rozo.org>
+	* INSTALL: added installation of libs and headers for cuda and vdpau,
+	  and installation of libs and headers for OpenCL for beta version
+	* PRE_BUILD, nvidia-190-2.6.33.patch, nvidia-195-2.6.33.patch: added patches
+	  to fix compilation issue with 2.6.33 kernel
 
 2009-12-23 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated beta version to 195.30
