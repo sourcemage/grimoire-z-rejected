@@ -1,0 +1,20 @@
+depends g++ &&
+depends ncurses &&
+depends zlib &&
+
+if [[ $CUDA_PROF == y ]]; then
+  depends fontconfig &&
+  depends freetype2 &&
+  depends glib2 &&
+  depends libice &&
+  depends libpng &&
+  depends libsm &&
+  depends libx11 &&
+  depends libxext &&
+  depends libxrender &&
+  depends qt4 &&
+  sub_depends qt4 SQLITE &&
+  sub_depends qt4 WEBKIT
+fi &&
+
+suggest_depends nvidia_driver

@@ -1,3 +1,6 @@
+2010-04-10 Remko van der Vossen <wich@sourcemage.org>
+	* z-devel/cuda-toolkit: new spell, NVIDIA CUDA development toolkit
+
 2009-11-26 Vlad Glagolev <stealth@sourcemage.org>
 	* z-kernels/broadcom-wl: new spell, Broadcom 802.11abg networking drivers
 
