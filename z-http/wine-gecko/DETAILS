@@ -1,9 +1,10 @@
            SPELL=wine-gecko
-         VERSION=0.9.0
-          SOURCE=${SPELL/-/_}-$VERSION.cab
+         VERSION=1.0.0
+     SOURCE_HASH=sha512:204099e1eabfd40e7733acd7ccf3255d44157712681fc15642a6698951a0ed72fa65a34d334c9e7b3572713c350e31141f6a4f9a2ce715cd78bd929b49795231
+          SOURCE=${SPELL/-/_}-$VERSION-x86.cab
    SOURCE_URL[0]=$SOURCEFORGE_URL/wine/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+#      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
       LICENSE[0]=MPL
         WEB_SITE=http://wiki.winehq.org/Gecko
         KEYWORDS="emulator x11 libs"
