@@ -15,6 +15,12 @@ cp -rv ./*    $SHAREDIR/                             &&
 cp -rv $SCRIPT_DIRECTORY/teamspeak /usr/bin          &&
 chmod 755 /usr/bin/teamspeak &&
 
+#
+# Copy custom-build libjpeg.so, stupid binaries
+#
+cp -v $SOURCE_DIRECTORY/jpeg-6b/.libs/libjpeg.so \
+  $INSTALL_ROOT/usr/share/$SPELL/libjpeg.so.62
+
 # Create Desktop file
 cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
 [Desktop Entry]

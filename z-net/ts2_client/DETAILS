@@ -1,8 +1,11 @@
            SPELL=ts2_client
          VERSION=rc2_2032
           SOURCE="${SPELL}_${VERSION}.tar.bz2"
+         SOURCE2=jpegsrc.v6b.tar.gz
+     SOURCE2_GPG="gurus.gpg:$SOURCE2.sig:WORKS_FOR_ME"
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_${VERSION}
    SOURCE_URL[0]=ftp://ftp.freenet.de/pub/4players/teamspeak.org/releases/$SOURCE
+  SOURCE2_URL[0]=http://www.ijg.org/files/$SOURCE2
      SOURCE_HASH=sha512:14b8b91ab6e18c7cb874aee55374b139926d21f3f9eb6a075b5ea884b5dd88a3f3c98e6a3df58516c417046dc6bca0827dd9fb30eee68658c2f3e22e5952e058
         WEB_SITE=http://www.goteamspeak.com/
          ENTERED=20040920

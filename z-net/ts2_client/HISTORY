@@ -1,6 +1,10 @@
 2010-05-01 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Fix WEB_SITE
+	  Download jpeg6b
+	* PRE_BUILD: Extract jpeg6b
+	* BUILD: Build jpeg6b
 	* INSTALL: Create Desktop file
+	  Install libjpeg.so.62
 
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.
