@@ -27,6 +27,6 @@ Name=TeamSpeak
 Comment=Internet-based conferencing
 Exec=teamspeak
 Type=Application
-Icon=$INSTALL_ROOT/usr/share/ts2_client/icon.xpm
+Icon=$INSTALL_ROOT/usr/libexec/ts2_client/icon.xpm
 Categories=Internet
 EOF
