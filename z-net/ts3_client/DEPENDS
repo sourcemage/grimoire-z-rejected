@@ -1,0 +1,13 @@
+depends expat &&
+depends fontconfig &&
+depends freetype2 &&
+depends g++ &&
+depends libx11 &&
+depends libxau &&
+depends libxdmcp &&
+depends libxext &&
+depends libxfixes &&
+depends libxinerama &&
+depends libxrandr &&
+depends libxrender &&
+depends zlib
