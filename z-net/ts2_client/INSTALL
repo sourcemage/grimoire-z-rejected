@@ -13,4 +13,4 @@ cp -rv manual $DOCDIR/                               &&
 cp -rv *.txt  $DOCDIR/                               &&
 cp -rv ./*    $SHAREDIR/                             &&
 cp -rv $SCRIPT_DIRECTORY/teamspeak /usr/bin          &&
-chmod 755 /usr/bin/teamspeak           
+chmod 755 /usr/bin/teamspeak
