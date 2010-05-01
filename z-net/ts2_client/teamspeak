@@ -4,4 +4,3 @@
 #
 cd /usr/libexec/ts2_client
 ./TeamSpeak $@
-cd -
