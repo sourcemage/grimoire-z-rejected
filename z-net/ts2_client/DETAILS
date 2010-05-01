@@ -10,6 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SPELL}_${VERSION}
         WEB_SITE=http://www.goteamspeak.com/
          ENTERED=20040920
       LICENCE[0]='http://www.goteamspeak.com/faq.php?faq=1'
+      PATCHLEVEL=1
           REJECT="has licensing issues"
            SHORT="P2P talking over the net (client side)"
 cat << EOF

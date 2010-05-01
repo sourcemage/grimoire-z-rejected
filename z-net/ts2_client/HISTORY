@@ -1,6 +1,7 @@
 2010-05-01 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Fix WEB_SITE
 	  Download jpeg6b
+	  PATCHLEVEL++
 	* PRE_BUILD: Extract jpeg6b
 	* BUILD: Build jpeg6b
 	* INSTALL: Create Desktop file
