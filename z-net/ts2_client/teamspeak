@@ -2,6 +2,6 @@
 #
 # TeamSpeak wrapper script.
 #
-cd /usr/share/ts2_client
+cd /usr/libexec/ts2_client
 ./TeamSpeak $@
 cd -

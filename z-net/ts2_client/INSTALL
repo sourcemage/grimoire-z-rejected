@@ -1,17 +1,16 @@
-INSTALLDIR=/usr/share/TeamSpeak
-DOCDIR=/usr/share/doc/${SPELL}
-SHAREDIR=/usr/share/${SPELL}
+INSTALLDIR=/usr/libexec/$SPELL &&
+DOCDIR=/usr/share/doc/${SPELL} &&
 
 cd $SOURCE_DIRECTORY/setup.data/image &&
 
 # edit configuration.
-sedit 's:\%installdir\%:\/usr\/share\/ts2_client:' TeamSpeak &&
+sedit 's:\%installdir\%:\/usr\/libexec\/ts2_client:' TeamSpeak &&
 
 # create dirs and install.
-mkdir -p $DOCDIR $SHAREDIR                           &&
+mkdir -p $DOCDIR $INSTALLDIR                         &&
 cp -rv manual $DOCDIR/                               &&
 cp -rv *.txt  $DOCDIR/                               &&
-cp -rv ./*    $SHAREDIR/                             &&
+cp -rv ./*    $INSTALLDIR/                           &&
 cp -rv $SCRIPT_DIRECTORY/teamspeak /usr/bin          &&
 chmod 755 /usr/bin/teamspeak &&
 
@@ -19,7 +18,7 @@ chmod 755 /usr/bin/teamspeak &&
 # Copy custom-build libjpeg.so, stupid binaries
 #
 cp -v $SOURCE_DIRECTORY/jpeg-6b/.libs/libjpeg.so \
-  $INSTALL_ROOT/usr/share/$SPELL/libjpeg.so.62
+  $INSTALL_ROOT/usr/libexec/$SPELL/libjpeg.so.62
 
 # Create Desktop file
 cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
