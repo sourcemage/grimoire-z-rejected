@@ -23,7 +23,7 @@ cp -v $SOURCE_DIRECTORY/jpeg-6b/.libs/libjpeg.so \
 # Create Desktop file
 cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
 [Desktop Entry]
-Name=TeamSpeak
+Name=TeamSpeak 2
 Comment=Internet-based conferencing
 Exec=teamspeak
 Type=Application
