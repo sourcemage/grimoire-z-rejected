@@ -13,4 +13,15 @@ cp -rv manual $DOCDIR/                               &&
 cp -rv *.txt  $DOCDIR/                               &&
 cp -rv ./*    $SHAREDIR/                             &&
 cp -rv $SCRIPT_DIRECTORY/teamspeak /usr/bin          &&
-chmod 755 /usr/bin/teamspeak
+chmod 755 /usr/bin/teamspeak &&
+
+# Create Desktop file
+cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
+[Desktop Entry]
+Name=TeamSpeak
+Comment=Internet-based conferencing
+Exec=teamspeak
+Type=Application
+Icon=$INSTALL_ROOT/usr/share/ts2_client/icon.xpm
+Categories=Internet
+EOF
