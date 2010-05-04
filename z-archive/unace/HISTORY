@@ -1,3 +1,6 @@
+2010-05-03 David C. Haley <khoralin@gmail.org>
+	* DETAILS: Version bump 2.2 -> 2.5
+
 2008-09-10 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Use versioned SOURCE_DIRECTORY
 	* PRE_BUILD: Create SOURCE_DIRECTORY before unpacking, otherwise a

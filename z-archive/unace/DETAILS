@@ -1,13 +1,13 @@
            SPELL=unace
-         VERSION=2.2
-          SOURCE=lin${SPELL}22.tgz
+         VERSION=2.5
+          SOURCE=lin${SPELL}25.tgz
 SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-$VERSION
    SOURCE_URL[0]=http://download.maxeline.com/winace/${SOURCE}
    SOURCE_URL[1]=http://hem.passagen.se/vanlid/winace/${SOURCE}
    SOURCE_URL[2]=http://w1.314.telia.com/~u31412016/dload/${SOURCE}
    SOURCE_URL[3]=http://www.shedz.com/winace/${SOURCE}
    SOURCE_URL[4]=http://ace.imptech.net/${SOURCE}
-     SOURCE_HASH=sha512:c598bee7bf7f33ee414b0fb3a89ad9bd842e498aff601924b3675ff4dd73332faffc272927b1e1f9078e872cf1624928774549668383d1e072cec34ce3efd406
+     SOURCE_HASH=sha512:354e0f4214379938789830f788c26f49ea277675aee3e9507bd100f07fd3beda54638cb555467cc8fe4a3e811eb1a0e8b2190a106611cfa869fd32dcfd2a48ed
         WEB_SITE=http://www.winace.com/
       LICENSE[0]="freely distributable"
          ENTERED=20030608
