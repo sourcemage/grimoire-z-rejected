@@ -1,3 +1,6 @@
+2010-05-13 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: fixed sha512 hash for x86_64, #15702
+
 2010-04-29 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 195.36.24
 
