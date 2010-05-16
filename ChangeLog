@@ -1,3 +1,7 @@
+2010-05-15 Eric Sandall <sandalle@sourcemage.org>
+	* z-net/iwlwifi-6000-ucode: Added firmware for the Intel Wireless
+	  6000-series Wi-Fi Adapters
+
 2010-05-01 Eric Sandall <sandalle@sourcemage.org>
 	* z-net/ts3_client: Added a P2P talking over the net (client side)
 
