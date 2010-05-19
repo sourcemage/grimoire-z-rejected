@@ -1,0 +1,14 @@
+           SPELL=radeon-ucode
+         VERSION=static
+          SOURCE="${SPELL}.tar.bz2"
+      SOURCE_URL="http://bfr.kicks-ass.net/smgl/${SOURCE}"
+     SOURCE_HASH=sha512:566825a964988fdff55d8c57062e284cacfbd88bd923c7b5c1301442da02f70effcbd4f3a07c18b65940567dc5f99f6f84121b753dea46fc95e1b109ff340504
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}"
+        WEB_SITE="http://people.freedesktop.org/~agd5f/"
+      LICENSE[0]=http://people.freedesktop.org/~agd5f/radeon_ucode/LICENSE.radeon
+         ENTERED=20100519
+           SHORT="Radeon IRQ microcode"
+cat << EOF
+This spell provides the needed IRQ microcode for r6xx, r7xx or Evergreen Radeon
+GPUs when using KMS.
+EOF

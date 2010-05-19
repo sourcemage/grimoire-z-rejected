@@ -1,3 +1,6 @@
+2010-05-19 Arjan Bouter <abouter@sourcemage.org>
+	* z-kernels/radeon-ucode: Added IRQ microcode for AMD radeon cards
+
 2010-05-15 Eric Sandall <sandalle@sourcemage.org>
 	* z-net/iwlwifi-6000-ucode: Added firmware for the Intel Wireless
 	  6000-series Wi-Fi Adapters
