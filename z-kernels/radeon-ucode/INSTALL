@@ -1,0 +1,6 @@
+FWDIR="${INSTALL_ROOT}/lib/firmware/radeon" &&
+DOCDIR="${INSTALL_ROOT}/usr/share/doc/${SPELL}" &&
+
+mkdir -p "${FWDIR}" "${DOCDIR}" &&
+cp ${SOURCE_DIRECTORY}/*.bin ${FWDIR}/ &&
+cp ${SOURCE_DIRECTORY}/LICENSE.radeon ${DOCDIR}/

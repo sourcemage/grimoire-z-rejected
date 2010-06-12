@@ -1,16 +1,16 @@
-           SPELL=ts2_server 
+           SPELL=ts2_server
          VERSION=rc2_20201
-          SOURCE=${SPELL}_${VERSION}.tar.bz2 
+          SOURCE=${SPELL}_${VERSION}.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/tss2_rc2
    SOURCE_URL[0]=ftp://ftp.freenet.de/pub/4players/teamspeak.org/releases/$SOURCE
-     SOURCE_HASH=sha512:fde5fb4ee67021ff153e74b02136d149114d5ac1e50c371d0dd370eb7384611b89f11c9ffc700a8f569953d97e275eed7868437d7a0a4967cd234e0a1d5e8017 
-        WEB_SITE=http://www.goteamspeak.org/
+     SOURCE_HASH=sha512:fde5fb4ee67021ff153e74b02136d149114d5ac1e50c371d0dd370eb7384611b89f11c9ffc700a8f569953d97e275eed7868437d7a0a4967cd234e0a1d5e8017
+        WEB_SITE=http://www.goteamspeak.com/
          ENTERED=20040920
       LICENCE[0]='http://www.goteamspeak.com/faq.php?faq=1'
           REJECT='has licensing issues'
            SHORT="P2P talking over the net (server side)"
 cat << EOF
-This is a very popular p2p talking client and server set up that 
+This is a very popular p2p talking client and server set up that
 is used with many fps games.
 
 Teamspeak is free of charge to non-commercial users.

@@ -1,3 +1,17 @@
+2010-05-01 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Fix WEB_SITE
+	  Download jpeg6b
+	  PATCHLEVEL++
+	* PRE_BUILD: Extract jpeg6b
+	* BUILD: Build jpeg6b
+	* INSTALL: Create Desktop file
+	  Install libjpeg.so.62
+	  Install to /usr/libexec instead of architecture-independent /usr/share
+	* teamspeak: Installed to /usr/libexec instead of /usr/share
+	  No nead for the return `cd -`
+	  Note that this is TeamSpeak 2
+	* UNATTEND_SAFE: This is safe for unattended updates
+
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.
 
@@ -13,3 +27,4 @@
 
 2004-09-20 David Brown <dmlb2000@excite.com>
 	* ALL: created spell
+

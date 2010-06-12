@@ -1,3 +1,20 @@
+2010-05-19 Arjan Bouter <abouter@sourcemage.org>
+	* z-kernels/radeon-ucode: Added IRQ microcode for AMD radeon cards
+
+2010-05-15 Eric Sandall <sandalle@sourcemage.org>
+	* z-net/iwlwifi-6000-ucode: Added firmware for the Intel Wireless
+	  6000-series Wi-Fi Adapters
+
+2010-05-01 Eric Sandall <sandalle@sourcemage.org>
+	* z-net/ts3_client: Added a P2P talking over the net (client side)
+
+2010-04-12 Mark Bainter <mbainter@sourcemage.org>
+	* FUNCTIONS: Removed duplicated code and improved get_*_kernel_config(),
+	  applied Ismael Luceno's improvements
+
+2010-04-10 Remko van der Vossen <wich@sourcemage.org>
+	* z-devel/cuda-toolkit: new spell, NVIDIA CUDA development toolkit
+
 2009-11-26 Vlad Glagolev <stealth@sourcemage.org>
 	* z-kernels/broadcom-wl: new spell, Broadcom 802.11abg networking drivers
 

@@ -19,6 +19,7 @@ cp -r icons $INSTALL_ROOT/usr/share &&
 
 # desktop file
 mkdir -p           "$INSTALL_ROOT/usr/share/applications/"  &&
+sed -i "s:skype.png:$INSTALL_ROOT/usr/share/skype/avatars/Skype.png:" skype.desktop &&
 cp  skype.desktop  "$INSTALL_ROOT/usr/share/applications/"  &&
 
 # import plugins dir

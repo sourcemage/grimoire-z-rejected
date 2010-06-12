@@ -1,0 +1,19 @@
+           SPELL=cuda-toolkit
+         VERSION=3.0
+          SOURCE=cudatoolkit_${VERSION}_linux_64_suse11.1.run
+   SOURCE_URL[0]=http://developer.download.nvidia.com/compute/cuda/${VERSION/./_}/toolkit/$SOURCE
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+     SOURCE_HASH=sha512:cc70420d070966623190a42279351949b9e585b29c843223dec4b5f70dccb9ef008d52a7064398ba83ddf1cbdb7cf8538c3a7986a84b1dda0465129c1707001a
+        WEB_SITE=http://developer.nvidia.com/object/gpucomputing.html
+         ENTERED=20100410
+          REJECT="Non-Free Software license"
+      LICENSE[0]=http://developer.download.nvidia.com/compute/cuda/${VERSION/./_}/toolkit/docs/EULA.txt
+        KEYWORDS="cuda"
+           SHORT="NVIDIA CUDA Toolkit"
+cat << EOF
+The CUDA architecture enables developers to leverage the massively parallel processing power of NVIDIA GPUs, delivering the performance of NVIDIAs world-renowned graphics processor technology to general purpose GPU Computing.
+
+With the CUDA architecture and tools, developers are achieving dramatic speedups in fields such as medical imaging and natural resource exploration, and creating breakthrough applications in areas such as image recognition and real-time HD video playback and encoding. 
+
+CUDA enables this unprecedented performance via standard APIs such OpenCL and DirectCompute, and high level programming languages such as C/C++, Fortran, Java, Python, and the Microsoft .NET Framework.
+EOF

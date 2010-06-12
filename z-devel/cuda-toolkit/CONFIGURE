@@ -1,0 +1,1 @@
+config_query CUDA_PROF "Install the CUDA profiler? (requires QT4 and various X libs a.o.)" y

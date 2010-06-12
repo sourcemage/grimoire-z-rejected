@@ -1,0 +1,3 @@
+message  "${MESSAGE_COLOR}Installing firmware...$DEFAULT_COLOR"                         &&
+mkdir -p  $INSTALL_ROOT/lib/firmware                                                    &&
+cp -v $SOURCE_DIRECTORY/${SPELL/-ucode/}-4.ucode $INSTALL_ROOT/lib/firmware

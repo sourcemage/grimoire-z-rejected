@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# TeamSpeak wrapper script.
+#
+cd /usr/libexec/ts3_client
+./ts3client_runscript.sh $@

@@ -1,0 +1,43 @@
+pwd
+
+function cuda_install {
+  local mode=$1
+  shift
+
+  install -D -o root -g root -m $mode "$@"
+}
+
+for binary in bin/*; do
+  if [[ $binary != bin/nvcc.profile ]]; then
+    cuda_install 755 "$binary" "$INSTALL_ROOT/usr/$binary"
+  fi
+done &&
+
+for binary in open64/bin/*; do
+  cuda_install 755 "$binary" "$INSTALL_ROOT/usr/${binary#open64/}"
+done &&
+
+for include in include/*.h include/CL/*.h include/crt/*.h; do
+  cuda_install 644 "$include" "$INSTALL_ROOT/usr/$include"
+done &&
+
+for library in lib64/lib*.so.*.*; do
+  lib_name=${library#lib64/}
+  cuda_install 755 "$library" "$INSTALL_ROOT/usr/lib/$lib_name"
+  ln -s "$lib_name" "$INSTALL_ROOT/usr/lib/${lib_name%.*.*}"
+  ln -s "${lib_name%.*.*}" "$INSTALL_ROOT/usr/lib/${lib_name%.*.*.*}"
+done &&
+
+for library in open64/lib/*; do
+  cuda_install 755 "$library" "$INSTALL_ROOT/usr/${library#open64/}"
+done &&
+
+for manpage in man/man*/*; do
+  cuda_install 644 "$manpage" "$INSTALL_ROOT/usr/share/$manpage"
+done
+
+if [[ $CUDA_PROF == y ]]; then
+  for binary in cudaprof/bin/cudaprof cudaprof/bin/assistant; do
+    cuda_install 755 "$binary" "$INSTALL_ROOT/usr/${binary#cudaprof/}"
+  done
+fi
