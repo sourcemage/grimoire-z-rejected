@@ -1,3 +1,6 @@
+2010-06-16 David C. Haley <khoralin@gmail.com>
+	* DEPENDS: added gtk+2
+
 2010-01-09 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 6.3a
 	* DEPENDS: added sudo as suggested dependency, to create volume as 
