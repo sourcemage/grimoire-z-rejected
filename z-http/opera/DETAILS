@@ -1,11 +1,11 @@
            SPELL=opera
 
-           VERSION=10.10
+           VERSION=10.11
            RELEASE=final
           LANGUAGE=en
           COMPILER=gcc4
        COMPRESSION=bz2
-             BUILD=4742
+             BUILD=4791
 
   if [[ "${OPERA_RELEASE}" = "10 qt4, bundled" ]]; then
 
