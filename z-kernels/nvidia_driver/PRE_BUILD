@@ -22,16 +22,16 @@ if [[ $AGPFW == "y" ]]; then
 fi  &&
 
 # Fix defunct desktop file
-sedit  's/__.*__\///'  usr/share/applications/nvidia-settings.desktop  &&
+sedit  's/__.*__\///'  nvidia-settings.desktop  &&
 
 #
 # Modify module-install target to use `depmod -ae` on $KVER rather
 # than the running kernel
 #
-sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  usr/src/nv/Makefile.kbuild  &&
+sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  kernel/Makefile.kbuild  &&
 
 #
 # Setup Makefile symlink
 #
-cd  $SOURCE_DIRECTORY/usr/src/nv     &&
+cd  $SOURCE_DIRECTORY/kernel     &&
 ln  -sfn  Makefile.kbuild  Makefile
