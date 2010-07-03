@@ -1,23 +1,27 @@
+# Main opera binary dependencies
 depends libx11 &&
 depends libxext &&
-depends libice &&
 depends libsm &&
+depends libice &&
+depends libxft &&
+depends freetype2 &&
 depends zlib &&
+depends fontconfig &&
+depends libxrender &&
 
-if [[ "${OPERA_RELEASE}" == "10 qt4, shared" ]]; then
+# Additional plugin wrapper dependencies
+depends libxt &&
+
+# Additional graphical toolkit dependencies
+if [[ $OPERA_TOOLKIT == "gtk+2" ]]; then
+  depends gtk+2 &&
+  depends atk &&
+  depends pango &&
+  depends cairo &&
+  depends glib2
+elif [[ $OPERA_TOOLKIT == "kde4" ]]; then
+  depends kdelibs4 &&
   depends qt4
-elif [[ "${OPERA_RELEASE}" == "10 qt4, bundled" ]]; then
-  depends glib2 &&
-  depends nas &&
-  depends libpng &&
-  depends libxi &&
-  depends libxrender &&
-  depends libxrandr &&
-  depends freetype2 &&
-  depends fontconfig
-elif [[ "${OPERA_RELEASE}" == "10 qt3, shared" ]]; then
-  depends qt-x11
 fi &&
 
 optional_depends  JAVA  ""  ""  "for Java Runtime Environment"
-

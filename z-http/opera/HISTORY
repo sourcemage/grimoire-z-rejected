@@ -1,3 +1,7 @@
+2010-07-03 Remko van der Vossen <wich@sourcemage.org>
+	* DETAILS: version 10.60
+	* CONFIGURE, DEPENDS, INSTALL, PREPARE: updated for new release method
+
 2010-06-23 Remko van der Vossen <wich@sourcemage.org>
 	* DETAILS: version 10.11
 

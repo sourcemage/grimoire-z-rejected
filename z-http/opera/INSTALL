@@ -1,4 +1,9 @@
 cd $SOURCE_DIRECTORY &&
-echo y | ./install.sh -s &&
-ln -sf $TRACK_ROOT/usr/lib/libXm.so.2 /usr/lib/opera/plugins/libXm.so.1 &&
-ln -sf $TRACK_ROOT/usr/lib/libXm.so.2 /usr/lib/opera/plugins/libXm.so.3
+sed -i -e "s,/usr/local,$INSTALL_ROOT/usr," install &&
+./install --system --unattended &&
+if [[ $OPERA_TOOLKIT != "gtk+2" ]]; then
+  rm -f $INSTALL_ROOT/usr/lib/opera/liboperagtk.so
+fi &&
+if [[ $OPERA_TOOLKIT != "kde4" ]]; then
+  rm -f $INSTALL_ROOT/usr/lib/opera/liboperakde4.so
+fi
