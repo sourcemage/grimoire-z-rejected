@@ -1,0 +1,8 @@
+if spell_ok desktop-file-utils; then
+  "$INSTALL_ROOT/usr/bin/update-desktop-database" "$INSTALL_ROOT/usr/share/applications"
+fi &&
+if spell_ok shared-mime-info; then
+  mkdir -p "$INSTALL_ROOT/usr/share/mime/packages"
+  "$INSTALL_ROOT/usr/bin/update-mime-database" "$INSTALL_ROOT/usr/share/mime"
+  rmdir "$INSTALL_ROOT/usr/share/mime/packages" >/dev/null 2>&1
+fi

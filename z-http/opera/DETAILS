@@ -1,68 +1,23 @@
            SPELL=opera
-
-           VERSION=10.11
-           RELEASE=final
-          LANGUAGE=en
-          COMPILER=gcc4
-       COMPRESSION=bz2
-             BUILD=4791
-
-  if [[ "${OPERA_RELEASE}" = "10 qt4, bundled" ]]; then
-
-                QT=bundled-qt4
+           VERSION=10.60
+             BUILD=6386
     if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
           PLATFORM=x86_64
     else
           PLATFORM=i386
     fi
-            SOURCE=${SPELL}-${VERSION}.${COMPILER}-${QT}.${PLATFORM}.tar.${COMPRESSION}
-  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${QT}.${PLATFORM}
-         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${SOURCE}
-
-  elif [[ "${OPERA_RELEASE}" = "10 qt3, shared" ]]; then
-
-            LINKED=shared
-                QT=qt3
-    if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-          PLATFORM=x86_64
-    else
-          PLATFORM=i386
-    fi
-            SOURCE=${SPELL}-${VERSION}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}.tar.${COMPRESSION}
-  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${LINKED}-${QT}.${PLATFORM}
-    if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${SOURCE}
-    else
-         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${LINKED}/${SOURCE}
-    fi
-
-  else
-
-                QT=qt4
-    if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-          PLATFORM=x86_64
-    else
-          PLATFORM=i386
-    fi
-            SOURCE=${SPELL}-${VERSION}.${COMPILER}-${QT}.${PLATFORM}.tar.${COMPRESSION}
-  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${COMPILER}-${QT}.${PLATFORM}
-         DIST_PATH=${VERSION/./}/${RELEASE}/${LANGUAGE}/${PLATFORM}/${SOURCE}
-
-  fi
-
-     SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/${DIST_PATH}
-     SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/${DIST_PATH}
-     SOURCE_URL[2]=ftp://ftp.opera.com/pub/opera/linux/${DIST_PATH}
+            SOURCE=${SPELL}-${VERSION}-${BUILD}.${PLATFORM}.linux.tar.bz2
+  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${PLATFORM}.linux
+     SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/${VERSION/./}/$SOURCE
+     SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/${VERSION/./}/$SOURCE
+     SOURCE_URL[2]=ftp://ftp.opera.com/pub/opera/linux/${VERSION/./}/$SOURCE
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENCE[0]=UNKNOWN
         WEB_SITE=http://www.opera.com/
          ENTERED=20020530
           REJECT="is non-source"
-           SHORT="Opera is a small quick qt based browser"
+           SHORT="Opera is a fast full featured web browser."
 cat << EOF
 Opera is a fast full featured web browser. It supports plugins and is 
-very customizable. It now uses the qt4 widget set. 
-
-The shared version is now included here because the current grimoire 
-uses qt4. 
+very customizable.
 EOF
