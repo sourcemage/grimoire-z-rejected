@@ -1,9 +1,15 @@
            SPELL=cuda-toolkit
-         VERSION=3.0
-          SOURCE=cudatoolkit_${VERSION}_linux_64_suse11.1.run
+         VERSION=3.1
+    if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+        PLATFORM=64
+    else
+        PLATFORM=32
+    fi
+     DISTVERSION=suse11.2
+          SOURCE=cudatoolkit_${VERSION}_linux_${PLATFORM}_${DISTVERSION}.run
    SOURCE_URL[0]=http://developer.download.nvidia.com/compute/cuda/${VERSION/./_}/toolkit/$SOURCE
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
-     SOURCE_HASH=sha512:cc70420d070966623190a42279351949b9e585b29c843223dec4b5f70dccb9ef008d52a7064398ba83ddf1cbdb7cf8538c3a7986a84b1dda0465129c1707001a
+     SOURCE_HASH=sha512:902acff4459de5a5df8e2edee515a76ea16fc1bc89610b83dcc160bdb86eb57dab8bb742f51bb342e2066b86503c788e09d040f56579726938478300d3d42631
         WEB_SITE=http://developer.nvidia.com/object/gpucomputing.html
          ENTERED=20100410
           REJECT="Non-Free Software license"
