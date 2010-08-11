@@ -1,2 +1,5 @@
+2010-08-11 Remko van der Vossen <wich@sourcemage.org>
+	* DETAILS, CONFIGURE, INSTALL: version 3.1, support for 32 bit version
+
 2010-04-10 Remko van der Vossen <wich@sourcemage.org>
 	* DETAILS, DEPENDS, CONFIGURE, BUILD, PRE_BUILD, INSTALL: spell created

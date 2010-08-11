@@ -1,1 +1,7 @@
-config_query CUDA_PROF "Install the CUDA profiler? (requires QT4 and various X libs a.o.)" y
+if [[ $CUDA_PROF ]]; then
+  COMPUTE_PROF=$CUDA_PROF
+  persistent_remove CUDA_PROF
+  persistent_add COMPUTE_PROF
+  persistent_save
+fi &&
+config_query COMPUTE_PROF "Install the CUDA profiler computeprof? (requires QT4 and various X libs a.o.)" y

@@ -1,5 +1,3 @@
-pwd
-
 function cuda_install {
   local mode=$1
   shift
@@ -21,8 +19,14 @@ for include in include/*.h include/CL/*.h include/crt/*.h; do
   cuda_install 644 "$include" "$INSTALL_ROOT/usr/$include"
 done &&
 
-for library in lib64/lib*.so.*.*; do
-  lib_name=${library#lib64/}
+if [[ "$PLATFORM" == 64 ]]; then
+  lib_dir=lib64
+else
+  lib_dir=lib
+fi
+
+for library in $lib_dir/lib*.so.*.*; do
+  lib_name=${library#$lib_dir/}
   cuda_install 755 "$library" "$INSTALL_ROOT/usr/lib/$lib_name"
   ln -s "$lib_name" "$INSTALL_ROOT/usr/lib/${lib_name%.*.*}"
   ln -s "${lib_name%.*.*}" "$INSTALL_ROOT/usr/lib/${lib_name%.*.*.*}"
@@ -36,8 +40,8 @@ for manpage in man/man*/*; do
   cuda_install 644 "$manpage" "$INSTALL_ROOT/usr/share/$manpage"
 done
 
-if [[ $CUDA_PROF == y ]]; then
-  for binary in cudaprof/bin/cudaprof cudaprof/bin/assistant; do
-    cuda_install 755 "$binary" "$INSTALL_ROOT/usr/${binary#cudaprof/}"
+if [[ $COMPUTE_PROF == y ]]; then
+  for binary in computeprof/bin/computeprof computeprof/bin/assistant; do
+    cuda_install 755 "$binary" "$INSTALL_ROOT/usr/${binary#computeprof/}"
   done
 fi
