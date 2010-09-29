@@ -1,6 +1,6 @@
            SPELL=opera
-           VERSION=10.61
-             BUILD=6430
+           VERSION=10.62
+             BUILD=6438
     if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
           PLATFORM=x86_64
     else
