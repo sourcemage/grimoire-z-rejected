@@ -94,10 +94,10 @@ popd                                                &&
 #
 # Install Cuda headers
 #
-mkdir  -vp  $INSTALL_ROOT/usr/include/cuda
-for file in cudaGL.h cuda.h; do
-  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/cuda/
-done                                     &&
+#mkdir  -vp  $INSTALL_ROOT/usr/include/cuda
+#for file in cudaGL.h cuda.h; do
+#  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/cuda/
+#done                                     &&
 
 #
 # Install Cuda libraries
@@ -116,10 +116,10 @@ done                                    &&
 #
 # Install VDPAU headers
 #
-mkdir  -vp  $INSTALL_ROOT/usr/include/vdpau
-for file in vdpau.h vdpau_x11.h; do
-  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/vdpau/
-done                                     &&
+#mkdir  -vp  $INSTALL_ROOT/usr/include/vdpau
+#for file in vdpau.h vdpau_x11.h; do
+#  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/vdpau/
+#done                                     &&
 
 #
 # Install VDPAU libraries
@@ -148,10 +148,10 @@ done                                    &&
 #
 # Install OpenCL headers
 #
-mkdir  -vp  $INSTALL_ROOT/usr/include/CL
-for file in cl_gl.h cl.h cl_platform.h; do
-  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/CL/
-done                                     &&
+#mkdir  -vp  $INSTALL_ROOT/usr/include/CL
+#for file in cl_gl.h cl.h cl_platform.h; do
+#  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/CL/
+#done                                     &&
 
 #
 # Install OpenCL libraries
