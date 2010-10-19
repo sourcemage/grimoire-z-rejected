@@ -1,6 +1,8 @@
 mk_source_dir $SOURCE_DIRECTORY &&
 cd $SOURCE_DIRECTORY &&
 verify_source '' &&
+verify_file '2' &&
+unpack_file '2' &&
 
 #
 # Untar the files and bypass the annoying license query in

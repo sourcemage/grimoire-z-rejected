@@ -12,9 +12,13 @@ else
   SOURCE_DIRECTORY=$BUILD_DIRECTORY/TeamSpeak3-Client-linux_x86
 fi
    SOURCE_URL[0]=http://ftp.4players.de/pub/hosted/ts3/releases/beta-32/$SOURCE
+         SOURCE2=jpegsrc.v6b.tar.gz
+     SOURCE2_GPG="gurus.gpg:$SOURCE2.sig:WORKS_FOR_ME"
+  SOURCE2_URL[0]=http://www.ijg.org/files/$SOURCE2
         WEB_SITE=http://www.goteamspeak.com/
          ENTERED=20100501
       LICENCE[0]=http://www.teamspeak.com/?page=downloads&type=ts3_linux_client_latest
+      PATCHLEVEL=1
           REJECT="has licensing issues"
            SHORT="P2P talking over the net (client side)"
 cat << EOF
