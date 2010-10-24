@@ -1,12 +1,14 @@
 mk_source_dir $SOURCE_DIRECTORY &&
 cd $SOURCE_DIRECTORY &&
 verify_source '' &&
+verify_file '2' &&
+unpack_file '2' &&
 
 #
 # Untar the files and bypass the annoying license query in
 # sh $SOURCE_CACHE/$SOURCE --nox11 --target $SOURCE_DIRECTORY &&
 #
-local filesize=15339850 &&
+local filesize=16937816 &&
 local blocks=`expr $filesize / 1024` &&
 local bytes=`expr $filesize % 1024` &&
 dd if="$SOURCE_CACHE/$SOURCE" ibs=$(head -n 594 "$SOURCE_CACHE/$SOURCE" | wc -c | tr -d " ") skip=1 obs=1024 conv=sync |

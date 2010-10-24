@@ -1,3 +1,14 @@
+2010-10-19 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Add jpeg 6b as SOURCE2
+	  PATCHLEVEL++
+	* PRE_BUILD: Unpack SOURCE2
+	* BUILD: Build jpeg 6b
+	* INSTALL: Copy libjpeg.so.62 to client lib directory
+
+2010-10-18 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated x86/x86_64 to 3.0.0beta32
+	* PRE_BUILD: Updated filesize
+
 2010-05-01 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS, CONFIGURE, DEPENDS, PRE_BUILD, BUILD, INSTALL: Created
 	  qt4 libraries are included with binary, no need to depend on qt4

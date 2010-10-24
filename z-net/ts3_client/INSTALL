@@ -1,5 +1,11 @@
 local INSTALLDIR=/usr/libexec/$SPELL &&
 
+# Copy custom-build libjpeg.so, stupid binaries
+mkdir -p $INSTALL_ROOT/usr/libexec/ts3_client/imageformats &&
+cp -v $SOURCE_DIRECTORY/jpeg-6b/.libs/libjpeg.so \
+  $INSTALL_ROOT/usr/libexec/ts3_client/imageformats/libjpeg.so.62 &&
+rm -rf $SOURCE_DIRECTORY/jpeg-6b &&
+
 # create dirs and install.
 mkdir -p $INSTALLDIR &&
 cp -rv ./*    $INSTALLDIR/ &&
