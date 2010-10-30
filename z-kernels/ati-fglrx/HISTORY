@@ -1,3 +1,7 @@
+2010-10-29 Bor Kraljič <pyrobor@ver.si>
+	* DETAILS: added SOURCE_HINTS="no-check-certificate"
+	* DOWNLOAD: removed, no longer needed
+
 2010-03-29 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 10.3
 
