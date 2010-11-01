@@ -1,3 +1,6 @@
+2010-11-01 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 6u22
+
 2010-02-17 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on any provider of ODBC-MGR now
 
