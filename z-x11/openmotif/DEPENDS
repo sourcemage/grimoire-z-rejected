@@ -13,7 +13,7 @@ optional_depends  libxft                        \
                   '--disable-xft'               \
                   'for XFT font anti-aliasing'  &&
 
-optional_depends  jpeg                      \
+optional_depends  JPEG                      \
                   '--enable-jpeg'           \
                   '--disable-jpeg'          \
                   'for JPEG image support'  &&

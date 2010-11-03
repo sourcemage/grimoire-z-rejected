@@ -1,5 +1,5 @@
 depends  zlib              &&
 depends  libpng            &&
 depends  tiff              &&
-depends  jpeg              &&
+depends  JPEG              &&
 optional_depends  svgalib  
