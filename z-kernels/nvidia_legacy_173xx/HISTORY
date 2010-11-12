@@ -1,3 +1,6 @@
+2010-11-12 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
+	* INSTALL: fix for gl_select
+
 2010-03-11 Sukneet Basuta <sukneet@sourcemage.org>
 	* DETAILS: updated stable and Beta to 173.14.25
 	  Does not not seem to be a beta version at this time
