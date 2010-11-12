@@ -1,3 +1,6 @@
+2010-11-12 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
+	* INSTALL: fix for gl_select
+
 2010-10-15 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 260.19.12 (ia32 & x86_64)
 	* INSTALL: cuda, vdpau and CL headers no more included
