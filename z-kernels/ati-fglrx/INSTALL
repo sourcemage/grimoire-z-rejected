@@ -26,17 +26,17 @@ mkdir -vp $INSTALL_ROOT/usr/share/applications/ \
           $INSTALL_ROOT/usr/share/man/man8/ \
           $INSTALL_ROOT/usr/include/GL/ \
           $INSTALL_ROOT/usr/include/X11/extensions/ \
-          $INSTALL_ROOT/usr/lib/ati/ \
+          $INSTALL_ROOT/usr/lib/.ati/ \
           $INSTALL_ROOT/usr/lib/xorg/modules/ \
           $INSTALL_ROOT/usr/lib/xorg/modules/dri/ \
           $INSTALL_ROOT/usr/lib/xorg/modules/drivers/ \
-          $INSTALL_ROOT/usr/lib/xorg/modules/extensions/ati \
+          $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.ati \
           $INSTALL_ROOT/usr/lib/xorg/modules/linux  &&
 cp -vr etc/ati $INSTALL_ROOT/etc/ &&
 cp -vr usr/X11R6/$ARCHLIB/modules/linux/* \
        $INSTALL_ROOT/usr/lib/xorg/modules/linux  &&
 cp -vr usr/X11R6/$ARCHLIB/modules/extensions/* \
-       $INSTALL_ROOT/usr/lib/xorg/modules/extensions/ati  &&
+       $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.ati  &&
 cp -vr usr/X11R6/$ARCHLIB/modules/drivers/* \
        $INSTALL_ROOT/usr/lib/xorg/modules/drivers/  &&
 cp -vr usr/X11R6/$ARCHLIB/modules/dri/* \
@@ -48,8 +48,8 @@ cp -vr usr/X11R6/$ARCHLIB/modules/* \
        $INSTALL_ROOT/usr/lib/xorg/modules/  &&
 rm -rf usr/X11R6/$ARCHLIB/modules  &&
 cp -vr usr/X11R6/$ARCHLIB/libGL.so.1.2 \
-       $INSTALL_ROOT/usr/lib/ati/  &&
-pushd  $INSTALL_ROOT/usr/lib/ati &&
+       $INSTALL_ROOT/usr/lib/.ati/  &&
+pushd  $INSTALL_ROOT/usr/lib/.ati &&
 ln -sfv libGL.so.1.2 libGL.so &&
 popd &&
 rm -f usr/X11R6/$ARCHLIB/libGL.so.1.2  &&
@@ -75,13 +75,13 @@ cp -vr usr/share/gnome/apps/* $INSTALL_ROOT/usr/share/applications/  &&
 cp -vr usr/share/ati $INSTALL_ROOT/usr/share/  &&
 cp -vr usr/share/applnk/* $INSTALL_ROOT/usr/share/applnk/  &&
 cp -vr opt/kde3/share/applnk/* $INSTALL_ROOT/usr/share/applications/
-mkdir -vp $INSTALL_ROOT/usr/include/GL/ati/  &&
-cp -vr $INSTALL_ROOT/usr/include/GL/mesa/gl.h \
-       $INSTALL_ROOT/usr/include/GL/ati/  &&
-cp -vr $INSTALL_ROOT/usr/include/GL/mesa/glext.h \
-       $INSTALL_ROOT/usr/include/GL/ati/  &&
-cp -vr $INSTALL_ROOT/usr/include/GL/mesa/glx.h \
-       $INSTALL_ROOT/usr/include/GL/ati/  &&
-cp -vr $INSTALL_ROOT/usr/include/GL/mesa/glxext.h \
-       $INSTALL_ROOT/usr/include/GL/ati/
+mkdir -vp $INSTALL_ROOT/usr/include/GL/.ati/  &&
+cp -vr $INSTALL_ROOT/usr/include/GL/.mesa/gl.h \
+       $INSTALL_ROOT/usr/include/GL/.ati/  &&
+cp -vr $INSTALL_ROOT/usr/include/GL/.mesa/glext.h \
+       $INSTALL_ROOT/usr/include/GL/.ati/  &&
+cp -vr $INSTALL_ROOT/usr/include/GL/.mesa/glx.h \
+       $INSTALL_ROOT/usr/include/GL/.ati/  &&
+cp -vr $INSTALL_ROOT/usr/include/GL/.mesa/glxext.h \
+       $INSTALL_ROOT/usr/include/GL/.ati/
 

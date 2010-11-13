@@ -22,9 +22,9 @@ install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &
 #
 # Install OpenGL headers
 #
-mkdir  -vp  $INSTALL_ROOT/usr/include/GL/nvidia
+mkdir  -vp  $INSTALL_ROOT/usr/include/GL/.nvidia
 for file in glext.h gl.h glxext.h glx.h; do
-  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/GL/nvidia/
+  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/GL/.nvidia/
 done                                     &&
 
 #
@@ -38,16 +38,16 @@ for lib in libGL.la  libnvidia-glcore.so.${VERSION/-/.} \
            libnvidia-compiler.so.${VERSION/-/.} libnvidia-wfb.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                              &&
-mkdir -vp $INSTALL_ROOT/usr/lib/nvidia \
-          $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia/  &&
-cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/nvidia &&
+mkdir -vp $INSTALL_ROOT/usr/lib/.nvidia \
+          $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/  &&
+cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
 install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
   #
   # Create library symlinks
   #
-  pushd  $INSTALL_ROOT/usr/lib/nvidia                            &&
+  pushd  $INSTALL_ROOT/usr/lib/.nvidia                           &&
   ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
   ln  -sfn  libGL.so.1                       libGL.so            &&
   popd
@@ -83,11 +83,11 @@ for driver in nvidia_drv.so; do
      $driver  $INSTALL_ROOT/usr/lib/xorg/modules/drivers/
 done                                            &&
 install -v -m 0644  -o root  -g root libglx.so.${VERSION/-/.} \
-        $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia             &&
+        $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia            &&
 #
 # Setup symlinks
 #
-pushd  $INSTALL_ROOT/usr/lib/xorg/modules/extensions/nvidia  &&
+pushd  $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia &&
 ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
 popd                                                &&
 

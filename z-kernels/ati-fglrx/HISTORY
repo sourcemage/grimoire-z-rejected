@@ -1,3 +1,6 @@
+2010-11-12 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
+	* INSTALL: fix for gl_select
+
 2010-10-29 Bor Kraljič <pyrobor@ver.si>
 	* DETAILS: added SOURCE_HINTS="no-check-certificate"
 	* DOWNLOAD: removed, no longer needed
