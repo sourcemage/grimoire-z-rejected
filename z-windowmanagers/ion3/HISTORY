@@ -1,3 +1,8 @@
+2010-12-10 Arjan Bouter <abouter@sourcemage.org>
+	* DETAILS: final spell update. the project is dead and
+	  buried at this new url.
+	* DEPENDS: cleaned up left-overs from pre-modular xorg
+
 2009-04-19 Arjan Bouter <abouter@sourcemage.org>
 	* DETAILS: version 20090110
 
