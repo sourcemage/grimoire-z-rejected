@@ -3,11 +3,11 @@
           SOURCE=ion-$VERSION.tar.gz
          SOURCE2=$SOURCE.asc
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/ion-$VERSION"
-      SOURCE_URL=http://iki.fi/tuomov/dl/$SOURCE
+      SOURCE_URL=http://tuomov.iki.fi/software/${SOURCE}
      SOURCE2_URL=$SOURCE_URL.asc
       SOURCE_GPG=ion3.gpg:$SOURCE.asc:ESTABLISHED_UPSTREAM_KEY
   SOURCE2_IGNORE=signature
-        WEB_SITE=http://modeemi.cs.tut.fi/~tuomov/ion/
+        WEB_SITE=http://tuomov.iki.fi/software/
          ENTERED=20020127
       LICENSE[0]=LGPL
           REJECT="ion3 has licensing issues."

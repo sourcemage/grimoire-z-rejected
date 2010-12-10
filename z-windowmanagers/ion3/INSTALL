@@ -5,4 +5,4 @@ install -m 0755 $SCRIPT_DIRECTORY/startpwm3    \
   $INSTALL_ROOT/usr/bin/
 [ ! -e $INSTALL_ROOT/usr/share/xsessions/pwm3.desktop ] && 
 install -m 0755 $SCRIPT_DIRECTORY/pwm3.desktop \
-  $INSTALL_ROOT/usr/share/xsessions
+  $INSTALL_ROOT/usr/share/xsessions/
