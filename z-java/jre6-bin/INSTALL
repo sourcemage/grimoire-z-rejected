@@ -65,6 +65,13 @@ elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
     ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/lib/amd64/libnpjp2.so \
            ${INSTALL_ROOT}/opt/firefox/plugins/libnpjp2.so
   fi
+
+  if [ -d ${INSTALL_ROOT}/usr/lib/seamonkey/plugins ]
+  then
+    message "${MESSAGE_COLOR}Installing plugin for seamonkey${DEFAULT_COLOR}" &&
+    ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/lib/amd64/libnpjp2.so  \
+           ${INSTALL_ROOT}/usr/lib/seamonkey/plugins/libnpjp2.so
+  fi
 fi  &&
 
 mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&

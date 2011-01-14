@@ -1,3 +1,8 @@
+2011-01-14 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 6u23
+	* INSTALL: added installation of plugin for seamonkey on x86_64 arch
+	* PRE_BUILD: fixed installation on x86_64 system
+
 2010-11-01 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 6u22
 
