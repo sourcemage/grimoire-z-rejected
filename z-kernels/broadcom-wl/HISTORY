@@ -1,3 +1,6 @@
+2011-01-20 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: Fixed SOURCE_URL[0]; updated spell to 5.100.82.38
+
 2010-12-08 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: Fixed SOURCE_URL[0]; updated spell to 5.60.246.6
 
