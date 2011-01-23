@@ -1,3 +1,6 @@
+2011-01-23 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 260.19.36; fixed x86_64 url
+
 2010-12-15 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 260.19.29 (ia32), SOURCE_URL updated, http -> us
 
