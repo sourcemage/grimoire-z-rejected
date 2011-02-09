@@ -76,4 +76,5 @@ fi  &&
 
 mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
 install -m 0644 $SCRIPT_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/  &&
-sedit  "s/J2SDKDIR/jre$VER/"  ${INSTALL_ROOT}/etc/profile.d/java.sh
+sedit  "s/J2SDKDIR/jre$VER/"  ${INSTALL_ROOT}/etc/profile.d/java.sh &&
+ln -sfn ${INSTALL_ROOT}/usr/lib/jre$VER/ ${INSTALL_ROOT}/usr/lib/java6 
