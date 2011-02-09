@@ -30,6 +30,7 @@ esac
          LICENSE=DLJ
         WEB_SITE=http://java.sun.com/javase/downloads/index.jsp
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk${VER}
+      PATCHLEVEL=1
          ENTERED=20070208
          ARCHIVE="off"
           REJECT="is non-source"
