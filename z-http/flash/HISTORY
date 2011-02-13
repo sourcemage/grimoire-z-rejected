@@ -1,3 +1,7 @@
+2011-02-09 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 10.2.152.27, SECURITY_PATCH=11
+	  http://www.adobe.com/go/apsb11-02
+
 2010-12-18 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated 64bit to version 10_2_p3
 

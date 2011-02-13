@@ -1,3 +1,8 @@
+2011-02-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: PATCHLEVEL++
+	* INSTALL: added /usr/lib/java6 symlink to INSTALL_DIR
+	* PROVIDES: added JAVA6
+
 2011-01-14 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 6u23
 	* INSTALL: added installation of plugin for seamonkey on x86_64 arch

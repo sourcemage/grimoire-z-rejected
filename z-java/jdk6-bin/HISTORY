@@ -1,3 +1,8 @@
+2011-02-09 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: PATCHLEVEL++
+	* INSTALL: added new /usr/lib/java6 symlink to INSTALL_DIR
+	* PROVIDES: added JAVA6
+
 2010-12-15 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 6u23
 
