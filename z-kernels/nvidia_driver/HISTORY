@@ -1,3 +1,6 @@
+2011-02-27 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 270.29 (ia32 beta), SOURCE_URL[1] added
+
 2011-01-23 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 260.19.36; fixed x86_64 url
 
