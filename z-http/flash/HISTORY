@@ -1,3 +1,7 @@
+2011-03-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 10.2.153.1, SECURITY_PATCH=12
+	  http://www.adobe.com/support/security/bulletins/apsb11-05.html
+
 2011-02-09 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 10.2.152.27, SECURITY_PATCH=11
 	  http://www.adobe.com/go/apsb11-02
