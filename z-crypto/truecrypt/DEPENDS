@@ -1,6 +1,6 @@
 depends lvm	&&
 depends fuse	&&
-depends opensc	&&
+depends pkcs11-helper	&&
 depends gtk+2	&&
 
 suggest_depends sudo "" "" "to create volume as a simple user"
