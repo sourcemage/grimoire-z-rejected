@@ -21,11 +21,12 @@ mv archive/common/usr/share/doc/fglrx documentation &&
 sedit "s:^KVER .*:KVER            = $(get_kernel_version):" \
       archive/common/lib/modules/fglrx/build_mod/2.6.x/Makefile
 
-# patch for 2.6.33 kernel
-if [[ "$(get_kernel_version|cut -d. -f3)" == "33" ]]; then
-      cd archive
-      patch -p1 < $SPELL_DIRECTORY/fglrx-2.6.33.patch
-      cd ..
+# Patches for 2.6.38
+if [[ "$(get_kernel_version|cut -d. -f3)" == "38" ]]; then
+  cd archive &&
+  patch -p1 < $SPELL_DIRECTORY/05-fix-global-kernel-lock.diff &&
+  patch -p1 < $SPELL_DIRECTORY/debian-bug-611779.patch &&
+  cd -
 fi
 
 #

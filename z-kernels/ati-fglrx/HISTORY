@@ -1,3 +1,16 @@
+2011-04-19 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 11.3
+	  See http://www2.ati.com/relnotes/Catalyst_11.3_Linux_Installer.pdf
+	  SOURCE_URL no longer requires Akamai redirection
+	* fglrx-2.6.33.patch: Applied in source, remove
+	* 05-fix-global-kernel-lock.diff: Remove global kernel lock in 2.6.38
+	  From http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=618831
+	* debian-bug-611779.patch: Fix compilation with Linux 2.6.38
+	  See http://groups.google.com/group/linux.debian.bugs.dist/browse_thread/thread/3b716dfe326fef23
+	* PRE_BUILD: Apply 05-fix-global-kernel-lock.diff
+	  Apply debian-bug-611779.patch
+	  Remove fglrx-2.6.33.patch
+
 2010-11-12 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
 	* INSTALL: fix for gl_select
 
