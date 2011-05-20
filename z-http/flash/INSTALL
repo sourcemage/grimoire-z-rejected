@@ -26,11 +26,29 @@ case $FIREFOX in
 			fi &&
 			if [[ -e /usr/lib/xulrunner/plugins/flashplayer.xpt ]]; then
 				rm -f /usr/lib/xulrunner/plugins/flashplayer.xpt
-			fi &&
-
-			cp libflashplayer.so /usr/lib/xulrunner/plugins/
-		fi
+			fi 
+		else
+			mkdir -p /usr/lib/xulrunner/plugins
+		fi &&
+		cp libflashplayer.so /usr/lib/xulrunner/plugins/
 	;;
+esac &&
+
+case $XULRUNNER in
+        y|Y)
+                if [[ -d /usr/lib/xulrunner/plugins ]]; then
+                        message "${MESSAGE_COLOR}Installing for Firefox/XULRunner${DEFAULT_COLOR}\n" &&
+
+                        if [[ -e /usr/lib/xulrunner/plugins/libflashplayer.so ]]; then
+                                rm -f /usr/lib/xulrunner/plugins/libflashplayer.so
+                        fi &&
+                        if [[ -e /usr/lib/xulrunner/plugins/flashplayer.xpt ]]; then
+                                rm -f /usr/lib/xulrunner/plugins/flashplayer.xpt
+                        fi &&
+
+                        cp libflashplayer.so /usr/lib/xulrunner/plugins/
+                fi
+        ;;
 esac &&
 
 case $MIDORI in
