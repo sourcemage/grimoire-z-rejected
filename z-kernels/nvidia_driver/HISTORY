@@ -1,3 +1,7 @@
+2011-05-19 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: updated beta to 275.09
+	  Added SOURCE_URL[1] for x86_64
+
 2011-04-21 Bor Kraljič <pyrobor@ver.si>
 	* DETAILS: updated to 270.41.06 (x86_64)
 
