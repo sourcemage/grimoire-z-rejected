@@ -1,3 +1,6 @@
+2011-05-21 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 270.41.19 (ia32)
+
 2011-05-19 Sukneet Basuta <sukneet@sourcemage.org>
 	* DETAILS: updated beta to 275.09
 	  Added SOURCE_URL[1] for x86_64
