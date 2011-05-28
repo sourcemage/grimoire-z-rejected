@@ -24,7 +24,8 @@ echo "Select which currently installed applications you wish to install Flash fo
 persistent_add MOZILLA FIREFOX MIDORI SEAMONKEY FIRE_BIN KDEBASE OPERA NETSCAPE XULRUNNER ICE_BIN ICECAT &&
 
 ask_spell mozilla Mozilla MOZILLA &&
-ask_spell xulrunner "Firefox/XULRunner" FIREFOX &&
+ask_spell xulrunner "XULRunner" XULRUNNER &&
+ask_spell firefox "Firefox" FIREFOX &&
 ask_spell midori "Midori/WebKit" MIDORI &&
 ask_spell seamonkey Seamonkey SEAMONKEY &&
 ask_spell firefox-bin Firefox-bin FIRE_BIN &&

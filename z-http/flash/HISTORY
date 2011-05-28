@@ -1,3 +1,23 @@
+2011-05-19 Sukneet Basuta <sukneet@sourcemage.org>
+	* CONFIGURE: Separated checking of XULRunner and Firefox
+	* INSTALL: Made new case for Firefox.
+	  In the case of Firefox, /usr/lib/xulrunner/plugins is made
+	  if it does not exist, since /usr/lib/firefox/plugins is
+	  symlinked to /usr/lib/xulrunner/plugins by default.
+	  Flash is still installed to /usr/lib/xulrunner/plugins
+
+2011-05-13 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 10.3.181.14, SECURITY_PATCH=14
+	  http://www.adobe.com/support/security/bulletins/apsb11-12.html
+
+2011-04-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 10.2.159.1, SECURITY_PATCH=13
+	  http://www.adobe.com/support/security/advisories/apsa11-02.html
+
+2011-03-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 10.2.153.1, SECURITY_PATCH=12
+	  http://www.adobe.com/support/security/bulletins/apsb11-05.html
+
 2011-02-09 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 10.2.152.27, SECURITY_PATCH=11
 	  http://www.adobe.com/go/apsb11-02
