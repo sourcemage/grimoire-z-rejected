@@ -24,6 +24,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 fi
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
      GATHER_DOCS=off
+      PATCHLEVEL=1
         WEB_SITE=http://www.macromedia.com
          ENTERED=20020319
           REJECT="is non-source and has licensing issues"

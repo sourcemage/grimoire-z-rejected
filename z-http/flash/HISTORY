@@ -1,3 +1,7 @@
+2011-05-30 Thomas Orgis <sobukus@sourcemage.org>
+	* CONFIGURE, BUILD: Add hack to avoid bad memcpy calls.
+	* It's a patchlevel, isn't it?
+
 2011-05-19 Sukneet Basuta <sukneet@sourcemage.org>
 	* CONFIGURE: Separated checking of XULRunner and Firefox
 	* INSTALL: Made new case for Firefox.

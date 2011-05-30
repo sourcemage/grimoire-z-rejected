@@ -34,4 +34,6 @@ ask_spell kdebase4 "Konqueror (KDE4)" KDEBASE4 &&
 ask_spell opera Opera OPERA &&
 ask_spell netscape4 Netscape NETSCAPE &&
 ask_spell icecat Icecat ICECAT &&
-ask_spell icecat-bin Icecat-bin ICE_BIN
+ask_spell icecat-bin Icecat-bin ICE_BIN &&
+
+config_query FLASH_MEMCPY_HACK "Hack the plugin for broken memcpy calls (more urgent since glibc 2.13)?" n 
