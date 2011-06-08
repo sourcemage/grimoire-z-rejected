@@ -1,3 +1,7 @@
+2011-06-08 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 10.3.181.22, SECURITY_PATCH=15
+	  http://www.adobe.com/support/security/bulletins/apsb11-13.html
+
 2011-05-30 Thomas Orgis <sobukus@sourcemage.org>
 	* CONFIGURE, BUILD: Add hack to avoid bad memcpy calls.
 	* It's a patchlevel, isn't it?
