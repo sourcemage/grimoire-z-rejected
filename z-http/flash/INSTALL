@@ -53,7 +53,7 @@ esac &&
 
 case $MIDORI in
 	y|Y)
-		if [[ -d /usr/lib/midori/plugins ]]; then
+      mkdir -p /usr/lib/midori/plugins
 			message "${MESSAGE_COLOR}Installing for Midori/WebKit${DEFAULT_COLOR}\n" &&
 
 			if [[ -e /usr/lib/midori/plugins/libflashplayer.so ]]; then
@@ -64,7 +64,6 @@ case $MIDORI in
 			fi &&
 
 			cp libflashplayer.so /usr/lib/midori/plugins/
-		fi
 	;;
 esac &&
 
