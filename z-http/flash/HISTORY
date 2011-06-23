@@ -1,3 +1,8 @@
+2011-06-23 Arwed von Merkatz <v.merkatz@gmx.net>
+	* INSTALL: for Midori, create the plugins directory. Usually
+	  it is empty by default, which makes sorcery remove it on
+	  dispel of flash, leading flash to disappear after an update.
+
 2011-06-15 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 10.3.181.26, SECURITY_PATCH=16
 	  http://www.adobe.com/support/security/bulletins/apsb11-18.html
