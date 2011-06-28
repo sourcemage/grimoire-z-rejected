@@ -1,3 +1,6 @@
+2011-06-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 10.3.181.34
+
 2011-06-23 Arwed von Merkatz <v.merkatz@gmx.net>
 	* INSTALL: for Midori, create the plugins directory. Usually
 	  it is empty by default, which makes sorcery remove it on
