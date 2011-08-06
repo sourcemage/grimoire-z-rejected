@@ -1,3 +1,6 @@
+2011-07-25 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.2.0.35
+
 2010-05-10 Eric Sandall <sandalle@sourcemage.org>
 	* INSTALL: Fix desktop file for case-sensitve filenames and non-standard
 	  path for icon location.

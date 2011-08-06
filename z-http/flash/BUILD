@@ -1,7 +1,9 @@
 # This was installed for 10p3, perhaps can be removed for future release.
 # It's about bad calls to memcpy with overlapping memory.
 # See https://bugzilla.redhat.com/show_bug.cgi?id=638477
-if [[ "$FLASH_MEMCPY_HACK" == y ]]; then
-  sh "$SCRIPT_DIRECTORY/memcpy-to-memmove.sh" libflashplayer.so &&
-  chmod a+rx libflashplayer.so
+if [[ ! ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+ if [[ "$FLASH_MEMCPY_HACK" == y ]]; then
+   sh "$SCRIPT_DIRECTORY/memcpy-to-memmove.sh" libflashplayer.so &&
+   chmod a+rx libflashplayer.so
+ fi
 fi

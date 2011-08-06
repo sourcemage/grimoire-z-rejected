@@ -36,4 +36,7 @@ ask_spell netscape4 Netscape NETSCAPE &&
 ask_spell icecat Icecat ICECAT &&
 ask_spell icecat-bin Icecat-bin ICE_BIN &&
 
-config_query FLASH_MEMCPY_HACK "Hack the plugin for broken memcpy calls (more urgent since glibc 2.13)?" n 
+#not required for flash 11. Issue #20
+if [[ ! ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+ config_query FLASH_MEMCPY_HACK "Hack the plugin for broken memcpy calls (more urgent since glibc 2.13)?" n 
+fi

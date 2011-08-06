@@ -1,3 +1,7 @@
+2011-08-05 George Sherwood <gsherwood@sourcemage.org>
+	* CONFIGURE: Not for 64bit version. Issue #20
+	* INSTALL: No patch for 64bit version. Issue #20
+
 2011-07-17 Ladislav Hagara <hgr@vabo.cz>
 	* *: sigs fixed
 
