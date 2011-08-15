@@ -52,7 +52,7 @@ install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
   ln  -sfn  libGL.so.1                       libGL.so            &&
   popd
   pushd  $INSTALL_ROOT/usr/lib                                   &&
-  ln  -sfn  libGLcore.so.${VERSION/-/.}      libGLcore.so.1      &&
+  ln  -sfn  libnvidia-glcore.so.${VERSION/-/.}   libGLcore.so.1  &&
   ln  -sfn  libnvidia-cfg.so.${VERSION/-/.}  libnvidia-cfg.so.1  &&
   ln  -sfn  libnvidia-cfg.so.1               libnvidia-cfg.so    &&
   ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
