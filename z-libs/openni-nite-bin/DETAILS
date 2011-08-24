@@ -1,0 +1,21 @@
+           SPELL=openni-nite-bin
+if [[ "$OPENNI_NITE_BIN_DEVEL" == "y" ]]; then
+         VERSION=1.4.1.2
+          SOURCE="NITE-Bin-Linux32-v$VERSION.tar.bz2"
+   SOURCE_URL[0]=http://www.openni.org/downloadfiles/opennimodules/openni-compliant-middleware-binaries/latest-unstable/174-primesense-nite-unstable-build-for-ubuntu-10-10-x86-32-bit-v1-4-1/download
+     SOURCE_HASH=sha512:f589b64521063dbc97f191afca747b0058fd3473dcc3dcc44aee9a7a8bc00ff14a626d606f71be4ebe2d6ace677b3c839cecf7497f677c80c0f622f020a09abf
+else
+         VERSION=1.4.0.5
+          SOURCE="NITE-Bin-Linux32-v$VERSION.tar.bz2"
+   SOURCE_URL[0]=http://www.openni.org/downloadfiles/opennimodules/openni-compliant-middleware-binaries/stable/143-primesense-nite-stable-build-for-ubuntu-10-10-x86-32-bit-v1-4-0/download
+     SOURCE_HASH=sha512:c0eded6d6a7b12388bed2dee71a6bb665bd9006f401019aa032f36cd68c0c257ca9ee637d534a012b038647b32bb0d869275e8d642fc99927d8d6453b649240c
+fi
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}"
+        WEB_SITE=http://www.openni.org/
+      LICENSE[0]=GPL
+          REJECT="Non-Free Software license"
+         ENTERED=20110824
+           SHORT="PrimeSense NITE Module for OpenNI"
+cat << EOF
+PrimeSense NITE Module for OpenNI.
+EOF
