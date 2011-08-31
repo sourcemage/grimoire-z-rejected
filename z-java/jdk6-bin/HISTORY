@@ -1,3 +1,6 @@
+2011-08-31 Bor Kraljič <pyrobor@ver.si>
+	* INSTALL: added path to install plugin for firefox
+
 2011-06-13 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 6u26, SECURITY_PATCH++, PATCHLEVEL--
 
