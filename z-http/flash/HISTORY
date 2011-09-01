@@ -1,3 +1,9 @@
+2011-08-31 Bor Kraljič <pyrobor@ver.si>
+	* INSTALL: fixed the install path for firefox
+
+2011-08-31 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 10.3.183.7
+
 2011-08-17 Bor Kraljič <pyrobor@ver.si>
 	* DETAILS: updated spell to 11.0.d1.98 (64-bit)
 
