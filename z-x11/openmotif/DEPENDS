@@ -7,7 +7,6 @@ depends libtool    &&
 depends libx11     &&
 depends libxt      &&
 depends libxmu     &&
-depends printproto &&
 optional_depends  libxft                        \
                   '--enable-xft'                \
                   '--disable-xft'               \
