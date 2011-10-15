@@ -13,4 +13,4 @@ then
   fi
 fi  &&
 
-/bin/bash $SOURCE_CACHE/$SOURCE --accept-license --unpack
+yes | sh $SOURCE_CACHE/$SOURCE

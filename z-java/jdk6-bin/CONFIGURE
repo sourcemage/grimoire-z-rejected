@@ -1,6 +1,6 @@
 # download java sources warning.
 #
-source $SECTION_DIRECTORY/JAVA_WARNING &&
+source $SPELL_DIRECTORY/JAVA_WARNING &&
 
 # Standard rejected warnings.
 #
