@@ -3,6 +3,7 @@
 	  DLJ had been retired (http://robilad.livejournal.com/90792.html)
 	* INSTALL: added seamonkey support for installing java plugin;
 	  fixed firefox-bin plugin installation for x64
+	* PRE_BUILD: fixed "press enter" issue
 	* CONFIGURE: use internal JAVA_WARNING
 	* JAVA_WARNING: added
 	* volatiles: removed, deprecated
