@@ -1,37 +1,33 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jdk6-bin
-         VERSION=6u26
-             VER=1.6.0_26
+         VERSION=6u27
+             VER=1.6.0_27
 case "${SMGL_COMPAT_ARCHS[0]}" in
-	ia32|32)
-          SOURCE=jdk-$VERSION-dlj-linux-i586.bin
-      SOURCE_HASH=sha512:718ed79eea6e768442bc602eca8b2c96d07c984a501af99b102fb367cd7fc726fd3f93a8d43b6c314b84f8874bf7adf1c648cebac461db7870eccf2503ae3474
-        ;;
-	x86-64|64)
-	  if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
-	  then
-          SOURCE=jdk-$VERSION-dlj-linux-amd64.bin
-      SOURCE_HASH=sha512:ab82c57e9363d26e55eea8b63f8821ec35147ff7986858ca59c083eb6a0d5a103c977456918be28452e160c561cca173d8469223c1a7dd4861143394c1c215cf
-          else
-          SOURCE=jdk-$VERSION-dlj-linux-i586.bin
-      SOURCE_HASH=sha512:718ed79eea6e768442bc602eca8b2c96d07c984a501af99b102fb367cd7fc726fd3f93a8d43b6c314b84f8874bf7adf1c648cebac461db7870eccf2503ae3474
-	  fi
-	;;
+  ia32|32)
+          SOURCE=jdk-$VERSION-linux-i586.bin
+     SOURCE_HASH=sha512:977bb22632b244423c71b696a2b341c28d2cb78a6271a879c981019628009133ef97f58341c2e3154419ab93607b62149423777d3938d4b8c1636319af9e60b0
+  ;;
+  x86-64|64)
+    if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
+          SOURCE=jdk-$VERSION-linux-x64.bin
+     SOURCE_HASH=sha512:fd34ee79b94b2629bacb8d6b8ac64eae8924efa3ff62333a3e5c9eebb7a46b2d81d9432b7ea822914c2af3a2ed962b06e2917139a2ca999ab3ec18b9db008613
+    else
+          SOURCE=jdk-$VERSION-linux-i586.bin
+     SOURCE_HASH=sha512:977bb22632b244423c71b696a2b341c28d2cb78a6271a879c981019628009133ef97f58341c2e3154419ab93607b62149423777d3938d4b8c1636319af9e60b0
+    fi
+  ;;
 ###########################################################################
 # Missing support for sparc and sparcv9 tarballs say solaris not linux :\
 ###########################################################################
-	*)
-	  SOURCE=
-	 VERSION=Unsupported
-	     VER=Unsupported
-	;;
+  *)
+          SOURCE=
+         VERSION=Unsupported
+             VER=Unsupported
+  ;;
 esac
-      SOURCE_URL=http://dlc.sun.com/dlj/binaries/$SOURCE
-         LICENSE=DLJ
-        WEB_SITE=http://java.sun.com/javase/downloads/index.jsp
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/jdk${VER}
-  SECURITY_PATCH=1
-      PATCHLEVEL=0
+        WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk${VER}"
+  SECURITY_PATCH=2
          ENTERED=20070208
          ARCHIVE="off"
           REJECT="is non-source"

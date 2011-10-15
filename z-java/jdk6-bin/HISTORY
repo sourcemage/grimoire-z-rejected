@@ -1,3 +1,9 @@
+2011-10-15 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 6u27; SECURITY_PATCH++; cleaned up;
+	  DLJ had been retired
+	* INSTALL: added seamonkey support for installing java plugin;
+	  fixed firefox plugin installation for x64
+
 2011-08-31 Bor Kraljič <pyrobor@ver.si>
 	* INSTALL: added path to install plugin for firefox
 
