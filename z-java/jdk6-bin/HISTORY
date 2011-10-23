@@ -1,3 +1,10 @@
+2011-10-19 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 6u29; SECURITY_PATCH++
+	  See http://www.oracle.com/technetwork/topics/security/javacpuoct2011-443431.html
+	  for security info and
+	  http://www.oracle.com/technetwork/java/javase/6u29-relnotes-507960.html
+	  for release notes
+
 2011-10-15 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 6u27; SECURITY_PATCH++; cleaned up;
 	  DLJ had been retired (http://robilad.livejournal.com/90792.html)
