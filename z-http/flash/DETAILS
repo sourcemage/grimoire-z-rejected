@@ -12,10 +12,10 @@ else
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_10_linux
 else
-         VERSION=11.0.1.152
-  SECURITY_PATCH=17
+         VERSION=11.1.102.55
+  SECURITY_PATCH=18
           SOURCE=install_flash_player_11_linux.i386.tar.gz
-   SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE
+   SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
   FORCE_DOWNLOAD="on"
  fi
