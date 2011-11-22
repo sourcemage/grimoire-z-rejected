@@ -1,9 +1,9 @@
            SPELL=flash
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=11.0.1.152
+         VERSION=11.1.102.55
           SOURCE=install_flash_player_11_linux.x86_64.tar.gz
       SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
-   SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/current/$SOURCE
+   SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 else
  if [[ $FLASH_BETA == y ]]; then
