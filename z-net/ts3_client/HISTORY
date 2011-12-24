@@ -1,3 +1,12 @@
+2011-12-25 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 3.0.2; removed 2nd source data; added 2nd
+	  mirror; quoting paths
+	* BUILD: not required
+	* DEPENDS: switched to CXX subdependency for gcc
+	* INSTALL: properly install stuff with a sane verbosity level
+	* PRE_BUILD: removed dirty hacks and hardcodings
+	* desktop/teamspeak3.desktop: created, moved from INSTALL
+
 2010-10-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Add jpeg 6b as SOURCE2
 	  PATCHLEVEL++

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=TeamSpeak 3
+Comment=Internet-based conferencing
+Exec=teamspeak3
+Type=Application
+Icon=32x32_whisperlists.png
+Categories=Internet

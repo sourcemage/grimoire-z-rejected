@@ -1,7 +1,7 @@
 depends expat &&
 depends fontconfig &&
 depends freetype2 &&
-depends g++ &&
+depends -sub CXX gcc &&
 depends libx11 &&
 depends libxau &&
 depends libxdmcp &&

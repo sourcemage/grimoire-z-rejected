@@ -1,24 +1,7 @@
-local INSTALLDIR=/usr/libexec/$SPELL &&
+cp -av "$SOURCE_DIRECTORY" "$INSTALL_ROOT/usr/libexec/$SPELL" &&
 
-# Copy custom-build libjpeg.so, stupid binaries
-mkdir -p $INSTALL_ROOT/usr/libexec/ts3_client/imageformats &&
-cp -v $SOURCE_DIRECTORY/jpeg-6b/.libs/libjpeg.so \
-  $INSTALL_ROOT/usr/libexec/ts3_client/imageformats/libjpeg.so.62 &&
-rm -rf $SOURCE_DIRECTORY/jpeg-6b &&
+install -vm 755 -d "$INSTALL_ROOT/usr/share/pixmaps" &&
+ln -vsf "$TRACK_ROOT/usr/libexec/$SPELL/gfx/default/32x32_whisperlists.png" \
+        "$INSTALL_ROOT/usr/share/pixmaps/32x32_whisperlists.png" &&
 
-# create dirs and install.
-mkdir -p $INSTALLDIR &&
-cp -rv ./*    $INSTALLDIR/ &&
-cp -rv $SCRIPT_DIRECTORY/teamspeak3 /usr/bin &&
-chmod 755 /usr/bin/teamspeak3 &&
-
-# Create Desktop file
-cat << EOF > $INSTALL_ROOT/usr/share/applications/$SPELL.desktop
-[Desktop Entry]
-Name=TeamSpeak 3
-Comment=Internet-based conferencing
-Exec=teamspeak3
-Type=Application
-Icon=$INSTALL_ROOT/usr/libexec/ts3_client/gfx/default/32x32_whisperlists.png
-Categories=Internet
-EOF
+install -vm 755 "$SPELL_DIRECTORY/teamspeak3" "$INSTALL_ROOT/usr/bin"
