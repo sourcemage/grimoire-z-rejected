@@ -1,3 +1,6 @@
+2012-01-06 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: x86_64 tarball has been changed upstream, fixed sig
+
 2011-11-25 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: tarball is reuploaded by upstream
 
