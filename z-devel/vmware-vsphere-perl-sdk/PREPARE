@@ -1,0 +1,4 @@
+source $GRIMOIRE/REJECTED_MSG &&
+default_prepare &&
+config_query_list VSPHERE_API_VERSION "Select vSphere API version to install" \
+  "5.0" "4.1"

@@ -1,0 +1,19 @@
+depends perl &&
+depends archive-zip &&
+depends compress-raw-zlib &&
+depends compress-zlib &&
+depends crypt-ssleay &&
+depends data-dumper &&
+depends data-uuid &&
+depends html-parser &&
+depends io-compress-base &&
+depends io-compress-zlib &&
+depends lwp &&
+depends soap-lite &&
+depends uri &&
+depends version &&
+depends w3c-libwww &&
+depends xml-libxml &&
+depends xml-libxml-common &&
+depends xml-namespacesupport &&
+depends xml-sax
