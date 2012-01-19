@@ -1,0 +1,8 @@
+mkdir -p "${INSTALL_ROOT}"/usr/lib/vmware-vcli/apps/ &&
+mkdir -p "${INSTALL_ROOT}"/usr/share/doc/vmware-vcli/samples/ &&
+
+cd  "${SOURCE_DIRECTORY}/vmware-vsphere-cli-distrib/" &&
+cp -Pv bin/* "${INSTALL_ROOT}"/usr/bin/ &&
+cp -v man/*.1 "${INSTALL_ROOT}"/usr/share/man/man1/ &&
+perl Makefile.PL &&
+make install

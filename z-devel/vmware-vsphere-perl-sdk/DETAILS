@@ -1,0 +1,33 @@
+           SPELL=vmware-vsphere-perl-sdk
+case "${VSPHERE_API_VERSION}" in
+  4.1) VERSION=4.1.0-254719 ;;
+  5.0|*)VERSION=5.0.0-422456 ;; # Latest is default
+esac
+
+case "${SMGL_COMPAT_ARCHS[0]}" in
+  ia32|32)
+          SOURCE=VMware-vSphere-Perl-SDK-$VERSION.i386.tar.gz
+  ;;
+  x86-64|64)
+    if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
+          SOURCE=VMware-vSphere-Perl-SDK-$VERSION.x86_64.tar.gz
+    else
+          SOURCE=VMware-vSphere-Perl-SDK-$VERSION.i386.tar.gz
+    fi
+  ;;
+esac
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=http://www.vmware.com/support/developer/viperltoolkit/
+         ENTERED=20120110
+      LICENSE[0]="UNKNOWN"
+          REJECT="is non-source"
+           SHORT="VMware vSphere Perl SDK for Linux"
+cat << EOF
+This is the VMware vSphere Perl SDK for Linux for interacting with the
+vSphere API using Perl.
+
+You may exclusively select between the following vSphere API versions:
+	* 5.0
+	* 4.1
+EOF
