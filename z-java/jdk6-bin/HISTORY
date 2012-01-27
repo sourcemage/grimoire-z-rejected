@@ -1,3 +1,6 @@
+2012-01-25 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 6u30
+
 2011-10-19 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 6u29; SECURITY_PATCH++
 	  See http://www.oracle.com/technetwork/topics/security/javacpuoct2011-443431.html
