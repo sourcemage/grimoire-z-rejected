@@ -35,24 +35,22 @@ mkdir -vp $INSTALL_ROOT/usr/share/applications/ \
 cp -vr etc/ati $INSTALL_ROOT/etc/ &&
 cp -vr usr/X11R6/$ARCHLIB/modules/linux/* \
        $INSTALL_ROOT/usr/lib/xorg/modules/linux  &&
-cp -vr usr/X11R6/$ARCHLIB/modules/extensions/* \
-       $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.ati  &&
+cp -vr usr/X11R6/$ARCHLIB/modules/extensions/fglrx/fglrx-libglx.so \
+       $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.ati/libglx.so  &&
 cp -vr usr/X11R6/$ARCHLIB/modules/drivers/* \
        $INSTALL_ROOT/usr/lib/xorg/modules/drivers/  &&
 cp -vr usr/X11R6/$ARCHLIB/modules/dri/* \
        $INSTALL_ROOT/usr/lib/dri/  &&
 rm -rf usr/X11R6/$ARCHLIB/modules/{dri,drivers,extensions,linux}  &&
-mv -v usr/X11R6/$ARCHLIB/modules/*.a \
-       $INSTALL_ROOT/usr/lib/  &&
-cp -vr usr/X11R6/$ARCHLIB/modules/* \
+mv -v usr/X11R6/$ARCHLIB/modules/*.so \
        $INSTALL_ROOT/usr/lib/xorg/modules/  &&
 rm -rf usr/X11R6/$ARCHLIB/modules  &&
-cp -vr usr/X11R6/$ARCHLIB/libGL.so.1.2 \
-       $INSTALL_ROOT/usr/lib/.ati/  &&
+cp -vr usr/X11R6/$ARCHLIB/fglrx/fglrx-libGL.so.1.2 \
+       $INSTALL_ROOT/usr/lib/.ati/libGL.so.1.2  &&
 pushd  $INSTALL_ROOT/usr/lib/.ati &&
 ln -sfv libGL.so.1.2 libGL.so &&
 popd &&
-rm -f usr/X11R6/$ARCHLIB/libGL.so.1.2  &&
+rm -rf usr/X11R6/$ARCHLIB/fglrx  &&
 pushd usr/X11R6/$ARCHLIB &&
 for lib in * ; do
 cp -vr $lib \
@@ -60,9 +58,15 @@ cp -vr $lib \
 ln -sf $INSTALL_ROOT/usr/lib/$lib $INSTALL_ROOT/usr/lib/${lib/.1.0} &&
 ln -sf $INSTALL_ROOT/usr/lib/$lib $INSTALL_ROOT/usr/lib/${lib/.1}
 done
-popd
-cp -vr usr/X11R6/include/X11/extensions/* \
-       $INSTALL_ROOT/usr/include/X11/extensions/  &&
+popd &&
+pushd usr/$ARCHLIB &&
+for lib in * ; do
+cp -vr $lib \
+       $INSTALL_ROOT/usr/lib/  &&
+ln -sf $INSTALL_ROOT/usr/lib/$lib $INSTALL_ROOT/usr/lib/${lib/.1.0} &&
+ln -sf $INSTALL_ROOT/usr/lib/$lib $INSTALL_ROOT/usr/lib/${lib/.1}
+done
+popd &&
 chmod +x usr/X11R6/bin/* &&
 cp -vr usr/X11R6/bin/* $INSTALL_ROOT/usr/bin/  && 
 cp -vr usr/include/GL/* $INSTALL_ROOT/usr/include/GL/  &&
