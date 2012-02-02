@@ -46,7 +46,7 @@ case "${SMGL_COMPAT_ARCHS[1]}" in
         ;;
         "x86_64")
                 cp -R archive/arch/x86_64/* build &&
-                cp -R archive/x740_64a/* build
+                cp -R archive/xpic_64a/* build
         ;;
                *)
                 message "${PROBLEM_COLOR}" \

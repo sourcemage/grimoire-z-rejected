@@ -1,12 +1,12 @@
            SPELL=ati-fglrx
-         VERSION=10.3
-          SOURCE=ati-driver-installer-${VERSION/./-}-x86.x86_64.run
+         VERSION=12.1
+          SOURCE=amd-driver-installer-${VERSION/./-}-x86.x86_64.run
     SOURCE_HINTS="no-check-certificate"
-     SOURCE_HASH=sha512:3c2e147a88f426fb01cf795b7dba9f29bb5517fd7a345bffcc0b10bdbec0800c2bfa7628bed9bc0cd5daf950c593ea540fca26e223324e33b8c169648080b31b
+     SOURCE_HASH=sha512:798a30637b7bd03d6ad833c9bb67de04f2c315c0e2d0786b636c095a66c38248994c7a55cb4e7cc86405da5e36f8a520f9e668188876b040e2c9655e4b2a1eb5
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-   SOURCE_URL[0]=https://a248.e.akamai.net/f/674/9206/0/www2.ati.com/drivers/linux/${SOURCE} 
+   SOURCE_URL[0]=http://www2.ati.com/drivers/linux/${SOURCE} 
       LICENSE[0]="$GRIMOIRE/$SECTION/$SPELL/LICENSE"
-        WEB_SITE=http://www.ati.com
+        WEB_SITE=http://www.amd.com
          ENTERED=20071107
           REJECT="Non-GPL compatible software license"
            SHORT="X Window display driver for the ATI graphics accelerators"
