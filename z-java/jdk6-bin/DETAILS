@@ -1,19 +1,20 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jdk6-bin
-         VERSION=6u30
-             VER=1.6.0_30
+         VERSION=6u31
+  SECURITY_PATCH=4
+             VER=1.6.0_31
 case "${SMGL_COMPAT_ARCHS[0]}" in
   ia32|32)
           SOURCE=jdk-$VERSION-linux-i586.bin
-     SOURCE_HASH=sha512:0e7a39102879780237c006466770130992b2e389e644e495bcddf358283c9cd4b4fcfb2bd45c40b32ff01293e6f5c546cf48ca00c66ea4237655906bd2ee9bef
+     SOURCE_HASH=sha512:9cdd9c7dbdffafb4a77c39aabf4a128b4eaa68c317b4c55199b361ff4e4a01af7289a3a7a1339796a561faac644d86321afd7c1a58d5318a0e1e01e04d11f899
   ;;
   x86-64|64)
     if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
           SOURCE=jdk-$VERSION-linux-x64.bin
-     SOURCE_HASH=sha512:e248f4de7cffe5e61774237bd96fc087d663b526f331f1b5ceb06b5e8a59a953a304007ec97e33bd1d4c2ecfeaa2ec16ed55a9e6d7b8385285980e42c8936823
+     SOURCE_HASH=sha512:a21bd9454a1928c0ba34603c481d8a9b5ed26cf1cd0e8ea07e180ff1bfa92d86afc2d7e59caab1f72110872d24e04b94113fcaf8afef62a9e7d7498dc557e472
     else
           SOURCE=jdk-$VERSION-linux-i586.bin
-     SOURCE_HASH=sha512:0e7a39102879780237c006466770130992b2e389e644e495bcddf358283c9cd4b4fcfb2bd45c40b32ff01293e6f5c546cf48ca00c66ea4237655906bd2ee9bef
+     SOURCE_HASH=sha512:9cdd9c7dbdffafb4a77c39aabf4a128b4eaa68c317b4c55199b361ff4e4a01af7289a3a7a1339796a561faac644d86321afd7c1a58d5318a0e1e01e04d11f899
     fi
   ;;
 ###########################################################################
@@ -27,7 +28,6 @@ case "${SMGL_COMPAT_ARCHS[0]}" in
 esac
         WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk${VER}"
-  SECURITY_PATCH=3
          ENTERED=20070208
          ARCHIVE="off"
           REJECT="is non-source"
