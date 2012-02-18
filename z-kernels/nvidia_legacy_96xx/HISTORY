@@ -1,3 +1,7 @@
+2012-02-18 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 96.43.20 (fixes #349); quoting paths;
+	  cleaned up
+
 2010-11-12 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
 	* INSTALL: fix for gl_select
 
