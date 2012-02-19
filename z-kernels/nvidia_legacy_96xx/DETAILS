@@ -1,27 +1,27 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_legacy_96xx
-         VERSION=96.43.16
+         VERSION=96.43.20
 case "${SMGL_COMPAT_ARCHS[1]}" in
-	x86_64)
-     SOURCE_HASH=sha512:3fc14b2d93ba3432e3df19367d28a8fe6949e6042c08d8e6d123675843264664e350ac651ca5176cbc6d5311292bcf5320a729f32b101f4f7e1746205f887d0b
-	  SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
+  x86_64)
+     SOURCE_HASH=sha512:ca89961463bc705b1aa0e5fcbb284317e60e455d444035ba8f6a44cb3884f3a4b4c98ed5a37465d6f70a0eb6578a7d865b25f15a6b6f48bdbcb5aaca6e541623
+          SOURCE=NVIDIA-Linux-x86_64-$VERSION-pkg2.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2
-        ;;
-	ia32)
-     SOURCE_HASH=sha512:25d55232a67f9bad9bcd40f595923af2541172f5253c942b3f4612509bf3dc0672571144a78ca85e7a58ea3ca659455454075f77e7772e0fcb4c3b7053f41912
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-pkg2"
+  ;;
+  ia32)
+     SOURCE_HASH=sha512:7f05d7014c6f765b26a95a15a8f049d5792066031ef050a51151d715ca19cd61bb56cf2f4812ee26c4742dd4fe65eafd84754cd71c84f1d5854b18fa9e78f96f
           SOURCE=NVIDIA-Linux-x86-$VERSION-pkg1.run
       SOURCE_URL=http://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1
-        ;;
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION-pkg1"
+  ;;
 ############################################################
 # missing ia64 support we don't have an arch spec for it???
 ############################################################
-	*)
-	 VERSION=${SMGL_COMPAT_ARCHS[0]}
-	  SOURCE=
+  *)
+         VERSION=${SMGL_COMPAT_ARCHS[0]}
+          SOURCE=
       SOURCE_URL=
-        ;;
+  ;;
 esac
 #      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.nvidia.com/object/unix.html
