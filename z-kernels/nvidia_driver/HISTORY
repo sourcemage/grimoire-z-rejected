@@ -1,3 +1,6 @@
+2012-03-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* PRE_BUILD: fixed build with linux 3.3
+
 2012-02-14 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 295.20 (ia32)
 

@@ -4,6 +4,8 @@ sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
                --target $SOURCE_DIRECTORY                     &&
 cd $SOURCE_DIRECTORY                                          &&
 
+sedit 's/CFLAGS="$CFLAGS -I$SOURCES\/arch\/x86\/include"/CFLAGS="$CFLAGS -I$SOURCES\/arch\/x86\/include -I$SOURCES\/arch\/x86\/include\/generated"/' kernel/conftest.sh &&
+
 if [[ $VIA4X == "y" ]]; then
   sedit  "s/NV_DEFINE_REG_ENTRY(__NV_ENABLE_VIA_4X, 0)/NV_DEFINE_REG_ENTRY(__NV_ENABLE_VIA_4X, 1)/" \
       kernel/nv-reg.h
