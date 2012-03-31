@@ -1,8 +1,8 @@
            SPELL=flash
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=11.1.102.55
+         VERSION=11.2.202.228
           SOURCE=install_flash_player_11_linux.x86_64.tar.gz
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+     SOURCE_HASH=abd5a625762de8dd6cd065e8168655a7836a4ab3bef18e8a517e929bcfd5cfb60ff088f66212d3440efc18b114cac33aee16bd089f4db9dc2cb2f939cc00e81c
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 else
@@ -12,14 +12,14 @@ else
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_10_linux
 else
-         VERSION=11.1.102.63
-  SECURITY_PATCH=20
+         VERSION=11.2.202.228
+  SECURITY_PATCH=21
           SOURCE=install_flash_player_11_linux.i386.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
   FORCE_DOWNLOAD="on"
  fi
-      SOURCE_GPG=gurus.gpg:$SOURCE.sig
+     SOURCE_HASH=abd5a625762de8dd6cd065e8168655a7836a4ab3bef18e8a517e929bcfd5cfb60ff088f66212d3440efc18b114cac33aee16bd089f4db9dc2cb2f939cc00e81c
 fi
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
      GATHER_DOCS=off
@@ -30,3 +30,4 @@ fi
 cat << EOF
 Macromedia Flash Plugin for web browsers.
 EOF
+abd5a625762de8dd6cd065e8168655a7836a4ab3bef18e8a517e929bcfd5cfb60ff088f66212d3440efc18b114cac33aee16bd089f4db9dc2cb2f939cc00e81c  /var/spool/sorcery/install_flash_player_11_linux.i386.tar.gz
