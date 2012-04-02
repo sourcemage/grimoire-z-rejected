@@ -1,5 +1,6 @@
 2012-04-02 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: Fixed version and handling of architectures
+	* DETAILS: Version bumped to 3.5.0-7
 
 2009-09-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* BUILD, DEPENDS, desktop, DETAILS, INSTALL: spell created

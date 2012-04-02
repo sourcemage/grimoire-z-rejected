@@ -1,5 +1,5 @@
            SPELL=nxclient
-         VERSION=3.3.0-6
+         VERSION=3.5.0-7
             ARCH="${SMGL_COMPAT_ARCHS[1]}"
 case "$ARCH"
       ia32) ARCH=i386 ;;
