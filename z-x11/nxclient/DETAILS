@@ -1,6 +1,10 @@
            SPELL=nxclient
-         VERSION=6.i386
-          SOURCE="${SPELL}-3.3.0-${VERSION}.tar.gz"
+         VERSION=3.3.0-6
+            ARCH="${SMGL_COMPAT_ARCHS[1]}"
+case "$ARCH"
+      ia32) ARCH=i386 ;;
+esac
+          SOURCE="${SPELL}-${VERSION}.${ARCH}.tar.gz"
    SOURCE_URL[0]=http://64.34.161.181/download/3.3.0/Linux/${SOURCE}
      SOURCE_HASH=sha512:67cdb04f84060f4d6af7779091ad353152680f978bf013819a91e5c2926d7d827f7e5142ab69da50062d3c2df174d8099cec2e56574696c207f298892afe6124
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/NX"
