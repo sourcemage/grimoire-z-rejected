@@ -13,19 +13,21 @@ fi
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
    SOURCE_URL[1]=http://download.nvidia.com/XFree86/Linux-x86_64/${VERSION}/${SOURCE}
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION"
+  SECURITY_PATCH=1
         ;;
         ia32)
 if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=295.33
-     SOURCE_HASH=sha512:21680f710b554635dbb7368c26d08742f314c82b0dc94e12dd7ee3567076a326f9df5cdef13cd4199c05c7b727b3f50948bdc565722eef369b896474528edba7
+         VERSION=295.40
+     SOURCE_HASH=sha512:76a221c5b9089385d48039919fe57275f9b6c17befb2a3f60b7e7ecb465a56b4bb69185f4e59d0818db3ffe8ddac5a31ef247c126bd0b2204822bf706d70268d
 else
-         VERSION=295.33
-     SOURCE_HASH=sha512:21680f710b554635dbb7368c26d08742f314c82b0dc94e12dd7ee3567076a326f9df5cdef13cd4199c05c7b727b3f50948bdc565722eef369b896474528edba7
+         VERSION=295.40
+     SOURCE_HASH=sha512:76a221c5b9089385d48039919fe57275f9b6c17befb2a3f60b7e7ecb465a56b4bb69185f4e59d0818db3ffe8ddac5a31ef247c126bd0b2204822bf706d70268d
 fi
           SOURCE=NVIDIA-Linux-x86-$VERSION.run
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
    SOURCE_URL[1]=ftp://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION"
+  SECURITY_PATCH=2
         ;;
 ############################################################
 # missing ia64 support we don't have an arch spec for it???
@@ -39,7 +41,6 @@ esac
 #      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.nvidia.com/object/unix.html
          ENTERED=20030401
-  SECURITY_PATCH=1
           REJECT="Non-Free Software license"
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
            SHORT="Driver provided by NVIDIA for NVIDIA GPUs"
