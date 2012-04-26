@@ -1,7 +1,10 @@
 2011-04-01 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 7.1a
+
+2011-04-01 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 7.0a, WXVERSION=2.8.12
-	* BUILD, DEPENDS: replaced opensc with pkcs11-helper, as the former no longer
-	  provides needed headers
+	* BUILD, DEPENDS: replaced opensc with pkcs11-helper, as the former no
+	  longer provides needed headers
 
 2010-08-09 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 7.0, WXVERSION=2.8.11
