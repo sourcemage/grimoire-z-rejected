@@ -1,3 +1,6 @@
+2012-05-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DEPENDS: added dependency on gtk+2
+
 2012-04-19 Sukneet Basuta <sukneet@sourcemage.org>
 	* DETAILS: updated x86_64 to 295.40
 
