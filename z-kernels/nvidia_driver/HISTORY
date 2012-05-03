@@ -1,3 +1,6 @@
+2012-05-04 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 295.49 (ia32)
+
 2012-05-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DEPENDS: added dependency on gtk+2
 
