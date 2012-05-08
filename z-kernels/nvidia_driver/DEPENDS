@@ -1,3 +1,4 @@
 depends  xorg-server  &&
-depends  libxvmc  &&
+depends  gtk+2        &&
+depends  libxvmc      &&
 depends  which

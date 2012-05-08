@@ -1,3 +1,6 @@
+2012-05-07 Julien "_kaze_" ROZO <julien@rozo.org>
+	* DETAILS: updated version to 11.2.202.235, SECURITY_PATCH=22
+
 2012-04-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: fixes SOURCE_HASH
 
