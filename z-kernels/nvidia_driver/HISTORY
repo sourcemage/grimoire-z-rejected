@@ -1,3 +1,11 @@
+2012-05-22 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: x86_64 => 295.53
+	  x86_64 beta => 302.11
+	  x86 beta => 302.11
+
+2012-05-21 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 295.53 (ia32)
+
 2012-05-09 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 302.07 (beta)
 
