@@ -3,11 +3,11 @@
 case "${SMGL_COMPAT_ARCHS[1]}" in
         x86_64)
 if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=302.11
-     SOURCE_HASH=sha512:fb1ab96e7b450e8a51c934d915564be2fefb48965946f9cde4b11348440f53fae43df1fd96d351d0106a570b6b8a38f7d72317c185ab8fcedfb0d55c64a81548
+         VERSION=302.17
+     SOURCE_HASH=sha512:2e945eab66328e0fd71bb5c428ada87fc210748e71605f1304d0b37abe92ee247834a22ce0a58e14bb799ee99e704dcf5daa17c036a6648445c30a90d30a25b3
 else
-         VERSION=295.53
-     SOURCE_HASH=sha512:5c8e900f0e9d2d49414ec1f93a453bc3760df772e67a837121054500d51ddaec6f79ecccbae728de8117eb39de84114bfb20c737d1ab19c74306ecc4f75eba94
+         VERSION=302.17
+     SOURCE_HASH=sha512:2e945eab66328e0fd71bb5c428ada87fc210748e71605f1304d0b37abe92ee247834a22ce0a58e14bb799ee99e704dcf5daa17c036a6648445c30a90d30a25b3
 fi
           SOURCE=NVIDIA-Linux-x86_64-$VERSION.run
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
@@ -17,11 +17,11 @@ SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION"
         ;;
         ia32)
 if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=302.11
-     SOURCE_HASH=sha512:1f3074925e4bb07a25b245ff25fc9e120a0917ecc12d19bd52ae96b6776b6243525f350ef2a6f6f27e6f9e5ddacb1ab0ad3ac1a8c1078b7bf960defb0f77189a
+         VERSION=302.17
+     SOURCE_HASH=sha512:e2ec7f9dcf566c9ed0085eaf45e40940830677f3d964077fb34681b6518a3a666fae6c7594e7eaea125c265db8ecf2087a3c309c0dc63ab9941d051ee73b252b
 else
-         VERSION=295.53
-     SOURCE_HASH=sha512:25c757f84affa56d0f279fbb139beff1043a2e92a509351c434b9dd1e0543de5d37060787748456c5fa62eb376525502774a47f6037a233ec82b89a771f1e82d
+         VERSION=302.17
+     SOURCE_HASH=sha512:e2ec7f9dcf566c9ed0085eaf45e40940830677f3d964077fb34681b6518a3a666fae6c7594e7eaea125c265db8ecf2087a3c309c0dc63ab9941d051ee73b252b
 fi
           SOURCE=NVIDIA-Linux-x86-$VERSION.run
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
@@ -51,3 +51,4 @@ These are the nvidia provided binary X drivers for their graphics cards.
 For help with the X server configuration, this spell installs nvidia-xconfig
 binary.
 EOF
+e2ec7f9dcf566c9ed0085eaf45e40940830677f3d964077fb34681b6518a3a666fae6c7594e7eaea125c265db8ecf2087a3c309c0dc63ab9941d051ee73b252b  /var/spool/sorcery/NVIDIA-Linux-x86-302.17.run

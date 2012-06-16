@@ -1,3 +1,9 @@
+2012-06-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: stable and beta version 302.17
+
+2012-06-14 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 295.59 (ia32)
+
 2012-05-22 Sukneet Basuta <sukneet@sourcemage.org>
 	* DETAILS: x86_64 => 295.53
 	  x86_64 beta => 302.11
