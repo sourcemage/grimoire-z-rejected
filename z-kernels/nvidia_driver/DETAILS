@@ -51,4 +51,3 @@ These are the nvidia provided binary X drivers for their graphics cards.
 For help with the X server configuration, this spell installs nvidia-xconfig
 binary.
 EOF
-e2ec7f9dcf566c9ed0085eaf45e40940830677f3d964077fb34681b6518a3a666fae6c7594e7eaea125c265db8ecf2087a3c309c0dc63ab9941d051ee73b252b  /var/spool/sorcery/NVIDIA-Linux-x86-302.17.run
