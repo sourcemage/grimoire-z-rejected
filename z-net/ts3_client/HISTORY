@@ -1,3 +1,6 @@
+2012-06-29 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 3.0.7
+
 2011-12-25 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 3.0.2; removed 2nd source data; added 2nd
 	  mirror; quoting paths
