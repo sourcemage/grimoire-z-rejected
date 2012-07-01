@@ -1,12 +1,12 @@
              SPELL=skype
-           VERSION=2.2.0.35
+           VERSION=4.0.0.7
 if [[ $SKYPE_STATIC == y ]]; then
             SOURCE=${SPELL}_static-$VERSION.tar.bz2
-       SOURCE_HASH=sha512:ada7cee9efdfef74eff9dbd54f16d75e8ef8dc4c1db39ff08a1fcefc2f95ddcfc77c27970050a5cc42163ace3ba9384c6af7265fcdbbb21204e11edff2a9161f
-  SOURCE_DIRECTORY="$BUILD_DIRECTORY/${SPELL}_static-$VERSION"
+       SOURCE_HASH=sha512:d4345676dc3165ab141048768d2bdb41297a471d6357a4e4c7bde20376b0188313529e997e00c568513cfd176c472b5a931b367e0e9dbbc68557f456fb461ca5
+  SOURCE_DIRECTORY="$BUILD_DIRECTORY/${SPELL}_staticQT-$VERSION"
 else
             SOURCE=$SPELL-$VERSION.tar.bz2
-       SOURCE_HASH=sha512:d4496ec15d93e22ca6fac884c097aa26f4533f1cda36e23518da4f98e17736684532c33689bb58ffcddb1d537cd2ae0de8f336db2588d034f451d46a59c0720b
+       SOURCE_HASH=sha512:bc2c5e3e7a22b73294eee705853b7f771f70d094b46a9577ad8d3bc1e46a07c1baed0af32b6cb71599c78038f3584081ba938d25d0a3b0f61f901e4c7b11a5c9
   SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
 fi
           WEB_SITE=http://www.skype.com/
@@ -15,7 +15,7 @@ fi
            ENTERED=20040624
            ARCHIVE=off
               DOCS="README LICENSE"
-	    REJECT="Non-Free license"
+            REJECT="Non-Free license"
              SHORT="Voice over IP (voip) client"
 cat << EOF
 Skype is a little piece of software that lets you make free calls to 
