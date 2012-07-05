@@ -1,7 +1,7 @@
 2012-07-05 Vlad Glagolev <stealth@sourcemage.org>
 	* z-kernels/ralink-rt61: new spell, firmware for Ralink RT2501
 	  (RT2561/RT2661) chipsets
-	* z-kernels/ralink-rt2860: new spell, firmware for RT28XX/RT30XX
+	* z-kernels/ralink-rt2860: new spell, firmware for Ralink RT28XX/RT30XX
 	  PCI/mPCI/PCIe/CardBus series chipsets
 
 2012-01-10 Eric Sandall <sandalle@sourcemage.org>
