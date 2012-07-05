@@ -1,0 +1,15 @@
+           SPELL=ralink-rt61
+         VERSION=1.2
+          SOURCE=RT61_Firmware_V${VERSION}.zip
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/RT61_Firmware_V${VERSION}"
+   SOURCE_URL[0]=http://www.ralinktech.com/en/04_support/dl.php
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+      LICENSE[0]=http://www.ralinktech.com/en/04_support/license.php?sn=5027
+        WEB_SITE=http://www.ralinktech.com/en/04_support/support.php?sn=501
+            DOCS="LICENSE.ralink-firmware.txt"
+         ENTERED=20120705
+          REJECT="Non-modification firmware license"
+           SHORT="firmware for Ralink RT2501(RT2561/RT2661) chipsets"
+cat << EOF
+Firmware for Ralink RT2501(RT2561/RT2661) chipsets.
+EOF
