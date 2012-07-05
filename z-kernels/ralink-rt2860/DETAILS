@@ -1,0 +1,27 @@
+           SPELL=ralink-rt2860
+         VERSION=26
+          SOURCE=RT2860_Firmware_V${VERSION}.zip
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/RT2860_Firmware_V${VERSION}"
+   SOURCE_URL[0]=http://www.ralinktech.com/en/04_support/dl.php
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+      LICENSE[0]=http://www.ralinktech.com/en/04_support/license.php?sn=5029
+        WEB_SITE=http://www.ralinktech.com/en/04_support/support.php?sn=501
+            DOCS="LICENSE.ralink-firmware.txt"
+         ENTERED=20120705
+          REJECT="Non-modification firmware license"
+           SHORT="firmware for RT28XX/RT30XX PCI/mPCI/PCIe/CardBus series chipsets"
+cat << EOF
+Firmware for Ralink RT28XX/RT30XX PCI/mPCI/PCIe/CardBus series chipsets:
+ * RT2760
+ * RT2790
+ * RT2860
+ * RT2890
+ * RT3060
+ * RT3062
+ * RT3562
+ * RT2860
+ * RT2760
+ * RT2890
+ * RT2790
+ * RT3090
+EOF
