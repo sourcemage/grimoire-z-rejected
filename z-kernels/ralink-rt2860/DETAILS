@@ -9,7 +9,7 @@ SOURCE_DIRECTORY="$BUILD_DIRECTORY/RT2860_Firmware_V${VERSION}"
             DOCS="LICENSE.ralink-firmware.txt"
          ENTERED=20120705
           REJECT="Non-modification firmware license"
-           SHORT="firmware for RT28XX/RT30XX PCI/mPCI/PCIe/CardBus series chipsets"
+           SHORT="firmware for Ralink RT28XX/RT30XX PCI/mPCI/PCIe/CardBus series chipsets"
 cat << EOF
 Firmware for Ralink RT28XX/RT30XX PCI/mPCI/PCIe/CardBus series chipsets:
  * RT2760
