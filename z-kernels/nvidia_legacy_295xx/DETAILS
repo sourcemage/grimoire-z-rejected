@@ -1,0 +1,53 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=nvidia_legacy_295xx
+case "${SMGL_COMPAT_ARCHS[1]}" in
+        x86_64)
+if [[ $NVIDIA_BETA == y ]]; then
+         VERSION=295.71
+     SOURCE_HASH=sha512:7eb21240ca44a648c081e38aab3ae6203ca70f2dd4ab187c67ef1f3cff9ab848f4040a640dfbd1f146135b37b98c6976943ff6caef8806a25784ff2263d23e8d
+else
+         VERSION=295.71
+     SOURCE_HASH=sha512:7eb21240ca44a648c081e38aab3ae6203ca70f2dd4ab187c67ef1f3cff9ab848f4040a640dfbd1f146135b37b98c6976943ff6caef8806a25784ff2263d23e8d
+fi
+          SOURCE=NVIDIA-Linux-x86_64-$VERSION.run
+      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
+   SOURCE_URL[1]=http://download.nvidia.com/XFree86/Linux-x86_64/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION"
+  SECURITY_PATCH=1
+        ;;
+        ia32)
+if [[ $NVIDIA_BETA == y ]]; then
+         VERSION=295.71
+     SOURCE_HASH=sha512:430b884d8e510dd2a722d4893f85a4f8e4227e3cfcbdd802ef1edfd776d4f6ca487854e1fc509537285fdc38c2d87474e3e7c9ed728871527a06227fd4306e3c
+else
+         VERSION=295.71
+     SOURCE_HASH=sha512:430b884d8e510dd2a722d4893f85a4f8e4227e3cfcbdd802ef1edfd776d4f6ca487854e1fc509537285fdc38c2d87474e3e7c9ed728871527a06227fd4306e3c
+fi
+          SOURCE=NVIDIA-Linux-x86-$VERSION.run
+      SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
+   SOURCE_URL[1]=ftp://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION"
+  SECURITY_PATCH=3
+        ;;
+############################################################
+# missing ia64 support we don't have an arch spec for it???
+############################################################
+        *)
+         VERSION=${SMGL_COMPAT_ARCHS[0]}
+          SOURCE=
+      SOURCE_URL=
+        ;;
+esac
+#      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
+        WEB_SITE=http://www.nvidia.com/object/unix.html
+         ENTERED=20030401
+          REJECT="Non-Free Software license"
+      LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
+           SHORT="Driver provided by NVIDIA for NVIDIA GPUs"
+cat << EOF
+NVIDIA
+These are the nvidia provided binary X drivers for their graphics cards.
+
+For help with the X server configuration, this spell installs nvidia-xconfig
+binary.
+EOF

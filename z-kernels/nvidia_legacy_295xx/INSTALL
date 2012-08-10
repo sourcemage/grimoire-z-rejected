@@ -1,0 +1,205 @@
+local X_MOD KVER                                                    &&
+KVER=$(get_kernel_version)                                                &&
+
+#
+# Install kernel module 'nvidia.ko'
+#
+pushd  $SOURCE_DIRECTORY/kernel                  &&
+make  KERNEL_MODLIB=$INSTALL_ROOT/lib/modules/$KVER  \
+      KERNEL_UNAME=$KVER                             \
+      SYSSRC=$INSTALL_ROOT/lib/modules/$KVER/source  \
+      -f Makefile.kbuild  module-install             &&
+popd                                                 &&
+
+#
+# Install binaries and script
+#
+for file in nvidia-bug-report.sh nvidia-settings nvidia-xconfig;  do
+  install -v -m 0755  -o root  -g root  $file  $INSTALL_ROOT/usr/bin
+done                              &&
+install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &&
+
+#
+# Install OpenGL headers
+#
+mkdir  -vp  $INSTALL_ROOT/usr/include/GL/.nvidia
+for file in glext.h gl.h glxext.h glx.h; do
+  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/GL/.nvidia/
+done                                     &&
+
+#
+# Install OpenGL libraries
+#
+
+# Fill in the path to libGL.so
+sed -i 's|__LIBGL_PATH__|/usr/lib|' libGL.la 
+for lib in libGL.la  libnvidia-glcore.so.${VERSION/-/.} \
+           libnvidia-tls.so.${VERSION/-/.} libnvidia-cfg.so.${VERSION/-/.} \
+           libnvidia-compiler.so.${VERSION/-/.} libnvidia-wfb.so.${VERSION/-/.}; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
+done                              &&
+mkdir -vp $INSTALL_ROOT/usr/lib/.nvidia \
+          $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/  &&
+cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
+install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
+         $INSTALL_ROOT/usr/lib/tls                                 &&
+  #
+  # Create library symlinks
+  #
+  pushd  $INSTALL_ROOT/usr/lib/.nvidia                           &&
+  ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
+  ln  -sfn  libGL.so.1                       libGL.so            &&
+  popd
+  pushd  $INSTALL_ROOT/usr/lib                                   &&
+  ln  -sfn  libnvidia-glcore.so.${VERSION/-/.}   libGLcore.so.1  &&
+  ln  -sfn  libnvidia-cfg.so.${VERSION/-/.}  libnvidia-cfg.so.1  &&
+  ln  -sfn  libnvidia-cfg.so.1               libnvidia-cfg.so    &&
+  ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
+  popd                                                           &&
+  pushd  $INSTALL_ROOT/usr/lib/tls                               &&
+  ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
+  popd                                                           &&
+
+#
+# Install X11 OpenGL libraries
+#
+for lib in libXvMCNVIDIA.a libXvMCNVIDIA.so.${VERSION/-/.}; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
+done                                    &&
+  #
+  # Setup symlinks
+  #
+  pushd  $INSTALL_ROOT/usr/lib                                     &&
+  ln  -sfn  libXvMCNVIDIA.so.${VERSION/-/.}  libXvMCNVIDIA_dynamic.so.1  &&
+  popd                                                                   &&
+
+#
+# Install X11 modules
+#
+mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/drivers                         &&
+for driver in nvidia_drv.so; do
+  install -v -m 0644  -o root  -g root            \
+     $driver  $INSTALL_ROOT/usr/lib/xorg/modules/drivers/
+done                                            &&
+install -v -m 0644  -o root  -g root libglx.so.${VERSION/-/.} \
+        $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia            &&
+#
+# Setup symlinks
+#
+pushd  $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia &&
+ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
+popd                                                &&
+
+#
+# Install Cuda headers
+#
+#mkdir  -vp  $INSTALL_ROOT/usr/include/cuda
+#for file in cudaGL.h cuda.h; do
+#  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/cuda/
+#done                                     &&
+
+#
+# Install Cuda libraries
+#
+for lib in libcuda.so.${VERSION/-/.}; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
+done                                    &&
+  #
+  # Setup symlinks
+  #
+  pushd  $INSTALL_ROOT/usr/lib                                   &&
+  ln  -sfn  libcuda.so.${VERSION/-/.}  libcuda.so.1              &&
+  ln  -sfn  libcuda.so.1  libcuda.so                             &&
+  popd                                                           &&
+
+#
+# Install VDPAU headers
+#
+#mkdir  -vp  $INSTALL_ROOT/usr/include/vdpau
+#for file in vdpau.h vdpau_x11.h; do
+#  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/vdpau/
+#done                                     &&
+
+#
+# Install VDPAU libraries
+#
+for lib in libvdpau.so.${VERSION/-/.}; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/
+done                                    &&
+mkdir  -vp  $INSTALL_ROOT/usr/lib/vdpau
+for lib in libvdpau_nvidia.so.${VERSION/-/.} libvdpau_trace.so.${VERSION/-/.}; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/vdpau/
+done                                    &&
+  #
+  # Setup symlinks
+  #
+  pushd  $INSTALL_ROOT/usr/lib                                                 &&
+  ln  -sfn  libvdpau.so.${VERSION/-/.}  libvdpau.so.1                          &&
+  ln  -sfn  libvdpau.so.1  libvdpau.so                                         &&
+  popd                                                                         &&
+  pushd  $INSTALL_ROOT/usr/lib/vdpau                                           &&
+  ln  -sfn  libvdpau_nvidia.so.${VERSION/-/.}  libvdpau_nvidia.so.1            &&
+  ln  -sfn  libvdpau_nvidia.so.1  libvdpau_nvidia.so                           &&
+  ln  -sfn  libvdpau_trace.so.${VERSION/-/.}  libvdpau_trace.so.1              &&
+  ln  -sfn  libvdpau_trace.so.1  libvdpau_trace.so                             &&
+  popd                                                           &&
+
+#
+# Install OpenCL headers
+#
+#mkdir  -vp  $INSTALL_ROOT/usr/include/CL
+#for file in cl_gl.h cl.h cl_platform.h; do
+#  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/CL/
+#done                                     &&
+
+#
+# Install OpenCL libraries
+#
+for lib in libOpenCL.so.1.0.0; do
+  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/
+done                                    &&
+  #
+  # Setup symlinks
+  #
+  pushd  $INSTALL_ROOT/usr/lib                                   &&
+  ln  -sfn  libOpenCL.so.1.0.0 libOpenCL.so.1                    &&
+  ln  -sfn  libOpenCL.so.1 libOpenCL.so                          &&
+  popd &&
+
+#
+# Install Freedesktop.org spec
+#
+install  -m 0644  -o root  -g root                                         \
+         $SOURCE_DIRECTORY/nvidia-settings.desktop  \
+         $INSTALL_ROOT/usr/share/applications                              &&
+
+#
+# Install documentation
+#
+pushd $SOURCE_DIRECTORY/html &&
+if  [  !  -d  $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0  ];  then
+  mkdir  -p  $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0
+fi                                                             &&
+cp  -a  *  $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0          &&
+popd &&
+
+# Install pixmap
+mkdir -p $INSTALL_ROOT/usr/share/pixmaps/                      &&
+cp  nvidia-settings.png  $INSTALL_ROOT/usr/share/pixmaps/       &&
+
+if  [  !  -d  $INSTALL_ROOT/usr/share/doc/$SPELL  ];  then
+  mkdir  -p  $INSTALL_ROOT/usr/share/doc/$SPELL
+fi                                                             &&
+install  -m 0644  -o root  -g root  $SOURCE_DIRECTORY/LICENSE  \
+         $INSTALL_ROOT/usr/share/doc/$SPELL                    &&
+install  -m 0644  -o root  -g root  $SOURCE_DIRECTORY/LICENSE  \
+         $INSTALL_ROOT/usr/share/doc/NVIDIA_GLX-1.0            &&
+
+#
+# Install man pages
+#
+for manual in nvidia-installer.1.gz  nvidia-settings.1.gz  nvidia-smi.1.gz  nvidia-xconfig.1.gz
+do
+  install  -m 0644  -o root  -g root  $manual  $INSTALL_ROOT/usr/share/man/man1
+done
