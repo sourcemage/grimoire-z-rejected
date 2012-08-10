@@ -1,3 +1,6 @@
+2012-08-10 Vlad Glagolev <stealth@sourcemage.org>
+	* CONFLICTS: conflicts nvidia_legacy_295xx
+
 2012-08-06 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 304.32 (ia32), SECURITY_PATCH=3
 
