@@ -1,4 +1,4 @@
 conflicts nvidia_driver &&
 conflicts nvidia_legacy &&
 conflicts nvidia_legacy_96xx &&
-conflicts nvidia_legacy_295xx
+conflicts nvidia_legacy_173xx
