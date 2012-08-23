@@ -1,3 +1,7 @@
+2012-08-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* PRE_BUILD: prevent libflashplayer.so from using vdpau, which is
+	  broken
+
 2012-08-22 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 11.2.202.238 (i386), SECURITY_PATCH=24, APSB12-19
 
