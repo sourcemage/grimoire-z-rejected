@@ -1,0 +1,17 @@
+depends gettext &&
+depends libtool &&
+depends libice &&
+depends libsm &&
+depends libx11 &&
+depends libxext &&
+depends lua51 &&
+
+optional_depends libxinerama \
+                 "" \
+                 "" \
+                 "Enable Xinerama support?" &&
+
+optional_depends libxrandr \
+                 "" \
+                 "" \
+                 "Enable X Resize and Rotate?"

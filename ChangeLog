@@ -1,3 +1,6 @@
+2012-09-17 Remko van der Vossen <wich@sourcemage.org>
+	* z-windowmanagers/notion: new spell, fork of the dead ion3
+
 2012-08-10 Vlad Glagolev <stealth@sourcemage.org>
 	* z-kernels/nvidia_legacy_295xx: new spell, certified NVIDIA binary
 	  drivers for older cards like from GeForce 200 series, based on spell

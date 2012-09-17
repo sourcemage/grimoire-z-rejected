@@ -1,0 +1,15 @@
+           SPELL=notion
+         VERSION=3-2012042300
+          SOURCE=$SPELL-$VERSION-src.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
+        WEB_SITE=http://notion.sourceforge.net/
+   SOURCE_URL[0]=$SOURCEFORGE_URL/$SPELL/$SOURCE
+     SOURCE_HASH=sha512:44108356ba14fc5c145ffe22871ea3ec11de9ba450ce04f9fc58ccb29fc3d42105e528f2c2e72bf207e466b7106515bfbe379b0a30edcd19e92ef41b143dbb86
+      LICENSE[0]=LGPL
+          REJECT="ion3 has licensing issues."
+         ENTERED=20120917
+        KEYWORDS="windowmanagers"
+           SHORT="A tiling tabbed window manager."
+cat << EOF
+Ion is a tiling tabbed window manager designed with keyboard users in mind.
+EOF
