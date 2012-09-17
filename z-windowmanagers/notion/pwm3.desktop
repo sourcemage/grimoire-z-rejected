@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Pwm3
-Comment=This session logs you into Pwm3
-Exec=startpwm3
-TryExec=startpwm3
-Icon=
-Type=Application

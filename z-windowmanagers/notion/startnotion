@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#  startion
+#  startnotion
 #
 #  Copyright (C) 2004 Eric Sandall <sandalle@sourcemage.org>
 #
@@ -19,4 +19,4 @@
 #  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
 
-exec  ion3
+exec  notion

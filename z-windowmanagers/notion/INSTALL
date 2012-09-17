@@ -1,8 +1,8 @@
-default_install  &&
-install_wmfiles  &&
-[ ! -e $INSTALL_ROOT/usr/bin/startpwm3 ] && 
-install -m 0755 $SCRIPT_DIRECTORY/startpwm3    \
+default_install &&
+install_wmfiles &&
+[ ! -e $INSTALL_ROOT/usr/bin/startpwm3plus ] && 
+install -m 0755 $SCRIPT_DIRECTORY/startpwm3plus \
   $INSTALL_ROOT/usr/bin/
-[ ! -e $INSTALL_ROOT/usr/share/xsessions/pwm3.desktop ] && 
-install -m 0755 $SCRIPT_DIRECTORY/pwm3.desktop \
+[ ! -e $INSTALL_ROOT/usr/share/xsessions/pwm3plus.desktop ] && 
+install -m 0755 $SCRIPT_DIRECTORY/pwm3plus.desktop \
   $INSTALL_ROOT/usr/share/xsessions/
