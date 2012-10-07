@@ -1,0 +1,20 @@
+default_pre_build &&
+cd $SOURCE_DIRECTORY &&
+sedit 's,^PREFIX=/usr/local,PREFIX=/usr,' system.mk &&
+sedit 's,^LUA_DIR=/usr/local,LUA_DIR=/usr,' system.mk &&
+sedit 's,^X11_PREFIX=/usr/X11R6,PREFIX=/usr,' system.mk &&
+sedit 's,^ETCDIR=$(PREFIX)/etc/,ETCDIR=/etc/,' system.mk &&
+sedit 's,^PREFIX=/usr/local,PREFIX=/usr,' build/system-inc.mk &&
+sedit 's,/usr/local,/usr,' libextl/libextl-mkexports.in &&
+
+if [[ "$NOTION_SYSTEM_ASPRINTF" == "y" ]]; then
+  sedit 's,^#\?HAS_SYSTEM_ASPRINTF=[01],HAS_SYSTEM_ASPRINTF=1,' system.mk
+fi
+
+if ! is_depends_enabled $SPELL libxinerama; then
+  sedit 's,mod_xinerama,,' modulelist.mk
+fi
+
+if ! is_depends_enabled $SPELL libxrandr; then
+  sedit 's,mod_xrandr,,' modulelist.mk
+fi

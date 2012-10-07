@@ -1,0 +1,7 @@
+# Standard rejected warnings.
+source $GRIMOIRE/REJECTED_MSG &&
+
+config_query_option NOTION_SYSTEM_ASPRINTF \
+                    "Use system asprintf?" y \
+                    "y" \
+                    "n"
