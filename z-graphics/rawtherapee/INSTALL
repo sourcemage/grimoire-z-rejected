@@ -1,5 +1,0 @@
-cd $SOURCE_DIRECTORY &&
-mkdir -p $INSTALL_ROOT/opt/rawtherapee  &&
-cp -Rv * $INSTALL_ROOT/opt/rawtherapee  &&
-
-cp -v $SCRIPT_DIRECTORY/rawtherapee $INSTALL_ROOT/usr/bin
