@@ -13,14 +13,14 @@ else
    SOURCE_URL[0]=http://download.macromedia.com/pub/labs/flashplayer10/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/install_flash_player_10_linux
 else
-         VERSION=11.2.202.238
-  SECURITY_PATCH=24
-          SOURCE=install_flash_player_11_linux.i386.tar.gz
+         VERSION=11.2.202.243
+  SECURITY_PATCH=25
+          SOURCE=install_flash_player_11_linux_i386.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
   FORCE_DOWNLOAD="on"
  fi
-     SOURCE_HASH=sha512:19f60803713b3081e52820bb91705aeb7174d1de0142f997c604deb1b3eb5546c5f48c9d41b75cb1b70a9b98800e130c90ee3feb378f29ca543e47016118066d
+     SOURCE_HASH=sha512:a7699b70320fcf9606f463811c4ba1ae3ac14545b38894f37f94aea0de56299faa02cbccb51a31ca1c9d03b657106904457d3250c4ca5cca24c018463507ddcc
 fi
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
      GATHER_DOCS=off

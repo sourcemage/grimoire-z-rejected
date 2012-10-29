@@ -1,3 +1,7 @@
+2012-10-29 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 11.2.202.243 (i386), SECURITY_PATCH=25, APSB12-22
+	  SOURCE updated
+
 2012-08-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* PRE_BUILD: prevent libflashplayer.so from using vdpau, which is
 	  broken
