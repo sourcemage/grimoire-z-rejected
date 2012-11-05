@@ -1,3 +1,7 @@
+2012-11-05 Vlad Glagolev <stealth@sourcemage.org>
+	* z-net/iwlwifi-2030-ucode: new spell, firmware for the Intel Centrino
+	  Wireless-N 2230 Wi-Fi Adapters
+
 2012-10-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* z-graphics/rawtherapee: removed, this is a very old version of
 	  rawtherapee under a proprietary license, recent versions are GPL
