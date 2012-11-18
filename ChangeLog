@@ -1,3 +1,6 @@
+2012-11-18 Vlad Glagolev <stealth@sourcemage.org>
+	* FUNCTIONS: backported is_version_less() from test grimoire
+
 2012-11-05 Vlad Glagolev <stealth@sourcemage.org>
 	* z-net/iwlwifi-2030-ucode: new spell, firmware for the Intel Centrino
 	  Wireless-N 2230 Wi-Fi Adapters
