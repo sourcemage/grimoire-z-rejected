@@ -1,21 +1,21 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jre6-bin
-         VERSION=6u35
-  SECURITY_PATCH=4
-             VER=1.6.0_35
+         VERSION=6u37
+  SECURITY_PATCH=5
+             VER=1.6.0_37
 case "${SMGL_COMPAT_ARCHS[0]}" in
         ia32|32)
           SOURCE=jre-$VERSION-linux-i586.bin
-     SOURCE_HASH=sha512:981c9177b910f3530acf9b0998e33c79c9d5e0bb6da73694d87d48be50a30ba349e088e7b32ba8bf3b3c6b48789d12948eb82477123944dfef61d2972ddf88a5
+     SOURCE_HASH=sha512:5f80c83c4b359d044c09b8854536a04c59f0e8d0699c29920114866b348c666f6227719bdf2236961cd0ee2bbaf82d3d75f97d413e6a26a02a4b075ac0d0907c
         ;;
       x86-64|64)
           if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]
           then
           SOURCE=jre-$VERSION-linux-x64.bin
-     SOURCE_HASH=sha512:789ed7eb4e3e4e9ee8170521da643d5713bd486b622f3cc3e10f9fa74360c31e98fe45ae7e599dd181067f2d0f81e6149f9628f6ed346c3356462d30077b41ea
+     SOURCE_HASH=sha512:063152d8149881c7fd602c1feac284f4ba162031765a0047faf054f2b4d8c5d2518198a0bca2f7286b34cc03a82d6434abd316529457aafdaa41094bce2a073e
           else
           SOURCE=jre-$VERSION-linux-i586.bin
-     SOURCE_HASH=sha512:981c9177b910f3530acf9b0998e33c79c9d5e0bb6da73694d87d48be50a30ba349e088e7b32ba8bf3b3c6b48789d12948eb82477123944dfef61d2972ddf88a5
+     SOURCE_HASH=sha512:5f80c83c4b359d044c09b8854536a04c59f0e8d0699c29920114866b348c666f6227719bdf2236961cd0ee2bbaf82d3d75f97d413e6a26a02a4b075ac0d0907c
           fi
         ;;
 ###########################################################################
@@ -36,7 +36,7 @@ SOURCE_DIRECTORY="$BUILD_DIRECTORY/jre$VER"
 cat << EOF
 The JRE contains the Java Plug-In for Netscape 4.x and Mozilla/Netscape 6.x.
 
-Note: You need to download the JRE installer yourself from the Sun Website,
+Note: You need to download the JRE installer yourself from the Oracle Website,
 see 'gaze website ${SPELL}' for the location. Put the downloaded file in
 /var/spool/sorcery so cast will find it.
 EOF
