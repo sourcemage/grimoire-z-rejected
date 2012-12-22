@@ -4,23 +4,6 @@ sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
                --target $SOURCE_DIRECTORY                     &&
 cd $SOURCE_DIRECTORY                                          &&
 
-if [[ $VIA4X == "y" ]]; then
-  sedit  "s/NV_DEFINE_REG_ENTRY(__NV_ENABLE_VIA_4X, 0)/NV_DEFINE_REG_ENTRY(__NV_ENABLE_VIA_4X, 1)/" \
-      kernel/nv-reg.h
-fi  &&
-if [[ $ALiAGP == "y" ]]; then
-  sedit "s/NV_DEFINE_REG_ENTRY(__NV_ENABLE_ALI_AGP, 0)/NV_DEFINE_REG_ENTRY(__NV_ENABLE_ALI_AGP, 1)/" \
-      kernel/nv-reg.h
-fi  &&
-if [[ $AGPSBA == "y" ]]; then
-  sedit "s/NV_DEFINE_REG_ENTRY(__NV_ENABLE_AGPSBA, 0)/NV_DEFINE_REG_ENTRY(__NV_ENABLE_AGPSBA, 1)/" \
-      kernel/nv-reg.h
-fi  &&
-if [[ $AGPFW == "y" ]]; then
-  sedit "s/NV_DEFINE_REG_ENTRY(__NV_ENABLE_AGPFW, 0)/NV_DEFINE_REG_ENTRY(__NV_ENABLE_AGPFW, 1)/" \
-      kernel/nv-reg.h
-fi  &&
-
 # Fix defunct desktop file
 sedit  's/__.*__\///'  nvidia-settings.desktop  &&
 
