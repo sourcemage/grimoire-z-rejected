@@ -62,19 +62,6 @@ install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
   popd                                                           &&
 
 #
-# Install X11 OpenGL libraries
-#
-for lib in libXvMCNVIDIA.a libXvMCNVIDIA.so.${VERSION/-/.}; do
-  install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
-done                                    &&
-  #
-  # Setup symlinks
-  #
-  pushd  $INSTALL_ROOT/usr/lib                                     &&
-  ln  -sfn  libXvMCNVIDIA.so.${VERSION/-/.}  libXvMCNVIDIA_dynamic.so.1  &&
-  popd                                                                   &&
-
-#
 # Install X11 modules
 #
 mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/drivers                         &&
