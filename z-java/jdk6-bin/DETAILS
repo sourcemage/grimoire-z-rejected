@@ -1,7 +1,7 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jdk6-bin
          VERSION=6u38
-  SECURITY_PATCH=7
+  SECURITY_PATCH=8
              VER=1.6.0_38
 case "${SMGL_COMPAT_ARCHS[0]}" in
   ia32|32)
