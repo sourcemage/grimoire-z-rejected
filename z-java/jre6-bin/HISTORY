@@ -1,3 +1,6 @@
+2013-01-14 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 6u38; SECURITY_PATCH++
+
 2012-11-18 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 6u37; SECURITY_PATCH++
 	* JAVA_WARNING: "Sun" -> "Oracle"
