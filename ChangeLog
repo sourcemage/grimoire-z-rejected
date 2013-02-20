@@ -1,3 +1,6 @@
+2013-02-19 Eric Sandall <sandalle@sourcemage.org>
+	* z-games/steam: STEAM Linux client
+
 2012-11-18 Vlad Glagolev <stealth@sourcemage.org>
 	* FUNCTIONS: backported is_version_less() from test grimoire
 

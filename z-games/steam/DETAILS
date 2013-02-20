@@ -1,0 +1,16 @@
+           SPELL=steam
+         VERSION=beta
+          SOURCE=$SPELL.deb
+   SOURCE_IGNORE=unversioned
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
+   SOURCE_URL[0]=http://media.steampowered.com/client/installer/steam.deb
+      LICENSE[0]=Commercial
+        WEB_SITE=http://store.steampowered.com/browse/linux/
+         ENTERED=20130102
+          REJECT="commercial license and binary-only"
+           SHORT="STEAM Linux client"
+            DOCS="${SOURCE_DIRECTORY}/usr/share/doc/steam/copyright \
+                  ${SOURCE_DIRECTORY}/usr/share/doc/steam/changelog.gz"
+cat << EOF
+STEAM Linux client
+EOF
