@@ -1,11 +1,11 @@
            SPELL=flash
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=11.2.202.243
+         VERSION=11.2.202.270
           SOURCE=install_flash_player_11_linux_x86_64.tar.gz
      SOURCE_HASH=sha512:9be6a258b3cff4815d5c363f0c111f63c443f4bf1cf02a09f83ff62de5d3b1273a731f36391d39ca4fb0de861b55942e6d5cc77fa2c285efea882139d9c5ca89
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-  SECURITY_PATCH=23
+  SECURITY_PATCH=24
 else
  if [[ $FLASH_BETA == y ]]; then
          VERSION=040510
