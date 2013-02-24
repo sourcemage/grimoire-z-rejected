@@ -14,7 +14,10 @@ popd                                                 &&
 #
 # Install binaries and script
 #
-for file in nvidia-bug-report.sh nvidia-settings nvidia-xconfig;  do
+if is_depends_enabled $SPELL gtk+2; then
+  install -v -m 0755 -o root -g root nvidia-settings $INSTALL_ROOT/usr/bin
+fi &&
+for file in nvidia-bug-report.sh nvidia-xconfig;  do
   install -v -m 0755  -o root  -g root  $file  $INSTALL_ROOT/usr/bin
 done                              &&
 install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &&

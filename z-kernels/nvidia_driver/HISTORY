@@ -1,3 +1,7 @@
+2013-02-24 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DEPENDS, INSTALL: made the dependency on gtk+2 a
+	  suggested dependency
+
 2013-02-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: 310.32 and 313.18 (x86_64)
 
