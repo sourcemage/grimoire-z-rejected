@@ -1,5 +1,5 @@
            SPELL=ts3_client
-         VERSION=3.0.7
+         VERSION=3.0.9.2
 if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
             ARCH=amd64
 else
