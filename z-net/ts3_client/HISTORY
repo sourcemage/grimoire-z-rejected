@@ -1,3 +1,7 @@
+2013-02-24 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 3.0.9.2
+	* PRE_INSTALL: added, to avoid duplication from previous install
+
 2012-06-29 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 3.0.7
 

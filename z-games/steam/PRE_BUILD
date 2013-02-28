@@ -1,0 +1,18 @@
+if [[ "x$(get_kernel_config CONFIG_TMPFS)" != 'xy' ]]
+then
+  message "${PROBLEM_COLOR}You don't have CONFIG_TMPFS"  \
+          "enabled in your kernel configuration, cannot build"  \
+          "${SPELL_COLOR}${SPELL}${DEFAULT_COLOR}."  &&
+  return 1
+fi &&
+
+mk_source_dir "${SOURCE_DIRECTORY}" &&
+cd "${SOURCE_DIRECTORY}" &&
+verify_file '' &&
+
+ar x "${SOURCE_CACHE}"/"${SOURCE}" &&
+tar zxvf data.tar.gz &&
+
+# Fix steam.desktop for /usr/games/
+sed -i "s:/usr/bin/\(steam\):${TARGET_ROOT}/usr/games/\1:" \
+  "${SOURCE_DIRECTORY}"/usr/share/applications/steam.desktop
