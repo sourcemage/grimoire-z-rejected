@@ -1,3 +1,7 @@
+2013-03-03 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: cleaned up a bit, force_download for both archs
+	* PRE_BUILD: allow flash to use vdpau (fixed in libvdpau >= 0.5)
+
 2013-02-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 11.2.202.273 (x86_64, i386)
 	* DETAILS, PREPARE: remove option for beta version
