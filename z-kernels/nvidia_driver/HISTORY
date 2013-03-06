@@ -1,3 +1,6 @@
+2013-03-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: devel version 313.26
+
 2013-02-24 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DEPENDS, INSTALL: made the dependency on gtk+2 a
 	  suggested dependency
