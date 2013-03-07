@@ -1,0 +1,20 @@
+unpack_file ''  &&
+
+sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
+               --target $SOURCE_DIRECTORY                     &&
+cd $SOURCE_DIRECTORY                                          &&
+
+# Fix defunct desktop file
+sedit  's/__.*__\///'  nvidia-settings.desktop  &&
+
+#
+# Modify module-install target to use `depmod -ae` on $KVER rather
+# than the running kernel
+#
+sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  kernel/Makefile.kbuild  &&
+
+#
+# Setup Makefile symlink
+#
+cd  $SOURCE_DIRECTORY/kernel     &&
+ln  -sfn  Makefile.kbuild  Makefile
