@@ -1,3 +1,6 @@
+2013-03-07 Vlad Glagolev <stealth@sourcemage.org>
+	* CONFLICTS: conflicts nvidia_legacy_304xx
+
 2013-03-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: devel version 313.26
 
