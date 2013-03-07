@@ -1,3 +1,6 @@
+2013-03-07 Vlad Glagolev <stealth@sourcemage.org>
+	* CONFLICTS: added nvidia_legacy_295xx and nvidia_legacy_304xx
+
 2010-11-12 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
 	* INSTALL: fix for gl_select
 
