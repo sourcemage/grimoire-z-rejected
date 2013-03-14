@@ -1,3 +1,6 @@
+2013-03-07 Vlad Glagolev <stealth@sourcemage.org>
+	* CONFLICTS: added nvidia_legacy_304xx
+
 2012-08-10 Vlad Glagolev <stealth@sourcemage.org>
 	* BUILD, CONFIGURE, CONFLICTS, DEPENDS, DETAILS, FINAL, INSTALL,
 	  LICENSE, POST_RESURRECT, PRE_BUILD, PREPARE, PRE_REMOVE, PROVIDES,

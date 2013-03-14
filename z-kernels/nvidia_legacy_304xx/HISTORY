@@ -1,0 +1,7 @@
+2013-03-06 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 304.84
+
+2013-02-28 Vlad Glagolev <stealth@sourcemage.org>
+	* BUILD, CONFLICTS, DEPENDS, DETAILS, FINAL, INSTALL, LICENSE,
+	  POST_RESURRECT, PRE_BUILD, PREPARE, PRE_REMOVE, PROVIDES, TRIGGERS,
+	  UNATTEND_SAFE: spell created

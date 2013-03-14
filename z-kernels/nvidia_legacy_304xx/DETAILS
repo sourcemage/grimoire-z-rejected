@@ -1,33 +1,21 @@
 . $GRIMOIRE/FUNCTIONS
-           SPELL=nvidia_driver
+           SPELL=nvidia_legacy_304xx
 case "${SMGL_COMPAT_ARCHS[1]}" in
         x86_64)
-if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=313.26
-     SOURCE_HASH=sha512:8e4805f3cf66dd87854888af8b73656da15f52bf5d92de8f919ea4a233c0b7bf16bff100f671e9a8738d826c68ba002c05861e5660f638aa378e0058add363b7
-else
-         VERSION=310.32
-     SOURCE_HASH=sha512:c0f3c6327a6fe01e84a84f92578c01367abc1b7c8435d4485bb117874ac9156800b82e7f59fd5a3caf74d3a44b067b890ce12a0dc35efde81cc6ee6388b8b4ce
-fi
+         VERSION=304.84
+     SOURCE_HASH=sha512:741771b29061d196b9d686fc3d2bdeb7f0367b6bc146fb4d0769e26c36e82e2d47d2809f82feba3639557c0ab3cd75f854bd51201a13d102654d5a0b04a84e4d
           SOURCE=NVIDIA-Linux-x86_64-$VERSION.run
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
    SOURCE_URL[1]=http://download.nvidia.com/XFree86/Linux-x86_64/${VERSION}/${SOURCE}
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION"
-  SECURITY_PATCH=1
         ;;
         ia32)
-if [[ $NVIDIA_BETA == y ]]; then
-         VERSION=313.26
-     SOURCE_HASH=sha512:be87b8d73ee4a440fa02cc8128898a2fd06a13c15797d50435f3db86e3764c929bada38aa122b498b59387b2c10db0256389e726e43d76f4941ef36c0da62974
-else
-         VERSION=310.32
-     SOURCE_HASH=sha512:523745e428874445fe2df65bd111c68707b378305d7bbeea6a94b01b13a1f6233b4e27d74555f1c43457e8d49692e786eab3157c2bd3e158228316534746a2d8
-fi
+         VERSION=304.84
+     SOURCE_HASH=sha512:9ce6ab3126611f498dabd2c042cddba91f3edb14eeee2a30f153c4243f59f1613deeb366dd462c3f2de927793cce9129b8da5c58c7828620d0e1f25bc8bf00e9
           SOURCE=NVIDIA-Linux-x86-$VERSION.run
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
    SOURCE_URL[1]=ftp://download.nvidia.com/XFree86/Linux-x86/$VERSION/$SOURCE
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION"
-  SECURITY_PATCH=3
         ;;
 ############################################################
 # missing ia64 support we don't have an arch spec for it???
@@ -38,9 +26,8 @@ SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86-$VERSION"
       SOURCE_URL=
         ;;
 esac
-#      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.nvidia.com/object/unix.html
-         ENTERED=20030401
+         ENTERED=20130307
           REJECT="Non-Free Software license"
       LICENSE[0]=http://www.nvidia.com/object/nv_swlicense.html
            SHORT="Driver provided by NVIDIA for NVIDIA GPUs"
