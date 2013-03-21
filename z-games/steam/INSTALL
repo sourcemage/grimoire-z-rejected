@@ -1,6 +1,9 @@
 install -m 0644 -g games "${SOURCE_DIRECTORY}"/usr/share/pixmaps/steam.png \
   "${INSTALL_ROOT}"/usr/share/pixmaps/ &&
 
+install -m 0644 -g games "${SOURCE_DIRECTORY}"/usr/share/pixmaps/steam_tray_mono.png \
+  "${INSTALL_ROOT}"/usr/share/pixmaps/ &&
+
 install -m 0644 -g games "${SOURCE_DIRECTORY}"/usr/share/applications/steam.desktop \
   "${INSTALL_ROOT}"/usr/share/applications/steam.desktop &&
 
@@ -8,17 +11,17 @@ install -m 0644 "${SOURCE_DIRECTORY}"/usr/share/man/man6/steam.6.gz \
   "${INSTALL_ROOT}"/usr/share/man/man6/steam.6.gz &&
 
 install -d -m 0750 -g games "${INSTALL_ROOT}"/usr/lib/steam &&
-for file in bootstraplinux_ubuntu12_32.tar.xz steam-install-notify
-do
-  install -m 0640 -g games "${SOURCE_DIRECTORY}"/usr/lib/steam/${file} \
-    "${INSTALL_ROOT}"/usr/lib/steam/${file}
-done &&
+install -m 0640 -g games "${SOURCE_DIRECTORY}"/usr/lib/steam/bootstraplinux_ubuntu12_32.tar.xz \
+    "${INSTALL_ROOT}"/usr/lib/steam/bootstraplinux_ubuntu12_32.tar.xz  &&
 
 for icon in 256x256 48x48 32x32 24x24 16x16
 do
   install -m 0644 -g games "${SOURCE_DIRECTORY}"/usr/share/icons/hicolor/${icon}/apps/steam.png \
     "${INSTALL_ROOT}"/usr/share/icons/hicolor/${icon}/apps/steam.png
 done &&
+
+install -m 0750 -g games "${SOURCE_DIRECTORY}"/usr/bin/steamdeps \
+  "${INSTALL_ROOT}"/usr/games/steamdeps
 
 install -m 0750 -g games "${SOURCE_DIRECTORY}"/usr/bin/steam \
   "${INSTALL_ROOT}"/usr/games/steam
