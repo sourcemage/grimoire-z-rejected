@@ -1,3 +1,9 @@
+2013-03-20 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Changed VERSION from "beta" to a release date.
+	  Will use VERSION to update unversioned binaries from the web.
+	  FORCE_DOWNLOAD as it's unversioned and does change.
+	* INSTALL: Updated for changed files
+
 2013-01-02 Eric Sandall <sandalle@sourcemage.org>
 	* Created
 	  Only tested on x86 (i686)
