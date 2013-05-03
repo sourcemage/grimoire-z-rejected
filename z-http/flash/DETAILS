@@ -1,15 +1,15 @@
            SPELL=flash
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=11.2.202.275
+         VERSION=11.2.202.280
           SOURCE=install_flash_player_11_linux.x86_64.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:afca7cde79bada81c9c3dbc24f0c4b03773a3549e349af7d01854190b729f45400ec78bc56d50f6b36c86a2336a7d6ccf39779b687b5e83245b3cfe00164b24a
+     SOURCE_HASH=sha512:1d3cf55951f231d9283daad1592cf0be592b50fba58f1734d0de5c77a694db24f5445326aba0a260fb71e0f8fdd9e1bbd997733a5ae33fa19c622f8fdd88bb2b
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 else
-         VERSION=11.2.202.275
+         VERSION=11.2.202.280
           SOURCE=install_flash_player_11_linux.i386.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:aa92f8b9ec9164e82ca30e23035109bc8b5231d771ce12b49266d26e3cc2152132dfbddfebd6a78a06be70f8cde972c6528a55ff4a1f27b6752d9637a20be901
+     SOURCE_HASH=sha512:dcbb586c004b6636796a0838e75e4c0d472c69c3c8b913d4ded527af2a4ef0f258c70fd0b0baf7542d5ba03ee45e0a46d67c5a856e9f157b5f6a1a0a1cf4ffc5
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 fi
   SECURITY_PATCH=30
