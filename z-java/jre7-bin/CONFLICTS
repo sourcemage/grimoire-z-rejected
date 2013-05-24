@@ -1,6 +1,6 @@
 conflicts  j2sdk       &&
+conflicts  j2sdk-bin   &&
 conflicts  jdk1.5-bin  &&
 conflicts  jre1.5-bin  &&
-conflicts  jre6-bin    &&
 conflicts  jdk6-bin    &&
-conflicts  jre7-bin
+conflicts  jre6-bin

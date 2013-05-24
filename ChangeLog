@@ -1,3 +1,6 @@
+2013-05-23 Eric Sandall <sandalle@sourcemage.org>
+	* z-java/jre7-bin: Added Oracle Java Runtime Environment (JRE) 7
+
 2013-03-07 Vlad Glagolev <stealth@sourcemage.org>
 	* z-kernels/nvidia_legacy_304xx: new spell, certified NVIDIA binary
 	  drivers for older cards, based on spell nvidia_driver

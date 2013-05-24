@@ -1,0 +1,39 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=jre7-bin
+         VERSION=7u21
+             VER="1.${VERSION:0:1}.0_${VERSION:2}"
+case "${SMGL_COMPAT_ARCHS[0]}" in
+        ia32|32)
+          SOURCE=jre-$VERSION-linux-i586.gz
+        ;;
+      x86-64|64)
+          if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
+            SOURCE=jre-$VERSION-linux-x64.gz
+          else
+            SOURCE=jre-$VERSION-linux-i586.gz
+          fi
+        ;;
+###########################################################################
+# Missing support for sparc and sparcv9 tarballs say solaris not linux :\
+###########################################################################
+        *)
+          SOURCE=
+         VERSION=Unsupported
+             VER=Unsupported
+        ;;
+esac
+      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+        WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/jre$VER"
+         ENTERED=20130523
+         ARCHIVE='off'
+          REJECT='is non-source'
+           SHORT='Java Software Runtime Environment'
+            DOCS='COPYRIGHT LICENSE README THIRDPARTYLICENSEREADME-JAVAFX.txt THIRDPARTYLICENSEREADME.txt'
+cat << EOF
+The JRE contains the Java Plug-In for Mozilla/Firefox and other Netscape 7.x+ plugin compatible browsers.
+
+Note: You need to download the JRE installer yourself from the Oracle Website,
+see 'gaze website ${SPELL}' for the location. Put the downloaded file in
+/var/spool/sorcery so cast will find it.
+EOF

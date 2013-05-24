@@ -1,0 +1,10 @@
+depends  ODBC-MGR  &&
+depends  alsa-lib  &&
+
+if [[ "$JRE6_BIN_X" == "y" ]]; then
+  depends libxi    &&
+  depends libxtst  &&
+  depends libxext  &&
+  depends libx11   &&
+  depends libxau
+fi
