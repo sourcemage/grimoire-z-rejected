@@ -1,3 +1,6 @@
+2013-05-23 Eric Sandall <sandalle@sourcemage.org>
+	* CONFLICTS: Conflicts with jre7-bin
+
 2013-03-07 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 6u43; SECURITY_PATCH++
 

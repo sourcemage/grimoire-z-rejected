@@ -1,3 +1,6 @@
+2013-05-23 Eric Sandall <sandalle@sourcemage.org>
+	* CONFLICTS: Conflicts with jre7-bin
+
 2010-02-17 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: Depends on any provider of ODBC-MGR now
 

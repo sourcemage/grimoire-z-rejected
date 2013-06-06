@@ -1,0 +1,9 @@
+# download java sources warning.
+#
+source $SPELL_DIRECTORY/JAVA_WARNING &&
+
+# Standard rejected warnings.
+#
+source $GRIMOIRE/REJECTED_MSG &&
+
+config_query JRE6_BIN_X "Would you like to use Java with X?" n
