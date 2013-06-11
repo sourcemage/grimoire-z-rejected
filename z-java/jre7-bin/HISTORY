@@ -1,3 +1,6 @@
+2013-06-07 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Disable castfs (STAGED_INSTALL) (see bug #410)
+
 2013-05-23 Eric Sandall <sandalle@sourcemage.org>
 	* Copied and renamed from jre6-bin
 

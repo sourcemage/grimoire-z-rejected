@@ -29,6 +29,7 @@ SOURCE_DIRECTORY="$BUILD_DIRECTORY/jre$VER"
          ARCHIVE='off'
           REJECT='is non-source'
            SHORT='Java Software Runtime Environment'
+  STAGED_INSTALL="off"
             DOCS='COPYRIGHT LICENSE README THIRDPARTYLICENSEREADME-JAVAFX.txt THIRDPARTYLICENSEREADME.txt'
 cat << EOF
 The JRE contains the Java Plug-In for Mozilla/Firefox and other Netscape 7.x+ plugin compatible browsers.
