@@ -1,3 +1,6 @@
+2013-07-02 Eric Sandall <sandalle@sourcemage.org>
+	* DEPENDS: glu -> GLUT typo fix
+
 2013-03-20 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Changed VERSION from "beta" to a release date.
 	  Will use VERSION to update unversioned binaries from the web.

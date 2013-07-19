@@ -1,3 +1,10 @@
+2013-07-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* INSTALL: install the plugin to the correct directory for
+	  firefox
+
+2013-07-11 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 11.2.202.297, SECURITY_PATCH=33, APSB13-17
+
 2013-06-13 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 11.2.202.291, SECURITY_PATCH=32, APSB13-16
 

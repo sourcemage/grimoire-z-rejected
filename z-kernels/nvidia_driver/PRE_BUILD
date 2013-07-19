@@ -17,4 +17,6 @@ sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  kernel/Makefile.kbuild  &&
 # Setup Makefile symlink
 #
 cd  $SOURCE_DIRECTORY/kernel     &&
-ln  -sfn  Makefile.kbuild  Makefile
+ln  -sfn  Makefile.kbuild  Makefile &&
+
+patch -Np2 < $SPELL_DIRECTORY/nvidia-linux-3.10.patch

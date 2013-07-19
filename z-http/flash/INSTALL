@@ -16,21 +16,22 @@ case $MOZILLA in
 	;;
 esac &&
 
+local FLASHDIR=${INSTALL_ROOT}/usr/lib/firefox/browser/plugins &&
 case $FIREFOX in
 	y|Y)
-		if [[ -d /usr/lib/firefox/plugins ]]; then
+		if [[ -d $FLASHDIR ]]; then
 			message "${MESSAGE_COLOR}Installing for Firefox${DEFAULT_COLOR}\n" &&
 
-			if [[ -e /usr/lib/firefox/plugins/libflashplayer.so ]]; then
-				rm -f /usr/lib/firefox/plugins/libflashplayer.so
+			if [[ -e $FLASHDIR/libflashplayer.so ]]; then
+				rm -f $FLASHDIR/libflashplayer.so
 			fi &&
-			if [[ -e /usr/lib/firefox/plugins/flashplayer.xpt ]]; then
-				rm -f /usr/lib/firefox/plugins/flashplayer.xpt
+			if [[ -e $FLASHDIR/flashplayer.xpt ]]; then
+				rm -f $FLASHDIR/flashplayer.xpt
 			fi 
 		else
-			mkdir -p /usr/lib/firefox/plugins
+			mkdir -p $FLASHDIR
 		fi &&
-		cp libflashplayer.so /usr/lib/firefox/plugins/
+		cp libflashplayer.so $FLASHDIR
 	;;
 esac &&
 

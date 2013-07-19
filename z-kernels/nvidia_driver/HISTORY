@@ -1,3 +1,8 @@
+2013-07-07 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 319.32, version 325.08 (beta)
+	* PRE_BUILD, nvidia-linux-3.10.patch: apply patch from archlinux
+	  to prevent build error with linux 3.10
+
 2013-05-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: 319.23 (x86_64)
 

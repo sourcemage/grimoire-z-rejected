@@ -1,1 +1,2 @@
-conflicts  lesstif
+conflicts  lesstif &&
+conflicts  motif
