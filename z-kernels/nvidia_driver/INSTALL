@@ -1,15 +1,20 @@
 local X_MOD KVER                                                    &&
 KVER=$(get_kernel_version)                                                &&
 
+if [[ "$NVIDIA_BETA" == "n" ]]; then
+  MAKEFILE=Makefile.kbuild
+else
+  MAKEFILE=Makefile
+fi &&
 #
 # Install kernel module 'nvidia.ko'
 #
-pushd  $SOURCE_DIRECTORY/kernel                  &&
+cd  $SOURCE_DIRECTORY/kernel                  &&
 make  KERNEL_MODLIB=$INSTALL_ROOT/lib/modules/$KVER  \
       KERNEL_UNAME=$KVER                             \
       SYSSRC=$INSTALL_ROOT/lib/modules/$KVER/source  \
-      -f Makefile.kbuild  module-install             &&
-popd                                                 &&
+      -f $MAKEFILE  module-install             &&
+cd $SOURCE_DIRECTORY                           &&
 
 #
 # Install binaries and script

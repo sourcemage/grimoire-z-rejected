@@ -1,3 +1,9 @@
+2013-09-07 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: versions 325.15, 319.49
+	* linux-3.11.patch, PRE_BUILD: fix compile error with linux 3.11
+	* BUILD, INSTALL, PRE_BUILD: Makefile.kbuild is now called Makefile
+	  in the beta version; added conditionals to take that into account
+
 2013-07-07 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 319.32, version 325.08 (beta)
 	* PRE_BUILD, nvidia-linux-3.10.patch: apply patch from archlinux
