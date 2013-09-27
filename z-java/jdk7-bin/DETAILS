@@ -1,0 +1,36 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=jdk7-bin
+         VERSION=7u40
+             VER=1.7.0_40
+case "${SMGL_COMPAT_ARCHS[0]}" in
+  ia32|32)
+          SOURCE=jdk-$VERSION-linux-i586.tar.gz
+  ;;
+  x86-64|64)
+    if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
+          SOURCE=jdk-$VERSION-linux-x64.tar.gz
+    else
+          SOURCE=jdk-$VERSION-linux-i586.tar.gz
+    fi
+  ;;
+###########################################################################
+# Missing support for sparc and sparcv9 tarballs say solaris not linux :\
+###########################################################################
+  *)
+          SOURCE=
+         VERSION=Unsupported
+             VER=Unsupported
+  ;;
+esac
+      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
+        WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk${VER}"
+         ENTERED=20130917
+         ARCHIVE="off"
+          REJECT="is non-source"
+           SHORT="Java 7 Software Development Kit"
+cat << EOF
+The Java 7 Development Kit is a feature-complete development and
+deployment platform. The JDK contains the Java Plug-In for Netscape 4.x
+and Mozilla/Netscape 6.x, if you've installed the i586.
+EOF
