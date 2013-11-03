@@ -1,3 +1,6 @@
+2013-10-02 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 319.60
+
 2013-09-07 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: versions 325.15, 319.49
 	* linux-3.11.patch, PRE_BUILD: fix compile error with linux 3.11
