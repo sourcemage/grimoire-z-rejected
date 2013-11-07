@@ -3,7 +3,7 @@ unpack_file ''  &&
 sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
                --target $SOURCE_DIRECTORY                     &&
 cd $SOURCE_DIRECTORY                                          &&
-patch -p1 < $SPELL_DIRECTORY/linux-3.11.patch &&
+#patch -p1 < $SPELL_DIRECTORY/linux-3.11.patch &&
 
 # Fix defunct desktop file
 sedit  's/__.*__\///'  nvidia-settings.desktop  &&
@@ -12,13 +12,12 @@ sedit  's/__.*__\///'  nvidia-settings.desktop  &&
 # Setup Makefile symlink
 #
 cd  $SOURCE_DIRECTORY/kernel     &&
-if [[ "$NVIDIA_BETA" == "n" ]]; then
-  ln  -sfn  Makefile.kbuild  Makefile
-fi &&
+#if [[ "$NVIDIA_BETA" == "n" ]]; then
+#  ln  -sfn  Makefile.kbuild  Makefile
+#fi &&
 
 #
 # Modify module-install target to use `depmod -ae` on $KVER rather
 # than the running kernel
 #
 sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  Makefile
-
