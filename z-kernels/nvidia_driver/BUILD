@@ -2,7 +2,7 @@ local  KVER                 &&
 KVER=$(get_kernel_version)  &&
 
 if [[ "$NVIDIA_BETA" == "n" ]]; then
-  MAKEFILE=Makefile.kbuild
+  MAKEFILE=Makefile
 else
   MAKEFILE=Makefile
 fi &&
