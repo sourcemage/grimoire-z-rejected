@@ -1,3 +1,7 @@
+2013-11-26 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 7u45
+	  SECURITY_PATCH++
+
 2013-09-17 Eric Sandall <sandalle@sourcemage.org>
 	* CONFLICTS: Conflicts with jdk7-bin
 
