@@ -1,10 +1,18 @@
-cp usr/bin/cgc /usr/bin/ &&
-cp -R usr/include/Cg /usr/include/ && 
-if [ -d usr/lib64 ]; then
-LIBDIR=usr/lib64
+if [ "$PLATFORM" == x86_64 ]; then
+  LIB_DIR=lib64
 else
-LIBDIR=usr/lib
-fi &&
-cp $LIBDIR/libCg*.so /usr/lib/ &&
-cp -R usr/local/Cg /usr/share/doc/ &&
-cp usr/share/man/man3/cg*.3 /usr/share/man/man3/
+  LIB_DIR=lib
+fi
+
+install -v -m 755 -d $INSTALL_ROOT/usr/bin  &&
+install -v -m 755 -d $INSTALL_ROOT/usr/include/Cg  &&
+install -v -m 755 -d $INSTALL_ROOT/usr/lib  &&
+install -v -m 755 -d $INSTALL_ROOT/usr/share/doc/Cg/docs/html  &&
+
+install -v -m 755 -t $INSTALL_ROOT/usr/bin usr/bin/*  && 
+install -v -m 755 -t $INSTALL_ROOT/usr/lib usr/$LIB_DIR/* &&
+install -v -m 644 -t $INSTALL_ROOT/usr/include/Cg usr/include/Cg/*  &&
+install -v -m 644 -t $INSTALL_ROOT/usr/share/doc/Cg/docs usr/local/Cg/docs/*.pdf  &&
+install -v -m 644 -t $INSTALL_ROOT/usr/share/doc/Cg/docs usr/local/Cg/docs/*.txt  &&
+install -v -m 644 -t $INSTALL_ROOT/usr/share/doc/Cg/docs/html usr/local/Cg/docs/html/* &&
+install -v -m 644 -t $INSTALL_ROOT/usr/share/doc/Cg usr/local/Cg/README

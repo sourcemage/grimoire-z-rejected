@@ -1,19 +1,38 @@
-           SPELL="libcg"
-         VERSION="2.2"
-if [[ "${HOST%%-*}" == 'x86_64' ]]; then
-          SOURCE="Cg-${VERSION}_April2009_x86_64.tgz"
-     SOURCE_HASH="sha512:b27435664c20872cfbfb34e1be89e7dad598cb4db86db3236285ebb06cabb6df72975ccbc51215dacfd297353bb282d321191705cc091bc4929fee377998cd98"
-else
-          SOURCE="Cg-${VERSION}_April2009_x86.tgz"
-     SOURCE_HASH="sha512:33f462beb879cafc877f076720b96455fc6ad9ede80b6d5303938810c9a6c73a75044c2b298719aeab5a815cd0c1e5391ff22b2ae89a514c1c9883bed174c668"
-fi
-SOURCE_DIRECTORY="$BUILD_DIRECTORY/Cg"
-   SOURCE_URL[0]="http://developer.download.nvidia.com/cg/Cg_${VERSION}/${SOURCE}"
-        WEB_SITE="http://developer.nvidia.com/object/cg_toolkit.html"
-         ENTERED="20040125"
+           SPELL=libcg
+         VERSION=April2012
+         RELEASE=3.1
+    if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+        PLATFORM=x86_64
+     SOURCE_HASH=sha512:591b51195193e7e3bbb9f1c2579336d24a179b0a88b955a01f4661bda55543fbccd73cac53033912f2eea8a1068e4c1394c6d286f195963cfb33a0d8b4428e27
+    else
+        PLATFORM=x86
+     SOURCE_HASH=sha512:7b2addad157e151eb42b320aea31ccddfd53ec5640cb97bc86a3d461c1b08a2dff280bfc3f7859d124c311e1710e39d40405c387e5724ebc82d95303b250837a
+    fi
+          SOURCE=Cg-${RELEASE}_${VERSION}_${PLATFORM}.tgz
+   SOURCE_URL[0]=http://developer.download.nvidia.com/cg/Cg_${RELEASE}/${SOURCE}
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$RELEASE-$VERSION"
+        WEB_SITE=https://developer.nvidia.com/cg-toolkit
+         ENTERED=20040125
           REJECT="non-source plus headers"
       LICENSE[0]="NVIDIA"
-           SHORT="nvidia Cg libraries"
+        KEYWORDS="cg"
+           SHORT="NVIDIA Cg Toolkit"
 cat << EOF
-nvidia Cg libraries
+The award-winning Cg Toolkit enables software developers to add the latest
+interactive effects to real-time applications with a comprehensive solution that
+works across platforms and graphics APIs containing:
+
+Compiler for the Cg 3.1 language
+Cg/CgFX Runtime libraries for OpenGL and Direct3D
+User’s Manual and documentation on the Cg Language, Runtime APIs, Cg Library, 
+CgFX States, and Cg Profiles
+Numerous Cg examples
+
+Supporting dozens of different OpenGL and DirectX profile targets, Cg allows you
+to incorporate stunning, interactive effects within your 3D applications and 
+share them between other Cg applications, across graphics APIs, and most 
+operating systems (Windows XP, Vista and Windows 7, Mac OS X for Leopard, Snow 
+Leopard & Lion, Linux 32-bit & 64-bit) and balance effect complexities with 
+client GPU capabilities.
 EOF
+
