@@ -1,7 +1,8 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jdk7-bin
-         VERSION=7u45
-             VER=1.7.0_45
+         VERSION=7u51
+             VER=1.7.0_51
+  SECURITY_PATCH=1
 case "${SMGL_COMPAT_ARCHS[0]}" in
   ia32|32)
           SOURCE=jdk-$VERSION-linux-i586.tar.gz
