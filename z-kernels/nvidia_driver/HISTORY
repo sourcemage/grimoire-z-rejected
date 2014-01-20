@@ -1,3 +1,6 @@
+2014-01-20 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* PRE_BUILD, linux-3.13.patch: fix run-time error with linux 3.13
+
 2014-01-13 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 331.38
 
