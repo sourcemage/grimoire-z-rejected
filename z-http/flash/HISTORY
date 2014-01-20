@@ -1,3 +1,6 @@
+2014-01-20 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 11.2.202.335, SECURITY_PATCH=35
+
 2013-05-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 11.2.202.310 (x86_64, i386),
 	  SECURITY_PATCH=34
