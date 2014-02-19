@@ -1,3 +1,8 @@
+2014-02-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: versions 334.16, 331.49
+	* PRE_BUILD: apply patch only to unstable version
+	* linux-3.11.patch, nvidia-linux-3.10.patch: removed
+
 2014-01-20 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* PRE_BUILD, linux-3.13.patch: fix run-time error with linux 3.13
 

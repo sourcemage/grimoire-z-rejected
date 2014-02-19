@@ -3,8 +3,9 @@ unpack_file ''  &&
 sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
                --target $SOURCE_DIRECTORY                     &&
 cd $SOURCE_DIRECTORY                                          &&
-#patch -p1 < $SPELL_DIRECTORY/linux-3.11.patch &&
-patch -p1 < $SPELL_DIRECTORY/linux-3.13.patch &&
+if [[ "$NVIDIA_BETA" == "y" ]]; then
+patch -p1 < $SPELL_DIRECTORY/linux-3.13.patch
+fi &&
 
 # Fix defunct desktop file
 sedit  's/__.*__\///'  nvidia-settings.desktop  &&
