@@ -1,3 +1,6 @@
+2014-02-28 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: sha512s for ia32 fixed
+
 2014-02-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: versions 334.16, 331.49
 	* PRE_BUILD: apply patch only to unstable version
