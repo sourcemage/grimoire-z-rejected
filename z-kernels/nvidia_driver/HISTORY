@@ -1,3 +1,6 @@
+2014-04-15 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 331.67
+
 2014-03-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: beta versions 334.21
 	* PRE_BUILD, linux-3.13.patch: remove obsolete patch
