@@ -1,4 +1,7 @@
-2014-01-01 Thomas Orgis <sobukus@sourcemage.org
+2014-04-15 Ismael Luceno <ismael@sourcemage.org>
+	* z-utils/odeskteam: new spell, oDesk Team client
+
+2014-01-01 Thomas Orgis <sobukus@sourcemage.org>
 	* gurus.gpg: add my key (093D33F7)
 
 2013-09-17 Eric Sandall <sandalle@sourcemage.org>

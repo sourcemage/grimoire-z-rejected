@@ -1,0 +1,38 @@
+           SPELL=odeskteam
+         VERSION=3.10.5
+case "$(uname -m)" in
+x86_64)     ARCH=amd64
+     SOURCE_HASH=sha512:3a1c04798aaf6e28b93a9a6ef6ff4f67a41a6781e65bfe18ea9f4a716c6b5325dd6785583afcd617f11a1065c5a050ef0207afe6ed87b23ed4e13fdc383751ea
+;;
+i686)       ARCH=i386
+     SOURCE_HASH=sha512:a9ecb3682d0efff1d9b0237b9e464bc6ffeb768de2f07050526c4ccfdf2426dc7c3ea6abf6bef68d0c630e4fd3830cec2279446ccae602121ce2077bf652721c
+;;
+esac
+          SOURCE="${SPELL}_${VERSION}_debian_jessie_sid_${ARCH}.deb"
+   SOURCE_URL[0]=https://www.odesk.com/downloads/linux/beta/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        WEB_SITE="https://www.odesk.com/"
+      LICENSE[0]="Freeware"
+	  REJECT="binary only"
+         ENTERED=20140415
+        KEYWORDS=""
+           SHORT="oDesk Team client"
+	   DOCS="$SOURCE_DIRECTORY/usr/share/doc/$SPELL/*"
+cat << EOF
+A free desktop application is your virtual office, enabling visibility,
+connectivity, collaboration and guaranteed payment for guaranteed work.
+
+Easily share annotated screensnaps and short URLs.
+
+For Freelancers:
+* Automatically records proof of work for zero-click invoicing and guaranteed
+  payment.
+* See who's online - collaborate with clients and teammates as if they were
+  local.
+
+For Clients:
+* See your remote freelancers in action, and manage as if they were in your
+  office.
+* Know what your freelancers are working on - every hour billed is an hour
+  worked.
+EOF

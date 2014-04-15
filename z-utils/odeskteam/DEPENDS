@@ -1,0 +1,32 @@
+depends -sub CXX gcc &&
+depends OPENGL &&
+depends bzip2 &&
+depends expat &&
+depends fontconfig &&
+depends freetype2 &&
+depends glib2 &&
+depends icu &&
+depends libdrm &&
+depends libffi &&
+depends libice &&
+depends libpng &&
+depends libsm &&
+depends libx11 &&
+depends libxau &&
+depends libxcb &&
+depends libxdamage &&
+depends libxdmcp &&
+depends libxext &&
+depends libxfixes &&
+depends libxi &&
+depends libxinerama &&
+depends libxml2 &&
+depends libxrender &&
+depends libxscrnsaver &&
+depends libxxf86vm &&
+depends pcre &&
+depends qt4 &&
+depends sqlite &&
+depends util-linux &&
+depends xz-utils &&
+depends zlib

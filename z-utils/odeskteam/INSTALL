@@ -1,0 +1,4 @@
+install -m755 {,/}usr/bin/odeskteam-qt4
+install -m644 {,/}usr/share/applications/odeskteam.desktop
+install -m644 {,/}usr/share/menu/odeskteam.desktop
+install -m644 {,/}usr/share/pixmaps/odeskteam.xpm
