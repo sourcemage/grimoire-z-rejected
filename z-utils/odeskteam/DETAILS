@@ -1,14 +1,25 @@
            SPELL=odeskteam
-         VERSION=3.10.5
-case "$(uname -m)" in
-x86_64)     ARCH=amd64
+            ARCH=amd64
+         VERSION=3.10.5 SUITE=debian_jessie_sid
+case "$(uname -m).$ODESKTEAM_BRANCH" in
+x86_64.beta)
      SOURCE_HASH=sha512:3a1c04798aaf6e28b93a9a6ef6ff4f67a41a6781e65bfe18ea9f4a716c6b5325dd6785583afcd617f11a1065c5a050ef0207afe6ed87b23ed4e13fdc383751ea
 ;;
-i686)       ARCH=i386
+i?86.beta)
+            ARCH=i386
      SOURCE_HASH=sha512:a9ecb3682d0efff1d9b0237b9e464bc6ffeb768de2f07050526c4ccfdf2426dc7c3ea6abf6bef68d0c630e4fd3830cec2279446ccae602121ce2077bf652721c
 ;;
+x86_64.stable)
+	 VERSION=3.2.59 SUITE=ubuntu_12.04
+     SOURCE_HASH=sha512:29942eb82f5ee98f57573cd20f08da68118fbc4c10adbc77fa3dd9fecbf6964101291830d59e249892ab5ee1bd5fa83756596217696176785ffe9fe3e036fdd0
+;;
+i?86.stable)
+            ARCH=i386
+	 VERSION=3.2.59 SUITE=ubuntu_12.04
+     SOURCE_HASH=sha512:66225f6172f16e8f723bf17bae10dcd28c122a5ea17b68c961c1c0e79c483b686d3b5b13de1c237809458747c8491ebe9e7960a06cc3c5e361f0e8c72611d834
+;;
 esac
-          SOURCE="${SPELL}_${VERSION}_debian_jessie_sid_${ARCH}.deb"
+          SOURCE="${SPELL}_${VERSION}_${SUITE}_${ARCH}.deb"
    SOURCE_URL[0]=https://www.odesk.com/downloads/linux/beta/${SOURCE}
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         WEB_SITE="https://www.odesk.com/"

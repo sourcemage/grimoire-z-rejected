@@ -1,2 +1,5 @@
+2014-04-19 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS, PREPARE: Stable version added
+
 2014-04-15 Ismael Luceno <ismael@sourcemage.org>
 	* BUILD, DEPENDS, DETAILS, INSTALL: spell created

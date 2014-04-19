@@ -1,1 +1,4 @@
-source $GRIMOIRE/REJECTED_MSG
+. "$GRIMOIRE"/REJECTED_MSG
+. "$GRIMOIRE"/FUNCTIONS
+
+prepare_select_branch stable beta
