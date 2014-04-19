@@ -667,3 +667,10 @@ function prepare_select_branch() {
     config_query "$spell"_AUTOUPDATE 'Automatically update on every system update?' n
   fi
 }
+
+#---
+## Get uppercase spell name with _ instead of -
+#---
+function get_up_spell_name() {
+  echo ${1:-$SPELL} | tr "a-z-" "A-Z_"
+}

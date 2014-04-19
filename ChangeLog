@@ -1,5 +1,7 @@
 2014-04-19 Ismael Luceno <ismael@sourcemage.org>
 	* FUNCTIONS: Added prepare_select_branch from test grimoire
+	* FUNCTIONS: Added get_up_spell_name from test grimoire, dependency of
+	  prepare_select_branch
 
 2014-04-15 Ismael Luceno <ismael@sourcemage.org>
 	* z-utils/odeskteam: new spell, oDesk Team client
