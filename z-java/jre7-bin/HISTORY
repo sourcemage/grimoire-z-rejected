@@ -1,6 +1,7 @@
 2014-04-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 7u55
 	  SECURITY_PATCH++
+	* CONFLICTS: Conflicts with jre8-bin
 
 2014-01-15 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 7u51

@@ -1,0 +1,13 @@
+# Special messages with regards to JRE sources.
+#
+if [[ ! -f $SOURCE_CACHE/$SOURCE ]]; then
+  message "\n${MESSAGE_COLOR}For $SPELL you need to manually download the sources for JRE \
+\nversion 6 in self-extracting format from Oracle's website: \
+${DEFAULT_COLOR}\n  ${WEB_SITE} \
+\n${MESSAGE_COLOR}Put the downloaded file $SOURCE in \
+${DEFAULT_COLOR}/var/spool/sorcery/ \
+${MESSAGE_COLOR}so cast will find it.\n${DEFAULT_COLOR}"  &&
+
+  message "${MESSAGE_COLOR}Please recast when you have the sources!\n${DEFAULT_COLOR}"
+  return 1
+fi
