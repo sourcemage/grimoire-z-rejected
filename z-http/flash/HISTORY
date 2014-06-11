@@ -1,3 +1,7 @@
+2014-06-11 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 11.2.202.378 (x86_64, i386),
+	  SECURITY_PATCH=41
+
 2014-05-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 11.2.202.359 (x86_64, i386),
 	  SECURITY_PATCH=40

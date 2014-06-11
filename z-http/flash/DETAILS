@@ -1,18 +1,18 @@
            SPELL=flash
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
-         VERSION=11.2.202.359
+         VERSION=11.2.202.378
           SOURCE=install_flash_player_11_linux.x86_64.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:040c2ed2a0510b1c6a1b5054352ebc0c8f435aa4776989fb47ebaa8afb507c87a316d7202c092093f77481ec0a5105be984900f8648fe45891ee4f99f494f05d
+     SOURCE_HASH=sha512:12a26546421f271001bc5ba0727792f98024d65debb52daaffa1076fa817d4422073303882729c0ca09450bda5f343a7452dedae23082211834f960c898c6297
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 else
-         VERSION=11.2.202.359
+         VERSION=11.2.202.378
           SOURCE=install_flash_player_11_linux.i386.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:717ff4693b626b5de2472ad882d6bc639b785c3c2db161911384b30299e0f3a676f1edddddf5efe3d290917c8ab0ddf4144fa1521682d199ffdeb4c903bd5df7
+     SOURCE_HASH=sha512:c7249b3466f86986ba3d5d115fd112ccb18d0a36028a593caf1136f7d9bea44d87741b09e4ced6080268f07ea85262a80a573a280978e73d42923efae832d47f
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 fi
-  SECURITY_PATCH=40
+  SECURITY_PATCH=41
   FORCE_DOWNLOAD="on"
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
      GATHER_DOCS=off
