@@ -1,7 +1,18 @@
 # Standard rejected warnings.
 source $GRIMOIRE/REJECTED_MSG &&
 
+# asprintf flag is now passed to make as an option, so rewrite 
+# the persistent variable to the correct make option
+persistent_load &&
+if [[ "$NOTION_SYSTEM_ASPRINTF" == "y" ]]; then
+  NOTION_SYSTEM_ASPRINTF="HAS_SYSTEM_ASPRINTF=1"
+  persistent_add NOTION_SYSTEM_ASPRINTF
+elif [[ "$NOTION_SYSTEM_ASPRINTF" == "n" ]]; then
+  NOTION_SYSTEM_ASPRINTF="HAS_SYSTEM_ASPRINTF=0"
+  persistent_add NOTION_SYSTEM_ASPRINTF
+fi &&
+
 config_query_option NOTION_SYSTEM_ASPRINTF \
                     "Use system asprintf?" y \
-                    "y" \
-                    "n"
+                    "HAS_SYSTEM_ASPRINTF=1" \
+                    "HAS_SYSTEM_ASPRINTF=0"

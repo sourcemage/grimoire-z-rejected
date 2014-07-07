@@ -1,4 +1,4 @@
-default_install &&
+make PREFIX=/usr ETCDIR=/etc/notion install
 install_wmfiles &&
 [ ! -e $INSTALL_ROOT/usr/bin/startpwm3plus ] && 
 install -m 0755 $SCRIPT_DIRECTORY/startpwm3plus \

@@ -1,1 +1,1 @@
-make
+make PREFIX=/usr ETCDIR=/etc/notion $NOTION_SYSTEM_ASPRINTF
