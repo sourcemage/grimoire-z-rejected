@@ -1,3 +1,8 @@
+2014-08-07 Sukneet Basuta <sukneet@sourcemage.org>
+	* DETAILS: beta => 343.13
+	* INSTALL: install all libs and binaries (excluding nvidia-modprobe) 
+	  so everything works
+
 2014-07-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: versions 340.24 and 337.25
 

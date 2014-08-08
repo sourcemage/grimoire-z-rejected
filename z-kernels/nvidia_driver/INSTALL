@@ -22,7 +22,8 @@ cd $SOURCE_DIRECTORY                           &&
 if is_depends_enabled $SPELL gtk+2; then
   install -v -m 0755 -o root -g root nvidia-settings $INSTALL_ROOT/usr/bin
 fi &&
-for file in nvidia-bug-report.sh nvidia-xconfig;  do
+for file in nvidia-bug-report.sh nvidia-xconfig nvidia-debugdump nvidia-smi \
+            nvidia-cuda-mps-server nvidia-cuda-mps-control nvidia-persistenced;  do
   install -v -m 0755  -o root  -g root  $file  $INSTALL_ROOT/usr/bin
 done                              &&
 install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &&
@@ -43,12 +44,18 @@ done                                     &&
 sed -i 's|__LIBGL_PATH__|/usr/lib|' libGL.la 
 for lib in libGL.la  libnvidia-glcore.so.${VERSION/-/.} \
            libnvidia-tls.so.${VERSION/-/.} libnvidia-cfg.so.${VERSION/-/.} \
-           libnvidia-compiler.so.${VERSION/-/.} libnvidia-wfb.so.${VERSION/-/.}; do
+           libnvidia-compiler.so.${VERSION/-/.} libnvidia-wfb.so.${VERSION/-/.} \
+           libnvidia-eglcore.so.${VERSION/-/.} libnvidia-glsi.so.${VERSION/-/.} \
+           libnvidia-ifr.so.${VERSION/-/.} libnvidia-fbc.so.${VERSION/-/.} \
+           libnvidia-encode.so.${VERSION/-/.} libnvidia-ml.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                              &&
 mkdir -vp $INSTALL_ROOT/usr/lib/.nvidia \
           $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/  &&
 cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libEGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libGLESv1_CM.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libGLESv2.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
 install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
@@ -58,6 +65,12 @@ install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
   pushd  $INSTALL_ROOT/usr/lib/.nvidia                           &&
   ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
   ln  -sfn  libGL.so.1                       libGL.so            &&
+  ln  -sfn  libEGL.so.${VERSION/-/.}         libEGL.so.1         &&
+  ln  -sfn  libEGL.so.1                      libEGL.so           &&
+  ln  -sfn  libGLESv1_CM.so.${VERSION/-/.}   libGLESv1_CM.so.1   &&
+  ln  -sfn  libGLESv1_CM.so.1                libGLESv1_CM.so     &&
+  ln  -sfn  libGLESv2.so.${VERSION/-/.}      libGLESv2.so.1      &&
+  ln  -sfn  libGLESv2.so.1                   libGLESv2.so        &&
   popd
   pushd  $INSTALL_ROOT/usr/lib                                   &&
   ln  -sfn  libnvidia-glcore.so.${VERSION/-/.}   libGLcore.so.1  &&
@@ -97,7 +110,7 @@ popd                                                &&
 #
 # Install Cuda libraries
 #
-for lib in libcuda.so.${VERSION/-/.}; do
+for lib in libcuda.so.${VERSION/-/.} libnvcuvid.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                                    &&
   #
@@ -194,7 +207,7 @@ install  -m 0644  -o root  -g root  $SOURCE_DIRECTORY/LICENSE  \
 #
 # Install man pages
 #
-for manual in nvidia-installer.1.gz  nvidia-settings.1.gz  nvidia-smi.1.gz  nvidia-xconfig.1.gz
-do
+for manual in nvidia-installer.1.gz  nvidia-settings.1.gz  nvidia-smi.1.gz \
+              nvidia-xconfig.1.gz nvidia-cuda-mps-control.1.gz nvidia-persistenced.1.gz; do
   install  -m 0644  -o root  -g root  $manual  $INSTALL_ROOT/usr/share/man/man1
 done
