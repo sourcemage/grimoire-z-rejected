@@ -1,3 +1,6 @@
+2014-08-14 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 340.32
+
 2014-08-07 Sukneet Basuta <sukneet@sourcemage.org>
 	* DETAILS: beta => 343.13
 	* INSTALL: install all libs and binaries (excluding nvidia-modprobe) 
