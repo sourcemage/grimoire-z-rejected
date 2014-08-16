@@ -1,21 +1,21 @@
            SPELL=flash
-         VERSION=11.2.202.394
+         VERSION=11.2.202.400
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
           SOURCE=install_flash_player_11_linux.x86_64.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:14faf00fefc31b5ff0c1d58ac5906641a185436d106cb94e2f808078d5cf38f0890295240f47846cfe2992d75179501e47d2aa5f0bf04fd6a12aa4dcbd909d74
+     SOURCE_HASH=sha512:39219a0990ca7d945c17836d03e9657da523d8011d51a1a425726bf7721655d0951f29c669d5a7c1b8a0d77e1fccf4276973962cd92017a5f57195b67cb49596
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 else
           SOURCE=install_flash_player_11_linux.i386.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/$SOURCE
-     SOURCE_HASH=sha512:26c9aa6a2e2db9ab2ff1631b4cc87a2e074518865aaaef1829ba24c44ab22513dd9f16024a6bed0ecd07e5c2d85c97e801ec19b1477a75434bb0531902bd99fb
+     SOURCE_HASH=sha512:04b8dbe2a36712180886234b8587e199605b0805dc92fc234dd8f2efbe37168342ffb96be663bf6d9352e1bad2837b6439fa77247fcb6177fc6ceae4e4f9200c
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
 fi
   SECURITY_PATCH=42
   FORCE_DOWNLOAD="on"
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
      GATHER_DOCS=off
-        WEB_SITE=http://www.macromedia.com
+        WEB_SITE=http://www.adobe.com/products/flashplayer.html
          ENTERED=20020319
           REJECT="is non-source and has licensing issues"
            SHORT="Macromedia Flash Plugin for Web Browsers"
