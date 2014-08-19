@@ -5,7 +5,7 @@ optional_depends  "linux-pam"  \
                   ""           \
                   "Would you like to use pam authentication modules?" &&
 
-optional_depends  "openssl"    \
+optional_depends  "SSL"    \
                   "--with-ssl" \
                   ""           \
                   "Would you like to use SSL?"
