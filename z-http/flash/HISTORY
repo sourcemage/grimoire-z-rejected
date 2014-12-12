@@ -1,3 +1,7 @@
+2014-12-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 11.2.202.425; SECURITY_PATCH++; quoting
+	  paths; optimize variables
+
 2014-09-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 11.2.202.406
 	  SECURITY_PATCH=44
