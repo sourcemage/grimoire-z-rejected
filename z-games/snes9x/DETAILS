@@ -10,7 +10,7 @@ SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-src
          ENTERED=20040108
       MAKE_NJOBS=1
             DOCS="README.UNIX snes9x/CHANGES.TXT"
-           SHORT="Snes9x is a portable, freeware Super Nintendo Entertainment System (SNES) emulator."
+           SHORT="Super Nintendo Entertainment System (SNES) emulator"
 cat << EOF
 Snes9x is a portable, freeware Super Nintendo Entertainment System (SNES)
 emulator. It basically allows you to play most games designed for the SNES and
