@@ -1,5 +1,6 @@
 2015-01-05 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: Shortened short description
+	* CONFIGURE: Added netplay support knob
 
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.

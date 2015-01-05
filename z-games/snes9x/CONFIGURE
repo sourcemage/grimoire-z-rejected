@@ -1,3 +1,5 @@
+config_query_option SNES_OPTS "Enable netplay support?" y               \
+                    --enable-netplay --disable-netplay                  &&
 config_query_option SNES_OPTS "Do you want sound support?" y            \
                     "--with-sound" "--without-sound"                    &&
 config_query_option SNES_OPTS "Do you want glide support?" n            \
