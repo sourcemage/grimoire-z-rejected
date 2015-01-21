@@ -1,3 +1,6 @@
+2015-01-21 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 11.2.202.429, SECURITY_PATCH=46
+
 2014-12-12 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 11.2.202.425; SECURITY_PATCH++; quoting
 	  paths; optimize variables
