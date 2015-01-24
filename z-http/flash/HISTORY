@@ -1,3 +1,8 @@
+2015-01-24 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 11.2.202.438
+	  SECURITY_PATCH++
+	  Changed SOURCE to avoid forcing the download
+
 2015-01-21 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 11.2.202.429, SECURITY_PATCH=46
 
