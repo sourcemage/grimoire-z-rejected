@@ -1,3 +1,6 @@
+2015-01-28 Ladislav Hagara <hgr@vabo.cz>
+	* CONFLICTS: conflicts nvidia_legacy_340xx
+
 2013-03-07 Vlad Glagolev <stealth@sourcemage.org>
 	* CONFLICTS: conflicts nvidia_legacy_304xx
 
