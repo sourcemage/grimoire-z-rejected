@@ -1,3 +1,7 @@
+2015-01-28 Ladislav Hagara <hgr@vabo.cz>
+	* z-kernels/nvidia_legacy_340xx: new spell, certified NVIDIA binary
+	  drivers for older cards, based on spell nvidia_driver
+
 2015-01-24 Pavel Vinogradov <public@sourcemage.org>
 	* gurus.gpg: added my new uids
 
