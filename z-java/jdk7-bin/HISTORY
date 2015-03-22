@@ -1,3 +1,6 @@
+2015-03-22 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: Updated to 7u76, SECURITY_PATCH++
+
 2014-11-14 Thomas Orgis <sobukus@sourcemage.org>
 	* DETAILS: Updated to 7u72, SECURITY_PATCH++, switch to hash
 	  (sorry, don't see the point of guru sigs)
