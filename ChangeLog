@@ -1,3 +1,7 @@
+2015-03-26 Vlad Glagolev <stealth@sourcemage.org>
+	* FUNCTIONS: backported check_tmp_noexec() from the test grimoire; moved
+	  glselect function include to the bottom
+
 2015-01-28 Ladislav Hagara <hgr@vabo.cz>
 	* z-kernels/nvidia_legacy_340xx: new spell, certified NVIDIA binary
 	  drivers for older cards, based on spell nvidia_driver
