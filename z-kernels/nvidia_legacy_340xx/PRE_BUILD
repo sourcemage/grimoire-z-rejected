@@ -1,7 +1,9 @@
 unpack_file ''  &&
 
+check_tmp_noexec /tmp &&
 sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
                --target $SOURCE_DIRECTORY                     &&
+check_tmp_noexec /tmp &&
 cd $SOURCE_DIRECTORY                                          &&
 
 # Fix defunct desktop file

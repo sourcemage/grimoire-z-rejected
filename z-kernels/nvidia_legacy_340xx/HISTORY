@@ -1,2 +1,5 @@
+2015-03-26 Vlad Glagolev <stealth@sourcemage.org>
+	* PRE_BUILD: use check_tmp_noexec
+
 2015-01-28 Ladislav Hagara <hgr@vabo.cz>
 	* *: spell created, copied from nvidia_driver and set to 340.76
