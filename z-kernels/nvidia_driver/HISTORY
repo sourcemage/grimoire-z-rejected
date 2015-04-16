@@ -1,3 +1,6 @@
+2015-04-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: versions 346.59 and 349.16
+
 2015-03-26 Vlad Glagolev <stealth@sourcemage.org>
 	* PRE_BUILD: use check_tmp_noexec
 
