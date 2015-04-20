@@ -1,3 +1,12 @@
+2015-01-05 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: Shortened short description
+	* CONFIGURE: Added netplay support knob
+	* BUILD, DETAILS, INSTALL, PRE_BUILD: updated spell to 1.53
+	  Switched SOURCE_URL[0] to main mirror
+	  Switched SOURCE to .tar.bz2
+	  Removed PRE_BUILD, not needed anymore
+	  Install rule not provided anymore, do manually
+
 2006-10-03 Juuso Alasuutari <iuso@sourcemage.org>
 	* DETAILS: [automated] Removed UPDATED.
 

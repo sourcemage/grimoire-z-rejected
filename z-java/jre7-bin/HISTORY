@@ -1,3 +1,11 @@
+2015-01-29 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 7u76
+	  SECURITY_PATCH++
+
+2014-11-16 Jeremy Blosser <jblosser@sourcemage.org>
+	* DETAILS: Updated to 7u71
+	  SECURITY_PATCH++
+
 2014-04-23 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 7u55
 	  SECURITY_PATCH++

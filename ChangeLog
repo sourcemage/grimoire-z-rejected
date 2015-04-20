@@ -1,4 +1,15 @@
-2014-14-23 Eric Sandall <sandalle@sourcemage.org>
+2015-03-26 Vlad Glagolev <stealth@sourcemage.org>
+	* FUNCTIONS: backported check_tmp_noexec() from the test grimoire; moved
+	  glselect function include to the bottom
+
+2015-01-28 Ladislav Hagara <hgr@vabo.cz>
+	* z-kernels/nvidia_legacy_340xx: new spell, certified NVIDIA binary
+	  drivers for older cards, based on spell nvidia_driver
+
+2015-01-24 Pavel Vinogradov <public@sourcemage.org>
+	* gurus.gpg: added my new uids
+
+2014-04-23 Eric Sandall <sandalle@sourcemage.org>
 	* z-java/jre8-bin: Added Java 8 Runtime Environment (JRE)
 
 2014-04-19 Ismael Luceno <ismael@sourcemage.org>

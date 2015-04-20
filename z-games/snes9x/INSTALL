@@ -1,0 +1,5 @@
+bindir="$INSTALL_ROOT"/usr/games/ &&
+docdir="$INSTALL_ROOT"/usr/share/doc/"$SPELL-$VERSION" &&
+cd "$SOURCE_DIRECTORY" &&
+install -m755 -D -t "$bindir" unix/snes9x &&
+find docs unix/docs -type f -exec install -m644 -D -t "$docdir" '{}' +

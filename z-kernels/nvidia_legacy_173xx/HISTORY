@@ -1,3 +1,9 @@
+2015-03-26 Vlad Glagolev <stealth@sourcemage.org>
+	* PRE_BUILD: use check_tmp_noexec
+
+2015-01-28 Ladislav Hagara <hgr@vabo.cz>
+	* CONFLICTS: conflicts nvidia_legacy_340x
+
 2013-03-07 Vlad Glagolev <stealth@sourcemage.org>
 	* CONFLICTS: conflicts nvidia_legacy_304xx
 

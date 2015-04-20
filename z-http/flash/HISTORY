@@ -1,3 +1,33 @@
+2015-04-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 11.2.202.457
+	  SECURITY_PATCH=51
+
+2015-03-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 11.2.202.451
+	  SECURITY_PATCH=50
+
+2015-02-05 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 11.2.202.442, SECURITY_PATCH=49
+
+2015-01-29 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 11.2.202.440, SECURITY_PATCH=48
+
+2015-01-24 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS: updated spell to 11.2.202.438
+	  SECURITY_PATCH++
+	  Changed SOURCE to avoid forcing the download
+
+2015-01-21 Ladislav Hagara <hgr@vabo.cz>
+	* DETAILS: 11.2.202.429, SECURITY_PATCH=46
+
+2014-12-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 11.2.202.425; SECURITY_PATCH++; quoting
+	  paths; optimize variables
+
+2014-09-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 11.2.202.406
+	  SECURITY_PATCH=44
+
 2014-08-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 11.2.202.400
 	  SECURITY_PATCH=43

@@ -1,16 +1,16 @@
            SPELL=snes9x
-         VERSION=1.43
-          SOURCE=$SPELL-$VERSION-src.tar.gz
+         VERSION=1.53
+          SOURCE=$SPELL-$VERSION-src.tar.bz2
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION-src
-   SOURCE_URL[0]=http://www.lysator.liu.se/$SPELL/$VERSION/$SOURCE
+   SOURCE_URL[0]=http://files.ipherswipsite.com/$SPELL/$SOURCE
         WEB_SITE=http://www.snes9x.com/
-     SOURCE_HASH=sha512:99b985d20f5af608be4136c43ac3863667a8dda5b10b897aff7004e0165b047d9590791be3f31e94dd4744f31cae9163ca5ea948126a8eb828bc75743bcdd1f4
+     SOURCE_HASH=sha512:3ded506d1b3b6cff4e8e3de77ad557d97981eb97ea23ffc68ce5abbbd4677aca819776f1d11b9aa47f5b1a785b19455acf6ad4dbc536d3581d62c192ebdfbd8c
       LICENSE[0]="non-commercial license (see license.txt in package)"
           REJECT="non-commercial license (see license.txt in package)"
          ENTERED=20040108
       MAKE_NJOBS=1
             DOCS="README.UNIX snes9x/CHANGES.TXT"
-           SHORT="Snes9x is a portable, freeware Super Nintendo Entertainment System (SNES) emulator."
+           SHORT="Super Nintendo Entertainment System (SNES) emulator"
 cat << EOF
 Snes9x is a portable, freeware Super Nintendo Entertainment System (SNES)
 emulator. It basically allows you to play most games designed for the SNES and
