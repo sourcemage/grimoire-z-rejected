@@ -1,3 +1,6 @@
+2015-04-22 Vlad Glagolev <stealth@sourcemage.org>
+	* FUNCTIONS: fixed check_tmp_noexec for tmp-less systems
+
 2015-03-26 Vlad Glagolev <stealth@sourcemage.org>
 	* FUNCTIONS: backported check_tmp_noexec() from the test grimoire; moved
 	  glselect function include to the bottom
