@@ -1,16 +1,19 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jre8-bin
-         VERSION=8u31
+         VERSION=8u45
              VER="1.${VERSION:0:1}.0_$(printf %02d ${VERSION:2})"
 case "${SMGL_COMPAT_ARCHS[0]}" in
         ia32|32)
           SOURCE=jre-$VERSION-linux-i586.tar.gz
+          SOURCE_HASH=sha512:91b4b959ed7198feb26bb5f38eb9018ec621392c968c5011914295502e417b0af032fd69602d4cf79d5ba20ccb6c1166ae8a7a8ab4cc3aa95d1c678422b894df
         ;;
       x86-64|64)
           if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
             SOURCE=jre-$VERSION-linux-x64.tar.gz
+            SOURCE_HASH=sha512:c70d9ae5d1f2d47aab1943e4123155c10973b26d951fb220978097c676850c37c7ed48c643784989292c766f8afa141740614704ec6901d1f4882096f1c67789
           else
             SOURCE=jre-$VERSION-linux-i586.tar.gz
+            SOURCE_HASH=sha512:91b4b959ed7198feb26bb5f38eb9018ec621392c968c5011914295502e417b0af032fd69602d4cf79d5ba20ccb6c1166ae8a7a8ab4cc3aa95d1c678422b894df
           fi
         ;;
 ###########################################################################
@@ -22,7 +25,7 @@ case "${SMGL_COMPAT_ARCHS[0]}" in
              VER=Unsupported
         ;;
 esac
-      SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
+#SOURCE_GPG="gurus.gpg:$SOURCE.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/jre$VER"
   SECURITY_PATCH=1

@@ -1,9 +1,9 @@
            SPELL=fasm
-         VERSION=1.69.40
+         VERSION=1.71.39
           SOURCE=$SPELL-$VERSION.tgz
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
    SOURCE_URL[0]=http://flatassembler.net/$SOURCE
-     SOURCE_HASH=sha512:e80339d24c8b0d8c2ba165a0f43cc0eeeed7bfdb7bf88e8964821f8498bf4cb1ac470d66a797d4ece7c6e331417eac4fabf0ee61266d8818f328d33747b255f0
+     SOURCE_HASH=sha512:895a11fc2e95220b06546919cbfe99c2c32da4d43c67c943823694a574062fda89ddedb36859e6e550c8ed64cc86cd7aad4f5bad51cf9c5b5b3a7932c3f713a7
         WEB_SITE=http://flatassembler.net/
          ENTERED=20050207
       LICENSE[0]=license.txt
