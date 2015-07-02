@@ -5,4 +5,5 @@ conflicts  esmtp      &&
 conflicts  msmtp      &&
 conflicts  qmail      &&
 conflicts  sendmail   &&
+conflicts  opensmtpd  &&
 conflicts  postfix
