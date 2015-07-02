@@ -1,3 +1,15 @@
+2015-06-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 11.2.202.468
+	  SECURITY_PATCH=54
+
+2015-06-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 11.2.202.466
+	  SECURITY_PATCH=53
+
+2015-05-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 11.2.202.460
+	  SECURITY_PATCH=52
+
 2015-04-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 11.2.202.457
 	  SECURITY_PATCH=51
