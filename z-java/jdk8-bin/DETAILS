@@ -1,0 +1,40 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=jdk8-bin
+         VERSION=8u45
+             VER=1.8.0_45
+  SECURITY_PATCH=3
+case "${SMGL_COMPAT_ARCHS[0]}" in
+  ia32|32)
+          SOURCE=jdk-$VERSION-linux-i586.tar.gz
+          SOURCE_HASH=sha512:74b467e5a36028993aa91903e17bfaf305a0122fdc60efbb9174e33e35ab52813df3b39869b36bfb32441ae3874e89eb523f155573fae5eced1875ebdd08d53f
+  ;;
+  x86-64|64)
+    if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
+          SOURCE=jdk-$VERSION-linux-x64.tar.gz
+          SOURCE_HASH=sha512:f8fa6690609ee93f7e40f69998e97e02566808a50ec146163c7aa24e596a0d98e8d4ad438bc9d4799cb31aad9b403c3d4ada6cc0db66d2b22be8c639d992a027
+    else
+          SOURCE=jdk-$VERSION-linux-i586.tar.gz
+          SOURCE_HASH=sha512:74b467e5a36028993aa91903e17bfaf305a0122fdc60efbb9174e33e35ab52813df3b39869b36bfb32441ae3874e89eb523f155573fae5eced1875ebdd08d53f
+    fi
+  ;;
+###########################################################################
+# Missing support for sparc and sparcv9 tarballs say solaris not linux :\
+###########################################################################
+  *)
+          SOURCE=
+         VERSION=Unsupported
+             VER=Unsupported
+  ;;
+esac
+      #SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
+        WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk${VER}"
+         ENTERED=20130917
+         ARCHIVE="off"
+          REJECT="is non-source"
+           SHORT="Java 7 Software Development Kit"
+cat << EOF
+The Java 7 Development Kit is a feature-complete development and
+deployment platform. The JDK contains the Java Plug-In for Netscape 4.x
+and Mozilla/Netscape 6.x, if you've installed the i586.
+EOF

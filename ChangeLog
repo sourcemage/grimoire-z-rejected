@@ -1,3 +1,6 @@
+2015-07-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* z-java/jdk8-bin: new spell, java development kit version 8
+
 2015-04-22 Vlad Glagolev <stealth@sourcemage.org>
 	* FUNCTIONS: fixed check_tmp_noexec for tmp-less systems, do not force
 	  noexec option
