@@ -1,3 +1,7 @@
+2015-07-16 Jeremy Blosser <jbloser@sourcemage.org>
+	* DETAILS: version 11.2.202.491
+	  SECURITY_PATCH=56
+
 2015-07-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 11.2.202.481
 	  SECURITY_PATCH=55
