@@ -1,3 +1,8 @@
+2015-07-15 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 8u51
+	  SECURITY_PATCH++
+	  See http://www.oracle.com/technetwork/topics/security/cpujul2015-2367936.html#AppendixJAVA
+
 2015-07-04 Vlad Glagolev <stealth@sourcemage.org>
 	* JAVA_WARNING: corrected version number
 
