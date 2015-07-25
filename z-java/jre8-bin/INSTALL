@@ -46,6 +46,13 @@ then
            ${INSTALL_ROOT}/usr/lib/seamonkey/plugins/libjavaplugin_oji.so
   fi
 
+  if [ -d ${INSTALL_ROOT}/usr/lib/palemoon/plugins ]
+  then
+    message "${MESSAGE_COLOR}Installing plugin for palemoon${DEFAULT_COLOR}" &&
+    ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
+           ${INSTALL_ROOT}/usr/lib/palemoon/plugins/libjavaplugin_oji.so
+  fi
+
   if [ -d ${INSTALL_ROOT}/usr/lib/opera/plugins ]
   then
     message "${MESSAGE_COLOR}Installing plugin for opera${DEFAULT_COLOR}" &&
@@ -85,6 +92,14 @@ elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
     ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/lib/amd64/libnpjp2.so  \
            ${INSTALL_ROOT}/usr/lib/seamonkey/plugins/libnpjp2.so
   fi
+
+  if [ -d ${INSTALL_ROOT}/usr/lib/palemoon/plugins ]
+  then
+    message "${MESSAGE_COLOR}Installing plugin for palemoon${DEFAULT_COLOR}" &&
+    ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/lib/amd64/libnpjp2.so  \
+           ${INSTALL_ROOT}/usr/lib/palemoon/plugins/libnpjp2.so
+  fi
+
 fi  &&
 
 mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
