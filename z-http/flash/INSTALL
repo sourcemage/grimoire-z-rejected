@@ -68,6 +68,27 @@ case $MIDORI in
 	;;
 esac &&
 
+case $PALEMOON in
+	y|Y)
+		local PALEMOON_PLUGINS_DIR=${INSTALL_ROOT}/usr/lib/palemoon/plugins &&
+
+		if [[ ! -d ${PALEMOON_PLUGINS_DIR} ]]; then
+			mkdir -vp ${PALEMOON_PLUGINS_DIR}
+		fi &&
+
+		message "${MESSAGE_COLOR}Installing for Pale Moon${DEFAULT_COLOR}\n" &&
+
+		if [[ -e ${PALEMOON_PLUGINS_DIR}/libflashplayer.so ]]; then
+			rm -f ${PALEMOON_PLUGINS_DIR}/libflashplayer.so
+		fi &&
+
+		if [[ -e ${PALEMOON_PLUGINS_DIR}/flashplayer.xpt ]]; then
+			rm -f ${PALEMOON_PLUGINS_DIR}/flashplayer.xpt
+		fi &&
+
+		cp libflashplayer.so ${PALEMOON_PLUGINS_DIR}/
+	;;
+esac &&
 
 case $SEAMONKEY in
 	y|Y)

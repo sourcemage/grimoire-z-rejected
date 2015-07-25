@@ -1,3 +1,7 @@
+2015-07-25 Vlad Glagolev <stealth@sourcemage.org>
+	* CONFIGURE: added Pale Moon support, fixed KDE4 persistent variable
+	* INSTALL: added installation for Pale Moon
+
 2015-07-16 Jeremy Blosser <jbloser@sourcemage.org>
 	* DETAILS: version 11.2.202.491
 	  SECURITY_PATCH=56
