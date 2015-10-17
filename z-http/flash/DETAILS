@@ -1,11 +1,11 @@
            SPELL=flash
-         VERSION=11.2.202.535
+         VERSION=11.2.202.540
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=x86_64
-     SOURCE_HASH=sha512:a89df355190fb2afa3264299c1d1bb4c94fa34f9f5bd87cdd82ef4d9afc2f9841a376152b4c9a66dbdb543f484a09547348acff7e4a39c526d27c46ea5fc5b7e
+     SOURCE_HASH=sha512:55d1e3e5c426b083dcf64eb2de72f12e8a9d0866b6ea21cb524a0bba1895de976e25336f0222266ea912fbbb3cd06ebc4c2166acf933680f8b600ee76bb03985
 else
             ARCH=i386
-     SOURCE_HASH=sha512:da8e1227f166ac377990b44b5657fc59df8fe3db8247bf4150be67027372ce4ae74dee4151d14f8432cf386a717538ee106d451ec5afbc4800a095947d1c2ccc
+     SOURCE_HASH=sha512:65f03be693a907d218cbfcfa21a0a07cd09d40e0cb8223c9cf7fc0588756b922cc79039ac3b38ba1ccbd7a82cc29fb9c6da2fc312d992232744eecc37ba59637
 fi
           SOURCE=flashplayer-$VERSION.$ARCH.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/install_flash_player_11_linux.$ARCH.tar.gz
