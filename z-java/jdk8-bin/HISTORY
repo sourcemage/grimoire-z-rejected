@@ -1,3 +1,7 @@
+2015-11-10 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 8u66
+	  SECURITY_PATCH++
+
 2015-07-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* BUILD, CONFIGURE, CONFLICTS, DEPENDS, DETAILS, FINAL, INSTALL,
 	  JAVA_WARNING, PRE_BUILD, PROVIDES, UNATTEND_SAFE: spell created
