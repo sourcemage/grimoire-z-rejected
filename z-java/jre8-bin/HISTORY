@@ -1,3 +1,6 @@
+2015-11-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: version 8u66
+
 2015-09-14 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: PATCHLEVEL=1
 	* PRE_INSTALL: added, to drop old.* files from install
