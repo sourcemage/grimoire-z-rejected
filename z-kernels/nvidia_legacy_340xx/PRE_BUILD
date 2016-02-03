@@ -9,9 +9,6 @@ cd $SOURCE_DIRECTORY                                          &&
 # Fix defunct desktop file
 sedit  's/__.*__\///'  nvidia-settings.desktop  &&
 
-#patch -p1 < "$SPELL_DIRECTORY"/nvidia-4.2.patch &&
-patch -p1 < "$SPELL_DIRECTORY"/nvidia-4.3-build.patch &&
-
 #
 # Setup Makefile symlink
 #
