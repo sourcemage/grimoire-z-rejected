@@ -1,3 +1,7 @@
+2016-02-09 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: updated to 8u74, use upstream hashes,
+	  SECURITY_PATCH++
+
 2015-11-10 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 8u66
 	  SECURITY_PATCH++
