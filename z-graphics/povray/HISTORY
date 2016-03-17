@@ -1,3 +1,16 @@
+2016-03-16 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 3.7.0.0
+	  Removed UPDATED
+	  License for 3.7+ is AGPL3, remove REJECTED
+	* DEPENDS: Requires CXX from gcc
+	  Depends on boost
+	  Depends on autoconf and automake for ./prebuild.sh in PRE_BUILD
+	  No longer optionally uses svgalib
+	  Optionally use X11, openexr, and sdl
+	* PRE_BUILD: This is some messed up build "system"
+	* BUILD: Set LIBS= for ./configure to find boost thread library
+	  See http://askubuntu.com/questions/420100/pov-ray-installation-configure-error
+
 2010-11-03 Ladislav Hagara <hgr@vabo.cz>
 	* DEPENDS: jpeg -> JPEG
 
