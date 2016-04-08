@@ -1,3 +1,6 @@
+2016-04-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: 11.2.202.616, SECURITY_PATCH=66, fixes CVE-2016-1019
+
 2016-03-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: 11.2.202.577, SECURITY_PATCH=65
 
