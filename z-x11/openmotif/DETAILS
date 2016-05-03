@@ -1,15 +1,7 @@
-           SPELL=openmotif
-         VERSION=2.3.3
-              VX=`echo $VERSION |cut -c-3`
-     SOURCE_HASH=sha512:276d890692f2107aba14c927e0ff99514165621ef5ef53366a5dbd9a89b569b5327cef42efb67a44a0c27676a097d8fe85ab51a4165438ab9062f97d586737f6
-          SOURCE=$SPELL-$VERSION.tar.gz
-SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
-        WEB_SITE=http://www.motifzone.net
-  SOURCE_URL[0]=$WEB_SITE/files/public_downloads/openmotif/$VX/$VERSION/$SOURCE
-         ENTERED=20020510
-      LICENSE[0]=http://www.opengroup.org/openmotif/license
-        KEYWORDS="x11 libs"
-           SHORT="OSF/Motif GUI X11 toolkit"
-cat << EOF
-This is OpenMotif...
-EOF
+          SPELL=openmotif
+        VERSION=0
+     PATCHLEVEL=9999
+          SHORT="deprecated"
+  cat << EOF
+    deprecated spell [replaced by motif]
+  EOF

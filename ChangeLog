@@ -1,3 +1,6 @@
+2016-05-03 Ismael Luceno <ismael@sourcemage.org>
+	* z-x11/openmotif: spell deprecated in favor of motif
+
 2016-04-01 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* z-games/simutrans: rename to simutrans-bin
 
