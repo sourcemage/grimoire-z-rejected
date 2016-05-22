@@ -1,11 +1,6 @@
 local X_MOD KVER                                                    &&
-KVER=$(get_kernel_version)                                                &&
-
-if [[ "$NVIDIA_BETA" == "n" ]]; then
-  MAKEFILE=Makefile
-else
-  MAKEFILE=Makefile
-fi &&
+KVER=$(get_kernel_version)                                          &&
+MAKEFILE=Makefile                                                   &&
 #
 # Install kernel module 'nvidia.ko'
 #
@@ -13,7 +8,7 @@ cd  $SOURCE_DIRECTORY/kernel                  &&
 make  KERNEL_MODLIB=$INSTALL_ROOT/lib/modules/$KVER  \
       KERNEL_UNAME=$KVER                             \
       SYSSRC=$INSTALL_ROOT/lib/modules/$KVER/source  \
-      -f $MAKEFILE  module-install             &&
+      -f $MAKEFILE  modules_install            &&
 cd $SOURCE_DIRECTORY                           &&
 
 #
@@ -31,7 +26,7 @@ install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &
 #
 # Install OpenGL headers
 #
-mkdir  -vp  $INSTALL_ROOT/usr/include/GL/.nvidia
+mkdir  -vp  $INSTALL_ROOT/usr/include/GL/.nvidia &&
 for file in glext.h gl.h glxext.h glx.h; do
   install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/GL/.nvidia/
 done                                     &&
@@ -41,7 +36,8 @@ done                                     &&
 #
 
 # Fill in the path to libGL.so
-sed -i 's|__LIBGL_PATH__|/usr/lib|' libGL.la 
+sed -i 's|__LIBGL_PATH__|/usr/lib|' $SOURCE_DIRECTORY/libGL.la &&
+cd $SOURCE_DIRECTORY &&
 for lib in libGL.la  libnvidia-glcore.so.${VERSION/-/.} \
            libnvidia-tls.so.${VERSION/-/.} libnvidia-cfg.so.${VERSION/-/.} \
            libnvidia-compiler.so.${VERSION/-/.} libnvidia-wfb.so.${VERSION/-/.} \
@@ -53,34 +49,34 @@ done                              &&
 mkdir -vp $INSTALL_ROOT/usr/lib/.nvidia \
           $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/  &&
 cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libEGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGLESv1_CM.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGLESv2.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libEGL_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libGLESv1_CM_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libGLESv2_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
 install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
-  #
-  # Create library symlinks
-  #
-  pushd  $INSTALL_ROOT/usr/lib/.nvidia                           &&
-  ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
-  ln  -sfn  libGL.so.1                       libGL.so            &&
-  ln  -sfn  libEGL.so.${VERSION/-/.}         libEGL.so.1         &&
-  ln  -sfn  libEGL.so.1                      libEGL.so           &&
-  ln  -sfn  libGLESv1_CM.so.${VERSION/-/.}   libGLESv1_CM.so.1   &&
-  ln  -sfn  libGLESv1_CM.so.1                libGLESv1_CM.so     &&
-  ln  -sfn  libGLESv2.so.${VERSION/-/.}      libGLESv2.so.1      &&
-  ln  -sfn  libGLESv2.so.1                   libGLESv2.so        &&
-  popd
-  pushd  $INSTALL_ROOT/usr/lib                                   &&
-  ln  -sfn  libnvidia-glcore.so.${VERSION/-/.}   libGLcore.so.1  &&
-  ln  -sfn  libnvidia-cfg.so.${VERSION/-/.}  libnvidia-cfg.so.1  &&
-  ln  -sfn  libnvidia-cfg.so.1               libnvidia-cfg.so    &&
-  ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
-  popd                                                           &&
-  pushd  $INSTALL_ROOT/usr/lib/tls                               &&
-  ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
-  popd                                                           &&
+#
+# Create library symlinks
+#
+pushd  $INSTALL_ROOT/usr/lib/.nvidia                           &&
+ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
+ln  -sfn  libGL.so.1                       libGL.so            &&
+ln  -sfn  libEGL_nvidia.so.${VERSION/-/.}  libEGL.so.1         &&
+ln  -sfn  libEGL.so.1                      libEGL.so           &&
+ln  -sfn  libGLESv1_CM_nvidia.so.${VERSION/-/.}   libGLESv1_CM.so.1   &&
+ln  -sfn  libGLESv1_CM.so.1                libGLESv1_CM.so     &&
+ln  -sfn  libGLESv2_nvidia.so.${VERSION/-/.}      libGLESv2.so.1      &&
+ln  -sfn  libGLESv2.so.1                   libGLESv2.so        &&
+popd                                                           &&
+pushd  $INSTALL_ROOT/usr/lib                                   &&
+ln  -sfn  libnvidia-glcore.so.${VERSION/-/.}   libGLcore.so.1  &&
+ln  -sfn  libnvidia-cfg.so.${VERSION/-/.}  libnvidia-cfg.so.1  &&
+ln  -sfn  libnvidia-cfg.so.1               libnvidia-cfg.so    &&
+ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
+popd                                                           &&
+pushd  $INSTALL_ROOT/usr/lib/tls                               &&
+ln  -sfn  libnvidia-tls.so.${VERSION/-/.}  libnvidia-tls.so.1  &&
+popd                                                           &&
 
 #
 # Install X11 modules
@@ -132,26 +128,24 @@ done                                    &&
 #
 # Install VDPAU libraries
 #
-for lib in libvdpau.so.${VERSION/-/.}; do
+for lib in libvdpau_nvidia.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/
 done                                    &&
-mkdir  -vp  $INSTALL_ROOT/usr/lib/vdpau
-for lib in libvdpau_nvidia.so.${VERSION/-/.} libvdpau_trace.so.${VERSION/-/.}; do
+mkdir  -vp  $INSTALL_ROOT/usr/lib/vdpau                                        &&
+for lib in libvdpau_nvidia.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/vdpau/
 done                                    &&
   #
   # Setup symlinks
   #
   pushd  $INSTALL_ROOT/usr/lib                                                 &&
-  ln  -sfn  libvdpau.so.${VERSION/-/.}  libvdpau.so.1                          &&
+  ln  -sfn  libvdpau_nvidia.so.${VERSION/-/.}  libvdpau.so.1                   &&
   ln  -sfn  libvdpau.so.1  libvdpau.so                                         &&
   popd                                                                         &&
   pushd  $INSTALL_ROOT/usr/lib/vdpau                                           &&
   ln  -sfn  libvdpau_nvidia.so.${VERSION/-/.}  libvdpau_nvidia.so.1            &&
   ln  -sfn  libvdpau_nvidia.so.1  libvdpau_nvidia.so                           &&
-  ln  -sfn  libvdpau_trace.so.${VERSION/-/.}  libvdpau_trace.so.1              &&
-  ln  -sfn  libvdpau_trace.so.1  libvdpau_trace.so                             &&
-  popd                                                           &&
+  popd                                                                         &&
 
 #
 # Install OpenCL headers
