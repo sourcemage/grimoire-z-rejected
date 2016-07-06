@@ -1,0 +1,15 @@
+mk_source_dir "$SOURCE_DIRECTORY" &&
+cd "$SOURCE_DIRECTORY" &&
+unpack_file &&
+# This is hugely wasteful, copying the binaries multiple times.
+# But castfs and also installwatch break when I try to directly
+# extract the rpms in INSTALL.
+for rpm in \
+  gskcrypt64-*.rpm \
+  gskssl64-*.rpm \
+  TIVsm-API64.*.rpm \
+  TIVsm-BA.*.rpm
+do
+  rpm2tar -O "$rpm" | tar -xvf- || exit 1
+done
+

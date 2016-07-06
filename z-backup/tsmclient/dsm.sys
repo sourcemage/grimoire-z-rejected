@@ -1,0 +1,18 @@
+*********************************************************************
+ * dsm.sys - TSM-Server TSMSRV1
+*********************************************************************
+SErvername         TSMSRV1
+TCPServeraddress   [configure me] 
+TCPPort            [configure me]
+COMMmethod         TCPIP
+Passwordaccess     GENERATE
+Nodename           [configure me]
+TCPWindowsize      0
+TCPNodelay         Yes
+TXNBytelimit       1G
+ERRORLOGname       /var/log/dsmerror.log
+ERRORLOGretention  30 D
+SCHEDLOGname       /var/log/dsmsched.log
+SCHEDLOGretention  30 D
+MANAGEDServices    schedule
+********************************************************************

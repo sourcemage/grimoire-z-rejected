@@ -1,0 +1,19 @@
+2016-07-05 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS: update to 7.1.3.2
+	* dsm.sys: more generic example
+	  created at runtime in installation prefix
+	* PRE_BUILD: explain why separate extraction is needed
+	* INSTALL: streamlined, stuff everything into /opt/tivoli,
+	  not using mv but cp to avoid stumbling over runtime-created
+	  files
+
+2015-02-11 Thomas Orgis <sobukus@sourcemage.org>
+	* INSTALL: Use recommended locale settings in wrapper.
+	  Why did it even work before with 6.4.1.7?
+
+2015-02-09 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS, PRE_BUILD: 6.4.2.2, with download
+	* 6.4.1.7-*.tar: removed old source
+
+2014-10-16 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS, PRE_BUILD, DEPENDS, BUILD, INSTALL: created

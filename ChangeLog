@@ -1,3 +1,6 @@
+2016-07-06 Thomas Orgis <sobukus@sourcemage.org>
+	* z-backup/tsmclient: Tivoli Storage Manager backup client
+
 2016-05-03 Ismael Luceno <ismael@sourcemage.org>
 	* z-x11/openmotif: spell deprecated in favor of motif
 

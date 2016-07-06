@@ -1,0 +1,61 @@
+# Copy things, to avoid breakage if stuff already exists.
+# Using tar for that job seems to break installwatch.
+mkdir -p /opt/tivoli &&
+cd       /opt/tivoli &&
+# cp -a breaks castfs
+cp -r "$SOURCE_DIRECTORY"/opt/tivoli/* . &&
+cp -r "$SOURCE_DIRECTORY"/usr          . &&
+# Relative links in ./usr need that.
+ln -sf ../../opt . &&
+
+# Contain everything in /opt/tivoli.
+# Assumption: There is either lib/ or lib64/ (also bin64/).
+gsklib=$(cd usr/local/ibm/gsk*/lib*/ && pwd) &&
+tivolib=$(cd usr/lib*/ && pwd) &&
+binlib=$(cd tsm/client/ba/bin/lib*/ && pwd) &&
+apilib=$(cd tsm/client/api/bin*/ && pwd) &&
+
+dsm_dir=/opt/tivoli/tsm/client/ba/bin &&
+ln -sf /etc/tivoli/dsm.opt $dsm_dir/dsm.opt &&
+ln -sf /etc/tivoli/dsm.sys $dsm_dir/dsm.sys &&
+
+mkdir -p /etc/tivoli &&
+install_config_file "$SCRIPT_DIRECTORY"/dsm.sys /etc/tivoli/dsm.sys &&
+install_config_file "$SCRIPT_DIRECTORY"/dsm.opt /etc/tivoli/dsm.opt &&
+message "${MESSAGE_COLOR}Remember to edit configuration under /etc/tivoli the first time.${NORMAL_COLOR}" &&
+
+tsm_wrapper=/opt/tivoli/tsm/bin/tsm-wrapper &&
+ldpath="$apilib:$gsklib:$tivolib:$binlib" &&
+mkdir $(dirname $tsm_wrapper) &&
+cat <<EOF > $tsm_wrapper &&
+#!/bin/sh
+# dsmj can use openjdk wahou # to force the use of Sun's Java
+# dsmj can use openjdk wahou # export PATH=/usr/lib/jvm/java-6-sun/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export DSM_DIR=$dsm_dir
+export LANG=POSIX
+export LC_TYPE=en_US.UTF-8
+export LD_LIBRARY_PATH='$ldpath'
+
+appname=\$(basename "\$0")
+exec "\$DSM_DIR/\$appname" "\$@"
+EOF
+
+chmod +x $tsm_wrapper &&
+
+for i in \
+  dsmadmc \
+  dsmagent \
+  dsmc \
+  dsmcad \
+  dsmj \
+  dsmswitch \
+  dsmtca \
+  dsmtrace
+do
+  ln -svf $tsm_wrapper /usr/bin/$i
+done
+
+# Running with other locales is risky, and this symlink for some reason
+# is (was?) required for EN_US to work properly. Do not remove unless you
+# really understand how the TSM client works (that would be a first)!
+#ln -sfv ../../lang/EN_US $dsm_dir/EN_US

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#. /etc/sysconfig/dsmcad
+
+PROGRAM=/usr/bin/dsmcad
+ARGS=""
+RUNLEVEL=3
+PIDFILE=/var/run/dsmcad.pid
+
+. /etc/init.d/smgl_init
+
+# Hm, is that enough? Need to take care for forked-off instance of dsmcad?
