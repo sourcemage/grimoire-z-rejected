@@ -1,3 +1,6 @@
+2016-07-12 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 11.2.202.632; SECURITY_PATCH++
+
 2016-05-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: 11.2.202.621, SECURITY_PATCH=67, fixes CVE-2016-4117 and 24
 	  others
