@@ -1,3 +1,7 @@
+2016-07-27 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 8u102, use upstream hashes
+	  https://www.oracle.com/webfolder/s/digest/8u102checksum.html
+
 2016-05-28 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 8u92, use upstream hashes
 	  https://www.oracle.com/webfolder/s/digest/8u92checksum.html
