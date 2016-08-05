@@ -81,20 +81,17 @@ popd                                                           &&
 #
 # Install X11 modules
 #
-mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/drivers                         &&
-for driver in nvidia_drv.so; do
-  install -v -m 0644  -o root  -g root            \
-     $driver  $INSTALL_ROOT/usr/lib/xorg/modules/drivers/
-done                                            &&
-install -v -m 0644  -o root  -g root libglx.so.${VERSION/-/.} \
-        $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia            &&
+mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/drivers &&
+install -v -m 0644 -o root -g root nvidia_drv.so $INSTALL_ROOT/usr/lib/xorg/modules/drivers/ &&
+install -v -m 0644 -o root -g root libglx.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/ &&
+install -v -m 0644 -o root -g root libGLX_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia/ &&
 #
 # Setup symlinks
 #
 pushd  $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia &&
 ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
 popd                                                &&
-
+ln -sfn /usr/lib/.nvidia/libGLX_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/libGLX_indirect.so.0 &&
 #
 # Install Cuda headers
 #

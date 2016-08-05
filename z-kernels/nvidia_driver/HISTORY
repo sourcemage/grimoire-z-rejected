@@ -1,3 +1,10 @@
+2016-08-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: stable version 367.35
+	* PRE_BUILD, 0001-fix-multiple-definition-of-radix_tree_empty-beta.patch, 0001-fix-multiple-definition-of-radix_tree_empty-stable.patch: fix
+	  build against linux 4.7
+	* PRE_BUILD, linux-4.6.patch: fix build of beta version against linux 4.6
+	* INSTALL: install the right files
+
 2016-05-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: stable version 361.42, beta version 364.19
 
