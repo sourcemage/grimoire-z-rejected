@@ -1,17 +1,32 @@
              SPELL=opera
+if [[ $OPERA_BRANCH == "stable" ]]; then
+           VERSION=39.0.2256.48
+else
            VERSION=12.16
              BUILD=1860
     SECURITY_PATCH=4
-    if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+fi
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+  if [[ $OPERA_BRANCH == "stable" ]]; then
+          PLATFORM=amd64
+  else
           PLATFORM=x86_64
-    else
+  fi
+else
           PLATFORM=i386
-    fi
+fi
+if [[ $OPERA_BRANCH == "stable" ]]; then
+            SOURCE=${SPELL}-stable_${VERSION}_${PLATFORM}.rpm
+     SOURCE_URL[0]=http://get.geo.opera.com/pub/${SPELL}/desktop/${VERSION}/linux/${SOURCE}
+  SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+       GATHER_DOCS=off
+else
             SOURCE=${SPELL}-${VERSION}-${BUILD}.${PLATFORM}.linux.tar.bz2
-  SOURCE_DIRECTORY=${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${PLATFORM}.linux
      SOURCE_URL[0]=ftp://ftp.tiscali.nl/pub/mirror/opera/linux/${VERSION/./}/$SOURCE
      SOURCE_URL[1]=ftp://ftp.scarlet.be/pub/opera/linux/${VERSION/./}/$SOURCE
      SOURCE_URL[2]=ftp://ftp.opera.com/pub/opera/linux/${VERSION/./}/$SOURCE
+  SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}-${BUILD}.${PLATFORM}.linux"
+fi
       SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENCE[0]=UNKNOWN
         WEB_SITE=http://www.opera.com/

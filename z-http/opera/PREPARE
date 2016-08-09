@@ -4,4 +4,8 @@ if [[ ${SMGL_COMPAT_ARCHS[1]} != "x86_64"
    && ${SMGL_COMPAT_ARCHS[1]} != "ia32" ]]; then
   message "${PROBLEM_COLOR}Opera is not available for platform ${SMGL_COMPAT_ARCHS[1]}${DEFAUL_COLOR}"
   false
-fi
+fi &&
+
+config_query_list OPERA_BRANCH "What branch do you wish to use?" \
+                               "stable" \
+                               "legacy"

@@ -2,8 +2,9 @@
 #
 source $GRIMOIRE/REJECTED_MSG &&
 
-config_query_list OPERA_TOOLKIT \
-  "What graphics toolkit do you wish to use?" \
-  "none" \
-  "gtk+2" \
-  "kde4"
+if [[ $OPERA_BRANCH == "legacy" ]]; then
+  config_query_list OPERA_TOOLKIT "What graphics toolkit do you wish to use?" \
+                                  "none" \
+                                  "gtk+2" \
+                                  "kde4"
+fi

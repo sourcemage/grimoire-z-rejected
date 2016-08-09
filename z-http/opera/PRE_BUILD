@@ -1,4 +1,12 @@
-default_pre_build &&
-cd $SOURCE_DIRECTORY &&
+if [[ $OPERA_BRANCH == "stable" ]]; then
+  mkdir "${SOURCE_DIRECTORY}" &&
+  cd "${SOURCE_DIRECTORY}" &&
+  verify_file &&
+  rpm2tar -O "${SOURCE_CACHE}/${SOURCE}" > "${SPELL}-${VERSION}.tar" &&
+  tar xvf "${SPELL}-${VERSION}.tar"
+else
+  default_pre_build &&
+  cd $SOURCE_DIRECTORY &&
 
-sedit "s,/usr/local,$INSTALL_ROOT/usr,;s:finalize_desktop[^(]*$:\::" install
+  sedit "s,/usr/local,$INSTALL_ROOT/usr,;s:finalize_desktop[^(]*$:\::" install
+fi

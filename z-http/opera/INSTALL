@@ -1,8 +1,14 @@
-./install --system --unattended &&
+if [[ $OPERA_BRANCH == "stable" ]]; then
+  cp -av usr/lib64/opera "${INSTALL_ROOT}/usr/lib" &&
+  cp -av usr/share "${INSTALL_ROOT}/usr/share" &&
+  ln -vsf "${TRACK_ROOT}/usr/lib/opera/opera" "/usr/bin/opera"
+else
+  ./install --system --unattended &&
 
-if [[ $OPERA_TOOLKIT != "gtk+2" ]]; then
-  rm -f $INSTALL_ROOT/usr/lib/opera/liboperagtk.so
-fi &&
-if [[ $OPERA_TOOLKIT != "kde4" ]]; then
-  rm -f $INSTALL_ROOT/usr/lib/opera/liboperakde4.so
+  if [[ $OPERA_TOOLKIT != "gtk+2" ]]; then
+    rm -f $INSTALL_ROOT/usr/lib/opera/liboperagtk.so
+  fi &&
+  if [[ $OPERA_TOOLKIT != "kde4" ]]; then
+    rm -f $INSTALL_ROOT/usr/lib/opera/liboperakde4.so
+  fi
 fi

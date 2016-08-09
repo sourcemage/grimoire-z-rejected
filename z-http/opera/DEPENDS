@@ -1,19 +1,46 @@
+depends -sub CXX gcc &&
+
 # Main opera binary dependencies
 depends libx11 &&
 depends libxext &&
-depends libsm &&
-depends libice &&
-depends libxft &&
 depends freetype2 &&
-depends zlib &&
 depends fontconfig &&
 depends libxrender &&
 
-# Additional plugin wrapper dependencies
-depends libxt &&
+if [[ $OPERA_BRANCH == "stable" ]]; then
+  depends rpm2targz &&
+
+  depends curl &&
+  depends nspr &&
+  depends nss &&
+  depends expat &&
+  depends libxi &&
+  depends libxtst &&
+  depends libxscrnsaver &&
+  depends libxcomposite &&
+  depends libxrandr &&
+  depends libxfixes &&
+  depends libxdamage &&
+  depends libxcursor &&
+  depends gconf2 &&
+  depends alsa-lib &&
+  depends dbus &&
+  depends libnotify &&
+  depends cups
+else
+  depends libsm &&
+  depends libice &&
+  depends libxft &&
+  depends zlib &&
+
+  # Additional plugin wrapper dependencies
+  depends libxt &&
+
+  optional_depends  JAVA  ""  ""  "for Java Runtime Environment"
+fi &&
 
 # Additional graphical toolkit dependencies
-if [[ $OPERA_TOOLKIT == "gtk+2" ]]; then
+if [[ $OPERA_TOOLKIT == "gtk+2" ]] || [[ $OPERA_BRANCH == "stable" ]]; then
   depends gtk+2 &&
   depends atk &&
   depends pango &&
@@ -22,6 +49,4 @@ if [[ $OPERA_TOOLKIT == "gtk+2" ]]; then
 elif [[ $OPERA_TOOLKIT == "kde4" ]]; then
   depends kdelibs4 &&
   depends qt4
-fi &&
-
-optional_depends  JAVA  ""  ""  "for Java Runtime Environment"
+fi
