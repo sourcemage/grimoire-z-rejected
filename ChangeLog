@@ -1,3 +1,6 @@
+2016-08-08 Vlad Glagolev <stealth@sourcemage.org>
+	* z-http/vivaldi: new spell, advanced browser made for power users in mind
+
 2016-07-06 Thomas Orgis <sobukus@sourcemage.org>
 	* z-backup/tsmclient: Tivoli Storage Manager backup client
 

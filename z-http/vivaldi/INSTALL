@@ -1,0 +1,25 @@
+if [[ $VIVALDI_BRANCH == "stable" ]]; then
+  local branch_target="vivaldi"
+else
+  local branch_target="vivaldi-snapshot" &&
+
+  # re-create that later
+  rm -f opt/${branch_target}/vivaldi
+fi &&
+
+# remove potentially broken link
+rm -f opt/${branch_target}/libwidevinecdm.so &&
+
+cp -av opt/${branch_target} "${INSTALL_ROOT}/opt/" &&
+cp -av usr/share/* "${INSTALL_ROOT}/usr/share/" &&
+
+if [[ $VIVALDI_BRANCH == "stable" ]]; then
+  ln -vsf "${TRACK_ROOT}/opt/${branch_target}/${branch_target}" \
+        "${INSTALL_ROOT}/usr/bin/${branch_target}-stable"
+else
+  ln -vsf "${TRACK_ROOT}/opt/${branch_target}/${branch_target}" \
+          "${INSTALL_ROOT}/usr/bin/${branch_target}" &&
+
+  ln -vsf "${TRACK_ROOT}/opt/${branch_target}/${branch_target}" \
+          "${INSTALL_ROOT}/opt/${branch_target}/vivaldi"
+fi

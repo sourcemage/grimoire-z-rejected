@@ -1,0 +1,3 @@
+if spell_ok desktop-file-utils; then
+  "$INSTALL_ROOT/usr/bin/update-desktop-database" "$INSTALL_ROOT/usr/share/applications"
+fi

@@ -1,0 +1,36 @@
+# extract tool
+depends rpm2targz &&
+
+# crypto stack
+depends nspr &&
+depends nss &&
+
+# X11
+depends libx11 &&
+depends libxt &&
+depends libxext &&
+depends libxscrnsaver &&
+depends libxi &&
+depends libxtst &&
+depends libxcomposite &&
+depends libxrender &&
+depends libxrandr &&
+depends libxfixes &&
+depends libxdamage &&
+depends libxcursor &&
+
+# GTK+
+depends expat &&
+depends dbus &&
+depends glib2 &&
+depends freetype2 &&
+depends fontconfig &&
+depends libxrender &&
+depends atk &&
+depends pango &&
+depends cairo &&
+depends gtk+2 &&
+depends gconf2 &&
+
+# printing
+depends cups
