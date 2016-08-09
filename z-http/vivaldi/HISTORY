@@ -1,3 +1,6 @@
+2016-08-09 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: switched to runtime_depends, added missing alsa-lib and gcc
+
 2016-08-08 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, DEPENDS, {PRE_,}BUILD, INSTALL, CONFIGURE, FINAL, PREPARE,
 	  PROVIDES, UNATTEND_SAFE: created spell, version 1.2.490.43-1 (stable),
