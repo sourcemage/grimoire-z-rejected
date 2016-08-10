@@ -1,0 +1,3 @@
+2016-08-10 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS, DEPENDS, {PRE_,}BUILD, INSTALL, CONFIGURE, UNATTEND_SAFE:
+	  created spell, version 22.0.0.209

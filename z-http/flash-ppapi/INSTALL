@@ -1,0 +1,7 @@
+local pp_directory="${INSTALL_ROOT}/opt/google/chrome/PepperFlash" &&
+
+if [ ! -d "$pp_directory" ]; then
+  mkdir -p "$pp_directory"
+fi &&
+
+install -vm 755 libpepflashplayer.so "$pp_directory/libpepflashplayer.so"

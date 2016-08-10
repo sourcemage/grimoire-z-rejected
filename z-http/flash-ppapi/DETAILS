@@ -1,0 +1,22 @@
+           SPELL=flash-ppapi
+         VERSION=22.0.0.209
+  SECURITY_PATCH=0
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+            ARCH=x86_64
+     SOURCE_HASH=sha512:456052ff699c48b4d0c54439d57269115badef8940019b30999dcc8245b5b61394dc0b4095c71bce48e8eb2560369033b6d7e70a7a1c697ed6149707e85a5aa4
+else
+            ARCH=i386
+     SOURCE_HASH=sha512:07ab7a662aa45855ce02aba5bd9367df2a73910f4a43869922c2d7c332b2bb6d265b5db24dfb0f2ff57d42f99a00e83a51fb8ffee3739c5d5cd9ae821e83488b
+fi
+          SOURCE=flash_player_ppapi_linux.${ARCH}.tar.gz
+   SOURCE_URL[0]=https://fpdownload.adobe.com/pub/flashplayer/pdc/${VERSION}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+        DOC_DIRS="LGPL"
+      LICENSE[0]=https://www.adobe.com/legal/licenses-terms.html
+        WEB_SITE=https://www.adobe.com/products/flashplayer.html
+         ENTERED=20160810
+          REJECT="is non-source and has licensing issues"
+           SHORT="Adobe Flash Plugin for web browsers (PPAPI version)"
+cat << EOF
+Adobe Flash Plugin for web browsers (PPAPI version).
+EOF

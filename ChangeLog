@@ -1,3 +1,7 @@
+2016-08-10 Vlad Glagolev <stealth@sourcemage.org>
+	* z-http/flash-ppapi: new spell, Adobe Flash Plugin for web browsers
+	  (PPAPI version)
+
 2016-08-08 Vlad Glagolev <stealth@sourcemage.org>
 	* z-http/vivaldi: new spell, advanced browser made for power users in mind
 
