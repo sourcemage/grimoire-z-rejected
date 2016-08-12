@@ -32,6 +32,7 @@ runtime_depends libxrender &&
 runtime_depends atk &&
 runtime_depends pango &&
 runtime_depends cairo &&
+runtime_depends gdk-pixbuf2 &&
 runtime_depends gtk+2 &&
 runtime_depends gconf2 &&
 
