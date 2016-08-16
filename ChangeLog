@@ -1,3 +1,7 @@
+2016-08-16 Ismael Luceno <ismael@sourcemage.org>
+	* z-utils/bluejeans: new spell, BlueJeans Video Conferencing Plugin
+	  for Firefox
+
 2016-08-10 Vlad Glagolev <stealth@sourcemage.org>
 	* z-http/flash-ppapi: new spell, Adobe Flash Plugin for web browsers
 	  (PPAPI version)

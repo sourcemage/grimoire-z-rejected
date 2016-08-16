@@ -1,0 +1,36 @@
+           SPELL=bluejeans
+         VERSION=2.160.66.8
+case "$(uname -m)" in
+x86_64)
+            ARCH=amd64
+     SOURCE_HASH=sha512:72e9631c05d3807663fde4304e42a40a6993f3875c5caed6798128c4de9869813c3931db2e949fb415777cc9a61d889114fc0e5a198461344dd485bfae621b2b
+;;
+i?86)
+            ARCH=i386
+#    SOURCE_HASH=sha512:
+;;
+esac
+          SOURCE="bjnplugin_$VERSION-1_$ARCH.deb"
+   SOURCE_URL[0]="https://swdl.bluejeans.com/skinny/$SOURCE"
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+        WEB_SITE="https://bluejeans.com"
+      LICENSE[0]="UNKNOWN"
+	  REJECT="binary only"
+         ENTERED=20160816
+        KEYWORDS=""
+           SHORT="BlueJeans Video Conferencing Plugin for Firefox"
+cat << EOF
+The Blue Jeans Browser Video Plugin is a browser plugin that allows a user
+to communicate over audio/video with the Blue Jeans multi-party interoperable
+cloud conferencing service using a supported browser (Firefox on Linux).
+
+Other participants of the same meeting can join via any of the following:
+ 1. Blue Jeans Browser Video Plugin on supported browsers
+    (Firefox, Safari, IE)
+ 2. WebRTC on compatible browsers (Chrome)
+ 3. Video clients or hardware devices that support H.323 or SIP
+ 4. Proprietary clients like Cisco Jabber, Microsoft Lync
+    or Skype for Business
+ 5. Blue Jeans desktop or mobile applications
+ 6. PSTN phone service
+EOF

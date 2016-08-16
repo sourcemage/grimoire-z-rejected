@@ -1,0 +1,11 @@
+depends bzip2 &&
+depends expat &&
+depends firefox &&
+depends fontconfig &&
+depends freetype2 &&
+depends gtk+2 &&
+depends libbsd &&
+depends libpng &&
+depends mesalib &&
+depends pcre &&
+depends zlib

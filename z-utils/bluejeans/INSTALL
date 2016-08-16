@@ -1,0 +1,9 @@
+install -d "$INSTALL_ROOT"/usr/lib/mozilla/plugins/.bjnplugin/{bin,config}
+for i in \
+	.bjnplugin/config/config.xml \
+	.bjnplugin/config/speakerTest.wav \
+	npbjninstallplugin_2.160.66.8.so \
+	npbjnplugin_2.160.66.8.so
+do
+  install -m644 {,"$INSTALL_ROOT"/}usr/lib/mozilla/plugins/"$i"
+done
