@@ -2,7 +2,7 @@
 if [[ $VIVALDI_BRANCH == "stable" ]]; then
          VERSION=1.3.551.30-1
 else
-         VERSION=1.3.551.21-1
+         VERSION=1.3.551.37-1
 fi
 
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then

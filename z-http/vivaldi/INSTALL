@@ -1,7 +1,9 @@
 if [[ $VIVALDI_BRANCH == "stable" ]]; then
-  local branch_target="vivaldi"
+  local branch_target="vivaldi" &&
+  local bin_link="${INSTALL_ROOT}/usr/bin/${branch_target}-stable"
 else
   local branch_target="vivaldi-snapshot" &&
+  local bin_link="${INSTALL_ROOT}/usr/bin/${branch_target}"
 
   # re-create that later
   rm -f opt/${branch_target}/vivaldi
@@ -15,11 +17,13 @@ cp -av usr/share/* "${INSTALL_ROOT}/usr/share/" &&
 
 if [[ $VIVALDI_BRANCH == "stable" ]]; then
   ln -vsf "${TRACK_ROOT}/opt/${branch_target}/${branch_target}" \
-        "${INSTALL_ROOT}/usr/bin/${branch_target}-stable"
+          "${bin_link}"
 else
   ln -vsf "${TRACK_ROOT}/opt/${branch_target}/${branch_target}" \
-          "${INSTALL_ROOT}/usr/bin/${branch_target}" &&
+          "${bin_link}" &&
 
   ln -vsf "${TRACK_ROOT}/opt/${branch_target}/${branch_target}" \
           "${INSTALL_ROOT}/opt/${branch_target}/vivaldi"
-fi
+fi &&
+
+ln -vsf "${bin_link}" "${INSTALL_ROOT}/usr/bin/vivaldi"

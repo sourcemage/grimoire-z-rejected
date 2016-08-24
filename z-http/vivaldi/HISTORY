@@ -1,3 +1,7 @@
+2016-08-24 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.3.551.37-1 (snapshot)
+	* INSTALL: add universal /usr/bin/vivaldi symlink
+
 2016-08-12 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 1.3.551.30-1 (stable)
 	* DEPENDS: added missing runtime depends (gdk-pixbuf2)
