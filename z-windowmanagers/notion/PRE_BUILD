@@ -1,6 +1,11 @@
 default_pre_build &&
 cd $SOURCE_DIRECTORY &&
 
+if [ -d "$SPELL_DIRECTORY/patches" ]; then
+  find "$SPELL_DIRECTORY/patches" \( -name \*.patch -o -name \*.diff \) \
+    -print0 | sort -zV | xargs -0 -n 1 -t patch -lfp1 -i
+fi
+
 if ! is_depends_enabled $SPELL libxinerama; then
   sedit 's,mod_xinerama,,' modulelist.mk
 fi

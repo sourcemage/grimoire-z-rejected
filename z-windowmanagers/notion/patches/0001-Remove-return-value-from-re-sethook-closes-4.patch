@@ -1,0 +1,55 @@
+From bf2903a13b6ecd05fb3583ec1fd59d7faa6dd51f Mon Sep 17 00:00:00 2001
+From: Arnout Engelen <arnouten@bzzt.net>
+Date: Sun, 14 Jun 2015 14:30:39 +0200
+Subject: [PATCH] Remove return value from '(re)sethook' (closes #4)
+
+The upstream function always returned '1' since at least 5.0.3, and was
+removed in lua 5.3. We don't appear to use this value anywhere.
+
+Signed-off-by: Ismael Luceno <ismael@iodev.co.uk>
+---
+ libextl/luaextl.c | 8 ++++----
+ libextl/luaextl.h | 4 ++--
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/libextl/luaextl.c b/libextl/luaextl.c
+index 8e9f761e0820..7cec47c6ce00 100644
+--- a/libextl/luaextl.c
++++ b/libextl/luaextl.c
+@@ -2586,15 +2586,15 @@ void extl_dohook(lua_State *L, lua_Debug *ar)
+         (*current_hook) (event, ar->name, ar->source + 1, ar->linedefined);
+ }
+
+-int extl_sethook(ExtlHook hook)
++void extl_sethook(ExtlHook hook)
+ {
+     current_hook = hook;
+-    return lua_sethook(l_st, extl_dohook, LUA_MASKCALL | LUA_MASKRET, -1);
++    lua_sethook(l_st, extl_dohook, LUA_MASKCALL | LUA_MASKRET, -1);
+ }
+
+-int extl_resethook()
++void extl_resethook()
+ {
+-    return lua_sethook(l_st, NULL, 0, -1);
++    lua_sethook(l_st, NULL, 0, -1);
+ }
+
+ /*}}}*/
+diff --git a/libextl/luaextl.h b/libextl/luaextl.h
+index 153a66a03570..4d6e87afeb46 100644
+--- a/libextl/luaextl.h
++++ b/libextl/luaextl.h
+@@ -190,8 +190,8 @@ enum ExtlHookEvent {
+
+ typedef void (*ExtlHook) (const enum ExtlHookEvent event, const char *name, const char *source, int currentline);
+
+-int extl_sethook(ExtlHook hook);
+-int extl_resethook();
++void extl_sethook(ExtlHook hook);
++void extl_resethook();
+
+ /* Misc. */
+
+--
+2.9.2

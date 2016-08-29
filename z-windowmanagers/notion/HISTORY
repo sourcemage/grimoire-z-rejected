@@ -1,6 +1,8 @@
 2016-08-29 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: Fixed SOURCE_URL[0]
 	  updated spell to 3-2015061300
+	* patches/0001-Remove-return-value-from-re-sethook-closes-4.patch,
+	  DEPENDS, PRE_BUILD: Fixed build against Lua 5.3
 
 2014-07-06 Remko van der Vossen <wich@sourcemage.org>
 	* DETAILS: version 3-2014052800
