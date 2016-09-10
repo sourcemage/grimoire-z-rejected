@@ -1,3 +1,9 @@
+2016-09-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: versions 367.44 and 370.28
+	* 0001-fix-multiple-definition-of-radix_tree_empty-beta.patch,
+	  0001-fix-multiple-definition-of-radix_tree_empty-stable.patch,
+	  linux-4.6.patch, PRE_BUILD: remove obsolete patches
+
 2016-08-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: stable version 367.35
 	* PRE_BUILD, 0001-fix-multiple-definition-of-radix_tree_empty-beta.patch, 0001-fix-multiple-definition-of-radix_tree_empty-stable.patch: fix

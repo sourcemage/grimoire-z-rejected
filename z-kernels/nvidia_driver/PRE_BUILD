@@ -6,9 +6,6 @@ sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
                --target $SOURCE_DIRECTORY                     &&
 check_tmp_noexec /tmp &&
 cd $SOURCE_DIRECTORY                                          &&
-if [[ $NVIDIA_BETA == "y" ]]; then
-  patch -p1 < "$SPELL_DIRECTORY/linux-4.6.patch"
-fi &&
 
 # Fix defunct desktop file
 sedit  's/__.*__\///'  nvidia-settings.desktop  &&
@@ -25,12 +22,5 @@ cd  $SOURCE_DIRECTORY/kernel     &&
 # Modify module-install target to use `depmod -ae` on $KVER rather
 # than the running kernel
 #
-sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  Makefile &&
-
-cd "$SOURCE_DIRECTORY" &&
-if [[ $NVIDIA_BETA == n ]]; then
-  patch -p1 < "$SPELL_DIRECTORY/0001-fix-multiple-definition-of-radix_tree_empty-stable.patch"
-else
-  patch -p1 < "$SPELL_DIRECTORY/0001-fix-multiple-definition-of-radix_tree_empty-beta.patch"
-fi
+sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  Makefile
 
