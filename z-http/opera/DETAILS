@@ -1,6 +1,6 @@
              SPELL=opera
 if [[ $OPERA_BRANCH == "stable" ]]; then
-           VERSION=39.0.2256.48
+           VERSION=40.0.2308.54
 else
            VERSION=12.16
              BUILD=1860
