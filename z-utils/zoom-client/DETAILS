@@ -1,0 +1,22 @@
+           SPELL=zoom-client
+          SPELLX=${SPELL/-client/}
+         VERSION=2.0.63547.0830
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+            ARCH=x86_64
+     SOURCE_HASH=sha512:14f5f79429800dfcf734911c9aa0e06722821aea63d58a0346e722be951f9ee2e72bb319cce740df52c81ae28e97acdf995d70ca4a5f96fc960adc1b501ea046
+else
+            ARCH=i686
+     SOURCE_HASH=sha512:9d63422b58d041ea854c7b768ce8b2f9cd3f5fda3f3113df4d71b97116e8480b2f4ee682f60d8e054b321f00ce90e45229170ca1c23a6a476a58d198ca7279cf
+fi
+          SOURCE=${SPELL}-${VERSION}_${ARCH}.tar.xz
+   SOURCE_URL[0]=https://zoom.us/client/${VERSION}/${SPELLX}_${ARCH}.tar.xz
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}"
+     GATHER_DOCS=off
+        WEB_SITE=https://zoom.us/
+      LICENSE[0]=UNKNOWN
+         ENTERED=20161019
+          REJECT="is non-source"
+           SHORT="Zoom client for Linux"
+cat << EOF
+Zoom is cloud meeting and webinar software.
+EOF
