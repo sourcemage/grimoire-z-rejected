@@ -1,16 +1,16 @@
            SPELL=flash
-         VERSION=11.2.202.637
+         VERSION=11.2.202.643
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=x86_64
-     SOURCE_HASH=sha512:c75ec4b9a4aeb7ae0ea659093e84228ef68aa3257ad28d813eaa3680e448ed3aebb92c18fc721a464fa5a5ec4710795681d80255097dcbbcd6142338139c4469
+     SOURCE_HASH=sha512:6b909de61705c41d734ef0ae9863d3b413b0af3d05f8b75dd1a05a579ef6a7cbc123d46e8cbcab387e998ff44430468aae2695ae1ac45b9d6c3b3fa4748b14a8
 else
             ARCH=i386
-     SOURCE_HASH=sha512:f752f00172f0b709d872be1576e9cc3af3167e7d8f26ad637031d4336650ffeca94f7ae71e761aefb32cf7d7737af9978d45cdfe2872208b3a915aa7e849ca5f
+     SOURCE_HASH=sha512:a8cabbdec79a98e65b5fb05097d0e5e63e69aa555564e0d24f369fba0a9ed854d556cfa822aaa1ac3bca14179b9ca9b77d1f3a08222b3376fca53d6d01a7d9cd
 fi
           SOURCE=flashplayer-$VERSION.$ARCH.tar.gz
    SOURCE_URL[0]=http://fpdownload.macromedia.com/get/flashplayer/pdc/$VERSION/install_flash_player_11_linux.$ARCH.tar.gz
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL"
-  SECURITY_PATCH=70
+  SECURITY_PATCH=71
       LICENSE[0]=http://www.macromedia.com/shockwave/download/license/desktop/
      GATHER_DOCS=off
         WEB_SITE=http://www.adobe.com/products/flashplayer.html
