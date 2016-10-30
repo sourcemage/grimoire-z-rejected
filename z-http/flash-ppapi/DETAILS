@@ -1,12 +1,12 @@
            SPELL=flash-ppapi
-         VERSION=23.0.0.185
-  SECURITY_PATCH=2
+         VERSION=23.0.0.205
+  SECURITY_PATCH=3
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=x86_64
-     SOURCE_HASH=sha512:3f2aa18846c6f6ab543a4b1a2ee35cda2f7ac22a7a4ad269ee6a654a3369128843e3ca0f999eece62b102ee88f2e792048badff2108a09de79a188070a355f51
+     SOURCE_HASH=sha512:d2b55c5f113547c6314b3f6896be3cc37ee72bf675b1c0d6859145016e892b106b084234cf3aff671907f45a608a041cbd70aa90b34dc001cae02a613b6c6d41
 else
             ARCH=i386
-     SOURCE_HASH=sha512:7b743063429fa1cb2278e86ff4cbe3a343d7bcdf738d18c487f4a55baea8be73d3aefd576b4bfbf004bdd09da8823524e49af870b1b27514bda6e7b901f15aa0
+     SOURCE_HASH=sha512:3426bcaea904921fa1d06cb648e09ab50fdcef15c8f863a53f71b1e0fec61d530e06185a1b7bce5e2e5f4259e875473fc58538e8ebaf334ffbb3b629c6408ecb
 fi
           SOURCE=flash_player_ppapi_linux-${VERSION}.${ARCH}.tar.gz
    SOURCE_URL[0]=https://fpdownload.adobe.com/pub/flashplayer/pdc/${VERSION}/flash_player_ppapi_linux.${ARCH}.tar.gz
