@@ -1,15 +1,16 @@
            SPELL=flash-ppapi
-         VERSION=23.0.0.205
-  SECURITY_PATCH=3
+         VERSION=23.0.0.207
+  SECURITY_PATCH=4
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=x86_64
-     SOURCE_HASH=sha512:d2b55c5f113547c6314b3f6896be3cc37ee72bf675b1c0d6859145016e892b106b084234cf3aff671907f45a608a041cbd70aa90b34dc001cae02a613b6c6d41
+     SOURCE_HASH=sha512:bfb79317ee9047ee1b9eb9f797e48b63d6fa6aede2da07d1bb851c310c2da48cb6df9fbaf978f9db65c2fc382bf2c71fd2fd3d832a82e4aba65226f1aa067ece
 else
             ARCH=i386
-     SOURCE_HASH=sha512:3426bcaea904921fa1d06cb648e09ab50fdcef15c8f863a53f71b1e0fec61d530e06185a1b7bce5e2e5f4259e875473fc58538e8ebaf334ffbb3b629c6408ecb
+     SOURCE_HASH=sha512:74c90e553326e5029546a6472ef09ccca9bad1ffdbcc9453dc066880d30f21034a292f9ab6fce235ef3c0b3847489bd33a9b7b8610bcd7c6539ec3d9e4715e49
 fi
           SOURCE=flash_player_ppapi_linux-${VERSION}.${ARCH}.tar.gz
    SOURCE_URL[0]=https://fpdownload.adobe.com/pub/flashplayer/pdc/${VERSION}/flash_player_ppapi_linux.${ARCH}.tar.gz
+    SOURCE_HINTS="no-check-certificate"
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         DOC_DIRS="LGPL"
       LICENSE[0]=https://www.adobe.com/legal/licenses-terms.html
