@@ -9,8 +9,7 @@ else
      SOURCE_HASH=sha512:74c90e553326e5029546a6472ef09ccca9bad1ffdbcc9453dc066880d30f21034a292f9ab6fce235ef3c0b3847489bd33a9b7b8610bcd7c6539ec3d9e4715e49
 fi
           SOURCE=flash_player_ppapi_linux-${VERSION}.${ARCH}.tar.gz
-   SOURCE_URL[0]=https://fpdownload.adobe.com/pub/flashplayer/pdc/${VERSION}/flash_player_ppapi_linux.${ARCH}.tar.gz
-    SOURCE_HINTS="no-check-certificate"
+   SOURCE_URL[0]=http://fpdownload.adobe.com/pub/flashplayer/pdc/${VERSION}/flash_player_ppapi_linux.${ARCH}.tar.gz
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
         DOC_DIRS="LGPL"
       LICENSE[0]=https://www.adobe.com/legal/licenses-terms.html

@@ -1,6 +1,5 @@
 2016-11-11 Vlad Glagolev <stealth@sourcemage.org>
-	* DETAILS: version 23.0.0.207, SECURITY_PATCH++; added SOURCE_HINTS to
-	  fix download failure
+	* DETAILS: version 23.0.0.207, SECURITY_PATCH++; switched to plain http
 
 2016-10-30 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: version 23.0.0.205, SECURITY_PATCH++
