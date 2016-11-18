@@ -1,3 +1,6 @@
+2016-11-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: versions 367.57
+
 2016-09-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: versions 367.44 and 370.28
 	* 0001-fix-multiple-definition-of-radix_tree_empty-beta.patch,
