@@ -8,6 +8,7 @@
 SOURCE_HASH=sha512:451280deabae62c6c2acd281165cbcdec7421aed17531bcc387e46be57fcbb85960fb0a6c8686e5d65d24a732c2778ce8610407f0c1fba21cd5bfce1c2c29fef
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
            SHORT="IBM Tivoli Storage Manager (TSM) client software, x86-64 only"
+      PATCHLEVEL=1
          ARCHIVE=off
          WEBSITE=http://www.rrz.uni-hamburg.de/de/services/datenhaltung/backup.html
 cat << EOF
