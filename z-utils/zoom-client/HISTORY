@@ -1,3 +1,7 @@
+2016-12-31 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.0.75971.1216
+	* PRE_INSTALL: added, to drop old.* directories
+
 2016-10-19 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, DEPENDS, INSTALL, BUILD, UNATTEND_SAFE: created spell, version
 	  2.0.63547.0830
