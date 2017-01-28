@@ -1,20 +1,20 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jdk8-bin
-         VERSION=8u112
+         VERSION=8u121
   SECURITY_PATCH=7
              VER="1.${VERSION:0:1}.0_$(printf %02d ${VERSION:2})"
 case "${SMGL_COMPAT_ARCHS[0]}" in
   ia32|32)
           SOURCE=jdk-$VERSION-linux-i586.tar.gz
-          SOURCE_HASH=sha256:1e7c2fb80b339dd65f261d37e26ffd5f3136e5ff8778026ed227b47516df69a5:UPSTREAM_HASH
+          SOURCE_HASH=sha256:f7d6cf1468c5e71ff097bec0189caccdd8e709a2a88a2c9849ad6200c0f33d4c:UPSTREAM_HASH
   ;;
   x86-64|64)
     if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
           SOURCE=jdk-$VERSION-linux-x64.tar.gz
-          SOURCE_HASH=sha256:777bd7d5268408a5a94f5e366c2e43e720c6ce4fe8c59d9a71e2961e50d774a5:UPSTREAM_HASH
+          SOURCE_HASH=sha256:97e30203f1aef324a07c94d9d078f5d19bb6c50e638e4492722debca588210bc:UPSTREAM_HASH
     else
           SOURCE=jdk-$VERSION-linux-i586.tar.gz
-          SOURCE_HASH=sha256:1e7c2fb80b339dd65f261d37e26ffd5f3136e5ff8778026ed227b47516df69a5:UPSTREAM_HASH
+          SOURCE_HASH=sha256:f7d6cf1468c5e71ff097bec0189caccdd8e709a2a88a2c9849ad6200c0f33d4c:UPSTREAM_HASH
     fi
   ;;
 ###########################################################################
