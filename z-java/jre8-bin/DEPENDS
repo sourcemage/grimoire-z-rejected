@@ -1,10 +1,13 @@
-depends  ODBC-MGR  &&
-depends  alsa-lib  &&
-
-if [[ "$JRE6_BIN_X" == "y" ]]; then
-  depends libxi    &&
-  depends libxtst  &&
-  depends libxext  &&
-  depends libx11   &&
-  depends libxau
-fi
+depends LIBAVCODEC   &&
+depends ODBC-MGR     &&
+depends alsa-lib     &&
+depends atk          &&
+depends cairo        &&
+depends gdk-pixbuf2  &&
+depends gtk+2        &&
+depends libxi        &&
+depends libxtst      &&
+depends libxext      &&
+depends libx11       &&
+depends libxau       &&
+depends pango
