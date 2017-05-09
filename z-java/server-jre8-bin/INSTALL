@@ -1,0 +1,7 @@
+cd  ${INSTALL_ROOT}/usr/lib  &&
+
+cp -av "${SOURCE_DIRECTORY}" "${INSTALL_ROOT}"/usr/lib/ &&
+
+mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
+install -m 0644 $SCRIPT_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/  &&
+ln -sfn ${INSTALL_ROOT}/usr/lib/jdk$VER/ ${INSTALL_ROOT}/usr/lib/java8

@@ -1,0 +1,5 @@
+default_pre_build &&
+
+if [[ ! -h "$INSTALL_ROOT/lib64" ]]; then
+  ln -vsf "$TRACK_ROOT/lib" "$INSTALL_ROOT/lib64"
+fi

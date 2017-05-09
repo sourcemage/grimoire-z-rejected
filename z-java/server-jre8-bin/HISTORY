@@ -1,0 +1,6 @@
+2017-05-08 Eric Sandall <sandalle@sourcemage.org>
+	* Created spell based on jdk8-bin
+	  https://www.oracle.com/webfolder/s/digest/8u131checksum.html
+	  x86_64 architecture only.
+	  Still requires X11 libraries for things like AWT.
+

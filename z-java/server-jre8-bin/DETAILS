@@ -1,0 +1,36 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=server-jre8-bin
+         VERSION=8u131
+             VER="1.${VERSION:0:1}.0_$(printf %02d ${VERSION:2})"
+case "${SMGL_COMPAT_ARCHS[0]}" in
+      x86-64|64)
+          if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
+          SOURCE=server-jre-$VERSION-linux-x64.tar.gz
+     SOURCE_HASH=sha256:a80634d17896fe26e432f6c2b589ef6485685b2e717c82cd36f8f747d40ec84b:UPSTREAM_HASH
+          fi
+        ;;
+################################################################################
+# Missing support for i586, sparc, and sparcv9 tarballs say solaris not linux :\
+################################################################################
+        *)
+          SOURCE=
+         VERSION=Unsupported
+             VER=Unsupported
+        ;;
+esac
+        WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk$VER"
+         ENTERED=20170508
+         ARCHIVE='off'
+          REJECT='is non-source'
+           SHORT='Java 8 Software Developer Environment for servers'
+  STAGED_INSTALL="off"
+            DOCS='COPYRIGHT LICENSE README THIRDPARTYLICENSEREADME-JAVAFX.txt THIRDPARTYLICENSEREADME.txt'
+cat << EOF
+The Java 8 Development Kit is a feature-complete development and deployment
+platform.
+
+Note: You need to download the JDK installer yourself from the Oracle Website,
+see 'gaze website ${SPELL}' for the location. Put the downloaded file in
+/var/spool/sorcery so cast will find it.
+EOF

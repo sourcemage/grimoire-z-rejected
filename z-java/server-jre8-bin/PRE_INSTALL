@@ -1,0 +1,3 @@
+if spell_ok $SPELL; then
+  rm -rf old.binaries old.libraries
+fi

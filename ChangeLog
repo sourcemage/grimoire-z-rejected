@@ -1,3 +1,6 @@
+2017-05-08 Eric Sandall <sandalle@sourcemage.org>
+	* z-java/server-jre8-bin: Added server version of JRE8 binaries.
+
 2016-10-19 Vlad Glagolev <stealth@sourcemage.org>
 	* z-utils/zoom-client: new spell, Zoom client for Linux
 
