@@ -2,6 +2,7 @@
            SPELL=nvidia_driver
   STABLE_VERSION=375.66
     BETA_VERSION=381.22
+      PATCHLEVEL=1
 case "${SMGL_COMPAT_ARCHS[1]}" in
         x86_64)
 if [[ $NVIDIA_BETA == y ]]; then
