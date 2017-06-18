@@ -32,8 +32,17 @@ runtime_depends atk &&
 runtime_depends pango &&
 runtime_depends cairo &&
 runtime_depends gdk-pixbuf2 &&
-runtime_depends gtk+2 &&
 runtime_depends gconf2 &&
+
+# selective
+if [[ $VIVALDI_BRANCH == "stable" ]]; then
+  runtime_depends libxcb &&
+  runtime_depends libxfixes &&
+
+  runtime_depends gtk+3
+else
+  runtime_depends gtk+2
+fi &&
 
 # audio
 runtime_depends alsa-lib &&

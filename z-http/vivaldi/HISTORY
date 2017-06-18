@@ -1,3 +1,6 @@
+2017-06-17 Vlad Glagolev <stealth@sourcemage.org>
+	* DEPENDS: updated dependencies for stable branch
+
 2017-06-15 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS, PREPARE: updated spell to 1.10.867.38-1 (stable)
 
