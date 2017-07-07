@@ -1,8 +1,8 @@
 local BRANCHES="stable snapshot" &&
 
-if [[ ${SMGL_COMPAT_ARCHS[1]} != "x86_64" ]]; then
-  list_remove BRANCHES "stable"
-fi &&
+#if [[ ${SMGL_COMPAT_ARCHS[1]} != "x86_64" ]]; then
+#  list_remove BRANCHES "stable"
+#fi &&
 
 config_query_list VIVALDI_BRANCH "What branch do you wish to use?" \
                                  ${BRANCHES}

@@ -1,3 +1,7 @@
+2017-07-07 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 1.10.867.46-1 (stable)
+	* PREPARE: allow stable for i386 again
+
 2017-06-23 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 1.10.867.42-1 (stable)
 

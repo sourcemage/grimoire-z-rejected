@@ -1,6 +1,6 @@
            SPELL=vivaldi
 if [[ $VIVALDI_BRANCH == "stable" ]]; then
-         VERSION=1.10.867.42-1
+         VERSION=1.10.867.46-1
 else
          VERSION=1.4.589.4-1
 fi
@@ -8,9 +8,9 @@ fi
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
         PLATFORM=x86_64
 else
-  if [[ $VIVALDI_BRANCH != "stable" ]]; then
+#  if [[ $VIVALDI_BRANCH != "stable" ]]; then
         PLATFORM=i386
-  fi
+#  fi
 fi
           SOURCE=${SPELL}-${VIVALDI_BRANCH}-${VERSION}.${PLATFORM}.rpm
    SOURCE_URL[0]=https://downloads.vivaldi.com/${VIVALDI_BRANCH}/${SOURCE}
