@@ -1,3 +1,8 @@
+2017-01-04 Thoams Orgis <sobukus@sourcemage.org>
+	* DETAILS: version 7.1.6.3
+	* PRE_BUILD, INSTALL: there is a subdirectory now
+	* INSTALL: also prepare symlinks for certificate database in /etc
+
 2016-11-22 Thomas Orgis <sobukus@sourcemage.org>
 	* INSTALL: added gsk_wrapper
 	* DETAILS: PATCHLEVEL++

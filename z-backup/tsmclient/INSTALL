@@ -3,8 +3,8 @@
 mkdir -p /opt/tivoli &&
 cd       /opt/tivoli &&
 # cp -a breaks castfs
-cp -r "$SOURCE_DIRECTORY"/opt/tivoli/* . &&
-cp -r "$SOURCE_DIRECTORY"/usr          . &&
+cp -r "$SOURCE_DIRECTORY"/bacli/opt/tivoli/* . &&
+cp -r "$SOURCE_DIRECTORY"/bacli/usr          . &&
 # Relative links in ./usr need that.
 ln -sf ../../opt . &&
 
@@ -17,13 +17,17 @@ binlib=$(cd tsm/client/ba/bin/lib*/ && pwd) &&
 apilib=$(cd tsm/client/api/bin*/ && pwd) &&
 
 dsm_dir=/opt/tivoli/tsm/client/ba/bin &&
-ln -sf /etc/tivoli/dsm.opt $dsm_dir/dsm.opt &&
-ln -sf /etc/tivoli/dsm.sys $dsm_dir/dsm.sys &&
+for cfg in dsm.{opt,sys} \
+  dsmcert.{crl,kdb,rdb,sth}
+do
+  ln -sf /etc/tivoli/$cfg $dsm_dir/
+done
 
 mkdir -p /etc/tivoli &&
 install_config_file "$SCRIPT_DIRECTORY"/dsm.sys /etc/tivoli/dsm.sys &&
 install_config_file "$SCRIPT_DIRECTORY"/dsm.opt /etc/tivoli/dsm.opt &&
 message "${MESSAGE_COLOR}Remember to edit configuration under /etc/tivoli the first time.${NORMAL_COLOR}" &&
+message "${MESSAGE_COLOR}For SSL configuration, symlinks have been installed to make /etc/tivoli/dsmcert.kdb work once you create it.${NORMAL_COLOR}" &&
 
 tsm_wrapper=/opt/tivoli/tsm/bin/tsm-wrapper &&
 gsk_wrapper=/opt/tivoli/tsm/bin/gsk-wrapper &&

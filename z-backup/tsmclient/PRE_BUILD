@@ -4,6 +4,7 @@ unpack_file &&
 # This is hugely wasteful, copying the binaries multiple times.
 # But castfs and also installwatch break when I try to directly
 # extract the rpms in INSTALL.
+cd bacli &&
 for rpm in \
   gskcrypt64-*.rpm \
   gskssl64-*.rpm \
