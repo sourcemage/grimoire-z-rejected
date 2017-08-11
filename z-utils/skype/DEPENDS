@@ -1,7 +1,49 @@
 depends alsa-lib &&
-depends libxscrnsaver &&
-
-if [[ "$SKYPE_STATIC" == "n" ]]; then
-  depends dbus &&
-  depends -sub "DBUS ACCESS" qt4
-fi
+depends bzip2 &&
+depends cairo &&
+depends cups &&
+depends dbus &&
+depends expat &&
+depends ffmpeg-svn &&
+depends fontconfig &&
+depends freetype2 &&
+depends gconf2 &&
+depends gdk-pixbuf2 &&
+depends gettext &&
+depends glib2 &&
+depends gmp &&
+depends gnutls &&
+depends graphite2 &&
+depends gtk+2 &&
+depends harfbuzz &&
+depends libbsd &&
+depends libdrm &&
+depends libffi &&
+depends libpng &&
+depends libtasn1 &&
+depends libunistring &&
+depends libx11 &&
+depends libxau &&
+depends libxcomposite &&
+depends libxcursor &&
+depends libxdamage &&
+depends libxdmcp &&
+depends libxext &&
+depends libxfixes &&
+depends libxi &&
+depends libxinerama &&
+depends libxrandr &&
+depends libxrender &&
+depends libxtst &&
+depends libxxf86vm &&
+depends mesalib &&
+depends nettle &&
+depends nspr &&
+depends nss &&
+depends p11-kit &&
+depends pango &&
+depends pcre &&
+depends pixman &&
+depends wayland &&
+depends libxcb &&
+depends zlib

@@ -1,17 +1,11 @@
              SPELL=skype
-           VERSION=4.3.0.37
+           VERSION=5.4.0.1
     SECURITY_PATCH=1
-if [[ $SKYPE_STATIC == y ]]; then
-            SOURCE=${SPELL}_static-$VERSION.tar.bz2
-       SOURCE_HASH=sha512:9d63422b58d041ea854c7b768ce8b2f9cd3f5fda3f3113df4d71b97116e8480b2f4ee682f60d8e054b321f00ce90e45229170ca1c23a6a476a58d198ca7279cf
-  SOURCE_DIRECTORY="$BUILD_DIRECTORY/${SPELL}_staticQT-$VERSION"
-else
-            SOURCE=$SPELL-$VERSION.tar.bz2
-       SOURCE_HASH=sha512:935d0c06c031a90414f9b20c9a782c59deee36abff781c08f1dfd62194763dc9674bb85d478ae916b1bf440b123291d64380bc28295e9ecdd6522d17b434b7a5
+            SOURCE="skypeforlinux_${VERSION}_amd64.deb"
+       SOURCE_HASH=sha512:4b35ad5fabc5fb3d3050210e5c938f9d331e649285bc8ef57716fd635129c1a8b688012365c2b17f43e0af819d5c9965a360c2e4f659fed7d3282c542083aaca
   SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
-fi
           WEB_SITE=http://www.skype.com/
-     SOURCE_URL[0]=http://download.skype.com/linux/$SOURCE
+     SOURCE_URL[0]="https://repo.skype.com/deb/pool/main/${SOURCE:0:1}/${SOURCE%%_*}/$SOURCE"
         LICENSE[0]=/usr/share/doc/skype/LICENSE
            ENTERED=20040624
            ARCHIVE=off
