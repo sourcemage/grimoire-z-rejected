@@ -1,3 +1,8 @@
+2017-09-18 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 8u144, use upstream hashes
+	  https://www.oracle.com/webfolder/s/digest/8u144checksum.html
+	  SECURITY_PATCH++
+
 2017-05-08 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 8u131, use upstream hashes
 	  https://www.oracle.com/webfolder/s/digest/8u131checksum.html
