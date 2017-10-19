@@ -1,5 +1,6 @@
 2017-10-19 Ismael Luceno <ismael@sourcemage.org>
 	* z-editors/uemacs: new spell, Full screen editor based on MicroEMACS 3.9e
+	* FUNCTIONS: Added get_scm_version from test grimoire
 
 2017-09-06 Ismael Luceno <ismael@sourcemage.org>
 	* z-devel/bitkeeper: Moved to main grimoire, now under Apache-2.0
