@@ -48,12 +48,18 @@ for lib in libGL.la  libnvidia-glcore.so.${VERSION/-/.} \
 done                              &&
 mkdir -vp $INSTALL_ROOT/usr/lib/.nvidia \
           $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/  &&
+cp -vr libGL.so.1.0.0 $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libGLdispatch.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libEGL_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libEGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libEGL.so.1 $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libGLESv1_CM_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libGLESv1_CM.so.1 $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libGLESv2_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libGLESv2.so.2 $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libGLX.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libOpenGL.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
 mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
 install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
@@ -65,11 +71,9 @@ ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
 ln  -sfn  libGL.so.1                       libGL.so            &&
 ln  -sfn  libEGL_nvidia.so.${VERSION/-/.}  libEGL_nvidia.so.1  &&
 ln  -sfn  libEGL.so.${VERSION/-/.}  libEGL.so.1                &&
-ln  -sfn  libEGL.so.1                      libEGL.so           &&
-ln  -sfn  libGLESv1_CM_nvidia.so.${VERSION/-/.}   libGLESv1_CM.so.1   &&
 ln  -sfn  libGLESv1_CM.so.1                libGLESv1_CM.so     &&
-ln  -sfn  libGLESv2_nvidia.so.${VERSION/-/.}      libGLESv2.so.1      &&
 ln  -sfn  libGLESv2.so.1                   libGLESv2.so        &&
+ln  -sfn  libOpenGL.so.0                   libOpenGL.so        &&
 popd                                                           &&
 pushd  $INSTALL_ROOT/usr/lib                                   &&
 ln  -sfn  libnvidia-glcore.so.${VERSION/-/.}   libGLcore.so.1  &&
