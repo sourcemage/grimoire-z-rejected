@@ -6,6 +6,6 @@ function less() {
 }
 
 export -f less &&
-yes yes | sh "$SOURCE_CACHE/$SOURCE" --noexec --nox11 --target \
-             "$SOURCE_DIRECTORY" &&
+yes | sh "$SOURCE_CACHE/$SOURCE" --noexec --nox11 --target \
+         "$SOURCE_DIRECTORY" &&
 export -n less

@@ -1,3 +1,6 @@
+2018-01-09 Ismael Luceno <ismael@sourcemage.org>
+	* DETAILS, PRE_BUILD: updated spell to 3.1.7
+
 2013-02-24 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 3.0.9.2
 	* PRE_INSTALL: added, to avoid duplication from previous install
