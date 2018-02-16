@@ -1,15 +1,25 @@
+source "${GRIMOIRE}/FUNCTIONS"
+
            SPELL=zoom-client
           SPELLX=${SPELL/-client/}
-         VERSION=2.0.75971.1216
+         VERSION=2.0.115900.1201
+if spell_ok gcc && is_version_less $(installed_version gcc) 4.7; then
+          SUFFIX="-1"
+fi
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=x86_64
-     SOURCE_HASH=sha512:bcd0fa8888da3a051fbf8c2de5bd5b114229035958f5c87bdd96d62a10c20d6c278d16eb3b899956a2e55c7e310ba4ae9d7d14e848b4d243afb7b7d58f36ea2b
+
+  if [ -z "${SUFFIX}" ]; then
+     SOURCE_HASH=sha512:925b99613416b4a36c0b872890c98c1e58719ef6c3464fe780e77d46f6ba5955fef415ba659a5d09a1a2d62f2d795e34e5dbad8c1f934862b4a8a66fc419ba06
+  else
+     SOURCE_HASH=sha512:2ee09df77beea74b0a45a9e3ea3b0114fccfd7415bff9826e556b3ac5f0965a8e4430119998cec36f151f77441c44c6e4f6ec138f0334ff946c0619e3f4a8703
+  fi
 else
             ARCH=i686
      SOURCE_HASH=sha512:d1bd9b3ac1bc141f8d144f04d26d7c5067ae2eb2c46893a4851d8c7641caee9a47e26445c868a55c1ec4f3e2ab42d6474ad9b7626eb8c8d33de0fb3df6212258
 fi
           SOURCE=${SPELL}-${VERSION}_${ARCH}.tar.xz
-   SOURCE_URL[0]=https://zoom.us/client/${VERSION}/${SPELLX}_${ARCH}.tar.xz
+   SOURCE_URL[0]=https://zoom.us/client/${VERSION}/${SPELLX}${SUFFIX}_${ARCH}.tar.xz
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELLX}"
      GATHER_DOCS=off
         WEB_SITE=https://zoom.us/
