@@ -1,3 +1,6 @@
+2018-02-16 Vlad Glagolev <stealth@sourcemage.org>
+	* z-audio/spotify: new spell, official Spotify client
+
 2017-10-19 Ismael Luceno <ismael@sourcemage.org>
 	* z-editors/uemacs: new spell, Full screen editor based on MicroEMACS 3.9e
 	* FUNCTIONS: Added get_scm_version from test grimoire

@@ -1,0 +1,15 @@
+cp -dRv usr/share/spotify "${INSTALL_ROOT}/opt" &&
+
+install -vm 644 usr/share/spotify/spotify.desktop "${INSTALL_ROOT}/usr/share/applications/spotify.desktop" &&
+
+for size in 16 22 24 32 48 64 128 256 512; do
+  local icon_dir="usr/share/icons/hicolor/${size}x${size}/apps" &&
+
+  if [ ! -d "${INSTALL_ROOT}/${icon_dir}" ]; then
+    mkdir -vp "${INSTALL_ROOT}/${icon_dir}"
+  fi &&
+
+  install -vm 644 "usr/share/spotify/icons/spotify-linux-${size}.png" "${INSTALL_ROOT}/${icon_dir}/spotify-client.png"
+done &&
+
+ln -vsf "${TRACK_ROOT}/opt/spotify/spotify" "${INSTALL_ROOT}/usr/bin/spotify"

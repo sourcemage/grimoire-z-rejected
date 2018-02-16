@@ -1,0 +1,24 @@
+           SPELL=spotify
+          SPELLX=${SPELL}-client
+         VERSION=1.0.70.399
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+              ID=g5ffabd56-26
+            ARCH=amd64
+     SOURCE_HASH=sha512:f5ce65a535daffe251152f6dc1c3affe2cbdf815ce1129e204ef03b589ebf7ac1015a9be2c77d7bcdd506fa23b9f24390b961843bb311366f6839756563912bf
+else
+              ID=g5ffabd56-27
+            ARCH=i386
+     SOURCE_HASH=sha512:b72a7b4286d067a0a825b423ff62d426a82d8a7cc111500e1d5ab64df000f0cce024a6c7d9cc5cbf253800152907ae2889f55eead46556739f8d5069e7c0abf2
+fi
+          SOURCE=${SPELLX}_${VERSION}.${ID}_${ARCH}.deb
+   SOURCE_URL[0]=http://repository.spotify.com/pool/non-free/s/${SPELLX}/${SOURCE}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://www.spotify.com/
+         ENTERED=20180216
+      LICENSE[0]=https://www.spotify.com/us/legal/end-user-agreement/
+          REJECT="is non-source"
+           SHORT="official Spotify client"
+cat << EOF
+This is a client for Spotify, a proprietary music streaming service.
+EOF
