@@ -1,3 +1,7 @@
+2018-03-21 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 8u162
+	  SECURITY_PATCH++
+
 2017-11-18 Ismael Luceno <ismael@sourcemage.org>
 	* DETAILS: SECURITY_PATCH++
 	  updated to 8u152
