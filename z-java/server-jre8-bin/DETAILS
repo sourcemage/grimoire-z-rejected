@@ -1,13 +1,13 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=server-jre8-bin
-         VERSION=8u152
-  SECURITY_PATCH=2
+         VERSION=8u162
+  SECURITY_PATCH=3
              VER="1.${VERSION:0:1}.0_$(printf %02d ${VERSION:2})"
 case "${SMGL_COMPAT_ARCHS[0]}" in
       x86-64|64)
           if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
           SOURCE=server-jre-$VERSION-linux-x64.tar.gz
-     SOURCE_HASH=sha256:7307a55dc385921c7d9fb90bd84c452df26ba05261e907713bd731d5f78b15cc:UPSTREAM_HASH
+     SOURCE_HASH=sha512:66ac3b0da0bfa1e8a964d9d5bf41fd6b9e1268b242ba406df050783f71947613ccc09dcc5b1c86e2bf9275388b3308df78c9c6ff13cdc722a8736dcdcd443baa:UPSTREAM_HASH
           fi
         ;;
 ################################################################################
