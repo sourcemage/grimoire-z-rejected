@@ -24,3 +24,9 @@ cd  $SOURCE_DIRECTORY/kernel     &&
 #
 sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  Makefile
 
+if [[ "$NVIDIA_BETA" == "n" ]]; then
+  message "${MESSAGE_COLOR}patching for compatibility with linux 4.16${DEFAULT_COLOR}" &&
+  cd $SOURCE_DIRECTORY &&
+  patch -p1 < "$SPELL_DIRECTORY/0001-fix-incompatibility-with-linux-4.16-in-390.48.patch"
+fi
+

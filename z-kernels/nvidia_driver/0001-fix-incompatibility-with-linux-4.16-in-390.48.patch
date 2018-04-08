@@ -1,0 +1,66 @@
+From 7e48f79e679c2d71067af48fcc77a5429dc77677 Mon Sep 17 00:00:00 2001
+From: Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+Date: Thu, 5 Apr 2018 19:48:13 +0200
+Subject: [PATCH] fix incompatibility with linux 4.16 in 390.48
+
+---
+ kernel/common/inc/nv-linux.h | 43 ------------------------------------
+ 1 file changed, 43 deletions(-)
+
+diff --git a/kernel/common/inc/nv-linux.h b/kernel/common/inc/nv-linux.h
+index 10fc418..ca6132c 100644
+--- a/kernel/common/inc/nv-linux.h
++++ b/kernel/common/inc/nv-linux.h
+@@ -1209,49 +1209,6 @@ static inline NvU32 nv_alloc_init_flags(int cached, int contiguous, int zeroed)
+ static inline NvBool nv_dma_maps_swiotlb(struct pci_dev *dev)
+ {
+     NvBool swiotlb_in_use = NV_FALSE;
+-#if defined(CONFIG_SWIOTLB)
+-  #if defined(NV_DMA_OPS_PRESENT) || defined(NV_GET_DMA_OPS_PRESENT)
+-    /*
+-     * We only use the 'dma_ops' symbol on older x86_64 kernels; later kernels,
+-     * including those for other architectures, have converged on the
+-     * get_dma_ops() interface.
+-     */
+-    #if defined(NV_GET_DMA_OPS_PRESENT)
+-      #if defined(NV_DMA_MAP_OPS_PRESENT)
+-    const struct dma_map_ops *ops = get_dma_ops(&dev->dev);
+-      #else
+-    const struct dma_mapping_ops *ops = get_dma_ops(&dev->dev);
+-      #endif
+-    #else
+-    const struct dma_mapping_ops *ops = dma_ops;
+-    #endif
+-    #if defined(NV_DMA_MAP_OPS_PRESENT)
+-    /*
+-     * The switch from dma_mapping_ops -> dma_map_ops coincided with the
+-     * switch from swiotlb_map_sg -> swiotlb_map_sg_attrs.
+-     */
+-      #if defined(NVCPU_AARCH64) && \
+-          defined(NV_NONCOHERENT_SWIOTLB_DMA_OPS_PRESENT)
+-    /* AArch64 exports these symbols directly */
+-    swiotlb_in_use = ((ops == &noncoherent_swiotlb_dma_ops) ||
+-                      (ops == &coherent_swiotlb_dma_ops));
+-      #else
+-    swiotlb_in_use = (ops->map_sg == swiotlb_map_sg_attrs);
+-      #endif
+-    #else
+-    swiotlb_in_use = (ops->map_sg == swiotlb_map_sg);
+-    #endif
+-  #elif defined(NVCPU_X86_64)
+-    /*
+-     * Fallback for old 2.6 kernels - if the DMA operations infrastructure
+-     * isn't in place, use the swiotlb flag. Before dma_ops was added, this
+-     * flag used to be exported. It still exists in modern kernels but is no
+-     * longer exported.
+-     */
+-    swiotlb_in_use = (swiotlb == 1);
+-  #endif
+-#endif
+-
+     return swiotlb_in_use;
+ }
+ 
+-- 
+2.17.0
+

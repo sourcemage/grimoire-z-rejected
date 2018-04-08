@@ -48,16 +48,32 @@ for lib in libGL.la  libnvidia-glcore.so.${VERSION/-/.} \
 done                              &&
 mkdir -vp $INSTALL_ROOT/usr/lib/.nvidia \
           $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/  &&
-cp -vr libGL.so.1.0.0 $INSTALL_ROOT/usr/lib/.nvidia &&
+if [[ $NVIDIA_BETA == y ]]; then
+  cp -vr libGL.so.1.0.0 $INSTALL_ROOT/usr/lib/.nvidia
+else
+  cp -vr libGL.so.1.7.0 $INSTALL_ROOT/usr/lib/.nvidia
+fi &&
 cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libGLdispatch.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libEGL_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libEGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libEGL.so.1 $INSTALL_ROOT/usr/lib/.nvidia &&
+if [[ $NVIDIA_BETA == y ]]; then
+  cp -vr libEGL.so.1 $INSTALL_ROOT/usr/lib/.nvidia
+else
+  cp -vr libEGL.so.1.1.0 $INSTALL_ROOT/usr/lib/.nvidia
+fi &&
 cp -vr libGLESv1_CM_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGLESv1_CM.so.1 $INSTALL_ROOT/usr/lib/.nvidia &&
+if [[ $NVIDIA_BETA == y ]]; then
+  cp -vr libGLESv1_CM.so.1 $INSTALL_ROOT/usr/lib/.nvidia
+else
+  cp -vr libGLESv1_CM.so.1.2.0 $INSTALL_ROOT/usr/lib/.nvidia
+fi &&
 cp -vr libGLESv2_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGLESv2.so.2 $INSTALL_ROOT/usr/lib/.nvidia &&
+if [[ $NVIDIA_BETA == y ]]; then
+  cp -vr libGLESv2.so.2 $INSTALL_ROOT/usr/lib/.nvidia
+else
+  cp -vr libGLESv2.so.2.1.0 $INSTALL_ROOT/usr/lib/.nvidia
+fi &&
 cp -vr libGLX.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libOpenGL.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
 mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
@@ -70,9 +86,15 @@ pushd  $INSTALL_ROOT/usr/lib/.nvidia                           &&
 ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
 ln  -sfn  libGL.so.1                       libGL.so            &&
 ln  -sfn  libEGL_nvidia.so.${VERSION/-/.}  libEGL_nvidia.so.1  &&
-ln  -sfn  libEGL.so.${VERSION/-/.}  libEGL.so.1                &&
-ln  -sfn  libGLESv1_CM.so.1                libGLESv1_CM.so     &&
-ln  -sfn  libGLESv2.so.1                   libGLESv2.so        &&
+if [[ $NVIDIA_BETA == y ]]; then
+  ln  -sfn  libEGL.so.${VERSION/-/.} libEGL.so.1     &&
+  ln  -sfn  libGLESv1_CM.so.1        libGLESv1_CM.so &&
+  ln  -sfn  libGLESv2.so.1           libGLESv2.so
+else
+  ln  -sfn  libEGL.so.${VERSION/-/.} libEGL.so.1.1.0 &&
+  ln  -sfn  libGLESv1_CM.so.1.2.0    libGLESv1_CM.so &&
+  ln  -sfn  libGLESv2.so.2.1.0       libGLESv2.so
+fi &&
 ln  -sfn  libOpenGL.so.0                   libOpenGL.so        &&
 popd                                                           &&
 pushd  $INSTALL_ROOT/usr/lib                                   &&

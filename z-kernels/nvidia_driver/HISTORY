@@ -1,3 +1,8 @@
+2018-04-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS, PRE_BUILD, INSTALL,
+	  0001-fix-incompatibility-with-linux-4.16-in-390.48.patch:
+	  stable versions 390.48
+
 2018-02-17 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: stable versions 390.25
 
