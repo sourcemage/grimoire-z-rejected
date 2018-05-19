@@ -1,0 +1,25 @@
+           SPELL=resilio-sync
+         VERSION=2.5.12
+        VERSIONX=2501
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+            ARCH=x64
+     SOURCE_HASH=sha512:e58a81bc1b50584701b61a81b826a4af7659876f22b2518cf93901e9d154d26678d634ab30e9a69e28d90a5c902e3a53cdf636fe91fd14c1b17855614bc1386e
+else
+            ARCH=i386
+     SOURCE_HASH=sha512:d298c90f71e1013c7ae971ff53d60c7d87d50db6494fed998e2be1cb89aada743dd43ca5cd7f6bcab4def968a85e0cc922ecd3c3b12ae961d047ac46c9d981fe
+fi
+          SOURCE=${SPELL}-${VERSION}_${ARCH}.tar.gz
+         SOURCEX=${SPELL}_${ARCH}.tar.gz
+   SOURCE_URL[0]=https://download-cdn.resilio.com/stable/linux-${ARCH}/cc/${VERSIONX}/${SOURCEX}
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+            DOCS="LICENSE.TXT"
+        WEB_SITE=https://www.resilio.com/
+      LICENSE[0]=https://www.resilio.com/legal/eula
+         ENTERED=20180518
+          REJECT="is non-source"
+           SHORT="resilient, fast and scalable file synchronization tool"
+cat << EOF
+Resilio Sync is a proprietary peer-to-peer multiplatform file synchronization
+tool It can sync files between devices on a local network, or between remote
+devices over the Internet via a modified version of the BitTorrent protocol.
+EOF

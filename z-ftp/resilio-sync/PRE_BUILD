@@ -1,0 +1,6 @@
+mkdir "${SOURCE_DIRECTORY}" &&
+cd "${SOURCE_DIRECTORY}" &&
+
+unpack_file &&
+
+./rslsync --dump-sample-config > rslsync.conf.sample

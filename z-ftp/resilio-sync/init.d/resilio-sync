@@ -1,0 +1,18 @@
+#!/bin/bash
+
+. /etc/sysconfig/resilio-sync
+
+PROGRAM=/usr/sbin/rslsync
+PIDFILE=/var/lib/rslsync/sync.pid
+ARGS="$RSLSYNC_ARGS"
+RUNLEVEL=3
+NEEDS="+network"
+
+. /etc/init.d/smgl_init
+
+start() {
+  echo "Starting $NAME..."
+
+  su rslsync -s /bin/sh -c "$PROGRAM $ARGS"
+  evaluate_retval
+}

@@ -1,0 +1,9 @@
+install -vm 755 rslsync "${INSTALL_ROOT}/usr/sbin/rslsync" &&
+install -vm 700 -o rslsync -g rslsync -d "${INSTALL_ROOT}/var/lib/rslsync" &&
+
+install_config_file rslsync.conf.sample "${INSTALL_ROOT}/etc/rslsync.conf" &&
+
+if [[ $INIT_INSTALLED ]]; then
+  install_config_file "${SPELL_DIRECTORY}/init.d/resilio-sync.conf" \
+                      "${INSTALL_ROOT}/etc/sysconfig/resilio-sync"
+fi
