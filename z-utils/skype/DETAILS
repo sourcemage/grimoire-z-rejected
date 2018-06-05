@@ -1,8 +1,8 @@
              SPELL=skype
-           VERSION=8.20.76.3
+           VERSION=8.23.76.3
     SECURITY_PATCH=1
             SOURCE="skypeforlinux_${VERSION}_amd64.deb"
-       SOURCE_HASH=sha512:9a42b472a5ad26dc8bc04f5ea9ee89d9e5f01d7d55f7b7bce270ae43c58f6240ed187f13046869ea081f41853f371e39098c4f6ff0e0773956c6bcc1739ddd23
+       SOURCE_HASH=sha512:e19ed467d1f563d4ad24423b1b85344faa17406c87bcd486fad35b9d2bca3e68f498692ed583a91a44b604fbdc172fbadee792d72c7c95fb2fcbea1c722ce371
   SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
           WEB_SITE=http://www.skype.com/
      SOURCE_URL[0]="https://repo.skype.com/deb/pool/main/${SOURCE:0:1}/${SOURCE%%_*}/$SOURCE"
