@@ -1,0 +1,19 @@
+           SPELL=discord
+         VERSION=0.0.5
+          SOURCE=${SPELL}-${VERSION}.tar.gz
+   SOURCE_URL[0]=https://dl.discordapp.net/apps/linux/${VERSION}/${SOURCE}
+     SOURCE_HASH=sha512:4786176a57aaf86c3ced07a2be1ca138f40e53723b9ae958dbd9a6b93ddb71659b0e1a00ab6c99fb8d8501a9d752ebfc8ab7f6fd1e6888b06a9a3c9a7710f972
+SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
+     GATHER_DOCS=off
+        WEB_SITE=https://discordapp.com
+         ENTERED=20180617
+      LICENSE[0]=UNKNOWN
+          REJECT="is non-source"
+           SHORT="all-in-one voice and text chat for gamers"
+cat << EOF
+Discord is a proprietary freeware voice-over-Internet Protocol (VoIP)
+application designed for gaming communities, that specializes in text
+and audio communication between users in a chat channel.
+
+This is a client for Discord.
+EOF

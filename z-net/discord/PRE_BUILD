@@ -1,0 +1,6 @@
+mk_source_dir "${SOURCE_DIRECTORY}" &&
+cd "${SOURCE_DIRECTORY}" &&
+
+unpack_file &&
+
+sedit "s:/usr/share/discord:/opt/Discord:" Discord/discord.desktop

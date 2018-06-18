@@ -1,0 +1,5 @@
+if [[ ${SMGL_COMPAT_ARCHS[1]} != "x86_64" ]]; then
+  message "${PROBLEM_COLOR}Discord is not available for platform ${SMGL_COMPAT_ARCHS[1]}${DEFAUL_COLOR}" &&
+
+  return 1
+fi

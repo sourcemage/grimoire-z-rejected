@@ -1,0 +1,9 @@
+cp -dRv Discord "${INSTALL_ROOT}/opt" &&
+
+ln -vsf "${TRACK_ROOT}/opt/Discord/discord.desktop" \
+        "${INSTALL_ROOT}/usr/share/applications/discord.desktop" &&
+
+ln -vsf "${TRACK_ROOT}/opt/Discord/discord.png" \
+        "${INSTALL_ROOT}/usr/share/pixmaps/discord.png" &&
+
+ln -vsf "${TRACK_ROOT}/opt/Discord/Discord" "${INSTALL_ROOT}/usr/bin/discord"
