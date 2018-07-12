@@ -1,16 +1,15 @@
            SPELL=resilio-sync
-         VERSION=2.5.12
-        VERSIONX=2501
+         VERSION=2.5.13
 if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
             ARCH=x64
-     SOURCE_HASH=sha512:e58a81bc1b50584701b61a81b826a4af7659876f22b2518cf93901e9d154d26678d634ab30e9a69e28d90a5c902e3a53cdf636fe91fd14c1b17855614bc1386e
+     SOURCE_HASH=sha512:c2351212fae7d05f830b4eec98c5c493e8412e57c3512fbf6bdd3f5704293c247c5d1601e9bc2eae34b18755ce6e9d8f04c951971c9ece47781abb526ff069d5
 else
             ARCH=i386
-     SOURCE_HASH=sha512:d298c90f71e1013c7ae971ff53d60c7d87d50db6494fed998e2be1cb89aada743dd43ca5cd7f6bcab4def968a85e0cc922ecd3c3b12ae961d047ac46c9d981fe
+     SOURCE_HASH=sha512:9bb6c7630a1b26ada9a47b48f097e49c8a367de9d27f1c28e711a2b67d35fcb63ea033661f730704ce6a700179172c418ccc0505b30f4fee417b09553ac5c989
 fi
           SOURCE=${SPELL}-${VERSION}_${ARCH}.tar.gz
          SOURCEX=${SPELL}_${ARCH}.tar.gz
-   SOURCE_URL[0]=https://download-cdn.resilio.com/stable/linux-${ARCH}/cc/${VERSIONX}/${SOURCEX}
+   SOURCE_URL[0]=https://download-cdn.resilio.com/${VERSION}/linux-${ARCH}/${SOURCEX}
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
             DOCS="LICENSE.TXT"
         WEB_SITE=https://www.resilio.com/
