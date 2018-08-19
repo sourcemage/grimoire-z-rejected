@@ -1,5 +1,5 @@
 install -vm 755 rslsync "${INSTALL_ROOT}/usr/sbin/rslsync" &&
-install -vm 700 -o rslsync -g rslsync -d "${INSTALL_ROOT}/var/lib/rslsync" &&
+install -vm 750 -o rslsync -g rslsync -d "${INSTALL_ROOT}/var/lib/rslsync" &&
 
 install_config_file rslsync.conf.sample "${INSTALL_ROOT}/etc/rslsync.conf" &&
 

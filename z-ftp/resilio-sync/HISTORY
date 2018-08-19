@@ -1,3 +1,6 @@
+2018-08-18 Vlad Glagolev <stealth@sourcemage.org>
+	* INSTALL: switch to group-writable perms
+
 2018-07-27 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 2.6.0; SECURITY_PATCH=1
 
