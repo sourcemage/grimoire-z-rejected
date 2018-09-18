@@ -6,8 +6,6 @@ sh  $SOURCE_CACHE/$SOURCE  --extract-only                     \
 check_tmp_noexec /tmp &&
 cd $SOURCE_DIRECTORY                                          &&
 
-patch -p1 < ${SPELL_DIRECTORY}/linux-4.6.patch  &&
-
 # Fix defunct desktop file
 sedit  's/__.*__\///'  nvidia-settings.desktop  &&
 

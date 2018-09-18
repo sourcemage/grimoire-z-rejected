@@ -1,3 +1,7 @@
+2018-09-18 Remko van der Vossen <wich@sourcemage.org>
+	* DETAILS: version 340.107
+	* PRE_BUILD, linux-4.6.patch: patch removed
+
 2016-07-13 Ladislav Hagara <hgr@vabo.cz>
 	* PRE_BUILD, linux-4.6.patch: patch form Arch added
 
