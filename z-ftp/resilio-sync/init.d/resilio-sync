@@ -10,6 +10,8 @@ NEEDS="+network"
 
 . /etc/init.d/smgl_init
 
+umask 0002
+
 start() {
   echo "Starting $NAME..."
 
