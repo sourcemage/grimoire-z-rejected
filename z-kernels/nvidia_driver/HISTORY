@@ -1,3 +1,8 @@
+2019-01-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: remove support for x86 since upstream has ceased to support
+	  the architecture
+	  stable version 410.78, beta version 415.25
+
 2018-07-29 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: stable versions 390.77
 

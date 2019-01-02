@@ -27,9 +27,6 @@ install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &
 # Install OpenGL headers
 #
 mkdir  -vp  $INSTALL_ROOT/usr/include/GL/.nvidia &&
-for file in glext.h gl.h glxext.h glx.h; do
-  install -v -m 0644  -o root  -g root  $file  $INSTALL_ROOT/usr/include/GL/.nvidia/
-done                                     &&
 
 #
 # Install OpenGL libraries
@@ -38,46 +35,48 @@ done                                     &&
 # Fill in the path to libGL.so
 sed -i 's|__LIBGL_PATH__|/usr/lib|' $SOURCE_DIRECTORY/libGL.la &&
 cd $SOURCE_DIRECTORY &&
-for lib in libGL.la  libnvidia-glcore.so.${VERSION/-/.} \
-           libnvidia-tls.so.${VERSION/-/.} libnvidia-cfg.so.${VERSION/-/.} \
-           libnvidia-compiler.so.${VERSION/-/.} libnvidia-wfb.so.${VERSION/-/.} \
-           libnvidia-eglcore.so.${VERSION/-/.} libnvidia-glsi.so.${VERSION/-/.} \
-           libnvidia-ifr.so.${VERSION/-/.} libnvidia-fbc.so.${VERSION/-/.} \
-           libnvidia-encode.so.${VERSION/-/.} libnvidia-ml.so.${VERSION/-/.}; do
+for lib in libGL.la \
+	libnvidia-cbl.so.${VERSION/-/.} \
+	libnvidia-cfg.so.${VERSION/-/.} \
+	libnvidia-compiler.so.${VERSION/-/.} \
+	libnvidia-egl-wayland.so.1.1.0 \
+	libnvidia-eglcore.so.${VERSION/-/.} \
+	libnvidia-encode.so.${VERSION/-/.} \
+	libnvidia-fatbinaryloader.so.${VERSION/-/.} \
+	libnvidia-fbc.so.${VERSION/-/.} \
+	libnvidia-glsi.so.${VERSION/-/.} \
+	libnvidia-glvkspirv.so.${VERSION/-/.} \
+	libnvidia-gtk2.so.${VERSION/-/.} \
+	libnvidia-gtk3.so.${VERSION/-/.} \
+	libnvidia-ifr.so.${VERSION/-/.} \
+	libnvidia-ml.so.${VERSION/-/.} \
+	libnvidia-opencl.so.${VERSION/-/.} \
+	libnvidia-ptxjitcompiler.so.${VERSION/-/.} \
+	libnvidia-rtcore.so.${VERSION/-/.} \
+	libnvidia-tls.so.${VERSION/-/.} \
+	libnvidia-wfb.so.${VERSION/-/.} \
+	libnvidia-glcore.so.${VERSION/-/.} \
+	libnvoptix.so.${VERSION/-/.} \
+	; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                              &&
 mkdir -vp $INSTALL_ROOT/usr/lib/.nvidia \
           $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/  &&
-if [[ $NVIDIA_BETA == y ]]; then
-  cp -vr libGL.so.1.0.0 $INSTALL_ROOT/usr/lib/.nvidia
-else
-  cp -vr libGL.so.1.7.0 $INSTALL_ROOT/usr/lib/.nvidia
-fi &&
+cp -vr libGL.so.1.7.0 $INSTALL_ROOT/usr/lib/.nvidia
 cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libGLdispatch.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libEGL_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libEGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-if [[ $NVIDIA_BETA == y ]]; then
-  cp -vr libEGL.so.1 $INSTALL_ROOT/usr/lib/.nvidia
-else
-  cp -vr libEGL.so.1.1.0 $INSTALL_ROOT/usr/lib/.nvidia
-fi &&
+cp -vr libEGL.so.1.1.0 $INSTALL_ROOT/usr/lib/.nvidia
 cp -vr libGLESv1_CM_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-if [[ $NVIDIA_BETA == y ]]; then
-  cp -vr libGLESv1_CM.so.1 $INSTALL_ROOT/usr/lib/.nvidia
-else
-  cp -vr libGLESv1_CM.so.1.2.0 $INSTALL_ROOT/usr/lib/.nvidia
-fi &&
+cp -vr libGLESv1_CM.so.1.2.0 $INSTALL_ROOT/usr/lib/.nvidia
 cp -vr libGLESv2_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-if [[ $NVIDIA_BETA == y ]]; then
-  cp -vr libGLESv2.so.2 $INSTALL_ROOT/usr/lib/.nvidia
-else
-  cp -vr libGLESv2.so.2.1.0 $INSTALL_ROOT/usr/lib/.nvidia
-fi &&
+cp -vr libGLESv2.so.2.1.0 $INSTALL_ROOT/usr/lib/.nvidia
 cp -vr libGLX.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libglxserver_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
 cp -vr libOpenGL.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
 mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
-install -v -m 0644  -o root  -g root  tls/libnvidia-tls.so.${VERSION/-/.}  \
+install -v -m 0644  -o root  -g root  libnvidia-tls.so.${VERSION/-/.}  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
 #
 # Create library symlinks
@@ -112,14 +111,10 @@ popd                                                           &&
 #
 mkdir -vp $INSTALL_ROOT/usr/lib/xorg/modules/drivers &&
 install -v -m 0644 -o root -g root nvidia_drv.so $INSTALL_ROOT/usr/lib/xorg/modules/drivers/ &&
-install -v -m 0644 -o root -g root libglx.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/ &&
 install -v -m 0644 -o root -g root libGLX_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia/ &&
 #
 # Setup symlinks
 #
-pushd  $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia &&
-ln  -sfn  libglx.so.${VERSION/-/.}  libglx.so       &&
-popd                                                &&
 ln -sfn /usr/lib/.nvidia/libGLX_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/libGLX_indirect.so.0 &&
 #
 # Install Cuda headers
