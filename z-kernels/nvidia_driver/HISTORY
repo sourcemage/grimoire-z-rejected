@@ -1,3 +1,7 @@
+2019-01-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* INSTALL: fix library installation
+	* DETAILS: PATCHLEVEL++
+
 2019-01-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: remove support for x86 since upstream has ceased to support
 	  the architecture
