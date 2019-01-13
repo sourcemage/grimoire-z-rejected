@@ -16,7 +16,7 @@ fi
    SOURCE_URL[1]=http://download.nvidia.com/XFree86/Linux-x86_64/${VERSION}/${SOURCE}
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION"
   SECURITY_PATCH=1
-      PATCHLEVEL=1
+      PATCHLEVEL=2
         ;;
 ############################################################
 # missing ia64 support we don't have an arch spec for it???

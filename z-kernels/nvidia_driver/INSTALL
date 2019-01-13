@@ -24,9 +24,9 @@ done                              &&
 install -v -m 0766  -o root  -g root  nvidia-installer  $INSTALL_ROOT/usr/bin  &&
 
 #
-# Install OpenGL headers
+# use mesa's OpenGL headers
 #
-mkdir  -vp  $INSTALL_ROOT/usr/include/GL/.nvidia &&
+ln -sfn /usr/include/GL/.mesa $INSTALL_ROOT/usr/include/GL/.nvidia &&
 
 #
 # Install OpenGL libraries
