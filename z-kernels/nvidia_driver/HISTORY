@@ -1,3 +1,6 @@
+2019-01-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: beta version 415.27
+
 2019-01-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* INSTALL: use mesa's OpenGL headers, nvidia_driver doesn't provide
 	  them anymore
