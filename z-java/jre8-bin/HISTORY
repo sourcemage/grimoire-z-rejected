@@ -1,6 +1,7 @@
 2019-02-01 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 8u202; switched to upstream sha256s:
 	  https://www.oracle.com/webfolder/s/digest/8u202checksum.html
+	* PRE_INSTALL: added missing default_pre_install
 
 2018-12-21 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 8u192, use upstream hashes
