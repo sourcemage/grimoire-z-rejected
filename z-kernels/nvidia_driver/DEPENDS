@@ -1,6 +1,6 @@
 . "$GRIMOIRE/FUNCTIONS" &&
 
-depends  xorg-server  &&
+depends  xserver      &&
 suggest_depends  gtk+2 "" "" "to install the nvidia-settings tool"     &&
 depends  libxvmc      &&
 depends  which        &&
