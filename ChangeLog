@@ -1,3 +1,6 @@
+2019-06-01 Vlad Glagolev <stealth@sourcemage.org>
+	* z-backup/tarsnap: new spell, online backups for the truly paranoid
+
 2018-10-02 Vlad Glagolev <stealth@sourcemage.org>
 	* z-utils/daemontools: removed, as it's been migrated to main grimoire
 

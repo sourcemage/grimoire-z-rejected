@@ -1,0 +1,33 @@
+depends SSL &&
+depends zlib &&
+depends e2fsprogs &&
+
+optional_depends acl \
+                 "--enable-acl" \
+                 "--disable-acl" \
+                 "for ACL support" &&
+
+optional_depends attr \
+                 "--enable-xattr" \
+                 "--disable-xattr" \
+                 "for Extended Attributes support" &&
+
+optional_depends bzip2 \
+                 "--with-bz2lib" \
+                 "--without-bz2lib" \
+                 "for bzip2 compression support" &&
+
+optional_depends LZMA \
+                 "--with-lzma" \
+                 "--without-lzma" \
+                 "for xz support through lzma" &&
+
+optional_depends lzma-utils \
+                 "--with-lzmadec" \
+                 "--without-lzmadec" \
+                 "for lzma support through lzmadec" &&
+
+optional_depends bash-completion \
+                 "--with-bash-completion-dir" \
+                 "--without-bash-completion-dir" \
+                 "to install bash completion script"
