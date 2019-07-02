@@ -1,3 +1,6 @@
+2019-07-02 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Remove non-x86_64 code, only x86_64 is supported.
+
 2019-05-16 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 8u212, use upstream hashes
           https://www.oracle.com/webfolder/s/digest/8u212checksum.html

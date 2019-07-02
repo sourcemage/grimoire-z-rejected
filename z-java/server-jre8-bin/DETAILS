@@ -3,22 +3,8 @@
          VERSION=8u212
   SECURITY_PATCH=6
              VER="1.${VERSION:0:1}.0_$(printf %02d ${VERSION:2})"
-case "${SMGL_COMPAT_ARCHS[0]}" in
-      x86-64|64)
-          if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
           SOURCE=server-jre-$VERSION-linux-x64.tar.gz
      SOURCE_HASH=sha512:4ba0d3622afd47f78560730a1217ddbb6e2984eb390b232839699b94d859f79599c81301a682a9b4bd263e7720c41f7518bb40beb6f5c92e09cfcb91416ba153:UPSTREAM_HASH
-          fi
-        ;;
-################################################################################
-# Missing support for i586, sparc, and sparcv9 tarballs say solaris not linux :\
-################################################################################
-        *)
-          SOURCE=
-         VERSION=Unsupported
-             VER=Unsupported
-        ;;
-esac
         WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk$VER"
          ENTERED=20170508
