@@ -1,7 +1,7 @@
            SPELL=flash-ppapi
          VERSION=32.0.0.171
   SECURITY_PATCH=8
-if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
             ARCH=x86_64
      SOURCE_HASH=sha512:45327247ff018e55808e40049b8a593609a4ca94e8c8bade926415fda9d04b88abea07ae3aebe9e3e32fad6319c80a95a941fba43b4d1abc8df2cfa5f368660b
 else
