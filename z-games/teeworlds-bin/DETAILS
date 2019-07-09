@@ -1,6 +1,6 @@
            SPELL=teeworlds-bin
          VERSION=0.5.2
-if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then 
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then 
        TEEW_ARCH=x86_64
      SOURCE_HASH=sha512:f36c130c9cf67655a6e9ede21ab92b3cbe4feb833c43754ea1cfedc4f586120c58a6fa26ca7a066ae2f2eaceeba0262d8dc198b3d4f421218c56890490a08b63
 else
