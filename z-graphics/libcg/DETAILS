@@ -1,7 +1,7 @@
            SPELL=libcg
          VERSION=April2012
          RELEASE=3.1
-    if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+    if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
         PLATFORM=x86_64
      SOURCE_HASH=sha512:591b51195193e7e3bbb9f1c2579336d24a179b0a88b955a01f4661bda55543fbccd73cac53033912f2eea8a1068e4c1394c6d286f195963cfb33a0d8b4428e27
     else
