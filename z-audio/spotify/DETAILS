@@ -1,7 +1,7 @@
            SPELL=spotify
           SPELLX=${SPELL}-client
          VERSION=1.0.72.117
-if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
               ID=g6bd7cc73-35
             ARCH=amd64
      SOURCE_HASH=sha512:fd33a5cd86edd4bf759849669516ffce35d89a77c6fcfb3ed0eb0ecb69024de5011499f36e48b8d37a873eb47da89eb21d9b9c7d280c498830a9fb1f8785db60
