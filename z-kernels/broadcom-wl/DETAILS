@@ -1,6 +1,6 @@
            SPELL=broadcom-wl
          VERSION=5.100.82.112
-if [[ ${SMGL_COMPAT_ARCHS[1]} == x86_64 ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
   BROADCOM_WL_ARCH=64
      SOURCE_HASH=sha512:485c4a661c30ebc076499f48d468ef30afdd5fdfd6458f4cd25fceaf15969f33e46695a173908d05e635a572efc152b5ae973493d53d5b4089335b03b0ba9a6d
 else
