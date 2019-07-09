@@ -1,6 +1,6 @@
            SPELL=ghc-bin
          VERSION=6.6.1
-if [[ ${SMGL_COMPAT_ARCHS[1]} == x86_64 ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
      SOURCE_HASH=sha512:47941333c125532ec9cc02303b7629d33f34270d998b212b4d201bdd26219679a22c83084b1696ce1025a772869d3be6fb6773dce6ccdfb2d8f565f5b315933a
           SOURCE=ghc-$VERSION-x86_64-unknown-linux.tar.bz2
       PATCHLEVEL=1
