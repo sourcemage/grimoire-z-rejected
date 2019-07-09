@@ -1,7 +1,7 @@
 # 32bit version is always installed,
 # 64bit one is installed only on relevant arch
 GEEK_BINS="geekbench"  &&
-if [[  "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
    GEEK_BINS="$GEEK_BINS geekbench-64bit"
 fi  &&
 
