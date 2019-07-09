@@ -1,3 +1,8 @@
+2019-07-08 Eric Sandall <sandalle@sourcemage.org>
+	* Set 64-bit for EM64T as well.
+	  Sorcery devel (from git), glibc, gcc, or updated smgl-archspecs changed
+	  SMGL_COMPAT_ARCHS[1] from x86_64 to em64t.
+
 2019-02-01 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 8u202; switched to upstream sha256s:
 	  https://www.oracle.com/webfolder/s/digest/8u202checksum.html

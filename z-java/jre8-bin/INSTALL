@@ -59,7 +59,7 @@ then
     ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/plugin/i386/ns7/libjavaplugin_oji.so  \
            ${INSTALL_ROOT}/usr/lib/opera/plugins/libjavaplugin_oji.so
   fi
-elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" ]]; then
+elif [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
   if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]
   then
     ln -sf ${INSTALL_ROOT}/usr/lib/jre$VER/lib/amd64/libnpjp2.so \
