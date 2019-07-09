@@ -6,7 +6,7 @@ else
          VERSION=1.4.589.4-1
 fi
 
-if [[ ${SMGL_COMPAT_ARCHS[1]} == "x86_64" ]]; then
+if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em64t" ]]; then
         PLATFORM=x86_64
 else
 #  if [[ $VIVALDI_BRANCH != "stable" ]]; then
