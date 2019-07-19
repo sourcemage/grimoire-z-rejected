@@ -1,3 +1,6 @@
+2019-07-19 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 2.6.1566.49-1 (stable)
+
 2019-07-08 Eric Sandall <sandalle@sourcemage.org>
 	* Set 64-bit for EM64T as well.
 	  Sorcery devel (from git), glibc, gcc, or updated smgl-archspecs changed
