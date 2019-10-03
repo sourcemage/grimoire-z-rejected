@@ -1,5 +1,6 @@
 2019-10-03 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 3.0.301026.0930
+	* INSTALL: added resources symlinks to fix SSO logins
 
 2019-09-24 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 3.0.291715.0908
