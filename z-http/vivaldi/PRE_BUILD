@@ -5,4 +5,4 @@ rpm2tar -O "${SOURCE_CACHE}/${SOURCE}" > "${SPELL}-${VERSION}.tar" &&
 tar xvf "${SPELL}-${VERSION}.tar" &&
 
 # remove potentially broken link
-rm -f opt/vivaldi*/libwidevinecdm.so
+rm -f opt/vivaldi*/WidevineCdm

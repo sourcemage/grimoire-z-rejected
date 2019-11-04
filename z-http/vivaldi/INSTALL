@@ -9,9 +9,6 @@ else
   rm -f opt/${branch_target}/vivaldi
 fi &&
 
-# remove potentially broken link
-rm -f opt/${branch_target}/libwidevinecdm.so &&
-
 cp -av opt/${branch_target} "${INSTALL_ROOT}/opt/" &&
 cp -av usr/share/* "${INSTALL_ROOT}/usr/share/" &&
 
