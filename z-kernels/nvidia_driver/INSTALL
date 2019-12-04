@@ -61,16 +61,17 @@ for lib in libGL.la \
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                              &&
 mkdir -vp $INSTALL_ROOT/usr/lib/.nvidia \
-          $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/  &&
-cp -vr libGL.so.1.7.0 $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGLdispatch.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
+          $INSTALL_ROOT/usr/lib/xorg/modules/extensions/.nvidia/ &&
+
+cp -vr libGL.so.1.7.0 $INSTALL_ROOT/usr/lib/.nvidia           &&
+cp -vr libGLdispatch.so.0 $INSTALL_ROOT/usr/lib/.nvidia       &&
 cp -vr libEGL.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libEGL.so.1.1.0 $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGLESv1_CM.so.1.2.0 $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGLESv2.so.2.1.0 $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGLX.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libOpenGL.so.0 $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libEGL.so.1.1.0 $INSTALL_ROOT/usr/lib/.nvidia          &&
+cp -vr libGLESv1_CM.so.1.2.0 $INSTALL_ROOT/usr/lib/.nvidia    &&
+cp -vr libGLESv2.so.2.1.0 $INSTALL_ROOT/usr/lib/.nvidia       &&
+cp -vr libGLX.so.0 $INSTALL_ROOT/usr/lib/.nvidia              &&
+cp -vr libOpenGL.so.0 $INSTALL_ROOT/usr/lib/.nvidia           &&
+
 mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
 install -v -m 0644  -o root  -g root  libnvidia-tls.so.${VERSION/-/.}  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
@@ -78,7 +79,7 @@ install -v -m 0644  -o root  -g root  libnvidia-tls.so.${VERSION/-/.}  \
 # Create library symlinks
 #
 pushd  $INSTALL_ROOT/usr/lib/.nvidia                           &&
-ln  -sfn  libGL.so.${VERSION/-/.}          libGL.so.1          &&
+ln  -sfn  libGL.so.1.7.0                   libGL.so.1          &&
 ln  -sfn  libGL.so.1                       libGL.so            &&
 
 ln  -sfn  libEGL_nvidia.so.${VERSION/-/.}  libEGL_nvidia.so.1  &&
@@ -132,11 +133,11 @@ install -v -m 0644 -o root -g root libGLX_nvidia.so.${VERSION/-/.} $INSTALL_ROOT
 pushd $INSTALL_ROOT/usr/lib/.nvidia/                       &&
 ln -sfn libGLX_nvidia.so.${VERSION/-/.} libGLX_nvidia.so.0 &&
 ln -sfn libGLX_nvidia.so.0 libGLX_nvidia.so                &&
-popd
+popd                                                       &&
 
-cp -vr libEGL_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libEGL_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia       &&
 cp -vr libGLESv1_CM_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
-cp -vr libGLESv2_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia &&
+cp -vr libGLESv2_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/.nvidia    &&
 
 cp -vr libglxserver_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/xorg/modules/extensions/ &&
 pushd $INSTALL_ROOT/usr/lib/xorg/modules/extensions/                   &&
@@ -161,13 +162,13 @@ ln -sfn /usr/lib/.nvidia/libGLX_nvidia.so.${VERSION/-/.} $INSTALL_ROOT/usr/lib/l
 for lib in libcuda.so.${VERSION/-/.} libnvcuvid.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
 done                                    &&
-  #
-  # Setup symlinks
-  #
-  pushd  $INSTALL_ROOT/usr/lib                                   &&
-  ln  -sfn  libcuda.so.${VERSION/-/.}  libcuda.so.1              &&
-  ln  -sfn  libcuda.so.1  libcuda.so                             &&
-  popd                                                           &&
+#
+# Setup symlinks
+#
+pushd  $INSTALL_ROOT/usr/lib                                   &&
+ln  -sfn  libcuda.so.${VERSION/-/.}  libcuda.so.1              &&
+ln  -sfn  libcuda.so.1  libcuda.so                             &&
+popd                                                           &&
 
 #
 # Install VDPAU headers
@@ -182,22 +183,23 @@ done                                    &&
 #
 for lib in libvdpau_nvidia.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/
-done                                                                           &&
-mkdir  -vp  $INSTALL_ROOT/usr/lib/vdpau                                        &&
+done                                                                         &&
+mkdir  -vp  $INSTALL_ROOT/usr/lib/vdpau                                      &&
 for lib in libvdpau_nvidia.so.${VERSION/-/.}; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/vdpau/
 done                                    &&
-  #
-  # Setup symlinks
-  #
-  pushd  $INSTALL_ROOT/usr/lib                                                 &&
-  ln  -sfn  libvdpau_nvidia.so.${VERSION/-/.}  libvdpau.so.1                   &&
-  ln  -sfn  libvdpau.so.1  libvdpau.so                                         &&
-  popd                                                                         &&
-  pushd  $INSTALL_ROOT/usr/lib/vdpau                                           &&
-  ln  -sfn  libvdpau_nvidia.so.${VERSION/-/.}  libvdpau_nvidia.so.1            &&
-  ln  -sfn  libvdpau_nvidia.so.1  libvdpau_nvidia.so                           &&
-  popd                                                                         &&
+
+#
+# Setup symlinks
+#
+pushd  $INSTALL_ROOT/usr/lib                                                 &&
+ln  -sfn  libvdpau_nvidia.so.${VERSION/-/.}  libvdpau.so.1                   &&
+ln  -sfn  libvdpau.so.1  libvdpau.so                                         &&
+popd                                                                         &&
+pushd  $INSTALL_ROOT/usr/lib/vdpau                                           &&
+ln  -sfn  libvdpau_nvidia.so.${VERSION/-/.}  libvdpau_nvidia.so.1            &&
+ln  -sfn  libvdpau_nvidia.so.1  libvdpau_nvidia.so                           &&
+popd                                                                         &&
 
 #
 # Install OpenCL headers
@@ -213,13 +215,13 @@ done                                    &&
 for lib in libOpenCL.so.1.0.0; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib/
 done                                    &&
-  #
-  # Setup symlinks
-  #
-  pushd  $INSTALL_ROOT/usr/lib                                   &&
-  ln  -sfn  libOpenCL.so.1.0.0 libOpenCL.so.1                    &&
-  ln  -sfn  libOpenCL.so.1 libOpenCL.so                          &&
-  popd &&
+#
+# Setup symlinks
+#
+pushd  $INSTALL_ROOT/usr/lib                                   &&
+ln  -sfn  libOpenCL.so.1.0.0 libOpenCL.so.1                    &&
+ln  -sfn  libOpenCL.so.1 libOpenCL.so                          &&
+popd &&
 
 #
 # Install Freedesktop.org spec
