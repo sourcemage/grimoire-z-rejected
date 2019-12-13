@@ -3,8 +3,8 @@
 mkdir -p /opt/tivoli &&
 cd       /opt/tivoli &&
 # cp -a breaks castfs
-cp -r "$SOURCE_DIRECTORY"/bacli/opt/tivoli/* . &&
-cp -r "$SOURCE_DIRECTORY"/bacli/usr          . &&
+cp -r "$SOURCE_DIRECTORY"/opt/tivoli/* . &&
+cp -r "$SOURCE_DIRECTORY"/usr          . &&
 # Relative links in ./usr need that.
 ln -sf ../../opt . &&
 
@@ -13,7 +13,6 @@ ln -sf ../../opt . &&
 gsklib=$(cd usr/local/ibm/gsk*/lib*/ && pwd) &&
 gskbin=$(cd usr/local/ibm/gsk*/bin && pwd)   &&
 tivolib=$(cd usr/lib*/ && pwd) &&
-binlib=$(cd tsm/client/ba/bin/lib*/ && pwd) &&
 apilib=$(cd tsm/client/api/bin*/ && pwd) &&
 
 dsm_dir=/opt/tivoli/tsm/client/ba/bin &&
@@ -21,7 +20,7 @@ for cfg in dsm.{opt,sys} \
   dsmcert.{crl,kdb,rdb,sth}
 do
   ln -sf /etc/tivoli/$cfg $dsm_dir/
-done
+done &&
 
 mkdir -p /etc/tivoli &&
 install_config_file "$SCRIPT_DIRECTORY"/dsm.sys /etc/tivoli/dsm.sys &&
@@ -31,7 +30,7 @@ message "${MESSAGE_COLOR}For SSL configuration, symlinks have been installed to 
 
 tsm_wrapper=/opt/tivoli/tsm/bin/tsm-wrapper &&
 gsk_wrapper=/opt/tivoli/tsm/bin/gsk-wrapper &&
-ldpath="$apilib:$gsklib:$tivolib:$binlib" &&
+ldpath="$apilib:$gsklib:$tivolib" &&
 mkdir $(dirname $tsm_wrapper) &&
 
 cat <<EOF > $tsm_wrapper &&

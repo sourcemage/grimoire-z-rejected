@@ -1,16 +1,16 @@
            SPELL=tsmclient
-         VERSION=7.1.6.3
-        VERSIONX=v7r1
-       VERSIONXX=v716
+         VERSION=8.1.6.1
+        VERSIONX=v8r1
+       VERSIONXX=v816
           SOURCE=$VERSION-TIV-TSMBAC-LinuxX86.tar
    SOURCE_URL[0]=ftp://public.dhe.ibm.com/storage/tivoli-storage-management/patches/client/$VERSIONX/Linux/LinuxX86/BA/$VERSIONXX/$VERSION-TIV-TSMBAC-LinuxX86.tar
    SOURCE_URL[1]=http://ftp.scc.kit.edu/pub/tsm/mirror/patches/client/$VERSIONX/Linux/LinuxX86/BA/$VERSIONXX/$VERSION-TIV-TSMBAC-LinuxX86.tar
-SOURCE_HASH=sha512:cdd5272f479554382a93621dd03fa0fa27b138705327d9bc5b5affd078f46004ffe9a1535a8d51b9ef420564423bbd227a017e60268b91ff78e61cc4f07dd4fa
+SOURCE_HASH=sha512:8e18de057dd8dc26d89863b809600fcb33380c84cb674d1fc372750a5295c7aec301c60af8d5c8388ff7b3cf69159ae692e8b0e3829602ff8eab5c265c211fac
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
            SHORT="IBM Tivoli Storage Manager (TSM) client software, x86-64 only"
       PATCHLEVEL=1
          ARCHIVE=off
-         WEBSITE=http://www.rrz.uni-hamburg.de/de/services/datenhaltung/backup.html
+         WEBSITE=https://www.ibm.com/support/knowledgecenter/en/SSGSG7/landing/welcome_ssgsg7.html
 cat << EOF
 This is a hacky spell for installing the TSM backup client. The version
 is not necessarily the newest, but a tested and current-enough one.
