@@ -1,3 +1,6 @@
+2019-12-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+	* DETAILS: stable version 440.44
+
 2019-12-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* DETAILS: stable version 440.36
 	* INSTALL: fix installation of libGL, add missing &&, improve
