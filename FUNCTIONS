@@ -435,6 +435,15 @@ fi
 
 
 #---
+## disable_no_plt
+## A function for disabling -fno-plt
+#---
+disable_no_plt() {
+    CFLAGS=${CFLAGS//-fno-plt}     &&
+    CXXFLAGS=${CXXFLAGS//-fno-plt}
+}
+
+#---
 ## disable_pic
 ## A function to smartly disable -DPIC and -fPIC flags
 ## has one optional parameter: force which forces disable
@@ -446,12 +455,14 @@ disable_pic() {
      [[ "${SMGL_COMPAT_ARCHS[1]}" != "alpha"  ]] ||
      [[ "$1" == "force" ]]
   then
-    CFLAGS=${CFLAGS/-fPIC}                    &&
-    CFLAGS=${CFLAGS/-DPIC}                    &&
-    CXXFLAGS=${CXXFLAGS/-fPIC}                &&
-    CXXFLAGS=${CXXFLAGS/-DPIC}
+    CFLAGS=${CFLAGS//-fPIC}                    &&
+    CFLAGS=${CFLAGS//-DPIC}                    &&
+    CXXFLAGS=${CXXFLAGS//-fPIC}                &&
+    CXXFLAGS=${CXXFLAGS//-DPIC}                &&
+    disable_no_plt
   fi
 }
+
 #
 ## Function to check if we're using xorg-modular libs or not
 #
