@@ -16,9 +16,5 @@ sedit  's/__.*__\///'  nvidia-settings.desktop  &&
 # than the running kernel
 #
 cd  $SOURCE_DIRECTORY/kernel     &&
-sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  Makefile &&
-
-cd "$SOURCE_DIRECTORY" &&
-
-patch -p1 < "$SPELL_DIRECTORY/xf86-video-nvidia-0000-fix-for-kernel-5.5.patch"
+sedit  's:depmod -ae:& \$(KERNEL_UNAME):'  Makefile
 
