@@ -1,10 +1,10 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=server-jre8-bin
-         VERSION=8u212
-  SECURITY_PATCH=6
+         VERSION=8u241
+  SECURITY_PATCH=7
              VER="1.${VERSION:0:1}.0_$(printf %02d ${VERSION:2})"
           SOURCE=server-jre-$VERSION-linux-x64.tar.gz
-     SOURCE_HASH=sha512:4ba0d3622afd47f78560730a1217ddbb6e2984eb390b232839699b94d859f79599c81301a682a9b4bd263e7720c41f7518bb40beb6f5c92e09cfcb91416ba153:UPSTREAM_HASH
+     SOURCE_HASH=sha512:cbb496e498b0043174de62ac6adacfdfc2bb1b35e8fe2f8758c25a461c9ad2b529c0c1898425d8c46515bfd2bd889ed4ae192da33a3bd2461462e08b3b53d7da:UPSTREAM_HASH
         WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk$VER"
          ENTERED=20170508
