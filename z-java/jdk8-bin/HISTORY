@@ -1,3 +1,9 @@
+2020-02-28 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 8u241
+	  Remove SMGL_COMPAT_ARCHS support as I don't think anyone uses 32-bit-only
+	  anymore and this code stopped working somewhere (see prior update).
+	  SECURITY_PATCH++
+
 2019-07-08 Eric Sandall <sandalle@sourcemage.org>
 	* Set 64-bit for EM64T as well.
 	  Sorcery devel (from git), glibc, gcc, or updated smgl-archspecs changed

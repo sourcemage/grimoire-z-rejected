@@ -1,31 +1,10 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=jdk8-bin
-         VERSION=8u201
-  SECURITY_PATCH=12
+         VERSION=8u241
+  SECURITY_PATCH=13
              VER="1.${VERSION:0:1}.0_$(printf %02d ${VERSION:2})"
-case "${SMGL_COMPAT_ARCHS[0]}" in
-  ia32|32)
-          SOURCE=jdk-$VERSION-linux-i586.tar.gz
-     SOURCE_HASH=sha512:b3776845874a18cab62119eeb53f832dd877cdab74d131152a418732c4ab2a3d445a505ea550bb1de5c870bbbea86692594c5169ae4e15ff233d20be055327e6
-  ;;
-  x86-64|64)
-    if [[ "${SMGL_COMPAT_ARCHS[@]/32/}" == "${SMGL_COMPAT_ARCHS[@]}" ]]; then
           SOURCE=jdk-$VERSION-linux-x64.tar.gz
-     SOURCE_HASH=sha512:dc6de46cf1298853b743b6fc8ca10f945e81c315bd5e066ca9ec591fd7e03881baf4b029abdf3e76dd24e6f77429edac579458b3855b8f3a705b0def34d29268
-    else
-          SOURCE=jdk-$VERSION-linux-i586.tar.gz
-     SOURCE_HASH=sha512:b3776845874a18cab62119eeb53f832dd877cdab74d131152a418732c4ab2a3d445a505ea550bb1de5c870bbbea86692594c5169ae4e15ff233d20be055327e6
-    fi
-  ;;
-###########################################################################
-# Missing support for sparc and sparcv9 tarballs say solaris not linux :\
-###########################################################################
-  *)
-          SOURCE=
-         VERSION=Unsupported
-             VER=Unsupported
-  ;;
-esac
+     SOURCE_HASH=sha512:1123fb82926ac207fdbfc1dd3efd588832feed15cac755d1ca604e321816c2fb3c695b9ce3f99b5a14f6c45973cc8dadae87d5c79c49d67336f8a5cb50c56050
 #      SOURCE_GPG="gurus.gpg:${SOURCE}.sig:WORKS_FOR_ME"
         WEB_SITE=http://www.oracle.com/technetwork/java/javase/downloads/
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk${VER}"
