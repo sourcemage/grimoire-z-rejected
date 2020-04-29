@@ -1,7 +1,7 @@
            SPELL=vivaldi
 if [[ $VIVALDI_BRANCH == "stable" ]]; then
-         VERSION=3.0.1874.32-1
-  SECURITY_PATCH=15
+         VERSION=3.0.1874.33-1
+  SECURITY_PATCH=16
 else
          VERSION=1.4.589.4-1
 fi
