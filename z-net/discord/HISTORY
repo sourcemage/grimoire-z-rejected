@@ -1,3 +1,8 @@
+2020-06-04 Vlad Glagolev <stealth@sourcemage.org>
+	* DETAILS: updated spell to 0.0.10; updated webpage
+	* INSTALL: correct perms required for sandboxing
+	* PRE_BUILD: remove postinst script
+
 2019-07-08 Eric Sandall <sandalle@sourcemage.org>
 	* Set 64-bit for EM64T as well.
 	  Sorcery devel (from git), glibc, gcc, or updated smgl-archspecs changed

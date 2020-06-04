@@ -6,4 +6,6 @@ ln -vsf "${TRACK_ROOT}/opt/Discord/discord.desktop" \
 ln -vsf "${TRACK_ROOT}/opt/Discord/discord.png" \
         "${INSTALL_ROOT}/usr/share/pixmaps/discord.png" &&
 
+chmod 4755 "${INSTALL_ROOT}/opt/Discord/chrome-sandbox" &&
+
 ln -vsf "${TRACK_ROOT}/opt/Discord/Discord" "${INSTALL_ROOT}/usr/bin/discord"

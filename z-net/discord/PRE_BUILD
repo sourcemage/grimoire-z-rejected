@@ -3,4 +3,6 @@ cd "${SOURCE_DIRECTORY}" &&
 
 unpack_file &&
 
+rm -f Discord/postinst.sh &&
+
 sedit "s:/usr/share/discord:/opt/Discord:" Discord/discord.desktop
