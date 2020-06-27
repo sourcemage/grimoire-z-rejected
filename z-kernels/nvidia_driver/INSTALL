@@ -36,14 +36,16 @@ ln -sfn /usr/include/GL/.mesa $INSTALL_ROOT/usr/include/GL/.nvidia &&
 sed -i 's|__LIBGL_PATH__|/usr/lib|' $SOURCE_DIRECTORY/libGL.la &&
 cd $SOURCE_DIRECTORY &&
 for lib in libGL.la \
+	libnvidia-allocator.so.${VERSION/-.} \
 	libnvidia-cbl.so.${VERSION/-/.} \
 	libnvidia-cfg.so.${VERSION/-/.} \
 	libnvidia-compiler.so.${VERSION/-/.} \
-	libnvidia-egl-wayland.so.1.1.0 \
+	libnvidia-egl-wayland.so.1.1.4 \
 	libnvidia-eglcore.so.${VERSION/-/.} \
 	libnvidia-encode.so.${VERSION/-/.} \
 	libnvidia-fatbinaryloader.so.${VERSION/-/.} \
 	libnvidia-fbc.so.${VERSION/-/.} \
+	libnvidia-glcore.so.${VERSION/-/.} \
 	libnvidia-glsi.so.${VERSION/-/.} \
 	libnvidia-glvkspirv.so.${VERSION/-/.} \
 	libnvidia-gtk2.so.${VERSION/-/.} \
@@ -51,11 +53,10 @@ for lib in libGL.la \
 	libnvidia-ifr.so.${VERSION/-/.} \
 	libnvidia-ml.so.${VERSION/-/.} \
 	libnvidia-opencl.so.${VERSION/-/.} \
+	libnvidia-opticalflow.so.${VERSION/-/.} \
 	libnvidia-ptxjitcompiler.so.${VERSION/-/.} \
 	libnvidia-rtcore.so.${VERSION/-/.} \
 	libnvidia-tls.so.${VERSION/-/.} \
-	libnvidia-wfb.so.${VERSION/-/.} \
-	libnvidia-glcore.so.${VERSION/-/.} \
 	libnvoptix.so.${VERSION/-/.} \
 	; do
   install -v -m 0644  -o root  -g root  $lib  $INSTALL_ROOT/usr/lib
