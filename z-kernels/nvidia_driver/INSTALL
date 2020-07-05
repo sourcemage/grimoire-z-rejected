@@ -33,9 +33,8 @@ ln -sfn /usr/include/GL/.mesa $INSTALL_ROOT/usr/include/GL/.nvidia &&
 #
 
 # Fill in the path to libGL.so
-sed -i 's|__LIBGL_PATH__|/usr/lib|' $SOURCE_DIRECTORY/libGL.la &&
 cd $SOURCE_DIRECTORY &&
-for lib in libGL.la \
+for lib in \
 	libnvidia-allocator.so.${VERSION/-.} \
 	libnvidia-cbl.so.${VERSION/-/.} \
 	libnvidia-cfg.so.${VERSION/-/.} \
@@ -43,7 +42,6 @@ for lib in libGL.la \
 	libnvidia-egl-wayland.so.1.1.4 \
 	libnvidia-eglcore.so.${VERSION/-/.} \
 	libnvidia-encode.so.${VERSION/-/.} \
-	libnvidia-fatbinaryloader.so.${VERSION/-/.} \
 	libnvidia-fbc.so.${VERSION/-/.} \
 	libnvidia-glcore.so.${VERSION/-/.} \
 	libnvidia-glsi.so.${VERSION/-/.} \
@@ -52,6 +50,7 @@ for lib in libGL.la \
 	libnvidia-gtk3.so.${VERSION/-/.} \
 	libnvidia-ifr.so.${VERSION/-/.} \
 	libnvidia-ml.so.${VERSION/-/.} \
+	libnvidia-ngx.so.${VERSION/-/.} \
 	libnvidia-opencl.so.${VERSION/-/.} \
 	libnvidia-opticalflow.so.${VERSION/-/.} \
 	libnvidia-ptxjitcompiler.so.${VERSION/-/.} \
