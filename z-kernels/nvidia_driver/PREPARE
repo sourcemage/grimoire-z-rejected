@@ -11,6 +11,4 @@ else
   then
     return 1
   fi
-fi  &&
-
-config_query NVIDIA_BETA "Use beta version ?" n
+fi
