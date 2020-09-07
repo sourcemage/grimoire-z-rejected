@@ -2,7 +2,7 @@ source "${GRIMOIRE}/FUNCTIONS"
 
            SPELL=zoom-client
           SPELLX=${SPELL/-client/}
-         VERSION=5.0.403652.0509
+         VERSION=5.2.454870.0831
   SECURITY_PATCH=1
 if spell_ok gcc && is_version_less $(installed_version gcc) 4.7; then
           SUFFIX="-1"
@@ -11,13 +11,13 @@ if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em6
             ARCH=x86_64
 
   if [ -z "${SUFFIX}" ]; then
-     SOURCE_HASH=sha512:5a6c2070b71324ef89040377b759c5ba0f4ab21662c9cf714e57af5bc0a3f28d029f03fd80883479f7a62561b2f136ad480d2efd3dce83398aab814e2a21f8fe
+     SOURCE_HASH=sha512:44f7fba85c991ac017a8bf61216a7b51d8ae526631be95a25611f6116e3e4b4e1257f8f72b88172539e1ad3d831d58bc87b9858d868a271d4f9ae64b4061d27e
   else
-     SOURCE_HASH=sha512:a8e212d7e9d45fa4b1d82a27d8e429758fcc92f25b387ef2ae7eda055a894f4f34a47f52352288df731575e181ebf96302fbfcedc9084c1bcc6ac22d9df32093
+     SOURCE_HASH=sha512:86daac32d393e429c4330f6e274dbd5a5369f4f1d890d4e34d6e7d74bb874fc04243794573ae6adfd458253727da8bcae4f6f4c9da8d4194b392a5125aee16ee
   fi
 else
             ARCH=i686
-     SOURCE_HASH=sha512:3f49c76b28dc0c14272df6632cb0cdafcd67500bf14a5a7e4e0a7f6e685a0d7e3adef522a1c5ba3f8a31ef8c5d880ed686dcf1dae1934b1f86dc8e3871894b64
+     SOURCE_HASH=sha512:1dbc0c95b3d376dafa9020bb4f02ad7c64bcfdcf25ea9ee3393bc404731a9c19aa0073b81bfaca7eaa040afa6e3c5df116d45f337de1f776f32d8da31faf0271
 fi
           SOURCE=${SPELL}-${VERSION}_${ARCH}.tar.xz
    SOURCE_URL[0]=https://zoom.us/client/${VERSION}/${SPELLX}${SUFFIX}_${ARCH}.tar.xz
