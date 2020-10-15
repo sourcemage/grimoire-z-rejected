@@ -1,8 +1,8 @@
            SPELL=discord
-         VERSION=0.0.11
+         VERSION=0.0.12
           SOURCE=${SPELL}-${VERSION}.tar.gz
    SOURCE_URL[0]=https://dl.discordapp.net/apps/linux/${VERSION}/${SOURCE}
-     SOURCE_HASH=sha512:aac728bd514b2d3467bf21291fc96192cc3024b41471cd220e6fd74792a4131a1448cd2e0f5092e476b472be8d12c4deebcc46d2b0908e21b1626215ec7c4d5f
+     SOURCE_HASH=sha512:c5009e022cac0b76d39cc125a98b9dd3d7a5827dd7d733c5578237b99b746aeccc1cd253aafa99e2a237bd82ef71ee42011f864059aa5ee62812488dbd82f511
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
      GATHER_DOCS=off
         WEB_SITE=https://discord.com/
