@@ -1,3 +1,7 @@
+2021-01-23 Eric Sandall <sandalle@sourcemage.org>
+	* DETAILS: Updated to 8u281
+	  SECURITY_PATCH++
+
 2020-02-28 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 8u241
 	  SECURITY_PATCH++
