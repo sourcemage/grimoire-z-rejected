@@ -1,0 +1,15 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=jdk11-bin
+         VERSION=11.0.10
+          SOURCE=jdk-${VERSION}_linux-x64_bin.tar.gz
+     SOURCE_HASH=sha512:1773eacdde92fd52e58b7acea81dc274b1c3c7272673573ed2292b97aebb30542faeff8696155de8126ec6ee9aa567e18611784e48786c7da2a91f524c80cedd
+        WEB_SITE=https://www.oracle.com/java/technologies/javase-downloads.html#JDK11
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk-${VERSION}"
+         ENTERED=20210203
+         ARCHIVE="off"
+          REJECT="is non-source"
+           SHORT="Java 11 Software Development Kit"
+cat << EOF
+The Java 11 Development Kit is a feature-complete development and
+deployment platform.
+EOF

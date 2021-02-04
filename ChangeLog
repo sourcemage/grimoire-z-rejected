@@ -1,3 +1,6 @@
+2021-02-03 Eric Sandall <sandalle@sourcemage.org>
+	* z-java/jdk11-bin: Added JDK 11 spell
+
 2020-01-26 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
 	* FUNCTIONS: filter -fno-plt in disable_pic
 

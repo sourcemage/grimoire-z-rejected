@@ -5,4 +5,5 @@ conflicts  jre6-bin    &&
 conflicts  jdk6-bin    &&
 conflicts  jre7-bin    &&
 conflicts  jre8-bin    &&
-conflicts  jdk7-bin
+conflicts  jdk7-bin    &&
+conflicts  jdk11-bin

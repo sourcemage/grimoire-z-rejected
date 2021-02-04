@@ -1,3 +1,6 @@
+2021-02-03 Eric Sandall <sandalle@sourcemage.org>
+	* CONFLICTS: Conflicts with jdk11-bin
+
 2014-04-23 Eric Sandall <sandalle@sourcemage.org>
 	* CONFLICTS: Conflicts with jre8-bin
 

@@ -1,3 +1,6 @@
+2021-02-03 Eric Sandall <sandalle@sourcemage.org>
+	* CONFLICTS: Conflicts with jdk11-bin
+
 2020-02-28 Eric Sandall <sandalle@sourcemage.org>
 	* DETAILS: Updated to 8u241
 	  Remove SMGL_COMPAT_ARCHS support as I don't think anyone uses 32-bit-only
