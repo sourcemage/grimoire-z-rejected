@@ -22,7 +22,7 @@
 	  https://www.oracle.com/webfolder/s/digest/8u192checksum.html
 	  SECURITY_PATCH++
 
-2018-03-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-03-18 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: Updated to 8u162, SECURITY_PATCH++
 
 2017-11-17 Ismael Luceno <ismael@sourcemage.org>
@@ -30,7 +30,7 @@
 	updated to 8u152
 	SECURITY_PATCH++
 
-2017-08-11 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-08-11 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: Updated to 8u144, use upstream hashes
 	  https://www.oracle.com/webfolder/s/digest/8u144checksum.html
 
@@ -40,7 +40,7 @@
 	  SECURITY_PATCH++
 	* CONFLICTS: Add jdk8-bin and server-jre8-bin.
 
-2017-01-28 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-01-28 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: Updated to 8u121, use upstream hashes
 	  https://www.oracle.com/webfolder/s/digest/8u121checksum.html
 
@@ -58,17 +58,17 @@
 	  https://www.oracle.com/webfolder/s/digest/8u92checksum.html
 	  SECURITY_PATCH++
 
-2016-03-24 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-03-24 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 8u77, SECURITY_PATCH++, fixes CVE-2016-0636
 
-2015-11-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-11-22 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 8u66
 
 2015-09-14 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: PATCHLEVEL=1
 	* PRE_INSTALL: added, to drop old.* files from install
 
-2015-09-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-09-02 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 8u60
 
 2015-07-26 Vlad Glagolev <stealth@sourcemage.org>
@@ -82,7 +82,7 @@
 2015-07-04 Vlad Glagolev <stealth@sourcemage.org>
 	* JAVA_WARNING: corrected version number
 
-2015-05-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-05-10 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 8u45
 
 2015-01-29 Eric Sandall <sandalle@sourcemage.org>

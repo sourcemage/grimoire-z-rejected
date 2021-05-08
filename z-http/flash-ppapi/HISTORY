@@ -9,22 +9,22 @@
 2019-02-01 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: version 32.0.0.114, SECURITY_PATCH++
 
-2018-08-28 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-08-28 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 30.0.0.154 SECURITY_PATCH++
 
-2016-12-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-12-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 24.0.0.186, SECURITY_PATCH++
 
 2016-11-11 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: version 23.0.0.207, SECURITY_PATCH++; switched to plain http
 
-2016-10-30 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-10-30 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 23.0.0.205, SECURITY_PATCH++
 
-2016-09-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-09-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 23.0.0.185, SECURITY_PATCH++
 
-2016-09-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-09-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 23.0.0.162, SECURITY_PATCH++, use version number in
 	  downloaded filename
 

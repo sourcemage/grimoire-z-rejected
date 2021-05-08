@@ -9,10 +9,10 @@
 2019-02-01 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 32.0.0.114; SECURITY_PATCH++
 
-2018-08-28 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-08-28 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 30.0.0.154, SECURITY_PATCH=74
 
-2016-12-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-12-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 24.0.0.186, SECURITY_PATCH=73
 
 2016-11-11 Vlad Glagolev <stealth@sourcemage.org>
@@ -21,44 +21,44 @@
 2016-10-30 Thomas Orgis <sobukus@sourcemage.org>
 	* DETAILS: 11.2.202.643, SECURITY_PATCH++
 
-2016-10-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-10-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.637, SECURITY_PATCH=69
 
-2016-05-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-05-13 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.635, SECURITY_PATCH=69
 
 2016-07-12 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 11.2.202.632; SECURITY_PATCH++
 
-2016-05-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-05-13 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.621, SECURITY_PATCH=67, fixes CVE-2016-4117 and 24
 	  others
 
-2016-04-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-04-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.616, SECURITY_PATCH=66, fixes CVE-2016-1019
 
-2016-03-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-03-10 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.577, SECURITY_PATCH=65
 
-2016-02-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-02-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.569, SECURITY_PATCH=64
 
-2015-12-30 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-12-30 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.559, SECURITY_PATCH=63
 
-2015-12-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-12-10 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.554, SECURITY_PATCH=62
 
-2015-11-15 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-11-15 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.548, SECURITY_PATCH=61
 
-2015-10-17 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-10-17 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.540, SECURITY_PATCH=60
 
-2015-10-15 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-10-15 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.535, SECURITY_PATCH=59
 
-2015-09-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-09-23 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 11.2.202.521, SECURITY_PATCH=58
 
 2015-08-13 Ladislav Hagara <hgr@vabo.cz>
@@ -72,27 +72,27 @@
 	* DETAILS: version 11.2.202.491
 	  SECURITY_PATCH=56
 
-2015-07-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-07-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.481
 	  SECURITY_PATCH=55
 
-2015-06-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-06-25 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.468
 	  SECURITY_PATCH=54
 
-2015-06-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-06-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.466
 	  SECURITY_PATCH=53
 
-2015-05-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-05-13 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.460
 	  SECURITY_PATCH=52
 
-2015-04-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-04-16 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.457
 	  SECURITY_PATCH=51
 
-2015-03-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-03-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.451
 	  SECURITY_PATCH=50
 
@@ -114,50 +114,50 @@
 	* DETAILS: updated spell to 11.2.202.425; SECURITY_PATCH++; quoting
 	  paths; optimize variables
 
-2014-09-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-09-10 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.406
 	  SECURITY_PATCH=44
 
-2014-08-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-08-16 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.400
 	  SECURITY_PATCH=43
 
-2014-07-09 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-07-09 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.394
 	  SECURITY_PATCH=42
 
-2014-06-11 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-06-11 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.378 (x86_64, i386),
 	  SECURITY_PATCH=41
 
-2014-05-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-05-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.359 (x86_64, i386),
 	  SECURITY_PATCH=40
 
-2014-04-29 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-04-29 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.356 (x86_64, i386),
 	  SECURITY_PATCH=39
 
-2014-03-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-03-13 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.346 (x86_64, i386),
 	  SECURITY_PATCH=38
 
-2014-02-21 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-02-21 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.341 (x86_64, i386),
 	  SECURITY_PATCH=37
 
-2014-02-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-02-04 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.336 (x86_64, i386),
 	  SECURITY_PATCH=36
 
 2014-01-20 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 11.2.202.335, SECURITY_PATCH=35
 
-2013-05-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-05-19 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.310 (x86_64, i386),
 	  SECURITY_PATCH=34
 
-2013-07-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-07-13 Florian Franzmann <bwlf@bandrate.org>
 	* INSTALL: install the plugin to the correct directory for
 	  firefox
 
@@ -167,36 +167,36 @@
 2013-06-13 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 11.2.202.291, SECURITY_PATCH=32, APSB13-16
 
-2013-05-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-05-19 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.285 (x86_64, i386)
 
-2013-04-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-04-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.280 (x86_64, i386)
 
-2013-03-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-03-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.275 (x86_64, i386)
 
 2013-03-03 Sukneet Basuta <sukneet@sourcemage.org>
 	* DETAILS: cleaned up a bit, force_download for both archs
 	* PRE_BUILD: allow flash to use vdpau (fixed in libvdpau >= 0.5)
 
-2013-02-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-02-23 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.273 (x86_64, i386)
 	* DETAILS, PREPARE: remove option for beta version
 
-2013-02-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-02-23 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.270 (x86_64)
 
 2013-02-20 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 11.2.202.270 (i386), SECURITY_PATCH=28, APSB13-05
 
-2013-02-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-02-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.262 (i386)
 
-2013-01-27 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-01-27 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.261 (i386)
 
-2012-12-31 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-12-31 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.258 (i386)
 
 2012-12-02 Ladislav Hagara <hgr@vabo.cz>
@@ -209,7 +209,7 @@
 	* DETAILS: 11.2.202.243 (i386), SECURITY_PATCH=25, APSB12-22
 	  SOURCE updated
 
-2012-08-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-08-23 Florian Franzmann <bwlf@bandrate.org>
 	* PRE_BUILD: prevent libflashplayer.so from using vdpau, which is
 	  broken
 
@@ -222,10 +222,10 @@
 2012-05-07 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated version to 11.2.202.235, SECURITY_PATCH=22
 
-2012-04-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-04-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: fixes SOURCE_HASH
 
-2012-03-31 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-03-31 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 11.2.202.228, SECURITY_PATCH=21
 
 2012-03-09 Ladislav Hagara <hgr@vabo.cz>
@@ -307,11 +307,11 @@
 	* DETAILS: 10.3.181.14, SECURITY_PATCH=14
 	  http://www.adobe.com/support/security/bulletins/apsb11-12.html
 
-2011-04-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2011-04-16 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 10.2.159.1, SECURITY_PATCH=13
 	  http://www.adobe.com/support/security/advisories/apsa11-02.html
 
-2011-03-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2011-03-22 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 10.2.153.1, SECURITY_PATCH=12
 	  http://www.adobe.com/support/security/bulletins/apsb11-05.html
 

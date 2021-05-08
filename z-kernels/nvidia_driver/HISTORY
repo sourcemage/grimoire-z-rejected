@@ -1,192 +1,192 @@
-2021-04-30 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2021-04-30 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 460.73.01
 
-2021-03-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2021-03-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 460.56
 
-2020-12-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-12-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 460.32.03
 
-2020-12-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-12-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 455.45.01
 
-2020-10-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-10-02 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 450.80.02
 
-2020-07-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-07-10 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 450.57
 
-2020-07-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-07-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS, INSTALL: stable version 450.51
 	* BUILD, DETAILS, PREPARE: remove option to build the beta version
 
-2020-06-27 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-06-27 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS, INSTALL: stable version 440.100
 
-2020-06-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-06-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta version 435.21
 
-2020-04-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-04-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 440.82
 
-2020-03-28 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-03-28 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 440.64
 
-2020-02-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-02-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 440.59
 	* xf86-video-nvidia-0000-fix-for-kernel-5.5.patch, PRE_BUILD: remove
 	  obsolete patch
 
-2020-01-29 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-01-29 Florian Franzmann <bwlf@bandrate.org>
 	* PRE_BUILD, xf86-video-nvidia-0000-fix-for-kernel-5.5.patch: fix build
 	  against linux 5.5
 
-2020-01-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-01-18 Florian Franzmann <bwlf@bandrate.org>
 	* DEPENDS: only depend on pangox-compat if depending on gtk+2
 
-2019-12-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-12-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 440.44
 
-2019-12-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-12-04 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 440.36
 	* INSTALL: fix installation of libGL, add missing &&, improve
 	  formatting
 
-2019-09-28 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-09-28 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 430.50
 
-2019-07-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-07-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 430.34
 
-2019-06-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-06-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 430.26
 
-2019-05-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-05-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 418.74
 
-2019-04-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-04-06 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 418.56
 	* INSTALL: fix symlinks
 
-2019-03-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-03-06 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 418.43
 
-2019-02-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-02-10 Florian Franzmann <bwlf@bandrate.org>
 	* DEPENDS: depend on xserver instead of xorg-server
 	* TRIGGERS: trigger on xserver and mesa instead of xorg-server and mesalib
 
-2019-01-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-01-19 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta version 415.27
 
-2019-01-13 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-01-13 Florian Franzmann <bwlf@bandrate.org>
 	* INSTALL: use mesa's OpenGL headers, nvidia_driver doesn't provide
 	  them anymore
 	* DETAILS: PATCHLEVEL++
 
-2019-01-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-01-03 Florian Franzmann <bwlf@bandrate.org>
 	* INSTALL: fix library installation
 	* DETAILS: PATCHLEVEL++
 
-2019-01-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2019-01-02 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: remove support for x86 since upstream has ceased to support
 	  the architecture
 	  stable version 410.78, beta version 415.25
 
-2018-07-29 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-07-29 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable versions 390.77
 
-2018-06-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-06-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable versions 390.67
 
-2018-06-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-06-04 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable versions 390.59
 	* 0001-fix-incompatibility-with-linux-4.16-in-390.48.patch, PRE_BUILD:
 	  remove obsolete patch
 
-2018-04-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-04-04 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS, PRE_BUILD, INSTALL,
 	  0001-fix-incompatibility-with-linux-4.16-in-390.48.patch:
 	  stable versions 390.48
 
-2018-02-17 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-02-17 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable versions 390.25
 
-2018-01-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2018-01-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable versions 384.111
 
-2017-12-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-12-03 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta versions 387.34
 
-2017-11-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-11-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 384.98 and 387.22
 	* INSTALL: add missing libraries
 
-2017-10-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-10-02 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 384.90
 
-2017-05-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-05-19 Florian Franzmann <bwlf@bandrate.org>
 	* INSTALL: install missing libraries
 	* DETAILS: PATCHLEVEL++
 
-2017-05-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-05-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 381.22 and 375.66
 
-2017-04-15 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-04-15 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta version 381.09
 
-2017-02-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-02-22 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 375.39 and 378.13
 
-2017-01-17 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-01-17 Florian Franzmann <bwlf@bandrate.org>
 	* DEPENDS: add libvdpau as a suggested dependency
 
-2016-12-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-12-18 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 375.26
 
-2016-11-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-11-19 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 375.20
 
-2016-11-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-11-18 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 367.57
 
-2016-09-10 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-09-10 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 367.44 and 370.28
 	* 0001-fix-multiple-definition-of-radix_tree_empty-beta.patch,
 	  0001-fix-multiple-definition-of-radix_tree_empty-stable.patch,
 	  linux-4.6.patch, PRE_BUILD: remove obsolete patches
 
-2016-08-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-08-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 367.35
 	* PRE_BUILD, 0001-fix-multiple-definition-of-radix_tree_empty-beta.patch, 0001-fix-multiple-definition-of-radix_tree_empty-stable.patch: fix
 	  build against linux 4.7
 	* PRE_BUILD, linux-4.6.patch: fix build of beta version against linux 4.6
 	* INSTALL: install the right files
 
-2016-05-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-05-22 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 361.42, beta version 364.19
 
-2016-01-04 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-01-04 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 352.63, beta version 358.16
 
-2015-11-09 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-11-09 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable versions 352.55
 
-2015-09-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-09-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 352.41 and 355.11
 
-2015-07-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-07-12 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 352.21
 
-2015-04-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-04-16 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 346.59 and 349.16
 
 2015-03-26 Vlad Glagolev <stealth@sourcemage.org>
 	* PRE_BUILD: use check_tmp_noexec
 
-2015-03-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-03-14 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 346.47
 
-2015-02-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-02-22 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 343.36 and 346.35
 
 2015-01-28 Ladislav Hagara <hgr@vabo.cz>
@@ -206,37 +206,37 @@
 	* INSTALL: install all libs and binaries (excluding nvidia-modprobe) 
 	  so everything works
 
-2014-07-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-07-19 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 340.24 and 337.25
 
-2014-07-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-07-08 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta version 340.17
 
-2014-07-05 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-07-05 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable version 331.89
 
-2014-06-01 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-06-01 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta version 337.25 and 331.79
 
-2014-05-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-05-06 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta version 337.19
 
 2014-04-15 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 331.67
 
-2014-03-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-03-03 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta versions 334.21
 	* PRE_BUILD, linux-3.13.patch: remove obsolete patch
 
 2014-02-28 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: sha512s for ia32 fixed
 
-2014-02-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-02-19 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 334.16, 331.49
 	* PRE_BUILD: apply patch only to unstable version
 	* linux-3.11.patch, nvidia-linux-3.10.patch: removed
 
-2014-01-20 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2014-01-20 Florian Franzmann <bwlf@bandrate.org>
 	* PRE_BUILD, linux-3.13.patch: fix run-time error with linux 3.13
 
 2014-01-13 Ladislav Hagara <hgr@vabo.cz>
@@ -249,18 +249,18 @@
 2013-10-02 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 319.60
 
-2013-09-07 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-09-07 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: versions 325.15, 319.49
 	* linux-3.11.patch, PRE_BUILD: fix compile error with linux 3.11
 	* BUILD, INSTALL, PRE_BUILD: Makefile.kbuild is now called Makefile
 	  in the beta version; added conditionals to take that into account
 
-2013-07-07 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-07-07 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 319.32, version 325.08 (beta)
 	* PRE_BUILD, nvidia-linux-3.10.patch: apply patch from archlinux
 	  to prevent build error with linux 3.10
 
-2013-05-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-05-25 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 319.23 (x86_64)
 
 2013-05-25 Ladislav Hagara <hgr@vabo.cz>
@@ -269,19 +269,19 @@
 2013-05-02 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: stable version 319.17
 
-2013-05-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-05-02 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta version 319.17
 
-2013-04-09 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-04-09 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: beta version 319.12
 
-2013-04-03 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-04-03 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 310.44 (x86_64)
 
 2013-04-03 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 310.44 (ia32)
 
-2013-03-15 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-03-15 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 310.40 (x86_64)
 
 2013-03-15 Ladislav Hagara <hgr@vabo.cz>
@@ -290,20 +290,20 @@
 2013-03-07 Vlad Glagolev <stealth@sourcemage.org>
 	* CONFLICTS: conflicts nvidia_legacy_304xx
 
-2013-03-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-03-06 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: devel version 313.26
 
-2013-02-24 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-02-24 Florian Franzmann <bwlf@bandrate.org>
 	* DEPENDS, INSTALL: made the dependency on gtk+2 a
 	  suggested dependency
 
-2013-02-23 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2013-02-23 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 310.32 and 313.18 (x86_64)
 
 2013-02-19 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 310.32 and 313.18 (ia32)
 
-2012-12-22 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-12-22 Florian Franzmann <bwlf@bandrate.org>
 	* CONFIGURE, PRE_BUILD: remove obsolete config options
 	* DETAILS: stable version 310.19, beta version 313.09
 	* INSTALL: don't try to install libXvMCNVIDIA since it
@@ -321,7 +321,7 @@
 2012-11-04 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 304.60 (x86_64)
 
-2012-10-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-10-18 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 304.60 (ia32)
 
 2012-09-25 Ladislav Hagara <hgr@vabo.cz>
@@ -330,7 +330,7 @@
 2012-09-19 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 304.43 (x86_64)
 
-2012-08-27 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-08-27 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: 304.43 (ia32)
 
 2012-08-15 Ladislav Hagara <hgr@vabo.cz>
@@ -345,7 +345,7 @@
 2012-06-18 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: killed typo
 
-2012-06-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-06-16 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: stable and beta version 302.17
 
 2012-06-14 Ladislav Hagara <hgr@vabo.cz>
@@ -365,7 +365,7 @@
 2012-05-04 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 295.49 (ia32)
 
-2012-05-02 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-05-02 Florian Franzmann <bwlf@bandrate.org>
 	* DEPENDS: added dependency on gtk+2
 
 2012-04-19 Sukneet Basuta <sukneet@sourcemage.org>
@@ -377,7 +377,7 @@
 2012-03-23 Ladislav Hagara <hgr@vabo.cz>
 	* DETAILS: 295.33 (ia32)
 
-2012-03-19 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-03-19 Florian Franzmann <bwlf@bandrate.org>
 	* PRE_BUILD: fixed build with linux 3.3
 
 2012-02-14 Ladislav Hagara <hgr@vabo.cz>
@@ -398,7 +398,7 @@
 2011-07-23 Vlad Glagolev <stealth@sourcemage.org>
 	* DETAILS: updated spell to 275.21
 
-2011-07-16 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2011-07-16 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: version 275.19 (ia32)
 
 2011-06-14 Ladislav Hagara <hgr@vabo.cz>
@@ -521,13 +521,13 @@
 2009-10-18 George Sherwood <gsherwood@sourcemage.org>
 	* DETAILS: Updated beta version to 190.40
 
-2009-10-18 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2009-10-18 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: updated beta version to 190.36
 
 2009-09-10 Julien "_kaze_" ROZO <julien@rozo.org>
 	* DETAILS: updated beta version to 190.32
 
-2009-09-06 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2009-09-06 Florian Franzmann <bwlf@bandrate.org>
 	* PRE_BUILD: make configuration changes in the
 	  correct header
 

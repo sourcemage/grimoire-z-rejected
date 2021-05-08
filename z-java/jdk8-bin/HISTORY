@@ -38,7 +38,7 @@
 	* CONFLICTS: Conflicts with server-jre8-bin.
 	* PROVIDES: Provides JAVA8 and JDK8.
 
-2017-01-28 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2017-01-28 Florian Franzmann <bwlf@bandrate.org>
 	* DETAILS: Updated to 8u121, use upstream hashes
 	  https://www.oracle.com/webfolder/s/digest/8u121checksum.html
 
@@ -64,6 +64,6 @@
 	  SECURITY_PATCH++
 	* INSTALL: Set /usr/lib/java8 symlink, not java7
 
-2015-07-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-07-12 Florian Franzmann <bwlf@bandrate.org>
 	* BUILD, CONFIGURE, CONFLICTS, DEPENDS, DETAILS, FINAL, INSTALL,
 	  JAVA_WARNING, PRE_BUILD, PROVIDES, UNATTEND_SAFE: spell created
