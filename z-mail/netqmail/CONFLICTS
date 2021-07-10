@@ -3,7 +3,9 @@ conflicts  courier    &&
 conflicts  exim       &&
 conflicts  esmtp      &&
 conflicts  msmtp      &&
+conflicts  ssmtp      &&
 conflicts  qmail      &&
 conflicts  sendmail   &&
 conflicts  opensmtpd  &&
-conflicts  postfix
+conflicts  postfix    &&
+conflicts  dma
