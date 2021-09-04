@@ -1,10 +1,10 @@
 . $GRIMOIRE/FUNCTIONS
            SPELL=nvidia_driver
-  STABLE_VERSION=470.57.02
+  STABLE_VERSION=470.63.01
 case "${SMGL_COMPAT_ARCHS[1]}" in
         x86_64)
          VERSION=$STABLE_VERSION
-     SOURCE_HASH=sha512:7123ee05aa0cc94c4cf1f0717daf85b116f0200b8f78f9322ea847db70e56386a065e0085959f27cbf0a8f9befe6fc7a0145d1bf2a28616df9bc8b5effd812f8
+     SOURCE_HASH=sha512:d3dadf93df86e5462ecb4ae6a04f03b05bf1450ad91e8c2aa73e838ddc9aa11b4e926fc32714d32bd7c606498fee5a54c77d5e40ecc08a039d3e9c2d331ad454
           SOURCE=NVIDIA-Linux-x86_64-$VERSION.run
       SOURCE_URL=http://us.download.nvidia.com/XFree86/Linux-x86_64/$VERSION/$SOURCE
    SOURCE_URL[1]=http://download.nvidia.com/XFree86/Linux-x86_64/${VERSION}/${SOURCE}
