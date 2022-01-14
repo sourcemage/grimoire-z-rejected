@@ -31,7 +31,7 @@ message "${MESSAGE_COLOR}For SSL configuration, symlinks have been installed to 
 tsm_wrapper=/opt/tivoli/tsm/bin/tsm-wrapper &&
 gsk_wrapper=/opt/tivoli/tsm/bin/gsk-wrapper &&
 ldpath="$apilib:$gsklib:$tivolib" &&
-mkdir $(dirname $tsm_wrapper) &&
+mkdir -p $(dirname $tsm_wrapper) &&
 
 cat <<EOF > $tsm_wrapper &&
 #!/bin/sh

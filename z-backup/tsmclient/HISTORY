@@ -1,3 +1,10 @@
+2022-01-14 Thomas Orgis <sobukus@sourcemag.org>
+	* DETAILS: version 8.1.13.1
+	* INSTALL: more robustness
+
+2019-12-13 Thomas Orgis <sobukus@sourcemage.org>
+	* DETAILS, INSTALL, PRE_BUILD: version 8.1.6.1
+
 2017-01-04 Thoams Orgis <sobukus@sourcemage.org>
 	* DETAILS: version 7.1.6.3
 	* PRE_BUILD, INSTALL: there is a subdirectory now
