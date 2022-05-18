@@ -4,7 +4,7 @@ conflicts  jdk1.5-bin  &&
 conflicts  jdk6-bin    &&
 conflicts  jdk7-bin    &&
 conflicts  jdk8-bin    &&
-conflicts  jdk18-bin   &&
+conflicts  jdk11-bin   &&
 conflicts  jre1.5-bin  &&
 conflicts  jre6-bin    &&
 conflicts  jre7-bin    &&

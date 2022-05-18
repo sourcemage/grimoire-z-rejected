@@ -1,0 +1,15 @@
+. $GRIMOIRE/FUNCTIONS
+           SPELL=jdk18-bin
+         VERSION=18.0.1.1
+          SOURCE=jdk-${VERSION}_linux-x64_bin.tar.gz
+     SOURCE_HASH=sha512:014cc2cb84361a26c94a55da5a7a1b938977c36f3a166d92bc3a235209abf00b21d35fbdfb3260ee9c92e52f7610af2cc8ef49b0e4ba5af2e61d97cb01ce8004
+        WEB_SITE=https://www.oracle.com/java/technologies/javase-downloads.html#JDK11
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/jdk-${VERSION}"
+         ENTERED=20220503
+         ARCHIVE="off"
+          REJECT="is non-source"
+           SHORT="Java 18 Software Development Kit"
+cat << EOF
+The Java 18 Development Kit is a feature-complete development and
+deployment platform.
+EOF

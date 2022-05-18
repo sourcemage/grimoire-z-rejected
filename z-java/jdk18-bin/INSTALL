@@ -1,0 +1,35 @@
+cp -pPR "${SOURCE_DIRECTORY}" "${INSTALL_ROOT}"/usr/lib  &&
+
+if [ -d ${INSTALL_ROOT}/usr/lib/mozilla/plugins ]; then
+  ln -sf ${INSTALL_ROOT}/usr/lib/jdk-${VERSION}/jre/lib/amd64/libnpjp2.so \
+         ${INSTALL_ROOT}/usr/lib/mozilla/plugins/libnpjp2.so
+fi &&
+
+if [ -d ${INSTALL_ROOT}/usr/lib/xulrunner/plugins ]; then
+  message "${MESSAGE_COLOR}Installing plugin for xulrunner${DEFAULT_COLOR}" &&
+  ln -sf ${INSTALL_ROOT}/usr/lib/jdk-${VERSION}/jre/lib/amd64/libnpjp2.so \
+         ${INSTALL_ROOT}/usr/lib/xulrunner/plugins/libnpjp2.so
+fi &&
+
+if [ -d ${INSTALL_ROOT}/usr/lib/firefox/plugins ]; then
+  message "${MESSAGE_COLOR}Installing plugin for firefox${DEFAULT_COLOR}" &&
+  ln -sf ${INSTALL_ROOT}/usr/lib/jdk-${VERSION}/jre/lib/amd64/libnpjp2.so \
+         ${INSTALL_ROOT}/usr/lib/firefox/plugins/libnpjp2.so
+fi &&
+
+if [ -d ${INSTALL_ROOT}/opt/firefox/plugins ]; then
+  message "${MESSAGE_COLOR}Installing plugin for firefox-bin${DEFAULT_COLOR}" &&
+  ln -sf ${INSTALL_ROOT}/usr/lib/jdk-${VERSION}/jre/lib/amd64/libnpjp2.so \
+         ${INSTALL_ROOT}/opt/firefox/plugins/libnpjp2.so
+fi
+
+if [ -d ${INSTALL_ROOT}/usr/lib/seamonkey/plugins ]; then
+  message "${MESSAGE_COLOR}Installing plugin for seamonkey${DEFAULT_COLOR}" &&
+  ln -sf ${INSTALL_ROOT}/usr/lib/jdk-${VERSION}/jre/lib/amd64/libnpjp2.so  \
+         ${INSTALL_ROOT}/usr/lib/seamonkey/plugins/libnpjp2.so
+fi
+
+mkdir -p ${INSTALL_ROOT}/etc/profile.d/ &&
+install -m 0644 $SECTION_DIRECTORY/java.sh ${INSTALL_ROOT}/etc/profile.d/  &&
+ln -sfn ${INSTALL_ROOT}/usr/lib/jdk-${VERSION}/ ${INSTALL_ROOT}/usr/lib/j2sdk &&
+ln -sfn ${INSTALL_ROOT}/usr/lib/jdk-${VERSION}/ ${INSTALL_ROOT}/usr/lib/java11

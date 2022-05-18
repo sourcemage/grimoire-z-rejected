@@ -1,0 +1,7 @@
+depends  alsa-lib  &&
+depends  gcc       &&
+depends  libx11    &&
+depends  libxext   &&
+depends  libxt     &&
+depends  libxtst   &&
+depends  ODBC-MGR
