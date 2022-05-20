@@ -1,5 +1,6 @@
 2022-05-20  Florian Franzmann  <bwlf@bandrate.org>
 	* CONFLICTS: add conflict with nvidia-open-gpu-kernel-modules
+	* DETAILS: stable version 510.73.05
 
 2022-04-25  Florian Franzmann  <bwlf@bandrate.org>
 	* DETAILS: stable version 510.68.02
