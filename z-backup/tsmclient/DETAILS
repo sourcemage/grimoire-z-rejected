@@ -1,11 +1,11 @@
            SPELL=tsmclient
-         VERSION=8.1.13.1
+         VERSION=8.1.13.3
         VERSIONX=v8r1
        VERSIONXX=v8113
           SOURCE=$VERSION-TIV-TSMBAC-LinuxX86.tar
    SOURCE_URL[0]=ftp://public.dhe.ibm.com/storage/tivoli-storage-management/patches/client/$VERSIONX/Linux/LinuxX86/BA/$VERSIONXX/$VERSION-TIV-TSMBAC-LinuxX86.tar
-   SOURCE_URL[1]=http://ftp.scc.kit.edu/pub/tsm/mirror/patches/client/$VERSIONX/Linux/LinuxX86/BA/$VERSIONXX/$VERSION-TIV-TSMBAC-LinuxX86.tar
-SOURCE_HASH=sha512:58ca261ef3c8227fe6b440cf7bbc290c0ff335b8a87a112c66d6309777f0046a12a47ce7faec4fe35d14f038a4b7a6c0005e4541128dec4b8cc3b30645447c03
+   SOURCE_URL[1]=https://ftp.scc.kit.edu/pub/tsm/mirror/patches/client/$VERSIONX/Linux/LinuxX86/BA/$VERSIONXX/$VERSION-TIV-TSMBAC-LinuxX86.tar
+SOURCE_HASH=sha512:dac6b7f701e7fb8af49988da8df952c93879b57ea57daa88d4fff3c531423c73b24e89995894c041601faf1c33f115e5153461e2672254d9f29b65dd30c8ab8e
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL-$VERSION
            SHORT="IBM Tivoli Storage Manager (TSM) client software, x86-64 only"
       PATCHLEVEL=1
