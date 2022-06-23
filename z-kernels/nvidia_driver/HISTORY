@@ -1,3 +1,6 @@
+2022-06-23  Florian Franzmann  <bwlf@bandrate.org>
+  * DEPENDS: remove dependency on pangox-compat
+
 2022-06-11  Florian Franzmann  <bwlf@bandrate.org>
 	* DETAILS: stable version 515.48.07
 
