@@ -1,3 +1,6 @@
+2022-09-05 Vlad Glagolev <stealth@sourcemage.org>
+	* accounts, groups: sync account data with test grimoire
+
 2022-05-03 Eric Sandall <sandalle@sourcemage.org>
 	* z-java/jdk18-bin: Added JDK 18 spell
 
