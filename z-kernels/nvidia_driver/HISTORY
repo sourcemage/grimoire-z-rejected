@@ -1,3 +1,7 @@
+2023-01-03  Florian Franzmann  <bwlf@bandrate.org>
+  * INSTALL: install some missing files
+  * DETAILS: PATCHLEVEL++
+
 2022-12-08  Florian Franzmann  <bwlf@bandrate.org>
   * DETAILS: version 525.60.11
 

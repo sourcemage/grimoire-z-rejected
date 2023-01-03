@@ -12,6 +12,12 @@ make  KERNEL_MODLIB=$INSTALL_ROOT/lib/modules/$KVER  \
 cd $SOURCE_DIRECTORY                           &&
 
 #
+# Install firmware
+#
+mkdir -p "$INSTALL_ROOT"/usr/lib/firmware/nvidia                                 &&
+install -m644 -o root -g root firmware/* "$INSTALL_ROOT"/usr/lib/firmware/nvidia &&
+
+#
 # Install binaries and script
 #
 if is_depends_enabled $SPELL gtk+2; then
@@ -39,7 +45,9 @@ for lib in \
 	libnvidia-cbl.so.${VERSION/-/.} \
 	libnvidia-cfg.so.${VERSION/-/.} \
 	libnvidia-compiler.so.${VERSION/-/.} \
-	libnvidia-egl-wayland.so.1.1.4 \
+	libnvidia-eglcore.so.${VERSION/-/.} \
+	libnvidia-egl-wayland.so.1.1.10 \
+	libnvidia-egl-gbm.so.1.1.0 \
 	libnvidia-eglcore.so.${VERSION/-/.} \
 	libnvidia-encode.so.${VERSION/-/.} \
 	libnvidia-fbc.so.${VERSION/-/.} \
@@ -75,6 +83,13 @@ cp -vr libOpenGL.so.0 $INSTALL_ROOT/usr/lib/.nvidia           &&
 mkdir  -vp  $INSTALL_ROOT/usr/lib/tls &&
 install -v -m 0644  -o root  -g root  libnvidia-tls.so.${VERSION/-/.}  \
          $INSTALL_ROOT/usr/lib/tls                                 &&
+
+#
+# Xorg conf for PRIME
+#
+mkdir -p "$INSTALL_ROOT"/usr/share/X11/xorg.conf.d &&
+install -m644 nvidia-drm-outputclass.conf "$INSTALL_ROOT"/usr/share/X11/xorg.conf.d/
+
 #
 # Create library symlinks
 #
@@ -190,6 +205,12 @@ for lib in libvdpau_nvidia.so.${VERSION/-/.}; do
 done                                    &&
 
 #
+# Install wine libraries
+#
+mkdir -p "$INSTALL_ROOT"/usr/lib/nvidia/wine                    &&
+install -v -m755 {_,}nvngx.dll "$INSTALL_ROOT"/usr/lib/nvidia/wine &&
+
+#
 # Setup symlinks
 #
 pushd  $INSTALL_ROOT/usr/lib                                                 &&
@@ -255,7 +276,12 @@ install  -m 0644  -o root  -g root  $SOURCE_DIRECTORY/LICENSE  \
 #
 # Install man pages
 #
-for manual in nvidia-installer.1.gz  nvidia-settings.1.gz  nvidia-smi.1.gz \
-              nvidia-xconfig.1.gz nvidia-cuda-mps-control.1.gz nvidia-persistenced.1.gz; do
+for manual in nvidia-cuda-mps-control.1.gz \
+              nvidia-modprobe.1.gz \
+              nvidia-settings.1.gz \
+              nvidia-xconfig.1.gz \
+              nvidia-installer.1.gz \
+              nvidia-persistenced.1.gz \
+              nvidia-smi.1.gz; do
   install  -m 0644  -o root  -g root  $manual  $INSTALL_ROOT/usr/share/man/man1
 done
