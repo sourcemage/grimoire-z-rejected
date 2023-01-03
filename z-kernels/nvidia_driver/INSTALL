@@ -88,7 +88,7 @@ install -v -m 0644  -o root  -g root  libnvidia-tls.so.${VERSION/-/.}  \
 # Xorg conf for PRIME
 #
 mkdir -p "$INSTALL_ROOT"/usr/share/X11/xorg.conf.d &&
-install -m644 nvidia-drm-outputclass.conf "$INSTALL_ROOT"/usr/share/X11/xorg.conf.d/
+install -m644 nvidia-drm-outputclass.conf "$INSTALL_ROOT"/usr/share/X11/xorg.conf.d/10-nvidia-drm-outputclass.conf &&
 
 #
 # Create library symlinks
