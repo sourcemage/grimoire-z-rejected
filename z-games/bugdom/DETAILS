@@ -1,0 +1,34 @@
+           SPELL=bugdom
+          SPELLX=Bugdom
+         VERSION=1.3.3
+          SOURCE=$SPELL-$VERSION.tar.gz
+         SOURCE2=Pomme-ad9cc177d2187f67bd00cb6cf2b3045ef91c577b.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELLX-$VERSION
+   SOURCE_URL[0]=https://github.com/jorio/${SPELLX}/archive/${VERSION}.tar.gz
+  SOURCE2_URL[0]=https://github.com/jorio/Pomme/archive/ad9cc177d2187f67bd00cb6cf2b3045ef91c577b.tar.gz
+     SOURCE_HASH=sha256:69c561273fc20d31ca841a615f4c1dd01441f355f24799f2d2ccf82f241fbe7d
+    SOURCE2_HASH=sha256:ab70d32efe83687d07fcfb85983ffa6215e68fa7b0b6c2c2a9363ee2c3061c0b
+      LICENSE[0]=CC-BY-NC-SA
+        WEB_SITE=https://github.com/jorio/Bugdom
+         ENTERED=20230326
+            DOCS="$DOCS LICENSE* COMMANDLINE* CHEATS*"
+          REJECT="non-commercial license"
+        KEYWORDS="games"
+           SHORT="Pangea Software's Bugdom for modern systems"
+cat << EOF
+Bugdom is a 1999 Macintosh game by Pangea Software.
+You play as Rollie McFly, a pill bug on a quest to save ladybugs
+from King Thorax’s iron grip on the Bugdom.
+
+The game was bundled with some Mac models of the era.
+It is probably the most advanced game that uses QuickDraw 3D.
+Unfortunately, QuickDraw 3D has not been updated past Mac OS 9,
+so experiencing the game used to require booting a
+PowerPC Mac into OS 9 — until this port came out.
+
+This port aims to provide the best way to experience Bugdom today.
+It introduces some modern comforts (such as support for arbitrary resolutions)
+and fixes some gameplay bugs. The overall experience is intended to be faithful
+to the spirit of the original game, so modifications to the game’s design
+are out of the scope of this project.
+EOF

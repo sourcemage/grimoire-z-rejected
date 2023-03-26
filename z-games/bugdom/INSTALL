@@ -1,0 +1,10 @@
+cd "${SOURCE_DIRECTORY}"
+install -D "build/Bugdom" "${INSTALL_ROOT}/opt/${SPELL}/Bugdom" &&
+
+cd "${SOURCE_DIRECTORY}/build/Data" &&
+find . | cpio --pass-through --make-directories --unconditional --verbose \
+            "${INSTALL_ROOT}/opt/${SPELL}/Data" &&
+
+# installs bugdom launch script to /usr/games, necessary because game cannot
+# be launched through a symlink
+install -D "${SCRIPT_DIRECTORY}/bugdom" "${INSTALL_ROOT}/usr/games/bugdom"

@@ -1,0 +1,8 @@
+default_pre_build &&
+cd "${SOURCE_DIRECTORY}/extern" &&
+rm -r Pomme &&
+unpack_file 2 &&
+mv Pomme-ad9cc177d2187f67bd00cb6cf2b3045ef91c577b Pomme &&
+
+# we don't want this installed with the docs
+rm "${SOURCE_DIRECTORY}/docs/screenshot.webp"
