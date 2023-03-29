@@ -1,4 +1,4 @@
 depends PKG-CONFIG &&
 depends cmake      &&
 depends sdl2       &&
-depends MESA
+depends OPENGL
