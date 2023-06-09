@@ -16,7 +16,7 @@
 2021-02-03 Eric Sandall <sandalle@sourcemage.org>
 	* z-java/jdk11-bin: Added JDK 11 spell
 
-2020-01-26 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2020-01-26 Florian Franzmann <bwlf@bandrate.org>
 	* FUNCTIONS: filter -fno-plt in disable_pic
 
 2019-07-08 Eric Sandall <sandalle@sourcemage.org>
@@ -70,13 +70,13 @@
 2016-05-03 Ismael Luceno <ismael@sourcemage.org>
 	* z-x11/openmotif: spell deprecated in favor of motif
 
-2016-04-01 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2016-04-01 Florian Franzmann <bwlf@bandrate.org>
 	* z-games/simutrans: rename to simutrans-bin
 
 2016-03-17 Eric Sandall <sandalle@sourcemage.org>
 	* z-graphics/povray: Moved to grimoire, now AGPL3 license (FSF friendly)
 
-2015-07-12 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2015-07-12 Florian Franzmann <bwlf@bandrate.org>
 	* z-java/jdk8-bin: new spell, java development kit version 8
 
 2015-04-22 Vlad Glagolev <stealth@sourcemage.org>
@@ -128,7 +128,7 @@
 	* z-net/iwlwifi-2030-ucode: new spell, firmware for the Intel Centrino
 	  Wireless-N 2230 Wi-Fi Adapters
 
-2012-10-14 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2012-10-14 Florian Franzmann <bwlf@bandrate.org>
 	* z-graphics/rawtherapee: removed, this is a very old version of
 	  rawtherapee under a proprietary license, recent versions are GPL
 
@@ -159,7 +159,7 @@
 2011-08-17 Bor Kraljič <pyrobor@ver.si>
 	* gurus.gpg: added my key 386B44FE
 
-2011-03-25 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2011-03-25 Florian Franzmann <bwlf@bandrate.org>
 	* gurus.gpg: added by key 3D9428E1
 
 2010-11-12 Andraž "ruskie" Levstik <ruskie+f03a580f@codemages.net>
@@ -185,7 +185,7 @@
 2009-11-26 Vlad Glagolev <stealth@sourcemage.org>
 	* z-kernels/broadcom-wl: new spell, Broadcom 802.11abg networking drivers
 
-2009-09-08 Florian Franzmann <siflfran@hawo.stw.uni-erlangen.de>
+2009-09-08 Florian Franzmann <bwlf@bandrate.org>
 	* z-x11/nxclient: new spell, a client for the NX terminal server
 	* z-x11/nxnode: new spell, files required by the nxserver
 	* accounts, groups: added user and group for nx
