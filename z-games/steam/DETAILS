@@ -1,10 +1,9 @@
            SPELL=steam
-         VERSION=20130315
-          SOURCE=$SPELL.deb
-   SOURCE_IGNORE=unversioned
+         VERSION=1.0.0.78
+          SOURCE=${SPELL}-launcher_${VERSION}_all.deb
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SPELL
-  FORCE_DOWNLOAD="on"
-   SOURCE_URL[0]=http://media.steampowered.com/client/installer/steam.deb
+   SOURCE_URL[0]=https://repo.steampowered.com/$SPELL/archive/stable/$SOURCE
+  SOURCE_HASH[0]=sha256:456c200c00f7cae57db06d2067fbdb1fa3727eb6744371827913c4cf82d507a0
       LICENSE[0]=Commercial
         WEB_SITE=http://store.steampowered.com/browse/linux/
          ENTERED=20130102

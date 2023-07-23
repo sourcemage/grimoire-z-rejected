@@ -1,3 +1,9 @@
+2023-07-23 Conner Clere <xenanthropy@sourcemage.org>
+	* DETAILS: update to properly versioned system: 1.0.0.78
+	* DEPENDS: change gtk+2 dep to gtk+3, clean up formatting
+	* PRE_BUILD: change $TARGET_ROOT reference to $INSTALL_ROOT
+	  change data.tar.gz reference to data.tar.xz
+
 2013-07-02 Eric Sandall <sandalle@sourcemage.org>
 	* DEPENDS: glu -> GLUT typo fix
 
