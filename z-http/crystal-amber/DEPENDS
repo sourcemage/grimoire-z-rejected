@@ -1,0 +1,5 @@
+depends PKG-CONFIG     &&
+depends crystal-lang   &&
+depends crystal-shards &&
+
+depends $AMBER_DB
