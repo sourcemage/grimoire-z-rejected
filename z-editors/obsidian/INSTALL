@@ -1,0 +1,8 @@
+find . | cpio --pass-through --make-directories --unconditional --verbose \
+              "${INSTALL_ROOT}/" &&
+
+if ! [[ -f "${INSTALL_ROOT}/usr/bin/obsidian" ]]; then
+  ln -s "${INSTALL_ROOT}/opt/Obsidian/obsidian" "${INSTALL_ROOT}/usr/bin/obsidian"
+else
+  message "symlink to ${INSTALL_ROOT}/usr/bin/obsidian failed - file exists!"
+fi

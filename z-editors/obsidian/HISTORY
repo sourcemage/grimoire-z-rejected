@@ -1,0 +1,3 @@
+2023-10-20 Conner Clere <xenanthropy@sourcemage.org>
+	* BUILD, INSTALL, PRE_BUILD, DEPENDS, UNATTEND_SAFE, DETAILS: version 1.4.16, new spell
+

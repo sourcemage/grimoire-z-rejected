@@ -1,0 +1,22 @@
+depends zlib                  &&
+runtime_depends at-spi2-core  &&
+runtime_depends glib2         &&
+runtime_depends nspr          &&
+runtime_depends nss           &&
+runtime_depends alsa-lib      &&
+runtime_depends fontconfig    &&
+runtime_depends OPENGL        &&
+runtime_depends cups          &&
+runtime_depends dbus          &&
+runtime_depends cairo         &&
+runtime_depends gtk+3         &&
+runtime_depends libx11        &&
+runtime_depends libxcomposite &&
+runtime_depends libxdamage    &&
+runtime_depends libxext       &&
+runtime_depends libxfixes     &&
+runtime_depends libxrandr     &&
+runtime_depends libdrm        &&
+runtime_depends libxcb        &&
+runtime_depends libxkbcommon  &&
+runtime_depends pango

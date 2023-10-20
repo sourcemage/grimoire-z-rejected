@@ -1,0 +1,16 @@
+# Watch: https://github.com/obsidianmd/obsidian-releases/releases/ /v([0-9.]+)
+          SPELL=obsidian
+         VERSION=1.4.16
+          SOURCE=${SPELL}_${VERSION}_amd64.deb
+SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-$VERSION"
+   SOURCE_URL[0]=https://github.com/${SPELL}md/${SPELL}-releases/releases/download/v${VERSION}/$SOURCE
+     SOURCE_HASH=sha512:3b691188a05e20e0d1792a6b135076d3dabe33106e541ae4614703fdea44bcb64fc52bbd62808325c381f28348e37cbde0e3d072e4e1b077fb2b9728c43edb05
+      LICENSE[0]=Obsidian-EULA
+        WEB_SITE=https://obsidian.md
+         ENTERED=20231020
+        KEYWORDS="editor md markdown obsidian"
+          REJECT="closed-source software"
+           SHORT="private and flexible writing app"
+cat << EOF
+The private and flexible writing app that adapts to the way you think
+EOF
