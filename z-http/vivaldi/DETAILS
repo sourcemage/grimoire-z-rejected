@@ -1,7 +1,8 @@
            SPELL=vivaldi
 if [[ $VIVALDI_BRANCH == "stable" ]]; then
-         VERSION=3.6.2165.36-1
-  SECURITY_PATCH=21
+         VERSION=6.4.3160.47-1
+  SECURITY_PATCH=22
+     SOURCE_HASH=sha512:a1435323874394e7b182fe7d953b20b0faf440cf80272187a8a8257d0e89ced9a8d8c69a4790792261bea1751d7ce6613b39b3ea5cce328612c2e59608775fb8
 else
          VERSION=1.4.589.4-1
 fi
@@ -11,13 +12,13 @@ if [[ "${SMGL_COMPAT_ARCHS[1]}" == "x86_64" || "${SMGL_COMPAT_ARCHS[1]}" == "em6
 else
 #  if [[ $VIVALDI_BRANCH != "stable" ]]; then
         PLATFORM=i386
+        SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
 #  fi
 fi
           SOURCE=${SPELL}-${VIVALDI_BRANCH}-${VERSION}.${PLATFORM}.rpm
    SOURCE_URL[0]=https://downloads.vivaldi.com/${VIVALDI_BRANCH}/${SOURCE}
 SOURCE_DIRECTORY="${BUILD_DIRECTORY}/${SPELL}-${VERSION}"
      GATHER_DOCS=off
-      SOURCE_GPG="gurus.gpg:${SOURCE}.sig"
       LICENCE[0]=UNKNOWN
         WEB_SITE=http://www.vivaldi.com/
          ENTERED=20160808
