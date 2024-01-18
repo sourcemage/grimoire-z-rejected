@@ -1,10 +1,10 @@
 # Watch: https://github.com/vinegarhq/vinegar/releases /tag/v([0-9.]+)
            SPELL=vinegar
-         VERSION=1.6.0
+         VERSION=1.6.1
           SOURCE=$SPELL-v$VERSION.tar.xz
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-v$VERSION"
    SOURCE_URL[0]=https://github.com/${SPELL}hq/${SPELL}/releases/download/v${VERSION}/$SOURCE
-     SOURCE_HASH=sha512:dad6e76457ff364c325ec895a4991f4b82a79fc1e29af307aef2c5b495325fc1397460092f108a295c8236be75d6296abf23c3f65ebce02d116eb5248a5209e1
+     SOURCE_HASH=sha512:7cbca69e453bfe06363a8f0f46d59afea73c3aafb2e4da69236005ff1aa976ed4b86964b0dbc8a4291d483fefe5d5f4b048ed8b1ce2fa027343b6ad69065158a
       LICENSE[0]=GPL
         WEB_SITE=https://vinegarhq.github.io/
          ENTERED=20230930
