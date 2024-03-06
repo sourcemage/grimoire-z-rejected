@@ -1,0 +1,7 @@
+depends PKG-CONFIG        &&
+depends libdrm            &&
+depends numactl           &&
+depends OPENCL-ICD        &&
+
+suggest_depends clinfo '' '' 'Gives info on opencl devices' &&
+suggest_depends opencl-amd-dev '' '' 'OpenCL llvm ROCm compiler and more (You probably want this)'
