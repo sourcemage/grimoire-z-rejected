@@ -1,0 +1,3 @@
+cd "${SOURCE_DIRECTORY}/installdir" &&
+find . | cpio --pass-through --make-directories --unconditional --verbose \
+              "${INSTALL_ROOT}/"

@@ -1,0 +1,2 @@
+message "This is a very big spell!! You will need at least 10GB of free space to install"
+message "${RED}YOU HAVE BEEN WARNED${DEFAULT_COLOR}"

@@ -1,0 +1,80 @@
+amdgpu_repo='https://repo.radeon.com/amdgpu/6.0.2/ubuntu' &&
+rocm_repo='https://repo.radeon.com/rocm/apt/6.0' &&
+opencl_lib='opt/rocm-6.0.2/opencl/lib' &&
+rocm_lib='opt/rocm-6.0.2/lib' &&
+hip_lib='opt/rocm-6.0.2/hip/lib/' &&
+amdgpu="opt/amdgpu/lib/x86_64-linux-gnu" &&
+amdgpu_pro="opt/amdgpu-pro/lib/x86_64-linux-gnu/" &&
+
+mk_source_dir "${SOURCE_DIRECTORY}" &&
+cd "${SOURCE_DIRECTORY}" &&
+verify_file '' &&
+
+exz() {
+  ar x $1 data.tar.xz &&
+  tar xJf data.tar.xz &&
+  rm data.tar.xz
+}
+
+egz() {
+  ar x $1 data.tar.gz &&
+  tar xfx data.tar.gz &&
+  rm data.tar.gz
+}
+
+srcdir="${INSTALL_ROOT}/var/spool/sorcery" &&
+pkgdir="${SOURCE_DIRECTORY}/installdir" &&
+
+mkdir "${SOURCE_DIRECTORY}/installdir" &&
+
+egz "${srcdir}/amd-smi-lib_23.4.2.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/composablekernel-dev_1.1.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/half_1.12.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hiprand_2.10.16.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hiprand-dev_2.10.16.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipblas_2.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipblas-dev_2.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipblaslt_0.6.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipblaslt-dev_0.6.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipcub-dev_3.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipfft_1.0.13.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipfft-dev_1.0.13.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipfort-dev_0.4.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipsolver_2.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipsolver-dev_2.0.0.60002-115~22.04_amd64.deb" &&
+egz "${srcdir}/hipify-clang_17.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipsparse_3.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipsparse-dev_3.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipsparselt_0.1.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hipsparselt-dev_0.1.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hiptensor_1.1.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/hiptensor-dev_1.1.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/miopen-hip_3.00.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/miopen-hip-dev_3.00.0.60002-115~22.04_amd64.deb" &&
+egz "${srcdir}/openmp-extras-dev_17.60.0.60002-115~22.04_amd64.deb" &&
+egz "${srcdir}/rocm-llvm_17.0.0.24012.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocblas_4.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocblas-dev_4.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocprim-dev_3.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocfft_1.0.25.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocfft-dev_1.0.25.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocsparse_3.0.2.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocsparse-dev_3.0.2.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rccl_2.18.3.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rccl-dev_2.18.3.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocrand_3.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocrand-dev_3.0.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocalution_3.0.3.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocalution-dev_3.0.3.60002-115~22.04_amd64.deb" &&
+egz "${srcdir}/rocm-hip-libraries_6.0.2.60002-115~22.04_amd64.deb" &&
+egz "${srcdir}/rocm-hip-runtime-dev_6.0.2.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocsolver_3.24.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocsolver-dev_3.24.0.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocthrust-dev_3.0.0.60002-115~22.04_amd64.deb" &&
+egz "${srcdir}/rocm-hip-sdk_6.0.2.60002-115~22.04_amd64.deb" &&
+egz "${srcdir}/rocm-opencl-sdk_6.0.2.60002-115~22.04_amd64.deb" &&
+exz "${srcdir}/rocwmma-dev_1.3.0.60002-115~22.04_amd64.deb" &&
+egz "${srcdir}/rocm-ml-libraries_6.0.2.60002-115~22.04_amd64.deb"	&&
+egz "${srcdir}/rocm-ml-sdk_6.0.2.60002-115~22.04_amd64.deb" &&
+	
+mv "${SOURCE_DIRECTORY}/opt/" "${pkgdir}/"

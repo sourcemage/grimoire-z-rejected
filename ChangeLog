@@ -1,5 +1,6 @@
 2024-03-05 Conner Clere <xenanthropy@sourcemage.org>
 	* z-graphics/opencl-amd: new spell, openCL AMD bundle
+	* z-graphics/opencl-amd-dev: new spell, openCL AMD dev packages
 
 2023-11-16 Conner Clere <xenanthropy@sourcemage.org>
 	* z-games/vinegar: transfered from games grimoire
