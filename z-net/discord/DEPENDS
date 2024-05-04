@@ -26,7 +26,7 @@ runtime_depends dbus &&
 runtime_depends glib2 &&
 runtime_depends freetype2 &&
 runtime_depends fontconfig &&
-runtime_depends atk &&
+runtime_depends at-spi2-core &&
 runtime_depends pango &&
 runtime_depends cairo &&
 runtime_depends gdk-pixbuf2 &&
