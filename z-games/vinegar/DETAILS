@@ -1,13 +1,14 @@
 # Watch: https://github.com/vinegarhq/vinegar/releases /tag/v([0-9.]+)
            SPELL=vinegar
-         VERSION=1.7.4
+         VERSION=1.7.5
           SOURCE=$SPELL-v$VERSION.tar.xz
 SOURCE_DIRECTORY="$BUILD_DIRECTORY/$SPELL-v$VERSION"
    SOURCE_URL[0]=https://github.com/${SPELL}hq/${SPELL}/releases/download/v${VERSION}/$SOURCE
-     SOURCE_HASH=sha512:8eaa2aa5689430ace7e210a8569b366933e46d909fbb225fcdb08f92c02304433eadcf9ce51117593d8801ec97792ab94f3a77b65f5f7d89ddfb6938b5f7eb00
+     SOURCE_HASH=sha512:a2bd099cd78fb470799d3940a57af8733b52b2df2b298b7102696ab5f1cadc86b98c1bec485c9fe8c03ce6c335fa587c7ba05b7901e0ec575e7eb06445f87d19
       LICENSE[0]=GPL
         WEB_SITE=https://vinegarhq.github.io/
          ENTERED=20230930
+          REJECT="bootstrapper for proprietary game"
         KEYWORDS="roblox game grapejuice"
            SHORT="minimal bootstrapper for roblox"
 cat << EOF
