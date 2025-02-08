@@ -1,6 +1,10 @@
-depends PKG-CONFIG &&
-depends go         &&
-depends gnutls     &&
+depends PKG-CONFIG     &&
+depends go             &&
+depends gnutls         &&
+depends gtk+4          &&
+depends libadwaita     &&
+depends vulkan-headers &&
+
 
 if [[ $WINEDEP == y ]]; then
   depends wine
