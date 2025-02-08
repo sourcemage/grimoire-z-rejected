@@ -1,6 +1,7 @@
 2025-02-08 Conner Clere <xenanthropy@sourcemage.org>
 	* DETAILS: version 1.8.0
 	* DEPENDS: added gtk+4, libadwaita, and vulkan-headers
+	* BUILD: add GOPROXY env var
 
 2024-12-07 Conner Clere <xenanthropy@sourcemage.org>
 	* DETAILS: version 1.7.8
